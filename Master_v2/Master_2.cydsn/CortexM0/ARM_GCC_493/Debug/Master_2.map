@@ -9196,35 +9196,35 @@ i.CyBle_BleSSInterruptHandler
  .debug_abbrev  0x0000200e      0x101 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(cyPm.o)
  .debug_abbrev  0x0000210f       0x42 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1_HAL_INT.o)
 
-.debug_line     0x00000000     0x37e5
+.debug_line     0x00000000     0x37e3
  *(.debug_line)
  .debug_line    0x00000000      0x29b .\CortexM0\ARM_GCC_493\Debug\main.o
- .debug_line    0x0000029b      0x5b3 .\CortexM0\ARM_GCC_493\Debug\MAX30100_All.o
- .debug_line    0x0000084e       0x85 .\CortexM0\ARM_GCC_493\Debug\tempAndBat.o
- .debug_line    0x000008d3      0x159 .\CortexM0\ARM_GCC_493\Debug\accelerometer.o
- .debug_line    0x00000a2c       0x53 .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
- .debug_line    0x00000a7f      0x1ca .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
- .debug_line    0x00000c49      0x195 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(cyfitter_cfg.o)
- .debug_line    0x00000dde      0x2f3 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1.o)
- .debug_line    0x000010d1      0x10d .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1_gatt.o)
- .debug_line    0x000011de      0x283 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1_eventHandler.o)
- .debug_line    0x00001461       0xa0 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1_custom.o)
- .debug_line    0x00001501      0x137 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(I2C_1.o)
- .debug_line    0x00001638       0xb7 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(I2C_1_I2C.o)
- .debug_line    0x000016ef      0x2bd .\CortexM0\ARM_GCC_493\Debug\Master_2.a(I2C_1_I2C_MASTER.o)
- .debug_line    0x000019ac      0x377 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(Timer_minute.o)
- .debug_line    0x00001d23      0x172 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(isr_minute.o)
- .debug_line    0x00001e95       0x6a .\CortexM0\ARM_GCC_493\Debug\Master_2.a(CyBootAsmGnu.o)
- .debug_line    0x00001eff      0x4af .\CortexM0\ARM_GCC_493\Debug\Master_2.a(CyLib.o)
- .debug_line    0x000023ae      0x6ee .\CortexM0\ARM_GCC_493\Debug\Master_2.a(CyLFClk.o)
- .debug_line    0x00002a9c      0x2a4 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(ADC.o)
- .debug_line    0x00002d40       0x64 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(ADC_INT.o)
- .debug_line    0x00002da4      0x1a9 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(I2C_1_I2C_INT.o)
- .debug_line    0x00002f4d      0x334 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1_HAL_PVT.o)
- .debug_line    0x00003281      0x177 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1_bless_isr.o)
- .debug_line    0x000033f8      0x23b .\CortexM0\ARM_GCC_493\Debug\Master_2.a(CyFlash.o)
- .debug_line    0x00003633      0x158 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(cyPm.o)
- .debug_line    0x0000378b       0x5a .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1_HAL_INT.o)
+ .debug_line    0x0000029b      0x5b1 .\CortexM0\ARM_GCC_493\Debug\MAX30100_All.o
+ .debug_line    0x0000084c       0x85 .\CortexM0\ARM_GCC_493\Debug\tempAndBat.o
+ .debug_line    0x000008d1      0x159 .\CortexM0\ARM_GCC_493\Debug\accelerometer.o
+ .debug_line    0x00000a2a       0x53 .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
+ .debug_line    0x00000a7d      0x1ca .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+ .debug_line    0x00000c47      0x195 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(cyfitter_cfg.o)
+ .debug_line    0x00000ddc      0x2f3 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1.o)
+ .debug_line    0x000010cf      0x10d .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1_gatt.o)
+ .debug_line    0x000011dc      0x283 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1_eventHandler.o)
+ .debug_line    0x0000145f       0xa0 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1_custom.o)
+ .debug_line    0x000014ff      0x137 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(I2C_1.o)
+ .debug_line    0x00001636       0xb7 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(I2C_1_I2C.o)
+ .debug_line    0x000016ed      0x2bd .\CortexM0\ARM_GCC_493\Debug\Master_2.a(I2C_1_I2C_MASTER.o)
+ .debug_line    0x000019aa      0x377 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(Timer_minute.o)
+ .debug_line    0x00001d21      0x172 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(isr_minute.o)
+ .debug_line    0x00001e93       0x6a .\CortexM0\ARM_GCC_493\Debug\Master_2.a(CyBootAsmGnu.o)
+ .debug_line    0x00001efd      0x4af .\CortexM0\ARM_GCC_493\Debug\Master_2.a(CyLib.o)
+ .debug_line    0x000023ac      0x6ee .\CortexM0\ARM_GCC_493\Debug\Master_2.a(CyLFClk.o)
+ .debug_line    0x00002a9a      0x2a4 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(ADC.o)
+ .debug_line    0x00002d3e       0x64 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(ADC_INT.o)
+ .debug_line    0x00002da2      0x1a9 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(I2C_1_I2C_INT.o)
+ .debug_line    0x00002f4b      0x334 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1_HAL_PVT.o)
+ .debug_line    0x0000327f      0x177 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1_bless_isr.o)
+ .debug_line    0x000033f6      0x23b .\CortexM0\ARM_GCC_493\Debug\Master_2.a(CyFlash.o)
+ .debug_line    0x00003631      0x158 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(cyPm.o)
+ .debug_line    0x00003789       0x5a .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1_HAL_INT.o)
 
 .debug_frame    0x00000000    0x1c32c
  *(.debug_frame)
@@ -10778,59 +10778,59 @@ i.CyBle_BleSSInterruptHandler
  .debug_frame   0x0001c2e4       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memcpy.o)
  .debug_frame   0x0001c30c       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
 
-.debug_str      0x00000000     0x7eb1
+.debug_str      0x00000000     0x7ef4
  *(.debug_str)
- .debug_str     0x00000000      0xff1 .\CortexM0\ARM_GCC_493\Debug\main.o
-                               0x107e (size before relaxing)
- .debug_str     0x00000ff1      0x71e .\CortexM0\ARM_GCC_493\Debug\MAX30100_All.o
-                               0x150f (size before relaxing)
- .debug_str     0x0000170f       0x43 .\CortexM0\ARM_GCC_493\Debug\tempAndBat.o
+ .debug_str     0x00000000      0xff3 .\CortexM0\ARM_GCC_493\Debug\main.o
+                               0x1080 (size before relaxing)
+ .debug_str     0x00000ff3      0x71e .\CortexM0\ARM_GCC_493\Debug\MAX30100_All.o
+                               0x1511 (size before relaxing)
+ .debug_str     0x00001711       0x84 .\CortexM0\ARM_GCC_493\Debug\tempAndBat.o
                                 0x1b8 (size before relaxing)
- .debug_str     0x00001752       0xa1 .\CortexM0\ARM_GCC_493\Debug\accelerometer.o
+ .debug_str     0x00001795       0xa1 .\CortexM0\ARM_GCC_493\Debug\accelerometer.o
                                 0x234 (size before relaxing)
- .debug_str     0x000017f3       0x5b .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
+ .debug_str     0x00001836       0x5b .\CortexM0\ARM_GCC_493\Debug\cymetadata.o
                                 0x1cf (size before relaxing)
- .debug_str     0x0000184e      0x12e .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
+ .debug_str     0x00001891      0x12e .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o
                                 0x2c3 (size before relaxing)
- .debug_str     0x0000197c       0xbd .\CortexM0\ARM_GCC_493\Debug\Master_2.a(cyfitter_cfg.o)
+ .debug_str     0x000019bf       0xbd .\CortexM0\ARM_GCC_493\Debug\Master_2.a(cyfitter_cfg.o)
                                 0x261 (size before relaxing)
- .debug_str     0x00001a39      0xbda .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1.o)
+ .debug_str     0x00001a7c      0xbda .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1.o)
                                0x1671 (size before relaxing)
- .debug_str     0x00002613     0x2a14 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1_gatt.o)
+ .debug_str     0x00002656     0x2a14 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1_gatt.o)
                                0x3ac4 (size before relaxing)
- .debug_str     0x00005027      0xc64 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1_eventHandler.o)
+ .debug_str     0x0000506a      0xc64 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1_eventHandler.o)
                                0x2280 (size before relaxing)
- .debug_str     0x00005c8b       0xb4 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1_custom.o)
+ .debug_str     0x00005cce       0xb4 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1_custom.o)
                                 0xa64 (size before relaxing)
- .debug_str     0x00005d3f      0x11f .\CortexM0\ARM_GCC_493\Debug\Master_2.a(I2C_1.o)
+ .debug_str     0x00005d82      0x11f .\CortexM0\ARM_GCC_493\Debug\Master_2.a(I2C_1.o)
                                 0x2a0 (size before relaxing)
- .debug_str     0x00005e5e       0x88 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(I2C_1_I2C.o)
+ .debug_str     0x00005ea1       0x88 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(I2C_1_I2C.o)
                                 0x210 (size before relaxing)
- .debug_str     0x00005ee6      0x256 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(I2C_1_I2C_MASTER.o)
+ .debug_str     0x00005f29      0x256 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(I2C_1_I2C_MASTER.o)
                                 0x431 (size before relaxing)
- .debug_str     0x0000613c      0x506 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(Timer_minute.o)
+ .debug_str     0x0000617f      0x506 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(Timer_minute.o)
                                 0x69f (size before relaxing)
- .debug_str     0x00006642      0x155 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(isr_minute.o)
+ .debug_str     0x00006685      0x155 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(isr_minute.o)
                                 0x2f8 (size before relaxing)
- .debug_str     0x00006797      0x4d3 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(CyLib.o)
+ .debug_str     0x000067da      0x4d3 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(CyLib.o)
                                 0x6ae (size before relaxing)
- .debug_str     0x00006c6a      0x717 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(CyLFClk.o)
+ .debug_str     0x00006cad      0x717 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(CyLFClk.o)
                                 0x8ef (size before relaxing)
- .debug_str     0x00007381      0x1e1 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(ADC.o)
+ .debug_str     0x000073c4      0x1e1 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(ADC.o)
                                 0x39c (size before relaxing)
- .debug_str     0x00007562       0x37 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(ADC_INT.o)
+ .debug_str     0x000075a5       0x37 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(ADC_INT.o)
                                 0x1b2 (size before relaxing)
- .debug_str     0x00007599       0x4d .\CortexM0\ARM_GCC_493\Debug\Master_2.a(I2C_1_I2C_INT.o)
+ .debug_str     0x000075dc       0x4d .\CortexM0\ARM_GCC_493\Debug\Master_2.a(I2C_1_I2C_INT.o)
                                 0x2b9 (size before relaxing)
- .debug_str     0x000075e6      0x4fb .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1_HAL_PVT.o)
+ .debug_str     0x00007629      0x4fb .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1_HAL_PVT.o)
                                 0xaa3 (size before relaxing)
- .debug_str     0x00007ae1      0x174 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1_bless_isr.o)
+ .debug_str     0x00007b24      0x174 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1_bless_isr.o)
                                 0x33e (size before relaxing)
- .debug_str     0x00007c55      0x137 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(CyFlash.o)
+ .debug_str     0x00007c98      0x137 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(CyFlash.o)
                                 0x2e7 (size before relaxing)
- .debug_str     0x00007d8c       0xe6 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(cyPm.o)
+ .debug_str     0x00007dcf       0xe6 .\CortexM0\ARM_GCC_493\Debug\Master_2.a(cyPm.o)
                                 0x284 (size before relaxing)
- .debug_str     0x00007e72       0x3f .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1_HAL_INT.o)
+ .debug_str     0x00007eb5       0x3f .\CortexM0\ARM_GCC_493\Debug\Master_2.a(BLE_1_HAL_INT.o)
                                 0x1ad (size before relaxing)
 
 .debug_loc

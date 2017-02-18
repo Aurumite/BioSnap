@@ -2,7 +2,7 @@
 --	Conversion of Master_2.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Fri Feb 10 13:07:09 2017
+--	Sat Feb 18 13:08:00 2017
 --
 
 USE cypress.cypress.all;
