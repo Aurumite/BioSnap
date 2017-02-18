@@ -25,6 +25,8 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.DataViewHolder
         return dataList.size();
     }
 
+    public List<DataInfo> getDataList(){ return dataList; }
+
     @Override
     public void onBindViewHolder(DataViewHolder dataViewHolder, int i){
         DataInfo di = dataList.get(i);

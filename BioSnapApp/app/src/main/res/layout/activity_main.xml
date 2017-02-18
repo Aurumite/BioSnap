@@ -11,16 +11,60 @@
         android:id="@+id/toolbar"
         layout="@layout/toolbar" />
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/cardList"
-        android:layout_below="@id/toolbar"
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        />
+        android:fillViewport="true"
+        android:layout_below="@id/toolbar">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/scan_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scan_for_ble"
+            android:enabled="false"
+            android:onClick="bleScan" />
+        <Button
+            android:id="@+id/connect_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/connect_to_ble"
+            android:enabled="false"
+            android:onClick="tempSenseConnect"
+            android:layout_below="@id/scan_button"/>
+        <Button
+            android:id="@+id/discover_services_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/discover_services"
+            android:enabled="false"
+            android:onClick="discoverServices"
+            android:layout_below="@id/connect_button"/>
+        <Button
+            android:id="@+id/notifications_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enable_notifications"
+            android:enabled="false"
+            android:onClick="enableNotif"
+            android:layout_below="@+id/discover_services_button"
+            android:layout_alignParentStart="true" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/cardList"
+            android:layout_below="@id/notifications_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            />
+        </RelativeLayout>
+
+    </ScrollView>
 
 
 
