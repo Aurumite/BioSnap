@@ -1,5 +1,5 @@
 -- Project:   C:\Users\Matthew\Documents\GitHub\BioSnap\Master_v2\Master_2.cydsn\Master_2.cyprj
--- Generated: 02/18/2017 13:08:03
+-- Generated: 02/19/2017 17:58:54
 -- PSoC Creator  3.3 CP3
 
 ENTITY Master_2 IS
@@ -82,6 +82,7 @@ ARCHITECTURE __DEFAULT__ OF Master_2 IS
     SIGNAL \I2C_1:select_m_wire_3\ : bit;
     SIGNAL \I2C_1:tx_wire\ : bit;
     SIGNAL __ONE__ : bit;
+    ATTRIBUTE placement_force OF __ONE__ : SIGNAL IS "U(0,1,A)0";
     ATTRIBUTE POWER OF __ONE__ : SIGNAL IS true;
     SIGNAL __ZERO__ : bit;
     ATTRIBUTE GROUND OF __ZERO__ : SIGNAL IS true;
@@ -91,20 +92,22 @@ ARCHITECTURE __DEFAULT__ OF Master_2 IS
     SIGNAL temp_in(0)__PA : bit;
     SIGNAL zero : bit;
     ATTRIBUTE GROUND OF zero : SIGNAL IS true;
+    ATTRIBUTE lib_model OF __ONE__ : LABEL IS "macrocell1";
+    ATTRIBUTE Location OF __ONE__ : LABEL IS "U(0,1)";
     ATTRIBUTE Location OF ClockGenBlock : LABEL IS "F(CLK_GEN,0)";
     ATTRIBUTE Location OF ClockBlock : LABEL IS "F(Clock,0)";
     ATTRIBUTE lib_model OF \I2C_1:sda(0)\ : LABEL IS "iocell1";
-    ATTRIBUTE Location OF \I2C_1:sda(0)\ : LABEL IS "P3[4]";
+    ATTRIBUTE Location OF \I2C_1:sda(0)\ : LABEL IS "P3[0]";
     ATTRIBUTE lib_model OF \I2C_1:scl(0)\ : LABEL IS "iocell2";
-    ATTRIBUTE Location OF \I2C_1:scl(0)\ : LABEL IS "P3[5]";
+    ATTRIBUTE Location OF \I2C_1:scl(0)\ : LABEL IS "P3[1]";
     ATTRIBUTE lib_model OF temp_in(0) : LABEL IS "iocell3";
-    ATTRIBUTE Location OF temp_in(0) : LABEL IS "P3[0]";
+    ATTRIBUTE Location OF temp_in(0) : LABEL IS "P2[0]";
     ATTRIBUTE lib_model OF bat_in(0) : LABEL IS "iocell4";
-    ATTRIBUTE Location OF bat_in(0) : LABEL IS "P3[3]";
+    ATTRIBUTE Location OF bat_in(0) : LABEL IS "P2[6]";
     ATTRIBUTE Location OF \BLE_1:cy_m0s8_ble\ : LABEL IS "F(BLE,0)";
     ATTRIBUTE Location OF \BLE_1:bless_isr\ : LABEL IS "[IntrContainer=(0)][IntrId=(12)]";
-    ATTRIBUTE Location OF \I2C_1:SCB_IRQ\ : LABEL IS "[IntrContainer=(0)][IntrId=(10)]";
-    ATTRIBUTE Location OF \I2C_1:SCB\ : LABEL IS "F(SCB,1)";
+    ATTRIBUTE Location OF \I2C_1:SCB_IRQ\ : LABEL IS "[IntrContainer=(0)][IntrId=(9)]";
+    ATTRIBUTE Location OF \I2C_1:SCB\ : LABEL IS "F(SCB,0)";
     ATTRIBUTE Location OF isr_minute : LABEL IS "[IntrContainer=(0)][IntrId=(17)]";
     ATTRIBUTE Location OF \ADC:IRQ\ : LABEL IS "[IntrContainer=(0)][IntrId=(15)]";
     ATTRIBUTE Location OF \ADC:cy_psoc4_sar\ : LABEL IS "F(SARADC,0)";
@@ -307,6 +310,53 @@ ARCHITECTURE __DEFAULT__ OF Master_2 IS
             line_out_compl : OUT std_ulogic;
             interrupt : OUT std_ulogic);
     END COMPONENT;
+    COMPONENT macrocell
+        PORT (
+            main_0 : IN std_ulogic;
+            main_1 : IN std_ulogic;
+            main_2 : IN std_ulogic;
+            main_3 : IN std_ulogic;
+            main_4 : IN std_ulogic;
+            main_5 : IN std_ulogic;
+            main_6 : IN std_ulogic;
+            main_7 : IN std_ulogic;
+            main_8 : IN std_ulogic;
+            main_9 : IN std_ulogic;
+            main_10 : IN std_ulogic;
+            main_11 : IN std_ulogic;
+            ar_0 : IN std_ulogic;
+            ap_0 : IN std_ulogic;
+            clock_0 : IN std_ulogic;
+            clk_en : IN std_ulogic;
+            cin : IN std_ulogic;
+            cpt0_0 : IN std_ulogic;
+            cpt0_1 : IN std_ulogic;
+            cpt0_2 : IN std_ulogic;
+            cpt0_3 : IN std_ulogic;
+            cpt0_4 : IN std_ulogic;
+            cpt0_5 : IN std_ulogic;
+            cpt0_6 : IN std_ulogic;
+            cpt0_7 : IN std_ulogic;
+            cpt0_8 : IN std_ulogic;
+            cpt0_9 : IN std_ulogic;
+            cpt0_10 : IN std_ulogic;
+            cpt0_11 : IN std_ulogic;
+            cpt1_0 : IN std_ulogic;
+            cpt1_1 : IN std_ulogic;
+            cpt1_2 : IN std_ulogic;
+            cpt1_3 : IN std_ulogic;
+            cpt1_4 : IN std_ulogic;
+            cpt1_5 : IN std_ulogic;
+            cpt1_6 : IN std_ulogic;
+            cpt1_7 : IN std_ulogic;
+            cpt1_8 : IN std_ulogic;
+            cpt1_9 : IN std_ulogic;
+            cpt1_10 : IN std_ulogic;
+            cpt1_11 : IN std_ulogic;
+            cout : OUT std_ulogic;
+            q : OUT std_ulogic;
+            q_fixed : OUT std_ulogic);
+    END COMPONENT;
     COMPONENT p4blecell
         PORT (
             interrupt : OUT std_ulogic;
@@ -366,6 +416,13 @@ ARCHITECTURE __DEFAULT__ OF Master_2 IS
     END COMPONENT;
 BEGIN
 
+    __ONE__:macrocell
+        GENERIC MAP(
+            eqn_main => "1'b1",
+            clken_mode => 1)
+        PORT MAP(
+            q => __ONE__);
+
     ClockGenBlock:m0s8clockgenblockcell;
 
     ClockBlock:m0s8clockblockcell
@@ -379,10 +436,9 @@ BEGIN
             lfclk => ClockBlock_LFCLK,
             wco => ClockBlock_WCO,
             dsi_in_0 => ClockBlock_Routed1,
-            ff_div_1 => open,
+            ff_div_1 => \I2C_1:Net_847_ff1\,
             ff_div_6 => \ADC:Net_1845_ff6\,
-            ff_div_7 => Net_10_ff7,
-            ff_div_2 => \I2C_1:Net_847_ff1\);
+            ff_div_7 => Net_10_ff7);
 
     \I2C_1:sda\:logicalport
         GENERIC MAP(
@@ -651,6 +707,7 @@ BEGIN
             pa_out => temp_in(0)__PA,
             oe => open,
             in_clock => open,
+            pin_input => __ONE__,
             in_clock_en => '1',
             in_reset => '0',
             out_clock => open,
@@ -740,6 +797,7 @@ BEGIN
             pa_out => bat_in(0)__PA,
             oe => open,
             in_clock => open,
+            pin_input => __ONE__,
             in_clock_en => '1',
             in_reset => '0',
             out_clock => open,
