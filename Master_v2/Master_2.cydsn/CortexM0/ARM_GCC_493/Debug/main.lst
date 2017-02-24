@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
   51 0000 00000000 		.space	4
   52              		.global	BATTERY
   53              		.align	2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 2
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 2
 
 
   54              		.type	BATTERY, %object
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
   24:.\main.c      **** uint8 whatToDo;
   25:.\main.c      **** uint8 started;
   26:.\main.c      **** int charCode;
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 3
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 3
 
 
   27:.\main.c      **** CYBLE_CONN_HANDLE_T connectionHandle; 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  122              		.global	initAll
  123              		.code	16
  124              		.thumb_func
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 4
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 4
 
 
  125              		.type	initAll, %function
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  162 0034 80BD     		pop	{r7, pc}
  163              	.L6:
  164 0036 C046     		.align	2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 5
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 5
 
 
  165              	.L5:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  210              		.loc 1 69 0
  211 002a BD46     		mov	sp, r7
  212              		@ sp needed
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 6
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 6
 
 
  213 002c 80BD     		pop	{r7, pc}
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
   79:.\main.c      ****             deviceConnected = 0;
   80:.\main.c      ****         break;
   81:.\main.c      **** 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 7
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 7
 
 
   82:.\main.c      ****         /* GAP Peripheral events */
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  136:.\main.c      ****                 break;
  137:.\main.c      ****                     
  138:.\main.c      ****                 case CYBLE_BIOSNAP_BATTERY_BATCCC_DESC_HANDLE:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 8
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 8
 
 
  139:.\main.c      ****                     CyBle_GattsWriteAttributeValue(&wrReqParam->handleValPair, 0, &cyBle_connHandle
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  293              		.loc 1 94 0
  294 004e 6E4B     		ldr	r3, .L29
  295 0050 0122     		mov	r2, #1
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 9
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 9
 
 
  296 0052 1A70     		strb	r2, [r3]
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  339 008a 113B     		sub	r3, r3, #17
  340 008c 0C2B     		cmp	r3, #12
  341 008e 00D9     		bls	.LCB218
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 10
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 10
 
 
  342 0090 B5E0     		b	.L28	@long jump
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  393 00cc 0023     		mov	r3, #0
  394 00ce 1204     		lsl	r2, r2, #16
  395 00d0 120C     		lsr	r2, r2, #16
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 11
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 11
 
 
  396 00d2 1B0C     		lsr	r3, r3, #16
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  444 0128 3C4B     		ldr	r3, .L29+20
  445 012a 101C     		mov	r0, r2
  446 012c 0021     		mov	r1, #0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 12
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 12
 
 
  447 012e 1A1C     		mov	r2, r3
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  496 018a 9200     		lsl	r2, r2, #2
  497 018c D150     		str	r1, [r2, r3]
  135:.\main.c      ****                 break;
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 13
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 13
 
 
  498              		.loc 1 135 0
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  548 01ea FFF7FEFF 		bl	CyBle_GattsWriteRsp
  142:.\main.c      ****             }
  549              		.loc 1 142 0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 14
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 14
 
 
  550 01ee C046     		mov	r8, r8
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  596 0000 80B5     		push	{r7, lr}
  597              		.cfi_def_cfa_offset 8
  598              		.cfi_offset 7, -8
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 15
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 15
 
 
  599              		.cfi_offset 14, -4
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  642 0048 191C     		mov	r1, r3
  643 004a 0022     		mov	r2, #0
  644 004c FFF7FEFF 		bl	CyBle_GattsReadAttributeValue
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 16
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 16
 
 
  168:.\main.c      ****    
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  175:.\main.c      **** //}
  176:.\main.c      **** 
  177:.\main.c      **** int main()
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 17
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 17
 
 
  178:.\main.c      **** {
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  194:.\main.c      ****         if(deviceConnected && busyStatus == CYBLE_STACK_STATE_FREE){
  730              		.loc 1 194 0
  731 0028 2D4B     		ldr	r3, .L41
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 18
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 18
 
 
  732 002a 1B78     		ldrb	r3, [r3]
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  779 0084 1A1C     		mov	r2, r3
  780 0086 FFF7FEFF 		bl	updateCharacteristic
  202:.\main.c      ****                 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 19
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 19
 
 
  203:.\main.c      ****                 tsLastReport = millis();
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  822              		.loc 1 215 0
  823 00d8 0A20     		mov	r0, #10
  824 00da FFF7FEFF 		bl	CyDelay
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 20
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 20
 
 
  216:.\main.c      ****     }
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  878 0046 4F0D0000 		.4byte	.LASF4
  879 004a 02       		.byte	0x2
  880 004b 2B       		.byte	0x2b
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 21
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 21
 
 
  881 004c 50000000 		.4byte	0x50
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  935 00b9 05       		.uleb128 0x5
  936 00ba F90A0000 		.4byte	.LASF16
  937 00be 04       		.byte	0x4
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 22
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 22
 
 
  938 00bf 9901     		.2byte	0x199
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  992 0129 D0060000 		.4byte	.LASF29
  993 012d 06       		.sleb128 6
  994 012e 08       		.uleb128 0x8
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 23
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 23
 
 
  995 012f FE070000 		.4byte	.LASF30
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  1049 019b 4A090000 		.4byte	.LASF48
  1050 019f 32       		.sleb128 50
  1051 01a0 08       		.uleb128 0x8
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 24
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 24
 
 
  1052 01a1 B00C0000 		.4byte	.LASF49
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  1106 021e 72040000 		.4byte	.LASF67
  1107 0222 D100     		.sleb128 81
  1108 0224 08       		.uleb128 0x8
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 25
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 25
 
 
  1109 0225 F3090000 		.4byte	.LASF68
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  1163 02a3 E0010000 		.4byte	.LASF86
  1164 02a7 FA01     		.sleb128 250
  1165 02a9 08       		.uleb128 0x8
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 26
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 26
 
 
  1166 02aa B20B0000 		.4byte	.LASF87
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  1220 031d 0B       		.uleb128 0xb
  1221 031e 66030000 		.4byte	.LASF93
  1222 0322 05       		.byte	0x5
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 27
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 27
 
 
  1223 0323 D401     		.2byte	0x1d4
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  1277 038f 67030000 		.4byte	0x367
  1278 0393 07       		.uleb128 0x7
  1279 0394 01       		.byte	0x1
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 28
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 28
 
 
  1280 0395 08       		.byte	0x8
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  1334 0400 CE030000 		.4byte	0x3ce
  1335 0404 10       		.uleb128 0x10
  1336 0405 22080000 		.4byte	.LASF119
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 29
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 29
 
 
  1337 0409 14       		.byte	0x14
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  1391 0475 09       		.byte	0x9
  1392 0476 3D       		.byte	0x3d
  1393 0477 97000000 		.4byte	0x97
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 30
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 30
 
 
  1394 047b 02       		.byte	0x2
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  1448 04e7 F2000000 		.4byte	0xf2
  1449 04eb 2A       		.byte	0x2a
  1450 04ec 00       		.byte	0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 31
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 31
 
 
  1451 04ed 03       		.uleb128 0x3
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  1505 055a 0F       		.uleb128 0xf
  1506 055b D10B0000 		.4byte	.LASF133
  1507 055f 01       		.byte	0x1
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 32
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 32
 
 
  1508 0560 09       		.byte	0x9
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  1562 05cc 0E       		.uleb128 0xe
  1563 05cd 9D000000 		.4byte	.LASF143
  1564 05d1 09       		.byte	0x9
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 33
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 33
 
 
  1565 05d2 8D       		.byte	0x8d
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  1619 063e 97       		.byte	0x97
  1620 063f 87060000 		.4byte	0x687
  1621 0643 24       		.byte	0x24
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 34
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 34
 
 
  1622 0644 0E       		.uleb128 0xe
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  1676 06b0 28       		.byte	0x28
  1677 06b1 00000000 		.4byte	.LFB37
  1678 06b5 28000000 		.4byte	.LFE37-.LFB37
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 35
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 35
 
 
  1679 06b9 01       		.uleb128 0x1
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  1733 0722 6900     		.ascii	"i\000"
  1734 0724 01       		.byte	0x1
  1735 0725 63       		.byte	0x63
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 36
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 36
 
 
  1736 0726 C5000000 		.4byte	0xc5
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  1790 0789 B1       		.byte	0xb1
  1791 078a 7E000000 		.4byte	0x7e
  1792 078e 00000000 		.4byte	.LFB42
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 37
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 37
 
 
  1793 0792 EC000000 		.4byte	.LFE42-.LFB42
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  1847 07f2 8F070000 		.4byte	.LASF172
  1848 07f6 08       		.byte	0x8
  1849 07f7 DA09     		.2byte	0x9da
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 38
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 38
 
 
  1850 07f9 BB030000 		.4byte	0x3bb
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  1904 086f 1D       		.uleb128 0x1d
  1905 0870 6A060000 		.4byte	.LASF180
  1906 0874 09       		.byte	0x9
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 39
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 39
 
 
  1907 0875 A8       		.byte	0xa8
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  1961 08ea 01       		.byte	0x1
  1962 08eb 18       		.byte	0x18
  1963 08ec AD000000 		.4byte	0xad
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 40
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 40
 
 
  1964 08f0 05       		.uleb128 0x5
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  2018 0962 69050000 		.4byte	.LASF192
  2019 0966 01       		.byte	0x1
  2020 0967 21       		.byte	0x21
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 41
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 41
 
 
  2021 0968 4B090000 		.4byte	0x94b
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  2075 001f 16       		.uleb128 0x16
  2076 0020 00       		.byte	0
  2077 0021 03       		.uleb128 0x3
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 42
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 42
 
 
  2078 0022 0E       		.uleb128 0xe
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  2132 0058 28       		.uleb128 0x28
  2133 0059 00       		.byte	0
  2134 005a 03       		.uleb128 0x3
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 43
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 43
 
 
  2135 005b 0E       		.uleb128 0xe
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  2189 0091 0B       		.uleb128 0xb
  2190 0092 00       		.byte	0
  2191 0093 00       		.byte	0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 44
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 44
 
 
  2192 0094 0D       		.uleb128 0xd
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  2246 00ca 01       		.uleb128 0x1
  2247 00cb 13       		.uleb128 0x13
  2248 00cc 00       		.byte	0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 45
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 45
 
 
  2249 00cd 00       		.byte	0
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  2303 0104 19       		.uleb128 0x19
  2304 0105 00       		.byte	0
  2305 0106 00       		.byte	0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 46
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 46
 
 
  2306 0107 15       		.uleb128 0x15
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  2360 013f 0B       		.uleb128 0xb
  2361 0140 49       		.uleb128 0x49
  2362 0141 13       		.uleb128 0x13
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 47
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 47
 
 
  2363 0142 02       		.uleb128 0x2
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  2417 0178 11       		.uleb128 0x11
  2418 0179 01       		.uleb128 0x1
  2419 017a 12       		.uleb128 0x12
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 48
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 48
 
 
  2420 017b 06       		.uleb128 0x6
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  2474 0006 00000000 		.4byte	.Ldebug_info0
  2475 000a 04       		.byte	0x4
  2476 000b 00       		.byte	0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 49
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 49
 
 
  2477 000c 0000     		.2byte	0
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  2521      545F5354 
  2521      41434B5F 
  2521      42555359 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 50
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 50
 
 
  2522              	.LASF2:
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  2543 00ff 74734C61 		.ascii	"tsLastTemperaturePoll\000"
  2543      73745465 
  2543      6D706572 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 51
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 51
 
 
  2543      61747572 
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  2565      495F5354 
  2565      41545553 
  2566              	.LASF124:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 52
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 52
 
 
  2567 01d8 73704F32 		.ascii	"spO2LUT\000"
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  2587      61726163 
  2587      74657269 
  2587      73746963 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 53
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 53
 
 
  2588              	.LASF9:
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  2609      454E00
  2610              	.LASF152:
  2611 03a7 69724443 		.ascii	"irDCRemover\000"
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 54
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 54
 
 
  2611      52656D6F 
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  2633      43544F52 
  2633      5F535441 
  2633      54455F4D 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 55
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 55
 
 
  2634              	.LASF19:
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  2657      48616E64 
  2657      6C6500
  2658              	.LASF170:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 56
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 56
 
 
  2659 058f 74656D70 		.ascii	"temp\000"
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  2682              	.LASF130:
  2683 063c 44435265 		.ascii	"DCRemover\000"
  2683      6D6F7665 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 57
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 57
 
 
  2683      7200
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  2705      5F535441 
  2705      54455F57 
  2706              	.LASF32:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 58
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 58
 
 
  2707 0723 4359424C 		.ascii	"CYBLE_EVT_GAP_PASSKEY_ENTRY_REQUEST\000"
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  2727      50435F53 
  2727      43414E5F 
  2728              	.LASF119:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 59
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 59
 
 
  2729 0822 42656174 		.ascii	"BeatDetector\000"
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  2748              	.LASF35:
  2749 0905 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_FAILED\000"
  2749      455F4556 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 60
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 60
 
 
  2749      545F4741 
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  2769 09eb 696E6974 		.ascii	"initAll\000"
  2769      416C6C00 
  2770              	.LASF68:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 61
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 61
 
 
  2771 09f3 4359424C 		.ascii	"CYBLE_EVT_GATTC_HANDLE_VALUE_NTF\000"
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  2791      6400
  2792              	.LASF1:
  2793 0aeb 756E7369 		.ascii	"unsigned char\000"
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 62
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 62
 
 
  2793      676E6564 
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  2815 0bd1 50756C73 		.ascii	"PulseOximeterState\000"
  2815      654F7869 
  2815      6D657465 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 63
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 63
 
 
  2815      72537461 
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  2834      505F4E45 
  2835              	.LASF135:
  2836 0cd7 50554C53 		.ascii	"PULSEOXIMETER_STATE_IDLE\000"
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 64
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 64
 
 
  2836      454F5849 
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  2856      00
  2857              	.LASF26:
  2858 0dd1 4359424C 		.ascii	"CYBLE_EVT_HARDWARE_ERROR\000"
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 65
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 65
 
 
  2858      455F4556 
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  2879              	.LASF106:
  2880 0e86 4359424C 		.ascii	"CYBLE_STATE_T\000"
  2880      455F5354 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 66
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 66
 
 
  2880      4154455F 
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 1
  2900 0fa3 4359424C 		.ascii	"CYBLE_EVT_GAP_KEYINFO_EXCHNGE_CMPLT\000"
  2900      455F4556 
  2900      545F4741 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccLyRGTD.s 			page 67
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrBPV9j.s 			page 67
 
 
  2900      505F4B45 

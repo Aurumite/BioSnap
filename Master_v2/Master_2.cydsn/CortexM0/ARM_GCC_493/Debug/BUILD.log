@@ -1,4 +1,4 @@
---------------- Build Started: 02/19/2017 17:58:46 Project: Master_2, Configuration: ARM GCC 4.9-2015-q1-update Debug ---------------
+--------------- Build Started: 02/19/2017 23:12:56 Project: Master_2, Configuration: ARM GCC 4.9-2015-q1-update Debug ---------------
 cydsfit.exe -.appdatapath "C:\Users\Matthew\AppData\Local\Cypress Semiconductor\PSoC Creator\3.3" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p C:\Users\Matthew\Documents\GitHub\BioSnap\Master_v2\Master_2.cydsn\Master_2.cyprj -d CY8C4247LQI-BL483 -s C:\Users\Matthew\Documents\GitHub\BioSnap\Master_v2\Master_2.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 Elaborating Design...
 HDL Generation ...
@@ -66,6 +66,6 @@ arm-none-eabi-ar.exe: creating .\CortexM0\ARM_GCC_493\Debug\Master_2.a
 arm-none-eabi-gcc.exe -Wl,--start-group -o .\CortexM0\ARM_GCC_493\Debug\Master_2.elf .\CortexM0\ARM_GCC_493\Debug\main.o .\CortexM0\ARM_GCC_493\Debug\MAX30100_All.o .\CortexM0\ARM_GCC_493\Debug\tempAndBat.o .\CortexM0\ARM_GCC_493\Debug\accelerometer.o .\CortexM0\ARM_GCC_493\Debug\cymetadata.o .\CortexM0\ARM_GCC_493\Debug\Cm0Start.o .\CortexM0\ARM_GCC_493\Debug\Master_2.a "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\BLE_v3_10\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a" "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM0\ARM_GCC_493\Debug\CyComponentLibrary.a" -mcpu=cortex-m0 -mthumb -g -ffunction-sections -O0 -ffat-lto-objects -l m -L Generated_Source\PSoC4 -Wl,-Map,.\CortexM0\ARM_GCC_493\Debug/Master_2.map -T Generated_Source\PSoC4\cm0gcc.ld -specs=nano.specs -Wl,--gc-sections -Wl,--end-group
 cyelftool.exe -C C:\Users\Matthew\Documents\GitHub\BioSnap\Master_v2\Master_2.cydsn\CortexM0\ARM_GCC_493\Debug\Master_2.elf --flash_row_size 128 --flash_size 131072
 cyelftool.exe -S C:\Users\Matthew\Documents\GitHub\BioSnap\Master_v2\Master_2.cydsn\CortexM0\ARM_GCC_493\Debug\Master_2.elf
-Flash used: 102528 of 131072 bytes (78.2 %).
+Flash used: 102272 of 131072 bytes (78.0 %).
 SRAM used: 11072 of 16384 bytes (67.6 %). Stack: 2048 bytes. Heap: 128 bytes.
---------------- Build Succeeded: 02/19/2017 17:59:06 ---------------
+--------------- Build Succeeded: 02/19/2017 23:13:16 ---------------
