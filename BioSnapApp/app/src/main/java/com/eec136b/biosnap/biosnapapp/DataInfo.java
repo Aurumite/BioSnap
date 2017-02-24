@@ -7,6 +7,9 @@ import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * Created by Davit on 2/17/2017.
  */
@@ -18,6 +21,7 @@ public class DataInfo {
     protected String unit;
     private int graphLastXValue = 0;
     protected LineGraphSeries<DataPoint> series;
+    protected Queue<DataPoint> myQueue;
 
     private final Handler mHandler = new Handler();
     private Runnable mTimer;
@@ -27,6 +31,7 @@ public class DataInfo {
         measurement = "0.00";
         unit = "unit";
         series = new LineGraphSeries<>();
+        myQueue = new LinkedList<>();
 
     }
 
@@ -35,6 +40,7 @@ public class DataInfo {
         measurement = "0.00";
         this.unit = unit;
         series = new LineGraphSeries<>();
+        myQueue = new LinkedList<>();
 
     }
 
@@ -58,7 +64,7 @@ public class DataInfo {
         mTimer = new Runnable() {
             @Override
             public void run() {
-                series.appendData(new DataPoint(graphLastXValue++, Double.valueOf(measurement)),true,1000);
+                //series.appendData(new DataPoint(graphLastXValue++, Double.valueOf(measurement)),true,1000);
                 if(graphLastXValue >= 1000){
                     DataPoint[] values = new DataPoint[1];
                     values[0] = new DataPoint(0,0);
