@@ -28,6 +28,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.jjoe64.graphview.GraphView;
+import com.jjoe64.graphview.series.DataPoint;
+import com.jjoe64.graphview.series.LineGraphSeries;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,6 +45,9 @@ public class MainActivity extends AppCompatActivity {
     private Button mNotifButton;
     private Button mDiscoverButton;
     private DataAdapter mDataAdapter;
+    private List<DataInfo> mDataInfo;
+    private LineGraphSeries<DataPoint> series;
+    private int tempCount = 0;
 
     // Variables to manage BLE connection
     private static boolean mConnectState;
@@ -101,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
         mConnectButton = (Button)(findViewById(R.id.connect_button));
         mNotifButton = (Button)(findViewById(R.id.notifications_button));
         mDiscoverButton = (Button)(findViewById(R.id.discover_services_button));
+        series = new LineGraphSeries<>();
 
 
         RecyclerView recList = (RecyclerView) findViewById(R.id.cardList);
@@ -111,8 +119,6 @@ public class MainActivity extends AppCompatActivity {
 
         mDataAdapter = new DataAdapter(getSampleData());
         recList.setAdapter(mDataAdapter);
-
-
 
         //This section required for Android 6.0 (Marshmallow)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -311,14 +317,18 @@ public class MainActivity extends AppCompatActivity {
                 case BleService.ACTION_DATA_RECEIVED:
                     // This is called after a notify or a read completes
                     mNotifButton.setEnabled(false);
-                    List<DataInfo> mDataInfo = mDataAdapter.getDataList();
+                        mDataInfo = mDataAdapter.getDataList();
 
-                    mDataInfo.get(ACCELROMETER).setMeasurement(mBleService.getXYZ());
-                    mDataInfo.get(BATTERY).setMeasurement(mBleService.getBatteryLevel());
-                    mDataInfo.get(HEARTRATE).setMeasurement(mBleService.getHeartRate());
-                    mDataInfo.get(OXIMETRY).setMeasurement(mBleService.getSP02());
-                    mDataInfo.get(TEMPERATURE).setMeasurement(mBleService.getTemperature());
-                    mDataAdapter.notifyItemRangeChanged(ACCELROMETER,5);
+                        mDataInfo.get(ACCELROMETER).setMeasurement(mBleService.getXYZ());
+                        mDataInfo.get(BATTERY).setMeasurement(mBleService.getBatteryLevel());
+                        mDataInfo.get(HEARTRATE).setMeasurement(mBleService.getHeartRate());
+                        mDataInfo.get(OXIMETRY).setMeasurement(mBleService.getSP02());
+                        mDataInfo.get(TEMPERATURE).setMeasurement(mBleService.getTemperature());
+                        mDataInfo.get(TEMPERATURE).appendMyData();
+
+//                    mDataInfo.get(TEMPERATURE).appendGraph();
+                        mDataAdapter.notifyItemRangeChanged(ACCELROMETER, 5);
+//                    mDataAdapter.notifyDataSetChanged();
 
                 default:
                     break;
@@ -333,7 +343,9 @@ public class MainActivity extends AppCompatActivity {
         sampleList.add(new DataInfo("Battery Level"));
         sampleList.add(new DataInfo("Heart Rate"));
         sampleList.add(new DataInfo("Oxygen Concentration"));
-        sampleList.add(new DataInfo("Temperature"));
+        sampleList.add(new DataInfo("Temperature","Celsius"));
+
+
 
         return sampleList;
     }
