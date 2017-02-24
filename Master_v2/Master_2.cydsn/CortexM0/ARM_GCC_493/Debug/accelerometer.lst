@@ -1,0 +1,1538 @@
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccTDxh26.s 			page 1
+
+
+   1              		.cpu cortex-m0
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 6
+  10              		.eabi_attribute 34, 0
+  11              		.eabi_attribute 18, 4
+  12              		.code	16
+  13              		.file	"accelerometer.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.initAccelControl,"ax",%progbits
+  18              		.align	2
+  19              		.global	initAccelControl
+  20              		.code	16
+  21              		.thumb_func
+  22              		.type	initAccelControl, %function
+  23              	initAccelControl:
+  24              	.LFB37:
+  25              		.file 1 ".\\accelerometer.c"
+   1:.\accelerometer.c **** /* ========================================
+   2:.\accelerometer.c ****  *
+   3:.\accelerometer.c ****  * Copyright YOUR COMPANY, THE YEAR
+   4:.\accelerometer.c ****  * All Rights Reserved
+   5:.\accelerometer.c ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:.\accelerometer.c ****  *
+   7:.\accelerometer.c ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:.\accelerometer.c ****  * WHICH IS THE PROPERTY OF your company.
+   9:.\accelerometer.c ****  *
+  10:.\accelerometer.c ****  * ========================================
+  11:.\accelerometer.c **** */
+  12:.\accelerometer.c **** 
+  13:.\accelerometer.c **** #include <accelerometer.h>
+  14:.\accelerometer.c **** //#include <math.h>
+  15:.\accelerometer.c **** 
+  16:.\accelerometer.c **** void initAccelControl(){     
+  26              		.loc 1 16 0
+  27              		.cfi_startproc
+  28 0000 80B5     		push	{r7, lr}
+  29              		.cfi_def_cfa_offset 8
+  30              		.cfi_offset 7, -8
+  31              		.cfi_offset 14, -4
+  32 0002 00AF     		add	r7, sp, #0
+  33              		.cfi_def_cfa_register 7
+  17:.\accelerometer.c ****     
+  18:.\accelerometer.c ****     readAccel(CTRL_REG1);
+  34              		.loc 1 18 0
+  35 0004 2A20     		mov	r0, #42
+  36 0006 FFF7FEFF 		bl	readAccel
+  19:.\accelerometer.c ****     writeAccel(CTRL_REG1, 0x00);     
+  37              		.loc 1 19 0
+  38 000a 2A20     		mov	r0, #42
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccTDxh26.s 			page 2
+
+
+  39 000c 0021     		mov	r1, #0
+  40 000e FFF7FEFF 		bl	writeAccel
+  20:.\accelerometer.c ****     
+  21:.\accelerometer.c ****     /* REG 2 Settings
+  22:.\accelerometer.c ****     Self Test:                      Disabled
+  23:.\accelerometer.c ****     Software Reset:                 Enabled
+  24:.\accelerometer.c ****     Sleep Power                     Low noise, Low power
+  25:.\accelerometer.c ****     Auto-sleep:                     Disable
+  26:.\accelerometer.c ****     Active Power:                   Low noise, Low power
+  27:.\accelerometer.c ****     */
+  28:.\accelerometer.c ****     writeAccel(CTRL_REG2, 0b01001001);
+  41              		.loc 1 28 0
+  42 0012 2B20     		mov	r0, #43
+  43 0014 4921     		mov	r1, #73
+  44 0016 FFF7FEFF 		bl	writeAccel
+  29:.\accelerometer.c ****     
+  30:.\accelerometer.c ****     /* REG 3 Settings
+  31:.\accelerometer.c ****     FIFO Gate:                      Bypassed
+  32:.\accelerometer.c ****     Transient Wake:                 Bypassed
+  33:.\accelerometer.c ****     LNDPRT Wake:                    Bypassed
+  34:.\accelerometer.c ****     Pulse Wake:                     Bypassed
+  35:.\accelerometer.c ****     FF/MT Wake:                     Bypassed
+  36:.\accelerometer.c ****     Interrupt Polarity:             Active High
+  37:.\accelerometer.c ****     Interrupt:                      Push-Pull
+  38:.\accelerometer.c ****     */
+  39:.\accelerometer.c ****     writeAccel(CTRL_REG3, 0b00000010);
+  45              		.loc 1 39 0
+  46 001a 2C20     		mov	r0, #44
+  47 001c 0221     		mov	r1, #2
+  48 001e FFF7FEFF 		bl	writeAccel
+  40:.\accelerometer.c ****     
+  41:.\accelerometer.c ****     /* REG 4 Settings
+  42:.\accelerometer.c ****     Auto-Sleep/Wake Interrupt:      Disabled
+  43:.\accelerometer.c ****     FIFO Interrupt:                 Disabled
+  44:.\accelerometer.c ****     Transient Interrupt:            Disabled
+  45:.\accelerometer.c ****     LNDPRT Interrupt:               Disabled
+  46:.\accelerometer.c ****     Pulse Interrupt:                Disabled
+  47:.\accelerometer.c ****     FF/MT Interrupt:                Disabled
+  48:.\accelerometer.c ****     Data Ready Interrupt:           Enabled
+  49:.\accelerometer.c ****     */
+  50:.\accelerometer.c ****     writeAccel(CTRL_REG4, 0b00000001);
+  49              		.loc 1 50 0
+  50 0022 2D20     		mov	r0, #45
+  51 0024 0121     		mov	r1, #1
+  52 0026 FFF7FEFF 		bl	writeAccel
+  51:.\accelerometer.c ****     
+  52:.\accelerometer.c ****     /* REG 5 Settings
+  53:.\accelerometer.c ****     Auto-Sleep/Wake Interrupt:      Int 2
+  54:.\accelerometer.c ****     FIFO Interrupt:                 Int 2
+  55:.\accelerometer.c ****     Transient Interrupt:            Int 2
+  56:.\accelerometer.c ****     LNDPRT Interrupt:               Int 2
+  57:.\accelerometer.c ****     Pulse Interrupt:                Int 2
+  58:.\accelerometer.c ****     FF/MT Interrupt:                Int 2
+  59:.\accelerometer.c ****     Data Ready Interrupt:           Int 1
+  60:.\accelerometer.c ****     */
+  61:.\accelerometer.c ****     writeAccel(CTRL_REG5, 0b00000001);
+  53              		.loc 1 61 0
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccTDxh26.s 			page 3
+
+
+  54 002a 2E20     		mov	r0, #46
+  55 002c 0121     		mov	r1, #1
+  56 002e FFF7FEFF 		bl	writeAccel
+  62:.\accelerometer.c ****     
+  63:.\accelerometer.c ****      /* REG 1 Settings
+  64:.\accelerometer.c ****     Sleep mode sample frequency:    default
+  65:.\accelerometer.c ****     Data rate Selection:            12.5Hz
+  66:.\accelerometer.c ****     Fast Read                       On
+  67:.\accelerometer.c ****     FS Selection:                   Active
+  68:.\accelerometer.c ****     */
+  69:.\accelerometer.c ****     writeAccel(CTRL_REG1, 0b00101011);    
+  57              		.loc 1 69 0
+  58 0032 2A20     		mov	r0, #42
+  59 0034 2B21     		mov	r1, #43
+  60 0036 FFF7FEFF 		bl	writeAccel
+  70:.\accelerometer.c **** }
+  61              		.loc 1 70 0
+  62 003a BD46     		mov	sp, r7
+  63              		@ sp needed
+  64 003c 80BD     		pop	{r7, pc}
+  65              		.cfi_endproc
+  66              	.LFE37:
+  67              		.size	initAccelControl, .-initAccelControl
+  68 003e C046     		.section	.text.initAccelFFMT,"ax",%progbits
+  69              		.align	2
+  70              		.global	initAccelFFMT
+  71              		.code	16
+  72              		.thumb_func
+  73              		.type	initAccelFFMT, %function
+  74              	initAccelFFMT:
+  75              	.LFB38:
+  71:.\accelerometer.c **** 
+  72:.\accelerometer.c **** void initAccelFFMT(){
+  76              		.loc 1 72 0
+  77              		.cfi_startproc
+  78 0000 80B5     		push	{r7, lr}
+  79              		.cfi_def_cfa_offset 8
+  80              		.cfi_offset 7, -8
+  81              		.cfi_offset 14, -4
+  82 0002 00AF     		add	r7, sp, #0
+  83              		.cfi_def_cfa_register 7
+  73:.\accelerometer.c ****     /* FF/MT Configuration
+  74:.\accelerometer.c ****     Event Latch:                    Enabled
+  75:.\accelerometer.c ****     Mode:                           Freefall
+  76:.\accelerometer.c ****     Z Flag:                         Enabled (flags detection when acceleration > threshold)
+  77:.\accelerometer.c ****     y Flag:                         Enabled (flags detection when acceleration > threshold)
+  78:.\accelerometer.c ****     x Flag:                         Enabled (flags detection when acceleration > threshold)
+  79:.\accelerometer.c ****     */
+  80:.\accelerometer.c ****     writeAccel(FF_MT_CFG, 0b10111000);
+  84              		.loc 1 80 0
+  85 0004 1520     		mov	r0, #21
+  86 0006 B821     		mov	r1, #184
+  87 0008 FFF7FEFF 		bl	writeAccel
+  81:.\accelerometer.c ****     
+  82:.\accelerometer.c ****     /* FF/MT Threshold
+  83:.\accelerometer.c ****     Debounce Mode:                  Increment/Decrement
+  84:.\accelerometer.c ****     Threshold:                      0 (for now)
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccTDxh26.s 			page 4
+
+
+  85:.\accelerometer.c ****     */
+  86:.\accelerometer.c ****     writeAccel(FF_MT_THS, 0b00000000);
+  88              		.loc 1 86 0
+  89 000c 1720     		mov	r0, #23
+  90 000e 0021     		mov	r1, #0
+  91 0010 FFF7FEFF 		bl	writeAccel
+  87:.\accelerometer.c ****     
+  88:.\accelerometer.c ****     /* FF/MT Debounce ( minimum number of debounce sample counts that continuously match the detect
+  89:.\accelerometer.c ****     Debounce:                       80 ms (based on ODR)
+  90:.\accelerometer.c ****     */
+  91:.\accelerometer.c ****     writeAccel(FF_MT_COUNT, 0b00000000); //not needed?
+  92              		.loc 1 91 0
+  93 0014 1820     		mov	r0, #24
+  94 0016 0021     		mov	r1, #0
+  95 0018 FFF7FEFF 		bl	writeAccel
+  92:.\accelerometer.c **** }
+  96              		.loc 1 92 0
+  97 001c BD46     		mov	sp, r7
+  98              		@ sp needed
+  99 001e 80BD     		pop	{r7, pc}
+ 100              		.cfi_endproc
+ 101              	.LFE38:
+ 102              		.size	initAccelFFMT, .-initAccelFFMT
+ 103              		.section	.text.initAccelTransient,"ax",%progbits
+ 104              		.align	2
+ 105              		.global	initAccelTransient
+ 106              		.code	16
+ 107              		.thumb_func
+ 108              		.type	initAccelTransient, %function
+ 109              	initAccelTransient:
+ 110              	.LFB39:
+  93:.\accelerometer.c **** 
+  94:.\accelerometer.c **** void initAccelTransient(){
+ 111              		.loc 1 94 0
+ 112              		.cfi_startproc
+ 113 0000 80B5     		push	{r7, lr}
+ 114              		.cfi_def_cfa_offset 8
+ 115              		.cfi_offset 7, -8
+ 116              		.cfi_offset 14, -4
+ 117 0002 00AF     		add	r7, sp, #0
+ 118              		.cfi_def_cfa_register 7
+  95:.\accelerometer.c ****     /* Transient Configuration
+  96:.\accelerometer.c ****     Event Latch:                    Enabled
+  97:.\accelerometer.c ****     Z Flag:                         Enabled (flags detection when acceleration > threshold)
+  98:.\accelerometer.c ****     y Flag:                         Enabled (flags detection when acceleration > threshold)
+  99:.\accelerometer.c ****     x Flag:                         Enabled (flags detection when acceleration > threshold)
+ 100:.\accelerometer.c ****     High Pass Filter:               Disabled
+ 101:.\accelerometer.c ****     */
+ 102:.\accelerometer.c ****     writeAccel(TRANSIENT_CFG, 0b00011110);
+ 119              		.loc 1 102 0
+ 120 0004 1D20     		mov	r0, #29
+ 121 0006 1E21     		mov	r1, #30
+ 122 0008 FFF7FEFF 		bl	writeAccel
+ 103:.\accelerometer.c ****     
+ 104:.\accelerometer.c ****     /* Transient Threshold
+ 105:.\accelerometer.c ****     Debounce Mode:                  Increment/Decrement
+ 106:.\accelerometer.c ****     Threshold:                      0 (for now)
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccTDxh26.s 			page 5
+
+
+ 107:.\accelerometer.c ****     */
+ 108:.\accelerometer.c ****     writeAccel(TRANSIENT_THS, 0b00000000);
+ 123              		.loc 1 108 0
+ 124 000c 1F20     		mov	r0, #31
+ 125 000e 0021     		mov	r1, #0
+ 126 0010 FFF7FEFF 		bl	writeAccel
+ 109:.\accelerometer.c ****     
+ 110:.\accelerometer.c ****     /* FF/MT Debounce ( minimum number of debounce sample counts that continuously match the detect
+ 111:.\accelerometer.c ****     Debounce:                       80 ms (based on ODR)
+ 112:.\accelerometer.c ****     */
+ 113:.\accelerometer.c ****     writeAccel(TRANSIENT_COUNT, 0b00000000); //not needed?
+ 127              		.loc 1 113 0
+ 128 0014 2020     		mov	r0, #32
+ 129 0016 0021     		mov	r1, #0
+ 130 0018 FFF7FEFF 		bl	writeAccel
+ 114:.\accelerometer.c **** }
+ 131              		.loc 1 114 0
+ 132 001c BD46     		mov	sp, r7
+ 133              		@ sp needed
+ 134 001e 80BD     		pop	{r7, pc}
+ 135              		.cfi_endproc
+ 136              	.LFE39:
+ 137              		.size	initAccelTransient, .-initAccelTransient
+ 138              		.section	.text.initAccelPulse,"ax",%progbits
+ 139              		.align	2
+ 140              		.global	initAccelPulse
+ 141              		.code	16
+ 142              		.thumb_func
+ 143              		.type	initAccelPulse, %function
+ 144              	initAccelPulse:
+ 145              	.LFB40:
+ 115:.\accelerometer.c **** 
+ 116:.\accelerometer.c **** void initAccelPulse(){
+ 146              		.loc 1 116 0
+ 147              		.cfi_startproc
+ 148 0000 80B5     		push	{r7, lr}
+ 149              		.cfi_def_cfa_offset 8
+ 150              		.cfi_offset 7, -8
+ 151              		.cfi_offset 14, -4
+ 152 0002 00AF     		add	r7, sp, #0
+ 153              		.cfi_def_cfa_register 7
+ 117:.\accelerometer.c ****     /* Pulse Configuration
+ 118:.\accelerometer.c ****     Double Pulse Abort:             Not aborted
+ 119:.\accelerometer.c ****     Event Latch:                    Enabled
+ 120:.\accelerometer.c ****     Z Flag Double:                  Enabled (flags detection when acceleration > threshold)
+ 121:.\accelerometer.c ****     Z Flag Single:                  Enabled (flags detection when acceleration > threshold)
+ 122:.\accelerometer.c ****     y Flag Double:                  Enabled (flags detection when acceleration > threshold)
+ 123:.\accelerometer.c ****     y Flag Single:                  Enabled (flags detection when acceleration > threshold)
+ 124:.\accelerometer.c ****     x Flag Double:                  Enabled (flags detection when acceleration > threshold)
+ 125:.\accelerometer.c ****     x Flag Single:                  Enabled (flags detection when acceleration > threshold)
+ 126:.\accelerometer.c ****     */
+ 127:.\accelerometer.c ****     writeAccel(PULSE_CFG, 0b01111111);
+ 154              		.loc 1 127 0
+ 155 0004 2120     		mov	r0, #33
+ 156 0006 7F21     		mov	r1, #127
+ 157 0008 FFF7FEFF 		bl	writeAccel
+ 128:.\accelerometer.c ****     
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccTDxh26.s 			page 6
+
+
+ 129:.\accelerometer.c ****     /* Pulse Thresholds
+ 130:.\accelerometer.c ****     Threshold:                      0 (for now)
+ 131:.\accelerometer.c ****     */
+ 132:.\accelerometer.c ****     writeAccel(PULSE_THSX, 0b00000000);
+ 158              		.loc 1 132 0
+ 159 000c 2320     		mov	r0, #35
+ 160 000e 0021     		mov	r1, #0
+ 161 0010 FFF7FEFF 		bl	writeAccel
+ 133:.\accelerometer.c ****     writeAccel(PULSE_THSY, 0b00000000);
+ 162              		.loc 1 133 0
+ 163 0014 2420     		mov	r0, #36
+ 164 0016 0021     		mov	r1, #0
+ 165 0018 FFF7FEFF 		bl	writeAccel
+ 134:.\accelerometer.c ****     writeAccel(PULSE_THSZ, 0b00000000);
+ 166              		.loc 1 134 0
+ 167 001c 2520     		mov	r0, #37
+ 168 001e 0021     		mov	r1, #0
+ 169 0020 FFF7FEFF 		bl	writeAccel
+ 135:.\accelerometer.c ****     
+ 136:.\accelerometer.c ****     /* Pulse Time Limit (Max length of a pulse)
+ 137:.\accelerometer.c ****     Time:                       20 ms (based on ODR)
+ 138:.\accelerometer.c ****     */
+ 139:.\accelerometer.c ****     writeAccel(PULSE_TMLT, 0b00000000); //not needed?
+ 170              		.loc 1 139 0
+ 171 0024 2620     		mov	r0, #38
+ 172 0026 0021     		mov	r1, #0
+ 173 0028 FFF7FEFF 		bl	writeAccel
+ 140:.\accelerometer.c ****     
+ 141:.\accelerometer.c ****     /* Pulse Latency (Min time between pulses?)
+ 142:.\accelerometer.c ****     Time:                       40 ms (based on ODR)
+ 143:.\accelerometer.c ****     */
+ 144:.\accelerometer.c ****     writeAccel(PULSE_LTCY, 0b00000000); //not needed?
+ 174              		.loc 1 144 0
+ 175 002c 2720     		mov	r0, #39
+ 176 002e 0021     		mov	r1, #0
+ 177 0030 FFF7FEFF 		bl	writeAccel
+ 145:.\accelerometer.c ****     
+ 146:.\accelerometer.c ****     /* Pulse Window (Max time after latency period that a second tap can be detected)
+ 147:.\accelerometer.c ****     Time:                       40 ms (based on ODR)
+ 148:.\accelerometer.c ****     */
+ 149:.\accelerometer.c ****     writeAccel(PULSE_WIND, 0b00000000); //not needed?
+ 178              		.loc 1 149 0
+ 179 0034 2820     		mov	r0, #40
+ 180 0036 0021     		mov	r1, #0
+ 181 0038 FFF7FEFF 		bl	writeAccel
+ 150:.\accelerometer.c **** }
+ 182              		.loc 1 150 0
+ 183 003c BD46     		mov	sp, r7
+ 184              		@ sp needed
+ 185 003e 80BD     		pop	{r7, pc}
+ 186              		.cfi_endproc
+ 187              	.LFE40:
+ 188              		.size	initAccelPulse, .-initAccelPulse
+ 189              		.section	.text.initAccelSleep,"ax",%progbits
+ 190              		.align	2
+ 191              		.global	initAccelSleep
+ 192              		.code	16
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccTDxh26.s 			page 7
+
+
+ 193              		.thumb_func
+ 194              		.type	initAccelSleep, %function
+ 195              	initAccelSleep:
+ 196              	.LFB41:
+ 151:.\accelerometer.c **** 
+ 152:.\accelerometer.c **** void initAccelSleep(){
+ 197              		.loc 1 152 0
+ 198              		.cfi_startproc
+ 199 0000 80B5     		push	{r7, lr}
+ 200              		.cfi_def_cfa_offset 8
+ 201              		.cfi_offset 7, -8
+ 202              		.cfi_offset 14, -4
+ 203 0002 00AF     		add	r7, sp, #0
+ 204              		.cfi_def_cfa_register 7
+ 153:.\accelerometer.c ****     /* Auto-Wake/Sleep Detection (Min period of inactivty)
+ 154:.\accelerometer.c ****     Time:                       80 ms (based on ODR)
+ 155:.\accelerometer.c ****     */
+ 156:.\accelerometer.c ****     writeAccel(ASLP_COUNT, 0b00000000); //not needed?
+ 205              		.loc 1 156 0
+ 206 0004 2920     		mov	r0, #41
+ 207 0006 0021     		mov	r1, #0
+ 208 0008 FFF7FEFF 		bl	writeAccel
+ 157:.\accelerometer.c **** }
+ 209              		.loc 1 157 0
+ 210 000c BD46     		mov	sp, r7
+ 211              		@ sp needed
+ 212 000e 80BD     		pop	{r7, pc}
+ 213              		.cfi_endproc
+ 214              	.LFE41:
+ 215              		.size	initAccelSleep, .-initAccelSleep
+ 216              		.section	.text.getAccelX,"ax",%progbits
+ 217              		.align	2
+ 218              		.global	getAccelX
+ 219              		.code	16
+ 220              		.thumb_func
+ 221              		.type	getAccelX, %function
+ 222              	getAccelX:
+ 223              	.LFB42:
+ 158:.\accelerometer.c **** 
+ 159:.\accelerometer.c **** uint8 getAccelX(){
+ 224              		.loc 1 159 0
+ 225              		.cfi_startproc
+ 226 0000 80B5     		push	{r7, lr}
+ 227              		.cfi_def_cfa_offset 8
+ 228              		.cfi_offset 7, -8
+ 229              		.cfi_offset 14, -4
+ 230 0002 00AF     		add	r7, sp, #0
+ 231              		.cfi_def_cfa_register 7
+ 160:.\accelerometer.c ****     return readAccel(X_MSB);
+ 232              		.loc 1 160 0
+ 233 0004 0120     		mov	r0, #1
+ 234 0006 FFF7FEFF 		bl	readAccel
+ 235 000a 031C     		mov	r3, r0
+ 161:.\accelerometer.c **** }
+ 236              		.loc 1 161 0
+ 237 000c 181C     		mov	r0, r3
+ 238 000e BD46     		mov	sp, r7
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccTDxh26.s 			page 8
+
+
+ 239              		@ sp needed
+ 240 0010 80BD     		pop	{r7, pc}
+ 241              		.cfi_endproc
+ 242              	.LFE42:
+ 243              		.size	getAccelX, .-getAccelX
+ 244 0012 C046     		.section	.text.getAccelY,"ax",%progbits
+ 245              		.align	2
+ 246              		.global	getAccelY
+ 247              		.code	16
+ 248              		.thumb_func
+ 249              		.type	getAccelY, %function
+ 250              	getAccelY:
+ 251              	.LFB43:
+ 162:.\accelerometer.c **** 
+ 163:.\accelerometer.c **** uint8 getAccelY(){
+ 252              		.loc 1 163 0
+ 253              		.cfi_startproc
+ 254 0000 80B5     		push	{r7, lr}
+ 255              		.cfi_def_cfa_offset 8
+ 256              		.cfi_offset 7, -8
+ 257              		.cfi_offset 14, -4
+ 258 0002 00AF     		add	r7, sp, #0
+ 259              		.cfi_def_cfa_register 7
+ 164:.\accelerometer.c ****     return readAccel(Y_MSB);
+ 260              		.loc 1 164 0
+ 261 0004 0320     		mov	r0, #3
+ 262 0006 FFF7FEFF 		bl	readAccel
+ 263 000a 031C     		mov	r3, r0
+ 165:.\accelerometer.c **** }
+ 264              		.loc 1 165 0
+ 265 000c 181C     		mov	r0, r3
+ 266 000e BD46     		mov	sp, r7
+ 267              		@ sp needed
+ 268 0010 80BD     		pop	{r7, pc}
+ 269              		.cfi_endproc
+ 270              	.LFE43:
+ 271              		.size	getAccelY, .-getAccelY
+ 272 0012 C046     		.section	.text.getAccelZ,"ax",%progbits
+ 273              		.align	2
+ 274              		.global	getAccelZ
+ 275              		.code	16
+ 276              		.thumb_func
+ 277              		.type	getAccelZ, %function
+ 278              	getAccelZ:
+ 279              	.LFB44:
+ 166:.\accelerometer.c **** 
+ 167:.\accelerometer.c **** uint8 getAccelZ(){
+ 280              		.loc 1 167 0
+ 281              		.cfi_startproc
+ 282 0000 80B5     		push	{r7, lr}
+ 283              		.cfi_def_cfa_offset 8
+ 284              		.cfi_offset 7, -8
+ 285              		.cfi_offset 14, -4
+ 286 0002 00AF     		add	r7, sp, #0
+ 287              		.cfi_def_cfa_register 7
+ 168:.\accelerometer.c ****     return readAccel(Z_MSB);
+ 288              		.loc 1 168 0
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccTDxh26.s 			page 9
+
+
+ 289 0004 0520     		mov	r0, #5
+ 290 0006 FFF7FEFF 		bl	readAccel
+ 291 000a 031C     		mov	r3, r0
+ 169:.\accelerometer.c **** }
+ 292              		.loc 1 169 0
+ 293 000c 181C     		mov	r0, r3
+ 294 000e BD46     		mov	sp, r7
+ 295              		@ sp needed
+ 296 0010 80BD     		pop	{r7, pc}
+ 297              		.cfi_endproc
+ 298              	.LFE44:
+ 299              		.size	getAccelZ, .-getAccelZ
+ 300 0012 C046     		.section	.text.getAccelXYZ,"ax",%progbits
+ 301              		.align	2
+ 302              		.global	getAccelXYZ
+ 303              		.code	16
+ 304              		.thumb_func
+ 305              		.type	getAccelXYZ, %function
+ 306              	getAccelXYZ:
+ 307              	.LFB45:
+ 170:.\accelerometer.c **** 
+ 171:.\accelerometer.c **** int getAccelXYZ(){
+ 308              		.loc 1 171 0
+ 309              		.cfi_startproc
+ 310 0000 80B5     		push	{r7, lr}
+ 311              		.cfi_def_cfa_offset 8
+ 312              		.cfi_offset 7, -8
+ 313              		.cfi_offset 14, -4
+ 314 0002 84B0     		sub	sp, sp, #16
+ 315              		.cfi_def_cfa_offset 24
+ 316 0004 00AF     		add	r7, sp, #0
+ 317              		.cfi_def_cfa_register 7
+ 172:.\accelerometer.c ****     int x = getAccelX();
+ 318              		.loc 1 172 0
+ 319 0006 FFF7FEFF 		bl	getAccelX
+ 320 000a 031C     		mov	r3, r0
+ 321 000c FB60     		str	r3, [r7, #12]
+ 173:.\accelerometer.c ****     int y = getAccelY();
+ 322              		.loc 1 173 0
+ 323 000e FFF7FEFF 		bl	getAccelY
+ 324 0012 031C     		mov	r3, r0
+ 325 0014 BB60     		str	r3, [r7, #8]
+ 174:.\accelerometer.c ****     int z = getAccelZ();
+ 326              		.loc 1 174 0
+ 327 0016 FFF7FEFF 		bl	getAccelZ
+ 328 001a 031C     		mov	r3, r0
+ 329 001c 7B60     		str	r3, [r7, #4]
+ 175:.\accelerometer.c ****     
+ 176:.\accelerometer.c ****     return (x << 16) + (y << 8) + z;
+ 330              		.loc 1 176 0
+ 331 001e FB68     		ldr	r3, [r7, #12]
+ 332 0020 1A04     		lsl	r2, r3, #16
+ 333 0022 BB68     		ldr	r3, [r7, #8]
+ 334 0024 1B02     		lsl	r3, r3, #8
+ 335 0026 D218     		add	r2, r2, r3
+ 336 0028 7B68     		ldr	r3, [r7, #4]
+ 337 002a D318     		add	r3, r2, r3
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccTDxh26.s 			page 10
+
+
+ 177:.\accelerometer.c **** }
+ 338              		.loc 1 177 0
+ 339 002c 181C     		mov	r0, r3
+ 340 002e BD46     		mov	sp, r7
+ 341 0030 04B0     		add	sp, sp, #16
+ 342              		@ sp needed
+ 343 0032 80BD     		pop	{r7, pc}
+ 344              		.cfi_endproc
+ 345              	.LFE45:
+ 346              		.size	getAccelXYZ, .-getAccelXYZ
+ 347              		.section	.text.writeAccel,"ax",%progbits
+ 348              		.align	2
+ 349              		.global	writeAccel
+ 350              		.code	16
+ 351              		.thumb_func
+ 352              		.type	writeAccel, %function
+ 353              	writeAccel:
+ 354              	.LFB46:
+ 178:.\accelerometer.c **** 
+ 179:.\accelerometer.c **** void writeAccel(uint8 reg, uint8 data){
+ 355              		.loc 1 179 0
+ 356              		.cfi_startproc
+ 357 0000 80B5     		push	{r7, lr}
+ 358              		.cfi_def_cfa_offset 8
+ 359              		.cfi_offset 7, -8
+ 360              		.cfi_offset 14, -4
+ 361 0002 84B0     		sub	sp, sp, #16
+ 362              		.cfi_def_cfa_offset 24
+ 363 0004 00AF     		add	r7, sp, #0
+ 364              		.cfi_def_cfa_register 7
+ 365 0006 021C     		mov	r2, r0
+ 366 0008 FB1D     		add	r3, r7, #7
+ 367 000a 1A70     		strb	r2, [r3]
+ 368 000c BB1D     		add	r3, r7, #6
+ 369 000e 0A1C     		add	r2, r1, #0
+ 370 0010 1A70     		strb	r2, [r3]
+ 180:.\accelerometer.c ****     uint8 Write_Buf[2]={0};
+ 371              		.loc 1 180 0
+ 372 0012 0C23     		mov	r3, #12
+ 373 0014 FB18     		add	r3, r7, r3
+ 374 0016 0022     		mov	r2, #0
+ 375 0018 1A80     		strh	r2, [r3]
+ 181:.\accelerometer.c ****     Write_Buf[0] = reg;               //Assign the first element to be the register you want to wri
+ 376              		.loc 1 181 0
+ 377 001a 0C23     		mov	r3, #12
+ 378 001c FB18     		add	r3, r7, r3
+ 379 001e FA1D     		add	r2, r7, #7
+ 380 0020 1278     		ldrb	r2, [r2]
+ 381 0022 1A70     		strb	r2, [r3]
+ 182:.\accelerometer.c ****     Write_Buf[1] = data;             //Assign the second elemnt to be the value you wish to write t
+ 382              		.loc 1 182 0
+ 383 0024 0C23     		mov	r3, #12
+ 384 0026 FB18     		add	r3, r7, r3
+ 385 0028 BA1D     		add	r2, r7, #6
+ 386 002a 1278     		ldrb	r2, [r2]
+ 387 002c 5A70     		strb	r2, [r3, #1]
+ 183:.\accelerometer.c ****     
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccTDxh26.s 			page 11
+
+
+ 184:.\accelerometer.c ****     
+ 185:.\accelerometer.c ****     I2C_1_I2CMasterWriteBuf(ACCEL_ADDR, (uint8 *)Write_Buf, 2, I2C_1_I2C_MODE_COMPLETE_XFER);
+ 388              		.loc 1 185 0
+ 389 002e 0C23     		mov	r3, #12
+ 390 0030 FB18     		add	r3, r7, r3
+ 391 0032 1D20     		mov	r0, #29
+ 392 0034 191C     		mov	r1, r3
+ 393 0036 0222     		mov	r2, #2
+ 394 0038 0023     		mov	r3, #0
+ 395 003a FFF7FEFF 		bl	I2C_1_I2CMasterWriteBuf
+ 186:.\accelerometer.c ****     while((I2C_1_I2CMasterStatus()&I2C_1_I2C_MSTAT_WR_CMPLT)==0);
+ 396              		.loc 1 186 0
+ 397 003e C046     		mov	r8, r8
+ 398              	.L15:
+ 399              		.loc 1 186 0 is_stmt 0 discriminator 1
+ 400 0040 FFF7FEFF 		bl	I2C_1_I2CMasterStatus
+ 401 0044 021C     		mov	r2, r0
+ 402 0046 0223     		mov	r3, #2
+ 403 0048 1340     		and	r3, r2
+ 404 004a F9D0     		beq	.L15
+ 187:.\accelerometer.c ****         
+ 188:.\accelerometer.c ****     return;
+ 405              		.loc 1 188 0 is_stmt 1
+ 406 004c C046     		mov	r8, r8
+ 189:.\accelerometer.c **** }
+ 407              		.loc 1 189 0
+ 408 004e BD46     		mov	sp, r7
+ 409 0050 04B0     		add	sp, sp, #16
+ 410              		@ sp needed
+ 411 0052 80BD     		pop	{r7, pc}
+ 412              		.cfi_endproc
+ 413              	.LFE46:
+ 414              		.size	writeAccel, .-writeAccel
+ 415              		.section	.text.readAccel,"ax",%progbits
+ 416              		.align	2
+ 417              		.global	readAccel
+ 418              		.code	16
+ 419              		.thumb_func
+ 420              		.type	readAccel, %function
+ 421              	readAccel:
+ 422              	.LFB47:
+ 190:.\accelerometer.c **** 
+ 191:.\accelerometer.c **** uint8 readAccel(uint8 reg){
+ 423              		.loc 1 191 0
+ 424              		.cfi_startproc
+ 425 0000 80B5     		push	{r7, lr}
+ 426              		.cfi_def_cfa_offset 8
+ 427              		.cfi_offset 7, -8
+ 428              		.cfi_offset 14, -4
+ 429 0002 84B0     		sub	sp, sp, #16
+ 430              		.cfi_def_cfa_offset 24
+ 431 0004 00AF     		add	r7, sp, #0
+ 432              		.cfi_def_cfa_register 7
+ 433 0006 021C     		mov	r2, r0
+ 434 0008 FB1D     		add	r3, r7, #7
+ 435 000a 1A70     		strb	r2, [r3]
+ 192:.\accelerometer.c ****     uint8 Write_Buf[1] = {0}; //Buffer that will contain the register that will be read from
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccTDxh26.s 			page 12
+
+
+ 436              		.loc 1 192 0
+ 437 000c 0C23     		mov	r3, #12
+ 438 000e FB18     		add	r3, r7, r3
+ 439 0010 0022     		mov	r2, #0
+ 440 0012 1A70     		strb	r2, [r3]
+ 193:.\accelerometer.c ****     Write_Buf[0] = reg;
+ 441              		.loc 1 193 0
+ 442 0014 0C23     		mov	r3, #12
+ 443 0016 FB18     		add	r3, r7, r3
+ 444 0018 FA1D     		add	r2, r7, #7
+ 445 001a 1278     		ldrb	r2, [r2]
+ 446 001c 1A70     		strb	r2, [r3]
+ 194:.\accelerometer.c ****     
+ 195:.\accelerometer.c ****     uint8 Read_Buf[1]={0};  //Buffer that will store the value read from the register
+ 447              		.loc 1 195 0
+ 448 001e 0823     		mov	r3, #8
+ 449 0020 FB18     		add	r3, r7, r3
+ 450 0022 0022     		mov	r2, #0
+ 451 0024 1A70     		strb	r2, [r3]
+ 196:.\accelerometer.c ****     
+ 197:.\accelerometer.c ****     //Step 1
+ 198:.\accelerometer.c ****     I2C_1_I2CMasterWriteBuf(ACCEL_ADDR, (uint8 *)Write_Buf, 1, I2C_1_I2C_MODE_NO_STOP);
+ 452              		.loc 1 198 0
+ 453 0026 0C23     		mov	r3, #12
+ 454 0028 FB18     		add	r3, r7, r3
+ 455 002a 1D20     		mov	r0, #29
+ 456 002c 191C     		mov	r1, r3
+ 457 002e 0122     		mov	r2, #1
+ 458 0030 0223     		mov	r3, #2
+ 459 0032 FFF7FEFF 		bl	I2C_1_I2CMasterWriteBuf
+ 199:.\accelerometer.c ****     while((I2C_1_I2CMasterStatus() & I2C_1_I2C_MSTAT_WR_CMPLT)==0){}
+ 460              		.loc 1 199 0
+ 461 0036 C046     		mov	r8, r8
+ 462              	.L18:
+ 463              		.loc 1 199 0 is_stmt 0 discriminator 1
+ 464 0038 FFF7FEFF 		bl	I2C_1_I2CMasterStatus
+ 465 003c 021C     		mov	r2, r0
+ 466 003e 0223     		mov	r3, #2
+ 467 0040 1340     		and	r3, r2
+ 468 0042 F9D0     		beq	.L18
+ 200:.\accelerometer.c ****     
+ 201:.\accelerometer.c ****     //Step 2
+ 202:.\accelerometer.c ****     I2C_1_I2CMasterReadBuf(ACCEL_ADDR, (uint8 *)Read_Buf, 1, I2C_1_I2C_MODE_REPEAT_START);
+ 469              		.loc 1 202 0 is_stmt 1
+ 470 0044 0823     		mov	r3, #8
+ 471 0046 FB18     		add	r3, r7, r3
+ 472 0048 1D20     		mov	r0, #29
+ 473 004a 191C     		mov	r1, r3
+ 474 004c 0122     		mov	r2, #1
+ 475 004e 0123     		mov	r3, #1
+ 476 0050 FFF7FEFF 		bl	I2C_1_I2CMasterReadBuf
+ 203:.\accelerometer.c ****     while((I2C_1_I2CMasterStatus() & I2C_1_I2C_MSTAT_RD_CMPLT)==0){}
+ 477              		.loc 1 203 0
+ 478 0054 C046     		mov	r8, r8
+ 479              	.L19:
+ 480              		.loc 1 203 0 is_stmt 0 discriminator 1
+ 481 0056 FFF7FEFF 		bl	I2C_1_I2CMasterStatus
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccTDxh26.s 			page 13
+
+
+ 482 005a 021C     		mov	r2, r0
+ 483 005c 0123     		mov	r3, #1
+ 484 005e 1340     		and	r3, r2
+ 485 0060 F9D0     		beq	.L19
+ 204:.\accelerometer.c ****     
+ 205:.\accelerometer.c ****     return Read_Buf[0];
+ 486              		.loc 1 205 0 is_stmt 1
+ 487 0062 0823     		mov	r3, #8
+ 488 0064 FB18     		add	r3, r7, r3
+ 489 0066 1B78     		ldrb	r3, [r3]
+ 206:.\accelerometer.c **** }
+ 490              		.loc 1 206 0
+ 491 0068 181C     		mov	r0, r3
+ 492 006a BD46     		mov	sp, r7
+ 493 006c 04B0     		add	sp, sp, #16
+ 494              		@ sp needed
+ 495 006e 80BD     		pop	{r7, pc}
+ 496              		.cfi_endproc
+ 497              	.LFE47:
+ 498              		.size	readAccel, .-readAccel
+ 499              		.text
+ 500              	.Letext0:
+ 501              		.file 2 "Generated_Source\\PSoC4/cytypes.h"
+ 502              		.section	.debug_info,"",%progbits
+ 503              	.Ldebug_info0:
+ 504 0000 0E020000 		.4byte	0x20e
+ 505 0004 0400     		.2byte	0x4
+ 506 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 507 000a 04       		.byte	0x4
+ 508 000b 01       		.uleb128 0x1
+ 509 000c 01010000 		.4byte	.LASF28
+ 510 0010 01       		.byte	0x1
+ 511 0011 C9000000 		.4byte	.LASF29
+ 512 0015 38000000 		.4byte	.LASF30
+ 513 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 514 001d 00000000 		.4byte	0
+ 515 0021 00000000 		.4byte	.Ldebug_line0
+ 516 0025 02       		.uleb128 0x2
+ 517 0026 01       		.byte	0x1
+ 518 0027 06       		.byte	0x6
+ 519 0028 1E020000 		.4byte	.LASF0
+ 520 002c 02       		.uleb128 0x2
+ 521 002d 01       		.byte	0x1
+ 522 002e 08       		.byte	0x8
+ 523 002f B1000000 		.4byte	.LASF1
+ 524 0033 02       		.uleb128 0x2
+ 525 0034 02       		.byte	0x2
+ 526 0035 05       		.byte	0x5
+ 527 0036 0B020000 		.4byte	.LASF2
+ 528 003a 02       		.uleb128 0x2
+ 529 003b 02       		.byte	0x2
+ 530 003c 07       		.byte	0x7
+ 531 003d 18000000 		.4byte	.LASF3
+ 532 0041 02       		.uleb128 0x2
+ 533 0042 04       		.byte	0x4
+ 534 0043 05       		.byte	0x5
+ 535 0044 15020000 		.4byte	.LASF4
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccTDxh26.s 			page 14
+
+
+ 536 0048 02       		.uleb128 0x2
+ 537 0049 04       		.byte	0x4
+ 538 004a 07       		.byte	0x7
+ 539 004b DB000000 		.4byte	.LASF5
+ 540 004f 02       		.uleb128 0x2
+ 541 0050 08       		.byte	0x8
+ 542 0051 05       		.byte	0x5
+ 543 0052 D7010000 		.4byte	.LASF6
+ 544 0056 02       		.uleb128 0x2
+ 545 0057 08       		.byte	0x8
+ 546 0058 07       		.byte	0x7
+ 547 0059 9A000000 		.4byte	.LASF7
+ 548 005d 03       		.uleb128 0x3
+ 549 005e 04       		.byte	0x4
+ 550 005f 05       		.byte	0x5
+ 551 0060 696E7400 		.ascii	"int\000"
+ 552 0064 02       		.uleb128 0x2
+ 553 0065 04       		.byte	0x4
+ 554 0066 07       		.byte	0x7
+ 555 0067 2B000000 		.4byte	.LASF8
+ 556 006b 04       		.uleb128 0x4
+ 557 006c ED000000 		.4byte	.LASF9
+ 558 0070 02       		.byte	0x2
+ 559 0071 9801     		.2byte	0x198
+ 560 0073 2C000000 		.4byte	0x2c
+ 561 0077 04       		.uleb128 0x4
+ 562 0078 FA000000 		.4byte	.LASF10
+ 563 007c 02       		.byte	0x2
+ 564 007d 9901     		.2byte	0x199
+ 565 007f 3A000000 		.4byte	0x3a
+ 566 0083 02       		.uleb128 0x2
+ 567 0084 04       		.byte	0x4
+ 568 0085 04       		.byte	0x4
+ 569 0086 8F000000 		.4byte	.LASF11
+ 570 008a 02       		.uleb128 0x2
+ 571 008b 08       		.byte	0x8
+ 572 008c 04       		.byte	0x4
+ 573 008d F3000000 		.4byte	.LASF12
+ 574 0091 02       		.uleb128 0x2
+ 575 0092 01       		.byte	0x1
+ 576 0093 08       		.byte	0x8
+ 577 0094 BA010000 		.4byte	.LASF13
+ 578 0098 02       		.uleb128 0x2
+ 579 0099 04       		.byte	0x4
+ 580 009a 07       		.byte	0x7
+ 581 009b CE010000 		.4byte	.LASF14
+ 582 009f 05       		.uleb128 0x5
+ 583 00a0 E5010000 		.4byte	.LASF15
+ 584 00a4 01       		.byte	0x1
+ 585 00a5 10       		.byte	0x10
+ 586 00a6 00000000 		.4byte	.LFB37
+ 587 00aa 3E000000 		.4byte	.LFE37-.LFB37
+ 588 00ae 01       		.uleb128 0x1
+ 589 00af 9C       		.byte	0x9c
+ 590 00b0 05       		.uleb128 0x5
+ 591 00b1 00000000 		.4byte	.LASF16
+ 592 00b5 01       		.byte	0x1
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccTDxh26.s 			page 15
+
+
+ 593 00b6 48       		.byte	0x48
+ 594 00b7 00000000 		.4byte	.LFB38
+ 595 00bb 20000000 		.4byte	.LFE38-.LFB38
+ 596 00bf 01       		.uleb128 0x1
+ 597 00c0 9C       		.byte	0x9c
+ 598 00c1 05       		.uleb128 0x5
+ 599 00c2 8F010000 		.4byte	.LASF17
+ 600 00c6 01       		.byte	0x1
+ 601 00c7 5E       		.byte	0x5e
+ 602 00c8 00000000 		.4byte	.LFB39
+ 603 00cc 20000000 		.4byte	.LFE39-.LFB39
+ 604 00d0 01       		.uleb128 0x1
+ 605 00d1 9C       		.byte	0x9c
+ 606 00d2 05       		.uleb128 0x5
+ 607 00d3 A2010000 		.4byte	.LASF18
+ 608 00d7 01       		.byte	0x1
+ 609 00d8 74       		.byte	0x74
+ 610 00d9 00000000 		.4byte	.LFB40
+ 611 00dd 40000000 		.4byte	.LFE40-.LFB40
+ 612 00e1 01       		.uleb128 0x1
+ 613 00e2 9C       		.byte	0x9c
+ 614 00e3 05       		.uleb128 0x5
+ 615 00e4 BF010000 		.4byte	.LASF19
+ 616 00e8 01       		.byte	0x1
+ 617 00e9 98       		.byte	0x98
+ 618 00ea 00000000 		.4byte	.LFB41
+ 619 00ee 10000000 		.4byte	.LFE41-.LFB41
+ 620 00f2 01       		.uleb128 0x1
+ 621 00f3 9C       		.byte	0x9c
+ 622 00f4 06       		.uleb128 0x6
+ 623 00f5 7B000000 		.4byte	.LASF20
+ 624 00f9 01       		.byte	0x1
+ 625 00fa 9F       		.byte	0x9f
+ 626 00fb 6B000000 		.4byte	0x6b
+ 627 00ff 00000000 		.4byte	.LFB42
+ 628 0103 12000000 		.4byte	.LFE42-.LFB42
+ 629 0107 01       		.uleb128 0x1
+ 630 0108 9C       		.byte	0x9c
+ 631 0109 06       		.uleb128 0x6
+ 632 010a 85000000 		.4byte	.LASF21
+ 633 010e 01       		.byte	0x1
+ 634 010f A3       		.byte	0xa3
+ 635 0110 6B000000 		.4byte	0x6b
+ 636 0114 00000000 		.4byte	.LFB43
+ 637 0118 12000000 		.4byte	.LFE43-.LFB43
+ 638 011c 01       		.uleb128 0x1
+ 639 011d 9C       		.byte	0x9c
+ 640 011e 06       		.uleb128 0x6
+ 641 011f 01020000 		.4byte	.LASF22
+ 642 0123 01       		.byte	0x1
+ 643 0124 A7       		.byte	0xa7
+ 644 0125 6B000000 		.4byte	0x6b
+ 645 0129 00000000 		.4byte	.LFB44
+ 646 012d 12000000 		.4byte	.LFE44-.LFB44
+ 647 0131 01       		.uleb128 0x1
+ 648 0132 9C       		.byte	0x9c
+ 649 0133 07       		.uleb128 0x7
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccTDxh26.s 			page 16
+
+
+ 650 0134 2A020000 		.4byte	.LASF23
+ 651 0138 01       		.byte	0x1
+ 652 0139 AB       		.byte	0xab
+ 653 013a 5D000000 		.4byte	0x5d
+ 654 013e 00000000 		.4byte	.LFB45
+ 655 0142 34000000 		.4byte	.LFE45-.LFB45
+ 656 0146 01       		.uleb128 0x1
+ 657 0147 9C       		.byte	0x9c
+ 658 0148 71010000 		.4byte	0x171
+ 659 014c 08       		.uleb128 0x8
+ 660 014d 7800     		.ascii	"x\000"
+ 661 014f 01       		.byte	0x1
+ 662 0150 AC       		.byte	0xac
+ 663 0151 5D000000 		.4byte	0x5d
+ 664 0155 02       		.uleb128 0x2
+ 665 0156 91       		.byte	0x91
+ 666 0157 74       		.sleb128 -12
+ 667 0158 08       		.uleb128 0x8
+ 668 0159 7900     		.ascii	"y\000"
+ 669 015b 01       		.byte	0x1
+ 670 015c AD       		.byte	0xad
+ 671 015d 5D000000 		.4byte	0x5d
+ 672 0161 02       		.uleb128 0x2
+ 673 0162 91       		.byte	0x91
+ 674 0163 70       		.sleb128 -16
+ 675 0164 08       		.uleb128 0x8
+ 676 0165 7A00     		.ascii	"z\000"
+ 677 0167 01       		.byte	0x1
+ 678 0168 AE       		.byte	0xae
+ 679 0169 5D000000 		.4byte	0x5d
+ 680 016d 02       		.uleb128 0x2
+ 681 016e 91       		.byte	0x91
+ 682 016f 6C       		.sleb128 -20
+ 683 0170 00       		.byte	0
+ 684 0171 09       		.uleb128 0x9
+ 685 0172 F6010000 		.4byte	.LASF24
+ 686 0176 01       		.byte	0x1
+ 687 0177 B3       		.byte	0xb3
+ 688 0178 00000000 		.4byte	.LFB46
+ 689 017c 54000000 		.4byte	.LFE46-.LFB46
+ 690 0180 01       		.uleb128 0x1
+ 691 0181 9C       		.byte	0x9c
+ 692 0182 B1010000 		.4byte	0x1b1
+ 693 0186 0A       		.uleb128 0xa
+ 694 0187 72656700 		.ascii	"reg\000"
+ 695 018b 01       		.byte	0x1
+ 696 018c B3       		.byte	0xb3
+ 697 018d 6B000000 		.4byte	0x6b
+ 698 0191 02       		.uleb128 0x2
+ 699 0192 91       		.byte	0x91
+ 700 0193 6F       		.sleb128 -17
+ 701 0194 0B       		.uleb128 0xb
+ 702 0195 95000000 		.4byte	.LASF25
+ 703 0199 01       		.byte	0x1
+ 704 019a B3       		.byte	0xb3
+ 705 019b 6B000000 		.4byte	0x6b
+ 706 019f 02       		.uleb128 0x2
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccTDxh26.s 			page 17
+
+
+ 707 01a0 91       		.byte	0x91
+ 708 01a1 6E       		.sleb128 -18
+ 709 01a2 0C       		.uleb128 0xc
+ 710 01a3 0E000000 		.4byte	.LASF26
+ 711 01a7 01       		.byte	0x1
+ 712 01a8 B4       		.byte	0xb4
+ 713 01a9 B1010000 		.4byte	0x1b1
+ 714 01ad 02       		.uleb128 0x2
+ 715 01ae 91       		.byte	0x91
+ 716 01af 74       		.sleb128 -12
+ 717 01b0 00       		.byte	0
+ 718 01b1 0D       		.uleb128 0xd
+ 719 01b2 6B000000 		.4byte	0x6b
+ 720 01b6 C1010000 		.4byte	0x1c1
+ 721 01ba 0E       		.uleb128 0xe
+ 722 01bb 98000000 		.4byte	0x98
+ 723 01bf 01       		.byte	0x1
+ 724 01c0 00       		.byte	0
+ 725 01c1 0F       		.uleb128 0xf
+ 726 01c2 BF000000 		.4byte	.LASF31
+ 727 01c6 01       		.byte	0x1
+ 728 01c7 BF       		.byte	0xbf
+ 729 01c8 6B000000 		.4byte	0x6b
+ 730 01cc 00000000 		.4byte	.LFB47
+ 731 01d0 70000000 		.4byte	.LFE47-.LFB47
+ 732 01d4 01       		.uleb128 0x1
+ 733 01d5 9C       		.byte	0x9c
+ 734 01d6 05020000 		.4byte	0x205
+ 735 01da 0A       		.uleb128 0xa
+ 736 01db 72656700 		.ascii	"reg\000"
+ 737 01df 01       		.byte	0x1
+ 738 01e0 BF       		.byte	0xbf
+ 739 01e1 6B000000 		.4byte	0x6b
+ 740 01e5 02       		.uleb128 0x2
+ 741 01e6 91       		.byte	0x91
+ 742 01e7 6F       		.sleb128 -17
+ 743 01e8 0C       		.uleb128 0xc
+ 744 01e9 0E000000 		.4byte	.LASF26
+ 745 01ed 01       		.byte	0x1
+ 746 01ee C0       		.byte	0xc0
+ 747 01ef 05020000 		.4byte	0x205
+ 748 01f3 02       		.uleb128 0x2
+ 749 01f4 91       		.byte	0x91
+ 750 01f5 74       		.sleb128 -12
+ 751 01f6 0C       		.uleb128 0xc
+ 752 01f7 B1010000 		.4byte	.LASF27
+ 753 01fb 01       		.byte	0x1
+ 754 01fc C3       		.byte	0xc3
+ 755 01fd 05020000 		.4byte	0x205
+ 756 0201 02       		.uleb128 0x2
+ 757 0202 91       		.byte	0x91
+ 758 0203 70       		.sleb128 -16
+ 759 0204 00       		.byte	0
+ 760 0205 10       		.uleb128 0x10
+ 761 0206 6B000000 		.4byte	0x6b
+ 762 020a 0E       		.uleb128 0xe
+ 763 020b 98000000 		.4byte	0x98
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccTDxh26.s 			page 18
+
+
+ 764 020f 00       		.byte	0
+ 765 0210 00       		.byte	0
+ 766 0211 00       		.byte	0
+ 767              		.section	.debug_abbrev,"",%progbits
+ 768              	.Ldebug_abbrev0:
+ 769 0000 01       		.uleb128 0x1
+ 770 0001 11       		.uleb128 0x11
+ 771 0002 01       		.byte	0x1
+ 772 0003 25       		.uleb128 0x25
+ 773 0004 0E       		.uleb128 0xe
+ 774 0005 13       		.uleb128 0x13
+ 775 0006 0B       		.uleb128 0xb
+ 776 0007 03       		.uleb128 0x3
+ 777 0008 0E       		.uleb128 0xe
+ 778 0009 1B       		.uleb128 0x1b
+ 779 000a 0E       		.uleb128 0xe
+ 780 000b 55       		.uleb128 0x55
+ 781 000c 17       		.uleb128 0x17
+ 782 000d 11       		.uleb128 0x11
+ 783 000e 01       		.uleb128 0x1
+ 784 000f 10       		.uleb128 0x10
+ 785 0010 17       		.uleb128 0x17
+ 786 0011 00       		.byte	0
+ 787 0012 00       		.byte	0
+ 788 0013 02       		.uleb128 0x2
+ 789 0014 24       		.uleb128 0x24
+ 790 0015 00       		.byte	0
+ 791 0016 0B       		.uleb128 0xb
+ 792 0017 0B       		.uleb128 0xb
+ 793 0018 3E       		.uleb128 0x3e
+ 794 0019 0B       		.uleb128 0xb
+ 795 001a 03       		.uleb128 0x3
+ 796 001b 0E       		.uleb128 0xe
+ 797 001c 00       		.byte	0
+ 798 001d 00       		.byte	0
+ 799 001e 03       		.uleb128 0x3
+ 800 001f 24       		.uleb128 0x24
+ 801 0020 00       		.byte	0
+ 802 0021 0B       		.uleb128 0xb
+ 803 0022 0B       		.uleb128 0xb
+ 804 0023 3E       		.uleb128 0x3e
+ 805 0024 0B       		.uleb128 0xb
+ 806 0025 03       		.uleb128 0x3
+ 807 0026 08       		.uleb128 0x8
+ 808 0027 00       		.byte	0
+ 809 0028 00       		.byte	0
+ 810 0029 04       		.uleb128 0x4
+ 811 002a 16       		.uleb128 0x16
+ 812 002b 00       		.byte	0
+ 813 002c 03       		.uleb128 0x3
+ 814 002d 0E       		.uleb128 0xe
+ 815 002e 3A       		.uleb128 0x3a
+ 816 002f 0B       		.uleb128 0xb
+ 817 0030 3B       		.uleb128 0x3b
+ 818 0031 05       		.uleb128 0x5
+ 819 0032 49       		.uleb128 0x49
+ 820 0033 13       		.uleb128 0x13
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccTDxh26.s 			page 19
+
+
+ 821 0034 00       		.byte	0
+ 822 0035 00       		.byte	0
+ 823 0036 05       		.uleb128 0x5
+ 824 0037 2E       		.uleb128 0x2e
+ 825 0038 00       		.byte	0
+ 826 0039 3F       		.uleb128 0x3f
+ 827 003a 19       		.uleb128 0x19
+ 828 003b 03       		.uleb128 0x3
+ 829 003c 0E       		.uleb128 0xe
+ 830 003d 3A       		.uleb128 0x3a
+ 831 003e 0B       		.uleb128 0xb
+ 832 003f 3B       		.uleb128 0x3b
+ 833 0040 0B       		.uleb128 0xb
+ 834 0041 11       		.uleb128 0x11
+ 835 0042 01       		.uleb128 0x1
+ 836 0043 12       		.uleb128 0x12
+ 837 0044 06       		.uleb128 0x6
+ 838 0045 40       		.uleb128 0x40
+ 839 0046 18       		.uleb128 0x18
+ 840 0047 9642     		.uleb128 0x2116
+ 841 0049 19       		.uleb128 0x19
+ 842 004a 00       		.byte	0
+ 843 004b 00       		.byte	0
+ 844 004c 06       		.uleb128 0x6
+ 845 004d 2E       		.uleb128 0x2e
+ 846 004e 00       		.byte	0
+ 847 004f 3F       		.uleb128 0x3f
+ 848 0050 19       		.uleb128 0x19
+ 849 0051 03       		.uleb128 0x3
+ 850 0052 0E       		.uleb128 0xe
+ 851 0053 3A       		.uleb128 0x3a
+ 852 0054 0B       		.uleb128 0xb
+ 853 0055 3B       		.uleb128 0x3b
+ 854 0056 0B       		.uleb128 0xb
+ 855 0057 49       		.uleb128 0x49
+ 856 0058 13       		.uleb128 0x13
+ 857 0059 11       		.uleb128 0x11
+ 858 005a 01       		.uleb128 0x1
+ 859 005b 12       		.uleb128 0x12
+ 860 005c 06       		.uleb128 0x6
+ 861 005d 40       		.uleb128 0x40
+ 862 005e 18       		.uleb128 0x18
+ 863 005f 9642     		.uleb128 0x2116
+ 864 0061 19       		.uleb128 0x19
+ 865 0062 00       		.byte	0
+ 866 0063 00       		.byte	0
+ 867 0064 07       		.uleb128 0x7
+ 868 0065 2E       		.uleb128 0x2e
+ 869 0066 01       		.byte	0x1
+ 870 0067 3F       		.uleb128 0x3f
+ 871 0068 19       		.uleb128 0x19
+ 872 0069 03       		.uleb128 0x3
+ 873 006a 0E       		.uleb128 0xe
+ 874 006b 3A       		.uleb128 0x3a
+ 875 006c 0B       		.uleb128 0xb
+ 876 006d 3B       		.uleb128 0x3b
+ 877 006e 0B       		.uleb128 0xb
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccTDxh26.s 			page 20
+
+
+ 878 006f 49       		.uleb128 0x49
+ 879 0070 13       		.uleb128 0x13
+ 880 0071 11       		.uleb128 0x11
+ 881 0072 01       		.uleb128 0x1
+ 882 0073 12       		.uleb128 0x12
+ 883 0074 06       		.uleb128 0x6
+ 884 0075 40       		.uleb128 0x40
+ 885 0076 18       		.uleb128 0x18
+ 886 0077 9642     		.uleb128 0x2116
+ 887 0079 19       		.uleb128 0x19
+ 888 007a 01       		.uleb128 0x1
+ 889 007b 13       		.uleb128 0x13
+ 890 007c 00       		.byte	0
+ 891 007d 00       		.byte	0
+ 892 007e 08       		.uleb128 0x8
+ 893 007f 34       		.uleb128 0x34
+ 894 0080 00       		.byte	0
+ 895 0081 03       		.uleb128 0x3
+ 896 0082 08       		.uleb128 0x8
+ 897 0083 3A       		.uleb128 0x3a
+ 898 0084 0B       		.uleb128 0xb
+ 899 0085 3B       		.uleb128 0x3b
+ 900 0086 0B       		.uleb128 0xb
+ 901 0087 49       		.uleb128 0x49
+ 902 0088 13       		.uleb128 0x13
+ 903 0089 02       		.uleb128 0x2
+ 904 008a 18       		.uleb128 0x18
+ 905 008b 00       		.byte	0
+ 906 008c 00       		.byte	0
+ 907 008d 09       		.uleb128 0x9
+ 908 008e 2E       		.uleb128 0x2e
+ 909 008f 01       		.byte	0x1
+ 910 0090 3F       		.uleb128 0x3f
+ 911 0091 19       		.uleb128 0x19
+ 912 0092 03       		.uleb128 0x3
+ 913 0093 0E       		.uleb128 0xe
+ 914 0094 3A       		.uleb128 0x3a
+ 915 0095 0B       		.uleb128 0xb
+ 916 0096 3B       		.uleb128 0x3b
+ 917 0097 0B       		.uleb128 0xb
+ 918 0098 27       		.uleb128 0x27
+ 919 0099 19       		.uleb128 0x19
+ 920 009a 11       		.uleb128 0x11
+ 921 009b 01       		.uleb128 0x1
+ 922 009c 12       		.uleb128 0x12
+ 923 009d 06       		.uleb128 0x6
+ 924 009e 40       		.uleb128 0x40
+ 925 009f 18       		.uleb128 0x18
+ 926 00a0 9642     		.uleb128 0x2116
+ 927 00a2 19       		.uleb128 0x19
+ 928 00a3 01       		.uleb128 0x1
+ 929 00a4 13       		.uleb128 0x13
+ 930 00a5 00       		.byte	0
+ 931 00a6 00       		.byte	0
+ 932 00a7 0A       		.uleb128 0xa
+ 933 00a8 05       		.uleb128 0x5
+ 934 00a9 00       		.byte	0
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccTDxh26.s 			page 21
+
+
+ 935 00aa 03       		.uleb128 0x3
+ 936 00ab 08       		.uleb128 0x8
+ 937 00ac 3A       		.uleb128 0x3a
+ 938 00ad 0B       		.uleb128 0xb
+ 939 00ae 3B       		.uleb128 0x3b
+ 940 00af 0B       		.uleb128 0xb
+ 941 00b0 49       		.uleb128 0x49
+ 942 00b1 13       		.uleb128 0x13
+ 943 00b2 02       		.uleb128 0x2
+ 944 00b3 18       		.uleb128 0x18
+ 945 00b4 00       		.byte	0
+ 946 00b5 00       		.byte	0
+ 947 00b6 0B       		.uleb128 0xb
+ 948 00b7 05       		.uleb128 0x5
+ 949 00b8 00       		.byte	0
+ 950 00b9 03       		.uleb128 0x3
+ 951 00ba 0E       		.uleb128 0xe
+ 952 00bb 3A       		.uleb128 0x3a
+ 953 00bc 0B       		.uleb128 0xb
+ 954 00bd 3B       		.uleb128 0x3b
+ 955 00be 0B       		.uleb128 0xb
+ 956 00bf 49       		.uleb128 0x49
+ 957 00c0 13       		.uleb128 0x13
+ 958 00c1 02       		.uleb128 0x2
+ 959 00c2 18       		.uleb128 0x18
+ 960 00c3 00       		.byte	0
+ 961 00c4 00       		.byte	0
+ 962 00c5 0C       		.uleb128 0xc
+ 963 00c6 34       		.uleb128 0x34
+ 964 00c7 00       		.byte	0
+ 965 00c8 03       		.uleb128 0x3
+ 966 00c9 0E       		.uleb128 0xe
+ 967 00ca 3A       		.uleb128 0x3a
+ 968 00cb 0B       		.uleb128 0xb
+ 969 00cc 3B       		.uleb128 0x3b
+ 970 00cd 0B       		.uleb128 0xb
+ 971 00ce 49       		.uleb128 0x49
+ 972 00cf 13       		.uleb128 0x13
+ 973 00d0 02       		.uleb128 0x2
+ 974 00d1 18       		.uleb128 0x18
+ 975 00d2 00       		.byte	0
+ 976 00d3 00       		.byte	0
+ 977 00d4 0D       		.uleb128 0xd
+ 978 00d5 01       		.uleb128 0x1
+ 979 00d6 01       		.byte	0x1
+ 980 00d7 49       		.uleb128 0x49
+ 981 00d8 13       		.uleb128 0x13
+ 982 00d9 01       		.uleb128 0x1
+ 983 00da 13       		.uleb128 0x13
+ 984 00db 00       		.byte	0
+ 985 00dc 00       		.byte	0
+ 986 00dd 0E       		.uleb128 0xe
+ 987 00de 21       		.uleb128 0x21
+ 988 00df 00       		.byte	0
+ 989 00e0 49       		.uleb128 0x49
+ 990 00e1 13       		.uleb128 0x13
+ 991 00e2 2F       		.uleb128 0x2f
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccTDxh26.s 			page 22
+
+
+ 992 00e3 0B       		.uleb128 0xb
+ 993 00e4 00       		.byte	0
+ 994 00e5 00       		.byte	0
+ 995 00e6 0F       		.uleb128 0xf
+ 996 00e7 2E       		.uleb128 0x2e
+ 997 00e8 01       		.byte	0x1
+ 998 00e9 3F       		.uleb128 0x3f
+ 999 00ea 19       		.uleb128 0x19
+ 1000 00eb 03       		.uleb128 0x3
+ 1001 00ec 0E       		.uleb128 0xe
+ 1002 00ed 3A       		.uleb128 0x3a
+ 1003 00ee 0B       		.uleb128 0xb
+ 1004 00ef 3B       		.uleb128 0x3b
+ 1005 00f0 0B       		.uleb128 0xb
+ 1006 00f1 27       		.uleb128 0x27
+ 1007 00f2 19       		.uleb128 0x19
+ 1008 00f3 49       		.uleb128 0x49
+ 1009 00f4 13       		.uleb128 0x13
+ 1010 00f5 11       		.uleb128 0x11
+ 1011 00f6 01       		.uleb128 0x1
+ 1012 00f7 12       		.uleb128 0x12
+ 1013 00f8 06       		.uleb128 0x6
+ 1014 00f9 40       		.uleb128 0x40
+ 1015 00fa 18       		.uleb128 0x18
+ 1016 00fb 9642     		.uleb128 0x2116
+ 1017 00fd 19       		.uleb128 0x19
+ 1018 00fe 01       		.uleb128 0x1
+ 1019 00ff 13       		.uleb128 0x13
+ 1020 0100 00       		.byte	0
+ 1021 0101 00       		.byte	0
+ 1022 0102 10       		.uleb128 0x10
+ 1023 0103 01       		.uleb128 0x1
+ 1024 0104 01       		.byte	0x1
+ 1025 0105 49       		.uleb128 0x49
+ 1026 0106 13       		.uleb128 0x13
+ 1027 0107 00       		.byte	0
+ 1028 0108 00       		.byte	0
+ 1029 0109 00       		.byte	0
+ 1030              		.section	.debug_aranges,"",%progbits
+ 1031 0000 6C000000 		.4byte	0x6c
+ 1032 0004 0200     		.2byte	0x2
+ 1033 0006 00000000 		.4byte	.Ldebug_info0
+ 1034 000a 04       		.byte	0x4
+ 1035 000b 00       		.byte	0
+ 1036 000c 0000     		.2byte	0
+ 1037 000e 0000     		.2byte	0
+ 1038 0010 00000000 		.4byte	.LFB37
+ 1039 0014 3E000000 		.4byte	.LFE37-.LFB37
+ 1040 0018 00000000 		.4byte	.LFB38
+ 1041 001c 20000000 		.4byte	.LFE38-.LFB38
+ 1042 0020 00000000 		.4byte	.LFB39
+ 1043 0024 20000000 		.4byte	.LFE39-.LFB39
+ 1044 0028 00000000 		.4byte	.LFB40
+ 1045 002c 40000000 		.4byte	.LFE40-.LFB40
+ 1046 0030 00000000 		.4byte	.LFB41
+ 1047 0034 10000000 		.4byte	.LFE41-.LFB41
+ 1048 0038 00000000 		.4byte	.LFB42
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccTDxh26.s 			page 23
+
+
+ 1049 003c 12000000 		.4byte	.LFE42-.LFB42
+ 1050 0040 00000000 		.4byte	.LFB43
+ 1051 0044 12000000 		.4byte	.LFE43-.LFB43
+ 1052 0048 00000000 		.4byte	.LFB44
+ 1053 004c 12000000 		.4byte	.LFE44-.LFB44
+ 1054 0050 00000000 		.4byte	.LFB45
+ 1055 0054 34000000 		.4byte	.LFE45-.LFB45
+ 1056 0058 00000000 		.4byte	.LFB46
+ 1057 005c 54000000 		.4byte	.LFE46-.LFB46
+ 1058 0060 00000000 		.4byte	.LFB47
+ 1059 0064 70000000 		.4byte	.LFE47-.LFB47
+ 1060 0068 00000000 		.4byte	0
+ 1061 006c 00000000 		.4byte	0
+ 1062              		.section	.debug_ranges,"",%progbits
+ 1063              	.Ldebug_ranges0:
+ 1064 0000 00000000 		.4byte	.LFB37
+ 1065 0004 3E000000 		.4byte	.LFE37
+ 1066 0008 00000000 		.4byte	.LFB38
+ 1067 000c 20000000 		.4byte	.LFE38
+ 1068 0010 00000000 		.4byte	.LFB39
+ 1069 0014 20000000 		.4byte	.LFE39
+ 1070 0018 00000000 		.4byte	.LFB40
+ 1071 001c 40000000 		.4byte	.LFE40
+ 1072 0020 00000000 		.4byte	.LFB41
+ 1073 0024 10000000 		.4byte	.LFE41
+ 1074 0028 00000000 		.4byte	.LFB42
+ 1075 002c 12000000 		.4byte	.LFE42
+ 1076 0030 00000000 		.4byte	.LFB43
+ 1077 0034 12000000 		.4byte	.LFE43
+ 1078 0038 00000000 		.4byte	.LFB44
+ 1079 003c 12000000 		.4byte	.LFE44
+ 1080 0040 00000000 		.4byte	.LFB45
+ 1081 0044 34000000 		.4byte	.LFE45
+ 1082 0048 00000000 		.4byte	.LFB46
+ 1083 004c 54000000 		.4byte	.LFE46
+ 1084 0050 00000000 		.4byte	.LFB47
+ 1085 0054 70000000 		.4byte	.LFE47
+ 1086 0058 00000000 		.4byte	0
+ 1087 005c 00000000 		.4byte	0
+ 1088              		.section	.debug_line,"",%progbits
+ 1089              	.Ldebug_line0:
+ 1090 0000 55010000 		.section	.debug_str,"MS",%progbits,1
+ 1090      02004C00 
+ 1090      00000201 
+ 1090      FB0E0D00 
+ 1090      01010101 
+ 1091              	.LASF16:
+ 1092 0000 696E6974 		.ascii	"initAccelFFMT\000"
+ 1092      41636365 
+ 1092      6C46464D 
+ 1092      5400
+ 1093              	.LASF26:
+ 1094 000e 57726974 		.ascii	"Write_Buf\000"
+ 1094      655F4275 
+ 1094      6600
+ 1095              	.LASF3:
+ 1096 0018 73686F72 		.ascii	"short unsigned int\000"
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccTDxh26.s 			page 24
+
+
+ 1096      7420756E 
+ 1096      7369676E 
+ 1096      65642069 
+ 1096      6E7400
+ 1097              	.LASF8:
+ 1098 002b 756E7369 		.ascii	"unsigned int\000"
+ 1098      676E6564 
+ 1098      20696E74 
+ 1098      00
+ 1099              	.LASF30:
+ 1100 0038 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\GitHub\\BioSnap\\Mas"
+ 1100      73657273 
+ 1100      5C4D6174 
+ 1100      74686577 
+ 1100      5C446F63 
+ 1101 0065 7465725F 		.ascii	"ter_v2\\Master_2.cydsn\000"
+ 1101      76325C4D 
+ 1101      61737465 
+ 1101      725F322E 
+ 1101      63796473 
+ 1102              	.LASF20:
+ 1103 007b 67657441 		.ascii	"getAccelX\000"
+ 1103      6363656C 
+ 1103      5800
+ 1104              	.LASF21:
+ 1105 0085 67657441 		.ascii	"getAccelY\000"
+ 1105      6363656C 
+ 1105      5900
+ 1106              	.LASF11:
+ 1107 008f 666C6F61 		.ascii	"float\000"
+ 1107      7400
+ 1108              	.LASF25:
+ 1109 0095 64617461 		.ascii	"data\000"
+ 1109      00
+ 1110              	.LASF7:
+ 1111 009a 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1111      206C6F6E 
+ 1111      6720756E 
+ 1111      7369676E 
+ 1111      65642069 
+ 1112              	.LASF1:
+ 1113 00b1 756E7369 		.ascii	"unsigned char\000"
+ 1113      676E6564 
+ 1113      20636861 
+ 1113      7200
+ 1114              	.LASF31:
+ 1115 00bf 72656164 		.ascii	"readAccel\000"
+ 1115      41636365 
+ 1115      6C00
+ 1116              	.LASF29:
+ 1117 00c9 2E5C6163 		.ascii	".\\accelerometer.c\000"
+ 1117      63656C65 
+ 1117      726F6D65 
+ 1117      7465722E 
+ 1117      6300
+ 1118              	.LASF5:
+ 1119 00db 6C6F6E67 		.ascii	"long unsigned int\000"
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccTDxh26.s 			page 25
+
+
+ 1119      20756E73 
+ 1119      69676E65 
+ 1119      6420696E 
+ 1119      7400
+ 1120              	.LASF9:
+ 1121 00ed 75696E74 		.ascii	"uint8\000"
+ 1121      3800
+ 1122              	.LASF12:
+ 1123 00f3 646F7562 		.ascii	"double\000"
+ 1123      6C6500
+ 1124              	.LASF10:
+ 1125 00fa 75696E74 		.ascii	"uint16\000"
+ 1125      313600
+ 1126              	.LASF28:
+ 1127 0101 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1127      4320342E 
+ 1127      392E3320 
+ 1127      32303135 
+ 1127      30333033 
+ 1128 0134 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 1128      20726576 
+ 1128      6973696F 
+ 1128      6E203232 
+ 1128      31323230 
+ 1129 0167 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 1129      66756E63 
+ 1129      74696F6E 
+ 1129      2D736563 
+ 1129      74696F6E 
+ 1130              	.LASF17:
+ 1131 018f 696E6974 		.ascii	"initAccelTransient\000"
+ 1131      41636365 
+ 1131      6C547261 
+ 1131      6E736965 
+ 1131      6E7400
+ 1132              	.LASF18:
+ 1133 01a2 696E6974 		.ascii	"initAccelPulse\000"
+ 1133      41636365 
+ 1133      6C50756C 
+ 1133      736500
+ 1134              	.LASF27:
+ 1135 01b1 52656164 		.ascii	"Read_Buf\000"
+ 1135      5F427566 
+ 1135      00
+ 1136              	.LASF13:
+ 1137 01ba 63686172 		.ascii	"char\000"
+ 1137      00
+ 1138              	.LASF19:
+ 1139 01bf 696E6974 		.ascii	"initAccelSleep\000"
+ 1139      41636365 
+ 1139      6C536C65 
+ 1139      657000
+ 1140              	.LASF14:
+ 1141 01ce 73697A65 		.ascii	"sizetype\000"
+ 1141      74797065 
+ 1141      00
+ 1142              	.LASF6:
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccTDxh26.s 			page 26
+
+
+ 1143 01d7 6C6F6E67 		.ascii	"long long int\000"
+ 1143      206C6F6E 
+ 1143      6720696E 
+ 1143      7400
+ 1144              	.LASF15:
+ 1145 01e5 696E6974 		.ascii	"initAccelControl\000"
+ 1145      41636365 
+ 1145      6C436F6E 
+ 1145      74726F6C 
+ 1145      00
+ 1146              	.LASF24:
+ 1147 01f6 77726974 		.ascii	"writeAccel\000"
+ 1147      65416363 
+ 1147      656C00
+ 1148              	.LASF22:
+ 1149 0201 67657441 		.ascii	"getAccelZ\000"
+ 1149      6363656C 
+ 1149      5A00
+ 1150              	.LASF2:
+ 1151 020b 73686F72 		.ascii	"short int\000"
+ 1151      7420696E 
+ 1151      7400
+ 1152              	.LASF4:
+ 1153 0215 6C6F6E67 		.ascii	"long int\000"
+ 1153      20696E74 
+ 1153      00
+ 1154              	.LASF0:
+ 1155 021e 7369676E 		.ascii	"signed char\000"
+ 1155      65642063 
+ 1155      68617200 
+ 1156              	.LASF23:
+ 1157 022a 67657441 		.ascii	"getAccelXYZ\000"
+ 1157      6363656C 
+ 1157      58595A00 
+ 1158              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
