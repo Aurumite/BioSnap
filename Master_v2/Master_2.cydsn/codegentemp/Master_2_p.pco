@@ -15,6 +15,6 @@ set_location "\I2C_1:SCB_IRQ\" interrupt -1 -1 10
 set_location "isr_minute" interrupt -1 -1 17
 set_location "\BLE_1:bless_isr\" interrupt -1 -1 12
 set_location "\I2C_1:SCB\" m0s8scbcell -1 -1 1
-set_io "temp_in(0)" iocell 3 0
-set_io "bat_in(0)" iocell 3 3
+set_io "temp_in(0)" iocell 3 3
+set_io "bat_in(0)" iocell 3 2
 set_location "\Timer_minute:cy_m0s8_tcpwm_1\" m0s8tcpwmcell -1 -1 0

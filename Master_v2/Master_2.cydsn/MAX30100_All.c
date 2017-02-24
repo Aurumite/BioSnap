@@ -114,7 +114,8 @@ void MAX30100_begin(){
 	MAX30100_setMode(DEFAULT_MODE);
     MAX30100_setLedsPulseWidth(DEFAULT_PULSE_WIDTH);
     MAX30100_setSamplingRate(DEFAULT_SAMPLING_RATE);
-    MAX30100_setLedsCurrent(DEFAULT_IR_LED_CURRENT, DEFAULT_RED_LED_CURRENT);
+    //MAX30100_setLedsCurrent(DEFAULT_IR_LED_CURRENT, DEFAULT_RED_LED_CURRENT);
+    MAX30100_setLedsCurrent(THREE_FIFTHS_IR_LED_CURRENT, THREE_FIFTHS_RED_LED_CURRENT);
     MAX30100_setHighresModeEnabled(1);
 	
 }
@@ -436,32 +437,6 @@ void PulseOximeter_checkSample(){
             pulseOximeter.state = PULSEOXIMETER_STATE_IDLE;
             SpO2Calculator_reset();
         }
-
-/*        switch (pulseOximeter.debuggingMode) {
-            case PULSEOXIMETER_DEBUGGINGMODE_RAW_VALUES:
-                Serial.print("R:");
-                Serial.print(hrm.rawIRValue);
-                Serial.print(",");
-                Serial.println(hrm.rawRedValue);
-                break;
-
-            case PULSEOXIMETER_DEBUGGINGMODE_AC_VALUES:
-                Serial.print("R:");
-                Serial.print(irACValue);
-                Serial.print(",");
-                Serial.println(redACValue);
-                break;
-
-            case PULSEOXIMETER_DEBUGGINGMODE_PULSEDETECT:
-                Serial.print("R:");
-                Serial.print(filteredPulseValue);
-                Serial.print(",");
-                Serial.println(BeatDetector_getCurrentThreshold());
-                break;
-
-            default:
-                break;
-        }*/
 
         if (beatDetected){// && onBeatDetected) {
             //onBeatDetected();

@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Master_2\Master_2\Header Files\tempAndBat.h">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Master_2\Master_2">
 <ExpandedNodeIds>
 <v>Master_2</v>
 <v>Master_2\Master_2</v>
@@ -365,8 +365,9 @@
 <name v=".\Master_2.cydsn\tempAndBat.c" />
 <name v=".\Master_2.cydsn\accelerometer.h" />
 <name v=".\Master_2.cydsn\accelerometer.c" />
-<name v=".\Master_2.cydsn\Master_2.cydwr" />
 <name v=".\Master_2.cydsn\tempAndBat.h" />
+<name v=".\Master_2.cydsn\MAX30100_Registers.h" />
+<name v=".\Master_2.cydsn\Master_2.cydwr" />
 </OpenDocs>
 <config v="" />
 <AutoUpdate v="true" />

@@ -1,5 +1,5 @@
 -- Project:   Master_2
--- Generated: 02/10/2017 13:07:09
+-- Generated: 02/19/2017 23:13:03
 -- PSoC Creator  3.3 CP3
 
 ENTITY Master_2 IS
@@ -95,9 +95,9 @@ ARCHITECTURE __DEFAULT__ OF Master_2 IS
     ATTRIBUTE lib_model OF \I2C_1:sda(0)\ : LABEL IS "iocell1";
     ATTRIBUTE lib_model OF \I2C_1:scl(0)\ : LABEL IS "iocell2";
     ATTRIBUTE lib_model OF temp_in(0) : LABEL IS "iocell3";
-    ATTRIBUTE Location OF temp_in(0) : LABEL IS "P3[0]";
+    ATTRIBUTE Location OF temp_in(0) : LABEL IS "P3[3]";
     ATTRIBUTE lib_model OF bat_in(0) : LABEL IS "iocell4";
-    ATTRIBUTE Location OF bat_in(0) : LABEL IS "P3[3]";
+    ATTRIBUTE Location OF bat_in(0) : LABEL IS "P3[2]";
     ATTRIBUTE Location OF \ADC:cy_psoc4_sar\ : LABEL IS "F(SARADC,0)";
     COMPONENT interrupt
         PORT (

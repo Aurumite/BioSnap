@@ -84,9 +84,9 @@
 .set ADC_cy_psoc4_sar__SAR_WOUNDING, CYREG_SAR_WOUNDING
 
 /* ADC_cy_psoc4_sarmux_8 */
-.set ADC_cy_psoc4_sarmux_8__CH_0_PIN, 0
+.set ADC_cy_psoc4_sarmux_8__CH_0_PIN, 3
 .set ADC_cy_psoc4_sarmux_8__CH_0_PORT, 0
-.set ADC_cy_psoc4_sarmux_8__CH_1_PIN, 3
+.set ADC_cy_psoc4_sarmux_8__CH_1_PIN, 2
 .set ADC_cy_psoc4_sarmux_8__CH_1_PORT, 0
 .set ADC_cy_psoc4_sarmux_8__SAR_CHAN_CONFIG00, CYREG_SAR_CHAN_CONFIG0
 .set ADC_cy_psoc4_sarmux_8__SAR_CHAN_CONFIG01, CYREG_SAR_CHAN_CONFIG1
@@ -646,13 +646,13 @@
 .set bat_in__0__DR_INV, CYREG_GPIO_PRT3_DR_INV
 .set bat_in__0__DR_SET, CYREG_GPIO_PRT3_DR_SET
 .set bat_in__0__HSIOM, CYREG_HSIOM_PORT_SEL3
-.set bat_in__0__HSIOM_MASK, 0x0000F000
-.set bat_in__0__HSIOM_SHIFT, 12
+.set bat_in__0__HSIOM_MASK, 0x00000F00
+.set bat_in__0__HSIOM_SHIFT, 8
 .set bat_in__0__INTCFG, CYREG_GPIO_PRT3_INTR_CFG
 .set bat_in__0__INTR, CYREG_GPIO_PRT3_INTR
 .set bat_in__0__INTR_CFG, CYREG_GPIO_PRT3_INTR_CFG
 .set bat_in__0__INTSTAT, CYREG_GPIO_PRT3_INTR
-.set bat_in__0__MASK, 0x08
+.set bat_in__0__MASK, 0x04
 .set bat_in__0__PA__CFG0, CYREG_UDB_PA3_CFG0
 .set bat_in__0__PA__CFG1, CYREG_UDB_PA3_CFG1
 .set bat_in__0__PA__CFG10, CYREG_UDB_PA3_CFG10
@@ -672,7 +672,7 @@
 .set bat_in__0__PC2, CYREG_GPIO_PRT3_PC2
 .set bat_in__0__PORT, 3
 .set bat_in__0__PS, CYREG_GPIO_PRT3_PS
-.set bat_in__0__SHIFT, 3
+.set bat_in__0__SHIFT, 2
 .set bat_in__DR, CYREG_GPIO_PRT3_DR
 .set bat_in__DR_CLR, CYREG_GPIO_PRT3_DR_CLR
 .set bat_in__DR_INV, CYREG_GPIO_PRT3_DR_INV
@@ -681,7 +681,7 @@
 .set bat_in__INTR, CYREG_GPIO_PRT3_INTR
 .set bat_in__INTR_CFG, CYREG_GPIO_PRT3_INTR_CFG
 .set bat_in__INTSTAT, CYREG_GPIO_PRT3_INTR
-.set bat_in__MASK, 0x08
+.set bat_in__MASK, 0x04
 .set bat_in__PA__CFG0, CYREG_UDB_PA3_CFG0
 .set bat_in__PA__CFG1, CYREG_UDB_PA3_CFG1
 .set bat_in__PA__CFG10, CYREG_UDB_PA3_CFG10
@@ -701,7 +701,7 @@
 .set bat_in__PC2, CYREG_GPIO_PRT3_PC2
 .set bat_in__PORT, 3
 .set bat_in__PS, CYREG_GPIO_PRT3_PS
-.set bat_in__SHIFT, 3
+.set bat_in__SHIFT, 2
 
 /* Clock_1 */
 .set Clock_1__CTRL_REGISTER, CYREG_PERI_PCLK_CTL7
@@ -715,13 +715,13 @@
 .set temp_in__0__DR_INV, CYREG_GPIO_PRT3_DR_INV
 .set temp_in__0__DR_SET, CYREG_GPIO_PRT3_DR_SET
 .set temp_in__0__HSIOM, CYREG_HSIOM_PORT_SEL3
-.set temp_in__0__HSIOM_MASK, 0x0000000F
-.set temp_in__0__HSIOM_SHIFT, 0
+.set temp_in__0__HSIOM_MASK, 0x0000F000
+.set temp_in__0__HSIOM_SHIFT, 12
 .set temp_in__0__INTCFG, CYREG_GPIO_PRT3_INTR_CFG
 .set temp_in__0__INTR, CYREG_GPIO_PRT3_INTR
 .set temp_in__0__INTR_CFG, CYREG_GPIO_PRT3_INTR_CFG
 .set temp_in__0__INTSTAT, CYREG_GPIO_PRT3_INTR
-.set temp_in__0__MASK, 0x01
+.set temp_in__0__MASK, 0x08
 .set temp_in__0__PA__CFG0, CYREG_UDB_PA3_CFG0
 .set temp_in__0__PA__CFG1, CYREG_UDB_PA3_CFG1
 .set temp_in__0__PA__CFG10, CYREG_UDB_PA3_CFG10
@@ -741,7 +741,7 @@
 .set temp_in__0__PC2, CYREG_GPIO_PRT3_PC2
 .set temp_in__0__PORT, 3
 .set temp_in__0__PS, CYREG_GPIO_PRT3_PS
-.set temp_in__0__SHIFT, 0
+.set temp_in__0__SHIFT, 3
 .set temp_in__DR, CYREG_GPIO_PRT3_DR
 .set temp_in__DR_CLR, CYREG_GPIO_PRT3_DR_CLR
 .set temp_in__DR_INV, CYREG_GPIO_PRT3_DR_INV
@@ -750,7 +750,7 @@
 .set temp_in__INTR, CYREG_GPIO_PRT3_INTR
 .set temp_in__INTR_CFG, CYREG_GPIO_PRT3_INTR_CFG
 .set temp_in__INTSTAT, CYREG_GPIO_PRT3_INTR
-.set temp_in__MASK, 0x01
+.set temp_in__MASK, 0x08
 .set temp_in__PA__CFG0, CYREG_UDB_PA3_CFG0
 .set temp_in__PA__CFG1, CYREG_UDB_PA3_CFG1
 .set temp_in__PA__CFG10, CYREG_UDB_PA3_CFG10
@@ -770,7 +770,7 @@
 .set temp_in__PC2, CYREG_GPIO_PRT3_PC2
 .set temp_in__PORT, 3
 .set temp_in__PS, CYREG_GPIO_PRT3_PS
-.set temp_in__SHIFT, 0
+.set temp_in__SHIFT, 3
 
 /* isr_minute */
 .set isr_minute__INTC_CLR_EN_REG, CYREG_CM0_ICER

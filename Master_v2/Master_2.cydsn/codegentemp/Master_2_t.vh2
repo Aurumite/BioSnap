@@ -1,5 +1,5 @@
--- Project:   C:\Users\Matthew\Documents\PSoC Creator\Master_v2\Master_2.cydsn\Master_2.cyprj
--- Generated: 02/10/2017 13:07:11
+-- Project:   C:\Users\Matthew\Documents\GitHub\BioSnap\Master_v2\Master_2.cydsn\Master_2.cyprj
+-- Generated: 02/19/2017 23:13:04
 -- PSoC Creator  3.3 CP3
 
 ENTITY Master_2 IS
@@ -98,9 +98,9 @@ ARCHITECTURE __DEFAULT__ OF Master_2 IS
     ATTRIBUTE lib_model OF \I2C_1:scl(0)\ : LABEL IS "iocell2";
     ATTRIBUTE Location OF \I2C_1:scl(0)\ : LABEL IS "P3[5]";
     ATTRIBUTE lib_model OF temp_in(0) : LABEL IS "iocell3";
-    ATTRIBUTE Location OF temp_in(0) : LABEL IS "P3[0]";
+    ATTRIBUTE Location OF temp_in(0) : LABEL IS "P3[3]";
     ATTRIBUTE lib_model OF bat_in(0) : LABEL IS "iocell4";
-    ATTRIBUTE Location OF bat_in(0) : LABEL IS "P3[3]";
+    ATTRIBUTE Location OF bat_in(0) : LABEL IS "P3[2]";
     ATTRIBUTE Location OF \BLE_1:cy_m0s8_ble\ : LABEL IS "F(BLE,0)";
     ATTRIBUTE Location OF \BLE_1:bless_isr\ : LABEL IS "[IntrContainer=(0)][IntrId=(12)]";
     ATTRIBUTE Location OF \I2C_1:SCB_IRQ\ : LABEL IS "[IntrContainer=(0)][IntrId=(10)]";

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc0e8NWR.s 			page 1
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cccxLFMa.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc0e8NWR.s 			page 1
   24:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** * Function Name: I2C_1_scl_Sleep
   25:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** ****************************************************************************//**
   26:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** *
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc0e8NWR.s 			page 2
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cccxLFMa.s 			page 2
 
 
   27:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** * \brief Stores the pin configuration and prepares the pin for entering chip 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc0e8NWR.s 			page 1
   49              	.L2:
   50 0010 08030440 		.word	1074004744
   51 0014 00000000 		.word	I2C_1_scl_backup
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc0e8NWR.s 			page 3
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cccxLFMa.s 			page 3
 
 
   52              		.cfi_endproc
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc0e8NWR.s 			page 1
   92:.\Generated_Source\PSoC4/I2C_1_scl_PM.c ****     #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(I2C_1_scl__SIO)
   93:.\Generated_Source\PSoC4/I2C_1_scl_PM.c ****         I2C_1_scl_SIO_REG = I2C_1_scl_backup.sioState;
   94:.\Generated_Source\PSoC4/I2C_1_scl_PM.c ****     #endif
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc0e8NWR.s 			page 4
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cccxLFMa.s 			page 4
 
 
   95:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** }
@@ -205,48 +205,48 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc0e8NWR.s 			page 1
   96 0006 00000000 		.4byte	.Ldebug_abbrev0
   97 000a 04       		.byte	0x4
   98 000b 01       		.uleb128 0x1
-  99 000c B8000000 		.4byte	.LASF20
+  99 000c BA000000 		.4byte	.LASF20
  100 0010 01       		.byte	0x1
- 101 0011 71010000 		.4byte	.LASF21
- 102 0015 06000000 		.4byte	.LASF22
+ 101 0011 73010000 		.4byte	.LASF21
+ 102 0015 0F000000 		.4byte	.LASF22
  103 0019 00000000 		.4byte	.Ldebug_ranges0+0
  104 001d 00000000 		.4byte	0
  105 0021 00000000 		.4byte	.Ldebug_line0
  106 0025 02       		.uleb128 0x2
  107 0026 01       		.byte	0x1
  108 0027 06       		.byte	0x6
- 109 0028 E1010000 		.4byte	.LASF0
+ 109 0028 E3010000 		.4byte	.LASF0
  110 002c 02       		.uleb128 0x2
  111 002d 01       		.byte	0x1
  112 002e 08       		.byte	0x8
- 113 002f 6E000000 		.4byte	.LASF1
+ 113 002f 70000000 		.4byte	.LASF1
  114 0033 02       		.uleb128 0x2
  115 0034 02       		.byte	0x2
  116 0035 05       		.byte	0x5
- 117 0036 B5010000 		.4byte	.LASF2
+ 117 0036 B7010000 		.4byte	.LASF2
  118 003a 02       		.uleb128 0x2
  119 003b 02       		.byte	0x2
  120 003c 07       		.byte	0x7
- 121 003d 8E000000 		.4byte	.LASF3
+ 121 003d 90000000 		.4byte	.LASF3
  122 0041 02       		.uleb128 0x2
  123 0042 04       		.byte	0x4
  124 0043 05       		.byte	0x5
- 125 0044 D8010000 		.4byte	.LASF4
+ 125 0044 DA010000 		.4byte	.LASF4
  126 0048 02       		.uleb128 0x2
  127 0049 04       		.byte	0x4
  128 004a 07       		.byte	0x7
- 129 004b 7C000000 		.4byte	.LASF5
+ 129 004b 7E000000 		.4byte	.LASF5
  130 004f 02       		.uleb128 0x2
  131 0050 08       		.byte	0x8
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc0e8NWR.s 			page 5
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cccxLFMa.s 			page 5
 
 
  132 0051 05       		.byte	0x5
- 133 0052 A2010000 		.4byte	.LASF6
+ 133 0052 A4010000 		.4byte	.LASF6
  134 0056 02       		.uleb128 0x2
  135 0057 08       		.byte	0x8
  136 0058 07       		.byte	0x7
- 137 0059 5A010000 		.4byte	.LASF7
+ 137 0059 5C010000 		.4byte	.LASF7
  138 005d 03       		.uleb128 0x3
  139 005e 04       		.byte	0x4
  140 005f 05       		.byte	0x5
@@ -254,24 +254,24 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc0e8NWR.s 			page 1
  142 0064 02       		.uleb128 0x2
  143 0065 04       		.byte	0x4
  144 0066 07       		.byte	0x7
- 145 0067 4D010000 		.4byte	.LASF8
+ 145 0067 4F010000 		.4byte	.LASF8
  146 006b 04       		.uleb128 0x4
- 147 006c 46010000 		.4byte	.LASF12
+ 147 006c 48010000 		.4byte	.LASF12
  148 0070 02       		.byte	0x2
  149 0071 9A01     		.2byte	0x19a
  150 0073 48000000 		.4byte	0x48
  151 0077 02       		.uleb128 0x2
  152 0078 04       		.byte	0x4
  153 0079 04       		.byte	0x4
- 154 007a 68000000 		.4byte	.LASF9
+ 154 007a 6A000000 		.4byte	.LASF9
  155 007e 02       		.uleb128 0x2
  156 007f 08       		.byte	0x8
  157 0080 04       		.byte	0x4
- 158 0081 B1000000 		.4byte	.LASF10
+ 158 0081 B3000000 		.4byte	.LASF10
  159 0085 02       		.uleb128 0x2
  160 0086 01       		.byte	0x1
  161 0087 08       		.byte	0x8
- 162 0088 B0010000 		.4byte	.LASF11
+ 162 0088 B2010000 		.4byte	.LASF11
  163 008c 04       		.uleb128 0x4
  164 008d 00000000 		.4byte	.LASF13
  165 0091 02       		.byte	0x2
@@ -285,20 +285,20 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc0e8NWR.s 			page 1
  173 00a0 21       		.byte	0x21
  174 00a1 CA000000 		.4byte	0xca
  175 00a5 07       		.uleb128 0x7
- 176 00a6 BF010000 		.4byte	.LASF14
+ 176 00a6 C1010000 		.4byte	.LASF14
  177 00aa 03       		.byte	0x3
  178 00ab 23       		.byte	0x23
  179 00ac 6B000000 		.4byte	0x6b
  180 00b0 00       		.byte	0
  181 00b1 07       		.uleb128 0x7
- 182 00b2 99010000 		.4byte	.LASF15
+ 182 00b2 9B010000 		.4byte	.LASF15
  183 00b6 03       		.byte	0x3
  184 00b7 24       		.byte	0x24
  185 00b8 6B000000 		.4byte	0x6b
  186 00bc 04       		.byte	0x4
  187 00bd 07       		.uleb128 0x7
- 188 00be 47000000 		.4byte	.LASF16
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc0e8NWR.s 			page 6
+ 188 00be 06000000 		.4byte	.LASF16
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cccxLFMa.s 			page 6
 
 
  189 00c2 03       		.byte	0x3
@@ -307,12 +307,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc0e8NWR.s 			page 1
  192 00c8 08       		.byte	0x8
  193 00c9 00       		.byte	0
  194 00ca 08       		.uleb128 0x8
- 195 00cb 50000000 		.4byte	.LASF17
+ 195 00cb 52000000 		.4byte	.LASF17
  196 00cf 03       		.byte	0x3
  197 00d0 26       		.byte	0x26
  198 00d1 9D000000 		.4byte	0x9d
  199 00d5 09       		.uleb128 0x9
- 200 00d6 A1000000 		.4byte	.LASF18
+ 200 00d6 A3000000 		.4byte	.LASF18
  201 00da 01       		.byte	0x1
  202 00db 2C       		.byte	0x2c
  203 00dc 00000000 		.4byte	.LFB0
@@ -320,7 +320,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc0e8NWR.s 			page 1
  205 00e4 01       		.uleb128 0x1
  206 00e5 9C       		.byte	0x9c
  207 00e6 09       		.uleb128 0x9
- 208 00e7 ED010000 		.4byte	.LASF19
+ 208 00e7 EF010000 		.4byte	.LASF19
  209 00eb 01       		.byte	0x1
  210 00ec 50       		.byte	0x50
  211 00ed 00000000 		.4byte	.LFB1
@@ -328,7 +328,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc0e8NWR.s 			page 1
  213 00f5 01       		.uleb128 0x1
  214 00f6 9C       		.byte	0x9c
  215 00f7 0A       		.uleb128 0xa
- 216 00f8 C7010000 		.4byte	.LASF23
+ 216 00f8 C9010000 		.4byte	.LASF23
  217 00fc 01       		.byte	0x1
  218 00fd 14       		.byte	0x14
  219 00fe CA000000 		.4byte	0xca
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc0e8NWR.s 			page 1
  243 0011 00       		.byte	0
  244 0012 00       		.byte	0
  245 0013 02       		.uleb128 0x2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc0e8NWR.s 			page 7
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cccxLFMa.s 			page 7
 
 
  246 0014 24       		.uleb128 0x24
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc0e8NWR.s 			page 1
  300 004a 07       		.uleb128 0x7
  301 004b 0D       		.uleb128 0xd
  302 004c 00       		.byte	0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc0e8NWR.s 			page 8
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cccxLFMa.s 			page 8
 
 
  303 004d 03       		.uleb128 0x3
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc0e8NWR.s 			page 1
  357 0084 0B       		.uleb128 0xb
  358 0085 3B       		.uleb128 0x3b
  359 0086 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc0e8NWR.s 			page 9
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cccxLFMa.s 			page 9
 
 
  360 0087 49       		.uleb128 0x49
@@ -520,85 +520,85 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc0e8NWR.s 			page 1
  392              	.LASF13:
  393 0000 72656733 		.ascii	"reg32\000"
  393      3200
- 394              	.LASF22:
- 395 0006 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\PSoC Creator\\Master"
- 395      73657273 
- 395      5C4D6174 
- 395      74686577 
- 395      5C446F63 
- 396 0034 5F76325C 		.ascii	"_v2\\Master_2.cydsn\000"
- 396      4D617374 
- 396      65725F32 
- 396      2E637964 
- 396      736E00
- 397              	.LASF16:
- 398 0047 75736253 		.ascii	"usbState\000"
- 398      74617465 
- 398      00
+ 394              	.LASF16:
+ 395 0006 75736253 		.ascii	"usbState\000"
+ 395      74617465 
+ 395      00
+ 396              	.LASF22:
+ 397 000f 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\GitHub\\BioSnap\\Mas"
+ 397      73657273 
+ 397      5C4D6174 
+ 397      74686577 
+ 397      5C446F63 
+ 398 003c 7465725F 		.ascii	"ter_v2\\Master_2.cydsn\000"
+ 398      76325C4D 
+ 398      61737465 
+ 398      725F322E 
+ 398      63796473 
  399              	.LASF17:
- 400 0050 4932435F 		.ascii	"I2C_1_scl_BACKUP_STRUCT\000"
+ 400 0052 4932435F 		.ascii	"I2C_1_scl_BACKUP_STRUCT\000"
  400      315F7363 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc0e8NWR.s 			page 10
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cccxLFMa.s 			page 10
 
 
  400      6C5F4241 
  400      434B5550 
  400      5F535452 
  401              	.LASF9:
- 402 0068 666C6F61 		.ascii	"float\000"
+ 402 006a 666C6F61 		.ascii	"float\000"
  402      7400
  403              	.LASF1:
- 404 006e 756E7369 		.ascii	"unsigned char\000"
+ 404 0070 756E7369 		.ascii	"unsigned char\000"
  404      676E6564 
  404      20636861 
  404      7200
  405              	.LASF5:
- 406 007c 6C6F6E67 		.ascii	"long unsigned int\000"
+ 406 007e 6C6F6E67 		.ascii	"long unsigned int\000"
  406      20756E73 
  406      69676E65 
  406      6420696E 
  406      7400
  407              	.LASF3:
- 408 008e 73686F72 		.ascii	"short unsigned int\000"
+ 408 0090 73686F72 		.ascii	"short unsigned int\000"
  408      7420756E 
  408      7369676E 
  408      65642069 
  408      6E7400
  409              	.LASF18:
- 410 00a1 4932435F 		.ascii	"I2C_1_scl_Sleep\000"
+ 410 00a3 4932435F 		.ascii	"I2C_1_scl_Sleep\000"
  410      315F7363 
  410      6C5F536C 
  410      65657000 
  411              	.LASF10:
- 412 00b1 646F7562 		.ascii	"double\000"
+ 412 00b3 646F7562 		.ascii	"double\000"
  412      6C6500
  413              	.LASF20:
- 414 00b8 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 414 00ba 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
  414      4320342E 
  414      392E3320 
  414      32303135 
  414      30333033 
- 415 00eb 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 415 00ed 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
  415      20726576 
  415      6973696F 
  415      6E203232 
  415      31323230 
- 416 011e 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 416 0120 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
  416      66756E63 
  416      74696F6E 
  416      2D736563 
  416      74696F6E 
  417              	.LASF12:
- 418 0146 75696E74 		.ascii	"uint32\000"
+ 418 0148 75696E74 		.ascii	"uint32\000"
  418      333200
  419              	.LASF8:
- 420 014d 756E7369 		.ascii	"unsigned int\000"
+ 420 014f 756E7369 		.ascii	"unsigned int\000"
  420      676E6564 
  420      20696E74 
  420      00
  421              	.LASF7:
- 422 015a 6C6F6E67 		.ascii	"long long unsigned int\000"
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc0e8NWR.s 			page 11
+ 422 015c 6C6F6E67 		.ascii	"long long unsigned int\000"
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cccxLFMa.s 			page 11
 
 
  422      206C6F6E 
@@ -606,46 +606,46 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc0e8NWR.s 			page 1
  422      7369676E 
  422      65642069 
  423              	.LASF21:
- 424 0171 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\I2C_1_scl_PM.c\000"
+ 424 0173 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\I2C_1_scl_PM.c\000"
  424      6E657261 
  424      7465645F 
  424      536F7572 
  424      63655C50 
  425              	.LASF15:
- 426 0199 73696F53 		.ascii	"sioState\000"
+ 426 019b 73696F53 		.ascii	"sioState\000"
  426      74617465 
  426      00
  427              	.LASF6:
- 428 01a2 6C6F6E67 		.ascii	"long long int\000"
+ 428 01a4 6C6F6E67 		.ascii	"long long int\000"
  428      206C6F6E 
  428      6720696E 
  428      7400
  429              	.LASF11:
- 430 01b0 63686172 		.ascii	"char\000"
+ 430 01b2 63686172 		.ascii	"char\000"
  430      00
  431              	.LASF2:
- 432 01b5 73686F72 		.ascii	"short int\000"
+ 432 01b7 73686F72 		.ascii	"short int\000"
  432      7420696E 
  432      7400
  433              	.LASF14:
- 434 01bf 70635374 		.ascii	"pcState\000"
+ 434 01c1 70635374 		.ascii	"pcState\000"
  434      61746500 
  435              	.LASF23:
- 436 01c7 4932435F 		.ascii	"I2C_1_scl_backup\000"
+ 436 01c9 4932435F 		.ascii	"I2C_1_scl_backup\000"
  436      315F7363 
  436      6C5F6261 
  436      636B7570 
  436      00
  437              	.LASF4:
- 438 01d8 6C6F6E67 		.ascii	"long int\000"
+ 438 01da 6C6F6E67 		.ascii	"long int\000"
  438      20696E74 
  438      00
  439              	.LASF0:
- 440 01e1 7369676E 		.ascii	"signed char\000"
+ 440 01e3 7369676E 		.ascii	"signed char\000"
  440      65642063 
  440      68617200 
  441              	.LASF19:
- 442 01ed 4932435F 		.ascii	"I2C_1_scl_Wakeup\000"
+ 442 01ef 4932435F 		.ascii	"I2C_1_scl_Wakeup\000"
  442      315F7363 
  442      6C5F5761 
  442      6B657570 
