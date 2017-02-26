@@ -551,6 +551,7 @@ public class BleService extends Service {
     public String getHeartRate(){
         return "Heart Rate: " + Integer.toString(mHeartRate) + "bpm";
     }
+    public double getHeartRateD() {return (double)mHeartRate;}
 
     public String getSP02(){
         return "SP02: " + Integer.toString(mSP02);

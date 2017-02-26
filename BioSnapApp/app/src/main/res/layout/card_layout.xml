@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/card_view"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    card_view:cardCornerRadius="4dp"
-    android:layout_margin="5dp">
+<!--<android.support.v7.widget.CardView-->
+    <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:id="@+id/card_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--card_view:cardCornerRadius="4dp"-->
+    <!--android:layout_margin="5dp">-->
 
 
     <RelativeLayout
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
         <TextView
             android:id="@+id/txtType"
             android:layout_width="match_parent"
@@ -26,10 +28,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Measurement"
-            android:layout_centerHorizontal="true"
             android:gravity="center"
             android:layout_below="@id/txtType"
             android:textSize="20sp"
+            android:paddingStart="50dp"
             />
 
         <TextView
@@ -42,11 +44,15 @@
             android:paddingStart="15dp"
             android:textSize="20sp"/>
 
+
+        <!--
         <com.jjoe64.graphview.GraphView
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:id="@+id/graph"
             android:layout_below="@id/txtUnit"/>
+
+        -->
         
     </RelativeLayout>
-</android.support.v7.widget.CardView>
+<!--</android.support.v7.widget.CardView>-->

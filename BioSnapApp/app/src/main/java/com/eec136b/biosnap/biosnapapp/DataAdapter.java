@@ -25,11 +25,11 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.DataViewHolder
 
     private List<DataInfo> dataList;
     private int lastX = 1;
-
+    private int howOften = 0;
     public DataAdapter(List<DataInfo> dataList){
 
         this.dataList = dataList;
-
+        setHasStableIds(true);
     }
 
     @Override
@@ -46,15 +46,20 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.DataViewHolder
         dataViewHolder.vMeasurement.setText(di.measurement);
         dataViewHolder.vUnit.setText(di.unit);
 
-        if(di.unit.equalsIgnoreCase("celsius")) {
-            if(firstRunTemp) {
-                dataViewHolder.vGraph.addSeries(di.series);
-                dataViewHolder.vGraph.getViewport().setXAxisBoundsManual(true);
-                dataViewHolder.vGraph.getViewport().setMinX(0);
-                dataViewHolder.vGraph.getViewport().setMaxX(1000);
-                firstRunTemp = false;
-            }
-        }
+//        if(di.unit.equalsIgnoreCase("celsius")) {
+//            if(firstRunTemp) {
+//                dataViewHolder.vGraph.addSeries(di.series);
+//                dataViewHolder.vGraph.getViewport().setXAxisBoundsManual(true);
+//                dataViewHolder.vGraph.getViewport().setMinX(0);
+//                dataViewHolder.vGraph.getViewport().setMaxX(100);
+//                firstRunTemp = false;
+//            }
+//        }
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return position;
     }
 
     @Override
@@ -67,8 +72,9 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.DataViewHolder
 //        graph.getViewport().setXAxisBoundsManual(true);
 //        graph.getViewport().setMinX(0);
 //        graph.getViewport().setMaxX(40);
-
+        Log.d(TAG,"IN onCreateViewHolder");
         return new DataViewHolder(itemView);
+
     }
 
     @Override
@@ -81,7 +87,7 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.DataViewHolder
         protected TextView vType;
         protected TextView vMeasurement;
         protected TextView vUnit;
-        protected GraphView vGraph;
+//        protected GraphView vGraph;
 
         public DataViewHolder(View view){
             super(view);
@@ -89,9 +95,9 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.DataViewHolder
             vType = (TextView)(view.findViewById(R.id.txtType));
             vMeasurement = (TextView)(view.findViewById(R.id.txtMeasurement));
             vUnit = (TextView)(view.findViewById(R.id.txtUnit));
-            vGraph = (GraphView)(view.findViewById(R.id.graph));
+//            vGraph = (GraphView)(view.findViewById(R.id.graph));
 
-
+            Log.d(TAG,"DataViewHolder function");
 
         }
     }

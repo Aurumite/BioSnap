@@ -13,8 +13,11 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.os.Build;
+import android.os.Handler;
 import android.os.IBinder;
+import android.provider.ContactsContract;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -26,9 +29,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.Toast;
 
 import com.jjoe64.graphview.GraphView;
+import com.jjoe64.graphview.LegendRenderer;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
 
@@ -39,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
 
     private final static String TAG = MainActivity.class.getSimpleName();
 
+    private final Handler mHandler = new Handler();
+    private Runnable mTimer;
     private Toolbar mToolbar;
     private Button mScanButton;
     private Button mConnectButton;
@@ -46,8 +53,13 @@ public class MainActivity extends AppCompatActivity {
     private Button mDiscoverButton;
     private DataAdapter mDataAdapter;
     private List<DataInfo> mDataInfo;
-    private LineGraphSeries<DataPoint> series;
+    private GraphView mGraphView;
+    private LineGraphSeries<DataPoint> mTempSeries;
+    private LineGraphSeries<DataPoint> mHeartRateSeries;
+
     private int tempCount = 0;
+    private int lastTempX = 0;
+    private double mCurTemp, mCurHeartRate;
 
     // Variables to manage BLE connection
     private static boolean mConnectState;
@@ -57,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private static final int REQUEST_ENABLE_BLE = 1;
-    private static final int ACCELROMETER = 0;
+    private static final int ACCELEROMETER = 0;
     private static final int BATTERY = 1;
     private static final int HEARTRATE = 2;
     private static final int OXIMETRY = 3;
@@ -104,13 +116,35 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(false);
         //getSupportActionBar().setDisplayShowTitleEnabled(true);
 
+
+        //view initialization besides graphview, done below
         mScanButton = (Button)(findViewById(R.id.scan_button));
         mConnectButton = (Button)(findViewById(R.id.connect_button));
         mNotifButton = (Button)(findViewById(R.id.notifications_button));
         mDiscoverButton = (Button)(findViewById(R.id.discover_services_button));
-        series = new LineGraphSeries<>();
+
+        //graphView initialization
+        mGraphView = (GraphView)(findViewById(R.id.my_graph));
+
+        mTempSeries = new LineGraphSeries<>();
+        mTempSeries.setColor(Color.YELLOW);
+        mTempSeries.setTitle("Body Temperature");
+        mHeartRateSeries = new LineGraphSeries<>();
+        mHeartRateSeries.setColor(Color.RED);
+        mHeartRateSeries.setTitle("Heart Rate");
 
 
+        mGraphView.getViewport().setXAxisBoundsManual(true);
+        mGraphView.getViewport().setYAxisBoundsManual(true);
+        mGraphView.getViewport().setMaxX(100);
+        mGraphView.getViewport().setMinX(0);
+        mGraphView.getViewport().setMaxY(100);
+        mGraphView.getLegendRenderer().setVisible(true);
+        mGraphView.getLegendRenderer().setAlign(LegendRenderer.LegendAlign.TOP);
+        mGraphView.getLegendRenderer().setFixedPosition(0,0);
+
+
+        //setting up RecyclerView adapter
         RecyclerView recList = (RecyclerView) findViewById(R.id.cardList);
         recList.setHasFixedSize(true);
         LinearLayoutManager llm = new LinearLayoutManager(this);
@@ -119,6 +153,9 @@ public class MainActivity extends AppCompatActivity {
 
         mDataAdapter = new DataAdapter(getSampleData());
         recList.setAdapter(mDataAdapter);
+
+
+
 
         //This section required for Android 6.0 (Marshmallow)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -214,13 +251,17 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onPause() {
-        super.onPause();
+        mHandler.removeCallbacks(mTimer);
         unregisterReceiver(mBleUpdateReceiver);
+
+        super.onPause();
+
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        mHandler.removeCallbacks(mTimer);
         // Close and unbind the service when the activity goes away
         mBleService.close();
         unbindService(mServiceConnection);
@@ -313,21 +354,48 @@ public class MainActivity extends AppCompatActivity {
                     mDiscoverButton.setEnabled(false);
                     mNotifButton.setEnabled(true);
                     mBleService.notify(true);
+                    mDataInfo = mDataAdapter.getDataList();
                     break;
                 case BleService.ACTION_DATA_RECEIVED:
                     // This is called after a notify or a read completes
                     mNotifButton.setEnabled(false);
-                        mDataInfo = mDataAdapter.getDataList();
 
-                        mDataInfo.get(ACCELROMETER).setMeasurement(mBleService.getXYZ());
+                    if(tempCount++ % 100 == 0) {
+                        mCurTemp = Double.valueOf(mBleService.getTemperature());
+                        mCurHeartRate = mBleService.getHeartRateD();
+                        mDataInfo.get(ACCELEROMETER).setMeasurement(mBleService.getXYZ());
                         mDataInfo.get(BATTERY).setMeasurement(mBleService.getBatteryLevel());
                         mDataInfo.get(HEARTRATE).setMeasurement(mBleService.getHeartRate());
                         mDataInfo.get(OXIMETRY).setMeasurement(mBleService.getSP02());
                         mDataInfo.get(TEMPERATURE).setMeasurement(mBleService.getTemperature());
-                        mDataInfo.get(TEMPERATURE).appendMyData();
 
 //                    mDataInfo.get(TEMPERATURE).appendGraph();
-                        mDataAdapter.notifyItemRangeChanged(ACCELROMETER, 5);
+                    mDataAdapter.notifyItemRangeChanged(0, mDataAdapter.getItemCount());
+//                        mDataAdapter.notifyItemChanged(TEMPERATURE);
+                    mTimer = new Runnable() {
+                        @Override
+                        public void run() {
+
+                            mTempSeries.appendData(new DataPoint(lastTempX, mCurTemp),false,100);
+                            mHeartRateSeries.appendData(new DataPoint(lastTempX, mCurHeartRate), false, 100);
+                            if(lastTempX >= 100){
+                                DataPoint[] valuesTemp = new DataPoint[1];
+                                DataPoint[] valuesHR = new DataPoint[1];
+
+                                valuesTemp[0] = new DataPoint(0,mCurTemp);
+                                valuesHR[0] = new DataPoint(0, mCurHeartRate);
+
+                                mTempSeries.resetData(valuesTemp);
+                                mHeartRateSeries.resetData(valuesHR);
+                                lastTempX = 1;
+
+                            }
+                            lastTempX += 1d;
+                            mHandler.postDelayed(this, 1000);
+                            }
+                        };
+                        mHandler.postDelayed(mTimer, 1000);
+                    }
 //                    mDataAdapter.notifyDataSetChanged();
 
                 default:
@@ -345,8 +413,30 @@ public class MainActivity extends AppCompatActivity {
         sampleList.add(new DataInfo("Oxygen Concentration"));
         sampleList.add(new DataInfo("Temperature","Celsius"));
 
-
-
         return sampleList;
+    }
+
+    public void onCheckboxClicked(View view){
+        // Is the view now checked?
+        boolean checked = ((CheckBox) view).isChecked();
+
+        //Check which Checkbox was clicked
+        switch(view.getId()){
+            case R.id.checkbox_heart_rate:
+                if(checked) {
+                    mGraphView.addSeries(mHeartRateSeries);
+                }else
+                    mGraphView.removeSeries(mHeartRateSeries);
+                break;
+            case R.id.checkbox_temp:
+                if(checked)
+//                    Log.d(TAG,"checked temp box");
+                    mGraphView.addSeries(mTempSeries);
+                else
+                    mGraphView.removeSeries(mTempSeries);
+                break;
+        }
+
+
     }
 }
