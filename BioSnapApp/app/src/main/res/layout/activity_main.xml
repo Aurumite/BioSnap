@@ -20,41 +20,59 @@
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
-            <Button
-                android:id="@+id/scan_button"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/scan_for_ble"
-                android:enabled="false"
-                android:onClick="bleScan" />
-            <Button
-                android:id="@+id/connect_button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/connect_to_ble"
-                android:enabled="false"
-                android:onClick="tempSenseConnect" />
-            <Button
-                android:id="@+id/discover_services_button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/discover_services"
-                android:enabled="false"
-                android:onClick="discoverServices" />
-            <Button
-                android:id="@+id/notifications_button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/enable_notifications"
-                android:enabled="false"
-                android:onClick="enableNotif" />
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:id="@+id/scan_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scan_for_ble"
+                    android:enabled="false"
+                    android:onClick="bleScan"
+                    android:layout_weight="2"/>
+                <Button
+                    android:id="@+id/disconnect_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/disconnect_ble"
+                    android:onClick="bleDisconnect"
+                    android:enabled="false"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <!--<Button-->
+                <!--android:id="@+id/connect_button"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/connect_to_ble"-->
+                <!--android:enabled="false"-->
+                <!--android:onClick="tempSenseConnect" />-->
+            <!--<Button-->
+                <!--android:id="@+id/discover_services_button"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/discover_services"-->
+                <!--android:enabled="false"-->
+                <!--android:onClick="discoverServices" />-->
+            <!--<Button-->
+                <!--android:id="@+id/notifications_button"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/enable_notifications"-->
+                <!--android:enabled="false"-->
+                <!--android:onClick="enableNotif" />-->
 
             <View style="@style/Divider" />
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/cardList"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 />
 
             <View style="@style/Divider" />

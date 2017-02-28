@@ -266,7 +266,6 @@ public class BleService extends Service {
         if (mBluetoothGatt == null) {
             return;
         }
-        notify(false);
         mBluetoothGatt.close();
         mBluetoothGatt = null;
     }

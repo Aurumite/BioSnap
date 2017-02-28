@@ -44,6 +44,8 @@
             android:paddingStart="15dp"
             android:textSize="20sp"/>
 
+        <View style="@style/Divider" />
+
 
         <!--
         <com.jjoe64.graphview.GraphView

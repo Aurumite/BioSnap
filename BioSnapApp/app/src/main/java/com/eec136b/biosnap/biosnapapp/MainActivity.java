@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
     private final Handler mHandler = new Handler();
     private Runnable mTimer;
     private Toolbar mToolbar;
+    private Button mDisconnectButton;
     private Button mScanButton;
     private Button mConnectButton;
     private Button mNotifButton;
@@ -119,15 +120,15 @@ public class MainActivity extends AppCompatActivity {
 
         //view initialization besides graphview, done below
         mScanButton = (Button)(findViewById(R.id.scan_button));
-        mConnectButton = (Button)(findViewById(R.id.connect_button));
-        mNotifButton = (Button)(findViewById(R.id.notifications_button));
-        mDiscoverButton = (Button)(findViewById(R.id.discover_services_button));
+//        mConnectButton = (Button)(findViewById(R.id.connect_button));
+//        mNotifButton = (Button)(findViewById(R.id.notifications_button));
+//        mDiscoverButton = (Button)(findViewById(R.id.discover_services_button));
+        mDisconnectButton = (Button)(findViewById(R.id.disconnect_button));
 
         //graphView initialization
         mGraphView = (GraphView)(findViewById(R.id.my_graph));
 
         mTempSeries = new LineGraphSeries<>();
-        mTempSeries.setColor(Color.YELLOW);
         mTempSeries.setTitle("Body Temperature");
         mHeartRateSeries = new LineGraphSeries<>();
         mHeartRateSeries.setColor(Color.RED);
@@ -138,9 +139,13 @@ public class MainActivity extends AppCompatActivity {
         mGraphView.getViewport().setYAxisBoundsManual(true);
         mGraphView.getViewport().setMaxX(100);
         mGraphView.getViewport().setMinX(0);
-        mGraphView.getViewport().setMaxY(100);
+        mGraphView.getViewport().setMaxY(40);
+        mGraphView.getSecondScale().setMinY(0);
+        mGraphView.getSecondScale().setMaxY(160);
         mGraphView.getLegendRenderer().setVisible(true);
-        mGraphView.getLegendRenderer().setAlign(LegendRenderer.LegendAlign.TOP);
+        mGraphView.getGridLabelRenderer().setHorizontalAxisTitle("data points");
+        mGraphView.getGridLabelRenderer().setVerticalAxisTitle("celsius");
+        mGraphView.getSecondScale().setVerticalAxisTitle("beats per minute");
         mGraphView.getLegendRenderer().setFixedPosition(0,0);
 
 
@@ -291,6 +296,7 @@ public class MainActivity extends AppCompatActivity {
         // Disable the start button and turn on the search  button
         mScanButton.setEnabled(true);
         Log.d(TAG, "Bluetooth is Enabled");
+        Toast.makeText(MainActivity.this,"Bluetooth is Enabled",Toast.LENGTH_SHORT).show();
     }
     public void bleScan(View view){
         Log.d(TAG," " + mServiceConnected);
@@ -300,6 +306,10 @@ public class MainActivity extends AppCompatActivity {
         else {
             Toast.makeText(MainActivity.this,"Service not connected, will not scan",Toast.LENGTH_SHORT).show();
         }
+    }
+
+    public void bleDisconnect(View view){
+        mBleService.disconnect();
     }
 
     public void tempSenseConnect(View view){
@@ -321,7 +331,7 @@ public class MainActivity extends AppCompatActivity {
                 case BleService.ACTION_BLESCAN_CALLBACK:
                     // Disable the search button and enable the connect button
                     mScanButton.setEnabled(false);
-                    mConnectButton.setEnabled(true);
+//                    mConnectButton.setEnabled(true);
                     mBleService.connect();
                     Toast.makeText(MainActivity.this,"CALLBACK received", Toast.LENGTH_SHORT).show();
                     break;
@@ -330,8 +340,9 @@ public class MainActivity extends AppCompatActivity {
                     /* action when sending notifications */
                     if (!mConnectState) {
                         // Disable the connect button, discover services
-                        mConnectButton.setEnabled(false);
-                        mDiscoverButton.setEnabled(true);
+//                        mConnectButton.setEnabled(false);
+//                        mDiscoverButton.setEnabled(true);
+                        mDisconnectButton.setEnabled(true);
                         mConnectState = true;
                         mBleService.discoverServices();
 
@@ -343,24 +354,25 @@ public class MainActivity extends AppCompatActivity {
                     // Disable the disconnect, discover svc, discover char button, and enable the search button
                     mConnectState = false;
                     mScanButton.setEnabled(true);
-                    mDiscoverButton.setEnabled(false);
-                    mNotifButton.setEnabled(false);
-                    mConnectButton.setEnabled(false);
+//                    mDiscoverButton.setEnabled(false);
+//                    mNotifButton.setEnabled(false);
+//                    mConnectButton.setEnabled(false);
+                    mDisconnectButton.setEnabled(false);
                     Log.d(TAG, "Disconnected");
                     break;
                 case BleService.ACTION_SERVICES_DISCOVERED:
                     // Disable the discover services button
                     Log.d(TAG, "Services Discovered");
-                    mDiscoverButton.setEnabled(false);
-                    mNotifButton.setEnabled(true);
+//                    mDiscoverButton.setEnabled(false);
+//                    mNotifButton.setEnabled(true);
                     mBleService.notify(true);
                     mDataInfo = mDataAdapter.getDataList();
                     break;
                 case BleService.ACTION_DATA_RECEIVED:
                     // This is called after a notify or a read completes
-                    mNotifButton.setEnabled(false);
+//                    mNotifButton.setEnabled(false);
 
-                    if(tempCount++ % 100 == 0) {
+                    if(tempCount++ % 10 == 0) {
                         mCurTemp = Double.valueOf(mBleService.getTemperature());
                         mCurHeartRate = mBleService.getHeartRateD();
                         mDataInfo.get(ACCELEROMETER).setMeasurement(mBleService.getXYZ());
@@ -370,32 +382,33 @@ public class MainActivity extends AppCompatActivity {
                         mDataInfo.get(TEMPERATURE).setMeasurement(mBleService.getTemperature());
 
 //                    mDataInfo.get(TEMPERATURE).appendGraph();
-                    mDataAdapter.notifyItemRangeChanged(0, mDataAdapter.getItemCount());
+                        mDataAdapter.notifyItemRangeChanged(0, mDataAdapter.getItemCount());
 //                        mDataAdapter.notifyItemChanged(TEMPERATURE);
-                    mTimer = new Runnable() {
-                        @Override
-                        public void run() {
+                        mTimer = new Runnable() {
+                            @Override
+                            public void run() {
 
-                            mTempSeries.appendData(new DataPoint(lastTempX, mCurTemp),false,100);
-                            mHeartRateSeries.appendData(new DataPoint(lastTempX, mCurHeartRate), false, 100);
-                            if(lastTempX >= 100){
-                                DataPoint[] valuesTemp = new DataPoint[1];
-                                DataPoint[] valuesHR = new DataPoint[1];
+                                mTempSeries.appendData(new DataPoint(lastTempX, mCurTemp),false,100);
+                                mHeartRateSeries.appendData(new DataPoint(lastTempX, mCurHeartRate), false, 100);
+                                if(lastTempX >= 100){
+                                    DataPoint[] valuesTemp = new DataPoint[1];
+                                    DataPoint[] valuesHR = new DataPoint[1];
 
-                                valuesTemp[0] = new DataPoint(0,mCurTemp);
-                                valuesHR[0] = new DataPoint(0, mCurHeartRate);
+                                    valuesTemp[0] = new DataPoint(0,mCurTemp);
+                                    valuesHR[0] = new DataPoint(0, mCurHeartRate);
 
-                                mTempSeries.resetData(valuesTemp);
-                                mHeartRateSeries.resetData(valuesHR);
-                                lastTempX = 1;
+                                    mTempSeries.resetData(valuesTemp);
+                                    mHeartRateSeries.resetData(valuesHR);
+                                    lastTempX = 1;
 
-                            }
-                            lastTempX += 1d;
-                            mHandler.postDelayed(this, 1000);
+                                }
+                                lastTempX += 1d;
                             }
                         };
                         mHandler.postDelayed(mTimer, 1000);
+
                     }
+
 //                    mDataAdapter.notifyDataSetChanged();
 
                 default:
@@ -408,9 +421,9 @@ public class MainActivity extends AppCompatActivity {
         List<DataInfo> sampleList = new ArrayList<DataInfo>();
 
         sampleList.add(new DataInfo("Activity"));
-        sampleList.add(new DataInfo("Battery Level"));
-        sampleList.add(new DataInfo("Heart Rate"));
-        sampleList.add(new DataInfo("Oxygen Concentration"));
+        sampleList.add(new DataInfo("Battery Level", "mV"));
+        sampleList.add(new DataInfo("Heart Rate", "bpm"));
+        sampleList.add(new DataInfo("Oxygen Concentration", "%"));
         sampleList.add(new DataInfo("Temperature","Celsius"));
 
         return sampleList;
@@ -424,9 +437,9 @@ public class MainActivity extends AppCompatActivity {
         switch(view.getId()){
             case R.id.checkbox_heart_rate:
                 if(checked) {
-                    mGraphView.addSeries(mHeartRateSeries);
+                    mGraphView.getSecondScale().addSeries(mHeartRateSeries);
                 }else
-                    mGraphView.removeSeries(mHeartRateSeries);
+                    mGraphView.getSecondScale().removeSeries(mHeartRateSeries);
                 break;
             case R.id.checkbox_temp:
                 if(checked)

@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="8afa671bd2dbc2c1b931e492c3d1a995536eb088">
+        sha1="48daad15d710716049159739de253ae2aa7004d1">
         <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_6e1a0fe0a76909a9dbf6d2efea5fbec9d1c854a5\classes.dex" />
     </item>
     <item
@@ -133,7 +133,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="5efc07dbd85c684dcb0241d925dd4aec960d74f1">
+        sha1="ea39d89ebb01a8860af77cc4173485ca7a229e2c">
         <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_98f4842f9f6284bb147fdb4782c295902e06ea7c\classes.dex" />
     </item>
 
