@@ -12,12 +12,13 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.ServiceConnection;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Build;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.IBinder;
-import android.provider.ContactsContract;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -30,6 +31,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.jjoe64.graphview.GraphView;
@@ -37,8 +39,14 @@ import com.jjoe64.graphview.LegendRenderer;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
 
+import org.w3c.dom.Text;
+
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.List;
+
+import static android.os.Environment.isExternalStorageEmulated;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -46,21 +54,24 @@ public class MainActivity extends AppCompatActivity {
 
     private final Handler mHandler = new Handler();
     private Runnable mTimer;
-    private Toolbar mToolbar;
     private Button mDisconnectButton;
     private Button mScanButton;
-    private Button mConnectButton;
-    private Button mNotifButton;
-    private Button mDiscoverButton;
     private DataAdapter mDataAdapter;
     private List<DataInfo> mDataInfo;
     private GraphView mGraphView;
     private LineGraphSeries<DataPoint> mTempSeries;
     private LineGraphSeries<DataPoint> mHeartRateSeries;
+    private File dataLog;
+    private FileOutputStream out;
+
 
     private int tempCount = 0;
     private int lastTempX = 0;
     private double mCurTemp, mCurHeartRate;
+    private boolean isExternalStorageReadable;
+    private boolean isExternalStorageWritable;
+    private boolean dirSuccess;
+
 
     // Variables to manage BLE connection
     private static boolean mConnectState;
@@ -112,41 +123,29 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Toolbar mToolbar;
         mToolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
-        getSupportActionBar().setDisplayShowHomeEnabled(false);
-        //getSupportActionBar().setDisplayShowTitleEnabled(true);
+//        getSupportActionBar().setDisplayShowHomeEnabled(false);
+        getSupportActionBar().setDisplayShowTitleEnabled(true);
 
 
-        //view initialization besides graphview, done below
+        //view initialization
         mScanButton = (Button)(findViewById(R.id.scan_button));
-//        mConnectButton = (Button)(findViewById(R.id.connect_button));
-//        mNotifButton = (Button)(findViewById(R.id.notifications_button));
-//        mDiscoverButton = (Button)(findViewById(R.id.discover_services_button));
         mDisconnectButton = (Button)(findViewById(R.id.disconnect_button));
+        TextView pinTV = (TextView)findViewById(R.id.PIN_tv);
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("BioSnapPrefs", MODE_PRIVATE);
+        pinTV.setText(Integer.toString(sharedPref.getInt("userPIN", -1)));
 
         //graphView initialization
-        mGraphView = (GraphView)(findViewById(R.id.my_graph));
+        initGraph();
 
-        mTempSeries = new LineGraphSeries<>();
-        mTempSeries.setTitle("Body Temperature");
-        mHeartRateSeries = new LineGraphSeries<>();
-        mHeartRateSeries.setColor(Color.RED);
-        mHeartRateSeries.setTitle("Heart Rate");
+        //external storage read/write check;
+        isExternalStorageReadable = isExternalStorageReadable();
+        isExternalStorageWritable = isExternalStorageWritable();
+        Log.d(TAG, "externalStorageReadable\t" + isExternalStorageReadable);
+        Log.d(TAG, "externalStorageWritable\t" + isExternalStorageWritable);
 
-
-        mGraphView.getViewport().setXAxisBoundsManual(true);
-        mGraphView.getViewport().setYAxisBoundsManual(true);
-        mGraphView.getViewport().setMaxX(100);
-        mGraphView.getViewport().setMinX(0);
-        mGraphView.getViewport().setMaxY(40);
-        mGraphView.getSecondScale().setMinY(0);
-        mGraphView.getSecondScale().setMaxY(160);
-        mGraphView.getLegendRenderer().setVisible(true);
-        mGraphView.getGridLabelRenderer().setHorizontalAxisTitle("data points");
-        mGraphView.getGridLabelRenderer().setVerticalAxisTitle("celsius");
-        mGraphView.getSecondScale().setVerticalAxisTitle("beats per minute");
-        mGraphView.getLegendRenderer().setFixedPosition(0,0);
 
 
         //setting up RecyclerView adapter
@@ -160,6 +159,7 @@ public class MainActivity extends AppCompatActivity {
         recList.setAdapter(mDataAdapter);
 
 
+        Log.d(TAG,"mBleStarted value: " + mBleStarted);
 
 
         //This section required for Android 6.0 (Marshmallow)
@@ -178,6 +178,33 @@ public class MainActivity extends AppCompatActivity {
                 builder.show();
             }
         } //End of section for Android 6.0 (Marshmallow)
+
+        //Requesting read and write permission for data logging purposes
+        if(this.checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED){
+            final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle("This app needs writing to external storage ");
+            builder.setMessage("Please grant location access so this app can log vital data.");
+            builder.setPositiveButton(android.R.string.ok, null);
+            builder.setOnDismissListener(new DialogInterface.OnDismissListener() {
+                public void onDismiss(DialogInterface dialog) {
+                    requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},1);
+                }
+            });
+            builder.show();
+        }
+
+        if(this.checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED){
+            final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle("This app needs writing to external storage ");
+            builder.setMessage("Please grant location access so this app can log vital data.");
+            builder.setPositiveButton(android.R.string.ok, null);
+            builder.setOnDismissListener(new DialogInterface.OnDismissListener() {
+                public void onDismiss(DialogInterface dialog) {
+                    requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},1);
+                }
+            });
+            builder.show();
+        }
 
     }
 
@@ -222,9 +249,13 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if(id == R.id.action_bluetooth){
-            if(!mBleStarted)
+            //if(!mBleStarted)
                 startBluetooth();
             return true;
+        }
+        if(id == R.id.action_assessment){
+            Intent i = new Intent(MainActivity.this, PatientActivity.class);
+            startActivity(i);
         }
 
         return super.onOptionsItemSelected(item);
@@ -234,7 +265,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        // Register the broadcast receiver. This specified the messages the main activity looks for from the PSoCCapSenseLedService
+        // Register the broadcast receiver. This specified the messages the main activity looks for from the BleService
         final IntentFilter filter = new IntentFilter();
         filter.addAction(BleService.ACTION_BLESCAN_CALLBACK);
         filter.addAction(BleService.ACTION_CONNECTED);
@@ -242,6 +273,8 @@ public class MainActivity extends AppCompatActivity {
         filter.addAction(BleService.ACTION_SERVICES_DISCOVERED);
         filter.addAction(BleService.ACTION_DATA_RECEIVED);
         registerReceiver(mBleUpdateReceiver, filter);
+
+        Log.d(TAG,"onResume() is called!");
     }
 
     @Override
@@ -258,7 +291,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onPause() {
         mHandler.removeCallbacks(mTimer);
         unregisterReceiver(mBleUpdateReceiver);
-
+        Log.d(TAG,"onPause() called!");
         super.onPause();
 
     }
@@ -267,11 +300,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         mHandler.removeCallbacks(mTimer);
+
         // Close and unbind the service when the activity goes away
-        mBleService.close();
-        unbindService(mServiceConnection);
-        mBleService = null;
-        mServiceConnected = false;
+        if(mBleService != null) {
+            mBleService.disconnect();
+            mBleService.close();
+            unbindService(mServiceConnection);
+            mBleService = null;
+            mServiceConnected = false;
+        }
+
+        Log.d(TAG,"onDestroy() called!");
     }
 
     public void startBluetooth(){
@@ -294,7 +333,8 @@ public class MainActivity extends AppCompatActivity {
         bindService(gattServiceIntent, mServiceConnection, BIND_AUTO_CREATE);
 
         // Disable the start button and turn on the search  button
-        mScanButton.setEnabled(true);
+        if(!mServiceConnected)
+            mScanButton.setEnabled(true);
         Log.d(TAG, "Bluetooth is Enabled");
         Toast.makeText(MainActivity.this,"Bluetooth is Enabled",Toast.LENGTH_SHORT).show();
     }
@@ -312,13 +352,6 @@ public class MainActivity extends AppCompatActivity {
         mBleService.disconnect();
     }
 
-    public void tempSenseConnect(View view){
-        mBleService.connect();
-    }
-    public void discoverServices(View view) { mBleService.discoverServices();}
-    public void enableNotif(View view){
-        mBleService.notify(true);
-    }
 
     /**
      * Listener for BLE event broadcasts
@@ -331,7 +364,6 @@ public class MainActivity extends AppCompatActivity {
                 case BleService.ACTION_BLESCAN_CALLBACK:
                     // Disable the search button and enable the connect button
                     mScanButton.setEnabled(false);
-//                    mConnectButton.setEnabled(true);
                     mBleService.connect();
                     Toast.makeText(MainActivity.this,"CALLBACK received", Toast.LENGTH_SHORT).show();
                     break;
@@ -340,8 +372,6 @@ public class MainActivity extends AppCompatActivity {
                     /* action when sending notifications */
                     if (!mConnectState) {
                         // Disable the connect button, discover services
-//                        mConnectButton.setEnabled(false);
-//                        mDiscoverButton.setEnabled(true);
                         mDisconnectButton.setEnabled(true);
                         mConnectState = true;
                         mBleService.discoverServices();
@@ -354,25 +384,53 @@ public class MainActivity extends AppCompatActivity {
                     // Disable the disconnect, discover svc, discover char button, and enable the search button
                     mConnectState = false;
                     mScanButton.setEnabled(true);
-//                    mDiscoverButton.setEnabled(false);
-//                    mNotifButton.setEnabled(false);
-//                    mConnectButton.setEnabled(false);
                     mDisconnectButton.setEnabled(false);
+                    try{
+                        out.flush();
+                        out.close();
+                    }catch(Exception e){
+                        e.printStackTrace();
+                    }
+
+
                     Log.d(TAG, "Disconnected");
                     break;
                 case BleService.ACTION_SERVICES_DISCOVERED:
                     // Disable the discover services button
                     Log.d(TAG, "Services Discovered");
-//                    mDiscoverButton.setEnabled(false);
-//                    mNotifButton.setEnabled(true);
                     mBleService.notify(true);
                     mDataInfo = mDataAdapter.getDataList();
+
+                    //check if directory for data exists, if so open a file in it
+                    if(isExternalStorageReadable && isExternalStorageWritable){
+                        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("BioSnapPrefs", MODE_PRIVATE);
+                        dirSuccess = false;
+                        String root = Environment.getExternalStorageDirectory().toString();
+
+                        File myDir = new File(root, "BioSnapData");
+                        if(isExternalStorageEmulated(myDir)){
+                            
+                        }
+                        if(!myDir.exists())
+                            dirSuccess = myDir.mkdirs();
+
+                        Log.d(TAG,"Successful in making dir? \t" + dirSuccess);
+
+                        if(dirSuccess) {
+                            String firstName = sharedPref.getString("firstName", "first_name");
+                            String lastName = sharedPref.getString("lastName", "last_name");
+                            String fileName = lastName + "_" + firstName + "dataLog.txt";
+                            dataLog = new File(myDir, fileName);
+                            Log.d("MY DEBUG", "Does dataLog exist:\t" + dataLog.exists());
+                        }else{
+                            Toast.makeText(MainActivity.this, "Not successful in making Dir", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+
                     break;
                 case BleService.ACTION_DATA_RECEIVED:
                     // This is called after a notify or a read completes
-//                    mNotifButton.setEnabled(false);
-
-                    if(tempCount++ % 10 == 0) {
+                    if(tempCount++ % 50 == 0) {
                         mCurTemp = Double.valueOf(mBleService.getTemperature());
                         mCurHeartRate = mBleService.getHeartRateD();
                         mDataInfo.get(ACCELEROMETER).setMeasurement(mBleService.getXYZ());
@@ -390,6 +448,21 @@ public class MainActivity extends AppCompatActivity {
 
                                 mTempSeries.appendData(new DataPoint(lastTempX, mCurTemp),false,100);
                                 mHeartRateSeries.appendData(new DataPoint(lastTempX, mCurHeartRate), false, 100);
+
+                                //test writing temperature file
+                                if(dirSuccess) {
+                                    try {
+                                        out = new FileOutputStream(dataLog, true);
+                                        out.write((mDataInfo.get(TEMPERATURE).getMeasurement() + "\n").getBytes());
+                                        out.flush();
+                                        out.close();
+                                        Log.d(TAG, "writing data");
+
+                                    } catch (Exception e) {
+                                        Toast.makeText(MainActivity.this, "Cannot create FileOutputStream", Toast.LENGTH_SHORT).show();
+                                        e.printStackTrace();
+                                    }
+                                }
                                 if(lastTempX >= 100){
                                     DataPoint[] valuesTemp = new DataPoint[1];
                                     DataPoint[] valuesHR = new DataPoint[1];
@@ -418,7 +491,7 @@ public class MainActivity extends AppCompatActivity {
     };
 
     private List<DataInfo> getSampleData(){
-        List<DataInfo> sampleList = new ArrayList<DataInfo>();
+        List<DataInfo> sampleList = new ArrayList<>();
 
         sampleList.add(new DataInfo("Activity"));
         sampleList.add(new DataInfo("Battery Level", "mV"));
@@ -451,5 +524,49 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
+    }
+
+    private void initGraph(){
+        mGraphView = (GraphView)(findViewById(R.id.my_graph));
+
+        mTempSeries = new LineGraphSeries<>();
+        mTempSeries.setTitle("Body Temperature");
+        mHeartRateSeries = new LineGraphSeries<>();
+        mHeartRateSeries.setColor(Color.RED);
+        mHeartRateSeries.setTitle("Heart Rate");
+
+
+        mGraphView.getViewport().setXAxisBoundsManual(true);
+        mGraphView.getViewport().setYAxisBoundsManual(true);
+        mGraphView.getViewport().setMaxX(100);
+        mGraphView.getViewport().setMinX(0);
+        mGraphView.getViewport().setMaxY(40);
+        mGraphView.getSecondScale().setMinY(0);
+        mGraphView.getSecondScale().setMaxY(160);
+        mGraphView.getLegendRenderer().setVisible(true);
+        mGraphView.getGridLabelRenderer().setHorizontalAxisTitle("data points");
+        mGraphView.getGridLabelRenderer().setVerticalAxisTitle("celsius");
+        mGraphView.getSecondScale().setVerticalAxisTitle("beats per minute");
+        mGraphView.getLegendRenderer().setFixedPosition(0,0);
+    }
+
+
+    /* Checks if external storage is available for read and write */
+    public boolean isExternalStorageWritable() {
+        String state = Environment.getExternalStorageState();
+        if (Environment.MEDIA_MOUNTED.equals(state)) {
+            return true;
+        }
+        return false;
+    }
+
+    /* Checks if external storage is available to at least read */
+    public boolean isExternalStorageReadable() {
+        String state = Environment.getExternalStorageState();
+        if (Environment.MEDIA_MOUNTED.equals(state) ||
+                Environment.MEDIA_MOUNTED_READ_ONLY.equals(state)) {
+            return true;
+        }
+        return false;
     }
 }

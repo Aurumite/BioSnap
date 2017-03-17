@@ -1,7 +1,7 @@
 /*******************************************************************************
 * File Name: project.h
 * 
-* PSoC Creator  3.3 CP3
+* PSoC Creator  4.0 Update 1
 *
 * Description:
 * It contains references to all generated header files and should not be modified.
@@ -46,6 +46,8 @@
 #include "Timer_minute.h"
 #include "bat_in.h"
 #include "bat_in_aliases.h"
+#include "BAdvertLED.h"
+#include "BAdvertLED_aliases.h"
 #include "BLE_1_bless_isr.h"
 #include "I2C_1_SCBCLK.h"
 #include "I2C_1_sda.h"

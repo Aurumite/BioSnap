@@ -3,12 +3,39 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\jars\classes.jar"
+        jar="C:\Users\Davit\.android\build-cache\c8ef9f674063075c3eae9d094b9340138c863c5c\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
-        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.1_7a9344cad07bee12a0e0a8bb5c432ac295102566\classes.dex" />
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_90ffd8b2dd413c76b199e15d11f712a597e48dc3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Davit\.android\build-cache\d3d2874f50f476577339e874725b5619e4e8fe13\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ece31920f269b080b92d004f2d1acfa819e0090c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Davit\.android\build-cache\78e26cb689e4bd100d6002b44175bdb18fc12f32\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e014c6aaf44fbb962c5415ead000f8869a39e0fc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Davit\.android\build-cache\5fbdafe73796b455fedbf49f449ef4b5370536b3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="987adec819c9a98faf215814f41195da48fc724e">
+        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_90303d3eb6b0246d0943716ab55c88eead132058\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -16,98 +43,89 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="48daad15d710716049159739de253ae2aa7004d1">
-        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_6e1a0fe0a76909a9dbf6d2efea5fbec9d1c854a5\classes.dex" />
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_6e1a0fe0a76909a9dbf6d2efea5fbec9d1c854a5\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.1_0049ad4a64f78044be8b34702609081e87d65909\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\exploded-aar\com.jjoe64\graphview\4.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="987adec819c9a98faf215814f41195da48fc724e">
-        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.jjoe64-graphview-4.2.1_fe7a662f7392a9665356a1d6c759f1f29bd4b151\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
-        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.1_876c35444b023195eec4664afb63c20d082dd35b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
-        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.1_3f1730bf7a1b16172e51526009753a79d3013162\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
-        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.1_afe6400d32ccf74093d4dd6b090221df7858d26b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
-        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.1_7deb9c06d215f8d7374f26dc0397bee6703e4272\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
+        jar="C:\Users\Davit\.android\build-cache\ce8ecc58b0ab0b6e595533f6c6e7f36cc1d56e05\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
-        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.1_079107a7dfb96090f273c560a12fc9555cb4e1fc\classes.dex" />
+        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_896cbfb6978ae5e01d2ac8c5672c2da6ac1cb926\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
+        jar="C:\Users\Davit\.android\build-cache\a72879a7dd030d33250f6c2cb7eb0c17528bc1d0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_caf904a7a1d400aa28c227d1c352b2b8b6660864\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Davit\.android\build-cache\9b85913dbbc03b98ab685f14af220fe821953a20\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b14003e5b161151b23557cb06c17d97bef95a053\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Davit\.android\build-cache\8b40568344623f8a54bfb64b6630c328f250ab8e\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
-        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.1_93a998cf19f6c5dc237113d3866fad3c92ddb674\classes.dex" />
+        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5581e3769b46689e60b3f879594f5b580ee87363\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.1\jars\classes.jar"
+        jar="C:\Users\Davit\.gradle\caches\modules-2\files-2.1\com.amazonaws\aws-android-sdk-core\2.2.22\c6789de00db9d1f93faec881fa0c1f5960fb8a15\aws-android-sdk-core-2.2.22.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
-        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.1.1_f605ac97b98680599d7c5efed5fbc80336a27336\classes.dex" />
+        sha1="c6789de00db9d1f93faec881fa0c1f5960fb8a15">
+        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\aws-android-sdk-core-2.2.22_c873b3d25657dfee24e2436988796c505e6ea411\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.1.1\jars\classes.jar"
+        jar="C:\Program Files\Android\Android Studio\gradle\m2repository\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.2.4_313aff129984a0a45e086871ec03bfcc02e7284e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Davit\.android\build-cache\3b369f2d63a8ae74a8deb58f5737d1b5fa5fdd6d\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="a8ae156c2726ac9c56daaf4b49452ec2cdb7bba9">
-        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-25.1.1_2dddff337992bfeb2237d871e13bd97c8ae6a594\classes.dex" />
+        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d0e138f306d4344497d27218e76fb56089f4017b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Davit\.android\build-cache\4013ba812b8cc446b1342ef40f4a039583e88953\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0920677bb3689f2240f4735adb1a51fabb49b747\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Davit\.android\build-cache\b4b095844a486912ca9a662f81df3b6f906728a5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
+        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d58ffc1887e779eeb503527dbe61bb9800134e65\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -120,12 +138,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
+        jar="C:\Users\Davit\.android\build-cache\716ade82432514b6d9b8836e742addb2194717d3\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
-        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.1_43a3b994fc8e31955668e40334070025a2b726e3\classes.dex" />
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1d2bf29128b7788804e069e0b4dfae473f91e03b\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -133,8 +151,8 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="ea39d89ebb01a8860af77cc4173485ca7a229e2c">
-        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_98f4842f9f6284bb147fdb4782c295902e06ea7c\classes.dex" />
+        sha1="719cc7e41faa63cfff7d32f5ba56b2a51d5f12fa">
+        <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_98f4842f9f6284bb147fdb4782c295902e06ea7c\classes.dex" />
     </item>
 
 </items>

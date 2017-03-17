@@ -2,11 +2,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.eec136b.biosnap.biosnapapp">
 
+
+    <!-- Bluetooth Permissions Section -->
     <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
     <uses-permission android:name="android.permission.BLUETOOTH"/>
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
     <!--  Location permission required for android 6.0 (Marshmallow) -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <!-- Reading and Writing to External Sections Storage Permission Section -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -38,6 +44,10 @@
         </activity>
 
         <activity android:name=".MainActivity" />
+        <activity android:name=".PatientActivity" />
+        <activity android:name=".NewUserActivity" />
+
+
         <service android:name=".BleService" android:enabled="true" />
     </application>
 

@@ -77,6 +77,7 @@ void StackEventHandler( uint32 eventCode, void *eventParam )
         case CYBLE_EVT_GAP_DEVICE_DISCONNECTED:            
             CyBle_GappStartAdvertisement(CYBLE_ADVERTISING_FAST);
             deviceConnected = 0;
+            BAdvertLED_Write(0);
         break;
 
         /* GAP Peripheral events */
@@ -92,11 +93,14 @@ void StackEventHandler( uint32 eventCode, void *eventParam )
         case CYBLE_EVT_GATT_CONNECT_IND:
             connectionHandle = *(CYBLE_CONN_HANDLE_T*)eventParam;
             deviceConnected = 1; 
+            BAdvertLED_Write(1);
             break;
 
         case CYBLE_EVT_GATT_DISCONNECT_IND:
             deviceConnected = 0;
             uint32 i = 0;
+            BAdvertLED_Write(0);
+            CyBle_GappStartAdvertisement(CYBLE_ADVERTISING_FAST);
             for(; i < sizeof(NOTIFY)/sizeof(int); i++)
                 NOTIFY[i] = 0;
             break;

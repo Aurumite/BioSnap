@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 1
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccBUxJMJ.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -31,55 +31,55 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 1
   26              		.type	I2C_1_sda_Sleep, %function
   27              	I2C_1_sda_Sleep:
   28              	.LFB0:
-  29              		.file 1 ".\\Generated_Source\\PSoC4\\I2C_1_sda_PM.c"
-   1:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** /*******************************************************************************
-   2:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** * File Name: I2C_1_sda.c  
-   3:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** * Version 2.20
-   4:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** *
-   5:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** * Description:
-   6:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** *  This file contains APIs to set up the Pins component for low power modes.
-   7:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** *
-   8:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** * Note:
-   9:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** *
-  10:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** ********************************************************************************
-  11:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** * Copyright 2015, Cypress Semiconductor Corporation.  All rights reserved.
-  12:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** * You may use this file only in accordance with the license, terms, conditions, 
-  13:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** * disclaimers, and limitations in the end user license agreement accompanying 
-  14:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** * the software package with which this file was provided.
-  15:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** *******************************************************************************/
-  16:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** 
-  17:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** #include "cytypes.h"
-  18:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** #include "I2C_1_sda.h"
-  19:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** 
-  20:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** static I2C_1_sda_BACKUP_STRUCT  I2C_1_sda_backup = {0u, 0u, 0u};
-  21:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** 
-  22:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** 
-  23:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** /*******************************************************************************
-  24:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** * Function Name: I2C_1_sda_Sleep
-  25:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** ****************************************************************************//**
-  26:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** *
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 2
+  29              		.file 1 "Generated_Source\\PSoC4\\I2C_1_sda_PM.c"
+   1:Generated_Source\PSoC4/I2C_1_sda_PM.c **** /*******************************************************************************
+   2:Generated_Source\PSoC4/I2C_1_sda_PM.c **** * File Name: I2C_1_sda.c  
+   3:Generated_Source\PSoC4/I2C_1_sda_PM.c **** * Version 2.20
+   4:Generated_Source\PSoC4/I2C_1_sda_PM.c **** *
+   5:Generated_Source\PSoC4/I2C_1_sda_PM.c **** * Description:
+   6:Generated_Source\PSoC4/I2C_1_sda_PM.c **** *  This file contains APIs to set up the Pins component for low power modes.
+   7:Generated_Source\PSoC4/I2C_1_sda_PM.c **** *
+   8:Generated_Source\PSoC4/I2C_1_sda_PM.c **** * Note:
+   9:Generated_Source\PSoC4/I2C_1_sda_PM.c **** *
+  10:Generated_Source\PSoC4/I2C_1_sda_PM.c **** ********************************************************************************
+  11:Generated_Source\PSoC4/I2C_1_sda_PM.c **** * Copyright 2015, Cypress Semiconductor Corporation.  All rights reserved.
+  12:Generated_Source\PSoC4/I2C_1_sda_PM.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  13:Generated_Source\PSoC4/I2C_1_sda_PM.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  14:Generated_Source\PSoC4/I2C_1_sda_PM.c **** * the software package with which this file was provided.
+  15:Generated_Source\PSoC4/I2C_1_sda_PM.c **** *******************************************************************************/
+  16:Generated_Source\PSoC4/I2C_1_sda_PM.c **** 
+  17:Generated_Source\PSoC4/I2C_1_sda_PM.c **** #include "cytypes.h"
+  18:Generated_Source\PSoC4/I2C_1_sda_PM.c **** #include "I2C_1_sda.h"
+  19:Generated_Source\PSoC4/I2C_1_sda_PM.c **** 
+  20:Generated_Source\PSoC4/I2C_1_sda_PM.c **** static I2C_1_sda_BACKUP_STRUCT  I2C_1_sda_backup = {0u, 0u, 0u};
+  21:Generated_Source\PSoC4/I2C_1_sda_PM.c **** 
+  22:Generated_Source\PSoC4/I2C_1_sda_PM.c **** 
+  23:Generated_Source\PSoC4/I2C_1_sda_PM.c **** /*******************************************************************************
+  24:Generated_Source\PSoC4/I2C_1_sda_PM.c **** * Function Name: I2C_1_sda_Sleep
+  25:Generated_Source\PSoC4/I2C_1_sda_PM.c **** ****************************************************************************//**
+  26:Generated_Source\PSoC4/I2C_1_sda_PM.c **** *
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccBUxJMJ.s 			page 2
 
 
-  27:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** * \brief Stores the pin configuration and prepares the pin for entering chip 
-  28:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** *  deep-sleep/hibernate modes. This function must be called for SIO and USBIO
-  29:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** *  pins. It is not essential if using GPIO or GPIO_OVT pins.
-  30:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** *
-  31:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** * <b>Note</b> This function is available in PSoC 4 only.
-  32:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** *
-  33:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** * \return 
-  34:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** *  None 
-  35:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** *  
-  36:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** * \sideeffect
-  37:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** *  For SIO pins, this function configures the pin input threshold to CMOS and
-  38:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** *  drive level to Vddio. This is needed for SIO pins when in device 
-  39:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** *  deep-sleep/hibernate modes.
-  40:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** *
-  41:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** * \funcusage
-  42:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** *  \snippet I2C_1_sda_SUT.c usage_I2C_1_sda_Sleep_Wakeup
-  43:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** *******************************************************************************/
-  44:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** void I2C_1_sda_Sleep(void)
-  45:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** {
+  27:Generated_Source\PSoC4/I2C_1_sda_PM.c **** * \brief Stores the pin configuration and prepares the pin for entering chip 
+  28:Generated_Source\PSoC4/I2C_1_sda_PM.c **** *  deep-sleep/hibernate modes. This function must be called for SIO and USBIO
+  29:Generated_Source\PSoC4/I2C_1_sda_PM.c **** *  pins. It is not essential if using GPIO or GPIO_OVT pins.
+  30:Generated_Source\PSoC4/I2C_1_sda_PM.c **** *
+  31:Generated_Source\PSoC4/I2C_1_sda_PM.c **** * <b>Note</b> This function is available in PSoC 4 only.
+  32:Generated_Source\PSoC4/I2C_1_sda_PM.c **** *
+  33:Generated_Source\PSoC4/I2C_1_sda_PM.c **** * \return 
+  34:Generated_Source\PSoC4/I2C_1_sda_PM.c **** *  None 
+  35:Generated_Source\PSoC4/I2C_1_sda_PM.c **** *  
+  36:Generated_Source\PSoC4/I2C_1_sda_PM.c **** * \sideeffect
+  37:Generated_Source\PSoC4/I2C_1_sda_PM.c **** *  For SIO pins, this function configures the pin input threshold to CMOS and
+  38:Generated_Source\PSoC4/I2C_1_sda_PM.c **** *  drive level to Vddio. This is needed for SIO pins when in device 
+  39:Generated_Source\PSoC4/I2C_1_sda_PM.c **** *  deep-sleep/hibernate modes.
+  40:Generated_Source\PSoC4/I2C_1_sda_PM.c **** *
+  41:Generated_Source\PSoC4/I2C_1_sda_PM.c **** * \funcusage
+  42:Generated_Source\PSoC4/I2C_1_sda_PM.c **** *  \snippet I2C_1_sda_SUT.c usage_I2C_1_sda_Sleep_Wakeup
+  43:Generated_Source\PSoC4/I2C_1_sda_PM.c **** *******************************************************************************/
+  44:Generated_Source\PSoC4/I2C_1_sda_PM.c **** void I2C_1_sda_Sleep(void)
+  45:Generated_Source\PSoC4/I2C_1_sda_PM.c **** {
   30              		.loc 1 45 0
   31              		.cfi_startproc
   32 0000 80B5     		push	{r7, lr}
@@ -88,27 +88,27 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 1
   35              		.cfi_offset 14, -4
   36 0002 00AF     		add	r7, sp, #0
   37              		.cfi_def_cfa_register 7
-  46:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****     #if defined(I2C_1_sda__PC)
-  47:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****         I2C_1_sda_backup.pcState = I2C_1_sda_PC;
+  46:Generated_Source\PSoC4/I2C_1_sda_PM.c ****     #if defined(I2C_1_sda__PC)
+  47:Generated_Source\PSoC4/I2C_1_sda_PM.c ****         I2C_1_sda_backup.pcState = I2C_1_sda_PC;
   38              		.loc 1 47 0
   39 0004 024B     		ldr	r3, .L2
   40 0006 1A68     		ldr	r2, [r3]
   41 0008 024B     		ldr	r3, .L2+4
   42 000a 1A60     		str	r2, [r3]
-  48:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****     #else
-  49:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****         #if (CY_PSOC4_4200L)
-  50:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****             /* Save the regulator state and put the PHY into suspend mode */
-  51:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****             I2C_1_sda_backup.usbState = I2C_1_sda_CR1_REG;
-  52:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****             I2C_1_sda_USB_POWER_REG |= I2C_1_sda_USBIO_ENTER_SLEEP;
-  53:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****             I2C_1_sda_CR1_REG &= I2C_1_sda_USBIO_CR1_OFF;
-  54:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****         #endif
-  55:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****     #endif
-  56:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****     #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(I2C_1_sda__SIO)
-  57:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****         I2C_1_sda_backup.sioState = I2C_1_sda_SIO_REG;
-  58:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****         /* SIO requires unregulated output buffer and single ended input buffer */
-  59:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****         I2C_1_sda_SIO_REG &= (uint32)(~I2C_1_sda_SIO_LPM_MASK);
-  60:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****     #endif  
-  61:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** }
+  48:Generated_Source\PSoC4/I2C_1_sda_PM.c ****     #else
+  49:Generated_Source\PSoC4/I2C_1_sda_PM.c ****         #if (CY_PSOC4_4200L)
+  50:Generated_Source\PSoC4/I2C_1_sda_PM.c ****             /* Save the regulator state and put the PHY into suspend mode */
+  51:Generated_Source\PSoC4/I2C_1_sda_PM.c ****             I2C_1_sda_backup.usbState = I2C_1_sda_CR1_REG;
+  52:Generated_Source\PSoC4/I2C_1_sda_PM.c ****             I2C_1_sda_USB_POWER_REG |= I2C_1_sda_USBIO_ENTER_SLEEP;
+  53:Generated_Source\PSoC4/I2C_1_sda_PM.c ****             I2C_1_sda_CR1_REG &= I2C_1_sda_USBIO_CR1_OFF;
+  54:Generated_Source\PSoC4/I2C_1_sda_PM.c ****         #endif
+  55:Generated_Source\PSoC4/I2C_1_sda_PM.c ****     #endif
+  56:Generated_Source\PSoC4/I2C_1_sda_PM.c ****     #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(I2C_1_sda__SIO)
+  57:Generated_Source\PSoC4/I2C_1_sda_PM.c ****         I2C_1_sda_backup.sioState = I2C_1_sda_SIO_REG;
+  58:Generated_Source\PSoC4/I2C_1_sda_PM.c ****         /* SIO requires unregulated output buffer and single ended input buffer */
+  59:Generated_Source\PSoC4/I2C_1_sda_PM.c ****         I2C_1_sda_SIO_REG &= (uint32)(~I2C_1_sda_SIO_LPM_MASK);
+  60:Generated_Source\PSoC4/I2C_1_sda_PM.c ****     #endif  
+  61:Generated_Source\PSoC4/I2C_1_sda_PM.c **** }
   43              		.loc 1 61 0
   44 000c BD46     		mov	sp, r7
   45              		@ sp needed
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 1
   49              	.L2:
   50 0010 08030440 		.word	1074004744
   51 0014 00000000 		.word	I2C_1_sda_backup
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 3
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccBUxJMJ.s 			page 3
 
 
   52              		.cfi_endproc
@@ -132,26 +132,26 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 1
   60              		.type	I2C_1_sda_Wakeup, %function
   61              	I2C_1_sda_Wakeup:
   62              	.LFB1:
-  62:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** 
-  63:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** 
-  64:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** /*******************************************************************************
-  65:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** * Function Name: I2C_1_sda_Wakeup
-  66:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** ****************************************************************************//**
-  67:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** *
-  68:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** * \brief Restores the pin configuration that was saved during Pin_Sleep().
-  69:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** *
-  70:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** * For USBIO pins, the wakeup is only triggered for falling edge interrupts.
-  71:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** *
-  72:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** * <b>Note</b> This function is available in PSoC 4 only.
-  73:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** *
-  74:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** * \return 
-  75:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** *  None
-  76:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** *  
-  77:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** * \funcusage
-  78:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** *  Refer to I2C_1_sda_Sleep() for an example usage.
-  79:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** *******************************************************************************/
-  80:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** void I2C_1_sda_Wakeup(void)
-  81:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** {
+  62:Generated_Source\PSoC4/I2C_1_sda_PM.c **** 
+  63:Generated_Source\PSoC4/I2C_1_sda_PM.c **** 
+  64:Generated_Source\PSoC4/I2C_1_sda_PM.c **** /*******************************************************************************
+  65:Generated_Source\PSoC4/I2C_1_sda_PM.c **** * Function Name: I2C_1_sda_Wakeup
+  66:Generated_Source\PSoC4/I2C_1_sda_PM.c **** ****************************************************************************//**
+  67:Generated_Source\PSoC4/I2C_1_sda_PM.c **** *
+  68:Generated_Source\PSoC4/I2C_1_sda_PM.c **** * \brief Restores the pin configuration that was saved during Pin_Sleep().
+  69:Generated_Source\PSoC4/I2C_1_sda_PM.c **** *
+  70:Generated_Source\PSoC4/I2C_1_sda_PM.c **** * For USBIO pins, the wakeup is only triggered for falling edge interrupts.
+  71:Generated_Source\PSoC4/I2C_1_sda_PM.c **** *
+  72:Generated_Source\PSoC4/I2C_1_sda_PM.c **** * <b>Note</b> This function is available in PSoC 4 only.
+  73:Generated_Source\PSoC4/I2C_1_sda_PM.c **** *
+  74:Generated_Source\PSoC4/I2C_1_sda_PM.c **** * \return 
+  75:Generated_Source\PSoC4/I2C_1_sda_PM.c **** *  None
+  76:Generated_Source\PSoC4/I2C_1_sda_PM.c **** *  
+  77:Generated_Source\PSoC4/I2C_1_sda_PM.c **** * \funcusage
+  78:Generated_Source\PSoC4/I2C_1_sda_PM.c **** *  Refer to I2C_1_sda_Sleep() for an example usage.
+  79:Generated_Source\PSoC4/I2C_1_sda_PM.c **** *******************************************************************************/
+  80:Generated_Source\PSoC4/I2C_1_sda_PM.c **** void I2C_1_sda_Wakeup(void)
+  81:Generated_Source\PSoC4/I2C_1_sda_PM.c **** {
   63              		.loc 1 81 0
   64              		.cfi_startproc
   65 0000 80B5     		push	{r7, lr}
@@ -160,28 +160,28 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 1
   68              		.cfi_offset 14, -4
   69 0002 00AF     		add	r7, sp, #0
   70              		.cfi_def_cfa_register 7
-  82:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****     #if defined(I2C_1_sda__PC)
-  83:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****         I2C_1_sda_PC = I2C_1_sda_backup.pcState;
+  82:Generated_Source\PSoC4/I2C_1_sda_PM.c ****     #if defined(I2C_1_sda__PC)
+  83:Generated_Source\PSoC4/I2C_1_sda_PM.c ****         I2C_1_sda_PC = I2C_1_sda_backup.pcState;
   71              		.loc 1 83 0
   72 0004 024A     		ldr	r2, .L5
   73 0006 034B     		ldr	r3, .L5+4
   74 0008 1B68     		ldr	r3, [r3]
   75 000a 1360     		str	r3, [r2]
-  84:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****     #else
-  85:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****         #if (CY_PSOC4_4200L)
-  86:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****             /* Restore the regulator state and come out of suspend mode */
-  87:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****             I2C_1_sda_USB_POWER_REG &= I2C_1_sda_USBIO_EXIT_SLEEP_PH1;
-  88:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****             I2C_1_sda_CR1_REG = I2C_1_sda_backup.usbState;
-  89:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****             I2C_1_sda_USB_POWER_REG &= I2C_1_sda_USBIO_EXIT_SLEEP_PH2;
-  90:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****         #endif
-  91:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****     #endif
-  92:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****     #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(I2C_1_sda__SIO)
-  93:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****         I2C_1_sda_SIO_REG = I2C_1_sda_backup.sioState;
-  94:.\Generated_Source\PSoC4/I2C_1_sda_PM.c ****     #endif
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 4
+  84:Generated_Source\PSoC4/I2C_1_sda_PM.c ****     #else
+  85:Generated_Source\PSoC4/I2C_1_sda_PM.c ****         #if (CY_PSOC4_4200L)
+  86:Generated_Source\PSoC4/I2C_1_sda_PM.c ****             /* Restore the regulator state and come out of suspend mode */
+  87:Generated_Source\PSoC4/I2C_1_sda_PM.c ****             I2C_1_sda_USB_POWER_REG &= I2C_1_sda_USBIO_EXIT_SLEEP_PH1;
+  88:Generated_Source\PSoC4/I2C_1_sda_PM.c ****             I2C_1_sda_CR1_REG = I2C_1_sda_backup.usbState;
+  89:Generated_Source\PSoC4/I2C_1_sda_PM.c ****             I2C_1_sda_USB_POWER_REG &= I2C_1_sda_USBIO_EXIT_SLEEP_PH2;
+  90:Generated_Source\PSoC4/I2C_1_sda_PM.c ****         #endif
+  91:Generated_Source\PSoC4/I2C_1_sda_PM.c ****     #endif
+  92:Generated_Source\PSoC4/I2C_1_sda_PM.c ****     #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(I2C_1_sda__SIO)
+  93:Generated_Source\PSoC4/I2C_1_sda_PM.c ****         I2C_1_sda_SIO_REG = I2C_1_sda_backup.sioState;
+  94:Generated_Source\PSoC4/I2C_1_sda_PM.c ****     #endif
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccBUxJMJ.s 			page 4
 
 
-  95:.\Generated_Source\PSoC4/I2C_1_sda_PM.c **** }
+  95:Generated_Source\PSoC4/I2C_1_sda_PM.c **** }
   76              		.loc 1 95 0
   77 000c BD46     		mov	sp, r7
   78              		@ sp needed
@@ -196,8 +196,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 1
   87              		.size	I2C_1_sda_Wakeup, .-I2C_1_sda_Wakeup
   88              		.text
   89              	.Letext0:
-  90              		.file 2 ".\\Generated_Source\\PSoC4\\cytypes.h"
-  91              		.file 3 ".\\Generated_Source\\PSoC4\\I2C_1_sda.h"
+  90              		.file 2 "Generated_Source\\PSoC4\\cytypes.h"
+  91              		.file 3 "Generated_Source\\PSoC4\\I2C_1_sda.h"
   92              		.section	.debug_info,"",%progbits
   93              	.Ldebug_info0:
   94 0000 05010000 		.4byte	0x105
@@ -205,48 +205,48 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 1
   96 0006 00000000 		.4byte	.Ldebug_abbrev0
   97 000a 04       		.byte	0x4
   98 000b 01       		.uleb128 0x1
-  99 000c 04010000 		.4byte	.LASF20
+  99 000c BF000000 		.4byte	.LASF20
  100 0010 01       		.byte	0x1
- 101 0011 62000000 		.4byte	.LASF21
- 102 0015 0F000000 		.4byte	.LASF22
+ 101 0011 99000000 		.4byte	.LASF21
+ 102 0015 8F010000 		.4byte	.LASF22
  103 0019 00000000 		.4byte	.Ldebug_ranges0+0
  104 001d 00000000 		.4byte	0
  105 0021 00000000 		.4byte	.Ldebug_line0
  106 0025 02       		.uleb128 0x2
  107 0026 01       		.byte	0x1
  108 0027 06       		.byte	0x6
- 109 0028 F4010000 		.4byte	.LASF0
+ 109 0028 F0010000 		.4byte	.LASF0
  110 002c 02       		.uleb128 0x2
  111 002d 01       		.byte	0x1
  112 002e 08       		.byte	0x8
- 113 002f A1000000 		.4byte	.LASF1
+ 113 002f 36000000 		.4byte	.LASF1
  114 0033 02       		.uleb128 0x2
  115 0034 02       		.byte	0x2
  116 0035 05       		.byte	0x5
- 117 0036 D9010000 		.4byte	.LASF2
+ 117 0036 D5010000 		.4byte	.LASF2
  118 003a 02       		.uleb128 0x2
  119 003b 02       		.byte	0x2
  120 003c 07       		.byte	0x7
- 121 003d D2000000 		.4byte	.LASF3
+ 121 003d 67000000 		.4byte	.LASF3
  122 0041 02       		.uleb128 0x2
  123 0042 04       		.byte	0x4
  124 0043 05       		.byte	0x5
- 125 0044 EB010000 		.4byte	.LASF4
+ 125 0044 E7010000 		.4byte	.LASF4
  126 0048 02       		.uleb128 0x2
  127 0049 04       		.byte	0x4
  128 004a 07       		.byte	0x7
- 129 004b C0000000 		.4byte	.LASF5
+ 129 004b 55000000 		.4byte	.LASF5
  130 004f 02       		.uleb128 0x2
  131 0050 08       		.byte	0x8
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 5
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccBUxJMJ.s 			page 5
 
 
  132 0051 05       		.byte	0x5
- 133 0052 C6010000 		.4byte	.LASF6
+ 133 0052 81010000 		.4byte	.LASF6
  134 0056 02       		.uleb128 0x2
  135 0057 08       		.byte	0x8
  136 0058 07       		.byte	0x7
- 137 0059 A6010000 		.4byte	.LASF7
+ 137 0059 61010000 		.4byte	.LASF7
  138 005d 03       		.uleb128 0x3
  139 005e 04       		.byte	0x4
  140 005f 05       		.byte	0x5
@@ -254,24 +254,24 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 1
  142 0064 02       		.uleb128 0x2
  143 0065 04       		.byte	0x4
  144 0066 07       		.byte	0x7
- 145 0067 99010000 		.4byte	.LASF8
+ 145 0067 54010000 		.4byte	.LASF8
  146 006b 04       		.uleb128 0x4
- 147 006c 92010000 		.4byte	.LASF12
+ 147 006c 4D010000 		.4byte	.LASF12
  148 0070 02       		.byte	0x2
  149 0071 9A01     		.2byte	0x19a
  150 0073 48000000 		.4byte	0x48
  151 0077 02       		.uleb128 0x2
  152 0078 04       		.byte	0x4
  153 0079 04       		.byte	0x4
- 154 007a 8A000000 		.4byte	.LASF9
+ 154 007a 1F000000 		.4byte	.LASF9
  155 007e 02       		.uleb128 0x2
  156 007f 08       		.byte	0x8
  157 0080 04       		.byte	0x4
- 158 0081 FD000000 		.4byte	.LASF10
+ 158 0081 92000000 		.4byte	.LASF10
  159 0085 02       		.uleb128 0x2
  160 0086 01       		.byte	0x1
  161 0087 08       		.byte	0x8
- 162 0088 D4010000 		.4byte	.LASF11
+ 162 0088 D0010000 		.4byte	.LASF11
  163 008c 04       		.uleb128 0x4
  164 008d 00000000 		.4byte	.LASF13
  165 0091 02       		.byte	0x2
@@ -285,20 +285,20 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 1
  173 00a0 21       		.byte	0x21
  174 00a1 CA000000 		.4byte	0xca
  175 00a5 07       		.uleb128 0x7
- 176 00a6 E3010000 		.4byte	.LASF14
+ 176 00a6 DF010000 		.4byte	.LASF14
  177 00aa 03       		.byte	0x3
  178 00ab 23       		.byte	0x23
  179 00ac 6B000000 		.4byte	0x6b
  180 00b0 00       		.byte	0
  181 00b1 07       		.uleb128 0x7
- 182 00b2 BD010000 		.4byte	.LASF15
+ 182 00b2 78010000 		.4byte	.LASF15
  183 00b6 03       		.byte	0x3
  184 00b7 24       		.byte	0x24
  185 00b8 6B000000 		.4byte	0x6b
  186 00bc 04       		.byte	0x4
  187 00bd 07       		.uleb128 0x7
  188 00be 06000000 		.4byte	.LASF16
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 6
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccBUxJMJ.s 			page 6
 
 
  189 00c2 03       		.byte	0x3
@@ -307,12 +307,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 1
  192 00c8 08       		.byte	0x8
  193 00c9 00       		.byte	0
  194 00ca 08       		.uleb128 0x8
- 195 00cb E5000000 		.4byte	.LASF17
+ 195 00cb 7A000000 		.4byte	.LASF17
  196 00cf 03       		.byte	0x3
  197 00d0 26       		.byte	0x26
  198 00d1 9D000000 		.4byte	0x9d
  199 00d5 09       		.uleb128 0x9
- 200 00d6 52000000 		.4byte	.LASF18
+ 200 00d6 0F000000 		.4byte	.LASF18
  201 00da 01       		.byte	0x1
  202 00db 2C       		.byte	0x2c
  203 00dc 00000000 		.4byte	.LFB0
@@ -320,7 +320,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 1
  205 00e4 01       		.uleb128 0x1
  206 00e5 9C       		.byte	0x9c
  207 00e6 09       		.uleb128 0x9
- 208 00e7 AF000000 		.4byte	.LASF19
+ 208 00e7 44000000 		.4byte	.LASF19
  209 00eb 01       		.byte	0x1
  210 00ec 50       		.byte	0x50
  211 00ed 00000000 		.4byte	.LFB1
@@ -328,7 +328,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 1
  213 00f5 01       		.uleb128 0x1
  214 00f6 9C       		.byte	0x9c
  215 00f7 0A       		.uleb128 0xa
- 216 00f8 90000000 		.4byte	.LASF23
+ 216 00f8 25000000 		.4byte	.LASF23
  217 00fc 01       		.byte	0x1
  218 00fd 14       		.byte	0x14
  219 00fe CA000000 		.4byte	0xca
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 1
  243 0011 00       		.byte	0
  244 0012 00       		.byte	0
  245 0013 02       		.uleb128 0x2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 7
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccBUxJMJ.s 			page 7
 
 
  246 0014 24       		.uleb128 0x24
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 1
  300 004a 07       		.uleb128 0x7
  301 004b 0D       		.uleb128 0xd
  302 004c 00       		.byte	0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 8
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccBUxJMJ.s 			page 8
 
 
  303 004d 03       		.uleb128 0x3
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 1
  357 0084 0B       		.uleb128 0xb
  358 0085 3B       		.uleb128 0x3b
  359 0086 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 9
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccBUxJMJ.s 			page 9
 
 
  360 0087 49       		.uleb128 0x49
@@ -512,8 +512,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 1
  388 0014 00000000 		.4byte	0
  389              		.section	.debug_line,"",%progbits
  390              	.Ldebug_line0:
- 391 0000 87000000 		.section	.debug_str,"MS",%progbits,1
- 391      02005A00 
+ 391 0000 85000000 		.section	.debug_str,"MS",%progbits,1
+ 391      02005800 
  391      00000201 
  391      FB0E0D00 
  391      01010101 
@@ -524,130 +524,130 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 1
  395 0006 75736253 		.ascii	"usbState\000"
  395      74617465 
  395      00
- 396              	.LASF22:
- 397 000f 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\GitHub\\BioSnap\\Mas"
- 397      73657273 
- 397      5C4D6174 
- 397      74686577 
- 397      5C446F63 
- 398 003c 7465725F 		.ascii	"ter_v2\\Master_2.cydsn\000"
- 398      76325C4D 
- 398      61737465 
- 398      725F322E 
- 398      63796473 
- 399              	.LASF18:
- 400 0052 4932435F 		.ascii	"I2C_1_sda_Sleep\000"
- 400      315F7364 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 10
+ 396              	.LASF18:
+ 397 000f 4932435F 		.ascii	"I2C_1_sda_Sleep\000"
+ 397      315F7364 
+ 397      615F536C 
+ 397      65657000 
+ 398              	.LASF9:
+ 399 001f 666C6F61 		.ascii	"float\000"
+ 399      7400
+ 400              	.LASF23:
+ 401 0025 4932435F 		.ascii	"I2C_1_sda_backup\000"
+ 401      315F7364 
+ 401      615F6261 
+ 401      636B7570 
+ 401      00
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccBUxJMJ.s 			page 10
 
 
- 400      615F536C 
- 400      65657000 
- 401              	.LASF21:
- 402 0062 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\I2C_1_sda_PM.c\000"
- 402      6E657261 
- 402      7465645F 
- 402      536F7572 
- 402      63655C50 
- 403              	.LASF9:
- 404 008a 666C6F61 		.ascii	"float\000"
- 404      7400
- 405              	.LASF23:
- 406 0090 4932435F 		.ascii	"I2C_1_sda_backup\000"
- 406      315F7364 
- 406      615F6261 
- 406      636B7570 
- 406      00
- 407              	.LASF1:
- 408 00a1 756E7369 		.ascii	"unsigned char\000"
- 408      676E6564 
- 408      20636861 
- 408      7200
- 409              	.LASF19:
- 410 00af 4932435F 		.ascii	"I2C_1_sda_Wakeup\000"
- 410      315F7364 
- 410      615F5761 
- 410      6B657570 
- 410      00
- 411              	.LASF5:
- 412 00c0 6C6F6E67 		.ascii	"long unsigned int\000"
- 412      20756E73 
- 412      69676E65 
- 412      6420696E 
- 412      7400
- 413              	.LASF3:
- 414 00d2 73686F72 		.ascii	"short unsigned int\000"
- 414      7420756E 
- 414      7369676E 
- 414      65642069 
- 414      6E7400
- 415              	.LASF17:
- 416 00e5 4932435F 		.ascii	"I2C_1_sda_BACKUP_STRUCT\000"
- 416      315F7364 
- 416      615F4241 
- 416      434B5550 
- 416      5F535452 
- 417              	.LASF10:
- 418 00fd 646F7562 		.ascii	"double\000"
- 418      6C6500
- 419              	.LASF20:
- 420 0104 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 420      4320342E 
- 420      392E3320 
- 420      32303135 
- 420      30333033 
- 421 0137 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
- 421      20726576 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc7M0Aa2.s 			page 11
+ 402              	.LASF1:
+ 403 0036 756E7369 		.ascii	"unsigned char\000"
+ 403      676E6564 
+ 403      20636861 
+ 403      7200
+ 404              	.LASF19:
+ 405 0044 4932435F 		.ascii	"I2C_1_sda_Wakeup\000"
+ 405      315F7364 
+ 405      615F5761 
+ 405      6B657570 
+ 405      00
+ 406              	.LASF5:
+ 407 0055 6C6F6E67 		.ascii	"long unsigned int\000"
+ 407      20756E73 
+ 407      69676E65 
+ 407      6420696E 
+ 407      7400
+ 408              	.LASF3:
+ 409 0067 73686F72 		.ascii	"short unsigned int\000"
+ 409      7420756E 
+ 409      7369676E 
+ 409      65642069 
+ 409      6E7400
+ 410              	.LASF17:
+ 411 007a 4932435F 		.ascii	"I2C_1_sda_BACKUP_STRUCT\000"
+ 411      315F7364 
+ 411      615F4241 
+ 411      434B5550 
+ 411      5F535452 
+ 412              	.LASF10:
+ 413 0092 646F7562 		.ascii	"double\000"
+ 413      6C6500
+ 414              	.LASF21:
+ 415 0099 47656E65 		.ascii	"Generated_Source\\PSoC4\\I2C_1_sda_PM.c\000"
+ 415      72617465 
+ 415      645F536F 
+ 415      75726365 
+ 415      5C50536F 
+ 416              	.LASF20:
+ 417 00bf 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 417      4320342E 
+ 417      392E3320 
+ 417      32303135 
+ 417      30333033 
+ 418 00f2 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 418      20726576 
+ 418      6973696F 
+ 418      6E203232 
+ 418      31323230 
+ 419 0125 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 419      66756E63 
+ 419      74696F6E 
+ 419      2D736563 
+ 419      74696F6E 
+ 420              	.LASF12:
+ 421 014d 75696E74 		.ascii	"uint32\000"
+ 421      333200
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccBUxJMJ.s 			page 11
 
 
- 421      6973696F 
- 421      6E203232 
- 421      31323230 
- 422 016a 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 422      66756E63 
- 422      74696F6E 
- 422      2D736563 
- 422      74696F6E 
- 423              	.LASF12:
- 424 0192 75696E74 		.ascii	"uint32\000"
- 424      333200
- 425              	.LASF8:
- 426 0199 756E7369 		.ascii	"unsigned int\000"
- 426      676E6564 
- 426      20696E74 
- 426      00
- 427              	.LASF7:
- 428 01a6 6C6F6E67 		.ascii	"long long unsigned int\000"
- 428      206C6F6E 
- 428      6720756E 
- 428      7369676E 
- 428      65642069 
- 429              	.LASF15:
- 430 01bd 73696F53 		.ascii	"sioState\000"
- 430      74617465 
- 430      00
- 431              	.LASF6:
- 432 01c6 6C6F6E67 		.ascii	"long long int\000"
- 432      206C6F6E 
- 432      6720696E 
- 432      7400
+ 422              	.LASF8:
+ 423 0154 756E7369 		.ascii	"unsigned int\000"
+ 423      676E6564 
+ 423      20696E74 
+ 423      00
+ 424              	.LASF7:
+ 425 0161 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 425      206C6F6E 
+ 425      6720756E 
+ 425      7369676E 
+ 425      65642069 
+ 426              	.LASF15:
+ 427 0178 73696F53 		.ascii	"sioState\000"
+ 427      74617465 
+ 427      00
+ 428              	.LASF6:
+ 429 0181 6C6F6E67 		.ascii	"long long int\000"
+ 429      206C6F6E 
+ 429      6720696E 
+ 429      7400
+ 430              	.LASF22:
+ 431 018f 433A5C55 		.ascii	"C:\\Users\\Davit\\Documents\\GitHub\\BioSnap\\Maste"
+ 431      73657273 
+ 431      5C446176 
+ 431      69745C44 
+ 431      6F63756D 
+ 432 01bc 725F7632 		.ascii	"r_v2\\Master_2.cydsn\000"
+ 432      5C4D6173 
+ 432      7465725F 
+ 432      322E6379 
+ 432      64736E00 
  433              	.LASF11:
- 434 01d4 63686172 		.ascii	"char\000"
+ 434 01d0 63686172 		.ascii	"char\000"
  434      00
  435              	.LASF2:
- 436 01d9 73686F72 		.ascii	"short int\000"
+ 436 01d5 73686F72 		.ascii	"short int\000"
  436      7420696E 
  436      7400
  437              	.LASF14:
- 438 01e3 70635374 		.ascii	"pcState\000"
+ 438 01df 70635374 		.ascii	"pcState\000"
  438      61746500 
  439              	.LASF4:
- 440 01eb 6C6F6E67 		.ascii	"long int\000"
+ 440 01e7 6C6F6E67 		.ascii	"long int\000"
  440      20696E74 
  440      00
  441              	.LASF0:
- 442 01f4 7369676E 		.ascii	"signed char\000"
+ 442 01f0 7369676E 		.ascii	"signed char\000"
  442      65642063 
  442      68617200 
  443              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

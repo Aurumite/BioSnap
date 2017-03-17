@@ -11,11 +11,19 @@
         app:showAsAction="ifRoom"/>
 
     <item
-        android:id="@+id/action_settings"
-        android:title="@string/action_bluetooth"
-        android:icon="@drawable/ic_settings_black_24dp"
+        android:id="@+id/action_assessment"
+        android:title="@string/patient_assessment"
+        android:icon="@drawable/ic_assessment_black_24dp"
         app:showAsAction="ifRoom"
         android:orderInCategory="200"
+        />
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:icon="@drawable/ic_settings_black_24dp"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="300"
         />
 
 </menu>

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccXNfk4U.s 			page 1
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc88RKQO.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -25,22 +25,22 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccXNfk4U.s 			page 1
   22              		.type	initTemperatureAndBattery, %function
   23              	initTemperatureAndBattery:
   24              	.LFB37:
-  25              		.file 1 ".\\tempAndBat.c"
-   1:.\tempAndBat.c **** /* ========================================
-   2:.\tempAndBat.c ****  *
-   3:.\tempAndBat.c ****  * Copyright YOUR COMPANY, THE YEAR
-   4:.\tempAndBat.c ****  * All Rights Reserved
-   5:.\tempAndBat.c ****  * UNPUBLISHED, LICENSED SOFTWARE.
-   6:.\tempAndBat.c ****  *
-   7:.\tempAndBat.c ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
-   8:.\tempAndBat.c ****  * WHICH IS THE PROPERTY OF your company.
-   9:.\tempAndBat.c ****  *
-  10:.\tempAndBat.c ****  * ========================================
-  11:.\tempAndBat.c **** */
-  12:.\tempAndBat.c **** 
-  13:.\tempAndBat.c **** #include <tempAndBat.h>
-  14:.\tempAndBat.c **** 
-  15:.\tempAndBat.c **** void initTemperatureAndBattery(){
+  25              		.file 1 "tempAndBat.c"
+   1:tempAndBat.c  **** /* ========================================
+   2:tempAndBat.c  ****  *
+   3:tempAndBat.c  ****  * Copyright YOUR COMPANY, THE YEAR
+   4:tempAndBat.c  ****  * All Rights Reserved
+   5:tempAndBat.c  ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:tempAndBat.c  ****  *
+   7:tempAndBat.c  ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:tempAndBat.c  ****  * WHICH IS THE PROPERTY OF your company.
+   9:tempAndBat.c  ****  *
+  10:tempAndBat.c  ****  * ========================================
+  11:tempAndBat.c  **** */
+  12:tempAndBat.c  **** 
+  13:tempAndBat.c  **** #include <tempAndBat.h>
+  14:tempAndBat.c  **** 
+  15:tempAndBat.c  **** void initTemperatureAndBattery(){
   26              		.loc 1 15 0
   27              		.cfi_startproc
   28 0000 80B5     		push	{r7, lr}
@@ -49,8 +49,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccXNfk4U.s 			page 1
   31              		.cfi_offset 14, -4
   32 0002 00AF     		add	r7, sp, #0
   33              		.cfi_def_cfa_register 7
-  16:.\tempAndBat.c ****     
-  17:.\tempAndBat.c **** }
+  16:tempAndBat.c  ****     
+  17:tempAndBat.c  **** }
   34              		.loc 1 17 0
   35 0004 BD46     		mov	sp, r7
   36              		@ sp needed
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccXNfk4U.s 			page 1
   38              		.cfi_endproc
   39              	.LFE37:
   40              		.size	initTemperatureAndBattery, .-initTemperatureAndBattery
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccXNfk4U.s 			page 2
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc88RKQO.s 			page 2
 
 
   41              		.section	.text.getTemperature,"ax",%progbits
@@ -69,8 +69,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccXNfk4U.s 			page 1
   46              		.type	getTemperature, %function
   47              	getTemperature:
   48              	.LFB38:
-  18:.\tempAndBat.c **** 
-  19:.\tempAndBat.c **** uint16 getTemperature(){
+  18:tempAndBat.c  **** 
+  19:tempAndBat.c  **** uint16 getTemperature(){
   49              		.loc 1 19 0
   50              		.cfi_startproc
   51 0000 80B5     		push	{r7, lr}
@@ -79,8 +79,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccXNfk4U.s 			page 1
   54              		.cfi_offset 14, -4
   55 0002 00AF     		add	r7, sp, #0
   56              		.cfi_def_cfa_register 7
-  20:.\tempAndBat.c ****     // Read from ADC abd convert to millivolts
-  21:.\tempAndBat.c ****     return ADC_CountsTo_mVolts(0, ADC_GetResult16(0));
+  20:tempAndBat.c  ****     // Read from ADC abd convert to millivolts
+  21:tempAndBat.c  ****     return ADC_CountsTo_mVolts(0, ADC_GetResult16(0));
   57              		.loc 1 21 0
   58 0004 0020     		mov	r0, #0
   59 0006 FFF7FEFF 		bl	ADC_GetResult16
@@ -90,7 +90,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccXNfk4U.s 			page 1
   63 0010 FFF7FEFF 		bl	ADC_CountsTo_mVolts
   64 0014 031C     		mov	r3, r0
   65 0016 9BB2     		uxth	r3, r3
-  22:.\tempAndBat.c **** }
+  22:tempAndBat.c  **** }
   66              		.loc 1 22 0
   67 0018 181C     		mov	r0, r3
   68 001a BD46     		mov	sp, r7
@@ -107,8 +107,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccXNfk4U.s 			page 1
   79              		.type	getBattery, %function
   80              	getBattery:
   81              	.LFB39:
-  23:.\tempAndBat.c **** 
-  24:.\tempAndBat.c **** uint16 getBattery(){
+  23:tempAndBat.c  **** 
+  24:tempAndBat.c  **** uint16 getBattery(){
   82              		.loc 1 24 0
   83              		.cfi_startproc
   84 0000 80B5     		push	{r7, lr}
@@ -117,11 +117,11 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccXNfk4U.s 			page 1
   87              		.cfi_offset 14, -4
   88 0002 00AF     		add	r7, sp, #0
   89              		.cfi_def_cfa_register 7
-  25:.\tempAndBat.c ****     // Read from ADC abd convert to millivolts
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccXNfk4U.s 			page 3
+  25:tempAndBat.c  ****     // Read from ADC abd convert to millivolts
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc88RKQO.s 			page 3
 
 
-  26:.\tempAndBat.c ****     return ADC_CountsTo_mVolts(1, ADC_GetResult16(1));
+  26:tempAndBat.c  ****     return ADC_CountsTo_mVolts(1, ADC_GetResult16(1));
   90              		.loc 1 26 0
   91 0004 0120     		mov	r0, #1
   92 0006 FFF7FEFF 		bl	ADC_GetResult16
@@ -131,7 +131,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccXNfk4U.s 			page 1
   96 0010 FFF7FEFF 		bl	ADC_CountsTo_mVolts
   97 0014 031C     		mov	r3, r0
   98 0016 9BB2     		uxth	r3, r3
-  27:.\tempAndBat.c **** }...
+  27:tempAndBat.c  **** }...
   99              		.loc 1 27 0
  100 0018 181C     		mov	r0, r3
  101 001a BD46     		mov	sp, r7
@@ -152,38 +152,38 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccXNfk4U.s 			page 1
  116 000b 01       		.uleb128 0x1
  117 000c 0E000000 		.4byte	.LASF15
  118 0010 01       		.byte	0x1
- 119 0011 A9000000 		.4byte	.LASF16
- 120 0015 47010000 		.4byte	.LASF17
+ 119 0011 7F010000 		.4byte	.LASF16
+ 120 0015 CA000000 		.4byte	.LASF17
  121 0019 00000000 		.4byte	.Ldebug_ranges0+0
  122 001d 00000000 		.4byte	0
  123 0021 00000000 		.4byte	.Ldebug_line0
  124 0025 02       		.uleb128 0x2
  125 0026 01       		.byte	0x1
  126 0027 06       		.byte	0x6
- 127 0028 3B010000 		.4byte	.LASF0
+ 127 0028 6D010000 		.4byte	.LASF0
  128 002c 02       		.uleb128 0x2
  129 002d 01       		.byte	0x1
  130 002e 08       		.byte	0x8
- 131 002f F0000000 		.4byte	.LASF1
+ 131 002f 22010000 		.4byte	.LASF1
  132 0033 02       		.uleb128 0x2
  133 0034 02       		.byte	0x2
  134 0035 05       		.byte	0x5
- 135 0036 0C010000 		.4byte	.LASF2
+ 135 0036 3E010000 		.4byte	.LASF2
  136 003a 02       		.uleb128 0x2
  137 003b 02       		.byte	0x2
  138 003c 07       		.byte	0x7
- 139 003d 28010000 		.4byte	.LASF3
+ 139 003d 5A010000 		.4byte	.LASF3
  140 0041 02       		.uleb128 0x2
  141 0042 04       		.byte	0x4
  142 0043 05       		.byte	0x5
- 143 0044 03010000 		.4byte	.LASF4
+ 143 0044 35010000 		.4byte	.LASF4
  144 0048 02       		.uleb128 0x2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccXNfk4U.s 			page 4
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc88RKQO.s 			page 4
 
 
  145 0049 04       		.byte	0x4
  146 004a 07       		.byte	0x7
- 147 004b C7000000 		.4byte	.LASF5
+ 147 004b B8000000 		.4byte	.LASF5
  148 004f 02       		.uleb128 0x2
  149 0050 08       		.byte	0x8
  150 0051 05       		.byte	0x5
@@ -191,7 +191,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccXNfk4U.s 			page 1
  152 0056 02       		.uleb128 0x2
  153 0057 08       		.byte	0x8
  154 0058 07       		.byte	0x7
- 155 0059 D9000000 		.4byte	.LASF7
+ 155 0059 0B010000 		.4byte	.LASF7
  156 005d 03       		.uleb128 0x3
  157 005e 04       		.byte	0x4
  158 005f 05       		.byte	0x5
@@ -201,28 +201,28 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccXNfk4U.s 			page 1
  162 0066 07       		.byte	0x7
  163 0067 9C000000 		.4byte	.LASF8
  164 006b 04       		.uleb128 0x4
- 165 006c AA010000 		.4byte	.LASF18
+ 165 006c A6010000 		.4byte	.LASF18
  166 0070 02       		.byte	0x2
  167 0071 9901     		.2byte	0x199
  168 0073 3A000000 		.4byte	0x3a
  169 0077 02       		.uleb128 0x2
  170 0078 04       		.byte	0x4
  171 0079 04       		.byte	0x4
- 172 007a 8A010000 		.4byte	.LASF9
+ 172 007a 79010000 		.4byte	.LASF9
  173 007e 02       		.uleb128 0x2
  174 007f 08       		.byte	0x8
  175 0080 04       		.byte	0x4
- 176 0081 21010000 		.4byte	.LASF10
+ 176 0081 53010000 		.4byte	.LASF10
  177 0085 02       		.uleb128 0x2
  178 0086 01       		.byte	0x1
  179 0087 08       		.byte	0x8
- 180 0088 FE000000 		.4byte	.LASF11
+ 180 0088 30010000 		.4byte	.LASF11
  181 008c 02       		.uleb128 0x2
  182 008d 04       		.byte	0x4
  183 008e 07       		.byte	0x7
- 184 008f B1010000 		.4byte	.LASF12
+ 184 008f AD010000 		.4byte	.LASF12
  185 0093 05       		.uleb128 0x5
- 186 0094 90010000 		.4byte	.LASF19
+ 186 0094 8C010000 		.4byte	.LASF19
  187 0098 01       		.byte	0x1
  188 0099 0F       		.byte	0xf
  189 009a 00000000 		.4byte	.LFB37
@@ -230,7 +230,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccXNfk4U.s 			page 1
  191 00a2 01       		.uleb128 0x1
  192 00a3 9C       		.byte	0x9c
  193 00a4 06       		.uleb128 0x6
- 194 00a5 B8000000 		.4byte	.LASF13
+ 194 00a5 A9000000 		.4byte	.LASF13
  195 00a9 01       		.byte	0x1
  196 00aa 13       		.byte	0x13
  197 00ab 6B000000 		.4byte	0x6b
@@ -238,11 +238,11 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccXNfk4U.s 			page 1
  199 00b3 1E000000 		.4byte	.LFE38-.LFB38
  200 00b7 01       		.uleb128 0x1
  201 00b8 9C       		.byte	0x9c
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccXNfk4U.s 			page 5
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc88RKQO.s 			page 5
 
 
  202 00b9 06       		.uleb128 0x6
- 203 00ba 16010000 		.4byte	.LASF14
+ 203 00ba 48010000 		.4byte	.LASF14
  204 00be 01       		.byte	0x1
  205 00bf 18       		.byte	0x18
  206 00c0 6B000000 		.4byte	0x6b
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccXNfk4U.s 			page 1
  256 002a 16       		.uleb128 0x16
  257 002b 00       		.byte	0
  258 002c 03       		.uleb128 0x3
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccXNfk4U.s 			page 6
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc88RKQO.s 			page 6
 
 
  259 002d 0E       		.uleb128 0xe
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccXNfk4U.s 			page 1
  313              		.section	.debug_aranges,"",%progbits
  314 0000 2C000000 		.4byte	0x2c
  315 0004 0200     		.2byte	0x2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccXNfk4U.s 			page 7
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc88RKQO.s 			page 7
 
 
  316 0006 00000000 		.4byte	.Ldebug_info0
@@ -386,8 +386,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccXNfk4U.s 			page 1
  338 001c 00000000 		.4byte	0
  339              		.section	.debug_line,"",%progbits
  340              	.Ldebug_line0:
- 341 0000 81000000 		.section	.debug_str,"MS",%progbits,1
- 341      02004900 
+ 341 0000 7F000000 		.section	.debug_str,"MS",%progbits,1
+ 341      02004700 
  341      00000201 
  341      FB0E0D00 
  341      01010101 
@@ -417,92 +417,92 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccXNfk4U.s 			page 1
  349      676E6564 
  349      20696E74 
  349      00
- 350              	.LASF16:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccXNfk4U.s 			page 8
+ 350              	.LASF13:
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc88RKQO.s 			page 8
 
 
- 351 00a9 2E5C7465 		.ascii	".\\tempAndBat.c\000"
- 351      6D70416E 
- 351      64426174 
- 351      2E6300
- 352              	.LASF13:
- 353 00b8 67657454 		.ascii	"getTemperature\000"
- 353      656D7065 
- 353      72617475 
- 353      726500
- 354              	.LASF5:
- 355 00c7 6C6F6E67 		.ascii	"long unsigned int\000"
- 355      20756E73 
- 355      69676E65 
- 355      6420696E 
- 355      7400
- 356              	.LASF7:
- 357 00d9 6C6F6E67 		.ascii	"long long unsigned int\000"
- 357      206C6F6E 
- 357      6720756E 
- 357      7369676E 
- 357      65642069 
- 358              	.LASF1:
- 359 00f0 756E7369 		.ascii	"unsigned char\000"
- 359      676E6564 
- 359      20636861 
- 359      7200
- 360              	.LASF11:
- 361 00fe 63686172 		.ascii	"char\000"
- 361      00
- 362              	.LASF4:
- 363 0103 6C6F6E67 		.ascii	"long int\000"
- 363      20696E74 
- 363      00
- 364              	.LASF2:
- 365 010c 73686F72 		.ascii	"short int\000"
- 365      7420696E 
- 365      7400
- 366              	.LASF14:
- 367 0116 67657442 		.ascii	"getBattery\000"
- 367      61747465 
- 367      727900
- 368              	.LASF10:
- 369 0121 646F7562 		.ascii	"double\000"
- 369      6C6500
- 370              	.LASF3:
- 371 0128 73686F72 		.ascii	"short unsigned int\000"
- 371      7420756E 
- 371      7369676E 
- 371      65642069 
- 371      6E7400
- 372              	.LASF0:
- 373 013b 7369676E 		.ascii	"signed char\000"
- 373      65642063 
- 373      68617200 
- 374              	.LASF17:
- 375 0147 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\GitHub\\BioSnap\\Mas"
- 375      73657273 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccXNfk4U.s 			page 9
+ 351 00a9 67657454 		.ascii	"getTemperature\000"
+ 351      656D7065 
+ 351      72617475 
+ 351      726500
+ 352              	.LASF5:
+ 353 00b8 6C6F6E67 		.ascii	"long unsigned int\000"
+ 353      20756E73 
+ 353      69676E65 
+ 353      6420696E 
+ 353      7400
+ 354              	.LASF17:
+ 355 00ca 433A5C55 		.ascii	"C:\\Users\\Davit\\Documents\\GitHub\\BioSnap\\Maste"
+ 355      73657273 
+ 355      5C446176 
+ 355      69745C44 
+ 355      6F63756D 
+ 356 00f7 725F7632 		.ascii	"r_v2\\Master_2.cydsn\000"
+ 356      5C4D6173 
+ 356      7465725F 
+ 356      322E6379 
+ 356      64736E00 
+ 357              	.LASF7:
+ 358 010b 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 358      206C6F6E 
+ 358      6720756E 
+ 358      7369676E 
+ 358      65642069 
+ 359              	.LASF1:
+ 360 0122 756E7369 		.ascii	"unsigned char\000"
+ 360      676E6564 
+ 360      20636861 
+ 360      7200
+ 361              	.LASF11:
+ 362 0130 63686172 		.ascii	"char\000"
+ 362      00
+ 363              	.LASF4:
+ 364 0135 6C6F6E67 		.ascii	"long int\000"
+ 364      20696E74 
+ 364      00
+ 365              	.LASF2:
+ 366 013e 73686F72 		.ascii	"short int\000"
+ 366      7420696E 
+ 366      7400
+ 367              	.LASF14:
+ 368 0148 67657442 		.ascii	"getBattery\000"
+ 368      61747465 
+ 368      727900
+ 369              	.LASF10:
+ 370 0153 646F7562 		.ascii	"double\000"
+ 370      6C6500
+ 371              	.LASF3:
+ 372 015a 73686F72 		.ascii	"short unsigned int\000"
+ 372      7420756E 
+ 372      7369676E 
+ 372      65642069 
+ 372      6E7400
+ 373              	.LASF0:
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc88RKQO.s 			page 9
 
 
- 375      5C4D6174 
- 375      74686577 
- 375      5C446F63 
- 376 0174 7465725F 		.ascii	"ter_v2\\Master_2.cydsn\000"
- 376      76325C4D 
- 376      61737465 
- 376      725F322E 
- 376      63796473 
- 377              	.LASF9:
- 378 018a 666C6F61 		.ascii	"float\000"
- 378      7400
+ 374 016d 7369676E 		.ascii	"signed char\000"
+ 374      65642063 
+ 374      68617200 
+ 375              	.LASF9:
+ 376 0179 666C6F61 		.ascii	"float\000"
+ 376      7400
+ 377              	.LASF16:
+ 378 017f 74656D70 		.ascii	"tempAndBat.c\000"
+ 378      416E6442 
+ 378      61742E63 
+ 378      00
  379              	.LASF19:
- 380 0190 696E6974 		.ascii	"initTemperatureAndBattery\000"
+ 380 018c 696E6974 		.ascii	"initTemperatureAndBattery\000"
  380      54656D70 
  380      65726174 
  380      75726541 
  380      6E644261 
  381              	.LASF18:
- 382 01aa 75696E74 		.ascii	"uint16\000"
+ 382 01a6 75696E74 		.ascii	"uint16\000"
  382      313600
  383              	.LASF12:
- 384 01b1 73697A65 		.ascii	"sizetype\000"
+ 384 01ad 73697A65 		.ascii	"sizetype\000"
  384      74797065 
  384      00
  385              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

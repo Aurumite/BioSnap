@@ -13,4 +13,10 @@
     <string name="discover_services">Discover Services</string>
     <string name="graph_options">Live Data Options</string>
     <string name="disconnect_ble">Disconnect</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="retrieve_patient_data">Get Patient Data</string>
+    <string name="patient_assessment">Patient Assessment</string>
+    <string name="patient_data">Patient Data</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
 </resources>
