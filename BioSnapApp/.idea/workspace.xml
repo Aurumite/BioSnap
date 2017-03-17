@@ -10,99 +10,509 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d49a789d-d5e7-4437-9d1a-c01f0815b5cd" name="Default" comment="Added Splash Screen, removed BLE buttons.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/aws_android_sdk_core_2_2_22.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/eec136b/biosnap/biosnapapp/NewUserActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/eec136b/biosnap/biosnapapp/PatientActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_assessment_black_24dp.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_patient_data.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash_new_user.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_assessment.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/BLE_1.cycsa" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/ADC.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/ADC.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_INT.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_INT.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_IRQ.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_IRQ.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_PM.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_PM.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_intClock.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_intClock.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_HAL_INT.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_HAL_INT.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_HAL_PVT.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_HAL_PVT.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_bless_isr.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_bless_isr.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_custom.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_custom.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_eventHandler.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_eventHandler.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_gatt.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_gatt.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/Clock_1.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/Clock_1.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/Cm0Start.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/Cm0Start.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/CyBootAsmGnu.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/CyBootAsmGnu.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/CyFlash.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/CyFlash.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/CyLFClk.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/CyLFClk.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/CyLib.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/CyLib.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_BOOT.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_BOOT.o" />
+    <list default="true" id="d49a789d-d5e7-4437-9d1a-c01f0815b5cd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/ADC.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_INT.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_IRQ.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_In.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_In_PM.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_PM.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_SAR_Seq_1.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_SAR_Seq_1_INT.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_SAR_Seq_1_IRQ.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_SAR_Seq_1_PM.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_SAR_Seq_1_intClock.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_intClock.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_HAL_INT.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_HAL_PVT.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_bas.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_bless_isr.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_custom.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_dis.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_eventHandler.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_gatt.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_hids.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_scps.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/Clock_1.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/Cm0Start.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/CyBootAsmGnu.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/CyFlash.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/CyLFClk.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/CyLib.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_BOOT.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_I2C.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_I2C.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_I2C_BOOT.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_I2C_INT.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_I2C_MASTER.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_PM.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_PM.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_SCBCLK.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_SCB_IRQ.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_scl.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_scl_PM.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_sda.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_sda_PM.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/MAX30100_All.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/SCB_2.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/SCB_2_BOOT.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/SCB_2_I2C.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/SCB_2_I2C.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/SCB_2_I2C_BOOT.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/SCB_2_I2C_INT.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/SCB_2_I2C_SLAVE.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/SCB_2_I2C_SLAVE.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/SCB_2_PM.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/SCB_2_PM.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/SCB_2_SCBCLK.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/SCB_2_SCB_IRQ.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/SCB_2_scl.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/SCB_2_scl_PM.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/SCB_2_sda.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/SCB_2_sda_PM.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/TCPWM_1.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/TCPWM_1_PM.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/Timer_minute.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/Timer_minute_PM.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/accelerometer.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/bat_in.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/bat_in_PM.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/cyPm.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/cyfitter_cfg.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/cymetadata.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/cyutils.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/isr_1.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/isr_minute.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/main.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/proc_v1.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/proc_v1.elf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/tempAndBat.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/temp_in.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/temp_in_PM.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/cycodeshareexport.ld" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/cycodeshareimport.ld" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/cycodeshareimport.scat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/TopDesign/TopDesign.cysch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/cycodeshareexport.ld" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/cycodeshareimport.ld" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/cycodeshareimport.scat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/lcpsoc3/index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/proc_v1.cyfit" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/proc_v1.dsf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/proc_v1.cydwr" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/proc_v1.cyfit" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_test.cywrk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_test.cywrk.Matthew" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/.deps/ARM_C_FILE.P" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/.deps/C_FILE.P" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/.deps/GNU_ARM_ASM_FILE.P" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/ADC.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_INT.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_IRQ.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_In.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_In_PM.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_PM.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_SAR_Seq_1.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_SAR_Seq_1_INT.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_SAR_Seq_1_IRQ.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_SAR_Seq_1_PM.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_SAR_Seq_1_intClock.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_intClock.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/ARM_C_FILE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_HAL_INT.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_HAL_PVT.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_bas.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_bless_isr.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_custom.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_dis.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_eventHandler.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_gatt.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_hids.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_scps.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/BUILD.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/C_FILE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/Clock_1.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/Cm0Start.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/CyBootAsmGnu.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/CyFlash.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/CyLFClk.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/CyLib.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/GNU_ARM_ASM_FILE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_BOOT.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_I2C_BOOT.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_I2C_INT.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_I2C_MASTER.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_SCBCLK.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_SCB_IRQ.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_scl.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_scl_PM.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_sda.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_sda_PM.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/LINK_options.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/MAX30100_All.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/REBUILD.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/SCB_2.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/SCB_2_BOOT.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/SCB_2_I2C_BOOT.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/SCB_2_I2C_INT.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/SCB_2_SCBCLK.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/SCB_2_SCB_IRQ.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/SCB_2_scl.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/SCB_2_scl_PM.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/SCB_2_sda.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/SCB_2_sda_PM.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/TCPWM_1.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/TCPWM_1_PM.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/Timer_minute.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/Timer_minute_PM.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/accelerometer.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/bat_in.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/bat_in_PM.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/cyPm.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/cyfitter_cfg.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/cymetadata.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/cyutils.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/isr_1.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/isr_minute.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/library.deps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/main.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/proc_v1.hex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/proc_v1.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/tempAndBat.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/temp_in.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/CortexM0/ARM_GCC_493/Debug/temp_in_PM.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Export/PSoCCreatorExportIDE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/ADC.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/ADC.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/ADC_INT.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/ADC_IRQ.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/ADC_IRQ.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/ADC_In.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/ADC_In.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/ADC_In_PM.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/ADC_In_aliases.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/ADC_PM.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1_INT.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1_IRQ.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1_IRQ.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1_PM.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1_intClock.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1_intClock.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/ADC_intClock.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/ADC_intClock.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1.cycsa" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_HAL_INT.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_HAL_PVT.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_HAL_PVT.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_STACK_PVT.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_Stack.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_StackGap.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_StackGatt.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_StackGattClient.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_StackGattDb.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_StackGattServer.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_StackHostMain.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_StackL2cap.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_bas.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_bas.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_bless_isr.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_bless_isr.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_custom.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_custom.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_dis.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_dis.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_eventHandler.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_eventHandler.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_gatt.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_gatt.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_hids.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_hids.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_scps.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/BLE_1_scps.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/Clock_1.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/Clock_1.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/Cm0Iar.icf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/Cm0RealView.scat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/Cm0Start.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/CyBootAsmGnu.s" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/CyBootAsmIar.s" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/CyBootAsmRv.s" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/CyFlash.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/CyFlash.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/CyLFClk.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/CyLFClk.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/CyLib.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/CyLib.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/I2C_1.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/I2C_1.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/I2C_1_BOOT.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/I2C_1_BOOT.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/I2C_1_I2C.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/I2C_1_I2C.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/I2C_1_I2C_BOOT.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/I2C_1_I2C_INT.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/I2C_1_I2C_MASTER.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/I2C_1_I2C_PVT.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/I2C_1_PINS.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/I2C_1_PM.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/I2C_1_PVT.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/I2C_1_SCBCLK.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/I2C_1_SCBCLK.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/I2C_1_SCB_IRQ.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/I2C_1_SCB_IRQ.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/I2C_1_scl.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/I2C_1_scl.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/I2C_1_scl_PM.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/I2C_1_scl_aliases.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/I2C_1_sda.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/I2C_1_sda.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/I2C_1_sda_PM.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/I2C_1_sda_aliases.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/SCB_2.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/SCB_2.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/SCB_2_BOOT.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/SCB_2_BOOT.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/SCB_2_I2C.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/SCB_2_I2C.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/SCB_2_I2C_BOOT.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/SCB_2_I2C_INT.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/SCB_2_I2C_PVT.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/SCB_2_I2C_SLAVE.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/SCB_2_PINS.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/SCB_2_PM.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/SCB_2_PVT.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/SCB_2_SCBCLK.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/SCB_2_SCBCLK.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/SCB_2_SCB_IRQ.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/SCB_2_SCB_IRQ.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/SCB_2_scl.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/SCB_2_scl.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/SCB_2_scl_PM.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/SCB_2_scl_aliases.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/SCB_2_sda.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/SCB_2_sda.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/SCB_2_sda_PM.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/SCB_2_sda_aliases.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/TCPWM_1.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/TCPWM_1.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/TCPWM_1_PM.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/Timer_minute.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/Timer_minute.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/Timer_minute_PM.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/bat_in.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/bat_in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/bat_in_PM.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/bat_in_aliases.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/cm0gcc.ld" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/cmsis_armcc.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/cmsis_gcc.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/core_cm0.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/core_cm0_psoc4.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/core_cmFunc.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/core_cmInstr.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/cyPm.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/cyPm.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/cydevice_trm.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/cydevicegnu_trm.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/cydeviceiar_trm.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/cydevicerv_trm.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/cydisabledsheets.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/cyfitter.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/cyfitter_cfg.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/cyfittergnu.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/cyfitteriar.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/cyfitterrv.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/cymetadata.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/cypins.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/cytypes.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/cyutils.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/exported_symbols.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/isr_1.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/isr_1.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/isr_minute.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/isr_minute.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/project.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/protect.hex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/renamed_symbols.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/temp_in.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/temp_in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/temp_in_PM.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/Generated_Source/PSoC4/temp_in_aliases.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/MAX30100_All.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/MAX30100_All.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/MAX30100_Registers.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/accelerometer.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/accelerometer.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/ADC.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/ADC.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/ADC_INT.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/ADC_IRQ.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/ADC_IRQ.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/ADC_PM.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/ADC_intClock.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/ADC_intClock.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/BLE_1.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/BLE_1.cycsa" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/BLE_1.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/BLE_1_HAL_INT.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/BLE_1_HAL_PVT.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/BLE_1_HAL_PVT.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/BLE_1_STACK_PVT.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/BLE_1_Stack.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/BLE_1_StackGap.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/BLE_1_StackGatt.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/BLE_1_StackGattClient.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/BLE_1_StackGattDb.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/BLE_1_StackGattServer.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/BLE_1_StackHostMain.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/BLE_1_StackL2cap.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/BLE_1_bless_isr.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/BLE_1_bless_isr.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/BLE_1_custom.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/BLE_1_custom.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/BLE_1_eventHandler.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/BLE_1_eventHandler.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/BLE_1_gatt.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/BLE_1_gatt.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/Clock_1.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/Clock_1.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/Cm0Iar.icf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/Cm0RealView.scat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/Cm0Start.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/CyBootAsmGnu.s" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/CyBootAsmIar.s" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/CyBootAsmRv.s" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/CyFlash.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/CyFlash.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/CyLFClk.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/CyLFClk.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/CyLib.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/CyLib.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/I2C_1.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/I2C_1.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/I2C_1_BOOT.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/I2C_1_BOOT.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/I2C_1_I2C.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/I2C_1_I2C.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/I2C_1_I2C_BOOT.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/I2C_1_I2C_INT.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/I2C_1_I2C_MASTER.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/I2C_1_I2C_PVT.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/I2C_1_PINS.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/I2C_1_PM.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/I2C_1_PVT.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/I2C_1_SCBCLK.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/I2C_1_SCBCLK.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/I2C_1_SCB_IRQ.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/I2C_1_SCB_IRQ.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/I2C_1_scl.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/I2C_1_scl.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/I2C_1_scl_PM.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/I2C_1_scl_aliases.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/I2C_1_sda.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/I2C_1_sda.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/I2C_1_sda_PM.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/I2C_1_sda_aliases.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/Timer_minute.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/Timer_minute.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/Timer_minute_PM.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/bat_in.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/bat_in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/bat_in_PM.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/bat_in_aliases.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/bitstream.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/cm0gcc.ld" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/cmsis_armcc.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/cmsis_gcc.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/core_cm0.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/core_cm0_psoc4.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/core_cmFunc.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/core_cmInstr.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/cyPm.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/cyPm.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/cydevice_trm.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/cydevicegnu_trm.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/cydeviceiar_trm.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/cydevicerv_trm.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/cydisabledsheets.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/cyfitter.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/cyfitter_cfg.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/cyfitter_cfg.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/cyfittergnu.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/cyfitteriar.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/cyfitterrv.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/cymetadata.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/cypins.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/cytypes.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/cyutils.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/device.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/elab_dependencies.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/generated_files.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/isr_minute.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/isr_minute.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/liberty_reader.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/pins_31-SMT.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/placer.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/proc_v1.bvf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/proc_v1.ctl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/proc_v1.cycdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/proc_v1.pci" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/proc_v1.pco" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/proc_v1.plc_log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/proc_v1.route" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/proc_v1.rpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/proc_v1.rt_log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/proc_v1.sdc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/proc_v1.sdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/proc_v1.svd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/proc_v1.tr" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/proc_v1.v" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/proc_v1.vh2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/proc_v1.wde" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/proc_v1_p.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/proc_v1_p.pco" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/proc_v1_p.vh2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/proc_v1_r.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/proc_v1_r.vh2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/proc_v1_t.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/proc_v1_t.vh2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/proc_v1_timing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/proc_v1_u.sdc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/project.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/project_ids.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/protect.hex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/temp_in.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/temp_in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/temp_in_PM.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/temp_in_aliases.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/codegentemp/warp_dependencies.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/cyapicallbacks.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/main.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/proc_v1.cycdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/proc_v1.cyprj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/proc_v1.cyprj.Matthew" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/proc_v1.rpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/proc_v1.svd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/proc_v1_timing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/tempAndBat.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proc_test/proc_v1.cydsn/tempAndBat.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_I2C.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_I2C.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_I2C.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_I2C.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_I2C_BOOT.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_I2C_BOOT.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_I2C_INT.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_I2C_INT.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_I2C_MASTER.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_I2C_MASTER.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_PM.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_PM.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_PM.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_PM.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_SCBCLK.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_SCBCLK.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_SCB_IRQ.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_SCB_IRQ.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_scl.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_scl.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_scl_PM.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_scl_PM.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_sda.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_sda.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_sda_PM.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_sda_PM.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/MAX30100_All.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/MAX30100_All.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/Master_2.a" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/Master_2.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/Master_2.elf" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/Master_2.elf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/Timer_minute.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/Timer_minute.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/Timer_minute_PM.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/Timer_minute_PM.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/accelerometer.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/accelerometer.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/bat_in.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/bat_in.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/bat_in_PM.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/bat_in_PM.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/cyPm.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/cyPm.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/cyfitter_cfg.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/cyfitter_cfg.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/cymetadata.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/cymetadata.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/cyutils.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/cyutils.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/isr_minute.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/isr_minute.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/main.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/main.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/tempAndBat.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/tempAndBat.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/temp_in.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/temp_in.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/temp_in_PM.o" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/temp_in_PM.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Master_2.cyfit" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Master_2.cyfit" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/TopDesign/TopDesign.cysch" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/TopDesign/TopDesign.cysch" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2.cyfit" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2.cyfit" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/lcpsoc3/index" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/lcpsoc3/index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/cardview_v7_25_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/cardview_v7_25_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/espresso_core_2_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/espresso_core_2_2_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/espresso_idling_resource_2_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/espresso_idling_resource_2_2_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/exposed_instrumentation_api_publish_0_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/exposed_instrumentation_api_publish_0_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/graphview_4_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/graphview_4_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_25_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_25_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/rules_0_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/rules_0_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/runner_0_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/runner_0_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_compat_25_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_compat_25_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_ui_25_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_core_ui_25_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_utils_25_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_core_utils_25_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_fragment_25_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_fragment_25_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_media_compat_25_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_media_compat_25_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_25_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_25_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_25_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_25_1_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/eec136b/biosnap/biosnapapp/BleService.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/eec136b/biosnap/biosnapapp/BleService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/eec136b/biosnap/biosnapapp/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/eec136b/biosnap/biosnapapp/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/eec136b/biosnap/biosnapapp/SplashActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/eec136b/biosnap/biosnapapp/SplashActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_items.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_items.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/.deps/C_FILE.P" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/.deps/C_FILE.P" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/ADC.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/ADC.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_INT.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_INT.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_IRQ.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/ADC_IRQ.lst" />
@@ -116,13 +526,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_eventHandler.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_eventHandler.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_gatt.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/BLE_1_gatt.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/BUILD.log" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/BUILD.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/C_FILE.txt" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/C_FILE.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/Clock_1.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/Clock_1.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/Cm0Start.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/Cm0Start.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/CyBootAsmGnu.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/CyBootAsmGnu.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/CyFlash.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/CyFlash.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/CyLFClk.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/CyLFClk.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/CyLib.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/CyLib.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/GENERATE_API.log" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/GENERATE_API.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_BOOT.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_BOOT.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_I2C_BOOT.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_I2C_BOOT.lst" />
@@ -134,10 +543,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_scl_PM.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_scl_PM.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_sda.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_sda.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_sda_PM.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/I2C_1_sda_PM.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/LINK_options.txt" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/LINK_options.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/MAX30100_All.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/MAX30100_All.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/Master_2.hex" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/Master_2.hex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/Master_2.map" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/Master_2.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/Timer_minute.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/Timer_minute.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/Timer_minute_PM.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/Timer_minute_PM.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/accelerometer.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/accelerometer.lst" />
@@ -148,72 +554,30 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/cymetadata.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/cymetadata.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/cyutils.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/cyutils.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/isr_minute.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/isr_minute.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/library.deps" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/library.deps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/main.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/main.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/tempAndBat.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/tempAndBat.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/temp_in.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/temp_in.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/temp_in_PM.lst" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/CortexM0/ARM_GCC_493/Debug/temp_in_PM.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Export/PSoCCreatorExportIDE.xml" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Export/PSoCCreatorExportIDE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Generated_Source/PSoC4/cydevice_trm.h" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Generated_Source/PSoC4/cydevice_trm.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Generated_Source/PSoC4/cydevicegnu_trm.inc" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Generated_Source/PSoC4/cydevicegnu_trm.inc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Generated_Source/PSoC4/cydeviceiar_trm.inc" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Generated_Source/PSoC4/cydeviceiar_trm.inc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Generated_Source/PSoC4/cydevicerv_trm.inc" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Generated_Source/PSoC4/cydevicerv_trm.inc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Generated_Source/PSoC4/cyfitter.h" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Generated_Source/PSoC4/cyfitter.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Generated_Source/PSoC4/cyfitter_cfg.c" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Generated_Source/PSoC4/cyfitter_cfg.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Generated_Source/PSoC4/cyfittergnu.inc" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Generated_Source/PSoC4/cyfittergnu.inc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Generated_Source/PSoC4/cyfitteriar.inc" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Generated_Source/PSoC4/cyfitteriar.inc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Generated_Source/PSoC4/cyfitterrv.inc" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Generated_Source/PSoC4/cyfitterrv.inc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Generated_Source/PSoC4/cymetadata.c" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Generated_Source/PSoC4/cymetadata.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Generated_Source/PSoC4/project.h" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Generated_Source/PSoC4/project.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Master_2.cycdx" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Master_2.cycdx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Master_2.cydwr" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Master_2.cydwr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Master_2.cyprj" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Master_2.cyprj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Master_2.cyprj.Matthew" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Master_2.cyprj.Matthew" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Master_2.rpt" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Master_2.rpt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Master_2.svd" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Master_2.svd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Master_2_timing.html" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/Master_2_timing.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2.ctl" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2.ctl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2.cycdx" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2.cycdx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2.pci" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2.pci" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2.pco" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2.pco" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2.rpt" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2.rpt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2.rt_log" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2.rt_log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2.sdc" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2.sdc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2.sdf" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2.sdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2.svd" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2.svd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2.v" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2.v" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2.vh2" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2.vh2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2.wde" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2.wde" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2_p.lib" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2_p.lib" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2_p.pco" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2_p.pco" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2_p.vh2" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2_p.vh2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2_r.lib" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2_r.lib" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2_r.vh2" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2_r.vh2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2_t.lib" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2_t.lib" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2_t.vh2" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2_t.vh2" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2_timing.html" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2_timing.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2_u.sdc" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/Master_2_u.sdc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/bitstream.txt" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/bitstream.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/cydevice_trm.h" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/cydevice_trm.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/cydevicegnu_trm.inc" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/cydevicegnu_trm.inc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/cydeviceiar_trm.inc" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/cydeviceiar_trm.inc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/cydevicerv_trm.inc" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/cydevicerv_trm.inc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/cyfitter.h" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/cyfitter.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/cyfitter_cfg.c" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/cyfitter_cfg.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/cyfitter_cfg.h" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/cyfitter_cfg.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/cyfittergnu.inc" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/cyfittergnu.inc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/cyfitteriar.inc" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/cyfitteriar.inc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/cyfitterrv.inc" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/cyfitterrv.inc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/cymetadata.c" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/cymetadata.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/device.lib" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/device.lib" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/elab_dependencies.txt" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/elab_dependencies.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/generated_files.txt" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/generated_files.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/liberty_reader.log" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/liberty_reader.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/placer.log" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/placer.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/project.h" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/project.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/project_ids.txt" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/project_ids.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/warp_dependencies.txt" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/codegentemp/warp_dependencies.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/main.c" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cydsn/main.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Master_v2/Master_2.cywrk.Matthew" afterPath="$PROJECT_DIR$/../Master_v2/Master_2.cywrk.Matthew" />
     </list>
     <ignored path="BioSnapApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -2641,12 +3005,19 @@
       <option name="project" value="LOCAL" />
       <updated>1488260260405</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Lots of UI changes.">
+      <created>1489778335240</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1489778335240</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <frame x="1912" y="-8" width="1936" height="1066" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819384" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
@@ -2654,7 +3025,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32599118" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32599118" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32599118" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819384" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2696,7 +3067,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="UI Change" />
     <MESSAGE value="Added Splash Screen, removed BLE buttons." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Splash Screen, removed BLE buttons." />
+    <MESSAGE value="Lots of UI changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lots of UI changes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
