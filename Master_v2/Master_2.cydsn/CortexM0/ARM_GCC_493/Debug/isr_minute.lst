@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 1
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -29,7 +25,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
   22              		.type	isr_minute_Start, %function
   23              	isr_minute_Start:
   24              	.LFB2:
-<<<<<<< HEAD
   25              		.file 1 "Generated_Source\\PSoC4\\isr_minute.c"
    1:Generated_Source\PSoC4/isr_minute.c **** /*******************************************************************************
    2:Generated_Source\PSoC4/isr_minute.c **** * File Name: isr_minute.c  
@@ -63,7 +58,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
   30:Generated_Source\PSoC4/isr_minute.c **** 
   31:Generated_Source\PSoC4/isr_minute.c **** /* `#END` */
   32:Generated_Source\PSoC4/isr_minute.c **** 
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 2
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 2
 
 
   33:Generated_Source\PSoC4/isr_minute.c **** extern cyisraddress CyRamVectors[CYINT_IRQ_BASE + CY_NUM_INTERRUPTS];
@@ -91,69 +86,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
   55:Generated_Source\PSoC4/isr_minute.c **** *******************************************************************************/
   56:Generated_Source\PSoC4/isr_minute.c **** void isr_minute_Start(void)
   57:Generated_Source\PSoC4/isr_minute.c **** {
-=======
-  25              		.file 1 ".\\Generated_Source\\PSoC4\\isr_minute.c"
-   1:.\Generated_Source\PSoC4/isr_minute.c **** /*******************************************************************************
-   2:.\Generated_Source\PSoC4/isr_minute.c **** * File Name: isr_minute.c  
-   3:.\Generated_Source\PSoC4/isr_minute.c **** * Version 1.70
-   4:.\Generated_Source\PSoC4/isr_minute.c **** *
-   5:.\Generated_Source\PSoC4/isr_minute.c **** *  Description:
-   6:.\Generated_Source\PSoC4/isr_minute.c **** *   API for controlling the state of an interrupt.
-   7:.\Generated_Source\PSoC4/isr_minute.c **** *
-   8:.\Generated_Source\PSoC4/isr_minute.c **** *
-   9:.\Generated_Source\PSoC4/isr_minute.c **** *  Note:
-  10:.\Generated_Source\PSoC4/isr_minute.c **** *
-  11:.\Generated_Source\PSoC4/isr_minute.c **** ********************************************************************************
-  12:.\Generated_Source\PSoC4/isr_minute.c **** * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
-  13:.\Generated_Source\PSoC4/isr_minute.c **** * You may use this file only in accordance with the license, terms, conditions, 
-  14:.\Generated_Source\PSoC4/isr_minute.c **** * disclaimers, and limitations in the end user license agreement accompanying 
-  15:.\Generated_Source\PSoC4/isr_minute.c **** * the software package with which this file was provided.
-  16:.\Generated_Source\PSoC4/isr_minute.c **** *******************************************************************************/
-  17:.\Generated_Source\PSoC4/isr_minute.c **** 
-  18:.\Generated_Source\PSoC4/isr_minute.c **** 
-  19:.\Generated_Source\PSoC4/isr_minute.c **** #include <cydevice_trm.h>
-  20:.\Generated_Source\PSoC4/isr_minute.c **** #include <CyLib.h>
-  21:.\Generated_Source\PSoC4/isr_minute.c **** #include <isr_minute.h>
-  22:.\Generated_Source\PSoC4/isr_minute.c **** #include "cyapicallbacks.h"
-  23:.\Generated_Source\PSoC4/isr_minute.c **** 
-  24:.\Generated_Source\PSoC4/isr_minute.c **** #if !defined(isr_minute__REMOVED) /* Check for removal by optimization */
-  25:.\Generated_Source\PSoC4/isr_minute.c **** 
-  26:.\Generated_Source\PSoC4/isr_minute.c **** /*******************************************************************************
-  27:.\Generated_Source\PSoC4/isr_minute.c **** *  Place your includes, defines and code here 
-  28:.\Generated_Source\PSoC4/isr_minute.c **** ********************************************************************************/
-  29:.\Generated_Source\PSoC4/isr_minute.c **** /* `#START isr_minute_intc` */
-  30:.\Generated_Source\PSoC4/isr_minute.c **** 
-  31:.\Generated_Source\PSoC4/isr_minute.c **** /* `#END` */
-  32:.\Generated_Source\PSoC4/isr_minute.c **** 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 2
-
-
-  33:.\Generated_Source\PSoC4/isr_minute.c **** extern cyisraddress CyRamVectors[CYINT_IRQ_BASE + CY_NUM_INTERRUPTS];
-  34:.\Generated_Source\PSoC4/isr_minute.c **** 
-  35:.\Generated_Source\PSoC4/isr_minute.c **** /* Declared in startup, used to set unused interrupts to. */
-  36:.\Generated_Source\PSoC4/isr_minute.c **** CY_ISR_PROTO(IntDefaultHandler);
-  37:.\Generated_Source\PSoC4/isr_minute.c **** 
-  38:.\Generated_Source\PSoC4/isr_minute.c **** 
-  39:.\Generated_Source\PSoC4/isr_minute.c **** /*******************************************************************************
-  40:.\Generated_Source\PSoC4/isr_minute.c **** * Function Name: isr_minute_Start
-  41:.\Generated_Source\PSoC4/isr_minute.c **** ********************************************************************************
-  42:.\Generated_Source\PSoC4/isr_minute.c **** *
-  43:.\Generated_Source\PSoC4/isr_minute.c **** * Summary:
-  44:.\Generated_Source\PSoC4/isr_minute.c **** *  Set up the interrupt and enable it. This function disables the interrupt, 
-  45:.\Generated_Source\PSoC4/isr_minute.c **** *  sets the default interrupt vector, sets the priority from the value in the
-  46:.\Generated_Source\PSoC4/isr_minute.c **** *  Design Wide Resources Interrupt Editor, then enables the interrupt to the 
-  47:.\Generated_Source\PSoC4/isr_minute.c **** *  interrupt controller.
-  48:.\Generated_Source\PSoC4/isr_minute.c **** *
-  49:.\Generated_Source\PSoC4/isr_minute.c **** * Parameters:  
-  50:.\Generated_Source\PSoC4/isr_minute.c **** *   None
-  51:.\Generated_Source\PSoC4/isr_minute.c **** *
-  52:.\Generated_Source\PSoC4/isr_minute.c **** * Return:
-  53:.\Generated_Source\PSoC4/isr_minute.c **** *   None
-  54:.\Generated_Source\PSoC4/isr_minute.c **** *
-  55:.\Generated_Source\PSoC4/isr_minute.c **** *******************************************************************************/
-  56:.\Generated_Source\PSoC4/isr_minute.c **** void isr_minute_Start(void)
-  57:.\Generated_Source\PSoC4/isr_minute.c **** {
->>>>>>> origin/master
   26              		.loc 1 57 0
   27              		.cfi_startproc
   28 0000 80B5     		push	{r7, lr}
@@ -186,11 +118,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
   44 0016 FFF7FEFF 		bl	isr_minute_Enable
   69:Generated_Source\PSoC4/isr_minute.c **** }
   45              		.loc 1 69 0
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 3
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 3
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 3
 
 
   46 001a BD46     		mov	sp, r7
@@ -250,11 +178,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
   69              		.cfi_offset 14, -4
   70 0002 82B0     		sub	sp, sp, #8
   71              		.cfi_def_cfa_offset 16
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 4
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 4
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 4
 
 
   72 0004 00AF     		add	r7, sp, #0
@@ -299,7 +223,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
   99              		.type	isr_minute_Stop, %function
  100              	isr_minute_Stop:
  101              	.LFB4:
-<<<<<<< HEAD
  113:Generated_Source\PSoC4/isr_minute.c **** 
  114:Generated_Source\PSoC4/isr_minute.c **** 
  115:Generated_Source\PSoC4/isr_minute.c **** /*******************************************************************************
@@ -315,35 +238,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  125:Generated_Source\PSoC4/isr_minute.c **** * Return:
  126:Generated_Source\PSoC4/isr_minute.c **** *   None
  127:Generated_Source\PSoC4/isr_minute.c **** *
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 5
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 5
 
 
  128:Generated_Source\PSoC4/isr_minute.c **** *******************************************************************************/
  129:Generated_Source\PSoC4/isr_minute.c **** void isr_minute_Stop(void)
  130:Generated_Source\PSoC4/isr_minute.c **** {
-=======
- 113:.\Generated_Source\PSoC4/isr_minute.c **** 
- 114:.\Generated_Source\PSoC4/isr_minute.c **** 
- 115:.\Generated_Source\PSoC4/isr_minute.c **** /*******************************************************************************
- 116:.\Generated_Source\PSoC4/isr_minute.c **** * Function Name: isr_minute_Stop
- 117:.\Generated_Source\PSoC4/isr_minute.c **** ********************************************************************************
- 118:.\Generated_Source\PSoC4/isr_minute.c **** *
- 119:.\Generated_Source\PSoC4/isr_minute.c **** * Summary:
- 120:.\Generated_Source\PSoC4/isr_minute.c **** *   Disables and removes the interrupt.
- 121:.\Generated_Source\PSoC4/isr_minute.c **** *
- 122:.\Generated_Source\PSoC4/isr_minute.c **** * Parameters:  
- 123:.\Generated_Source\PSoC4/isr_minute.c **** *   None
- 124:.\Generated_Source\PSoC4/isr_minute.c **** *
- 125:.\Generated_Source\PSoC4/isr_minute.c **** * Return:
- 126:.\Generated_Source\PSoC4/isr_minute.c **** *   None
- 127:.\Generated_Source\PSoC4/isr_minute.c **** *
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 5
-
-
- 128:.\Generated_Source\PSoC4/isr_minute.c **** *******************************************************************************/
- 129:.\Generated_Source\PSoC4/isr_minute.c **** void isr_minute_Stop(void)
- 130:.\Generated_Source\PSoC4/isr_minute.c **** {
->>>>>>> origin/master
  102              		.loc 1 130 0
  103              		.cfi_startproc
  104 0000 80B5     		push	{r7, lr}
@@ -383,7 +283,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  132              		.type	isr_minute_Interrupt, %function
  133              	isr_minute_Interrupt:
  134              	.LFB5:
-<<<<<<< HEAD
  137:Generated_Source\PSoC4/isr_minute.c **** 
  138:Generated_Source\PSoC4/isr_minute.c **** 
  139:Generated_Source\PSoC4/isr_minute.c **** /*******************************************************************************
@@ -399,7 +298,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  149:Generated_Source\PSoC4/isr_minute.c **** *   Note You may use either the default ISR by using this API, or you may define
  150:Generated_Source\PSoC4/isr_minute.c **** *   your own separate ISR through ISR_StartEx().
  151:Generated_Source\PSoC4/isr_minute.c **** *
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 6
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 6
 
 
  152:Generated_Source\PSoC4/isr_minute.c **** * Parameters:  
@@ -411,35 +310,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  158:Generated_Source\PSoC4/isr_minute.c **** *******************************************************************************/
  159:Generated_Source\PSoC4/isr_minute.c **** CY_ISR(isr_minute_Interrupt)
  160:Generated_Source\PSoC4/isr_minute.c **** {
-=======
- 137:.\Generated_Source\PSoC4/isr_minute.c **** 
- 138:.\Generated_Source\PSoC4/isr_minute.c **** 
- 139:.\Generated_Source\PSoC4/isr_minute.c **** /*******************************************************************************
- 140:.\Generated_Source\PSoC4/isr_minute.c **** * Function Name: isr_minute_Interrupt
- 141:.\Generated_Source\PSoC4/isr_minute.c **** ********************************************************************************
- 142:.\Generated_Source\PSoC4/isr_minute.c **** *
- 143:.\Generated_Source\PSoC4/isr_minute.c **** * Summary:
- 144:.\Generated_Source\PSoC4/isr_minute.c **** *   The default Interrupt Service Routine for isr_minute.
- 145:.\Generated_Source\PSoC4/isr_minute.c **** *
- 146:.\Generated_Source\PSoC4/isr_minute.c **** *   Add custom code between the START and END comments to keep the next version
- 147:.\Generated_Source\PSoC4/isr_minute.c **** *   of this file from over-writing your code.
- 148:.\Generated_Source\PSoC4/isr_minute.c **** *
- 149:.\Generated_Source\PSoC4/isr_minute.c **** *   Note You may use either the default ISR by using this API, or you may define
- 150:.\Generated_Source\PSoC4/isr_minute.c **** *   your own separate ISR through ISR_StartEx().
- 151:.\Generated_Source\PSoC4/isr_minute.c **** *
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 6
-
-
- 152:.\Generated_Source\PSoC4/isr_minute.c **** * Parameters:  
- 153:.\Generated_Source\PSoC4/isr_minute.c **** *   None
- 154:.\Generated_Source\PSoC4/isr_minute.c **** *
- 155:.\Generated_Source\PSoC4/isr_minute.c **** * Return:
- 156:.\Generated_Source\PSoC4/isr_minute.c **** *   None
- 157:.\Generated_Source\PSoC4/isr_minute.c **** *
- 158:.\Generated_Source\PSoC4/isr_minute.c **** *******************************************************************************/
- 159:.\Generated_Source\PSoC4/isr_minute.c **** CY_ISR(isr_minute_Interrupt)
- 160:.\Generated_Source\PSoC4/isr_minute.c **** {
->>>>>>> origin/master
  135              		.loc 1 160 0
  136              		.cfi_startproc
  137 0000 80B5     		push	{r7, lr}
@@ -472,7 +342,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  155              		.type	isr_minute_SetVector, %function
  156              	isr_minute_SetVector:
  157              	.LFB6:
-<<<<<<< HEAD
  170:Generated_Source\PSoC4/isr_minute.c **** 
  171:Generated_Source\PSoC4/isr_minute.c **** 
  172:Generated_Source\PSoC4/isr_minute.c **** /*******************************************************************************
@@ -489,7 +358,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  183:Generated_Source\PSoC4/isr_minute.c **** *
  184:Generated_Source\PSoC4/isr_minute.c **** *   Function definition example:
  185:Generated_Source\PSoC4/isr_minute.c **** *   CY_ISR(MyISR)
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 7
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 7
 
 
  186:Generated_Source\PSoC4/isr_minute.c **** *   {
@@ -507,42 +376,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  198:Generated_Source\PSoC4/isr_minute.c **** *******************************************************************************/
  199:Generated_Source\PSoC4/isr_minute.c **** void isr_minute_SetVector(cyisraddress address)
  200:Generated_Source\PSoC4/isr_minute.c **** {
-=======
- 170:.\Generated_Source\PSoC4/isr_minute.c **** 
- 171:.\Generated_Source\PSoC4/isr_minute.c **** 
- 172:.\Generated_Source\PSoC4/isr_minute.c **** /*******************************************************************************
- 173:.\Generated_Source\PSoC4/isr_minute.c **** * Function Name: isr_minute_SetVector
- 174:.\Generated_Source\PSoC4/isr_minute.c **** ********************************************************************************
- 175:.\Generated_Source\PSoC4/isr_minute.c **** *
- 176:.\Generated_Source\PSoC4/isr_minute.c **** * Summary:
- 177:.\Generated_Source\PSoC4/isr_minute.c **** *   Change the ISR vector for the Interrupt. Note calling isr_minute_Start
- 178:.\Generated_Source\PSoC4/isr_minute.c **** *   will override any effect this method would have had. To set the vector 
- 179:.\Generated_Source\PSoC4/isr_minute.c **** *   before the component has been started use isr_minute_StartEx instead.
- 180:.\Generated_Source\PSoC4/isr_minute.c **** * 
- 181:.\Generated_Source\PSoC4/isr_minute.c **** *   When defining ISR functions, the CY_ISR and CY_ISR_PROTO macros should be 
- 182:.\Generated_Source\PSoC4/isr_minute.c **** *   used to provide consistent definition across compilers:
- 183:.\Generated_Source\PSoC4/isr_minute.c **** *
- 184:.\Generated_Source\PSoC4/isr_minute.c **** *   Function definition example:
- 185:.\Generated_Source\PSoC4/isr_minute.c **** *   CY_ISR(MyISR)
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 7
-
-
- 186:.\Generated_Source\PSoC4/isr_minute.c **** *   {
- 187:.\Generated_Source\PSoC4/isr_minute.c **** *   }
- 188:.\Generated_Source\PSoC4/isr_minute.c **** *
- 189:.\Generated_Source\PSoC4/isr_minute.c **** *   Function prototype example:
- 190:.\Generated_Source\PSoC4/isr_minute.c **** *     CY_ISR_PROTO(MyISR);
- 191:.\Generated_Source\PSoC4/isr_minute.c **** *
- 192:.\Generated_Source\PSoC4/isr_minute.c **** * Parameters:
- 193:.\Generated_Source\PSoC4/isr_minute.c **** *   address: Address of the ISR to set in the interrupt vector table.
- 194:.\Generated_Source\PSoC4/isr_minute.c **** *
- 195:.\Generated_Source\PSoC4/isr_minute.c **** * Return:
- 196:.\Generated_Source\PSoC4/isr_minute.c **** *   None
- 197:.\Generated_Source\PSoC4/isr_minute.c **** *
- 198:.\Generated_Source\PSoC4/isr_minute.c **** *******************************************************************************/
- 199:.\Generated_Source\PSoC4/isr_minute.c **** void isr_minute_SetVector(cyisraddress address)
- 200:.\Generated_Source\PSoC4/isr_minute.c **** {
->>>>>>> origin/master
  158              		.loc 1 200 0
  159              		.cfi_startproc
  160 0000 80B5     		push	{r7, lr}
@@ -581,12 +414,11 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  191              		.type	isr_minute_GetVector, %function
  192              	isr_minute_GetVector:
  193              	.LFB7:
-<<<<<<< HEAD
  203:Generated_Source\PSoC4/isr_minute.c **** 
  204:Generated_Source\PSoC4/isr_minute.c **** 
  205:Generated_Source\PSoC4/isr_minute.c **** /*******************************************************************************
  206:Generated_Source\PSoC4/isr_minute.c **** * Function Name: isr_minute_GetVector
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 8
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 8
 
 
  207:Generated_Source\PSoC4/isr_minute.c **** ********************************************************************************
@@ -603,29 +435,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  218:Generated_Source\PSoC4/isr_minute.c **** *******************************************************************************/
  219:Generated_Source\PSoC4/isr_minute.c **** cyisraddress isr_minute_GetVector(void)
  220:Generated_Source\PSoC4/isr_minute.c **** {
-=======
- 203:.\Generated_Source\PSoC4/isr_minute.c **** 
- 204:.\Generated_Source\PSoC4/isr_minute.c **** 
- 205:.\Generated_Source\PSoC4/isr_minute.c **** /*******************************************************************************
- 206:.\Generated_Source\PSoC4/isr_minute.c **** * Function Name: isr_minute_GetVector
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 8
-
-
- 207:.\Generated_Source\PSoC4/isr_minute.c **** ********************************************************************************
- 208:.\Generated_Source\PSoC4/isr_minute.c **** *
- 209:.\Generated_Source\PSoC4/isr_minute.c **** * Summary:
- 210:.\Generated_Source\PSoC4/isr_minute.c **** *   Gets the "address" of the current ISR vector for the Interrupt.
- 211:.\Generated_Source\PSoC4/isr_minute.c **** *
- 212:.\Generated_Source\PSoC4/isr_minute.c **** * Parameters:
- 213:.\Generated_Source\PSoC4/isr_minute.c **** *   None
- 214:.\Generated_Source\PSoC4/isr_minute.c **** *
- 215:.\Generated_Source\PSoC4/isr_minute.c **** * Return:
- 216:.\Generated_Source\PSoC4/isr_minute.c **** *   Address of the ISR in the interrupt vector table.
- 217:.\Generated_Source\PSoC4/isr_minute.c **** *
- 218:.\Generated_Source\PSoC4/isr_minute.c **** *******************************************************************************/
- 219:.\Generated_Source\PSoC4/isr_minute.c **** cyisraddress isr_minute_GetVector(void)
- 220:.\Generated_Source\PSoC4/isr_minute.c **** {
->>>>>>> origin/master
  194              		.loc 1 220 0
  195              		.cfi_startproc
  196 0000 80B5     		push	{r7, lr}
@@ -660,7 +469,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  223              		.type	isr_minute_SetPriority, %function
  224              	isr_minute_SetPriority:
  225              	.LFB8:
-<<<<<<< HEAD
  223:Generated_Source\PSoC4/isr_minute.c **** 
  224:Generated_Source\PSoC4/isr_minute.c **** 
  225:Generated_Source\PSoC4/isr_minute.c **** /*******************************************************************************
@@ -670,7 +478,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  229:Generated_Source\PSoC4/isr_minute.c **** * Summary:
  230:Generated_Source\PSoC4/isr_minute.c **** *   Sets the Priority of the Interrupt. 
  231:Generated_Source\PSoC4/isr_minute.c **** *
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 9
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 9
 
 
  232:Generated_Source\PSoC4/isr_minute.c **** *   Note calling isr_minute_Start or isr_minute_StartEx will 
@@ -692,39 +500,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  248:Generated_Source\PSoC4/isr_minute.c **** *******************************************************************************/
  249:Generated_Source\PSoC4/isr_minute.c **** void isr_minute_SetPriority(uint8 priority)
  250:Generated_Source\PSoC4/isr_minute.c **** {
-=======
- 223:.\Generated_Source\PSoC4/isr_minute.c **** 
- 224:.\Generated_Source\PSoC4/isr_minute.c **** 
- 225:.\Generated_Source\PSoC4/isr_minute.c **** /*******************************************************************************
- 226:.\Generated_Source\PSoC4/isr_minute.c **** * Function Name: isr_minute_SetPriority
- 227:.\Generated_Source\PSoC4/isr_minute.c **** ********************************************************************************
- 228:.\Generated_Source\PSoC4/isr_minute.c **** *
- 229:.\Generated_Source\PSoC4/isr_minute.c **** * Summary:
- 230:.\Generated_Source\PSoC4/isr_minute.c **** *   Sets the Priority of the Interrupt. 
- 231:.\Generated_Source\PSoC4/isr_minute.c **** *
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 9
-
-
- 232:.\Generated_Source\PSoC4/isr_minute.c **** *   Note calling isr_minute_Start or isr_minute_StartEx will 
- 233:.\Generated_Source\PSoC4/isr_minute.c **** *   override any effect this API would have had. This API should only be called
- 234:.\Generated_Source\PSoC4/isr_minute.c **** *   after isr_minute_Start or isr_minute_StartEx has been called. 
- 235:.\Generated_Source\PSoC4/isr_minute.c **** *   To set the initial priority for the component, use the Design-Wide Resources
- 236:.\Generated_Source\PSoC4/isr_minute.c **** *   Interrupt Editor.
- 237:.\Generated_Source\PSoC4/isr_minute.c **** *
- 238:.\Generated_Source\PSoC4/isr_minute.c **** *   Note This API has no effect on Non-maskable interrupt NMI).
- 239:.\Generated_Source\PSoC4/isr_minute.c **** *
- 240:.\Generated_Source\PSoC4/isr_minute.c **** * Parameters:
- 241:.\Generated_Source\PSoC4/isr_minute.c **** *   priority: Priority of the interrupt, 0 being the highest priority
- 242:.\Generated_Source\PSoC4/isr_minute.c **** *             PSoC 3 and PSoC 5LP: Priority is from 0 to 7.
- 243:.\Generated_Source\PSoC4/isr_minute.c **** *             PSoC 4: Priority is from 0 to 3.
- 244:.\Generated_Source\PSoC4/isr_minute.c **** *
- 245:.\Generated_Source\PSoC4/isr_minute.c **** * Return:
- 246:.\Generated_Source\PSoC4/isr_minute.c **** *   None
- 247:.\Generated_Source\PSoC4/isr_minute.c **** *
- 248:.\Generated_Source\PSoC4/isr_minute.c **** *******************************************************************************/
- 249:.\Generated_Source\PSoC4/isr_minute.c **** void isr_minute_SetPriority(uint8 priority)
- 250:.\Generated_Source\PSoC4/isr_minute.c **** {
->>>>>>> origin/master
  226              		.loc 1 250 0
  227              		.cfi_startproc
  228 0000 90B5     		push	{r4, r7, lr}
@@ -763,11 +538,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  255              		.loc 1 256 0
  256 0026 FA1D     		add	r2, r7, #7
  257 0028 1078     		ldrb	r0, [r2]
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 10
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 10
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 10
 
 
  258 002a FA68     		ldr	r2, [r7, #12]
@@ -827,11 +598,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  277:Generated_Source\PSoC4/isr_minute.c **** uint8 isr_minute_GetPriority(void)
  278:Generated_Source\PSoC4/isr_minute.c **** {
  291              		.loc 1 278 0
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 11
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 11
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 11
 
 
  292              		.cfi_startproc
@@ -887,12 +654,11 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  335              		.type	isr_minute_Enable, %function
  336              	isr_minute_Enable:
  337              	.LFB10:
-<<<<<<< HEAD
  286:Generated_Source\PSoC4/isr_minute.c **** 
  287:Generated_Source\PSoC4/isr_minute.c **** 
  288:Generated_Source\PSoC4/isr_minute.c **** /*******************************************************************************
  289:Generated_Source\PSoC4/isr_minute.c **** * Function Name: isr_minute_Enable
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 12
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 12
 
 
  290:Generated_Source\PSoC4/isr_minute.c **** ********************************************************************************
@@ -911,31 +677,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  303:Generated_Source\PSoC4/isr_minute.c **** *******************************************************************************/
  304:Generated_Source\PSoC4/isr_minute.c **** void isr_minute_Enable(void)
  305:Generated_Source\PSoC4/isr_minute.c **** {
-=======
- 286:.\Generated_Source\PSoC4/isr_minute.c **** 
- 287:.\Generated_Source\PSoC4/isr_minute.c **** 
- 288:.\Generated_Source\PSoC4/isr_minute.c **** /*******************************************************************************
- 289:.\Generated_Source\PSoC4/isr_minute.c **** * Function Name: isr_minute_Enable
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 12
-
-
- 290:.\Generated_Source\PSoC4/isr_minute.c **** ********************************************************************************
- 291:.\Generated_Source\PSoC4/isr_minute.c **** *
- 292:.\Generated_Source\PSoC4/isr_minute.c **** * Summary:
- 293:.\Generated_Source\PSoC4/isr_minute.c **** *   Enables the interrupt to the interrupt controller. Do not call this function
- 294:.\Generated_Source\PSoC4/isr_minute.c **** *   unless ISR_Start() has been called or the functionality of the ISR_Start() 
- 295:.\Generated_Source\PSoC4/isr_minute.c **** *   function, which sets the vector and the priority, has been called.
- 296:.\Generated_Source\PSoC4/isr_minute.c **** *
- 297:.\Generated_Source\PSoC4/isr_minute.c **** * Parameters:
- 298:.\Generated_Source\PSoC4/isr_minute.c **** *   None
- 299:.\Generated_Source\PSoC4/isr_minute.c **** *
- 300:.\Generated_Source\PSoC4/isr_minute.c **** * Return:
- 301:.\Generated_Source\PSoC4/isr_minute.c **** *   None
- 302:.\Generated_Source\PSoC4/isr_minute.c **** *
- 303:.\Generated_Source\PSoC4/isr_minute.c **** *******************************************************************************/
- 304:.\Generated_Source\PSoC4/isr_minute.c **** void isr_minute_Enable(void)
- 305:.\Generated_Source\PSoC4/isr_minute.c **** {
->>>>>>> origin/master
  338              		.loc 1 305 0
  339              		.cfi_startproc
  340 0000 80B5     		push	{r7, lr}
@@ -971,14 +712,13 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  367              		.type	isr_minute_GetState, %function
  368              	isr_minute_GetState:
  369              	.LFB11:
-<<<<<<< HEAD
  309:Generated_Source\PSoC4/isr_minute.c **** 
  310:Generated_Source\PSoC4/isr_minute.c **** 
  311:Generated_Source\PSoC4/isr_minute.c **** /*******************************************************************************
  312:Generated_Source\PSoC4/isr_minute.c **** * Function Name: isr_minute_GetState
  313:Generated_Source\PSoC4/isr_minute.c **** ********************************************************************************
  314:Generated_Source\PSoC4/isr_minute.c **** *
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 13
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 13
 
 
  315:Generated_Source\PSoC4/isr_minute.c **** * Summary:
@@ -993,29 +733,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  324:Generated_Source\PSoC4/isr_minute.c **** *******************************************************************************/
  325:Generated_Source\PSoC4/isr_minute.c **** uint8 isr_minute_GetState(void)
  326:Generated_Source\PSoC4/isr_minute.c **** {
-=======
- 309:.\Generated_Source\PSoC4/isr_minute.c **** 
- 310:.\Generated_Source\PSoC4/isr_minute.c **** 
- 311:.\Generated_Source\PSoC4/isr_minute.c **** /*******************************************************************************
- 312:.\Generated_Source\PSoC4/isr_minute.c **** * Function Name: isr_minute_GetState
- 313:.\Generated_Source\PSoC4/isr_minute.c **** ********************************************************************************
- 314:.\Generated_Source\PSoC4/isr_minute.c **** *
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 13
-
-
- 315:.\Generated_Source\PSoC4/isr_minute.c **** * Summary:
- 316:.\Generated_Source\PSoC4/isr_minute.c **** *   Gets the state (enabled, disabled) of the Interrupt.
- 317:.\Generated_Source\PSoC4/isr_minute.c **** *
- 318:.\Generated_Source\PSoC4/isr_minute.c **** * Parameters:
- 319:.\Generated_Source\PSoC4/isr_minute.c **** *   None
- 320:.\Generated_Source\PSoC4/isr_minute.c **** *
- 321:.\Generated_Source\PSoC4/isr_minute.c **** * Return:
- 322:.\Generated_Source\PSoC4/isr_minute.c **** *   1 if enabled, 0 if disabled.
- 323:.\Generated_Source\PSoC4/isr_minute.c **** *
- 324:.\Generated_Source\PSoC4/isr_minute.c **** *******************************************************************************/
- 325:.\Generated_Source\PSoC4/isr_minute.c **** uint8 isr_minute_GetState(void)
- 326:.\Generated_Source\PSoC4/isr_minute.c **** {
->>>>>>> origin/master
  370              		.loc 1 326 0
  371              		.cfi_startproc
  372 0000 80B5     		push	{r7, lr}
@@ -1061,8 +778,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  409              		.type	isr_minute_Disable, %function
  410              	isr_minute_Disable:
  411              	.LFB12:
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 14
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 14
 
 
  330:Generated_Source\PSoC4/isr_minute.c **** 
@@ -1083,29 +799,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  345:Generated_Source\PSoC4/isr_minute.c **** *******************************************************************************/
  346:Generated_Source\PSoC4/isr_minute.c **** void isr_minute_Disable(void)
  347:Generated_Source\PSoC4/isr_minute.c **** {
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 14
-
-
- 330:.\Generated_Source\PSoC4/isr_minute.c **** 
- 331:.\Generated_Source\PSoC4/isr_minute.c **** 
- 332:.\Generated_Source\PSoC4/isr_minute.c **** /*******************************************************************************
- 333:.\Generated_Source\PSoC4/isr_minute.c **** * Function Name: isr_minute_Disable
- 334:.\Generated_Source\PSoC4/isr_minute.c **** ********************************************************************************
- 335:.\Generated_Source\PSoC4/isr_minute.c **** *
- 336:.\Generated_Source\PSoC4/isr_minute.c **** * Summary:
- 337:.\Generated_Source\PSoC4/isr_minute.c **** *   Disables the Interrupt in the interrupt controller.
- 338:.\Generated_Source\PSoC4/isr_minute.c **** *
- 339:.\Generated_Source\PSoC4/isr_minute.c **** * Parameters:
- 340:.\Generated_Source\PSoC4/isr_minute.c **** *   None
- 341:.\Generated_Source\PSoC4/isr_minute.c **** *
- 342:.\Generated_Source\PSoC4/isr_minute.c **** * Return:
- 343:.\Generated_Source\PSoC4/isr_minute.c **** *   None
- 344:.\Generated_Source\PSoC4/isr_minute.c **** *
- 345:.\Generated_Source\PSoC4/isr_minute.c **** *******************************************************************************/
- 346:.\Generated_Source\PSoC4/isr_minute.c **** void isr_minute_Disable(void)
- 347:.\Generated_Source\PSoC4/isr_minute.c **** {
->>>>>>> origin/master
  412              		.loc 1 347 0
  413              		.cfi_startproc
  414 0000 80B5     		push	{r7, lr}
@@ -1141,12 +834,11 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  441              		.type	isr_minute_SetPending, %function
  442              	isr_minute_SetPending:
  443              	.LFB13:
-<<<<<<< HEAD
  351:Generated_Source\PSoC4/isr_minute.c **** 
  352:Generated_Source\PSoC4/isr_minute.c **** 
  353:Generated_Source\PSoC4/isr_minute.c **** /*******************************************************************************
  354:Generated_Source\PSoC4/isr_minute.c **** * Function Name: isr_minute_SetPending
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 15
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 15
 
 
  355:Generated_Source\PSoC4/isr_minute.c **** ********************************************************************************
@@ -1169,35 +861,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  372:Generated_Source\PSoC4/isr_minute.c **** *******************************************************************************/
  373:Generated_Source\PSoC4/isr_minute.c **** void isr_minute_SetPending(void)
  374:Generated_Source\PSoC4/isr_minute.c **** {
-=======
- 351:.\Generated_Source\PSoC4/isr_minute.c **** 
- 352:.\Generated_Source\PSoC4/isr_minute.c **** 
- 353:.\Generated_Source\PSoC4/isr_minute.c **** /*******************************************************************************
- 354:.\Generated_Source\PSoC4/isr_minute.c **** * Function Name: isr_minute_SetPending
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 15
-
-
- 355:.\Generated_Source\PSoC4/isr_minute.c **** ********************************************************************************
- 356:.\Generated_Source\PSoC4/isr_minute.c **** *
- 357:.\Generated_Source\PSoC4/isr_minute.c **** * Summary:
- 358:.\Generated_Source\PSoC4/isr_minute.c **** *   Causes the Interrupt to enter the pending state, a software method of
- 359:.\Generated_Source\PSoC4/isr_minute.c **** *   generating the interrupt.
- 360:.\Generated_Source\PSoC4/isr_minute.c **** *
- 361:.\Generated_Source\PSoC4/isr_minute.c **** * Parameters:
- 362:.\Generated_Source\PSoC4/isr_minute.c **** *   None
- 363:.\Generated_Source\PSoC4/isr_minute.c **** *
- 364:.\Generated_Source\PSoC4/isr_minute.c **** * Return:
- 365:.\Generated_Source\PSoC4/isr_minute.c **** *   None
- 366:.\Generated_Source\PSoC4/isr_minute.c **** *
- 367:.\Generated_Source\PSoC4/isr_minute.c **** * Side Effects:
- 368:.\Generated_Source\PSoC4/isr_minute.c **** *   If interrupts are enabled and the interrupt is set up properly, the ISR is
- 369:.\Generated_Source\PSoC4/isr_minute.c **** *   entered (depending on the priority of this interrupt and other pending 
- 370:.\Generated_Source\PSoC4/isr_minute.c **** *   interrupts).
- 371:.\Generated_Source\PSoC4/isr_minute.c **** *
- 372:.\Generated_Source\PSoC4/isr_minute.c **** *******************************************************************************/
- 373:.\Generated_Source\PSoC4/isr_minute.c **** void isr_minute_SetPending(void)
- 374:.\Generated_Source\PSoC4/isr_minute.c **** {
->>>>>>> origin/master
  444              		.loc 1 374 0
  445              		.cfi_startproc
  446 0000 80B5     		push	{r7, lr}
@@ -1232,11 +895,10 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  473              		.type	isr_minute_ClearPending, %function
  474              	isr_minute_ClearPending:
  475              	.LFB14:
-<<<<<<< HEAD
  377:Generated_Source\PSoC4/isr_minute.c **** 
  378:Generated_Source\PSoC4/isr_minute.c **** 
  379:Generated_Source\PSoC4/isr_minute.c **** /*******************************************************************************
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 16
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 16
 
 
  380:Generated_Source\PSoC4/isr_minute.c **** * Function Name: isr_minute_ClearPending
@@ -1259,34 +921,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  397:Generated_Source\PSoC4/isr_minute.c **** *******************************************************************************/
  398:Generated_Source\PSoC4/isr_minute.c **** void isr_minute_ClearPending(void)
  399:Generated_Source\PSoC4/isr_minute.c **** {
-=======
- 377:.\Generated_Source\PSoC4/isr_minute.c **** 
- 378:.\Generated_Source\PSoC4/isr_minute.c **** 
- 379:.\Generated_Source\PSoC4/isr_minute.c **** /*******************************************************************************
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 16
-
-
- 380:.\Generated_Source\PSoC4/isr_minute.c **** * Function Name: isr_minute_ClearPending
- 381:.\Generated_Source\PSoC4/isr_minute.c **** ********************************************************************************
- 382:.\Generated_Source\PSoC4/isr_minute.c **** *
- 383:.\Generated_Source\PSoC4/isr_minute.c **** * Summary:
- 384:.\Generated_Source\PSoC4/isr_minute.c **** *   Clears a pending interrupt in the interrupt controller.
- 385:.\Generated_Source\PSoC4/isr_minute.c **** *
- 386:.\Generated_Source\PSoC4/isr_minute.c **** *   Note Some interrupt sources are clear-on-read and require the block 
- 387:.\Generated_Source\PSoC4/isr_minute.c **** *   interrupt/status register to be read/cleared with the appropriate block API 
- 388:.\Generated_Source\PSoC4/isr_minute.c **** *   (GPIO, UART, and so on). Otherwise the ISR will continue to remain in 
- 389:.\Generated_Source\PSoC4/isr_minute.c **** *   pending state even though the interrupt itself is cleared using this API.
- 390:.\Generated_Source\PSoC4/isr_minute.c **** *
- 391:.\Generated_Source\PSoC4/isr_minute.c **** * Parameters:
- 392:.\Generated_Source\PSoC4/isr_minute.c **** *   None
- 393:.\Generated_Source\PSoC4/isr_minute.c **** *
- 394:.\Generated_Source\PSoC4/isr_minute.c **** * Return:
- 395:.\Generated_Source\PSoC4/isr_minute.c **** *   None
- 396:.\Generated_Source\PSoC4/isr_minute.c **** *
- 397:.\Generated_Source\PSoC4/isr_minute.c **** *******************************************************************************/
- 398:.\Generated_Source\PSoC4/isr_minute.c **** void isr_minute_ClearPending(void)
- 399:.\Generated_Source\PSoC4/isr_minute.c **** {
->>>>>>> origin/master
  476              		.loc 1 399 0
  477              		.cfi_startproc
  478 0000 80B5     		push	{r7, lr}
@@ -1323,13 +957,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  507 0006 00000000 		.4byte	.Ldebug_abbrev0
  508 000a 04       		.byte	0x4
  509 000b 01       		.uleb128 0x1
-<<<<<<< HEAD
  510 000c 28010000 		.4byte	.LASF33
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 17
-=======
- 510 000c 6D010000 		.4byte	.LASF33
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 17
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 17
 
 
  511 0010 01       		.byte	0x1
@@ -1389,11 +1018,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  565 007d 9A01     		.2byte	0x19a
  566 007f 48000000 		.4byte	0x48
  567 0083 02       		.uleb128 0x2
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 18
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 18
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 18
 
 
  568 0084 04       		.byte	0x4
@@ -1453,11 +1078,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  622 00f5 91       		.byte	0x91
  623 00f6 74       		.sleb128 -12
  624 00f7 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 19
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 19
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 19
 
 
  625 00f8 08       		.uleb128 0x8
@@ -1517,11 +1138,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  679 016d 01       		.byte	0x1
  680 016e F9       		.byte	0xf9
  681 016f 6B000000 		.4byte	0x6b
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 20
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 20
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 20
 
 
  682 0173 02       		.uleb128 0x2
@@ -1580,13 +1197,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  735 01dc 01       		.uleb128 0x1
  736 01dd 9C       		.byte	0x9c
  737 01de 12       		.uleb128 0x12
-<<<<<<< HEAD
  738 01df 8D020000 		.4byte	.LASF29
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 21
-=======
- 738 01df 91020000 		.4byte	.LASF29
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 21
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 21
 
 
  739 01e3 01       		.byte	0x1
@@ -1646,11 +1258,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  793 0008 0E       		.uleb128 0xe
  794 0009 1B       		.uleb128 0x1b
  795 000a 0E       		.uleb128 0xe
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 22
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 22
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 22
 
 
  796 000b 55       		.uleb128 0x55
@@ -1710,11 +1318,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  850 0041 0B       		.uleb128 0xb
  851 0042 49       		.uleb128 0x49
  852 0043 13       		.uleb128 0x13
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 23
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 23
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 23
 
 
  853 0044 00       		.byte	0
@@ -1774,11 +1378,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  907 007c 13       		.uleb128 0x13
  908 007d 00       		.byte	0
  909 007e 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 24
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 24
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 24
 
 
  910 007f 0A       		.uleb128 0xa
@@ -1838,11 +1438,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  964 00b6 06       		.uleb128 0x6
  965 00b7 40       		.uleb128 0x40
  966 00b8 18       		.uleb128 0x18
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 25
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 25
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 25
 
 
  967 00b9 9742     		.uleb128 0x2117
@@ -1902,11 +1498,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  1021 00f1 0B       		.uleb128 0xb
  1022 00f2 3B       		.uleb128 0x3b
  1023 00f3 05       		.uleb128 0x5
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 26
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 26
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 26
 
 
  1024 00f4 27       		.uleb128 0x27
@@ -1966,11 +1558,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  1078 012c 12       		.uleb128 0x12
  1079 012d 2E       		.uleb128 0x2e
  1080 012e 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 27
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 27
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 27
 
 
  1081 012f 3F       		.uleb128 0x3f
@@ -2030,11 +1618,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  1135 0166 19       		.uleb128 0x19
  1136 0167 00       		.byte	0
  1137 0168 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 28
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 28
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 28
 
 
  1138 0169 00       		.byte	0
@@ -2094,11 +1678,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  1192 003c 2C000000 		.4byte	.LFE9
  1193 0040 00000000 		.4byte	.LFB10
  1194 0044 14000000 		.4byte	.LFE10
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 29
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 29
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 29
 
 
  1195 0048 00000000 		.4byte	.LFB11
@@ -2156,10 +1736,9 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  1221      7369676E 
  1221      65642069 
  1221      6E7400
-<<<<<<< HEAD
  1222              	.LASF11:
  1223 007f 666C6F61 		.ascii	"float\000"
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 30
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 30
 
 
  1223      7400
@@ -2219,7 +1798,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  1245      392E3320 
  1245      32303135 
  1245      30333033 
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 31
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 31
 
 
  1246 015b 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
@@ -2279,7 +1858,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  1266              	.LASF6:
  1267 0239 6C6F6E67 		.ascii	"long long int\000"
  1267      206C6F6E 
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccmDlski.s 			page 32
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccpxAWYI.s 			page 32
 
 
  1267      6720696E 
@@ -2295,146 +1874,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 1
  1270      7465725F 
  1270      322E6379 
  1270      64736E00 
-=======
- 1222              	.LASF35:
- 1223 007f 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\GitHub\\BioSnap\\Mas"
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 30
-
-
- 1223      73657273 
- 1223      5C4D6174 
- 1223      74686577 
- 1223      5C446F63 
- 1224 00ac 7465725F 		.ascii	"ter_v2\\Master_2.cydsn\000"
- 1224      76325C4D 
- 1224      61737465 
- 1224      725F322E 
- 1224      63796473 
- 1225              	.LASF11:
- 1226 00c2 666C6F61 		.ascii	"float\000"
- 1226      7400
- 1227              	.LASF17:
- 1228 00c8 6973725F 		.ascii	"isr_minute_Start\000"
- 1228      6D696E75 
- 1228      74655F53 
- 1228      74617274 
- 1228      00
- 1229              	.LASF31:
- 1230 00d9 6973725F 		.ascii	"isr_minute_SetPending\000"
- 1230      6D696E75 
- 1230      74655F53 
- 1230      65745065 
- 1230      6E64696E 
- 1231              	.LASF1:
- 1232 00ef 756E7369 		.ascii	"unsigned char\000"
- 1232      676E6564 
- 1232      20636861 
- 1232      7200
- 1233              	.LASF25:
- 1234 00fd 696E7465 		.ascii	"interruptState\000"
- 1234      72727570 
- 1234      74537461 
- 1234      746500
- 1235              	.LASF5:
- 1236 010c 6C6F6E67 		.ascii	"long unsigned int\000"
- 1236      20756E73 
- 1236      69676E65 
- 1236      6420696E 
- 1236      7400
- 1237              	.LASF9:
- 1238 011e 75696E74 		.ascii	"uint8\000"
- 1238      3800
- 1239              	.LASF24:
- 1240 0124 7072696F 		.ascii	"priority\000"
- 1240      72697479 
- 1240      00
- 1241              	.LASF20:
- 1242 012d 6973725F 		.ascii	"isr_minute_StartEx\000"
- 1242      6D696E75 
- 1242      74655F53 
- 1242      74617274 
- 1242      457800
- 1243              	.LASF12:
- 1244 0140 646F7562 		.ascii	"double\000"
- 1244      6C6500
- 1245              	.LASF34:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 31
-
-
- 1246 0147 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\isr_minute.c\000"
- 1246      6E657261 
- 1246      7465645F 
- 1246      536F7572 
- 1246      63655C50 
- 1247              	.LASF33:
- 1248 016d 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 1248      4320342E 
- 1248      392E3320 
- 1248      32303135 
- 1248      30333033 
- 1249 01a0 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
- 1249      20726576 
- 1249      6973696F 
- 1249      6E203232 
- 1249      31323230 
- 1250 01d3 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 1250      66756E63 
- 1250      74696F6E 
- 1250      2D736563 
- 1250      74696F6E 
- 1251              	.LASF10:
- 1252 01fb 75696E74 		.ascii	"uint32\000"
- 1252      333200
- 1253              	.LASF8:
- 1254 0202 756E7369 		.ascii	"unsigned int\000"
- 1254      676E6564 
- 1254      20696E74 
- 1254      00
- 1255              	.LASF30:
- 1256 020f 6973725F 		.ascii	"isr_minute_Disable\000"
- 1256      6D696E75 
- 1256      74655F44 
- 1256      69736162 
- 1256      6C6500
- 1257              	.LASF7:
- 1258 0222 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1258      206C6F6E 
- 1258      6720756E 
- 1258      7369676E 
- 1258      65642069 
- 1259              	.LASF22:
- 1260 0239 61646472 		.ascii	"address\000"
- 1260      65737300 
- 1261              	.LASF27:
- 1262 0241 6973725F 		.ascii	"isr_minute_Enable\000"
- 1262      6D696E75 
- 1262      74655F45 
- 1262      6E61626C 
- 1262      6500
- 1263              	.LASF21:
- 1264 0253 6973725F 		.ascii	"isr_minute_SetVector\000"
- 1264      6D696E75 
- 1264      74655F53 
- 1264      65745665 
- 1264      63746F72 
- 1265              	.LASF15:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccl7dv2E.s 			page 32
-
-
- 1266 0268 63796973 		.ascii	"cyisraddress\000"
- 1266      72616464 
- 1266      72657373 
- 1266      00
- 1267              	.LASF16:
- 1268 0275 73697A65 		.ascii	"sizetype\000"
- 1268      74797065 
- 1268      00
- 1269              	.LASF6:
- 1270 027e 6C6F6E67 		.ascii	"long long int\000"
- 1270      206C6F6E 
- 1270      6720696E 
- 1270      7400
->>>>>>> origin/master
  1271              	.LASF13:
  1272 0288 63686172 		.ascii	"char\000"
  1272      00

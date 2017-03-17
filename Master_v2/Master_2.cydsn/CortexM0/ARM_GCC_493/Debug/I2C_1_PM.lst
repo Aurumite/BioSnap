@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccOJTWRK.s 			page 1
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 1
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccBJ4mac.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -36,7 +32,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 1
   29              		.type	I2C_1_Sleep, %function
   30              	I2C_1_Sleep:
   31              	.LFB2:
-<<<<<<< HEAD
   32              		.file 1 "Generated_Source\\PSoC4\\I2C_1_PM.c"
    1:Generated_Source\PSoC4/I2C_1_PM.c **** /***************************************************************************//**
    2:Generated_Source\PSoC4/I2C_1_PM.c **** * \file I2C_1_PM.c
@@ -63,36 +58,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 1
   23:Generated_Source\PSoC4/I2C_1_PM.c ****     #include "I2C_1_I2C_PVT.h"
   24:Generated_Source\PSoC4/I2C_1_PM.c **** #endif /* (I2C_1_SCB_MODE_I2C_INC) */
   25:Generated_Source\PSoC4/I2C_1_PM.c **** 
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccOJTWRK.s 			page 2
-=======
-  32              		.file 1 ".\\Generated_Source\\PSoC4\\I2C_1_PM.c"
-   1:.\Generated_Source\PSoC4/I2C_1_PM.c **** /***************************************************************************//**
-   2:.\Generated_Source\PSoC4/I2C_1_PM.c **** * \file I2C_1_PM.c
-   3:.\Generated_Source\PSoC4/I2C_1_PM.c **** * \version 3.20
-   4:.\Generated_Source\PSoC4/I2C_1_PM.c **** *
-   5:.\Generated_Source\PSoC4/I2C_1_PM.c **** * \brief
-   6:.\Generated_Source\PSoC4/I2C_1_PM.c **** *  This file provides the source code to the Power Management support for
-   7:.\Generated_Source\PSoC4/I2C_1_PM.c **** *  the SCB Component.
-   8:.\Generated_Source\PSoC4/I2C_1_PM.c **** *
-   9:.\Generated_Source\PSoC4/I2C_1_PM.c **** * Note:
-  10:.\Generated_Source\PSoC4/I2C_1_PM.c **** *
-  11:.\Generated_Source\PSoC4/I2C_1_PM.c **** ********************************************************************************
-  12:.\Generated_Source\PSoC4/I2C_1_PM.c **** * \copyright
-  13:.\Generated_Source\PSoC4/I2C_1_PM.c **** * Copyright 2013-2016, Cypress Semiconductor Corporation.  All rights reserved.
-  14:.\Generated_Source\PSoC4/I2C_1_PM.c **** * You may use this file only in accordance with the license, terms, conditions,
-  15:.\Generated_Source\PSoC4/I2C_1_PM.c **** * disclaimers, and limitations in the end user license agreement accompanying
-  16:.\Generated_Source\PSoC4/I2C_1_PM.c **** * the software package with which this file was provided.
-  17:.\Generated_Source\PSoC4/I2C_1_PM.c **** *******************************************************************************/
-  18:.\Generated_Source\PSoC4/I2C_1_PM.c **** 
-  19:.\Generated_Source\PSoC4/I2C_1_PM.c **** #include "I2C_1.h"
-  20:.\Generated_Source\PSoC4/I2C_1_PM.c **** #include "I2C_1_PVT.h"
-  21:.\Generated_Source\PSoC4/I2C_1_PM.c **** 
-  22:.\Generated_Source\PSoC4/I2C_1_PM.c **** #if(I2C_1_SCB_MODE_I2C_INC)
-  23:.\Generated_Source\PSoC4/I2C_1_PM.c ****     #include "I2C_1_I2C_PVT.h"
-  24:.\Generated_Source\PSoC4/I2C_1_PM.c **** #endif /* (I2C_1_SCB_MODE_I2C_INC) */
-  25:.\Generated_Source\PSoC4/I2C_1_PM.c **** 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 2
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccBJ4mac.s 			page 2
 
 
   26:Generated_Source\PSoC4/I2C_1_PM.c **** #if(I2C_1_SCB_MODE_EZI2C_INC)
@@ -152,11 +118,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 1
   38              		.cfi_offset 14, -4
   39 0002 00AF     		add	r7, sp, #0
   40              		.cfi_def_cfa_register 7
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccOJTWRK.s 			page 3
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 3
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccBJ4mac.s 			page 3
 
 
   75:Generated_Source\PSoC4/I2C_1_PM.c **** #if(I2C_1_SCB_MODE_UNCONFIG_CONST_CFG)
@@ -216,11 +178,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 1
   41              		.loc 1 128 0
   42 0004 074B     		ldr	r3, .L3
   43 0006 1B68     		ldr	r3, [r3]
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccOJTWRK.s 			page 4
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 4
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccBJ4mac.s 			page 4
 
 
   44 0008 DB0F     		lsr	r3, r3, #31
@@ -266,7 +224,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 1
   74              		.type	I2C_1_Wakeup, %function
   75              	I2C_1_Wakeup:
   76              	.LFB3:
-<<<<<<< HEAD
  139:Generated_Source\PSoC4/I2C_1_PM.c **** 
  140:Generated_Source\PSoC4/I2C_1_PM.c **** 
  141:Generated_Source\PSoC4/I2C_1_PM.c **** /*******************************************************************************
@@ -281,24 +238,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 1
  150:Generated_Source\PSoC4/I2C_1_PM.c **** *  - Unchecked: enables the component if it was enabled before enter Deep Sleep.
  151:Generated_Source\PSoC4/I2C_1_PM.c **** *
  152:Generated_Source\PSoC4/I2C_1_PM.c **** *  This function should not be called after exiting Sleep.
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccOJTWRK.s 			page 5
-=======
- 139:.\Generated_Source\PSoC4/I2C_1_PM.c **** 
- 140:.\Generated_Source\PSoC4/I2C_1_PM.c **** 
- 141:.\Generated_Source\PSoC4/I2C_1_PM.c **** /*******************************************************************************
- 142:.\Generated_Source\PSoC4/I2C_1_PM.c **** * Function Name: I2C_1_Wakeup
- 143:.\Generated_Source\PSoC4/I2C_1_PM.c **** ****************************************************************************//**
- 144:.\Generated_Source\PSoC4/I2C_1_PM.c **** *
- 145:.\Generated_Source\PSoC4/I2C_1_PM.c **** *  Prepares the I2C_1 component for Active mode operation after 
- 146:.\Generated_Source\PSoC4/I2C_1_PM.c **** *  Deep Sleep.
- 147:.\Generated_Source\PSoC4/I2C_1_PM.c **** *  The “Enable wakeup from Deep Sleep Mode” selection has influence on this 
- 148:.\Generated_Source\PSoC4/I2C_1_PM.c **** *  function implementation:
- 149:.\Generated_Source\PSoC4/I2C_1_PM.c **** *  - Checked: restores the component Active mode configuration.
- 150:.\Generated_Source\PSoC4/I2C_1_PM.c **** *  - Unchecked: enables the component if it was enabled before enter Deep Sleep.
- 151:.\Generated_Source\PSoC4/I2C_1_PM.c **** *
- 152:.\Generated_Source\PSoC4/I2C_1_PM.c **** *  This function should not be called after exiting Sleep.
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 5
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccBJ4mac.s 			page 5
 
 
  153:Generated_Source\PSoC4/I2C_1_PM.c **** *
@@ -317,7 +257,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 1
   82              		.cfi_offset 14, -4
   83 0002 00AF     		add	r7, sp, #0
   84              		.cfi_def_cfa_register 7
-<<<<<<< HEAD
  161:Generated_Source\PSoC4/I2C_1_PM.c **** #if(I2C_1_SCB_MODE_UNCONFIG_CONST_CFG)
  162:Generated_Source\PSoC4/I2C_1_PM.c **** 
  163:Generated_Source\PSoC4/I2C_1_PM.c ****     if(I2C_1_SCB_WAKE_ENABLE_CHECK)
@@ -359,51 +298,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 1
  199:Generated_Source\PSoC4/I2C_1_PM.c ****         I2C_1_I2CRestoreConfig();
  200:Generated_Source\PSoC4/I2C_1_PM.c **** 
  201:Generated_Source\PSoC4/I2C_1_PM.c ****     #elif (I2C_1_SCB_MODE_EZI2C_CONST_CFG && I2C_1_EZI2C_WAKE_ENABLE_CONST)
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccOJTWRK.s 			page 6
-=======
- 161:.\Generated_Source\PSoC4/I2C_1_PM.c **** #if(I2C_1_SCB_MODE_UNCONFIG_CONST_CFG)
- 162:.\Generated_Source\PSoC4/I2C_1_PM.c **** 
- 163:.\Generated_Source\PSoC4/I2C_1_PM.c ****     if(I2C_1_SCB_WAKE_ENABLE_CHECK)
- 164:.\Generated_Source\PSoC4/I2C_1_PM.c ****     {
- 165:.\Generated_Source\PSoC4/I2C_1_PM.c ****         if(I2C_1_SCB_MODE_I2C_RUNTM_CFG)
- 166:.\Generated_Source\PSoC4/I2C_1_PM.c ****         {
- 167:.\Generated_Source\PSoC4/I2C_1_PM.c ****             I2C_1_I2CRestoreConfig();
- 168:.\Generated_Source\PSoC4/I2C_1_PM.c ****         }
- 169:.\Generated_Source\PSoC4/I2C_1_PM.c ****         else if(I2C_1_SCB_MODE_EZI2C_RUNTM_CFG)
- 170:.\Generated_Source\PSoC4/I2C_1_PM.c ****         {
- 171:.\Generated_Source\PSoC4/I2C_1_PM.c ****             I2C_1_EzI2CRestoreConfig();
- 172:.\Generated_Source\PSoC4/I2C_1_PM.c ****         }
- 173:.\Generated_Source\PSoC4/I2C_1_PM.c ****     #if(!I2C_1_CY_SCBIP_V1)
- 174:.\Generated_Source\PSoC4/I2C_1_PM.c ****         else if(I2C_1_SCB_MODE_SPI_RUNTM_CFG)
- 175:.\Generated_Source\PSoC4/I2C_1_PM.c ****         {
- 176:.\Generated_Source\PSoC4/I2C_1_PM.c ****             I2C_1_SpiRestoreConfig();
- 177:.\Generated_Source\PSoC4/I2C_1_PM.c ****         }
- 178:.\Generated_Source\PSoC4/I2C_1_PM.c ****         else if(I2C_1_SCB_MODE_UART_RUNTM_CFG)
- 179:.\Generated_Source\PSoC4/I2C_1_PM.c ****         {
- 180:.\Generated_Source\PSoC4/I2C_1_PM.c ****             I2C_1_UartRestoreConfig();
- 181:.\Generated_Source\PSoC4/I2C_1_PM.c ****         }
- 182:.\Generated_Source\PSoC4/I2C_1_PM.c ****     #endif /* (!I2C_1_CY_SCBIP_V1) */
- 183:.\Generated_Source\PSoC4/I2C_1_PM.c ****         else
- 184:.\Generated_Source\PSoC4/I2C_1_PM.c ****         {
- 185:.\Generated_Source\PSoC4/I2C_1_PM.c ****             /* Unknown mode */
- 186:.\Generated_Source\PSoC4/I2C_1_PM.c ****         }
- 187:.\Generated_Source\PSoC4/I2C_1_PM.c ****     }
- 188:.\Generated_Source\PSoC4/I2C_1_PM.c ****     else
- 189:.\Generated_Source\PSoC4/I2C_1_PM.c ****     {
- 190:.\Generated_Source\PSoC4/I2C_1_PM.c ****         if(0u != I2C_1_backup.enableState)
- 191:.\Generated_Source\PSoC4/I2C_1_PM.c ****         {
- 192:.\Generated_Source\PSoC4/I2C_1_PM.c ****             I2C_1_Enable();
- 193:.\Generated_Source\PSoC4/I2C_1_PM.c ****         }
- 194:.\Generated_Source\PSoC4/I2C_1_PM.c ****     }
- 195:.\Generated_Source\PSoC4/I2C_1_PM.c **** 
- 196:.\Generated_Source\PSoC4/I2C_1_PM.c **** #else
- 197:.\Generated_Source\PSoC4/I2C_1_PM.c **** 
- 198:.\Generated_Source\PSoC4/I2C_1_PM.c ****     #if (I2C_1_SCB_MODE_I2C_CONST_CFG  && I2C_1_I2C_WAKE_ENABLE_CONST)
- 199:.\Generated_Source\PSoC4/I2C_1_PM.c ****         I2C_1_I2CRestoreConfig();
- 200:.\Generated_Source\PSoC4/I2C_1_PM.c **** 
- 201:.\Generated_Source\PSoC4/I2C_1_PM.c ****     #elif (I2C_1_SCB_MODE_EZI2C_CONST_CFG && I2C_1_EZI2C_WAKE_ENABLE_CONST)
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 6
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccBJ4mac.s 			page 6
 
 
  202:Generated_Source\PSoC4/I2C_1_PM.c ****         I2C_1_EzI2CRestoreConfig();
@@ -463,11 +358,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 1
  120 001d 00000000 		.4byte	0
  121 0021 00000000 		.4byte	.Ldebug_line0
  122 0025 02       		.uleb128 0x2
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccOJTWRK.s 			page 7
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 7
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccBJ4mac.s 			page 7
 
 
  123 0026 01       		.byte	0x1
@@ -526,13 +417,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 1
  176 008a 02       		.uleb128 0x2
  177 008b 08       		.byte	0x8
  178 008c 04       		.byte	0x4
-<<<<<<< HEAD
  179 008d 75010000 		.4byte	.LASF12
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccOJTWRK.s 			page 8
-=======
- 179 008d 58010000 		.4byte	.LASF12
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 8
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccBJ4mac.s 			page 8
 
 
  180 0091 02       		.uleb128 0x2
@@ -592,11 +478,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 1
  234 00fe 03       		.byte	0x3
  235 00ff 00000000 		.4byte	I2C_1_backup
  236 0103 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccOJTWRK.s 			page 9
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 9
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccBJ4mac.s 			page 9
 
 
  237              		.section	.debug_abbrev,"",%progbits
@@ -656,11 +538,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 1
  291 0034 00       		.byte	0
  292 0035 00       		.byte	0
  293 0036 05       		.uleb128 0x5
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccOJTWRK.s 			page 10
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 10
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccBJ4mac.s 			page 10
 
 
  294 0037 35       		.uleb128 0x35
@@ -720,11 +598,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 1
  348 006d 3A       		.uleb128 0x3a
  349 006e 0B       		.uleb128 0xb
  350 006f 3B       		.uleb128 0x3b
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccOJTWRK.s 			page 11
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 11
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccBJ4mac.s 			page 11
 
 
  351 0070 0B       		.uleb128 0xb
@@ -782,15 +656,9 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 1
  403 0014 00000000 		.4byte	0
  404              		.section	.debug_line,"",%progbits
  405              	.Ldebug_line0:
-<<<<<<< HEAD
  406 0000 81000000 		.section	.debug_str,"MS",%progbits,1
  406      02005000 
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccOJTWRK.s 			page 12
-=======
- 406 0000 9A000000 		.section	.debug_str,"MS",%progbits,1
- 406      02006900 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 12
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccBJ4mac.s 			page 12
 
 
  406      00000201 
@@ -813,7 +681,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 1
  414      676E6564 
  414      20696E74 
  414      00
-<<<<<<< HEAD
  415              	.LASF17:
  416 002e 4932435F 		.ascii	"I2C_1_Sleep\000"
  416      315F536C 
@@ -851,7 +718,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 1
  427      64736E00 
  428              	.LASF7:
  429 00b4 6C6F6E67 		.ascii	"long long unsigned int\000"
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccOJTWRK.s 			page 13
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccBJ4mac.s 			page 13
 
 
  429      206C6F6E 
@@ -911,107 +778,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 1
  451 01ae 666C6F61 		.ascii	"float\000"
  451      7400
  452              	.LASF2:
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccOJTWRK.s 			page 14
-=======
- 415              	.LASF1:
- 416 002e 756E7369 		.ascii	"unsigned char\000"
- 416      676E6564 
- 416      20636861 
- 416      7200
- 417              	.LASF17:
- 418 003c 4932435F 		.ascii	"I2C_1_Sleep\000"
- 418      315F536C 
- 418      65657000 
- 419              	.LASF18:
- 420 0048 4932435F 		.ascii	"I2C_1_Wakeup\000"
- 420      315F5761 
- 420      6B657570 
- 420      00
- 421              	.LASF16:
- 422 0055 4932435F 		.ascii	"I2C_1_BACKUP_STRUCT\000"
- 422      315F4241 
- 422      434B5550 
- 422      5F535452 
- 422      55435400 
- 423              	.LASF9:
- 424 0069 75696E74 		.ascii	"uint8\000"
- 424      3800
- 425              	.LASF5:
- 426 006f 6C6F6E67 		.ascii	"long unsigned int\000"
- 426      20756E73 
- 426      69676E65 
- 426      6420696E 
- 426      7400
- 427              	.LASF7:
- 428 0081 6C6F6E67 		.ascii	"long long unsigned int\000"
- 428      206C6F6E 
- 428      6720756E 
- 428      7369676E 
- 428      65642069 
- 429              	.LASF19:
- 430 0098 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 13
-
-
- 430      4320342E 
- 430      392E3320 
- 430      32303135 
- 430      30333033 
- 431 00cb 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
- 431      20726576 
- 431      6973696F 
- 431      6E203232 
- 431      31323230 
- 432 00fe 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 432      66756E63 
- 432      74696F6E 
- 432      2D736563 
- 432      74696F6E 
- 433              	.LASF20:
- 434 0126 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\I2C_1_PM.c\000"
- 434      6E657261 
- 434      7465645F 
- 434      536F7572 
- 434      63655C50 
- 435              	.LASF13:
- 436 014a 63686172 		.ascii	"char\000"
- 436      00
- 437              	.LASF4:
- 438 014f 6C6F6E67 		.ascii	"long int\000"
- 438      20696E74 
- 438      00
- 439              	.LASF12:
- 440 0158 646F7562 		.ascii	"double\000"
- 440      6C6500
- 441              	.LASF14:
- 442 015f 72656733 		.ascii	"reg32\000"
- 442      3200
- 443              	.LASF3:
- 444 0165 73686F72 		.ascii	"short unsigned int\000"
- 444      7420756E 
- 444      7369676E 
- 444      65642069 
- 444      6E7400
- 445              	.LASF0:
- 446 0178 7369676E 		.ascii	"signed char\000"
- 446      65642063 
- 446      68617200 
- 447              	.LASF23:
- 448 0184 4932435F 		.ascii	"I2C_1_backup\000"
- 448      315F6261 
- 448      636B7570 
- 448      00
- 449              	.LASF21:
- 450 0191 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\GitHub\\BioSnap\\Mas"
- 450      73657273 
- 450      5C4D6174 
- 450      74686577 
- 450      5C446F63 
- 451 01be 7465725F 		.ascii	"ter_v2\\Master_2.cydsn\000"
- 451      76325C4D 
- 451      61737465 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCklCd5.s 			page 14
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccBJ4mac.s 			page 14
 
 
  453 01b4 73686F72 		.ascii	"short int\000"

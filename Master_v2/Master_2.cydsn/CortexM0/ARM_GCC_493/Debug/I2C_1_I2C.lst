@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccW9J8wj.s 			page 1
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 1
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccWe77QS.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -30,7 +26,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 1
   23              		.type	I2C_1_I2CInit, %function
   24              	I2C_1_I2CInit:
   25              	.LFB2:
-<<<<<<< HEAD
   26              		.file 1 "Generated_Source\\PSoC4\\I2C_1_I2C.c"
    1:Generated_Source\PSoC4/I2C_1_I2C.c **** /***************************************************************************//**
    2:Generated_Source\PSoC4/I2C_1_I2C.c **** * \file I2C_1_I2C.c
@@ -63,7 +58,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 1
   29:Generated_Source\PSoC4/I2C_1_I2C.c **** #if(I2C_1_SCB_MODE_UNCONFIG_CONST_CFG)
   30:Generated_Source\PSoC4/I2C_1_I2C.c **** 
   31:Generated_Source\PSoC4/I2C_1_I2C.c ****     /***************************************
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccW9J8wj.s 			page 2
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccWe77QS.s 			page 2
 
 
   32:Generated_Source\PSoC4/I2C_1_I2C.c ****     *  Configuration Structure Initialization
@@ -123,7 +118,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 1
   86:Generated_Source\PSoC4/I2C_1_I2C.c **** 
   87:Generated_Source\PSoC4/I2C_1_I2C.c ****             /* Store internal configuration */
   88:Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_scbMode       = (uint8) I2C_1_SCB_MODE_I2C;
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccW9J8wj.s 			page 3
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccWe77QS.s 			page 3
 
 
   89:Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_scbEnableWake = (uint8) config->enableWake;
@@ -183,7 +178,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 1
  143:Generated_Source\PSoC4/I2C_1_I2C.c **** 
  144:Generated_Source\PSoC4/I2C_1_I2C.c ****             /* Configure TX direction */
  145:Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_TX_CTRL_REG      = I2C_1_I2C_TX_CTRL;
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccW9J8wj.s 			page 4
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccWe77QS.s 			page 4
 
 
  146:Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_TX_FIFO_CTRL_REG = I2C_1_CLEAR_REG;
@@ -237,225 +232,13 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 1
  194:Generated_Source\PSoC4/I2C_1_I2C.c ****     *******************************************************************************/
  195:Generated_Source\PSoC4/I2C_1_I2C.c ****     void I2C_1_I2CInit(void)
  196:Generated_Source\PSoC4/I2C_1_I2C.c ****     {
-=======
-  26              		.file 1 ".\\Generated_Source\\PSoC4\\I2C_1_I2C.c"
-   1:.\Generated_Source\PSoC4/I2C_1_I2C.c **** /***************************************************************************//**
-   2:.\Generated_Source\PSoC4/I2C_1_I2C.c **** * \file I2C_1_I2C.c
-   3:.\Generated_Source\PSoC4/I2C_1_I2C.c **** * \version 3.20
-   4:.\Generated_Source\PSoC4/I2C_1_I2C.c **** *
-   5:.\Generated_Source\PSoC4/I2C_1_I2C.c **** * \brief
-   6:.\Generated_Source\PSoC4/I2C_1_I2C.c **** *  This file provides the source code to the API for the SCB Component in
-   7:.\Generated_Source\PSoC4/I2C_1_I2C.c **** *  I2C mode.
-   8:.\Generated_Source\PSoC4/I2C_1_I2C.c **** *
-   9:.\Generated_Source\PSoC4/I2C_1_I2C.c **** * Note:
-  10:.\Generated_Source\PSoC4/I2C_1_I2C.c **** *
-  11:.\Generated_Source\PSoC4/I2C_1_I2C.c **** *******************************************************************************
-  12:.\Generated_Source\PSoC4/I2C_1_I2C.c **** * \copyright
-  13:.\Generated_Source\PSoC4/I2C_1_I2C.c **** * Copyright 2013-2016, Cypress Semiconductor Corporation.  All rights reserved.
-  14:.\Generated_Source\PSoC4/I2C_1_I2C.c **** * You may use this file only in accordance with the license, terms, conditions,
-  15:.\Generated_Source\PSoC4/I2C_1_I2C.c **** * disclaimers, and limitations in the end user license agreement accompanying
-  16:.\Generated_Source\PSoC4/I2C_1_I2C.c **** * the software package with which this file was provided.
-  17:.\Generated_Source\PSoC4/I2C_1_I2C.c **** *******************************************************************************/
-  18:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
-  19:.\Generated_Source\PSoC4/I2C_1_I2C.c **** #include "I2C_1_PVT.h"
-  20:.\Generated_Source\PSoC4/I2C_1_I2C.c **** #include "I2C_1_I2C_PVT.h"
-  21:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
-  22:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
-  23:.\Generated_Source\PSoC4/I2C_1_I2C.c **** /***************************************
-  24:.\Generated_Source\PSoC4/I2C_1_I2C.c **** *      I2C Private Vars
-  25:.\Generated_Source\PSoC4/I2C_1_I2C.c **** ***************************************/
-  26:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
-  27:.\Generated_Source\PSoC4/I2C_1_I2C.c **** volatile uint8 I2C_1_state;  /* Current state of I2C FSM */
-  28:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
-  29:.\Generated_Source\PSoC4/I2C_1_I2C.c **** #if(I2C_1_SCB_MODE_UNCONFIG_CONST_CFG)
-  30:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
-  31:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     /***************************************
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 2
-
-
-  32:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     *  Configuration Structure Initialization
-  33:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     ***************************************/
-  34:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
-  35:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     /* Constant configuration of I2C */
-  36:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     const I2C_1_I2C_INIT_STRUCT I2C_1_configI2C =
-  37:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     {
-  38:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         I2C_1_I2C_MODE,
-  39:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         I2C_1_I2C_OVS_FACTOR_LOW,
-  40:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         I2C_1_I2C_OVS_FACTOR_HIGH,
-  41:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         I2C_1_I2C_MEDIAN_FILTER_ENABLE,
-  42:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         I2C_1_I2C_SLAVE_ADDRESS,
-  43:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         I2C_1_I2C_SLAVE_ADDRESS_MASK,
-  44:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         I2C_1_I2C_ACCEPT_ADDRESS,
-  45:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         I2C_1_I2C_WAKE_ENABLE,
-  46:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         I2C_1_I2C_BYTE_MODE_ENABLE,
-  47:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         I2C_1_I2C_DATA_RATE,
-  48:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         I2C_1_I2C_ACCEPT_GENERAL_CALL,
-  49:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     };
-  50:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
-  51:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     /*******************************************************************************
-  52:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     * Function Name: I2C_1_I2CInit
-  53:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     ****************************************************************************//**
-  54:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     *
-  55:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     *
-  56:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     *  Configures the I2C_1 for I2C operation.
-  57:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     *
-  58:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     *  This function is intended specifically to be used when the I2C_1 
-  59:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     *  configuration is set to “Unconfigured I2C_1” in the customizer. 
-  60:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     *  After initializing the I2C_1 in I2C mode using this function, 
-  61:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     *  the component can be enabled using the I2C_1_Start() or 
-  62:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     * I2C_1_Enable() function.
-  63:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     *  This function uses a pointer to a structure that provides the configuration 
-  64:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     *  settings. This structure contains the same information that would otherwise 
-  65:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     *  be provided by the customizer settings.
-  66:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     *
-  67:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     *  \param config: pointer to a structure that contains the following list of 
-  68:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     *   fields. These fields match the selections available in the customizer. 
-  69:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     *   Refer to the customizer for further description of the settings.
-  70:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     *
-  71:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     *******************************************************************************/
-  72:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     void I2C_1_I2CInit(const I2C_1_I2C_INIT_STRUCT *config)
-  73:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     {
-  74:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         uint32 medianFilter;
-  75:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         uint32 locEnableWake;
-  76:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
-  77:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         if(NULL == config)
-  78:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         {
-  79:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             CYASSERT(0u != 0u); /* Halt execution due to bad function parameter */
-  80:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         }
-  81:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         else
-  82:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         {
-  83:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             /* Configure pins */
-  84:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_SetPins(I2C_1_SCB_MODE_I2C, I2C_1_DUMMY_PARAM,
-  85:.\Generated_Source\PSoC4/I2C_1_I2C.c ****                                      I2C_1_DUMMY_PARAM);
-  86:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
-  87:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             /* Store internal configuration */
-  88:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_scbMode       = (uint8) I2C_1_SCB_MODE_I2C;
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 3
-
-
-  89:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_scbEnableWake = (uint8) config->enableWake;
-  90:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_scbEnableIntr = (uint8) I2C_1_SCB_IRQ_INTERNAL;
-  91:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
-  92:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_mode          = (uint8) config->mode;
-  93:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_acceptAddr    = (uint8) config->acceptAddr;
-  94:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
-  95:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         #if (I2C_1_CY_SCBIP_V0)
-  96:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             /* Adjust SDA filter settings. Ticket ID#150521 */
-  97:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_SET_I2C_CFG_SDA_FILT_TRIM(I2C_1_EC_AM_I2C_CFG_SDA_FILT_TRIM);
-  98:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         #endif /* (I2C_1_CY_SCBIP_V0) */
-  99:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
- 100:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             /* Adjust AF and DF filter settings. Ticket ID#176179 */
- 101:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             if (((I2C_1_I2C_MODE_SLAVE != config->mode) &&
- 102:.\Generated_Source\PSoC4/I2C_1_I2C.c ****                  (config->dataRate <= I2C_1_I2C_DATA_RATE_FS_MODE_MAX)) ||
- 103:.\Generated_Source\PSoC4/I2C_1_I2C.c ****                  (I2C_1_I2C_MODE_SLAVE == config->mode))
- 104:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             {
- 105:.\Generated_Source\PSoC4/I2C_1_I2C.c ****                 /* AF = 1, DF = 0 */
- 106:.\Generated_Source\PSoC4/I2C_1_I2C.c ****                 I2C_1_I2C_CFG_ANALOG_FITER_ENABLE;
- 107:.\Generated_Source\PSoC4/I2C_1_I2C.c ****                 medianFilter = I2C_1_DIGITAL_FILTER_DISABLE;
- 108:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             }
- 109:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             else
- 110:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             {
- 111:.\Generated_Source\PSoC4/I2C_1_I2C.c ****                 /* AF = 0, DF = 1 */
- 112:.\Generated_Source\PSoC4/I2C_1_I2C.c ****                 I2C_1_I2C_CFG_ANALOG_FITER_DISABLE;
- 113:.\Generated_Source\PSoC4/I2C_1_I2C.c ****                 medianFilter = I2C_1_DIGITAL_FILTER_ENABLE;
- 114:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             }
- 115:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
- 116:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         #if (!I2C_1_CY_SCBIP_V0)
- 117:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             locEnableWake = (I2C_1_I2C_MULTI_MASTER_SLAVE) ? (0u) : (config->enableWake);
- 118:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         #else
- 119:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             locEnableWake = config->enableWake;
- 120:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         #endif /* (!I2C_1_CY_SCBIP_V0) */
- 121:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
- 122:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             /* Configure I2C interface */
- 123:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_CTRL_REG     = I2C_1_GET_CTRL_BYTE_MODE  (config->enableByteMode) |
- 124:.\Generated_Source\PSoC4/I2C_1_I2C.c ****                                             I2C_1_GET_CTRL_ADDR_ACCEPT(config->acceptAddr)     |
- 125:.\Generated_Source\PSoC4/I2C_1_I2C.c ****                                             I2C_1_GET_CTRL_EC_AM_MODE (locEnableWake);
- 126:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
- 127:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_I2C_CTRL_REG = I2C_1_GET_I2C_CTRL_HIGH_PHASE_OVS(config->oversampleHigh) |
- 128:.\Generated_Source\PSoC4/I2C_1_I2C.c ****                     I2C_1_GET_I2C_CTRL_LOW_PHASE_OVS (config->oversampleLow)                       
- 129:.\Generated_Source\PSoC4/I2C_1_I2C.c ****                     I2C_1_GET_I2C_CTRL_S_GENERAL_IGNORE((uint32)(0u == config->acceptGeneralAddr)) 
- 130:.\Generated_Source\PSoC4/I2C_1_I2C.c ****                     I2C_1_GET_I2C_CTRL_SL_MSTR_MODE  (config->mode);
- 131:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
- 132:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             /* Configure RX direction */
- 133:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_RX_CTRL_REG      = I2C_1_GET_RX_CTRL_MEDIAN(medianFilter) |
- 134:.\Generated_Source\PSoC4/I2C_1_I2C.c ****                                                 I2C_1_I2C_RX_CTRL;
- 135:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_RX_FIFO_CTRL_REG = I2C_1_CLEAR_REG;
- 136:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
- 137:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             /* Set default address and mask */
- 138:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_RX_MATCH_REG    = ((I2C_1_I2C_SLAVE) ?
- 139:.\Generated_Source\PSoC4/I2C_1_I2C.c ****                                                 (I2C_1_GET_I2C_8BIT_ADDRESS(config->slaveAddr) |
- 140:.\Generated_Source\PSoC4/I2C_1_I2C.c ****                                                  I2C_1_GET_RX_MATCH_MASK(config->slaveAddrMask)) :
- 141:.\Generated_Source\PSoC4/I2C_1_I2C.c ****                                                 (I2C_1_CLEAR_REG));
- 142:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
- 143:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
- 144:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             /* Configure TX direction */
- 145:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_TX_CTRL_REG      = I2C_1_I2C_TX_CTRL;
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 4
-
-
- 146:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_TX_FIFO_CTRL_REG = I2C_1_CLEAR_REG;
- 147:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
- 148:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             /* Configure interrupt with I2C handler but do not enable it */
- 149:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             CyIntDisable    (I2C_1_ISR_NUMBER);
- 150:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             CyIntSetPriority(I2C_1_ISR_NUMBER, I2C_1_ISR_PRIORITY);
- 151:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             (void) CyIntSetVector(I2C_1_ISR_NUMBER, &I2C_1_I2C_ISR);
- 152:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
- 153:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             /* Configure interrupt sources */
- 154:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         #if(!I2C_1_CY_SCBIP_V1)
- 155:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_INTR_SPI_EC_MASK_REG = I2C_1_NO_INTR_SOURCES;
- 156:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         #endif /* (!I2C_1_CY_SCBIP_V1) */
- 157:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
- 158:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_INTR_I2C_EC_MASK_REG = I2C_1_NO_INTR_SOURCES;
- 159:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_INTR_RX_MASK_REG     = I2C_1_NO_INTR_SOURCES;
- 160:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_INTR_TX_MASK_REG     = I2C_1_NO_INTR_SOURCES;
- 161:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
- 162:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_INTR_SLAVE_MASK_REG  = ((I2C_1_I2C_SLAVE) ?
- 163:.\Generated_Source\PSoC4/I2C_1_I2C.c ****                             (I2C_1_GET_INTR_SLAVE_I2C_GENERAL(config->acceptGeneralAddr) |
- 164:.\Generated_Source\PSoC4/I2C_1_I2C.c ****                              I2C_1_I2C_INTR_SLAVE_MASK) : (I2C_1_CLEAR_REG));
- 165:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
- 166:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_INTR_MASTER_MASK_REG = ((I2C_1_I2C_MASTER) ?
- 167:.\Generated_Source\PSoC4/I2C_1_I2C.c ****                                                      (I2C_1_I2C_INTR_MASTER_MASK) :
- 168:.\Generated_Source\PSoC4/I2C_1_I2C.c ****                                                      (I2C_1_CLEAR_REG));
- 169:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
- 170:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             /* Configure global variables */
- 171:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_state = I2C_1_I2C_FSM_IDLE;
- 172:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
- 173:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             /* Internal slave variables */
- 174:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_slStatus        = 0u;
- 175:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_slRdBufIndex    = 0u;
- 176:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_slWrBufIndex    = 0u;
- 177:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_slOverFlowCount = 0u;
- 178:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
- 179:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             /* Internal master variables */
- 180:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_mstrStatus     = 0u;
- 181:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_mstrRdBufIndex = 0u;
- 182:.\Generated_Source\PSoC4/I2C_1_I2C.c ****             I2C_1_mstrWrBufIndex = 0u;
- 183:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         }
- 184:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     }
- 185:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
- 186:.\Generated_Source\PSoC4/I2C_1_I2C.c **** #else
- 187:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
- 188:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     /*******************************************************************************
- 189:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     * Function Name: I2C_1_I2CInit
- 190:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     ****************************************************************************//**
- 191:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     *
- 192:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     *  Configures the SCB for the I2C operation.
- 193:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     *
- 194:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     *******************************************************************************/
- 195:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     void I2C_1_I2CInit(void)
- 196:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     {
->>>>>>> origin/master
   27              		.loc 1 196 0
   28              		.cfi_startproc
   29 0000 80B5     		push	{r7, lr}
   30              		.cfi_def_cfa_offset 8
   31              		.cfi_offset 7, -8
   32              		.cfi_offset 14, -4
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccW9J8wj.s 			page 5
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 5
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccWe77QS.s 			page 5
 
 
   33 0002 00AF     		add	r7, sp, #0
@@ -515,11 +298,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 1
  221:Generated_Source\PSoC4/I2C_1_I2C.c ****         CyIntDisable    (I2C_1_ISR_NUMBER);
   63              		.loc 1 221 0
   64 002e 0A20     		mov	r0, #10
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccW9J8wj.s 			page 6
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 6
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccWe77QS.s 			page 6
 
 
   65 0030 FFF7FEFF 		bl	CyIntDisable
@@ -579,8 +358,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 1
  101 006c 164B     		ldr	r3, .L2+64
  102 006e 1022     		mov	r2, #16
  103 0070 1A70     		strb	r2, [r3]
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccW9J8wj.s 			page 7
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccWe77QS.s 			page 7
 
 
  240:Generated_Source\PSoC4/I2C_1_I2C.c **** 
@@ -595,23 +373,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 1
  249:Generated_Source\PSoC4/I2C_1_I2C.c ****     #if(I2C_1_I2C_MASTER)
  250:Generated_Source\PSoC4/I2C_1_I2C.c ****     /* Internal master variable */
  251:Generated_Source\PSoC4/I2C_1_I2C.c ****         I2C_1_mstrStatus     = 0u;
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 7
-
-
- 240:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
- 241:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     #if(I2C_1_I2C_SLAVE)
- 242:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         /* Internal slave variable */
- 243:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         I2C_1_slStatus        = 0u;
- 244:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         I2C_1_slRdBufIndex    = 0u;
- 245:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         I2C_1_slWrBufIndex    = 0u;
- 246:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         I2C_1_slOverFlowCount = 0u;
- 247:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     #endif /* (I2C_1_I2C_SLAVE) */
- 248:.\Generated_Source\PSoC4/I2C_1_I2C.c **** 
- 249:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     #if(I2C_1_I2C_MASTER)
- 250:.\Generated_Source\PSoC4/I2C_1_I2C.c ****     /* Internal master variable */
- 251:.\Generated_Source\PSoC4/I2C_1_I2C.c ****         I2C_1_mstrStatus     = 0u;
->>>>>>> origin/master
  104              		.loc 1 251 0
  105 0072 164B     		ldr	r3, .L2+68
  106 0074 0022     		mov	r2, #0
@@ -657,11 +418,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 1
  142 00d4 00000000 		.word	I2C_1_mstrWrBufIndex
  143              		.cfi_endproc
  144              	.LFE2:
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccW9J8wj.s 			page 8
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 8
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccWe77QS.s 			page 8
 
 
  145              		.size	I2C_1_I2CInit, .-I2C_1_I2CInit
@@ -721,11 +478,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 1
  185 0006 00000000 		.4byte	.Ldebug_abbrev0
  186 000a 04       		.byte	0x4
  187 000b 01       		.uleb128 0x1
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccW9J8wj.s 			page 9
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 9
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccWe77QS.s 			page 9
 
 
  188 000c ED000000 		.4byte	.LASF23
@@ -785,11 +538,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 1
  242 007c 02       		.byte	0x2
  243 007d 9901     		.2byte	0x199
  244 007f 3A000000 		.4byte	0x3a
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccW9J8wj.s 			page 10
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 10
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccWe77QS.s 			page 10
 
 
  245 0083 04       		.uleb128 0x4
@@ -849,11 +598,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 1
  299 00f5 03       		.byte	0x3
  300 00f6 00000000 		.4byte	I2C_1_state
  301 00fa 09       		.uleb128 0x9
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccW9J8wj.s 			page 11
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 11
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccWe77QS.s 			page 11
 
 
  302 00fb E3010000 		.4byte	.LASF20
@@ -913,11 +658,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 1
  356 0025 03       		.uleb128 0x3
  357 0026 08       		.uleb128 0x8
  358 0027 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccW9J8wj.s 			page 12
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 12
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccWe77QS.s 			page 12
 
 
  359 0028 00       		.byte	0
@@ -977,11 +718,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 1
  413 005f 05       		.uleb128 0x5
  414 0060 27       		.uleb128 0x27
  415 0061 19       		.uleb128 0x19
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccW9J8wj.s 			page 13
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 13
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccWe77QS.s 			page 13
 
 
  416 0062 11       		.uleb128 0x11
@@ -1041,11 +778,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 1
  470 0014 D8000000 		.4byte	.LFE2-.LFB2
  471 0018 00000000 		.4byte	.LFB3
  472 001c 14000000 		.4byte	.LFE3-.LFB3
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccW9J8wj.s 			page 14
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 14
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccWe77QS.s 			page 14
 
 
  473 0020 00000000 		.4byte	0
@@ -1098,7 +831,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 1
  499      69676E65 
  499      6420696E 
  499      7400
-<<<<<<< HEAD
  500              	.LASF25:
  501 005d 433A5C55 		.ascii	"C:\\Users\\Davit\\Documents\\GitHub\\BioSnap\\Maste"
  501      73657273 
@@ -1106,7 +838,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 1
  501      69745C44 
  501      6F63756D 
  502 008a 725F7632 		.ascii	"r_v2\\Master_2.cydsn\000"
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccW9J8wj.s 			page 15
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccWe77QS.s 			page 15
 
 
  502      5C4D6173 
@@ -1166,7 +898,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 1
  522 019e 72656733 		.ascii	"reg32\000"
  522      3200
  523              	.LASF17:
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccW9J8wj.s 			page 16
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccWe77QS.s 			page 16
 
 
  524 01a4 4932435F 		.ascii	"I2C_1_I2CInit\000"
@@ -1183,92 +915,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 1
  528 01c5 7369676E 		.ascii	"signed char\000"
  528      65642063 
  528      68617200 
-=======
- 500              	.LASF7:
- 501 005d 6C6F6E67 		.ascii	"long long unsigned int\000"
- 501      206C6F6E 
- 501      6720756E 
- 501      7369676E 
- 501      65642069 
- 502              	.LASF21:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 15
-
-
- 503 0074 4932435F 		.ascii	"I2C_1_mstrRdBufIndex\000"
- 503      315F6D73 
- 503      74725264 
- 503      42756649 
- 503      6E646578 
- 504              	.LASF23:
- 505 0089 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 505      4320342E 
- 505      392E3320 
- 505      32303135 
- 505      30333033 
- 506 00bc 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
- 506      20726576 
- 506      6973696F 
- 506      6E203232 
- 506      31323230 
- 507 00ef 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 507      66756E63 
- 507      74696F6E 
- 507      2D736563 
- 507      74696F6E 
- 508              	.LASF1:
- 509 0117 756E7369 		.ascii	"unsigned char\000"
- 509      676E6564 
- 509      20636861 
- 509      7200
- 510              	.LASF14:
- 511 0125 63686172 		.ascii	"char\000"
- 511      00
- 512              	.LASF4:
- 513 012a 6C6F6E67 		.ascii	"long int\000"
- 513      20696E74 
- 513      00
- 514              	.LASF24:
- 515 0133 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\I2C_1_I2C.c\000"
- 515      6E657261 
- 515      7465645F 
- 515      536F7572 
- 515      63655C50 
- 516              	.LASF13:
- 517 0158 646F7562 		.ascii	"double\000"
- 517      6C6500
- 518              	.LASF15:
- 519 015f 72656733 		.ascii	"reg32\000"
- 519      3200
- 520              	.LASF17:
- 521 0165 4932435F 		.ascii	"I2C_1_I2CInit\000"
- 521      315F4932 
- 521      43496E69 
- 521      7400
- 522              	.LASF3:
- 523 0173 73686F72 		.ascii	"short unsigned int\000"
- 523      7420756E 
- 523      7369676E 
- 523      65642069 
- 523      6E7400
- 524              	.LASF0:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccQzMJlv.s 			page 16
-
-
- 525 0186 7369676E 		.ascii	"signed char\000"
- 525      65642063 
- 525      68617200 
- 526              	.LASF25:
- 527 0192 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\GitHub\\BioSnap\\Mas"
- 527      73657273 
- 527      5C4D6174 
- 527      74686577 
- 527      5C446F63 
- 528 01bf 7465725F 		.ascii	"ter_v2\\Master_2.cydsn\000"
- 528      76325C4D 
- 528      61737465 
- 528      725F322E 
- 528      63796473 
->>>>>>> origin/master
  529              	.LASF12:
  530 01d1 666C6F61 		.ascii	"float\000"
  530      7400

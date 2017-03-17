@@ -1,11 +1,6 @@
 -- Project:   Master_2
-<<<<<<< HEAD
--- Generated: 03/01/2017 17:33:57
+-- Generated: 03/17/2017 12:40:21
 -- PSoC Creator  4.0 Update 1
-=======
--- Generated: 03/09/2017 22:58:56
--- PSoC Creator  3.3 CP3
->>>>>>> origin/master
 
 ENTITY Master_2 IS
     PORT(

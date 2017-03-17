@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 1
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -62,11 +58,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
   51              		.align	2
   52              		.type	cyBle_discoveryData, %object
   53              		.size	cyBle_discoveryData, 32
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 2
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 2
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 2
 
 
   54              	cyBle_discoveryData:
@@ -126,11 +118,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  108 0040 00       		.byte	0
  109 0041 00       		.byte	0
  110 0042 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 3
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 3
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 3
 
 
  111 0043 00       		.byte	0
@@ -190,8 +178,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  165              		.thumb_func
  166              		.type	CyBle_Init, %function
  167              	CyBle_Init:
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 4
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 4
 
 
  168              	.LFB2:
@@ -251,7 +238,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
   53:Generated_Source\PSoC4/BLE_1.c **** 
   54:Generated_Source\PSoC4/BLE_1.c **** CYBLE_CYALIGNED_BEGIN CY_NOINIT uint8 cyBle_stackMemoryRam[CYBLE_STACK_RAM_SIZE] CYBLE_CYALIGNED_EN
   55:Generated_Source\PSoC4/BLE_1.c **** 
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 5
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 5
 
 
   56:Generated_Source\PSoC4/BLE_1.c **** #endif  /* CYBLE_SHARING_MODE_EXPORT */
@@ -311,7 +298,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  110:Generated_Source\PSoC4/BLE_1.c ****     
  111:Generated_Source\PSoC4/BLE_1.c **** CYBLE_GAPC_CONN_PARAM_T cyBle_connectionParameters;
  112:Generated_Source\PSoC4/BLE_1.c **** 
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 6
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 6
 
 
  113:Generated_Source\PSoC4/BLE_1.c **** /* Connecting timeout is set to 30 seconds in CyBle_Init function. 
@@ -355,172 +342,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  151:Generated_Source\PSoC4/BLE_1.c **** ******************************************************************************/
  152:Generated_Source\PSoC4/BLE_1.c **** void CyBle_Init(void)
  153:Generated_Source\PSoC4/BLE_1.c **** {
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 4
-
-
- 168              	.LFB2:
- 169              		.file 1 ".\\Generated_Source\\PSoC4\\BLE_1.c"
-   1:.\Generated_Source\PSoC4/BLE_1.c **** /***************************************************************************//**
-   2:.\Generated_Source\PSoC4/BLE_1.c **** * \file CYBLE.c
-   3:.\Generated_Source\PSoC4/BLE_1.c **** * \version 3.10
-   4:.\Generated_Source\PSoC4/BLE_1.c **** * 
-   5:.\Generated_Source\PSoC4/BLE_1.c **** * \brief
-   6:.\Generated_Source\PSoC4/BLE_1.c **** *  This file contains the source code for the Common APIs of the BLE Component.
-   7:.\Generated_Source\PSoC4/BLE_1.c **** * 
-   8:.\Generated_Source\PSoC4/BLE_1.c **** ********************************************************************************
-   9:.\Generated_Source\PSoC4/BLE_1.c **** * \copyright
-  10:.\Generated_Source\PSoC4/BLE_1.c **** * Copyright 2014-2016, Cypress Semiconductor Corporation.  All rights reserved.
-  11:.\Generated_Source\PSoC4/BLE_1.c **** * You may use this file only in accordance with the license, terms, conditions,
-  12:.\Generated_Source\PSoC4/BLE_1.c **** * disclaimers, and limitations in the end user license agreement accompanying
-  13:.\Generated_Source\PSoC4/BLE_1.c **** * the software package with which this file was provided.
-  14:.\Generated_Source\PSoC4/BLE_1.c **** *******************************************************************************/
-  15:.\Generated_Source\PSoC4/BLE_1.c **** 
-  16:.\Generated_Source\PSoC4/BLE_1.c **** #include "BLE_1_eventHandler.h"
-  17:.\Generated_Source\PSoC4/BLE_1.c **** #include "BLE_1_HAL_PVT.h"
-  18:.\Generated_Source\PSoC4/BLE_1.c **** #include <stdlib.h>
-  19:.\Generated_Source\PSoC4/BLE_1.c **** 
-  20:.\Generated_Source\PSoC4/BLE_1.c **** 
-  21:.\Generated_Source\PSoC4/BLE_1.c **** /***************************************
-  22:.\Generated_Source\PSoC4/BLE_1.c **** * Function Prototypes
-  23:.\Generated_Source\PSoC4/BLE_1.c **** ***************************************/
-  24:.\Generated_Source\PSoC4/BLE_1.c **** 
-  25:.\Generated_Source\PSoC4/BLE_1.c **** #if(CYBLE_GATT_ROLE_SERVER)
-  26:.\Generated_Source\PSoC4/BLE_1.c ****     #if(CYBLE_GAP_ROLE_PERIPHERAL)
-  27:.\Generated_Source\PSoC4/BLE_1.c ****         static void CyBle_ChangeAdLocalName(const char8 name[], uint8 dest);
-  28:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* (CYBLE_GAP_ROLE_PERIPHERAL) */
-  29:.\Generated_Source\PSoC4/BLE_1.c **** #endif /* (CYBLE_GATT_ROLE_SERVER) */
-  30:.\Generated_Source\PSoC4/BLE_1.c ****     
-  31:.\Generated_Source\PSoC4/BLE_1.c **** 
-  32:.\Generated_Source\PSoC4/BLE_1.c **** /***************************************
-  33:.\Generated_Source\PSoC4/BLE_1.c **** * Global Variables
-  34:.\Generated_Source\PSoC4/BLE_1.c **** ***************************************/
-  35:.\Generated_Source\PSoC4/BLE_1.c **** 
-  36:.\Generated_Source\PSoC4/BLE_1.c **** /* Indicates whether the BLE has been initialized. The variable is initialized to
-  37:.\Generated_Source\PSoC4/BLE_1.c ****    0 and set to 1 the first time CyBle_Start() is called. This allows the component
-  38:.\Generated_Source\PSoC4/BLE_1.c ****    to restart without reinitialization after the first call to the CyBle_Start() 
-  39:.\Generated_Source\PSoC4/BLE_1.c ****    routine. If reinitialization of the component is required, the variable should 
-  40:.\Generated_Source\PSoC4/BLE_1.c ****    be set to 0 before the CyBle_Start() routine is called. Alternatively, the BLE
-  41:.\Generated_Source\PSoC4/BLE_1.c ****    can be reinitialized by calling the CyBle_Init() function.
-  42:.\Generated_Source\PSoC4/BLE_1.c **** */
-  43:.\Generated_Source\PSoC4/BLE_1.c **** uint8  cyBle_initVar = 0u;
-  44:.\Generated_Source\PSoC4/BLE_1.c **** 
-  45:.\Generated_Source\PSoC4/BLE_1.c **** /* Allocate RAM memory for stack. This buffer could be reused by application when 
-  46:.\Generated_Source\PSoC4/BLE_1.c ****    BLE component is stopped. For export mode buffer is allocated in heap.
-  47:.\Generated_Source\PSoC4/BLE_1.c **** */
-  48:.\Generated_Source\PSoC4/BLE_1.c **** #if(CYBLE_SHARING_MODE_EXPORT)
-  49:.\Generated_Source\PSoC4/BLE_1.c ****     
-  50:.\Generated_Source\PSoC4/BLE_1.c **** uint8 *cyBle_stackMemoryRam = NULL;
-  51:.\Generated_Source\PSoC4/BLE_1.c **** 
-  52:.\Generated_Source\PSoC4/BLE_1.c **** #else
-  53:.\Generated_Source\PSoC4/BLE_1.c **** 
-  54:.\Generated_Source\PSoC4/BLE_1.c **** CYBLE_CYALIGNED_BEGIN CY_NOINIT uint8 cyBle_stackMemoryRam[CYBLE_STACK_RAM_SIZE] CYBLE_CYALIGNED_EN
-  55:.\Generated_Source\PSoC4/BLE_1.c **** 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 5
-
-
-  56:.\Generated_Source\PSoC4/BLE_1.c **** #endif  /* CYBLE_SHARING_MODE_EXPORT */
-  57:.\Generated_Source\PSoC4/BLE_1.c **** 
-  58:.\Generated_Source\PSoC4/BLE_1.c **** #if(CYBLE_GAP_ROLE_PERIPHERAL || CYBLE_GAP_ROLE_BROADCASTER)
-  59:.\Generated_Source\PSoC4/BLE_1.c **** 
-  60:.\Generated_Source\PSoC4/BLE_1.c **** CYBLE_GAPP_DISC_PARAM_T cyBle_discoveryParam =
-  61:.\Generated_Source\PSoC4/BLE_1.c **** {
-  62:.\Generated_Source\PSoC4/BLE_1.c ****     0x0020u,    /* uint16 advertising_interval_min */
-  63:.\Generated_Source\PSoC4/BLE_1.c ****     0x0030u,    /* uint16 advertising_interval_max */
-  64:.\Generated_Source\PSoC4/BLE_1.c ****     CYBLE_GAPP_CONNECTABLE_UNDIRECTED_ADV, /* uint8 advertising_type */
-  65:.\Generated_Source\PSoC4/BLE_1.c ****     0x00u,      /* uint8 own_addr_type */
-  66:.\Generated_Source\PSoC4/BLE_1.c ****     0x00u,      /* uint8 direct_addr_type */
-  67:.\Generated_Source\PSoC4/BLE_1.c ****     {0x00u, 0x00u, 0x00u, 0x50u, 0xA0u, 0x00u}, /* uint8* direct_addr */
-  68:.\Generated_Source\PSoC4/BLE_1.c ****     0x07u,      /* uint8 advertising_channel_map */
-  69:.\Generated_Source\PSoC4/BLE_1.c ****     0x00u,      /* uint8 advertising_filter_policy */
-  70:.\Generated_Source\PSoC4/BLE_1.c **** };
-  71:.\Generated_Source\PSoC4/BLE_1.c **** 
-  72:.\Generated_Source\PSoC4/BLE_1.c **** CYBLE_GAPP_DISC_DATA_T cyBle_discoveryData =
-  73:.\Generated_Source\PSoC4/BLE_1.c **** {
-  74:.\Generated_Source\PSoC4/BLE_1.c ****     { 0x02u, 0x01u, 0x06u, 0x08u, 0x09u, 0x42u, 0x69u,
-  75:.\Generated_Source\PSoC4/BLE_1.c ****     0x6Fu, 0x53u, 0x6Eu, 0x61u, 0x70u, 0x03u, 0x03u, 0xA0u,
-  76:.\Generated_Source\PSoC4/BLE_1.c ****     0xAAu, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u,
-  77:.\Generated_Source\PSoC4/BLE_1.c ****     0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u }, /* uint8 advertising_data[CYBLE_MAX_A
-  78:.\Generated_Source\PSoC4/BLE_1.c ****     0x10u,      /* uint8 adv_data_length */
-  79:.\Generated_Source\PSoC4/BLE_1.c **** };
-  80:.\Generated_Source\PSoC4/BLE_1.c **** 
-  81:.\Generated_Source\PSoC4/BLE_1.c **** CYBLE_GAPP_SCAN_RSP_DATA_T cyBle_scanRspData =
-  82:.\Generated_Source\PSoC4/BLE_1.c **** {
-  83:.\Generated_Source\PSoC4/BLE_1.c ****     { 0x08u, 0x09u, 0x42u, 0x69u, 0x6Fu, 0x53u, 0x6Eu,
-  84:.\Generated_Source\PSoC4/BLE_1.c ****     0x61u, 0x70u, 0x03u, 0x03u, 0xA0u, 0xAAu, 0x00u, 0x00u,
-  85:.\Generated_Source\PSoC4/BLE_1.c ****     0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u,
-  86:.\Generated_Source\PSoC4/BLE_1.c ****     0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u }, /* uint8 scan_rsp_data[CYBLE_MAX_SCAN
-  87:.\Generated_Source\PSoC4/BLE_1.c ****     0x0Du,      /* uint8 scan_rsp_data_length */
-  88:.\Generated_Source\PSoC4/BLE_1.c **** };
-  89:.\Generated_Source\PSoC4/BLE_1.c **** 
-  90:.\Generated_Source\PSoC4/BLE_1.c **** /* This variable of type CYBLE_GAPP_DISC_MODE_INFO_T is present only when 
-  91:.\Generated_Source\PSoC4/BLE_1.c ****    the BLE component is configured for Peripheral GAP role or Central and 
-  92:.\Generated_Source\PSoC4/BLE_1.c ****    Peripheral GAP role. It contains the Advertisement settings and also the 
-  93:.\Generated_Source\PSoC4/BLE_1.c ****    Advertisement and Scan response data parameters entered in the customizer.
-  94:.\Generated_Source\PSoC4/BLE_1.c ****    This variable can be used by advanced users to change Advertisement settings,
-  95:.\Generated_Source\PSoC4/BLE_1.c ****    Advertisement or Scan response data in runtime. 
-  96:.\Generated_Source\PSoC4/BLE_1.c **** */
-  97:.\Generated_Source\PSoC4/BLE_1.c **** CYBLE_GAPP_DISC_MODE_INFO_T cyBle_discoveryModeInfo =
-  98:.\Generated_Source\PSoC4/BLE_1.c **** {
-  99:.\Generated_Source\PSoC4/BLE_1.c ****     0x02u,      /* uint8 discMode */
- 100:.\Generated_Source\PSoC4/BLE_1.c ****     &cyBle_discoveryParam,
- 101:.\Generated_Source\PSoC4/BLE_1.c ****     &cyBle_discoveryData,
- 102:.\Generated_Source\PSoC4/BLE_1.c ****     &cyBle_scanRspData,
- 103:.\Generated_Source\PSoC4/BLE_1.c ****     0x001Eu,    /* uint16 advTo */
- 104:.\Generated_Source\PSoC4/BLE_1.c **** };
- 105:.\Generated_Source\PSoC4/BLE_1.c **** 
- 106:.\Generated_Source\PSoC4/BLE_1.c **** 
- 107:.\Generated_Source\PSoC4/BLE_1.c **** #endif /* CYBLE_GAP_ROLE_PERIPHERAL || CYBLE_GAP_ROLE_BROADCASTER */
- 108:.\Generated_Source\PSoC4/BLE_1.c **** 
- 109:.\Generated_Source\PSoC4/BLE_1.c **** #if(CYBLE_GAP_ROLE_CENTRAL)
- 110:.\Generated_Source\PSoC4/BLE_1.c ****     
- 111:.\Generated_Source\PSoC4/BLE_1.c **** CYBLE_GAPC_CONN_PARAM_T cyBle_connectionParameters;
- 112:.\Generated_Source\PSoC4/BLE_1.c **** 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 6
-
-
- 113:.\Generated_Source\PSoC4/BLE_1.c **** /* Connecting timeout is set to 30 seconds in CyBle_Init function. 
- 114:.\Generated_Source\PSoC4/BLE_1.c ****    Not zero value starts timer in CyBle_GapcConnectDevice API.
- 115:.\Generated_Source\PSoC4/BLE_1.c **** */
- 116:.\Generated_Source\PSoC4/BLE_1.c **** uint16 cyBle_connectingTimeout;
- 117:.\Generated_Source\PSoC4/BLE_1.c ****     
- 118:.\Generated_Source\PSoC4/BLE_1.c **** #endif /* CYBLE_GAP_ROLE_CENTRAL */
- 119:.\Generated_Source\PSoC4/BLE_1.c **** 
- 120:.\Generated_Source\PSoC4/BLE_1.c **** #if(CYBLE_GAP_ROLE_CENTRAL || CYBLE_GAP_ROLE_OBSERVER)
- 121:.\Generated_Source\PSoC4/BLE_1.c ****     
- 122:.\Generated_Source\PSoC4/BLE_1.c **** 
- 123:.\Generated_Source\PSoC4/BLE_1.c ****     
- 124:.\Generated_Source\PSoC4/BLE_1.c **** #endif /* CYBLE_GAP_ROLE_CENTRAL || CYBLE_GAP_ROLE_OBSERVER */
- 125:.\Generated_Source\PSoC4/BLE_1.c **** 
- 126:.\Generated_Source\PSoC4/BLE_1.c **** #if((CYBLE_GAP_ROLE_PERIPHERAL || CYBLE_GAP_ROLE_CENTRAL) && (CYBLE_BONDING_REQUIREMENT == CYBLE_BO
- 127:.\Generated_Source\PSoC4/BLE_1.c **** 
- 128:.\Generated_Source\PSoC4/BLE_1.c **** uint8 cyBle_peerBonding;
- 129:.\Generated_Source\PSoC4/BLE_1.c **** uint8 cyBle_pendingFlashWrite;
- 130:.\Generated_Source\PSoC4/BLE_1.c ****     
- 131:.\Generated_Source\PSoC4/BLE_1.c **** #if(CYBLE_GATT_DB_CCCD_COUNT != 0u)
- 132:.\Generated_Source\PSoC4/BLE_1.c ****     static uint8 cyBle_pendingFlashClearCccdHandle;
- 133:.\Generated_Source\PSoC4/BLE_1.c **** #endif /* CYBLE_GATT_DB_CCCD_COUNT != 0u */
- 134:.\Generated_Source\PSoC4/BLE_1.c ****     
- 135:.\Generated_Source\PSoC4/BLE_1.c **** #endif  /* (CYBLE_BONDING_REQUIREMENT == CYBLE_BONDING_YES) */
- 136:.\Generated_Source\PSoC4/BLE_1.c **** 
- 137:.\Generated_Source\PSoC4/BLE_1.c **** CYBLE_CALLBACK_T CyBle_ApplCallback;
- 138:.\Generated_Source\PSoC4/BLE_1.c **** CYBLE_GAP_BD_ADDR_T cyBle_deviceAddress = {{0x00u, 0x00u, 0x00u, 0x50u, 0xA0u, 0x00u}, 0x00u };
- 139:.\Generated_Source\PSoC4/BLE_1.c **** CYBLE_GAP_BD_ADDR_T * cyBle_sflashDeviceAddress = CYBLE_SFLASH_DEVICE_ADDRESS_PTR;
- 140:.\Generated_Source\PSoC4/BLE_1.c **** 
- 141:.\Generated_Source\PSoC4/BLE_1.c **** 
- 142:.\Generated_Source\PSoC4/BLE_1.c **** /******************************************************************************
- 143:.\Generated_Source\PSoC4/BLE_1.c **** * Function Name: CyBle_Init
- 144:.\Generated_Source\PSoC4/BLE_1.c **** ***************************************************************************//**
- 145:.\Generated_Source\PSoC4/BLE_1.c **** *
- 146:.\Generated_Source\PSoC4/BLE_1.c **** *   Initializes the component with the parameters set in the customizer.
- 147:.\Generated_Source\PSoC4/BLE_1.c **** * 
- 148:.\Generated_Source\PSoC4/BLE_1.c **** *  \return
- 149:.\Generated_Source\PSoC4/BLE_1.c **** *   None
- 150:.\Generated_Source\PSoC4/BLE_1.c **** * 
- 151:.\Generated_Source\PSoC4/BLE_1.c **** ******************************************************************************/
- 152:.\Generated_Source\PSoC4/BLE_1.c **** void CyBle_Init(void)
- 153:.\Generated_Source\PSoC4/BLE_1.c **** {
->>>>>>> origin/master
  170              		.loc 1 153 0
  171              		.cfi_startproc
  172 0000 80B5     		push	{r7, lr}
@@ -537,11 +358,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  155:Generated_Source\PSoC4/BLE_1.c ****     cyBle_busyStatus = CYBLE_STACK_STATE_FREE;
  182              		.loc 1 155 0
  183 000a 094B     		ldr	r3, .L2+4
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 7
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 7
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 7
 
 
  184 000c 0022     		mov	r2, #0
@@ -601,11 +418,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  205 002a C046     		.align	2
  206              	.L2:
  207 002c 00000000 		.word	cyBle_eventHandlerFlag
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 8
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 8
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 8
 
 
  208 0030 00000000 		.word	cyBle_busyStatus
@@ -645,7 +458,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  228              		.cfi_offset 14, -4
  229 0002 00AF     		add	r7, sp, #0
  230              		.cfi_def_cfa_register 7
-<<<<<<< HEAD
  203:Generated_Source\PSoC4/BLE_1.c ****     #if(CYBLE_GATT_ROLE_CLIENT)
  204:Generated_Source\PSoC4/BLE_1.c ****         /* Check service range before clearing to support partial discovery */
  205:Generated_Source\PSoC4/BLE_1.c ****         if(cyBle_serverInfo[CYBLE_SRVI_GAP].range.startHandle == CYBLE_GATT_INVALID_ATTR_HANDLE_VAL
@@ -666,7 +478,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  220:Generated_Source\PSoC4/BLE_1.c ****         CyBle_AnsInit();
  221:Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_ANS */
  222:Generated_Source\PSoC4/BLE_1.c ****     
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 9
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 9
 
 
  223:Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_BAS
@@ -726,7 +538,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  275:Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_HPS
  276:Generated_Source\PSoC4/BLE_1.c ****         CyBle_HpsInit();
  277:Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_HPS */
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 10
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 10
 
 
  278:Generated_Source\PSoC4/BLE_1.c **** 
@@ -786,162 +598,13 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  332:Generated_Source\PSoC4/BLE_1.c ****         CyBle_WptsInit();
  333:Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_WPTS */
  334:Generated_Source\PSoC4/BLE_1.c **** 
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 11
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 11
 
 
  335:Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_WSS
  336:Generated_Source\PSoC4/BLE_1.c ****         CyBle_WssInit();
  337:Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_WSS */
  338:Generated_Source\PSoC4/BLE_1.c **** }
-=======
- 203:.\Generated_Source\PSoC4/BLE_1.c ****     #if(CYBLE_GATT_ROLE_CLIENT)
- 204:.\Generated_Source\PSoC4/BLE_1.c ****         /* Check service range before clearing to support partial discovery */
- 205:.\Generated_Source\PSoC4/BLE_1.c ****         if(cyBle_serverInfo[CYBLE_SRVI_GAP].range.startHandle == CYBLE_GATT_INVALID_ATTR_HANDLE_VAL
- 206:.\Generated_Source\PSoC4/BLE_1.c ****         {
- 207:.\Generated_Source\PSoC4/BLE_1.c ****             (void)memset(&cyBle_gapc, 0, sizeof(cyBle_gapc));
- 208:.\Generated_Source\PSoC4/BLE_1.c ****         }
- 209:.\Generated_Source\PSoC4/BLE_1.c ****         if(cyBle_serverInfo[CYBLE_SRVI_GATT].range.startHandle == CYBLE_GATT_INVALID_ATTR_HANDLE_VA
- 210:.\Generated_Source\PSoC4/BLE_1.c ****         {
- 211:.\Generated_Source\PSoC4/BLE_1.c ****             (void)memset(&cyBle_gattc, 0, sizeof(cyBle_gattc));
- 212:.\Generated_Source\PSoC4/BLE_1.c ****         }
- 213:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_GATT_ROLE_CLIENT */
- 214:.\Generated_Source\PSoC4/BLE_1.c ****     
- 215:.\Generated_Source\PSoC4/BLE_1.c **** 	#ifdef CYBLE_ANCS
- 216:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_AncsInit();
- 217:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_ANCS */
- 218:.\Generated_Source\PSoC4/BLE_1.c **** 	
- 219:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_ANS
- 220:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_AnsInit();
- 221:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_ANS */
- 222:.\Generated_Source\PSoC4/BLE_1.c ****     
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 9
-
-
- 223:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_BAS
- 224:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_BasInit();
- 225:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_BAS */
- 226:.\Generated_Source\PSoC4/BLE_1.c ****     
- 227:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_BCS
- 228:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_BcsInit();
- 229:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_BCS */
- 230:.\Generated_Source\PSoC4/BLE_1.c **** 
- 231:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_BLS
- 232:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_BlsInit();
- 233:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_BLS */
- 234:.\Generated_Source\PSoC4/BLE_1.c ****     
- 235:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_BMS
- 236:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_BmsInit();
- 237:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_BMS */
- 238:.\Generated_Source\PSoC4/BLE_1.c ****     
- 239:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_CGMS
- 240:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_CgmsInit();
- 241:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_CGMS */
- 242:.\Generated_Source\PSoC4/BLE_1.c **** 
- 243:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_CPS
- 244:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_CpsInit();
- 245:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_CPS */
- 246:.\Generated_Source\PSoC4/BLE_1.c **** 
- 247:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_CSCS
- 248:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_CscsInit();
- 249:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_CSCS */
- 250:.\Generated_Source\PSoC4/BLE_1.c ****     
- 251:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_CTS
- 252:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_CtsInit();
- 253:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_CTS */
- 254:.\Generated_Source\PSoC4/BLE_1.c **** 
- 255:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_CUSTOM
- 256:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_CustomInit();
- 231              		.loc 1 256 0
- 232 0004 FFF7FEFF 		bl	CyBle_CustomInit
- 257:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_CUSTOM */
- 258:.\Generated_Source\PSoC4/BLE_1.c **** 
- 259:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_DIS
- 260:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_DisInit();
- 261:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_DIS */
- 262:.\Generated_Source\PSoC4/BLE_1.c **** 
- 263:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_ESS
- 264:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_EssInit();
- 265:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_ESS */
- 266:.\Generated_Source\PSoC4/BLE_1.c ****     
- 267:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_GLS
- 268:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_GlsInit();
- 269:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_GLS */
- 270:.\Generated_Source\PSoC4/BLE_1.c ****     
- 271:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_HIDS
- 272:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_HidsInit();
- 273:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_HIDS */
- 274:.\Generated_Source\PSoC4/BLE_1.c **** 
- 275:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_HPS
- 276:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_HpsInit();
- 277:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_HPS */
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 10
-
-
- 278:.\Generated_Source\PSoC4/BLE_1.c **** 
- 279:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_HRS
- 280:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_HrsInit();
- 281:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_HRS */
- 282:.\Generated_Source\PSoC4/BLE_1.c ****     
- 283:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_HTS
- 284:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_HtsInit();
- 285:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_RSCS */
- 286:.\Generated_Source\PSoC4/BLE_1.c **** 
- 287:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_IAS
- 288:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_IasInit();
- 289:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_IAS */
- 290:.\Generated_Source\PSoC4/BLE_1.c **** 
- 291:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_IPS
- 292:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_IpsInit();
- 293:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_IPS */
- 294:.\Generated_Source\PSoC4/BLE_1.c ****     
- 295:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_LLS
- 296:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_LlsInit();
- 297:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_LLS */
- 298:.\Generated_Source\PSoC4/BLE_1.c **** 
- 299:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_LNS
- 300:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_LnsInit();
- 301:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_LNS */
- 302:.\Generated_Source\PSoC4/BLE_1.c ****     
- 303:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_NDCS
- 304:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_NdcsInit();
- 305:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_NDCS */
- 306:.\Generated_Source\PSoC4/BLE_1.c ****     
- 307:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_PASS
- 308:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_PassInit();
- 309:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_PASS */
- 310:.\Generated_Source\PSoC4/BLE_1.c ****     
- 311:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_RSCS
- 312:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_RscsInit();
- 313:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_RSCS */
- 314:.\Generated_Source\PSoC4/BLE_1.c **** 
- 315:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_RTUS
- 316:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_RtusInit();
- 317:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_RTUS */
- 318:.\Generated_Source\PSoC4/BLE_1.c **** 
- 319:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_SCPS
- 320:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_ScpsInit();
- 321:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_SCPS */
- 322:.\Generated_Source\PSoC4/BLE_1.c ****     
- 323:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_TPS
- 324:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_TpsInit();
- 325:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_TPS */
- 326:.\Generated_Source\PSoC4/BLE_1.c ****     
- 327:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_UDS
- 328:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_UdsInit();
- 329:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_UDS */
- 330:.\Generated_Source\PSoC4/BLE_1.c **** 
- 331:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_WPTS
- 332:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_WptsInit();
- 333:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_WPTS */
- 334:.\Generated_Source\PSoC4/BLE_1.c **** 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 11
-
-
- 335:.\Generated_Source\PSoC4/BLE_1.c ****     #ifdef CYBLE_WSS
- 336:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_WssInit();
- 337:.\Generated_Source\PSoC4/BLE_1.c ****     #endif /* CYBLE_WSS */
- 338:.\Generated_Source\PSoC4/BLE_1.c **** }
->>>>>>> origin/master
  233              		.loc 1 338 0
  234 0008 BD46     		mov	sp, r7
  235              		@ sp needed
@@ -975,7 +638,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  263              		.type	CyBle_Start, %function
  264              	CyBle_Start:
  265              	.LFB4:
-<<<<<<< HEAD
  339:Generated_Source\PSoC4/BLE_1.c **** 
  340:Generated_Source\PSoC4/BLE_1.c **** 
  341:Generated_Source\PSoC4/BLE_1.c **** /******************************************************************************
@@ -996,7 +658,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  356:Generated_Source\PSoC4/BLE_1.c **** *  Calling this function results in the generation of CYBLE_EVT_STACK_ON event
  357:Generated_Source\PSoC4/BLE_1.c **** *  on successful initialization of the BLE Stack.
  358:Generated_Source\PSoC4/BLE_1.c **** * 
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 12
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 12
 
 
  359:Generated_Source\PSoC4/BLE_1.c **** *  \param callbackFunc: Event callback function to receive events from BLE stack.
@@ -1041,73 +703,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  398:Generated_Source\PSoC4/BLE_1.c **** ******************************************************************************/
  399:Generated_Source\PSoC4/BLE_1.c **** CYBLE_API_RESULT_T CyBle_Start(CYBLE_CALLBACK_T callbackFunc)
  400:Generated_Source\PSoC4/BLE_1.c **** {
-=======
- 339:.\Generated_Source\PSoC4/BLE_1.c **** 
- 340:.\Generated_Source\PSoC4/BLE_1.c **** 
- 341:.\Generated_Source\PSoC4/BLE_1.c **** /******************************************************************************
- 342:.\Generated_Source\PSoC4/BLE_1.c **** * Function Name: CyBle_Start
- 343:.\Generated_Source\PSoC4/BLE_1.c **** ***************************************************************************//**
- 344:.\Generated_Source\PSoC4/BLE_1.c **** * 
- 345:.\Generated_Source\PSoC4/BLE_1.c **** *  This function initializes the BLE Stack, which consists of the BLE Stack 
- 346:.\Generated_Source\PSoC4/BLE_1.c **** *  Manager, BLE Controller, and BLE Host modules. It takes care of initializing
- 347:.\Generated_Source\PSoC4/BLE_1.c **** *  the Profile layer, schedulers, Timer and other platform related
- 348:.\Generated_Source\PSoC4/BLE_1.c **** *  resources required for the BLE component. It also registers the callback 
- 349:.\Generated_Source\PSoC4/BLE_1.c **** *  function for BLE events that will be registered in the BLE stack.
- 350:.\Generated_Source\PSoC4/BLE_1.c **** * 
- 351:.\Generated_Source\PSoC4/BLE_1.c **** *  Note that this function does not reset the BLE Stack.
- 352:.\Generated_Source\PSoC4/BLE_1.c **** * 
- 353:.\Generated_Source\PSoC4/BLE_1.c **** *  For HCI-Mode of operation, this function will not initialize the BLE Host 
- 354:.\Generated_Source\PSoC4/BLE_1.c **** *  module.
- 355:.\Generated_Source\PSoC4/BLE_1.c **** * 
- 356:.\Generated_Source\PSoC4/BLE_1.c **** *  Calling this function results in the generation of CYBLE_EVT_STACK_ON event
- 357:.\Generated_Source\PSoC4/BLE_1.c **** *  on successful initialization of the BLE Stack.
- 358:.\Generated_Source\PSoC4/BLE_1.c **** * 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 12
-
-
- 359:.\Generated_Source\PSoC4/BLE_1.c **** *  \param callbackFunc: Event callback function to receive events from BLE stack.
- 360:.\Generated_Source\PSoC4/BLE_1.c **** *   CYBLE_CALLBACK_T is a function pointer type.
- 361:.\Generated_Source\PSoC4/BLE_1.c **** * 
- 362:.\Generated_Source\PSoC4/BLE_1.c **** * \return
- 363:.\Generated_Source\PSoC4/BLE_1.c **** *  CYBLE_API_RESULT_T : Return value indicates if the function succeeded or 
- 364:.\Generated_Source\PSoC4/BLE_1.c **** *  failed. Following are the possible error codes.
- 365:.\Generated_Source\PSoC4/BLE_1.c **** * 
- 366:.\Generated_Source\PSoC4/BLE_1.c **** *   <table>
- 367:.\Generated_Source\PSoC4/BLE_1.c **** *  	  <tr>
- 368:.\Generated_Source\PSoC4/BLE_1.c **** *       <th>Error codes</th>
- 369:.\Generated_Source\PSoC4/BLE_1.c **** *       <th>Description</th>
- 370:.\Generated_Source\PSoC4/BLE_1.c **** *     </tr>
- 371:.\Generated_Source\PSoC4/BLE_1.c **** *     <tr>
- 372:.\Generated_Source\PSoC4/BLE_1.c **** *       <td>CYBLE_ERROR_OK</td>
- 373:.\Generated_Source\PSoC4/BLE_1.c **** *       <td>On successful operation.</td>
- 374:.\Generated_Source\PSoC4/BLE_1.c **** *     </tr>
- 375:.\Generated_Source\PSoC4/BLE_1.c **** *     <tr>
- 376:.\Generated_Source\PSoC4/BLE_1.c **** *       <td>CYBLE_ERROR_INVALID_PARAMETER</td>
- 377:.\Generated_Source\PSoC4/BLE_1.c **** *       <td>On passing a NULL pointer to the function when the BLE stack is not built in HCI mode. 
- 378:.\Generated_Source\PSoC4/BLE_1.c **** *			CYBLE_ERROR_INVALID_PARAMETER is never returned in HCI mode.</td>
- 379:.\Generated_Source\PSoC4/BLE_1.c **** *     </tr>
- 380:.\Generated_Source\PSoC4/BLE_1.c **** *     <tr>
- 381:.\Generated_Source\PSoC4/BLE_1.c **** *       <td>CYBLE_ERROR_REPEATED_ATTEMPTS</td>
- 382:.\Generated_Source\PSoC4/BLE_1.c **** *       <td>On invoking this function more than once without calling CyBle_Shutdown() 
- 383:.\Generated_Source\PSoC4/BLE_1.c **** *           function between calls to this function.</td>
- 384:.\Generated_Source\PSoC4/BLE_1.c **** *     </tr>
- 385:.\Generated_Source\PSoC4/BLE_1.c **** *     <tr>
- 386:.\Generated_Source\PSoC4/BLE_1.c **** *       <td>CYBLE_ERROR_MEMORY_ALLOCATION_FAILED</td>
- 387:.\Generated_Source\PSoC4/BLE_1.c **** *       <td>There is insufficient memory available.</td>
- 388:.\Generated_Source\PSoC4/BLE_1.c **** *     </tr>
- 389:.\Generated_Source\PSoC4/BLE_1.c **** *   </table>
- 390:.\Generated_Source\PSoC4/BLE_1.c **** * 
- 391:.\Generated_Source\PSoC4/BLE_1.c **** *  \globalvars
- 392:.\Generated_Source\PSoC4/BLE_1.c **** *   The CyBle_initVar variable is used to indicate initial
- 393:.\Generated_Source\PSoC4/BLE_1.c **** *   configuration of this component. The variable is initialized to zero (0u)
- 394:.\Generated_Source\PSoC4/BLE_1.c **** *   and set to one (1u) the first time CyBle_Start() is called. This
- 395:.\Generated_Source\PSoC4/BLE_1.c **** *   allows for component initialization without re-initialization in all
- 396:.\Generated_Source\PSoC4/BLE_1.c **** *   subsequent calls to the CyBle_Start() routine.
- 397:.\Generated_Source\PSoC4/BLE_1.c **** * 
- 398:.\Generated_Source\PSoC4/BLE_1.c **** ******************************************************************************/
- 399:.\Generated_Source\PSoC4/BLE_1.c **** CYBLE_API_RESULT_T CyBle_Start(CYBLE_CALLBACK_T callbackFunc)
- 400:.\Generated_Source\PSoC4/BLE_1.c **** {
->>>>>>> origin/master
  266              		.loc 1 400 0
  267              		.cfi_startproc
  268 0000 B0B5     		push	{r4, r5, r7, lr}
@@ -1123,11 +718,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  278 0006 7860     		str	r0, [r7, #4]
  401:Generated_Source\PSoC4/BLE_1.c ****     CYBLE_API_RESULT_T apiResult = CYBLE_ERROR_OK;
  279              		.loc 1 401 0
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 13
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 13
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 13
 
 
  280 0008 3E23     		mov	r3, #62
@@ -1187,11 +778,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  425:Generated_Source\PSoC4/BLE_1.c ****         CyBle_ApplCallback = callbackFunc;
  311              		.loc 1 425 0
  312 003e 364B     		ldr	r3, .L12+8
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 14
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 14
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 14
 
 
  313 0040 7A68     		ldr	r2, [r7, #4]
@@ -1251,11 +838,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  340 006a 2023     		mov	r3, #32
  341 006c FB18     		add	r3, r7, r3
  342 006e 1B22     		mov	r2, #27
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 15
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 15
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 15
 
 
  343 0070 1A80     		strh	r2, [r3]
@@ -1310,21 +893,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  376 00a6 1B88     		ldrh	r3, [r3]
  377 00a8 002B     		cmp	r3, #0
  378 00aa 29D1     		bne	.L10
-<<<<<<< HEAD
  469:Generated_Source\PSoC4/BLE_1.c ****         {
  470:Generated_Source\PSoC4/BLE_1.c ****             
  471:Generated_Source\PSoC4/BLE_1.c ****         #if(CYBLE_MODE_PROFILE)
  472:Generated_Source\PSoC4/BLE_1.c ****             #if(CYBLE_BONDING_REQUIREMENT == CYBLE_BONDING_YES)
  473:Generated_Source\PSoC4/BLE_1.c ****                 apiResult = CyBle_StackInit(&CyBle_EventHandler, cyBle_stackMemoryRam, 
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 16
-=======
- 469:.\Generated_Source\PSoC4/BLE_1.c ****         {
- 470:.\Generated_Source\PSoC4/BLE_1.c ****             
- 471:.\Generated_Source\PSoC4/BLE_1.c ****         #if(CYBLE_MODE_PROFILE)
- 472:.\Generated_Source\PSoC4/BLE_1.c ****             #if(CYBLE_BONDING_REQUIREMENT == CYBLE_BONDING_YES)
- 473:.\Generated_Source\PSoC4/BLE_1.c ****                 apiResult = CyBle_StackInit(&CyBle_EventHandler, cyBle_stackMemoryRam, 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 16
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 16
 
 
  379              		.loc 1 473 0
@@ -1384,11 +958,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  411 00e6 124B     		ldr	r3, .L12+32
  412 00e8 181C     		mov	r0, r3
  413 00ea 1D21     		mov	r1, #29
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 17
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 17
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 17
 
 
  414 00ec 0822     		mov	r2, #8
@@ -1447,9 +1017,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  456              		.type	CyBle_Stop, %function
  457              	CyBle_Stop:
  458              	.LFB5:
-<<<<<<< HEAD
  507:Generated_Source\PSoC4/BLE_1.c **** 
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 18
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 18
 
 
  508:Generated_Source\PSoC4/BLE_1.c **** 
@@ -1467,27 +1036,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  520:Generated_Source\PSoC4/BLE_1.c **** ******************************************************************************/
  521:Generated_Source\PSoC4/BLE_1.c **** void CyBle_Stop(void)
  522:Generated_Source\PSoC4/BLE_1.c **** {
-=======
- 507:.\Generated_Source\PSoC4/BLE_1.c **** 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 18
-
-
- 508:.\Generated_Source\PSoC4/BLE_1.c **** 
- 509:.\Generated_Source\PSoC4/BLE_1.c **** /******************************************************************************
- 510:.\Generated_Source\PSoC4/BLE_1.c **** * Function Name: CyBle_Stop
- 511:.\Generated_Source\PSoC4/BLE_1.c **** ***************************************************************************//**
- 512:.\Generated_Source\PSoC4/BLE_1.c **** * 
- 513:.\Generated_Source\PSoC4/BLE_1.c **** *  This function stops any ongoing operation in the BLE Stack and forces the 
- 514:.\Generated_Source\PSoC4/BLE_1.c **** *  BLE Stack to shut down. The only function that can be called after calling
- 515:.\Generated_Source\PSoC4/BLE_1.c **** *  this function is CyBle_Start(). 
- 516:.\Generated_Source\PSoC4/BLE_1.c **** * 
- 517:.\Generated_Source\PSoC4/BLE_1.c **** * \return
- 518:.\Generated_Source\PSoC4/BLE_1.c **** *  None
- 519:.\Generated_Source\PSoC4/BLE_1.c **** * 
- 520:.\Generated_Source\PSoC4/BLE_1.c **** ******************************************************************************/
- 521:.\Generated_Source\PSoC4/BLE_1.c **** void CyBle_Stop(void)
- 522:.\Generated_Source\PSoC4/BLE_1.c **** {
->>>>>>> origin/master
  459              		.loc 1 522 0
  460              		.cfi_startproc
  461 0000 80B5     		push	{r7, lr}
@@ -1530,8 +1078,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  489              		.type	CyBle_StoreBondingData, %function
  490              	CyBle_StoreBondingData:
  491              	.LFB6:
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 19
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 19
 
 
  532:Generated_Source\PSoC4/BLE_1.c **** 
@@ -1578,55 +1125,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  573:Generated_Source\PSoC4/BLE_1.c **** ******************************************************************************/
  574:Generated_Source\PSoC4/BLE_1.c **** CYBLE_API_RESULT_T CyBle_StoreBondingData(uint8 isForceWrite)
  575:Generated_Source\PSoC4/BLE_1.c **** {
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 19
-
-
- 532:.\Generated_Source\PSoC4/BLE_1.c **** 
- 533:.\Generated_Source\PSoC4/BLE_1.c **** 
- 534:.\Generated_Source\PSoC4/BLE_1.c **** #if((CYBLE_GAP_ROLE_PERIPHERAL || CYBLE_GAP_ROLE_CENTRAL) && (CYBLE_BONDING_REQUIREMENT == CYBLE_BO
- 535:.\Generated_Source\PSoC4/BLE_1.c **** 
- 536:.\Generated_Source\PSoC4/BLE_1.c ****     
- 537:.\Generated_Source\PSoC4/BLE_1.c **** /******************************************************************************
- 538:.\Generated_Source\PSoC4/BLE_1.c **** * Function Name: CyBle_StoreBondingData
- 539:.\Generated_Source\PSoC4/BLE_1.c **** ***************************************************************************//**
- 540:.\Generated_Source\PSoC4/BLE_1.c **** * 
- 541:.\Generated_Source\PSoC4/BLE_1.c **** *  This function writes the new bonding data from RAM to the dedicated Flash 
- 542:.\Generated_Source\PSoC4/BLE_1.c **** *  location as defined by the component. It performs data comparing between RAM
- 543:.\Generated_Source\PSoC4/BLE_1.c **** *  and Flash before writing to Flash. If there is no change between RAM and Flash
- 544:.\Generated_Source\PSoC4/BLE_1.c **** *  data, then no write is performed. It writes only one flash row in one call.
- 545:.\Generated_Source\PSoC4/BLE_1.c **** *  Application should keep calling this function till API return CYBLE_ERROR_OK. 
- 546:.\Generated_Source\PSoC4/BLE_1.c **** *  This function is available only when Bonding requirement is selected in
- 547:.\Generated_Source\PSoC4/BLE_1.c **** *  Security settings.    
- 548:.\Generated_Source\PSoC4/BLE_1.c **** * 
- 549:.\Generated_Source\PSoC4/BLE_1.c **** *  \param isForceWrite:  If value is set to 0, then stack will check if flash write 
- 550:.\Generated_Source\PSoC4/BLE_1.c **** *                 is permissible. 
- 551:.\Generated_Source\PSoC4/BLE_1.c **** *  
- 552:.\Generated_Source\PSoC4/BLE_1.c **** * \return
- 553:.\Generated_Source\PSoC4/BLE_1.c **** *  Return value is of type CYBLE_API_RESULT_T.
- 554:.\Generated_Source\PSoC4/BLE_1.c **** *
- 555:.\Generated_Source\PSoC4/BLE_1.c **** *   Errors codes                         | Description
- 556:.\Generated_Source\PSoC4/BLE_1.c **** *   ----------------------------------   | ------------------------------------
- 557:.\Generated_Source\PSoC4/BLE_1.c **** *   CYBLE_ERROR_OK                       | On successful operation
- 558:.\Generated_Source\PSoC4/BLE_1.c **** *   CYBLE_ERROR_FLASH_WRITE_NOT_PERMITED | Flash Write is not complete
- 559:.\Generated_Source\PSoC4/BLE_1.c **** *    
- 560:.\Generated_Source\PSoC4/BLE_1.c **** *  \sideeffect
- 561:.\Generated_Source\PSoC4/BLE_1.c **** *   For BLE devices with 128K of Flash memory this API will automatically 
- 562:.\Generated_Source\PSoC4/BLE_1.c **** *   modify the clock settings for the device.
- 563:.\Generated_Source\PSoC4/BLE_1.c **** *   Writing to flash requires changes to be done to the IMO (set to 48 MHz)
- 564:.\Generated_Source\PSoC4/BLE_1.c **** *   and HFCLK (source set to IMO) settings. The configuration is restored before
- 565:.\Generated_Source\PSoC4/BLE_1.c **** *   returning. This will impact the operation of most of the hardware in the
- 566:.\Generated_Source\PSoC4/BLE_1.c **** *   device.
- 567:.\Generated_Source\PSoC4/BLE_1.c **** * 
- 568:.\Generated_Source\PSoC4/BLE_1.c **** *  \globalvars
- 569:.\Generated_Source\PSoC4/BLE_1.c **** *   The cyBle_pendingFlashWrite variable is used to detect status
- 570:.\Generated_Source\PSoC4/BLE_1.c **** *   of pending write to flash operation for stack data and CCCD.
- 571:.\Generated_Source\PSoC4/BLE_1.c **** *   This API automatically clears pending bits after write operation complete.
- 572:.\Generated_Source\PSoC4/BLE_1.c **** *     
- 573:.\Generated_Source\PSoC4/BLE_1.c **** ******************************************************************************/
- 574:.\Generated_Source\PSoC4/BLE_1.c **** CYBLE_API_RESULT_T CyBle_StoreBondingData(uint8 isForceWrite)
- 575:.\Generated_Source\PSoC4/BLE_1.c **** {
->>>>>>> origin/master
  492              		.loc 1 575 0
  493              		.cfi_startproc
  494 0000 90B5     		push	{r4, r7, lr}
@@ -1640,11 +1138,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  502              		.cfi_def_cfa_register 7
  503 0006 021C     		mov	r2, r0
  504 0008 FB1D     		add	r3, r7, #7
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 20
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 20
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 20
 
 
  505 000a 1A70     		strb	r2, [r3]
@@ -1704,11 +1198,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  587:Generated_Source\PSoC4/BLE_1.c ****             {
  588:Generated_Source\PSoC4/BLE_1.c ****                 apiResult = CYBLE_ERROR_FLASH_WRITE_NOT_PERMITED;
  548              		.loc 1 588 0
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 21
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 21
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 21
 
 
  549 0056 5623     		mov	r3, #86
@@ -1768,11 +1258,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  589 0092 9E22     		mov	r2, #158
  590 0094 9200     		lsl	r2, r2, #2
  591 0096 9A18     		add	r2, r3, r2
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 22
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 22
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 22
 
 
  592 0098 454B     		ldr	r3, .L27+8
@@ -1832,11 +1318,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  638 00e8 1340     		and	r3, r2
  606:Generated_Source\PSoC4/BLE_1.c ****         ((cyBle_pendingFlashWrite & CYBLE_PENDING_CCCD_FLASH_CLEAR_MASK) != 0u) )
  639              		.loc 1 606 0 discriminator 3
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 23
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 23
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 23
 
 
  640 00ea 56D0     		beq	.L22
@@ -1896,11 +1378,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  681 0134 DAB2     		uxtb	r2, r3
  682 0136 1C4B     		ldr	r3, .L27
  683 0138 1A70     		strb	r2, [r3]
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 24
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 24
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 24
 
 
  684              	.LBE3:
@@ -1959,13 +1437,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  728 0186 1B88     		ldrh	r3, [r3]
  729 0188 002B     		cmp	r3, #0
  730 018a 06D1     		bne	.L22
-<<<<<<< HEAD
  630:Generated_Source\PSoC4/BLE_1.c ****             {
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 25
-=======
- 630:.\Generated_Source\PSoC4/BLE_1.c ****             {
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 25
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 25
 
 
  631:Generated_Source\PSoC4/BLE_1.c ****                 cyBle_pendingFlashWrite &= (uint8)~CYBLE_PENDING_CCCD_FLASH_CLEAR_BIT;
@@ -2015,7 +1488,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  768              		.type	CyBle_GapRemoveBondedDevice, %function
  769              	CyBle_GapRemoveBondedDevice:
  770              	.LFB7:
-<<<<<<< HEAD
  638:Generated_Source\PSoC4/BLE_1.c **** 
  639:Generated_Source\PSoC4/BLE_1.c **** 
  640:Generated_Source\PSoC4/BLE_1.c **** /******************************************************************************
@@ -2026,7 +1498,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  645:Generated_Source\PSoC4/BLE_1.c **** *  of the device including CCCD values. This function removes device from the
  646:Generated_Source\PSoC4/BLE_1.c **** *  white list also when autopopulate white list with bonded devices option is
  647:Generated_Source\PSoC4/BLE_1.c **** *  enabled.
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 26
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 26
 
 
  648:Generated_Source\PSoC4/BLE_1.c **** * 
@@ -2055,47 +1527,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  671:Generated_Source\PSoC4/BLE_1.c **** ******************************************************************************/
  672:Generated_Source\PSoC4/BLE_1.c **** CYBLE_API_RESULT_T CyBle_GapRemoveBondedDevice(CYBLE_GAP_BD_ADDR_T* bdAddr)
  673:Generated_Source\PSoC4/BLE_1.c **** {
-=======
- 638:.\Generated_Source\PSoC4/BLE_1.c **** 
- 639:.\Generated_Source\PSoC4/BLE_1.c **** 
- 640:.\Generated_Source\PSoC4/BLE_1.c **** /******************************************************************************
- 641:.\Generated_Source\PSoC4/BLE_1.c **** * Function Name: CyBle_GapRemoveBondedDevice
- 642:.\Generated_Source\PSoC4/BLE_1.c **** ***************************************************************************//**
- 643:.\Generated_Source\PSoC4/BLE_1.c **** * 
- 644:.\Generated_Source\PSoC4/BLE_1.c **** *  This function marks the device untrusted. It removes the bonding information
- 645:.\Generated_Source\PSoC4/BLE_1.c **** *  of the device including CCCD values. This function removes device from the
- 646:.\Generated_Source\PSoC4/BLE_1.c **** *  white list also when autopopulate white list with bonded devices option is
- 647:.\Generated_Source\PSoC4/BLE_1.c **** *  enabled.
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 26
-
-
- 648:.\Generated_Source\PSoC4/BLE_1.c **** * 
- 649:.\Generated_Source\PSoC4/BLE_1.c **** *  This function is available only when Bonding requirement is selected in
- 650:.\Generated_Source\PSoC4/BLE_1.c **** *  Security settings.    
- 651:.\Generated_Source\PSoC4/BLE_1.c **** *
- 652:.\Generated_Source\PSoC4/BLE_1.c **** *  \param bdAddr: Pointer to peer device address, of type CYBLE_GAP_BD_ADDR_T.
- 653:.\Generated_Source\PSoC4/BLE_1.c **** *                 If device address is set to 0, then all devices shall be
- 654:.\Generated_Source\PSoC4/BLE_1.c **** *                 removed from trusted list and white list.
- 655:.\Generated_Source\PSoC4/BLE_1.c **** *
- 656:.\Generated_Source\PSoC4/BLE_1.c **** * \return
- 657:.\Generated_Source\PSoC4/BLE_1.c **** *  CYBLE_API_RESULT_T : Return value indicates if the function succeeded or
- 658:.\Generated_Source\PSoC4/BLE_1.c **** *  failed. Following are the possible error codes.
- 659:.\Generated_Source\PSoC4/BLE_1.c **** *
- 660:.\Generated_Source\PSoC4/BLE_1.c **** *   Errors codes                     | Description
- 661:.\Generated_Source\PSoC4/BLE_1.c **** *   ---------------------------------| ------------------------------------
- 662:.\Generated_Source\PSoC4/BLE_1.c **** *   CYBLE_ERROR_OK                   | On successful operation.
- 663:.\Generated_Source\PSoC4/BLE_1.c **** *   CYBLE_ERROR_INVALID_PARAMETER    | On specifying NULL as input parameter for 'bdAddr'.
- 664:.\Generated_Source\PSoC4/BLE_1.c **** *   CYBLE_ERROR_INVALID_OPERATION    | Whitelist is already in use or there is pending write to fla
- 665:.\Generated_Source\PSoC4/BLE_1.c **** *   CYBLE_ERROR_NO_DEVICE_ENTITY     | Device does not exist in the bond list.
- 666:.\Generated_Source\PSoC4/BLE_1.c **** *
- 667:.\Generated_Source\PSoC4/BLE_1.c **** *  \globalvars
- 668:.\Generated_Source\PSoC4/BLE_1.c **** *   The bdHandle is set in cyBle_pendingFlashWrite variable to indicate that
- 669:.\Generated_Source\PSoC4/BLE_1.c **** *   data should be stored to flash by CyBle_StoreBondingData afterwards. 
- 670:.\Generated_Source\PSoC4/BLE_1.c **** *     
- 671:.\Generated_Source\PSoC4/BLE_1.c **** ******************************************************************************/
- 672:.\Generated_Source\PSoC4/BLE_1.c **** CYBLE_API_RESULT_T CyBle_GapRemoveBondedDevice(CYBLE_GAP_BD_ADDR_T* bdAddr)
- 673:.\Generated_Source\PSoC4/BLE_1.c **** {
->>>>>>> origin/master
  771              		.loc 1 673 0
  772              		.cfi_startproc
  773 0000 90B5     		push	{r4, r7, lr}
@@ -2122,21 +1553,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  791 0014 002B     		cmp	r3, #0
  792 0016 58D1     		bne	.L30
  793              	.LBB5:
-<<<<<<< HEAD
  677:Generated_Source\PSoC4/BLE_1.c ****     {
  678:Generated_Source\PSoC4/BLE_1.c ****         
  679:Generated_Source\PSoC4/BLE_1.c ****     #if(CYBLE_GATT_DB_CCCD_COUNT != 0u)
  680:Generated_Source\PSoC4/BLE_1.c ****         /* Request to clear CCCD values which will be done by CyBle_StoreBondingData API */
  681:Generated_Source\PSoC4/BLE_1.c ****         uint8 bDevHandle;
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 27
-=======
- 677:.\Generated_Source\PSoC4/BLE_1.c ****     {
- 678:.\Generated_Source\PSoC4/BLE_1.c ****         
- 679:.\Generated_Source\PSoC4/BLE_1.c ****     #if(CYBLE_GATT_DB_CCCD_COUNT != 0u)
- 680:.\Generated_Source\PSoC4/BLE_1.c ****         /* Request to clear CCCD values which will be done by CyBle_StoreBondingData API */
- 681:.\Generated_Source\PSoC4/BLE_1.c ****         uint8 bDevHandle;
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 27
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 27
 
 
  682:Generated_Source\PSoC4/BLE_1.c ****         CYBLE_GAP_BD_ADDR_T invalidBdAddr = {{0u,0u,0u,0u,0u,0u}, 0u};
@@ -2194,15 +1616,9 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  840 0070 1A70     		strb	r2, [r3]
  841 0072 1BE0     		b	.L32
  842              	.L31:
-<<<<<<< HEAD
  688:Generated_Source\PSoC4/BLE_1.c ****         }
  689:Generated_Source\PSoC4/BLE_1.c ****         else
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 28
-=======
- 688:.\Generated_Source\PSoC4/BLE_1.c ****         }
- 689:.\Generated_Source\PSoC4/BLE_1.c ****         else
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 28
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 28
 
 
  690:Generated_Source\PSoC4/BLE_1.c ****         {
@@ -2262,11 +1678,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  883 00b8 FC18     		add	r4, r7, r3
  884 00ba 7B68     		ldr	r3, [r7, #4]
  885 00bc 181C     		mov	r0, r3
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 29
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 29
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 29
 
 
  886 00be FFF7FEFF 		bl	CyBle_GapRemoveDeviceFromWhiteList
@@ -2322,12 +1734,11 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  923              		.type	CyBle_GappStartAdvertisement, %function
  924              	CyBle_GappStartAdvertisement:
  925              	.LFB8:
-<<<<<<< HEAD
  717:Generated_Source\PSoC4/BLE_1.c **** 
  718:Generated_Source\PSoC4/BLE_1.c **** 
  719:Generated_Source\PSoC4/BLE_1.c **** #endif /* (CYBLE_GAP_ROLE_PERIPHERAL || CYBLE_GAP_ROLE_CENTRAL) && (CYBLE_BONDING_REQUIREMENT == CY
  720:Generated_Source\PSoC4/BLE_1.c **** 
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 30
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 30
 
 
  721:Generated_Source\PSoC4/BLE_1.c **** 
@@ -2387,74 +1798,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  926              		.loc 1 774 0
  927              		.cfi_startproc
  928 0000 90B5     		push	{r4, r7, lr}
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 31
-=======
- 717:.\Generated_Source\PSoC4/BLE_1.c **** 
- 718:.\Generated_Source\PSoC4/BLE_1.c **** 
- 719:.\Generated_Source\PSoC4/BLE_1.c **** #endif /* (CYBLE_GAP_ROLE_PERIPHERAL || CYBLE_GAP_ROLE_CENTRAL) && (CYBLE_BONDING_REQUIREMENT == CY
- 720:.\Generated_Source\PSoC4/BLE_1.c **** 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 30
-
-
- 721:.\Generated_Source\PSoC4/BLE_1.c **** 
- 722:.\Generated_Source\PSoC4/BLE_1.c **** #if(CYBLE_GAP_ROLE_PERIPHERAL || CYBLE_GAP_ROLE_BROADCASTER)
- 723:.\Generated_Source\PSoC4/BLE_1.c **** 
- 724:.\Generated_Source\PSoC4/BLE_1.c ****     /******************************************************************************
- 725:.\Generated_Source\PSoC4/BLE_1.c ****     *  Function Name: CyBle_GappStartAdvertisement
- 726:.\Generated_Source\PSoC4/BLE_1.c ****     ***************************************************************************//**
- 727:.\Generated_Source\PSoC4/BLE_1.c ****     *     
- 728:.\Generated_Source\PSoC4/BLE_1.c ****     *  This function is used to start the advertisement using the advertisement data 
- 729:.\Generated_Source\PSoC4/BLE_1.c ****     *  set in the component customizer's GUI. After invoking this API, the device 
- 730:.\Generated_Source\PSoC4/BLE_1.c ****     *  will be available for connection by the devices configured for GAP central 
- 731:.\Generated_Source\PSoC4/BLE_1.c ****     *  role. It is only included if the device is configured for GAP Peripheral or 
- 732:.\Generated_Source\PSoC4/BLE_1.c ****     *  GAP Peripheral + Central role.
- 733:.\Generated_Source\PSoC4/BLE_1.c ****     *  
- 734:.\Generated_Source\PSoC4/BLE_1.c ****     *  On start of advertisement, GAP Peripheral receives the
- 735:.\Generated_Source\PSoC4/BLE_1.c ****     *  CYBLE_EVT_GAPP_ADVERTISEMENT_START_STOP event. The following events are 
- 736:.\Generated_Source\PSoC4/BLE_1.c ****     *  possible on invoking this function:
- 737:.\Generated_Source\PSoC4/BLE_1.c ****     *  
- 738:.\Generated_Source\PSoC4/BLE_1.c ****     *  * CYBLE_EVT_GAP_DEVICE_CONNECTED - If the device connects to a GAP Central and 
- 739:.\Generated_Source\PSoC4/BLE_1.c ****     *    Link Layer Privacy is disabled in component customizer.
- 740:.\Generated_Source\PSoC4/BLE_1.c ****     *  * CYBLE_EVT_GAP_ENHANCE_CONN_COMPLETE - If the device connects to a GAP Central and 
- 741:.\Generated_Source\PSoC4/BLE_1.c ****     *    Link Layer Privacy is enabled in component customizer.
- 742:.\Generated_Source\PSoC4/BLE_1.c ****     *  * CYBLE_EVT_TIMEOUT: If no device in GAP Central mode connects to this 
- 743:.\Generated_Source\PSoC4/BLE_1.c ****     *                       device within the specified timeout limit. Stack 
- 744:.\Generated_Source\PSoC4/BLE_1.c ****     *                       automatically initiate stop advertising when Slow 
- 745:.\Generated_Source\PSoC4/BLE_1.c ****     *                       advertising was initiated, or starts Slow advertising
- 746:.\Generated_Source\PSoC4/BLE_1.c ****     *                       after Fast advertising timeout occur.
- 747:.\Generated_Source\PSoC4/BLE_1.c ****     *  * CYBLE_EVT_GAPP_ADVERTISEMENT_START_STOP: If device started or stopped
- 748:.\Generated_Source\PSoC4/BLE_1.c ****     *                                               advertising. Use CyBle_GetState()
- 749:.\Generated_Source\PSoC4/BLE_1.c ****     *                                               to determine the state. Sequential 
- 750:.\Generated_Source\PSoC4/BLE_1.c ****     *                                               advertising could be started when
- 751:.\Generated_Source\PSoC4/BLE_1.c ****     *                                               CYBLE_STATE_DISCONNECTED state is
- 752:.\Generated_Source\PSoC4/BLE_1.c ****     *                                               returned.
- 753:.\Generated_Source\PSoC4/BLE_1.c ****     * 
- 754:.\Generated_Source\PSoC4/BLE_1.c ****     *  \param advertisingIntervalType: Fast or slow advertising interval with timings
- 755:.\Generated_Source\PSoC4/BLE_1.c ****     *                                 entered in Advertising settings section of the
- 756:.\Generated_Source\PSoC4/BLE_1.c ****     *                                 customizer.
- 757:.\Generated_Source\PSoC4/BLE_1.c ****     *  * CYBLE_ADVERTISING_FAST   0x00u
- 758:.\Generated_Source\PSoC4/BLE_1.c ****     *  * CYBLE_ADVERTISING_SLOW   0x01u
- 759:.\Generated_Source\PSoC4/BLE_1.c ****     *  * CYBLE_ADVERTISING_CUSTOM 0x02u
- 760:.\Generated_Source\PSoC4/BLE_1.c ****     * 
- 761:.\Generated_Source\PSoC4/BLE_1.c ****     * \return
- 762:.\Generated_Source\PSoC4/BLE_1.c ****     *  CYBLE_API_RESULT_T : Return value indicates if the function succeeded or
- 763:.\Generated_Source\PSoC4/BLE_1.c ****     *  failed. Following are the possible error codes.
- 764:.\Generated_Source\PSoC4/BLE_1.c ****     * 
- 765:.\Generated_Source\PSoC4/BLE_1.c ****     *   Errors codes                      |  Description
- 766:.\Generated_Source\PSoC4/BLE_1.c ****     *   --------------------------------- |  --------------------------------
- 767:.\Generated_Source\PSoC4/BLE_1.c ****     *   CYBLE_ERROR_OK                    |  On successful operation.
- 768:.\Generated_Source\PSoC4/BLE_1.c ****     *   CYBLE_ERROR_INVALID_PARAMETER     |  On passing an invalid parameter.
- 769:.\Generated_Source\PSoC4/BLE_1.c ****     *   CYBLE_ERROR_INVALID_STATE         |  On calling this API not in Disconnected state.
- 770:.\Generated_Source\PSoC4/BLE_1.c ****     *
- 771:.\Generated_Source\PSoC4/BLE_1.c ****     * 
- 772:.\Generated_Source\PSoC4/BLE_1.c ****     *******************************************************************************/
- 773:.\Generated_Source\PSoC4/BLE_1.c ****     CYBLE_API_RESULT_T CyBle_GappStartAdvertisement(uint8 advertisingIntervalType)
- 774:.\Generated_Source\PSoC4/BLE_1.c ****     {
- 926              		.loc 1 774 0
- 927              		.cfi_startproc
- 928 0000 90B5     		push	{r4, r7, lr}
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 31
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 31
 
 
  929              		.cfi_def_cfa_offset 12
@@ -2513,13 +1857,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  971 003c 234B     		ldr	r3, .L46+8
  972 003e 1E22     		mov	r2, #30
  973 0040 1A82     		strh	r2, [r3, #16]
-<<<<<<< HEAD
  786:Generated_Source\PSoC4/BLE_1.c ****                 cyBle_discoveryModeInfo.advParam->advIntvMin = CYBLE_FAST_ADV_INT_MIN;
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 32
-=======
- 786:.\Generated_Source\PSoC4/BLE_1.c ****                 cyBle_discoveryModeInfo.advParam->advIntvMin = CYBLE_FAST_ADV_INT_MIN;
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 32
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 32
 
 
  974              		.loc 1 786 0
@@ -2579,11 +1918,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  1015 0080 FC18     		add	r4, r7, r3
  1016 0082 124B     		ldr	r3, .L46+8
  1017 0084 181C     		mov	r0, r3
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 33
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 33
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 33
 
 
  1018 0086 FFF7FEFF 		bl	CyBle_GappEnterDiscoveryMode
@@ -2643,11 +1978,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  1058              	.L47:
  1059              		.align	2
  1060              	.L46:
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 34
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 34
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 34
 
 
  1061 00c4 00000000 		.word	cyBle_state
@@ -2707,11 +2038,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  1090 000e 0822     		mov	r2, #8
  1091 0010 1343     		orr	r3, r2
  1092 0012 DAB2     		uxtb	r2, r3
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 35
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 35
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 35
 
 
  1093 0014 014B     		ldr	r3, .L49
@@ -2769,15 +2096,9 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  1125 0008 0A1C     		mov	r2, r1
  1126 000a FB1C     		add	r3, r7, #3
  1127 000c 1A70     		strb	r2, [r3]
-<<<<<<< HEAD
  858:Generated_Source\PSoC4/BLE_1.c ****         uint8 i;
  859:Generated_Source\PSoC4/BLE_1.c ****         uint8 *destBuffer = NULL;
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 36
-=======
- 858:.\Generated_Source\PSoC4/BLE_1.c ****         uint8 i;
- 859:.\Generated_Source\PSoC4/BLE_1.c ****         uint8 *destBuffer = NULL;
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 36
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 36
 
 
  1128              		.loc 1 859 0
@@ -2837,11 +2158,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  879:Generated_Source\PSoC4/BLE_1.c ****             {
  1160              		.loc 1 879 0 discriminator 3
  1161 0042 0F23     		mov	r3, #15
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 37
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 37
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 37
 
 
  1162 0044 FB18     		add	r3, r7, r3
@@ -2877,7 +2194,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  1188              		.type	CyBle_ChangeAdLocalName, %function
  1189              	CyBle_ChangeAdLocalName:
  1190              	.LFB11:
-<<<<<<< HEAD
  885:Generated_Source\PSoC4/BLE_1.c ****   
  886:Generated_Source\PSoC4/BLE_1.c **** #endif /* CYBLE_GAP_ROLE_PERIPHERAL || CYBLE_GAP_ROLE_BROADCASTER */
  887:Generated_Source\PSoC4/BLE_1.c **** 
@@ -2902,7 +2218,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  906:Generated_Source\PSoC4/BLE_1.c ****     *                            their discoverable mode settings. Advertisement 
  907:Generated_Source\PSoC4/BLE_1.c ****     *                            data received is provided by the event,      
  908:Generated_Source\PSoC4/BLE_1.c ****     *                            CYBLE_EVT_GAPC_SCAN_PROGRESS_RESULT. This procedure
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 38
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 38
 
 
  909:Generated_Source\PSoC4/BLE_1.c ****     *                            requires the scanType sub parameter to be passive
@@ -2962,7 +2278,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  963:Generated_Source\PSoC4/BLE_1.c ****     {
  964:Generated_Source\PSoC4/BLE_1.c ****         CYBLE_API_RESULT_T apiResult;
  965:Generated_Source\PSoC4/BLE_1.c **** 
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 39
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 39
 
 
  966:Generated_Source\PSoC4/BLE_1.c ****         if(scanningIntervalType > CYBLE_SCANNING_CUSTOM)
@@ -3022,7 +2338,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
 1020:Generated_Source\PSoC4/BLE_1.c ****         CyBle_GapcStopDiscovery();
 1021:Generated_Source\PSoC4/BLE_1.c ****         
 1022:Generated_Source\PSoC4/BLE_1.c ****         cyBle_eventHandlerFlag |= CYBLE_STOP_FLAG;
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 40
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 40
 
 
 1023:Generated_Source\PSoC4/BLE_1.c ****     }
@@ -3082,7 +2398,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
 1077:Generated_Source\PSoC4/BLE_1.c ****         {
 1078:Generated_Source\PSoC4/BLE_1.c ****             apiResult = CYBLE_ERROR_INVALID_STATE;
 1079:Generated_Source\PSoC4/BLE_1.c ****         }
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 41
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 41
 
 
 1080:Generated_Source\PSoC4/BLE_1.c ****         else if(address == NULL)
@@ -3142,7 +2458,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
 1134:Generated_Source\PSoC4/BLE_1.c ****         }
 1135:Generated_Source\PSoC4/BLE_1.c ****         else 
 1136:Generated_Source\PSoC4/BLE_1.c ****         {
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 42
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 42
 
 
 1137:Generated_Source\PSoC4/BLE_1.c ****             apiResult = CyBle_GapcCancelConnection();
@@ -3185,315 +2501,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
 1174:Generated_Source\PSoC4/BLE_1.c ****         *******************************************************************************/
 1175:Generated_Source\PSoC4/BLE_1.c ****         static void CyBle_ChangeAdLocalName(const char8 name[], uint8 dest)
 1176:Generated_Source\PSoC4/BLE_1.c ****         {
-=======
- 885:.\Generated_Source\PSoC4/BLE_1.c ****   
- 886:.\Generated_Source\PSoC4/BLE_1.c **** #endif /* CYBLE_GAP_ROLE_PERIPHERAL || CYBLE_GAP_ROLE_BROADCASTER */
- 887:.\Generated_Source\PSoC4/BLE_1.c **** 
- 888:.\Generated_Source\PSoC4/BLE_1.c **** 
- 889:.\Generated_Source\PSoC4/BLE_1.c **** #if(CYBLE_GAP_ROLE_CENTRAL || CYBLE_GAP_ROLE_OBSERVER)
- 890:.\Generated_Source\PSoC4/BLE_1.c **** 
- 891:.\Generated_Source\PSoC4/BLE_1.c ****     /******************************************************************************
- 892:.\Generated_Source\PSoC4/BLE_1.c ****     * Function Name: CyBle_GapcStartScan
- 893:.\Generated_Source\PSoC4/BLE_1.c ****     ***************************************************************************//**
- 894:.\Generated_Source\PSoC4/BLE_1.c ****     * 
- 895:.\Generated_Source\PSoC4/BLE_1.c ****     *   This function is used for discovering GAP peripheral devices that are 
- 896:.\Generated_Source\PSoC4/BLE_1.c ****     *   available for connection. It performs the scanning routine using the 
- 897:.\Generated_Source\PSoC4/BLE_1.c ****     *   parameters entered in the component's customizer.
- 898:.\Generated_Source\PSoC4/BLE_1.c ****     *   
- 899:.\Generated_Source\PSoC4/BLE_1.c ****     *   As soon as the discovery operation starts, CYBLE_EVT_GAPC_SCAN_START_STOP 
- 900:.\Generated_Source\PSoC4/BLE_1.c ****     *   event is generated. The CYBLE_EVT_GAPC_SCAN_PROGRESS_RESULT event is 
- 901:.\Generated_Source\PSoC4/BLE_1.c ****     *   generated when a GAP peripheral device is located. There are three discovery
- 902:.\Generated_Source\PSoC4/BLE_1.c ****     *   procedures can be selected in the customizer's GUI:
- 903:.\Generated_Source\PSoC4/BLE_1.c ****     *   
- 904:.\Generated_Source\PSoC4/BLE_1.c ****     *   * Observation procedure: A device performing the observer role receives only
- 905:.\Generated_Source\PSoC4/BLE_1.c ****     *                            advertisement data from devices irrespective of 
- 906:.\Generated_Source\PSoC4/BLE_1.c ****     *                            their discoverable mode settings. Advertisement 
- 907:.\Generated_Source\PSoC4/BLE_1.c ****     *                            data received is provided by the event,      
- 908:.\Generated_Source\PSoC4/BLE_1.c ****     *                            CYBLE_EVT_GAPC_SCAN_PROGRESS_RESULT. This procedure
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 38
-
-
- 909:.\Generated_Source\PSoC4/BLE_1.c ****     *                            requires the scanType sub parameter to be passive
- 910:.\Generated_Source\PSoC4/BLE_1.c ****     *                            scanning. 
- 911:.\Generated_Source\PSoC4/BLE_1.c ****     *   
- 912:.\Generated_Source\PSoC4/BLE_1.c ****     *   * Limited Discovery procedure: A device performing the limited discovery
- 913:.\Generated_Source\PSoC4/BLE_1.c ****     *                                  procedure receives advertisement data and 
- 914:.\Generated_Source\PSoC4/BLE_1.c ****     *                                  scan# response data from devices in the 
- 915:.\Generated_Source\PSoC4/BLE_1.c ****     *                                  limited discoverable mode only. Received data
- 916:.\Generated_Source\PSoC4/BLE_1.c ****     *                                  is provided by the event, 
- 917:.\Generated_Source\PSoC4/BLE_1.c ****     *                                  CYBLE_EVT_GAPC_SCAN_PROGRESS_RESULT. This 
- 918:.\Generated_Source\PSoC4/BLE_1.c ****     *                                  procedure requires the scanType sub-parameter 
- 919:.\Generated_Source\PSoC4/BLE_1.c ****     *                                  to be active scanning.
- 920:.\Generated_Source\PSoC4/BLE_1.c ****     *   
- 921:.\Generated_Source\PSoC4/BLE_1.c ****     *   * General Discovery procedure: A device performing the general discovery 
- 922:.\Generated_Source\PSoC4/BLE_1.c ****     *                                  procedure receives the advertisement data and
- 923:.\Generated_Source\PSoC4/BLE_1.c ****     *                                  scan response data from devices in both 
- 924:.\Generated_Source\PSoC4/BLE_1.c ****     *                                  limited discoverable mode and the general 
- 925:.\Generated_Source\PSoC4/BLE_1.c ****     *                                  discoverable mode. Received data is provided
- 926:.\Generated_Source\PSoC4/BLE_1.c ****     *                                  by the event,
- 927:.\Generated_Source\PSoC4/BLE_1.c ****     *                                  CYBLE_EVT_GAPC_SCAN_PROGRESS_RESULT. This 
- 928:.\Generated_Source\PSoC4/BLE_1.c ****     *                                  procedure requires the scanType sub-parameter
- 929:.\Generated_Source\PSoC4/BLE_1.c ****     *                                  to be active scanning.
- 930:.\Generated_Source\PSoC4/BLE_1.c ****     *   
- 931:.\Generated_Source\PSoC4/BLE_1.c ****     *   Every Advertisement / Scan response packet received results in a new event, 
- 932:.\Generated_Source\PSoC4/BLE_1.c ****     *   CYBLE_EVT_GAPC_SCAN_PROGRESS_RESULT.
- 933:.\Generated_Source\PSoC4/BLE_1.c ****     *   If 'scanTo' sub-parameter is a non-zero value, then upon commencement of 
- 934:.\Generated_Source\PSoC4/BLE_1.c ****     *   discovery procedure and elapsed time = 'scanTo', CYBLE_EVT_TIMEOUT event
- 935:.\Generated_Source\PSoC4/BLE_1.c ****     *   is generated with the event parameter indicating CYBLE_GAP_SCAN_TO.
- 936:.\Generated_Source\PSoC4/BLE_1.c ****     *   Possible generated events are:
- 937:.\Generated_Source\PSoC4/BLE_1.c ****     *   * CYBLE_EVT_GAPC_SCAN_START_STOP: If a device started or stopped scanning. 
- 938:.\Generated_Source\PSoC4/BLE_1.c ****     *                                     Use CyBle_GetState() to determine the 
- 939:.\Generated_Source\PSoC4/BLE_1.c ****     *                                     state. Sequential scanning could be 
- 940:.\Generated_Source\PSoC4/BLE_1.c ****     *                                     started when CYBLE_STATE_DISCONNECTED 
- 941:.\Generated_Source\PSoC4/BLE_1.c ****     *                                     state is returned. 
- 942:.\Generated_Source\PSoC4/BLE_1.c ****     *   * CYBLE_EVT_GAPC_SCAN_PROGRESS_RESULT 
- 943:.\Generated_Source\PSoC4/BLE_1.c ****     *   * CYBLE_EVT_TIMEOUT (CYBLE_GAP_SCAN_TO)
- 944:.\Generated_Source\PSoC4/BLE_1.c ****     * 
- 945:.\Generated_Source\PSoC4/BLE_1.c ****     *   \param scanningIntervalType:  Fast or slow scanning interval with
- 946:.\Generated_Source\PSoC4/BLE_1.c ****     *       timings entered in Scan settings section of the customizer.
- 947:.\Generated_Source\PSoC4/BLE_1.c ****     * 	  * CYBLE_SCANNING_FAST   0x00u
- 948:.\Generated_Source\PSoC4/BLE_1.c ****     * 	  * CYBLE_SCANNING_SLOW   0x01u
- 949:.\Generated_Source\PSoC4/BLE_1.c ****     * 	  * CYBLE_SCANNING_CUSTOM 0x02u
- 950:.\Generated_Source\PSoC4/BLE_1.c ****     * 
- 951:.\Generated_Source\PSoC4/BLE_1.c ****     * \return
- 952:.\Generated_Source\PSoC4/BLE_1.c ****     *  CYBLE_API_RESULT_T : Return value indicates if the function succeeded or
- 953:.\Generated_Source\PSoC4/BLE_1.c ****     *  failed. Following are the possible error codes.
- 954:.\Generated_Source\PSoC4/BLE_1.c ****     *
- 955:.\Generated_Source\PSoC4/BLE_1.c ****     *   Errors codes                       | Description
- 956:.\Generated_Source\PSoC4/BLE_1.c ****     *   ---------------------------------- | -----------------------------------
- 957:.\Generated_Source\PSoC4/BLE_1.c ****     *   CYBLE_ERROR_OK                     | On successful operation.
- 958:.\Generated_Source\PSoC4/BLE_1.c ****     *   CYBLE_ERROR_STACK_INTERNAL         | An error occurred in the BLE stack.
- 959:.\Generated_Source\PSoC4/BLE_1.c ****     *   CYBLE_ERROR_INVALID_PARAMETER      | On passing an invalid parameter.
- 960:.\Generated_Source\PSoC4/BLE_1.c ****     *  
- 961:.\Generated_Source\PSoC4/BLE_1.c ****     *******************************************************************************/
- 962:.\Generated_Source\PSoC4/BLE_1.c ****     CYBLE_API_RESULT_T CyBle_GapcStartScan(uint8 scanningIntervalType)
- 963:.\Generated_Source\PSoC4/BLE_1.c ****     {
- 964:.\Generated_Source\PSoC4/BLE_1.c ****         CYBLE_API_RESULT_T apiResult;
- 965:.\Generated_Source\PSoC4/BLE_1.c **** 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 39
-
-
- 966:.\Generated_Source\PSoC4/BLE_1.c ****         if(scanningIntervalType > CYBLE_SCANNING_CUSTOM)
- 967:.\Generated_Source\PSoC4/BLE_1.c ****         {
- 968:.\Generated_Source\PSoC4/BLE_1.c ****             apiResult = CYBLE_ERROR_INVALID_PARAMETER;
- 969:.\Generated_Source\PSoC4/BLE_1.c ****         }
- 970:.\Generated_Source\PSoC4/BLE_1.c ****         else
- 971:.\Generated_Source\PSoC4/BLE_1.c ****         {
- 972:.\Generated_Source\PSoC4/BLE_1.c ****             if(scanningIntervalType == CYBLE_SCANNING_FAST)
- 973:.\Generated_Source\PSoC4/BLE_1.c ****             {
- 974:.\Generated_Source\PSoC4/BLE_1.c ****                 cyBle_discoveryInfo.scanTo = CYBLE_FAST_SCAN_TIMEOUT;
- 975:.\Generated_Source\PSoC4/BLE_1.c ****                 cyBle_discoveryInfo.scanIntv = CYBLE_FAST_SCAN_INTERVAL;
- 976:.\Generated_Source\PSoC4/BLE_1.c ****                 cyBle_discoveryInfo.scanWindow = CYBLE_FAST_SCAN_WINDOW;
- 977:.\Generated_Source\PSoC4/BLE_1.c ****             }
- 978:.\Generated_Source\PSoC4/BLE_1.c ****             else if(scanningIntervalType == CYBLE_SCANNING_SLOW)
- 979:.\Generated_Source\PSoC4/BLE_1.c ****             {
- 980:.\Generated_Source\PSoC4/BLE_1.c ****                 cyBle_discoveryInfo.scanTo = CYBLE_SLOW_SCAN_TIMEOUT;
- 981:.\Generated_Source\PSoC4/BLE_1.c ****                 cyBle_discoveryInfo.scanIntv = CYBLE_SLOW_SCAN_INTERVAL;
- 982:.\Generated_Source\PSoC4/BLE_1.c ****                 cyBle_discoveryInfo.scanWindow = CYBLE_SLOW_SCAN_WINDOW;
- 983:.\Generated_Source\PSoC4/BLE_1.c ****             }       
- 984:.\Generated_Source\PSoC4/BLE_1.c ****             else /* Do not update scanning intervals */
- 985:.\Generated_Source\PSoC4/BLE_1.c ****             {
- 986:.\Generated_Source\PSoC4/BLE_1.c ****             }
- 987:.\Generated_Source\PSoC4/BLE_1.c ****             
- 988:.\Generated_Source\PSoC4/BLE_1.c ****             cyBle_scanningIntervalType = scanningIntervalType;
- 989:.\Generated_Source\PSoC4/BLE_1.c ****             apiResult = CyBle_GapcStartDiscovery(&cyBle_discoveryInfo);
- 990:.\Generated_Source\PSoC4/BLE_1.c ****         
- 991:.\Generated_Source\PSoC4/BLE_1.c ****             if(CYBLE_ERROR_OK == apiResult)
- 992:.\Generated_Source\PSoC4/BLE_1.c ****             {
- 993:.\Generated_Source\PSoC4/BLE_1.c ****                 cyBle_eventHandlerFlag |= CYBLE_START_FLAG;
- 994:.\Generated_Source\PSoC4/BLE_1.c ****             }
- 995:.\Generated_Source\PSoC4/BLE_1.c ****         }
- 996:.\Generated_Source\PSoC4/BLE_1.c ****        
- 997:.\Generated_Source\PSoC4/BLE_1.c ****         return (apiResult);
- 998:.\Generated_Source\PSoC4/BLE_1.c ****     }
- 999:.\Generated_Source\PSoC4/BLE_1.c ****     
-1000:.\Generated_Source\PSoC4/BLE_1.c ****     
-1001:.\Generated_Source\PSoC4/BLE_1.c ****     /******************************************************************************
-1002:.\Generated_Source\PSoC4/BLE_1.c ****     * Function Name: CyBle_GapcStopScan
-1003:.\Generated_Source\PSoC4/BLE_1.c ****     ***************************************************************************//**
-1004:.\Generated_Source\PSoC4/BLE_1.c ****     * 
-1005:.\Generated_Source\PSoC4/BLE_1.c ****     *   This function used to stop the discovery of devices. On stopping discovery
-1006:.\Generated_Source\PSoC4/BLE_1.c ****     *   operation, CYBLE_EVT_GAPC_SCAN_START_STOP event is generated. Application
-1007:.\Generated_Source\PSoC4/BLE_1.c ****     *   layer needs to keep track of the function call made before receiving this
-1008:.\Generated_Source\PSoC4/BLE_1.c ****     *   event to associate this event with either the start or stop discovery
-1009:.\Generated_Source\PSoC4/BLE_1.c ****     *   function.
-1010:.\Generated_Source\PSoC4/BLE_1.c ****     * 
-1011:.\Generated_Source\PSoC4/BLE_1.c ****     *   Possible events generated are:
-1012:.\Generated_Source\PSoC4/BLE_1.c ****     *    * CYBLE_EVT_GAPC_SCAN_START_STOP
-1013:.\Generated_Source\PSoC4/BLE_1.c ****     * 
-1014:.\Generated_Source\PSoC4/BLE_1.c ****     *  \return
-1015:.\Generated_Source\PSoC4/BLE_1.c ****     *   None
-1016:.\Generated_Source\PSoC4/BLE_1.c ****     * 
-1017:.\Generated_Source\PSoC4/BLE_1.c ****     *******************************************************************************/
-1018:.\Generated_Source\PSoC4/BLE_1.c ****     void CyBle_GapcStopScan(void)
-1019:.\Generated_Source\PSoC4/BLE_1.c ****     {
-1020:.\Generated_Source\PSoC4/BLE_1.c ****         CyBle_GapcStopDiscovery();
-1021:.\Generated_Source\PSoC4/BLE_1.c ****         
-1022:.\Generated_Source\PSoC4/BLE_1.c ****         cyBle_eventHandlerFlag |= CYBLE_STOP_FLAG;
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 40
-
-
-1023:.\Generated_Source\PSoC4/BLE_1.c ****     }
-1024:.\Generated_Source\PSoC4/BLE_1.c **** 
-1025:.\Generated_Source\PSoC4/BLE_1.c ****     
-1026:.\Generated_Source\PSoC4/BLE_1.c **** #endif /* CYBLE_GAP_ROLE_CENTRAL || CYBLE_GAP_ROLE_OBSERVER */
-1027:.\Generated_Source\PSoC4/BLE_1.c **** 
-1028:.\Generated_Source\PSoC4/BLE_1.c **** 
-1029:.\Generated_Source\PSoC4/BLE_1.c **** #if(CYBLE_GAP_ROLE_CENTRAL)
-1030:.\Generated_Source\PSoC4/BLE_1.c **** 
-1031:.\Generated_Source\PSoC4/BLE_1.c ****     /******************************************************************************
-1032:.\Generated_Source\PSoC4/BLE_1.c ****     * Function Name: CyBle_GapcConnectDevice
-1033:.\Generated_Source\PSoC4/BLE_1.c ****     ***************************************************************************//**
-1034:.\Generated_Source\PSoC4/BLE_1.c ****     * 
-1035:.\Generated_Source\PSoC4/BLE_1.c ****     *  This function is used to send a connection request to the remote device with
-1036:.\Generated_Source\PSoC4/BLE_1.c ****     *  the connection parameters set in the component customizer. This function needs
-1037:.\Generated_Source\PSoC4/BLE_1.c ****     *  to be called only once after the target device is discovered by 
-1038:.\Generated_Source\PSoC4/BLE_1.c ****     *  CyBle_GapcStartScan() and further scanning has stopped. Scanning is 
-1039:.\Generated_Source\PSoC4/BLE_1.c ****     *  successfully stopped on invoking CyBle_GapcStopScan() and then receiving the
-1040:.\Generated_Source\PSoC4/BLE_1.c ****     *  event CYBLE_EVT_GAPC_SCAN_START_STOP with sub-parameter 'success' = 0x01u.
-1041:.\Generated_Source\PSoC4/BLE_1.c ****     *  
-1042:.\Generated_Source\PSoC4/BLE_1.c ****     *  On successful connection, the following events are generated at the GAP 
-1043:.\Generated_Source\PSoC4/BLE_1.c ****     *  Central device (as well as the GAP Peripheral device), in the following order.
-1044:.\Generated_Source\PSoC4/BLE_1.c ****     *  * CYBLE_EVT_GATT_CONNECT_IND
-1045:.\Generated_Source\PSoC4/BLE_1.c ****     *  * CYBLE_EVT_GAP_DEVICE_CONNECTED - If the device connects to a GAP Central and 
-1046:.\Generated_Source\PSoC4/BLE_1.c ****     *    Link Layer Privacy is disabled in component customizer.
-1047:.\Generated_Source\PSoC4/BLE_1.c ****     *  * CYBLE_EVT_GAP_ENHANCE_CONN_COMPLETE - If the device connects to a GAP Central and 
-1048:.\Generated_Source\PSoC4/BLE_1.c ****     *    Link Layer Privacy is enabled in component customizer.
-1049:.\Generated_Source\PSoC4/BLE_1.c ****     *  * CYBLE_EVT_GAP_DEVICE_CONNECTED
-1050:.\Generated_Source\PSoC4/BLE_1.c ****     *  
-1051:.\Generated_Source\PSoC4/BLE_1.c ****     *  A procedure is considered to have timed out if a connection response packet is 
-1052:.\Generated_Source\PSoC4/BLE_1.c ****     *  not received within time set by cyBle_connectingTimeout global variable
-1053:.\Generated_Source\PSoC4/BLE_1.c ****     *  (30 seconds by default). CYBLE_EVT_TIMEOUT event with CYBLE_GENERIC_TO parameter
-1054:.\Generated_Source\PSoC4/BLE_1.c ****     *  will indicate about connection procedure timeout. Connection will automatically
-1055:.\Generated_Source\PSoC4/BLE_1.c ****     *  be canceled and state will be changed to CYBLE_STATE_DISCONNECTED.
-1056:.\Generated_Source\PSoC4/BLE_1.c ****     * 
-1057:.\Generated_Source\PSoC4/BLE_1.c ****     *  \param address: The device address of the remote device to connect to. 
-1058:.\Generated_Source\PSoC4/BLE_1.c ****     *  
-1059:.\Generated_Source\PSoC4/BLE_1.c ****     * \return
-1060:.\Generated_Source\PSoC4/BLE_1.c ****     *  CYBLE_API_RESULT_T : Return value indicates if the function succeeded or 
-1061:.\Generated_Source\PSoC4/BLE_1.c ****     *  failed. Following are the possible error codes.
-1062:.\Generated_Source\PSoC4/BLE_1.c ****     *
-1063:.\Generated_Source\PSoC4/BLE_1.c ****     *   Errors codes                       | Description
-1064:.\Generated_Source\PSoC4/BLE_1.c ****     *   ------------                       | -----------
-1065:.\Generated_Source\PSoC4/BLE_1.c ****     *   CYBLE_ERROR_OK                     | On successful operation.
-1066:.\Generated_Source\PSoC4/BLE_1.c ****     *   CYBLE_ERROR_STACK_INTERNAL         | On error occurred in the BLE stack.
-1067:.\Generated_Source\PSoC4/BLE_1.c ****     *   CYBLE_ERROR_INVALID_PARAMETER      | On passing an invalid parameter.
-1068:.\Generated_Source\PSoC4/BLE_1.c ****     *   CYBLE_ERROR_INVALID_STATE          | On calling this API not in Disconnected state.
-1069:.\Generated_Source\PSoC4/BLE_1.c ****     *  
-1070:.\Generated_Source\PSoC4/BLE_1.c ****     ******************************************************************************/
-1071:.\Generated_Source\PSoC4/BLE_1.c ****     CYBLE_API_RESULT_T CyBle_GapcConnectDevice(const CYBLE_GAP_BD_ADDR_T * address)
-1072:.\Generated_Source\PSoC4/BLE_1.c ****     {
-1073:.\Generated_Source\PSoC4/BLE_1.c ****         CYBLE_API_RESULT_T apiResult;
-1074:.\Generated_Source\PSoC4/BLE_1.c ****         uint8 i;
-1075:.\Generated_Source\PSoC4/BLE_1.c **** 
-1076:.\Generated_Source\PSoC4/BLE_1.c ****         if(CyBle_GetState() != CYBLE_STATE_DISCONNECTED)
-1077:.\Generated_Source\PSoC4/BLE_1.c ****         {
-1078:.\Generated_Source\PSoC4/BLE_1.c ****             apiResult = CYBLE_ERROR_INVALID_STATE;
-1079:.\Generated_Source\PSoC4/BLE_1.c ****         }
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 41
-
-
-1080:.\Generated_Source\PSoC4/BLE_1.c ****         else if(address == NULL)
-1081:.\Generated_Source\PSoC4/BLE_1.c ****         {
-1082:.\Generated_Source\PSoC4/BLE_1.c ****             apiResult = CYBLE_ERROR_INVALID_PARAMETER;
-1083:.\Generated_Source\PSoC4/BLE_1.c ****         }
-1084:.\Generated_Source\PSoC4/BLE_1.c ****         else
-1085:.\Generated_Source\PSoC4/BLE_1.c ****         {
-1086:.\Generated_Source\PSoC4/BLE_1.c ****             for(i = 0u; i < CYBLE_GAP_BD_ADDR_SIZE; i++)
-1087:.\Generated_Source\PSoC4/BLE_1.c ****             {
-1088:.\Generated_Source\PSoC4/BLE_1.c ****                 cyBle_connectionParameters.peerBdAddr[i] = address->bdAddr[i];
-1089:.\Generated_Source\PSoC4/BLE_1.c ****             }
-1090:.\Generated_Source\PSoC4/BLE_1.c ****             cyBle_connectionParameters.peerAddrType = address -> type;
-1091:.\Generated_Source\PSoC4/BLE_1.c ****             apiResult = CyBle_GapcInitConnection(&cyBle_connectionParameters);
-1092:.\Generated_Source\PSoC4/BLE_1.c ****             
-1093:.\Generated_Source\PSoC4/BLE_1.c ****             if(apiResult == CYBLE_ERROR_OK)
-1094:.\Generated_Source\PSoC4/BLE_1.c ****             {
-1095:.\Generated_Source\PSoC4/BLE_1.c ****                 CyBle_SetState(CYBLE_STATE_CONNECTING);
-1096:.\Generated_Source\PSoC4/BLE_1.c ****                 if(cyBle_connectingTimeout != 0u)
-1097:.\Generated_Source\PSoC4/BLE_1.c ****                 {
-1098:.\Generated_Source\PSoC4/BLE_1.c ****                     (void)CyBle_StartTimer(cyBle_connectingTimeout);
-1099:.\Generated_Source\PSoC4/BLE_1.c ****                 }
-1100:.\Generated_Source\PSoC4/BLE_1.c ****             }
-1101:.\Generated_Source\PSoC4/BLE_1.c ****         }
-1102:.\Generated_Source\PSoC4/BLE_1.c ****         return (apiResult);
-1103:.\Generated_Source\PSoC4/BLE_1.c ****     }
-1104:.\Generated_Source\PSoC4/BLE_1.c ****     
-1105:.\Generated_Source\PSoC4/BLE_1.c **** 
-1106:.\Generated_Source\PSoC4/BLE_1.c ****     /******************************************************************************
-1107:.\Generated_Source\PSoC4/BLE_1.c ****     * Function Name: CyBle_GapcCancelDeviceConnection
-1108:.\Generated_Source\PSoC4/BLE_1.c ****     ***************************************************************************//**
-1109:.\Generated_Source\PSoC4/BLE_1.c ****     * 
-1110:.\Generated_Source\PSoC4/BLE_1.c ****     *  This function cancels a previously initiated connection with the remote 
-1111:.\Generated_Source\PSoC4/BLE_1.c ****     *  device. It is a blocking function. No event is generated on calling this 
-1112:.\Generated_Source\PSoC4/BLE_1.c ****     *  function. If the devices are already connected then this function should not
-1113:.\Generated_Source\PSoC4/BLE_1.c ****     *  be used. If you intend to disconnect from an existing connection, the function
-1114:.\Generated_Source\PSoC4/BLE_1.c ****     *  CyBle_GapDisconnect() should be used.
-1115:.\Generated_Source\PSoC4/BLE_1.c ****     * 
-1116:.\Generated_Source\PSoC4/BLE_1.c ****     * \return
-1117:.\Generated_Source\PSoC4/BLE_1.c ****     *  CYBLE_API_RESULT_T : Return value indicates if the function succeeded or 
-1118:.\Generated_Source\PSoC4/BLE_1.c ****     *  failed. Following are the possible error codes.
-1119:.\Generated_Source\PSoC4/BLE_1.c ****     *
-1120:.\Generated_Source\PSoC4/BLE_1.c ****     *   Errors codes                       | Description
-1121:.\Generated_Source\PSoC4/BLE_1.c ****     *   ---------------------------------- | --------------------------------------
-1122:.\Generated_Source\PSoC4/BLE_1.c ****     *   CYBLE_ERROR_OK                     | On successful operation.
-1123:.\Generated_Source\PSoC4/BLE_1.c ****     *   CYBLE_ERROR_STACK_INTERNAL         | An error occurred in the BLE stack.
-1124:.\Generated_Source\PSoC4/BLE_1.c ****     *   CYBLE_ERROR_INVALID_STATE          | On calling this API not in Connecting state.
-1125:.\Generated_Source\PSoC4/BLE_1.c ****     *  
-1126:.\Generated_Source\PSoC4/BLE_1.c ****     *******************************************************************************/
-1127:.\Generated_Source\PSoC4/BLE_1.c ****     CYBLE_API_RESULT_T CyBle_GapcCancelDeviceConnection(void)
-1128:.\Generated_Source\PSoC4/BLE_1.c ****     {
-1129:.\Generated_Source\PSoC4/BLE_1.c ****         CYBLE_API_RESULT_T apiResult;
-1130:.\Generated_Source\PSoC4/BLE_1.c ****         
-1131:.\Generated_Source\PSoC4/BLE_1.c ****         if(CyBle_GetState() != CYBLE_STATE_CONNECTING)
-1132:.\Generated_Source\PSoC4/BLE_1.c ****         {
-1133:.\Generated_Source\PSoC4/BLE_1.c ****             apiResult = CYBLE_ERROR_INVALID_STATE;
-1134:.\Generated_Source\PSoC4/BLE_1.c ****         }
-1135:.\Generated_Source\PSoC4/BLE_1.c ****         else 
-1136:.\Generated_Source\PSoC4/BLE_1.c ****         {
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 42
-
-
-1137:.\Generated_Source\PSoC4/BLE_1.c ****             apiResult = CyBle_GapcCancelConnection();
-1138:.\Generated_Source\PSoC4/BLE_1.c ****             
-1139:.\Generated_Source\PSoC4/BLE_1.c ****             if(cyBle_connectingTimeout != 0u)
-1140:.\Generated_Source\PSoC4/BLE_1.c ****             {
-1141:.\Generated_Source\PSoC4/BLE_1.c ****                 (void)CyBle_StopTimer();
-1142:.\Generated_Source\PSoC4/BLE_1.c ****             }
-1143:.\Generated_Source\PSoC4/BLE_1.c **** 
-1144:.\Generated_Source\PSoC4/BLE_1.c ****             if(apiResult == CYBLE_ERROR_OK)
-1145:.\Generated_Source\PSoC4/BLE_1.c ****             {
-1146:.\Generated_Source\PSoC4/BLE_1.c ****                 CyBle_SetState(CYBLE_STATE_DISCONNECTED);
-1147:.\Generated_Source\PSoC4/BLE_1.c ****             }
-1148:.\Generated_Source\PSoC4/BLE_1.c ****         }
-1149:.\Generated_Source\PSoC4/BLE_1.c ****         return (apiResult);
-1150:.\Generated_Source\PSoC4/BLE_1.c ****     }    
-1151:.\Generated_Source\PSoC4/BLE_1.c **** 
-1152:.\Generated_Source\PSoC4/BLE_1.c ****     
-1153:.\Generated_Source\PSoC4/BLE_1.c **** #endif /* CYBLE_GAP_ROLE_CENTRAL */
-1154:.\Generated_Source\PSoC4/BLE_1.c **** 
-1155:.\Generated_Source\PSoC4/BLE_1.c **** 
-1156:.\Generated_Source\PSoC4/BLE_1.c **** #if(CYBLE_GATT_ROLE_SERVER)
-1157:.\Generated_Source\PSoC4/BLE_1.c **** 
-1158:.\Generated_Source\PSoC4/BLE_1.c **** #if(CYBLE_GAP_ROLE_PERIPHERAL)
-1159:.\Generated_Source\PSoC4/BLE_1.c **** 
-1160:.\Generated_Source\PSoC4/BLE_1.c ****         /******************************************************************************
-1161:.\Generated_Source\PSoC4/BLE_1.c ****         * Function Name: CyBle_ChangeAdLocalName
-1162:.\Generated_Source\PSoC4/BLE_1.c ****         ***************************************************************************//**
-1163:.\Generated_Source\PSoC4/BLE_1.c ****         *  This API is used to set the local device name in the advertisement or scan 
-1164:.\Generated_Source\PSoC4/BLE_1.c ****         *  response data structure.
-1165:.\Generated_Source\PSoC4/BLE_1.c ****         * 
-1166:.\Generated_Source\PSoC4/BLE_1.c ****         *  \param name: The local device name string to be set in advertisement data 
-1167:.\Generated_Source\PSoC4/BLE_1.c ****         *            structure.
-1168:.\Generated_Source\PSoC4/BLE_1.c ****         *  \param dest: 0 - advertisement structure, not zero value selects scan response
-1169:.\Generated_Source\PSoC4/BLE_1.c ****         *              structure.
-1170:.\Generated_Source\PSoC4/BLE_1.c ****         * 
-1171:.\Generated_Source\PSoC4/BLE_1.c ****         * \return
-1172:.\Generated_Source\PSoC4/BLE_1.c ****         *  None
-1173:.\Generated_Source\PSoC4/BLE_1.c ****         *  
-1174:.\Generated_Source\PSoC4/BLE_1.c ****         *******************************************************************************/
-1175:.\Generated_Source\PSoC4/BLE_1.c ****         static void CyBle_ChangeAdLocalName(const char8 name[], uint8 dest)
-1176:.\Generated_Source\PSoC4/BLE_1.c ****         {
->>>>>>> origin/master
  1191              		.loc 1 1176 0
  1192              		.cfi_startproc
  1193 0000 80B5     		push	{r7, lr}
@@ -3511,11 +2518,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
 1177:Generated_Source\PSoC4/BLE_1.c ****             uint8 i;
 1178:Generated_Source\PSoC4/BLE_1.c ****             uint8 flag = 0u;
  1205              		.loc 1 1178 0
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 43
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 43
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 43
 
 
  1206 000e 1623     		mov	r3, #22
@@ -3572,17 +2575,10 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  1243 0048 D27F     		ldrb	r2, [r2, #31]
  1244 004a 1A70     		strb	r2, [r3]
  1245              	.L57:
-<<<<<<< HEAD
 1193:Generated_Source\PSoC4/BLE_1.c ****             }
 1194:Generated_Source\PSoC4/BLE_1.c ****             
 1195:Generated_Source\PSoC4/BLE_1.c ****             while((byteCounter < maxLength) && (0u == flag))
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 44
-=======
-1193:.\Generated_Source\PSoC4/BLE_1.c ****             }
-1194:.\Generated_Source\PSoC4/BLE_1.c ****             
-1195:.\Generated_Source\PSoC4/BLE_1.c ****             while((byteCounter < maxLength) && (0u == flag))
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 44
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 44
 
 
  1246              		.loc 1 1195 0
@@ -3642,11 +2638,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  1289              		.loc 1 1204 0 discriminator 1
  1290 0094 092B     		cmp	r3, #9
  1291 0096 04D1     		bne	.L61
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 45
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 45
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 45
 
 
  1292              	.L60:
@@ -3705,13 +2697,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  1330 00d0 002B     		cmp	r3, #0
  1331 00d2 BCD0     		beq	.L64
  1332              	.L63:
-<<<<<<< HEAD
 1219:Generated_Source\PSoC4/BLE_1.c ****                 }
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 46
-=======
-1219:.\Generated_Source\PSoC4/BLE_1.c ****                 }
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 46
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 46
 
 
 1220:Generated_Source\PSoC4/BLE_1.c ****             }
@@ -3771,11 +2758,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  1373 0118 1722     		mov	r2, #23
  1374 011a BA18     		add	r2, r7, r2
  1375 011c 1178     		ldrb	r1, [r2]
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 47
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 47
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 47
 
 
  1376 011e 1422     		mov	r2, #20
@@ -3835,11 +2818,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
 1240:Generated_Source\PSoC4/BLE_1.c ****                     /* Terminate string */
 1241:Generated_Source\PSoC4/BLE_1.c ****                     destBuffer[i] = (uint8)CYBLE_NULL_CHARCTER;
  1421              		.loc 1 1241 0
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 48
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 48
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 48
 
 
  1422 016a 1723     		mov	r3, #23
@@ -3894,13 +2873,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  1466              		.type	CyBle_GapSetLocalName, %function
  1467              	CyBle_GapSetLocalName:
  1468              	.LFB12:
-<<<<<<< HEAD
 1246:Generated_Source\PSoC4/BLE_1.c ****         
 1247:Generated_Source\PSoC4/BLE_1.c **** #endif /* (CYBLE_GAP_ROLE_PERIPHERAL) */  
 1248:Generated_Source\PSoC4/BLE_1.c ****     
 1249:Generated_Source\PSoC4/BLE_1.c ****     
 1250:Generated_Source\PSoC4/BLE_1.c ****     /******************************************************************************
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 49
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 49
 
 
 1251:Generated_Source\PSoC4/BLE_1.c ****     * Function Name: CyBle_GapSetLocalName
@@ -3930,43 +2908,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
 1275:Generated_Source\PSoC4/BLE_1.c ****     *******************************************************************************/
 1276:Generated_Source\PSoC4/BLE_1.c ****     CYBLE_API_RESULT_T CyBle_GapSetLocalName(const char8 name[])
 1277:Generated_Source\PSoC4/BLE_1.c ****     {
-=======
-1246:.\Generated_Source\PSoC4/BLE_1.c ****         
-1247:.\Generated_Source\PSoC4/BLE_1.c **** #endif /* (CYBLE_GAP_ROLE_PERIPHERAL) */  
-1248:.\Generated_Source\PSoC4/BLE_1.c ****     
-1249:.\Generated_Source\PSoC4/BLE_1.c ****     
-1250:.\Generated_Source\PSoC4/BLE_1.c ****     /******************************************************************************
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 49
-
-
-1251:.\Generated_Source\PSoC4/BLE_1.c ****     * Function Name: CyBle_GapSetLocalName
-1252:.\Generated_Source\PSoC4/BLE_1.c ****     ***************************************************************************//**
-1253:.\Generated_Source\PSoC4/BLE_1.c ****     *  This API is used to set the local device name - a Characteristic of the 
-1254:.\Generated_Source\PSoC4/BLE_1.c ****     *  GAP Service. If the characteristic length entered in the component customizer
-1255:.\Generated_Source\PSoC4/BLE_1.c ****     *  is shorter than the string specified by the "name" parameter, the local device
-1256:.\Generated_Source\PSoC4/BLE_1.c ****     *  name will be cut to the length specified in the customizer.
-1257:.\Generated_Source\PSoC4/BLE_1.c ****     * 
-1258:.\Generated_Source\PSoC4/BLE_1.c ****     *  \param name: The local device name string. The name string to be written as
-1259:.\Generated_Source\PSoC4/BLE_1.c ****     *              the local device name. It represents a UTF-8 encoded User
-1260:.\Generated_Source\PSoC4/BLE_1.c ****     *              Friendly Descriptive Name for the device. The length of the local
-1261:.\Generated_Source\PSoC4/BLE_1.c ****     *              device string is entered into the component customizer and it can
-1262:.\Generated_Source\PSoC4/BLE_1.c ****     *              be set to a value from 0 to 248 bytes. If the name contained in
-1263:.\Generated_Source\PSoC4/BLE_1.c ****     *              the parameter is shorter than the length from the customizer, the
-1264:.\Generated_Source\PSoC4/BLE_1.c ****     *              end of the name is indicated by a NULL octet (0x00).
-1265:.\Generated_Source\PSoC4/BLE_1.c ****     * 
-1266:.\Generated_Source\PSoC4/BLE_1.c ****     * \return
-1267:.\Generated_Source\PSoC4/BLE_1.c ****     *  CYBLE_API_RESULT_T : Return value indicates if the function succeeded or 
-1268:.\Generated_Source\PSoC4/BLE_1.c ****     *  failed. Following are the possible error codes.
-1269:.\Generated_Source\PSoC4/BLE_1.c ****     *
-1270:.\Generated_Source\PSoC4/BLE_1.c ****     *   Errors codes                       | Description
-1271:.\Generated_Source\PSoC4/BLE_1.c ****     *   ------------                       | -----------
-1272:.\Generated_Source\PSoC4/BLE_1.c ****     *   CYBLE_ERROR_OK                     | Function completed successfully.
-1273:.\Generated_Source\PSoC4/BLE_1.c ****     *   CYBLE_ERROR_INVALID_PARAMETER      | On specifying NULL as input parameter
-1274:.\Generated_Source\PSoC4/BLE_1.c ****     *  
-1275:.\Generated_Source\PSoC4/BLE_1.c ****     *******************************************************************************/
-1276:.\Generated_Source\PSoC4/BLE_1.c ****     CYBLE_API_RESULT_T CyBle_GapSetLocalName(const char8 name[])
-1277:.\Generated_Source\PSoC4/BLE_1.c ****     {
->>>>>>> origin/master
  1469              		.loc 1 1277 0
  1470              		.cfi_startproc
  1471 0000 80B5     		push	{r7, lr}
@@ -3997,11 +2938,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
 1285:Generated_Source\PSoC4/BLE_1.c ****             /* Get the pointer to the Device Name characteristic  */
 1286:Generated_Source\PSoC4/BLE_1.c ****             ptr = (char8 *) CYBLE_GATT_DB_ATTR_GET_ATTR_GEN_PTR(CYBLE_GAP_DEVICE_NAME_INDEX + 1u);
  1489              		.loc 1 1286 0
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 50
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 50
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 50
 
 
  1490 0016 2B4B     		ldr	r3, .L81
@@ -4061,11 +2998,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  1531 005a FA18     		add	r2, r7, r3
  1532 005c 0F23     		mov	r3, #15
  1533 005e FB18     		add	r3, r7, r3
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 51
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 51
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 51
 
 
  1534 0060 1278     		ldrb	r2, [r2]
@@ -4125,11 +3058,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  1573 00a2 181C     		mov	r0, r3
  1574 00a4 0121     		mov	r1, #1
  1575 00a6 FFF7FEFF 		bl	CyBle_ChangeAdLocalName
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 52
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 52
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 52
 
 
  1576 00aa 03E0     		b	.L79
@@ -4174,7 +3103,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  1606              		.type	CyBle_GapGetLocalName, %function
  1607              	CyBle_GapGetLocalName:
  1608              	.LFB13:
-<<<<<<< HEAD
 1321:Generated_Source\PSoC4/BLE_1.c **** 
 1322:Generated_Source\PSoC4/BLE_1.c **** 
 1323:Generated_Source\PSoC4/BLE_1.c ****     /******************************************************************************
@@ -4190,7 +3118,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
 1333:Generated_Source\PSoC4/BLE_1.c ****     *             string is entered into the component customizer and it can be set
 1334:Generated_Source\PSoC4/BLE_1.c ****     *             to a value from 0 to 248 bytes. If the name contained in the
 1335:Generated_Source\PSoC4/BLE_1.c ****     *             parameter is shorter than the length from the customizer, the end
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 53
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 53
 
 
 1336:Generated_Source\PSoC4/BLE_1.c ****     *             of the name is indicated by a NULL octet (0x00).
@@ -4207,40 +3135,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
 1347:Generated_Source\PSoC4/BLE_1.c ****     *******************************************************************************/
 1348:Generated_Source\PSoC4/BLE_1.c ****     CYBLE_API_RESULT_T CyBle_GapGetLocalName(char8 name[])
 1349:Generated_Source\PSoC4/BLE_1.c ****     {
-=======
-1321:.\Generated_Source\PSoC4/BLE_1.c **** 
-1322:.\Generated_Source\PSoC4/BLE_1.c **** 
-1323:.\Generated_Source\PSoC4/BLE_1.c ****     /******************************************************************************
-1324:.\Generated_Source\PSoC4/BLE_1.c ****     * Function Name: CyBle_GapGetLocalName
-1325:.\Generated_Source\PSoC4/BLE_1.c ****     ***************************************************************************//**
-1326:.\Generated_Source\PSoC4/BLE_1.c ****     *  
-1327:.\Generated_Source\PSoC4/BLE_1.c ****     *  This API is used to read the local device name - a Characteristic of the 
-1328:.\Generated_Source\PSoC4/BLE_1.c ****     *  GAP Service.
-1329:.\Generated_Source\PSoC4/BLE_1.c ****     * 
-1330:.\Generated_Source\PSoC4/BLE_1.c ****     * \param name: The local device name string. Used to read the local name to the
-1331:.\Generated_Source\PSoC4/BLE_1.c ****     *             given string array. It represents a UTF-8 encoded User Friendly 
-1332:.\Generated_Source\PSoC4/BLE_1.c ****     *             Descriptive Name for the device. The length of the local device
-1333:.\Generated_Source\PSoC4/BLE_1.c ****     *             string is entered into the component customizer and it can be set
-1334:.\Generated_Source\PSoC4/BLE_1.c ****     *             to a value from 0 to 248 bytes. If the name contained in the
-1335:.\Generated_Source\PSoC4/BLE_1.c ****     *             parameter is shorter than the length from the customizer, the end
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 53
-
-
-1336:.\Generated_Source\PSoC4/BLE_1.c ****     *             of the name is indicated by a NULL octet (0x00).
-1337:.\Generated_Source\PSoC4/BLE_1.c ****     * 
-1338:.\Generated_Source\PSoC4/BLE_1.c ****     * \return
-1339:.\Generated_Source\PSoC4/BLE_1.c ****     *  CYBLE_API_RESULT_T : Return value indicates if the function succeeded or 
-1340:.\Generated_Source\PSoC4/BLE_1.c ****     *  failed. Following are the possible error codes.
-1341:.\Generated_Source\PSoC4/BLE_1.c ****     *
-1342:.\Generated_Source\PSoC4/BLE_1.c ****     *   Errors codes                       | Description
-1343:.\Generated_Source\PSoC4/BLE_1.c ****     *   ------------                       | -----------
-1344:.\Generated_Source\PSoC4/BLE_1.c ****     *   CYBLE_ERROR_OK                     | Function completed successfully.
-1345:.\Generated_Source\PSoC4/BLE_1.c ****     *   CYBLE_ERROR_INVALID_PARAMETER      | On specifying NULL as input parameter
-1346:.\Generated_Source\PSoC4/BLE_1.c ****     *
-1347:.\Generated_Source\PSoC4/BLE_1.c ****     *******************************************************************************/
-1348:.\Generated_Source\PSoC4/BLE_1.c ****     CYBLE_API_RESULT_T CyBle_GapGetLocalName(char8 name[])
-1349:.\Generated_Source\PSoC4/BLE_1.c ****     {
->>>>>>> origin/master
  1609              		.loc 1 1349 0
  1610              		.cfi_startproc
  1611 0000 80B5     		push	{r7, lr}
@@ -4284,11 +3178,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  1634              		.loc 1 1364 0
  1635 001e 204B     		ldr	r3, .L90
  1636 0020 9B6B     		ldr	r3, [r3, #56]
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 54
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 54
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 54
 
 
  1637 0022 1A88     		ldrh	r2, [r3]
@@ -4348,11 +3238,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  1683 0070 3A69     		ldr	r2, [r7, #16]
  1684 0072 D318     		add	r3, r2, r3
  1685 0074 1B78     		ldrb	r3, [r3]
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 55
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 55
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 55
 
 
  1686 0076 002B     		cmp	r3, #0
@@ -4411,9 +3297,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  1727              		.type	CyBle_Get16ByPtr, %function
  1728              	CyBle_Get16ByPtr:
  1729              	.LFB14:
-<<<<<<< HEAD
 1382:Generated_Source\PSoC4/BLE_1.c **** 
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 56
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 56
 
 
 1383:Generated_Source\PSoC4/BLE_1.c **** #endif /* (CYBLE_GATT_ROLE_SERVER) */
@@ -4433,29 +3318,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
 1397:Generated_Source\PSoC4/BLE_1.c **** ******************************************************************************/
 1398:Generated_Source\PSoC4/BLE_1.c **** uint16 CyBle_Get16ByPtr(const uint8 ptr[])
 1399:Generated_Source\PSoC4/BLE_1.c **** {
-=======
-1382:.\Generated_Source\PSoC4/BLE_1.c **** 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 56
-
-
-1383:.\Generated_Source\PSoC4/BLE_1.c **** #endif /* (CYBLE_GATT_ROLE_SERVER) */
-1384:.\Generated_Source\PSoC4/BLE_1.c **** 
-1385:.\Generated_Source\PSoC4/BLE_1.c **** 
-1386:.\Generated_Source\PSoC4/BLE_1.c **** /******************************************************************************
-1387:.\Generated_Source\PSoC4/BLE_1.c **** * Function Name: CyBle_Get16ByPtr
-1388:.\Generated_Source\PSoC4/BLE_1.c **** ***************************************************************************//**
-1389:.\Generated_Source\PSoC4/BLE_1.c **** * 
-1390:.\Generated_Source\PSoC4/BLE_1.c **** *  Returns the two-bytes value by using a pointer to the LSB.
-1391:.\Generated_Source\PSoC4/BLE_1.c **** * 
-1392:.\Generated_Source\PSoC4/BLE_1.c **** *  \param ptr: Pointer to the LSB of two-bytes data (little endian).
-1393:.\Generated_Source\PSoC4/BLE_1.c **** * 
-1394:.\Generated_Source\PSoC4/BLE_1.c **** *  \return
-1395:.\Generated_Source\PSoC4/BLE_1.c **** *  uint16: Two-bytes data.
-1396:.\Generated_Source\PSoC4/BLE_1.c **** * 
-1397:.\Generated_Source\PSoC4/BLE_1.c **** ******************************************************************************/
-1398:.\Generated_Source\PSoC4/BLE_1.c **** uint16 CyBle_Get16ByPtr(const uint8 ptr[])
-1399:.\Generated_Source\PSoC4/BLE_1.c **** {
->>>>>>> origin/master
  1730              		.loc 1 1399 0
  1731              		.cfi_startproc
  1732 0000 80B5     		push	{r7, lr}
@@ -4496,11 +3358,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  1765              		.code	16
  1766              		.thumb_func
  1767              		.type	CyBle_Set16ByPtr, %function
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 57
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 57
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 57
 
 
  1768              	CyBle_Set16ByPtr:
@@ -4560,11 +3418,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  1802              		@ sp needed
  1803 002c 80BD     		pop	{r7, pc}
  1804              		.cfi_endproc
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 58
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 58
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 58
 
 
  1805              	.LFE15:
@@ -4624,11 +3478,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  1859 0056 02       		.uleb128 0x2
  1860 0057 08       		.byte	0x8
  1861 0058 07       		.byte	0x7
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 59
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 59
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 59
 
 
  1862 0059 08080000 		.4byte	.LASF7
@@ -4688,11 +3538,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  1916 00c7 08       		.uleb128 0x8
  1917 00c8 290A0000 		.4byte	.LASF17
  1918 00cc 00       		.sleb128 0
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 60
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 60
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 60
 
 
  1919 00cd 08       		.uleb128 0x8
@@ -4752,11 +3598,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  1973 0139 08       		.uleb128 0x8
  1974 013a 60150000 		.4byte	.LASF36
  1975 013e 2C       		.sleb128 44
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 61
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 61
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 61
 
 
  1976 013f 08       		.uleb128 0x8
@@ -4816,11 +3658,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  2030 01b6 08       		.uleb128 0x8
  2031 01b7 F7010000 		.4byte	.LASF55
  2032 01bb CB00     		.sleb128 75
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 62
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 62
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 62
 
 
  2033 01bd 08       		.uleb128 0x8
@@ -4880,11 +3718,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  2087 023b 08       		.uleb128 0x8
  2088 023c BD060000 		.4byte	.LASF74
  2089 0240 F500     		.sleb128 117
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 63
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 63
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 63
 
 
  2090 0242 08       		.uleb128 0x8
@@ -4944,11 +3778,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  2144 02b4 08       		.uleb128 0x8
  2145 02b5 98100000 		.4byte	.LASF91
  2146 02b9 08       		.sleb128 8
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 64
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 64
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 64
 
 
  2147 02ba 08       		.uleb128 0x8
@@ -5008,11 +3838,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  2201 0327 08       		.uleb128 0x8
  2202 0328 0E0C0000 		.4byte	.LASF110
  2203 032c FF01     		.sleb128 255
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 65
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 65
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 65
 
 
  2204 032e 08       		.uleb128 0x8
@@ -5072,11 +3898,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  2258 03a1 A8110000 		.4byte	.LASF119
  2259 03a5 03       		.byte	0x3
  2260 03a6 3B04     		.2byte	0x43b
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 66
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 66
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 66
 
 
  2261 03a8 77000000 		.4byte	0x77
@@ -5136,11 +3958,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  2315 041a 00       		.byte	0
  2316 041b 04       		.uleb128 0x4
  2317 041c B7020000 		.4byte	.LASF127
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 67
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 67
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 67
 
 
  2318 0420 03       		.byte	0x3
@@ -5199,13 +4017,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  2371 048b 77130000 		.4byte	.LASF135
  2372 048f 03       		.sleb128 3
  2373 0490 08       		.uleb128 0x8
-<<<<<<< HEAD
  2374 0491 1F100000 		.4byte	.LASF136
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 68
-=======
- 2374 0491 02100000 		.4byte	.LASF136
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 68
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 68
 
 
  2375 0495 04       		.sleb128 4
@@ -5265,11 +4078,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  2429 0506 0A       		.uleb128 0xa
  2430 0507 89050000 		.4byte	.LASF145
  2431 050b 04       		.byte	0x4
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 69
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 69
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 69
 
 
  2432 050c 4702     		.2byte	0x247
@@ -5329,11 +4138,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  2486 057e 6B000000 		.4byte	0x6b
  2487 0582 1F       		.byte	0x1f
  2488 0583 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 70
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 70
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 70
 
 
  2489 0584 04       		.uleb128 0x4
@@ -5393,11 +4198,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  2543 05f5 90050000 		.4byte	0x590
  2544 05f9 0D       		.uleb128 0xd
  2545 05fa 04       		.byte	0x4
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 71
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 71
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 71
 
 
  2546 05fb 6B000000 		.4byte	0x6b
@@ -5457,11 +4258,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  2600 0668 06       		.byte	0x6
  2601 0669 D3       		.byte	0xd3
  2602 066a 77000000 		.4byte	0x77
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 72
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 72
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 72
 
 
  2603 066e 00       		.byte	0
@@ -5521,11 +4318,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  2657 06d7 11       		.uleb128 0x11
  2658 06d8 4B050000 		.4byte	.LASF171
  2659 06dc 06       		.byte	0x6
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 73
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 73
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 73
 
 
  2660 06dd FF       		.byte	0xff
@@ -5585,11 +4378,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  2714 074f 75020000 		.4byte	.LASF178
  2715 0753 08       		.byte	0x8
  2716 0754 A5       		.byte	0xa5
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 74
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 74
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 74
 
 
  2717 0755 6B000000 		.4byte	0x6b
@@ -5649,11 +4438,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  2771 07c8 09       		.byte	0x9
  2772 07c9 CD07     		.2byte	0x7cd
  2773 07cb 9B070000 		.4byte	0x79b
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 75
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 75
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 75
 
 
  2774 07cf 19       		.uleb128 0x19
@@ -5713,11 +4498,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  2828 0843 EE080000 		.4byte	.LASF191
  2829 0847 01       		.byte	0x1
  2830 0848 B701     		.2byte	0x1b7
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 76
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 76
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 76
 
 
  2831 084a F8030000 		.4byte	0x3f8
@@ -5777,11 +4558,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  2885 08b9 14090000 		.4byte	0x914
  2886 08bd 1B       		.uleb128 0x1b
  2887 08be B7050000 		.4byte	.LASF199
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 77
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 77
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 77
 
 
  2888 08c2 01       		.byte	0x1
@@ -5841,11 +4618,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  2942 0938 01       		.uleb128 0x1
  2943 0939 9C       		.byte	0x9c
  2944 093a 85090000 		.4byte	0x985
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 78
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 78
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 78
 
 
  2945 093e 1B       		.uleb128 0x1b
@@ -5905,11 +4678,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  2999 09ad 6B000000 		.4byte	0x6b
  3000 09b1 02       		.uleb128 0x2
  3001 09b2 91       		.byte	0x91
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 79
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 79
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 79
 
 
  3002 09b3 67       		.sleb128 -25
@@ -5969,11 +4738,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  3056 0a1d 5B03     		.2byte	0x35b
  3057 0a1f F9050000 		.4byte	0x5f9
  3058 0a23 02       		.uleb128 0x2
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 80
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 80
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 80
 
 
  3059 0a24 91       		.byte	0x91
@@ -6033,11 +4798,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  3113 0a8e 02       		.uleb128 0x2
  3114 0a8f 91       		.byte	0x91
  3115 0a90 75       		.sleb128 -11
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 81
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 81
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 81
 
 
  3116 0a91 1C       		.uleb128 0x1c
@@ -6097,11 +4858,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  3170 0b00 91       		.byte	0x91
  3171 0b01 76       		.sleb128 -10
  3172 0b02 21       		.uleb128 0x21
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 82
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 82
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 82
 
 
  3173 0b03 6900     		.ascii	"i\000"
@@ -6161,11 +4918,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  3227 0b6d AF0B0000 		.4byte	.LASF215
  3228 0b71 01       		.byte	0x1
  3229 0b72 4705     		.2byte	0x547
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 83
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 83
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 83
 
 
  3230 0b74 6B000000 		.4byte	0x6b
@@ -6225,11 +4978,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  3284 0be3 25       		.uleb128 0x25
  3285 0be4 70747200 		.ascii	"ptr\000"
  3286 0be8 01       		.byte	0x1
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 84
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 84
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 84
 
 
  3287 0be9 8905     		.2byte	0x589
@@ -6289,11 +5038,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  3341 0c58 F70B0000 		.4byte	.LASF225
  3342 0c5c 07       		.byte	0x7
  3343 0c5d 8802     		.2byte	0x288
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 85
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 85
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 85
 
 
  3344 0c5f B0000000 		.4byte	0xb0
@@ -6353,11 +5098,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  3398 0cd4 05       		.uleb128 0x5
  3399 0cd5 03       		.byte	0x3
  3400 0cd6 00000000 		.4byte	cyBle_pendingFlashWrite
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 86
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 86
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 86
 
 
  3401 0cda 27       		.uleb128 0x27
@@ -6417,11 +5158,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  3455 0d56 00       		.byte	0
  3456              		.section	.debug_abbrev,"",%progbits
  3457              	.Ldebug_abbrev0:
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 87
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 87
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 87
 
 
  3458 0000 01       		.uleb128 0x1
@@ -6481,11 +5218,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  3512 0036 05       		.uleb128 0x5
  3513 0037 35       		.uleb128 0x35
  3514 0038 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 88
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 88
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 88
 
 
  3515 0039 49       		.uleb128 0x49
@@ -6545,11 +5278,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  3569 006f 05       		.uleb128 0x5
  3570 0070 49       		.uleb128 0x49
  3571 0071 13       		.uleb128 0x13
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 89
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 89
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 89
 
 
  3572 0072 38       		.uleb128 0x38
@@ -6609,11 +5338,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  3626 00a8 13       		.uleb128 0x13
  3627 00a9 00       		.byte	0
  3628 00aa 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 90
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 90
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 90
 
 
  3629 00ab 10       		.uleb128 0x10
@@ -6673,11 +5398,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  3683 00e1 14       		.uleb128 0x14
  3684 00e2 15       		.uleb128 0x15
  3685 00e3 01       		.byte	0x1
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 91
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 91
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 91
 
 
  3686 00e4 27       		.uleb128 0x27
@@ -6737,11 +5458,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  3740 011a 19       		.uleb128 0x19
  3741 011b 03       		.uleb128 0x3
  3742 011c 0E       		.uleb128 0xe
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 92
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 92
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 92
 
 
  3743 011d 3A       		.uleb128 0x3a
@@ -6801,11 +5518,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  3797 0155 02       		.uleb128 0x2
  3798 0156 18       		.uleb128 0x18
  3799 0157 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 93
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 93
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 93
 
 
  3800 0158 00       		.byte	0
@@ -6865,11 +5578,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  3854 018f 06       		.uleb128 0x6
  3855 0190 01       		.uleb128 0x1
  3856 0191 13       		.uleb128 0x13
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 94
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 94
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 94
 
 
  3857 0192 00       		.byte	0
@@ -6929,11 +5638,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  3911 01c9 3A       		.uleb128 0x3a
  3912 01ca 0B       		.uleb128 0xb
  3913 01cb 3B       		.uleb128 0x3b
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 95
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 95
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 95
 
 
  3914 01cc 05       		.uleb128 0x5
@@ -6993,11 +5698,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  3968 0204 18       		.uleb128 0x18
  3969 0205 00       		.byte	0
  3970 0206 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 96
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 96
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 96
 
 
  3971 0207 26       		.uleb128 0x26
@@ -7057,11 +5758,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4025 023d 3A       		.uleb128 0x3a
  4026 023e 0B       		.uleb128 0xb
  4027 023f 3B       		.uleb128 0x3b
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 97
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 97
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 97
 
 
  4028 0240 0B       		.uleb128 0xb
@@ -7121,11 +5818,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4082 0010 00000000 		.4byte	.LFB4
  4083 0014 34010000 		.4byte	.LFE4
  4084 0018 00000000 		.4byte	.LFB5
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 98
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 98
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 98
 
 
  4085 001c 18000000 		.4byte	.LFE5
@@ -7185,11 +5878,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4119              	.LASF159:
  4120 0072 4359424C 		.ascii	"CYBLE_CONN_HANDLE_T\000"
  4120      455F434F 
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 99
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 99
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 99
 
 
  4120      4E4E5F48 
@@ -7249,11 +5938,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4138      554E5355 
  4138      50504F52 
  4139              	.LASF133:
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 100
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 100
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 100
 
 
  4140 01a2 4359424C 		.ascii	"CYBLE_GAPP_CONNECTABLE_HIGH_DC_DIRECTED_ADV\000"
@@ -7313,11 +5998,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4159              	.LASF4:
  4160 0291 6C6F6E67 		.ascii	"long int\000"
  4160      20696E74 
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 101
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 101
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 101
 
 
  4160      00
@@ -7377,11 +6058,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4180      655F6275 
  4180      73795374 
  4180      61747573 
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 102
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 102
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 102
 
 
  4180      00
@@ -7441,11 +6118,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4198      7368436C 
  4199              	.LASF0:
  4200 04b5 7369676E 		.ascii	"signed char\000"
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 103
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 103
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 103
 
 
  4200      65642063 
@@ -7505,11 +6178,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4220      696C7465 
  4220      72506F6C 
  4220      69637900 
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 104
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 104
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 104
 
 
  4221              	.LASF58:
@@ -7569,11 +6238,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4243              	.LASF61:
  4244 0678 4359424C 		.ascii	"CYBLE_EVT_GATTC_EXEC_WRITE_RSP\000"
  4244      455F4556 
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 105
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 105
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 105
 
 
  4244      545F4741 
@@ -7633,11 +6298,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4266      657200
  4267              	.LASF82:
  4268 0755 4359424C 		.ascii	"CYBLE_EVT_MAX\000"
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 106
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 106
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 106
 
 
  4268      455F4556 
@@ -7660,7 +6321,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4274      545F4C32 
  4274      4341505F 
  4274      434F4E4E 
-<<<<<<< HEAD
  4275              	.LASF242:
  4276 07b2 47656E65 		.ascii	"Generated_Source\\PSoC4\\BLE_1.c\000"
  4276      72617465 
@@ -7698,7 +6358,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4289              	.LASF66:
  4290 0848 4359424C 		.ascii	"CYBLE_EVT_GATTC_STOP_CMD_COMPLETE\000"
  4290      455F4556 
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 107
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 107
 
 
  4290      545F4741 
@@ -7758,7 +6418,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4308      5454435F 
  4308      5843484E 
  4309              	.LASF65:
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 108
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 108
 
 
  4310 0948 4359424C 		.ascii	"CYBLE_EVT_GATTS_DATA_SIGNED_CMD_REQ\000"
@@ -7818,167 +6478,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4329      455F4556 
  4329      545F484F 
  4329      53545F49 
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 109
-=======
- 4275              	.LASF79:
- 4276 07b2 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DATA_WRITE_IND\000"
- 4276      455F4556 
- 4276      545F4C32 
- 4276      4341505F 
- 4276      43424643 
- 4277              	.LASF170:
- 4278 07d6 61747454 		.ascii	"attType\000"
- 4278      79706500 
- 4279              	.LASF148:
- 4280 07de 61647644 		.ascii	"advDataLen\000"
- 4280      6174614C 
- 4280      656E00
- 4281              	.LASF7:
- 4282 07e9 6C6F6E67 		.ascii	"long long unsigned int\000"
- 4282      206C6F6E 
- 4282      6720756E 
- 4282      7369676E 
- 4282      65642069 
- 4283              	.LASF220:
- 4284 0800 76616C75 		.ascii	"value\000"
- 4284      6500
- 4285              	.LASF243:
- 4286 0806 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\GitHub\\BioSnap\\Mas"
- 4286      73657273 
- 4286      5C4D6174 
- 4286      74686577 
- 4286      5C446F63 
- 4287 0833 7465725F 		.ascii	"ter_v2\\Master_2.cydsn\000"
- 4287      76325C4D 
- 4287      61737465 
- 4287      725F322E 
- 4287      63796473 
- 4288              	.LASF68:
- 4289 0849 4359424C 		.ascii	"CYBLE_EVT_GATTC_LONG_PROCEDURE_END\000"
- 4289      455F4556 
- 4289      545F4741 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 107
-
-
- 4289      5454435F 
- 4289      4C4F4E47 
- 4290              	.LASF66:
- 4291 086c 4359424C 		.ascii	"CYBLE_EVT_GATTC_STOP_CMD_COMPLETE\000"
- 4291      455F4556 
- 4291      545F4741 
- 4291      5454435F 
- 4291      53544F50 
- 4292              	.LASF216:
- 4293 088e 4379426C 		.ascii	"CyBle_GapGetLocalName\000"
- 4293      655F4761 
- 4293      70476574 
- 4293      4C6F6361 
- 4293      6C4E616D 
- 4294              	.LASF88:
- 4295 08a4 4359424C 		.ascii	"CYBLE_ERROR_OOB_NOT_AVAILABLE\000"
- 4295      455F4552 
- 4295      524F525F 
- 4295      4F4F425F 
- 4295      4E4F545F 
- 4296              	.LASF228:
- 4297 08c2 6379426C 		.ascii	"cyBle_discoveryParam\000"
- 4297      655F6469 
- 4297      73636F76 
- 4297      65727950 
- 4297      6172616D 
- 4298              	.LASF188:
- 4299 08d7 4379426C 		.ascii	"CyBle_ServiceInit\000"
- 4299      655F5365 
- 4299      72766963 
- 4299      65496E69 
- 4299      7400
- 4300              	.LASF97:
- 4301 08e9 4359424C 		.ascii	"CYBLE_ERROR_L2CAP_PSM_ALREADY_REGISTERED\000"
- 4301      455F4552 
- 4301      524F525F 
- 4301      4C324341 
- 4301      505F5053 
- 4302              	.LASF191:
- 4303 0912 646C6543 		.ascii	"dleConfigParams\000"
- 4303      6F6E6669 
- 4303      67506172 
- 4303      616D7300 
- 4304              	.LASF5:
- 4305 0922 6C6F6E67 		.ascii	"long unsigned int\000"
- 4305      20756E73 
- 4305      69676E65 
- 4305      6420696E 
- 4305      7400
- 4306              	.LASF56:
- 4307 0934 4359424C 		.ascii	"CYBLE_EVT_GATTS_WRITE_REQ\000"
- 4307      455F4556 
- 4307      545F4741 
- 4307      5454535F 
- 4307      57524954 
- 4308              	.LASF48:
- 4309 094e 4359424C 		.ascii	"CYBLE_EVT_GATTC_XCHNG_MTU_RSP\000"
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 108
-
-
- 4309      455F4556 
- 4309      545F4741 
- 4309      5454435F 
- 4309      5843484E 
- 4310              	.LASF65:
- 4311 096c 4359424C 		.ascii	"CYBLE_EVT_GATTS_DATA_SIGNED_CMD_REQ\000"
- 4311      455F4556 
- 4311      545F4741 
- 4311      5454535F 
- 4311      44415441 
- 4312              	.LASF209:
- 4313 0990 6E616D65 		.ascii	"name\000"
- 4313      00
- 4314              	.LASF192:
- 4315 0995 70726976 		.ascii	"privacyConfigParams\000"
- 4315      61637943 
- 4315      6F6E6669 
- 4315      67506172 
- 4315      616D7300 
- 4316              	.LASF166:
- 4317 09a9 61747446 		.ascii	"attFormatValue\000"
- 4317      6F726D61 
- 4317      7456616C 
- 4317      756500
- 4318              	.LASF152:
- 4319 09b8 4359424C 		.ascii	"CYBLE_GAPP_SCAN_RSP_DATA_T\000"
- 4319      455F4741 
- 4319      50505F53 
- 4319      43414E5F 
- 4319      5253505F 
- 4320              	.LASF235:
- 4321 09d3 6379426C 		.ascii	"cyBle_attValuesCCCD\000"
- 4321      655F6174 
- 4321      7456616C 
- 4321      75657343 
- 4321      43434400 
- 4322              	.LASF120:
- 4323 09e7 62756666 		.ascii	"bufferUnits\000"
- 4323      6572556E 
- 4323      69747300 
- 4324              	.LASF111:
- 4325 09f3 4359424C 		.ascii	"CYBLE_ERROR_NTF_DISABLED\000"
- 4325      455F4552 
- 4325      524F525F 
- 4325      4E54465F 
- 4325      44495341 
- 4326              	.LASF17:
- 4327 0a0c 4359424C 		.ascii	"CYBLE_EVT_HOST_INVALID\000"
- 4327      455F4556 
- 4327      545F484F 
- 4327      53545F49 
- 4327      4E56414C 
- 4328              	.LASF51:
- 4329 0a23 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_INFO_RSP\000"
- 4329      455F4556 
- 4329      545F4741 
- 4329      5454435F 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 109
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 109
 
 
  4329      4E56414C 
@@ -8003,7 +6503,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4337 0a85 4359424C 		.ascii	"CYBLE_EVT_GAP_PASSKEY_ENTRY_REQUEST\000"
  4337      455F4556 
  4337      545F4741 
-<<<<<<< HEAD
  4337      505F5041 
  4337      53534B45 
  4338              	.LASF31:
@@ -8039,7 +6538,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4349      61727400 
  4350              	.LASF202:
  4351 0b11 62446576 		.ascii	"bDevHandle\000"
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 110
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 110
 
 
  4351      48616E64 
@@ -8061,65 +6560,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4357      61746500 
  4358              	.LASF27:
  4359 0b4e 4359424C 		.ascii	"CYBLE_EVT_GAP_PASSKEY_DISPLAY_REQUEST\000"
-=======
- 4337      505F4445 
- 4337      56494345 
- 4338              	.LASF163:
- 4339 0aab 6D617841 		.ascii	"maxAttrLength\000"
- 4339      7474724C 
- 4339      656E6774 
- 4339      6800
- 4340              	.LASF219:
- 4341 0ab9 4379426C 		.ascii	"CyBle_Set16ByPtr\000"
- 4341      655F5365 
- 4341      74313642 
- 4341      79507472 
- 4341      00
- 4342              	.LASF124:
- 4343 0aca 646C654E 		.ascii	"dleNumTxBuffer\000"
- 4343      756D5478 
- 4343      42756666 
- 4343      657200
- 4344              	.LASF151:
- 4345 0ad9 7363616E 		.ascii	"scanRspDataLen\000"
- 4345      52737044 
- 4345      6174614C 
- 4345      656E00
- 4346              	.LASF196:
- 4347 0ae8 4379426C 		.ascii	"CyBle_Start\000"
- 4347      655F5374 
- 4347      61727400 
- 4348              	.LASF202:
- 4349 0af4 62446576 		.ascii	"bDevHandle\000"
- 4349      48616E64 
- 4349      6C6500
- 4350              	.LASF177:
- 4351 0aff 61747456 		.ascii	"attValuesCCCDFlashMemory\000"
- 4351      616C7565 
- 4351      73434343 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 110
-
-
- 4351      44466C61 
- 4351      73684D65 
- 4352              	.LASF160:
- 4353 0b18 61637475 		.ascii	"actualLength\000"
- 4353      616C4C65 
- 4353      6E677468 
- 4353      00
- 4354              	.LASF237:
- 4355 0b25 6379426C 		.ascii	"cyBle_state\000"
- 4355      655F7374 
- 4355      61746500 
- 4356              	.LASF27:
- 4357 0b31 4359424C 		.ascii	"CYBLE_EVT_GAP_PASSKEY_DISPLAY_REQUEST\000"
- 4357      455F4556 
- 4357      545F4741 
- 4357      505F5041 
- 4357      53534B45 
- 4358              	.LASF45:
- 4359 0b57 4359424C 		.ascii	"CYBLE_EVT_GATT_CONNECT_IND\000"
->>>>>>> origin/master
  4359      455F4556 
  4359      545F4741 
  4359      505F5041 
@@ -8145,7 +6585,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4368              	.LASF71:
  4369 0bb7 4359424C 		.ascii	"CYBLE_EVT_L2CAP_COMMAND_REJ\000"
  4369      455F4556 
-<<<<<<< HEAD
  4369      545F4C32 
  4369      4341505F 
  4369      434F4D4D 
@@ -8159,34 +6598,13 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4373 0bf7 6379426C 		.ascii	"cyBle_eventHandlerFlag\000"
  4373      655F6576 
  4373      656E7448 
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 111
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 111
 
 
  4373      616E646C 
  4373      6572466C 
  4374              	.LASF110:
  4375 0c0e 4359424C 		.ascii	"CYBLE_ERROR_MAX\000"
-=======
- 4369      545F4741 
- 4369      50435F53 
- 4369      43414E5F 
- 4370              	.LASF225:
- 4371 0bda 6379426C 		.ascii	"cyBle_eventHandlerFlag\000"
- 4371      655F6576 
- 4371      656E7448 
- 4371      616E646C 
- 4371      6572466C 
- 4372              	.LASF110:
- 4373 0bf1 4359424C 		.ascii	"CYBLE_ERROR_MAX\000"
- 4373      455F4552 
- 4373      524F525F 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 111
-
-
- 4373      4D415800 
- 4374              	.LASF108:
- 4375 0c01 4359424C 		.ascii	"CYBLE_ERROR_FLASH_WRITE\000"
->>>>>>> origin/master
  4375      455F4552 
  4375      524F525F 
  4375      4D415800 
@@ -8238,15 +6656,9 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4393 0cc8 4359424C 		.ascii	"CYBLE_EVT_GATTC_WRITE_RSP\000"
  4393      455F4556 
  4393      545F4741 
-<<<<<<< HEAD
  4393      5454435F 
  4393      57524954 
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 112
-=======
- 4393      50435F44 
- 4393      49524543 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 112
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 112
 
 
  4394              	.LASF42:
@@ -8301,13 +6713,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4412              	.LASF207:
  4413 0db2 64657374 		.ascii	"dest\000"
  4413      00
-<<<<<<< HEAD
  4414              	.LASF167:
  4415 0db7 61747456 		.ascii	"attValueUuid\000"
  4415      616C7565 
  4415      55756964 
  4415      00
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 113
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 113
 
 
  4416              	.LASF161:
@@ -8367,7 +6778,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4435      43424643 
  4436              	.LASF123:
  4437 0eb0 646C654D 		.ascii	"dleMaxRxCapability\000"
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 114
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 114
 
 
  4437      61785278 
@@ -8427,7 +6838,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4457      48414E44 
  4458              	.LASF218:
  4459 0f8c 4379426C 		.ascii	"CyBle_ChangeAdDeviceAddress\000"
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 115
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 115
 
 
  4459      655F4368 
@@ -8487,7 +6898,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4480              	.LASF64:
  4481 1077 4359424C 		.ascii	"CYBLE_EVT_GATTS_HANDLE_VALUE_CNF\000"
  4481      455F4556 
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 116
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 116
 
 
  4481      545F4741 
@@ -8520,227 +6931,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4491      655F6761 
  4491      74744442 
  4491      00
-=======
- 4414              	.LASF161:
- 4415 0da7 61747447 		.ascii	"attGenericVal\000"
- 4415      656E6572 
- 4415      69635661 
- 4415      6C00
- 4416              	.LASF73:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 113
-
-
- 4417 0db5 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_CNF\000"
- 4417      455F4556 
- 4417      545F4C32 
- 4417      4341505F 
- 4417      43424643 
- 4418              	.LASF236:
- 4419 0dd3 6379426C 		.ascii	"cyBle_flashStorage\000"
- 4419      655F666C 
- 4419      61736853 
- 4419      746F7261 
- 4419      676500
- 4420              	.LASF49:
- 4421 0de6 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BY_GROUP_TYPE_RSP\000"
- 4421      455F4556 
- 4421      545F4741 
- 4421      5454435F 
- 4421      52454144 
- 4422              	.LASF12:
- 4423 0e0d 666C6F61 		.ascii	"float\000"
- 4423      7400
- 4424              	.LASF232:
- 4425 0e13 6379426C 		.ascii	"cyBle_pendingFlashWrite\000"
- 4425      655F7065 
- 4425      6E64696E 
- 4425      67466C61 
- 4425      73685772 
- 4426              	.LASF240:
- 4427 0e2b 6379426C 		.ascii	"cyBle_advertisingIntervalType\000"
- 4427      655F6164 
- 4427      76657274 
- 4427      6973696E 
- 4427      67496E74 
- 4428              	.LASF204:
- 4429 0e49 4379426C 		.ascii	"CyBle_GappStartAdvertisement\000"
- 4429      655F4761 
- 4429      70705374 
- 4429      61727441 
- 4429      64766572 
- 4430              	.LASF142:
- 4431 0e66 64697265 		.ascii	"directAddrType\000"
- 4431      63744164 
- 4431      64725479 
- 4431      706500
- 4432              	.LASF72:
- 4433 0e75 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_IND\000"
- 4433      455F4556 
- 4433      545F4C32 
- 4433      4341505F 
- 4433      43424643 
- 4434              	.LASF123:
- 4435 0e93 646C654D 		.ascii	"dleMaxRxCapability\000"
- 4435      61785278 
- 4435      43617061 
- 4435      62696C69 
- 4435      747900
- 4436              	.LASF93:
- 4437 0ea6 4359424C 		.ascii	"CYBLE_ERROR_TX_POWER_READ\000"
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 114
-
-
- 4437      455F4552 
- 4437      524F525F 
- 4437      54585F50 
- 4437      4F574552 
- 4438              	.LASF198:
- 4439 0ec0 63616C6C 		.ascii	"callbackFunc\000"
- 4439      6261636B 
- 4439      46756E63 
- 4439      00
- 4440              	.LASF173:
- 4441 0ecd 61747456 		.ascii	"attValue\000"
- 4441      616C7565 
- 4441      00
- 4442              	.LASF1:
- 4443 0ed6 756E7369 		.ascii	"unsigned char\000"
- 4443      676E6564 
- 4443      20636861 
- 4443      7200
- 4444              	.LASF10:
- 4445 0ee4 75696E74 		.ascii	"uint16\000"
- 4445      313600
- 4446              	.LASF38:
- 4447 0eeb 4359424C 		.ascii	"CYBLE_EVT_GAP_KEYPRESS_NOTIFICATION\000"
- 4447      455F4556 
- 4447      545F4741 
- 4447      505F4B45 
- 4447      59505245 
- 4448              	.LASF233:
- 4449 0f0f 6379426C 		.ascii	"cyBle_peerBonding\000"
- 4449      655F7065 
- 4449      6572426F 
- 4449      6E64696E 
- 4449      6700
- 4450              	.LASF113:
- 4451 0f21 4359424C 		.ascii	"CYBLE_ERROR_CHAR_IS_NOT_DISCOVERED\000"
- 4451      455F4552 
- 4451      524F525F 
- 4451      43484152 
- 4451      5F49535F 
- 4452              	.LASF2:
- 4453 0f44 73686F72 		.ascii	"short int\000"
- 4453      7420696E 
- 4453      7400
- 4454              	.LASF63:
- 4455 0f4e 4359424C 		.ascii	"CYBLE_EVT_GATTC_HANDLE_VALUE_IND\000"
- 4455      455F4556 
- 4455      545F4741 
- 4455      5454435F 
- 4455      48414E44 
- 4456              	.LASF218:
- 4457 0f6f 4379426C 		.ascii	"CyBle_ChangeAdDeviceAddress\000"
- 4457      655F4368 
- 4457      616E6765 
- 4457      41644465 
- 4457      76696365 
- 4458              	.LASF81:
- 4459 0f8b 4359424C 		.ascii	"CYBLE_EVT_LE_PING_AUTH_TIMEOUT\000"
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 115
-
-
- 4459      455F4556 
- 4459      545F4C45 
- 4459      5F50494E 
- 4459      475F4155 
- 4460              	.LASF210:
- 4461 0faa 666C6167 		.ascii	"flag\000"
- 4461      00
- 4462              	.LASF89:
- 4463 0faf 4359424C 		.ascii	"CYBLE_ERROR_NO_CONNECTION\000"
- 4463      455F4552 
- 4463      524F525F 
- 4463      4E4F5F43 
- 4463      4F4E4E45 
- 4464              	.LASF194:
- 4465 0fc9 66656174 		.ascii	"featureHeapReq\000"
- 4465      75726548 
- 4465      65617052 
- 4465      657100
- 4466              	.LASF59:
- 4467 0fd8 4359424C 		.ascii	"CYBLE_EVT_GATTS_PREP_WRITE_REQ\000"
- 4467      455F4556 
- 4467      545F4741 
- 4467      5454535F 
- 4467      50524550 
- 4468              	.LASF138:
- 4469 0ff7 61647649 		.ascii	"advIntvMin\000"
- 4469      6E74764D 
- 4469      696E00
- 4470              	.LASF136:
- 4471 1002 4359424C 		.ascii	"CYBLE_GAPP_CONNECTABLE_LOW_DC_DIRECTED_ADV\000"
- 4471      455F4741 
- 4471      50505F43 
- 4471      4F4E4E45 
- 4471      43544142 
- 4472              	.LASF147:
- 4473 102d 61647644 		.ascii	"advData\000"
- 4473      61746100 
- 4474              	.LASF130:
- 4475 1035 66656174 		.ascii	"feature_mask\000"
- 4475      7572655F 
- 4475      6D61736B 
- 4475      00
- 4476              	.LASF244:
- 4477 1042 4379426C 		.ascii	"CyBle_ChangeAdLocalName\000"
- 4477      655F4368 
- 4477      616E6765 
- 4477      41644C6F 
- 4477      63616C4E 
- 4478              	.LASF64:
- 4479 105a 4359424C 		.ascii	"CYBLE_EVT_GATTS_HANDLE_VALUE_CNF\000"
- 4479      455F4556 
- 4479      545F4741 
- 4479      5454535F 
- 4479      48414E44 
- 4480              	.LASF91:
- 4481 107b 4359424C 		.ascii	"CYBLE_ERROR_REPEATED_ATTEMPTS\000"
- 4481      455F4552 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 116
-
-
- 4481      524F525F 
- 4481      52455045 
- 4481      41544544 
- 4482              	.LASF201:
- 4483 1099 4379426C 		.ascii	"CyBle_GapRemoveBondedDevice\000"
- 4483      655F4761 
- 4483      7052656D 
- 4483      6F766542 
- 4483      6F6E6465 
- 4484              	.LASF190:
- 4485 10b5 6379426C 		.ascii	"cyBle_stackDataBuff\000"
- 4485      655F7374 
- 4485      61636B44 
- 4485      61746142 
- 4485      75666600 
- 4486              	.LASF213:
- 4487 10c9 6D61784C 		.ascii	"maxLength\000"
- 4487      656E6774 
- 4487      6800
- 4488              	.LASF234:
- 4489 10d3 6379426C 		.ascii	"cyBle_gattDB\000"
- 4489      655F6761 
- 4489      74744442 
- 4489      00
- 4490              	.LASF242:
- 4491 10e0 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\BLE_1.c\000"
- 4491      6E657261 
- 4491      7465645F 
- 4491      536F7572 
- 4491      63655C50 
->>>>>>> origin/master
  4492              	.LASF15:
  4493 10fd 63686172 		.ascii	"char\000"
  4493      00
@@ -8767,13 +6957,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4501      6E746572 
  4501      76616C54 
  4502              	.LASF8:
-<<<<<<< HEAD
  4503 1165 756E7369 		.ascii	"unsigned int\000"
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 117
-=======
- 4503 1169 756E7369 		.ascii	"unsigned int\000"
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 117
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 117
 
 
  4503      676E6564 
@@ -8833,11 +7018,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4523      545F4841 
  4523      52445741 
  4523      52455F45 
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 118
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 118
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 118
 
 
  4524              	.LASF3:
@@ -8896,13 +7077,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4543      6172616D 
  4543      00
  4544              	.LASF137:
-<<<<<<< HEAD
  4545 1343 4359424C 		.ascii	"CYBLE_GAPP_ADV_T\000"
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 119
-=======
- 4545 1347 4359424C 		.ascii	"CYBLE_GAPP_ADV_T\000"
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 119
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 119
 
 
  4545      455F4741 
@@ -8961,13 +7137,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4563      4D49435F 
  4563      41555448 
  4564              	.LASF125:
-<<<<<<< HEAD
  4565 141e 4359424C 		.ascii	"CYBLE_DLE_CONFIG_PARAM_T\000"
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 120
-=======
- 4565 1422 4359424C 		.ascii	"CYBLE_DLE_CONFIG_PARAM_T\000"
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 120
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 120
 
 
  4565      455F444C 
@@ -9027,11 +7198,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4582              	.LASF36:
  4583 1560 4359424C 		.ascii	"CYBLE_EVT_GAP_KEYINFO_EXCHNGE_CMPLT\000"
  4583      455F4556 
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 121
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 121
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 121
 
 
  4583      545F4741 
@@ -9091,10 +7258,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 1
  4603      7453697A 
  4603      6500
  4604              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfSIRta.s 			page 122
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc2Cvq26.s 			page 122
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc1jxdeN.s 			page 122
 
 

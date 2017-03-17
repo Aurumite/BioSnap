@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccB96tKz.s 			page 1
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 1
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfnfDO7.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -29,7 +25,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 1
   22              		.type	ADC_intClock_StartEx, %function
   23              	ADC_intClock_StartEx:
   24              	.LFB0:
-<<<<<<< HEAD
   25              		.file 1 "Generated_Source\\PSoC4\\ADC_intClock.c"
    1:Generated_Source\PSoC4/ADC_intClock.c **** /*******************************************************************************
    2:Generated_Source\PSoC4/ADC_intClock.c **** * File Name: ADC_intClock.c
@@ -63,43 +58,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 1
   30:Generated_Source\PSoC4/ADC_intClock.c **** *
   31:Generated_Source\PSoC4/ADC_intClock.c **** * Parameters:
   32:Generated_Source\PSoC4/ADC_intClock.c **** *  alignClkDiv:  The divider to which phase alignment is performed when the
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccB96tKz.s 			page 2
-=======
-  25              		.file 1 ".\\Generated_Source\\PSoC4\\ADC_intClock.c"
-   1:.\Generated_Source\PSoC4/ADC_intClock.c **** /*******************************************************************************
-   2:.\Generated_Source\PSoC4/ADC_intClock.c **** * File Name: ADC_intClock.c
-   3:.\Generated_Source\PSoC4/ADC_intClock.c **** * Version 2.20
-   4:.\Generated_Source\PSoC4/ADC_intClock.c **** *
-   5:.\Generated_Source\PSoC4/ADC_intClock.c **** *  Description:
-   6:.\Generated_Source\PSoC4/ADC_intClock.c **** *   Provides system API for the clocking, interrupts and watchdog timer.
-   7:.\Generated_Source\PSoC4/ADC_intClock.c **** *
-   8:.\Generated_Source\PSoC4/ADC_intClock.c **** *  Note:
-   9:.\Generated_Source\PSoC4/ADC_intClock.c **** *   Documentation of the API's in this file is located in the
-  10:.\Generated_Source\PSoC4/ADC_intClock.c **** *   System Reference Guide provided with PSoC Creator.
-  11:.\Generated_Source\PSoC4/ADC_intClock.c **** *
-  12:.\Generated_Source\PSoC4/ADC_intClock.c **** ********************************************************************************
-  13:.\Generated_Source\PSoC4/ADC_intClock.c **** * Copyright 2008-2012, Cypress Semiconductor Corporation.  All rights reserved.
-  14:.\Generated_Source\PSoC4/ADC_intClock.c **** * You may use this file only in accordance with the license, terms, conditions,
-  15:.\Generated_Source\PSoC4/ADC_intClock.c **** * disclaimers, and limitations in the end user license agreement accompanying
-  16:.\Generated_Source\PSoC4/ADC_intClock.c **** * the software package with which this file was provided.
-  17:.\Generated_Source\PSoC4/ADC_intClock.c **** *******************************************************************************/
-  18:.\Generated_Source\PSoC4/ADC_intClock.c **** 
-  19:.\Generated_Source\PSoC4/ADC_intClock.c **** #include <cydevice_trm.h>
-  20:.\Generated_Source\PSoC4/ADC_intClock.c **** #include "ADC_intClock.h"
-  21:.\Generated_Source\PSoC4/ADC_intClock.c **** 
-  22:.\Generated_Source\PSoC4/ADC_intClock.c **** #if defined CYREG_PERI_DIV_CMD
-  23:.\Generated_Source\PSoC4/ADC_intClock.c **** 
-  24:.\Generated_Source\PSoC4/ADC_intClock.c **** /*******************************************************************************
-  25:.\Generated_Source\PSoC4/ADC_intClock.c **** * Function Name: ADC_intClock_StartEx
-  26:.\Generated_Source\PSoC4/ADC_intClock.c **** ********************************************************************************
-  27:.\Generated_Source\PSoC4/ADC_intClock.c **** *
-  28:.\Generated_Source\PSoC4/ADC_intClock.c **** * Summary:
-  29:.\Generated_Source\PSoC4/ADC_intClock.c **** *  Starts the clock, aligned to the specified running clock.
-  30:.\Generated_Source\PSoC4/ADC_intClock.c **** *
-  31:.\Generated_Source\PSoC4/ADC_intClock.c **** * Parameters:
-  32:.\Generated_Source\PSoC4/ADC_intClock.c **** *  alignClkDiv:  The divider to which phase alignment is performed when the
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 2
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfnfDO7.s 			page 2
 
 
   33:Generated_Source\PSoC4/ADC_intClock.c **** *    clock is started.
@@ -159,11 +118,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 1
   60              		.align	2
   61              	.L3:
   62 0024 00000140 		.word	1073807360
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccB96tKz.s 			page 3
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 3
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfnfDO7.s 			page 3
 
 
   63 0028 41000080 		.word	-2147483583
@@ -178,7 +133,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 1
   72              		.type	ADC_intClock_Stop, %function
   73              	ADC_intClock_Stop:
   74              	.LFB1:
-<<<<<<< HEAD
   52:Generated_Source\PSoC4/ADC_intClock.c **** 
   53:Generated_Source\PSoC4/ADC_intClock.c **** #else
   54:Generated_Source\PSoC4/ADC_intClock.c **** 
@@ -224,55 +178,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 1
   94:Generated_Source\PSoC4/ADC_intClock.c **** *******************************************************************************/
   95:Generated_Source\PSoC4/ADC_intClock.c **** void ADC_intClock_Stop(void)
   96:Generated_Source\PSoC4/ADC_intClock.c **** {
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccB96tKz.s 			page 4
-=======
-  52:.\Generated_Source\PSoC4/ADC_intClock.c **** 
-  53:.\Generated_Source\PSoC4/ADC_intClock.c **** #else
-  54:.\Generated_Source\PSoC4/ADC_intClock.c **** 
-  55:.\Generated_Source\PSoC4/ADC_intClock.c **** /*******************************************************************************
-  56:.\Generated_Source\PSoC4/ADC_intClock.c **** * Function Name: ADC_intClock_Start
-  57:.\Generated_Source\PSoC4/ADC_intClock.c **** ********************************************************************************
-  58:.\Generated_Source\PSoC4/ADC_intClock.c **** *
-  59:.\Generated_Source\PSoC4/ADC_intClock.c **** * Summary:
-  60:.\Generated_Source\PSoC4/ADC_intClock.c **** *  Starts the clock.
-  61:.\Generated_Source\PSoC4/ADC_intClock.c **** *
-  62:.\Generated_Source\PSoC4/ADC_intClock.c **** * Parameters:
-  63:.\Generated_Source\PSoC4/ADC_intClock.c **** *  None
-  64:.\Generated_Source\PSoC4/ADC_intClock.c **** *
-  65:.\Generated_Source\PSoC4/ADC_intClock.c **** * Returns:
-  66:.\Generated_Source\PSoC4/ADC_intClock.c **** *  None
-  67:.\Generated_Source\PSoC4/ADC_intClock.c **** *
-  68:.\Generated_Source\PSoC4/ADC_intClock.c **** *******************************************************************************/
-  69:.\Generated_Source\PSoC4/ADC_intClock.c **** 
-  70:.\Generated_Source\PSoC4/ADC_intClock.c **** void ADC_intClock_Start(void)
-  71:.\Generated_Source\PSoC4/ADC_intClock.c **** {
-  72:.\Generated_Source\PSoC4/ADC_intClock.c ****     /* Set the bit to enable the clock. */
-  73:.\Generated_Source\PSoC4/ADC_intClock.c ****     ADC_intClock_ENABLE_REG |= ADC_intClock__ENABLE_MASK;
-  74:.\Generated_Source\PSoC4/ADC_intClock.c **** }
-  75:.\Generated_Source\PSoC4/ADC_intClock.c **** 
-  76:.\Generated_Source\PSoC4/ADC_intClock.c **** #endif /* CYREG_PERI_DIV_CMD */
-  77:.\Generated_Source\PSoC4/ADC_intClock.c **** 
-  78:.\Generated_Source\PSoC4/ADC_intClock.c **** 
-  79:.\Generated_Source\PSoC4/ADC_intClock.c **** /*******************************************************************************
-  80:.\Generated_Source\PSoC4/ADC_intClock.c **** * Function Name: ADC_intClock_Stop
-  81:.\Generated_Source\PSoC4/ADC_intClock.c **** ********************************************************************************
-  82:.\Generated_Source\PSoC4/ADC_intClock.c **** *
-  83:.\Generated_Source\PSoC4/ADC_intClock.c **** * Summary:
-  84:.\Generated_Source\PSoC4/ADC_intClock.c **** *  Stops the clock and returns immediately. This API does not require the
-  85:.\Generated_Source\PSoC4/ADC_intClock.c **** *  source clock to be running but may return before the hardware is actually
-  86:.\Generated_Source\PSoC4/ADC_intClock.c **** *  disabled.
-  87:.\Generated_Source\PSoC4/ADC_intClock.c **** *
-  88:.\Generated_Source\PSoC4/ADC_intClock.c **** * Parameters:
-  89:.\Generated_Source\PSoC4/ADC_intClock.c **** *  None
-  90:.\Generated_Source\PSoC4/ADC_intClock.c **** *
-  91:.\Generated_Source\PSoC4/ADC_intClock.c **** * Returns:
-  92:.\Generated_Source\PSoC4/ADC_intClock.c **** *  None
-  93:.\Generated_Source\PSoC4/ADC_intClock.c **** *
-  94:.\Generated_Source\PSoC4/ADC_intClock.c **** *******************************************************************************/
-  95:.\Generated_Source\PSoC4/ADC_intClock.c **** void ADC_intClock_Stop(void)
-  96:.\Generated_Source\PSoC4/ADC_intClock.c **** {
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 4
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfnfDO7.s 			page 4
 
 
   75              		.loc 1 96 0
@@ -332,11 +238,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 1
  110              		.code	16
  111              		.thumb_func
  112              		.type	ADC_intClock_SetFractionalDividerRegister, %function
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccB96tKz.s 			page 5
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 5
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfnfDO7.s 			page 5
 
 
  113              	ADC_intClock_SetFractionalDividerRegister:
@@ -396,11 +298,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 1
  146:Generated_Source\PSoC4/ADC_intClock.c ****         ((uint32)((uint32)clkDivider <<  ADC_intClock_DIV_INT_SHIFT) & ADC_intClock_DIV_INT_MASK) |
  137              		.loc 1 146 0
  138 001c BB1D     		add	r3, r7, #6
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccB96tKz.s 			page 6
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 6
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfnfDO7.s 			page 6
 
 
  139 001e 1B88     		ldrh	r3, [r3]
@@ -455,21 +353,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 1
  174              		.type	ADC_intClock_GetDividerRegister, %function
  175              	ADC_intClock_GetDividerRegister:
  176              	.LFB3:
-<<<<<<< HEAD
  159:Generated_Source\PSoC4/ADC_intClock.c **** 
  160:Generated_Source\PSoC4/ADC_intClock.c **** 
  161:Generated_Source\PSoC4/ADC_intClock.c **** /*******************************************************************************
  162:Generated_Source\PSoC4/ADC_intClock.c **** * Function Name: ADC_intClock_GetDividerRegister
  163:Generated_Source\PSoC4/ADC_intClock.c **** ********************************************************************************
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccB96tKz.s 			page 7
-=======
- 159:.\Generated_Source\PSoC4/ADC_intClock.c **** 
- 160:.\Generated_Source\PSoC4/ADC_intClock.c **** 
- 161:.\Generated_Source\PSoC4/ADC_intClock.c **** /*******************************************************************************
- 162:.\Generated_Source\PSoC4/ADC_intClock.c **** * Function Name: ADC_intClock_GetDividerRegister
- 163:.\Generated_Source\PSoC4/ADC_intClock.c **** ********************************************************************************
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 7
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfnfDO7.s 			page 7
 
 
  164:Generated_Source\PSoC4/ADC_intClock.c **** *
@@ -525,19 +414,11 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 1
  209              		.type	ADC_intClock_GetFractionalDividerRegister, %function
  210              	ADC_intClock_GetFractionalDividerRegister:
  211              	.LFB4:
-<<<<<<< HEAD
  181:Generated_Source\PSoC4/ADC_intClock.c **** 
  182:Generated_Source\PSoC4/ADC_intClock.c **** 
  183:Generated_Source\PSoC4/ADC_intClock.c **** /*******************************************************************************
  184:Generated_Source\PSoC4/ADC_intClock.c **** * Function Name: ADC_intClock_GetFractionalDividerRegister
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccB96tKz.s 			page 8
-=======
- 181:.\Generated_Source\PSoC4/ADC_intClock.c **** 
- 182:.\Generated_Source\PSoC4/ADC_intClock.c **** 
- 183:.\Generated_Source\PSoC4/ADC_intClock.c **** /*******************************************************************************
- 184:.\Generated_Source\PSoC4/ADC_intClock.c **** * Function Name: ADC_intClock_GetFractionalDividerRegister
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 8
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfnfDO7.s 			page 8
 
 
  185:Generated_Source\PSoC4/ADC_intClock.c **** ********************************************************************************
@@ -597,11 +478,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 1
  243 0015 CA010000 		.4byte	.LASF27
  244 0019 00000000 		.4byte	.Ldebug_ranges0+0
  245 001d 00000000 		.4byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccB96tKz.s 			page 9
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 9
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfnfDO7.s 			page 9
 
 
  246 0021 00000000 		.4byte	.Ldebug_line0
@@ -661,11 +538,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 1
  300 0089 9A01     		.2byte	0x19a
  301 008b 48000000 		.4byte	0x48
  302 008f 02       		.uleb128 0x2
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccB96tKz.s 			page 10
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 10
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfnfDO7.s 			page 10
 
 
  303 0090 04       		.byte	0x4
@@ -725,11 +598,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 1
  357 0100 C9000000 		.4byte	.LASF19
  358 0104 01       		.byte	0x1
  359 0105 86       		.byte	0x86
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccB96tKz.s 			page 11
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 11
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfnfDO7.s 			page 11
 
 
  360 0106 77000000 		.4byte	0x77
@@ -789,11 +658,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 1
  414 0004 0E       		.uleb128 0xe
  415 0005 13       		.uleb128 0x13
  416 0006 0B       		.uleb128 0xb
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccB96tKz.s 			page 12
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 12
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfnfDO7.s 			page 12
 
 
  417 0007 03       		.uleb128 0x3
@@ -853,11 +718,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 1
  471 003d 06       		.uleb128 0x6
  472 003e 2E       		.uleb128 0x2e
  473 003f 01       		.byte	0x1
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccB96tKz.s 			page 13
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 13
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfnfDO7.s 			page 13
 
 
  474 0040 3F       		.uleb128 0x3f
@@ -917,11 +778,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 1
  528 0077 40       		.uleb128 0x40
  529 0078 18       		.uleb128 0x18
  530 0079 9742     		.uleb128 0x2117
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccB96tKz.s 			page 14
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 14
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfnfDO7.s 			page 14
 
 
  531 007b 19       		.uleb128 0x19
@@ -981,11 +838,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 1
  585 0018 00000000 		.4byte	.LFB1
  586 001c 20000000 		.4byte	.LFE1-.LFB1
  587 0020 00000000 		.4byte	.LFB2
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccB96tKz.s 			page 15
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 15
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfnfDO7.s 			page 15
 
 
  588 0024 44000000 		.4byte	.LFE2-.LFB2
@@ -1019,7 +872,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 1
  612              	.LASF15:
  613 0000 72656733 		.ascii	"reg32\000"
  613      3200
-<<<<<<< HEAD
  614              	.LASF17:
  615 0006 4144435F 		.ascii	"ADC_intClock_SetFractionalDividerRegister\000"
  615      696E7443 
@@ -1046,7 +898,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 1
  623      696E7443 
  623      6C6F636B 
  623      5F476574 
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccB96tKz.s 			page 16
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfnfDO7.s 			page 16
 
 
  623      44697669 
@@ -1106,96 +958,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 1
  645      2D736563 
  645      74696F6E 
  646              	.LASF10:
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccB96tKz.s 			page 17
-=======
- 614              	.LASF26:
- 615 0006 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\ADC_intClock.c\000"
- 615      6E657261 
- 615      7465645F 
- 615      536F7572 
- 615      63655C50 
- 616              	.LASF17:
- 617 002e 4144435F 		.ascii	"ADC_intClock_SetFractionalDividerRegister\000"
- 617      696E7443 
- 617      6C6F636B 
- 617      5F536574 
- 617      46726163 
- 618              	.LASF21:
- 619 0058 6D61736B 		.ascii	"maskVal\000"
- 619      56616C00 
- 620              	.LASF28:
- 621 0060 4144435F 		.ascii	"ADC_intClock_Stop\000"
- 621      696E7443 
- 621      6C6F636B 
- 621      5F53746F 
- 621      7000
- 622              	.LASF27:
- 623 0072 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\GitHub\\BioSnap\\Mas"
- 623      73657273 
- 623      5C4D6174 
- 623      74686577 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 16
-
-
- 623      5C446F63 
- 624 009f 7465725F 		.ascii	"ter_v2\\Master_2.cydsn\000"
- 624      76325C4D 
- 624      61737465 
- 624      725F322E 
- 624      63796473 
- 625              	.LASF23:
- 626 00b5 4144435F 		.ascii	"ADC_intClock_GetDividerRegister\000"
- 626      696E7443 
- 626      6C6F636B 
- 626      5F476574 
- 626      44697669 
- 627              	.LASF12:
- 628 00d5 666C6F61 		.ascii	"float\000"
- 628      7400
- 629              	.LASF1:
- 630 00db 756E7369 		.ascii	"unsigned char\000"
- 630      676E6564 
- 630      20636861 
- 630      7200
- 631              	.LASF5:
- 632 00e9 6C6F6E67 		.ascii	"long unsigned int\000"
- 632      20756E73 
- 632      69676E65 
- 632      6420696E 
- 632      7400
- 633              	.LASF3:
- 634 00fb 73686F72 		.ascii	"short unsigned int\000"
- 634      7420756E 
- 634      7369676E 
- 634      65642069 
- 634      6E7400
- 635              	.LASF19:
- 636 010e 636C6B44 		.ascii	"clkDivider\000"
- 636      69766964 
- 636      657200
- 637              	.LASF13:
- 638 0119 646F7562 		.ascii	"double\000"
- 638      6C6500
- 639              	.LASF22:
- 640 0120 72656756 		.ascii	"regVal\000"
- 640      616C00
- 641              	.LASF18:
- 642 0127 616C6967 		.ascii	"alignClkDiv\000"
- 642      6E436C6B 
- 642      44697600 
- 643              	.LASF20:
- 644 0133 636C6B46 		.ascii	"clkFractional\000"
- 644      72616374 
- 644      696F6E61 
- 644      6C00
- 645              	.LASF25:
- 646 0141 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 646      4320342E 
- 646      392E3320 
- 646      32303135 
- 646      30333033 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 17
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfnfDO7.s 			page 17
 
 
  647 018a 75696E74 		.ascii	"uint16\000"
@@ -1255,11 +1018,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 1
  670      696E7443 
  670      6C6F636B 
  670      5F537461 
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccB96tKz.s 			page 18
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccCoiOJc.s 			page 18
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccfnfDO7.s 			page 18
 
 
  670      72744578 

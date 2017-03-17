@@ -1,9 +1,5 @@
 # Master_2
-<<<<<<< HEAD
-# 2017-03-02 01:33:56Z
-=======
-# 2017-03-10 06:58:56Z
->>>>>>> origin/master
+# 2017-03-17 19:40:20Z
 
 # IO_6@[IOP=(0)][IoId=(6)] is reserved: SWDDebugEnabled
 dont_use_io iocell 0 6

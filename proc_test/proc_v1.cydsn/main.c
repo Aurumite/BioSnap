@@ -27,6 +27,7 @@ int charCode;
 CYBLE_CONN_HANDLE_T connectionHandle; 
 
 uint32 tsLastReport = 0;
+uint32 otherLastReport = 0; //last report time for all other sensors besides MAX30100
 
 const int ACCELEROMETER = 0;
 const int BATTERY = 1;
@@ -194,25 +195,31 @@ int main()
         if(deviceConnected && busyStatus == CYBLE_STACK_STATE_FREE){
             PulseOximeter_update();
             elapsed = millis() - tsLastReport;
+            
+            if(millis() - otherLastReport > 100){
+                temp = getTemperature();
+                updateCharacteristic(TEMPERATURE, CYBLE_BIOSNAP_TEMPERATURE_CHAR_HANDLE, temp);
+            
+                accel = getAccelXYZ();
+                updateCharacteristic(ACCELEROMETER, CYBLE_BIOSNAP_ACCELEROMETER_CHAR_HANDLE, accel);
+                
+                bat = getBattery();
+                updateCharacteristic(BATTERY, CYBLE_BIOSNAP_BATTERY_CHAR_HANDLE, bat);
+                
+                otherLastReport = millis();
+            }
             if (elapsed > REPORTING_PERIOD_MS) {
                 oxygen = (uint32)(PulseOximeter_getSpO2());
                 heart = (uint32)(PulseOximeter_getHeartRate());
-                updateCharacteristic(HEART, CYBLE_BIOSNAP_HEART_CHAR_HANDLE, reverseUint32(heart));
-                updateCharacteristic(OXYGEN, CYBLE_BIOSNAP_OXYGEN_CHAR_HANDLE, reverseUint32(oxygen));
+                updateCharacteristic(HEART, CYBLE_BIOSNAP_HEART_CHAR_HANDLE, heart);
+                updateCharacteristic(OXYGEN, CYBLE_BIOSNAP_OXYGEN_CHAR_HANDLE, oxygen);
                 
                 tsLastReport = millis();
             }
-            temp = getTemperature();
-            updateCharacteristic(TEMPERATURE, CYBLE_BIOSNAP_TEMPERATURE_CHAR_HANDLE, reverseUint32(temp));
-        
-            accel = getAccelXYZ();
-            updateCharacteristic(ACCELEROMETER, CYBLE_BIOSNAP_ACCELEROMETER_CHAR_HANDLE, reverseUint32(accel));
-            
-            bat = getBattery();
-            updateCharacteristic(BATTERY, CYBLE_BIOSNAP_BATTERY_CHAR_HANDLE, bat);
+
             
         }
-        CyDelay(10);
+//        CyDelay(10);
     }
 }
 

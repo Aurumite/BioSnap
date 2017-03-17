@@ -251,6 +251,8 @@
 <v>Master_2\Master_2\CortexM0\ARM_GCC_493\Debug\Listing Files\ADC_intClock.lst</v>
 <v>Master_2\Master_2\CortexM0\ARM_GCC_493\Debug\Listing Files\ADC_IRQ.lst</v>
 <v>Master_2\Master_2\CortexM0\ARM_GCC_493\Debug\Listing Files\ADC_PM.lst</v>
+<v>Master_2\Master_2\CortexM0\ARM_GCC_493\Debug\Listing Files\BAdvertLED.lst</v>
+<v>Master_2\Master_2\CortexM0\ARM_GCC_493\Debug\Listing Files\BAdvertLED_PM.lst</v>
 <v>Master_2\Master_2\CortexM0\ARM_GCC_493\Debug\Listing Files\bat_in.lst</v>
 <v>Master_2\Master_2\CortexM0\ARM_GCC_493\Debug\Listing Files\bat_in_PM.lst</v>
 <v>Master_2\Master_2\CortexM0\ARM_GCC_493\Debug\Listing Files\BLE_1.lst</v>
@@ -311,6 +313,8 @@
 <v>Master_2\Master_2\CortexM0\ARM_GCC_493\Debug\Listing Files\ADC_intClock.lst</v>
 <v>Master_2\Master_2\CortexM0\ARM_GCC_493\Debug\Listing Files\ADC_IRQ.lst</v>
 <v>Master_2\Master_2\CortexM0\ARM_GCC_493\Debug\Listing Files\ADC_PM.lst</v>
+<v>Master_2\Master_2\CortexM0\ARM_GCC_493\Debug\Listing Files\BAdvertLED.lst</v>
+<v>Master_2\Master_2\CortexM0\ARM_GCC_493\Debug\Listing Files\BAdvertLED_PM.lst</v>
 <v>Master_2\Master_2\CortexM0\ARM_GCC_493\Debug\Listing Files\bat_in.lst</v>
 <v>Master_2\Master_2\CortexM0\ARM_GCC_493\Debug\Listing Files\bat_in_PM.lst</v>
 <v>Master_2\Master_2\CortexM0\ARM_GCC_493\Debug\Listing Files\BLE_1.lst</v>
@@ -345,8 +349,6 @@
 <v>Master_2\Master_2\CortexM0\ARM_GCC_493\Debug\Listing Files\I2C_1_sda_PM.lst</v>
 <v>Master_2\Master_2\CortexM0\ARM_GCC_493\Debug\Listing Files\isr_minute.lst</v>
 <v>Master_2\Master_2\CortexM0\ARM_GCC_493\Debug\Listing Files\main.lst</v>
-<v>Master_2\Master_2\CortexM0\ARM_GCC_493\Debug\Listing Files\MAX30100_All.lst</v>
-<v>Master_2\Master_2\CortexM0\ARM_GCC_493\Debug\Listing Files\temp_in.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -405,7 +407,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1626, 721" SelectedTabbedMdiWindow="cb681b30-11a1-4b92-b72e-994a986b22df"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="777336ad-ea45-4d47-aea7-2688efbd2a26" /><DocumentWindow Key="c255f041-b503-4a40-a182-4619c5c75158" Guid="cb681b30-11a1-4b92-b72e-994a986b22df" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1626, 721" SelectedTabbedMdiWindow="21734d12-a3ec-43cf-85e6-407d8d99d368"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="777336ad-ea45-4d47-aea7-2688efbd2a26" /><DocumentWindow Key="24c33258-36d5-46cc-b3bb-9ff088ddf1f8" Guid="21734d12-a3ec-43cf-85e6-407d8d99d368" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

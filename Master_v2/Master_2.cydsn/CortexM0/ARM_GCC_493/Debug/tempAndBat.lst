@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc88RKQO.s 			page 1
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccanW4ip.s 			page 1
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccrFKS1a.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -62,11 +58,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccanW4ip.s 			page 1
   38              		.cfi_endproc
   39              	.LFE37:
   40              		.size	initTemperatureAndBattery, .-initTemperatureAndBattery
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc88RKQO.s 			page 2
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccanW4ip.s 			page 2
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccrFKS1a.s 			page 2
 
 
   41              		.section	.text.getTemperature,"ax",%progbits
@@ -125,13 +117,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccanW4ip.s 			page 1
   87              		.cfi_offset 14, -4
   88 0002 00AF     		add	r7, sp, #0
   89              		.cfi_def_cfa_register 7
-<<<<<<< HEAD
   25:tempAndBat.c  ****     // Read from ADC abd convert to millivolts
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc88RKQO.s 			page 3
-=======
-  25:.\tempAndBat.c ****     // Read from ADC abd convert to millivolts
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccanW4ip.s 			page 3
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccrFKS1a.s 			page 3
 
 
   26:tempAndBat.c  ****     return ADC_CountsTo_mVolts(1, ADC_GetResult16(1));
@@ -191,11 +178,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccanW4ip.s 			page 1
  142 0043 05       		.byte	0x5
  143 0044 35010000 		.4byte	.LASF4
  144 0048 02       		.uleb128 0x2
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc88RKQO.s 			page 4
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccanW4ip.s 			page 4
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccrFKS1a.s 			page 4
 
 
  145 0049 04       		.byte	0x4
@@ -255,11 +238,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccanW4ip.s 			page 1
  199 00b3 1E000000 		.4byte	.LFE38-.LFB38
  200 00b7 01       		.uleb128 0x1
  201 00b8 9C       		.byte	0x9c
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc88RKQO.s 			page 5
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccanW4ip.s 			page 5
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccrFKS1a.s 			page 5
 
 
  202 00b9 06       		.uleb128 0x6
@@ -319,11 +298,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccanW4ip.s 			page 1
  256 002a 16       		.uleb128 0x16
  257 002b 00       		.byte	0
  258 002c 03       		.uleb128 0x3
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc88RKQO.s 			page 6
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccanW4ip.s 			page 6
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccrFKS1a.s 			page 6
 
 
  259 002d 0E       		.uleb128 0xe
@@ -383,11 +358,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccanW4ip.s 			page 1
  313              		.section	.debug_aranges,"",%progbits
  314 0000 2C000000 		.4byte	0x2c
  315 0004 0200     		.2byte	0x2
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc88RKQO.s 			page 7
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccanW4ip.s 			page 7
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccrFKS1a.s 			page 7
 
 
  316 0006 00000000 		.4byte	.Ldebug_info0
@@ -446,9 +417,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccanW4ip.s 			page 1
  349      676E6564 
  349      20696E74 
  349      00
-<<<<<<< HEAD
  350              	.LASF13:
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc88RKQO.s 			page 8
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccrFKS1a.s 			page 8
 
 
  351 00a9 67657454 		.ascii	"getTemperature\000"
@@ -508,71 +478,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccanW4ip.s 			page 1
  372      65642069 
  372      6E7400
  373              	.LASF0:
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc88RKQO.s 			page 9
-=======
- 350              	.LASF16:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccanW4ip.s 			page 8
-
-
- 351 00a9 2E5C7465 		.ascii	".\\tempAndBat.c\000"
- 351      6D70416E 
- 351      64426174 
- 351      2E6300
- 352              	.LASF13:
- 353 00b8 67657454 		.ascii	"getTemperature\000"
- 353      656D7065 
- 353      72617475 
- 353      726500
- 354              	.LASF5:
- 355 00c7 6C6F6E67 		.ascii	"long unsigned int\000"
- 355      20756E73 
- 355      69676E65 
- 355      6420696E 
- 355      7400
- 356              	.LASF7:
- 357 00d9 6C6F6E67 		.ascii	"long long unsigned int\000"
- 357      206C6F6E 
- 357      6720756E 
- 357      7369676E 
- 357      65642069 
- 358              	.LASF1:
- 359 00f0 756E7369 		.ascii	"unsigned char\000"
- 359      676E6564 
- 359      20636861 
- 359      7200
- 360              	.LASF11:
- 361 00fe 63686172 		.ascii	"char\000"
- 361      00
- 362              	.LASF4:
- 363 0103 6C6F6E67 		.ascii	"long int\000"
- 363      20696E74 
- 363      00
- 364              	.LASF2:
- 365 010c 73686F72 		.ascii	"short int\000"
- 365      7420696E 
- 365      7400
- 366              	.LASF14:
- 367 0116 67657442 		.ascii	"getBattery\000"
- 367      61747465 
- 367      727900
- 368              	.LASF10:
- 369 0121 646F7562 		.ascii	"double\000"
- 369      6C6500
- 370              	.LASF3:
- 371 0128 73686F72 		.ascii	"short unsigned int\000"
- 371      7420756E 
- 371      7369676E 
- 371      65642069 
- 371      6E7400
- 372              	.LASF0:
- 373 013b 7369676E 		.ascii	"signed char\000"
- 373      65642063 
- 373      68617200 
- 374              	.LASF17:
- 375 0147 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\GitHub\\BioSnap\\Mas"
- 375      73657273 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccanW4ip.s 			page 9
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccrFKS1a.s 			page 9
 
 
  374 016d 7369676E 		.ascii	"signed char\000"

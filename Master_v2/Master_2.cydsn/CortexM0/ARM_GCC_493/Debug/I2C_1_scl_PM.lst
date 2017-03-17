@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccnPO7dZ.s 			page 1
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccAgn4MC.s 			page 1
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccI6jTrm.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -35,7 +31,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccAgn4MC.s 			page 1
   26              		.type	I2C_1_scl_Sleep, %function
   27              	I2C_1_scl_Sleep:
   28              	.LFB0:
-<<<<<<< HEAD
   29              		.file 1 "Generated_Source\\PSoC4\\I2C_1_scl_PM.c"
    1:Generated_Source\PSoC4/I2C_1_scl_PM.c **** /*******************************************************************************
    2:Generated_Source\PSoC4/I2C_1_scl_PM.c **** * File Name: I2C_1_scl.c  
@@ -63,37 +58,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccAgn4MC.s 			page 1
   24:Generated_Source\PSoC4/I2C_1_scl_PM.c **** * Function Name: I2C_1_scl_Sleep
   25:Generated_Source\PSoC4/I2C_1_scl_PM.c **** ****************************************************************************//**
   26:Generated_Source\PSoC4/I2C_1_scl_PM.c **** *
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccnPO7dZ.s 			page 2
-=======
-  29              		.file 1 ".\\Generated_Source\\PSoC4\\I2C_1_scl_PM.c"
-   1:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** /*******************************************************************************
-   2:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** * File Name: I2C_1_scl.c  
-   3:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** * Version 2.20
-   4:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** *
-   5:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** * Description:
-   6:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** *  This file contains APIs to set up the Pins component for low power modes.
-   7:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** *
-   8:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** * Note:
-   9:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** *
-  10:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** ********************************************************************************
-  11:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** * Copyright 2015, Cypress Semiconductor Corporation.  All rights reserved.
-  12:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** * You may use this file only in accordance with the license, terms, conditions, 
-  13:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** * disclaimers, and limitations in the end user license agreement accompanying 
-  14:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** * the software package with which this file was provided.
-  15:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** *******************************************************************************/
-  16:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** 
-  17:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** #include "cytypes.h"
-  18:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** #include "I2C_1_scl.h"
-  19:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** 
-  20:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** static I2C_1_scl_BACKUP_STRUCT  I2C_1_scl_backup = {0u, 0u, 0u};
-  21:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** 
-  22:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** 
-  23:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** /*******************************************************************************
-  24:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** * Function Name: I2C_1_scl_Sleep
-  25:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** ****************************************************************************//**
-  26:.\Generated_Source\PSoC4/I2C_1_scl_PM.c **** *
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccAgn4MC.s 			page 2
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccI6jTrm.s 			page 2
 
 
   27:Generated_Source\PSoC4/I2C_1_scl_PM.c **** * \brief Stores the pin configuration and prepares the pin for entering chip 
@@ -153,11 +118,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccAgn4MC.s 			page 1
   49              	.L2:
   50 0010 08030440 		.word	1074004744
   51 0014 00000000 		.word	I2C_1_scl_backup
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccnPO7dZ.s 			page 3
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccAgn4MC.s 			page 3
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccI6jTrm.s 			page 3
 
 
   52              		.cfi_endproc
@@ -206,7 +167,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccAgn4MC.s 			page 1
   73 0006 034B     		ldr	r3, .L5+4
   74 0008 1B68     		ldr	r3, [r3]
   75 000a 1360     		str	r3, [r2]
-<<<<<<< HEAD
   84:Generated_Source\PSoC4/I2C_1_scl_PM.c ****     #else
   85:Generated_Source\PSoC4/I2C_1_scl_PM.c ****         #if (CY_PSOC4_4200L)
   86:Generated_Source\PSoC4/I2C_1_scl_PM.c ****             /* Restore the regulator state and come out of suspend mode */
@@ -218,21 +178,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccAgn4MC.s 			page 1
   92:Generated_Source\PSoC4/I2C_1_scl_PM.c ****     #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(I2C_1_scl__SIO)
   93:Generated_Source\PSoC4/I2C_1_scl_PM.c ****         I2C_1_scl_SIO_REG = I2C_1_scl_backup.sioState;
   94:Generated_Source\PSoC4/I2C_1_scl_PM.c ****     #endif
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccnPO7dZ.s 			page 4
-=======
-  84:.\Generated_Source\PSoC4/I2C_1_scl_PM.c ****     #else
-  85:.\Generated_Source\PSoC4/I2C_1_scl_PM.c ****         #if (CY_PSOC4_4200L)
-  86:.\Generated_Source\PSoC4/I2C_1_scl_PM.c ****             /* Restore the regulator state and come out of suspend mode */
-  87:.\Generated_Source\PSoC4/I2C_1_scl_PM.c ****             I2C_1_scl_USB_POWER_REG &= I2C_1_scl_USBIO_EXIT_SLEEP_PH1;
-  88:.\Generated_Source\PSoC4/I2C_1_scl_PM.c ****             I2C_1_scl_CR1_REG = I2C_1_scl_backup.usbState;
-  89:.\Generated_Source\PSoC4/I2C_1_scl_PM.c ****             I2C_1_scl_USB_POWER_REG &= I2C_1_scl_USBIO_EXIT_SLEEP_PH2;
-  90:.\Generated_Source\PSoC4/I2C_1_scl_PM.c ****         #endif
-  91:.\Generated_Source\PSoC4/I2C_1_scl_PM.c ****     #endif
-  92:.\Generated_Source\PSoC4/I2C_1_scl_PM.c ****     #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(I2C_1_scl__SIO)
-  93:.\Generated_Source\PSoC4/I2C_1_scl_PM.c ****         I2C_1_scl_SIO_REG = I2C_1_scl_backup.sioState;
-  94:.\Generated_Source\PSoC4/I2C_1_scl_PM.c ****     #endif
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccAgn4MC.s 			page 4
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccI6jTrm.s 			page 4
 
 
   95:Generated_Source\PSoC4/I2C_1_scl_PM.c **** }
@@ -292,11 +238,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccAgn4MC.s 			page 1
  129 004b 47000000 		.4byte	.LASF5
  130 004f 02       		.uleb128 0x2
  131 0050 08       		.byte	0x8
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccnPO7dZ.s 			page 5
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccAgn4MC.s 			page 5
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccI6jTrm.s 			page 5
 
 
  132 0051 05       		.byte	0x5
@@ -356,11 +298,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccAgn4MC.s 			page 1
  186 00bc 04       		.byte	0x4
  187 00bd 07       		.uleb128 0x7
  188 00be 06000000 		.4byte	.LASF16
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccnPO7dZ.s 			page 6
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccAgn4MC.s 			page 6
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccI6jTrm.s 			page 6
 
 
  189 00c2 03       		.byte	0x3
@@ -420,11 +358,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccAgn4MC.s 			page 1
  243 0011 00       		.byte	0
  244 0012 00       		.byte	0
  245 0013 02       		.uleb128 0x2
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccnPO7dZ.s 			page 7
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccAgn4MC.s 			page 7
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccI6jTrm.s 			page 7
 
 
  246 0014 24       		.uleb128 0x24
@@ -484,11 +418,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccAgn4MC.s 			page 1
  300 004a 07       		.uleb128 0x7
  301 004b 0D       		.uleb128 0xd
  302 004c 00       		.byte	0
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccnPO7dZ.s 			page 8
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccAgn4MC.s 			page 8
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccI6jTrm.s 			page 8
 
 
  303 004d 03       		.uleb128 0x3
@@ -548,11 +478,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccAgn4MC.s 			page 1
  357 0084 0B       		.uleb128 0xb
  358 0085 3B       		.uleb128 0x3b
  359 0086 0B       		.uleb128 0xb
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccnPO7dZ.s 			page 9
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccAgn4MC.s 			page 9
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccI6jTrm.s 			page 9
 
 
  360 0087 49       		.uleb128 0x49
@@ -598,7 +524,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccAgn4MC.s 			page 1
  395 0006 75736253 		.ascii	"usbState\000"
  395      74617465 
  395      00
-<<<<<<< HEAD
  396              	.LASF17:
  397 000f 4932435F 		.ascii	"I2C_1_scl_BACKUP_STRUCT\000"
  397      315F7363 
@@ -613,7 +538,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccAgn4MC.s 			page 1
  401      65642063 
  401      68617200 
  402              	.LASF1:
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccnPO7dZ.s 			page 10
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccI6jTrm.s 			page 10
 
 
  403 0039 756E7369 		.ascii	"unsigned char\000"
@@ -673,84 +598,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccAgn4MC.s 			page 1
  422              	.LASF15:
  423 013c 73696F53 		.ascii	"sioState\000"
  423      74617465 
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccnPO7dZ.s 			page 11
-=======
- 396              	.LASF22:
- 397 000f 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\GitHub\\BioSnap\\Mas"
- 397      73657273 
- 397      5C4D6174 
- 397      74686577 
- 397      5C446F63 
- 398 003c 7465725F 		.ascii	"ter_v2\\Master_2.cydsn\000"
- 398      76325C4D 
- 398      61737465 
- 398      725F322E 
- 398      63796473 
- 399              	.LASF17:
- 400 0052 4932435F 		.ascii	"I2C_1_scl_BACKUP_STRUCT\000"
- 400      315F7363 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccAgn4MC.s 			page 10
-
-
- 400      6C5F4241 
- 400      434B5550 
- 400      5F535452 
- 401              	.LASF9:
- 402 006a 666C6F61 		.ascii	"float\000"
- 402      7400
- 403              	.LASF1:
- 404 0070 756E7369 		.ascii	"unsigned char\000"
- 404      676E6564 
- 404      20636861 
- 404      7200
- 405              	.LASF5:
- 406 007e 6C6F6E67 		.ascii	"long unsigned int\000"
- 406      20756E73 
- 406      69676E65 
- 406      6420696E 
- 406      7400
- 407              	.LASF3:
- 408 0090 73686F72 		.ascii	"short unsigned int\000"
- 408      7420756E 
- 408      7369676E 
- 408      65642069 
- 408      6E7400
- 409              	.LASF18:
- 410 00a3 4932435F 		.ascii	"I2C_1_scl_Sleep\000"
- 410      315F7363 
- 410      6C5F536C 
- 410      65657000 
- 411              	.LASF10:
- 412 00b3 646F7562 		.ascii	"double\000"
- 412      6C6500
- 413              	.LASF20:
- 414 00ba 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 414      4320342E 
- 414      392E3320 
- 414      32303135 
- 414      30333033 
- 415 00ed 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
- 415      20726576 
- 415      6973696F 
- 415      6E203232 
- 415      31323230 
- 416 0120 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 416      66756E63 
- 416      74696F6E 
- 416      2D736563 
- 416      74696F6E 
- 417              	.LASF12:
- 418 0148 75696E74 		.ascii	"uint32\000"
- 418      333200
- 419              	.LASF8:
- 420 014f 756E7369 		.ascii	"unsigned int\000"
- 420      676E6564 
- 420      20696E74 
- 420      00
- 421              	.LASF7:
- 422 015c 6C6F6E67 		.ascii	"long long unsigned int\000"
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccAgn4MC.s 			page 11
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccI6jTrm.s 			page 11
 
 
  423      00

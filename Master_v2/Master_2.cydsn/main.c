@@ -27,6 +27,7 @@ int charCode;
 CYBLE_CONN_HANDLE_T connectionHandle; 
 
 uint32 tsLastReport = 0;
+uint32 otherLastReport; 
 
 const int ACCELEROMETER = 0;
 const int BATTERY = 1;

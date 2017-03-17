@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccotnoyh.s 			page 1
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGS0TZx.s 			page 1
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc7AMxdJ.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -29,7 +25,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGS0TZx.s 			page 1
   22              		.type	ADC_ISR, %function
   23              	ADC_ISR:
   24              	.LFB2:
-<<<<<<< HEAD
   25              		.file 1 "Generated_Source\\PSoC4\\ADC_INT.c"
    1:Generated_Source\PSoC4/ADC_INT.c **** /*******************************************************************************
    2:Generated_Source\PSoC4/ADC_INT.c **** * File Name: ADC_INT.c
@@ -63,43 +58,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGS0TZx.s 			page 1
   30:Generated_Source\PSoC4/ADC_INT.c **** 
   31:Generated_Source\PSoC4/ADC_INT.c **** #if(ADC_IRQ_REMOVE == 0u)
   32:Generated_Source\PSoC4/ADC_INT.c **** 
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccotnoyh.s 			page 2
-=======
-  25              		.file 1 ".\\Generated_Source\\PSoC4\\ADC_INT.c"
-   1:.\Generated_Source\PSoC4/ADC_INT.c **** /*******************************************************************************
-   2:.\Generated_Source\PSoC4/ADC_INT.c **** * File Name: ADC_INT.c
-   3:.\Generated_Source\PSoC4/ADC_INT.c **** * Version 2.40
-   4:.\Generated_Source\PSoC4/ADC_INT.c **** *
-   5:.\Generated_Source\PSoC4/ADC_INT.c **** *  Description:
-   6:.\Generated_Source\PSoC4/ADC_INT.c **** *    This file contains the code that operates during the ADC_SAR interrupt
-   7:.\Generated_Source\PSoC4/ADC_INT.c **** *    service routine.
-   8:.\Generated_Source\PSoC4/ADC_INT.c **** *
-   9:.\Generated_Source\PSoC4/ADC_INT.c **** *   Note:
-  10:.\Generated_Source\PSoC4/ADC_INT.c **** *
-  11:.\Generated_Source\PSoC4/ADC_INT.c **** ********************************************************************************
-  12:.\Generated_Source\PSoC4/ADC_INT.c **** * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
-  13:.\Generated_Source\PSoC4/ADC_INT.c **** * You may use this file only in accordance with the license, terms, conditions,
-  14:.\Generated_Source\PSoC4/ADC_INT.c **** * disclaimers, and limitations in the end user license agreement accompanying
-  15:.\Generated_Source\PSoC4/ADC_INT.c **** * the software package with which this file was provided.
-  16:.\Generated_Source\PSoC4/ADC_INT.c **** *******************************************************************************/
-  17:.\Generated_Source\PSoC4/ADC_INT.c **** 
-  18:.\Generated_Source\PSoC4/ADC_INT.c **** #include "ADC.h"
-  19:.\Generated_Source\PSoC4/ADC_INT.c **** #include "cyapicallbacks.h"
-  20:.\Generated_Source\PSoC4/ADC_INT.c **** 
-  21:.\Generated_Source\PSoC4/ADC_INT.c **** 
-  22:.\Generated_Source\PSoC4/ADC_INT.c **** /******************************************************************************
-  23:.\Generated_Source\PSoC4/ADC_INT.c **** * Custom Declarations and Variables
-  24:.\Generated_Source\PSoC4/ADC_INT.c **** * - add user inlcude files, prototypes and variables between the following
-  25:.\Generated_Source\PSoC4/ADC_INT.c **** *   #START and #END tags
-  26:.\Generated_Source\PSoC4/ADC_INT.c **** ******************************************************************************/
-  27:.\Generated_Source\PSoC4/ADC_INT.c **** /* `#START ADC_SYS_VAR`  */
-  28:.\Generated_Source\PSoC4/ADC_INT.c **** 
-  29:.\Generated_Source\PSoC4/ADC_INT.c **** /* `#END`  */
-  30:.\Generated_Source\PSoC4/ADC_INT.c **** 
-  31:.\Generated_Source\PSoC4/ADC_INT.c **** #if(ADC_IRQ_REMOVE == 0u)
-  32:.\Generated_Source\PSoC4/ADC_INT.c **** 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGS0TZx.s 			page 2
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc7AMxdJ.s 			page 2
 
 
   33:Generated_Source\PSoC4/ADC_INT.c **** 
@@ -159,11 +118,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGS0TZx.s 			page 1
   40              		.loc 1 72 0
   41 000c 024B     		ldr	r3, .L2
   42 000e 7A68     		ldr	r2, [r7, #4]
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccotnoyh.s 			page 3
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGS0TZx.s 			page 3
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc7AMxdJ.s 			page 3
 
 
   43 0010 1A60     		str	r2, [r3]
@@ -223,11 +178,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGS0TZx.s 			page 1
   96 004b 2A000000 		.4byte	.LASF5
   97 004f 02       		.uleb128 0x2
   98 0050 08       		.byte	0x8
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccotnoyh.s 			page 4
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGS0TZx.s 			page 4
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc7AMxdJ.s 			page 4
 
 
   99 0051 05       		.byte	0x5
@@ -287,11 +238,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGS0TZx.s 			page 1
  153 00bc 6B000000 		.4byte	0x6b
  154 00c0 02       		.uleb128 0x2
  155 00c1 91       		.byte	0x91
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccotnoyh.s 			page 5
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGS0TZx.s 			page 5
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc7AMxdJ.s 			page 5
 
 
  156 00c2 74       		.sleb128 -12
@@ -351,11 +298,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGS0TZx.s 			page 1
  210 0031 05       		.uleb128 0x5
  211 0032 49       		.uleb128 0x49
  212 0033 13       		.uleb128 0x13
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccotnoyh.s 			page 6
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGS0TZx.s 			page 6
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc7AMxdJ.s 			page 6
 
 
  213 0034 00       		.byte	0
@@ -415,11 +358,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGS0TZx.s 			page 1
  267 000c 0000     		.2byte	0
  268 000e 0000     		.2byte	0
  269 0010 00000000 		.4byte	.LFB2
-<<<<<<< HEAD
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccotnoyh.s 			page 7
-=======
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGS0TZx.s 			page 7
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc7AMxdJ.s 			page 7
 
 
  270 0014 1C000000 		.4byte	.LFE2-.LFB2
@@ -460,7 +399,6 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGS0TZx.s 			page 1
  291      69676E65 
  291      6420696E 
  291      7400
-<<<<<<< HEAD
  292              	.LASF17:
  293 003c 433A5C55 		.ascii	"C:\\Users\\Davit\\Documents\\GitHub\\BioSnap\\Maste"
  293      73657273 
@@ -480,29 +418,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGS0TZx.s 			page 1
  296      65642069 
  297              	.LASF19:
  298 0094 696E7472 		.ascii	"intr_status\000"
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccotnoyh.s 			page 8
-=======
- 292              	.LASF7:
- 293 003c 6C6F6E67 		.ascii	"long long unsigned int\000"
- 293      206C6F6E 
- 293      6720756E 
- 293      7369676E 
- 293      65642069 
- 294              	.LASF19:
- 295 0053 696E7472 		.ascii	"intr_status\000"
- 295      5F737461 
- 295      74757300 
- 296              	.LASF15:
- 297 005f 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 297      4320342E 
- 297      392E3320 
- 297      32303135 
- 297      30333033 
- 298 0092 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
- 298      20726576 
- 298      6973696F 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGS0TZx.s 			page 8
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc7AMxdJ.s 			page 8
 
 
  298      5F737461 
@@ -561,13 +477,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGS0TZx.s 			page 1
  320 0197 666C6F61 		.ascii	"float\000"
  320      7400
  321              	.LASF2:
-<<<<<<< HEAD
  322 019d 73686F72 		.ascii	"short int\000"
-ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccotnoyh.s 			page 9
-=======
- 322 01a1 73686F72 		.ascii	"short int\000"
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGS0TZx.s 			page 9
->>>>>>> origin/master
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc7AMxdJ.s 			page 9
 
 
  322      7420696E 

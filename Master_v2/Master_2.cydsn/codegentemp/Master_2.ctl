@@ -1,10 +1,6 @@
 -- ======================================================================
 -- Master_2.ctl generated from Master_2
-<<<<<<< HEAD
--- 03/01/2017 at 17:33
-=======
--- 03/09/2017 at 22:58
->>>>>>> origin/master
+-- 03/17/2017 at 12:40
 -- This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 -- ======================================================================
 
