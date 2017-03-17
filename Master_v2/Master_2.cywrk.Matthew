@@ -302,7 +302,6 @@
 <v>Master_2\Master_2\CortexM0\ARM_GCC_493\Debug\Listing Files\isr_minute.lst</v>
 <v>Master_2\Master_2\CortexM0\ARM_GCC_493\Debug\Listing Files\main.lst</v>
 <v>Master_2\Master_2\CortexM0\ARM_GCC_493\Debug\Listing Files\MAX30100_All.lst</v>
-<v>Master_2\Master_2\CortexM0\ARM_GCC_493\Debug\Listing Files\temp_in.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -362,12 +361,6 @@
 <name v=".\Master_2.cydsn\main.c" />
 <name v=".\Master_2.cydsn\MAX30100_All.h" />
 <name v=".\Master_2.cydsn\MAX30100_All.c" />
-<name v=".\Master_2.cydsn\tempAndBat.c" />
-<name v=".\Master_2.cydsn\accelerometer.h" />
-<name v=".\Master_2.cydsn\accelerometer.c" />
-<name v=".\Master_2.cydsn\tempAndBat.h" />
-<name v=".\Master_2.cydsn\MAX30100_Registers.h" />
-<name v=".\Master_2.cydsn\Master_2.cydwr" />
 </OpenDocs>
 <config v="" />
 <AutoUpdate v="true" />

@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 C:\Users\Davit\Documents\GitHub\BioSnap\Master_v2\Master_2.cydsn\Master_2.cyprj|2d195485-9afe-40a2-8baa-0dba00e5f989
 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|35515273-3d1b-4ec4-8d4c-7252a9968665
 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|c09350c4-3499-40e5-9461-2333efefd750
 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|338dc6cb-9f43-4351-90cf-29cb0677e8a1
 C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|183e67a4-c5aa-492c-a03b-e93d659c13a6
+=======
+C:\Users\Matthew\Documents\GitHub\BioSnap\Master_v2\Master_2.cydsn\Master_2.cyprj|809868fd-901a-41ac-9cf1-674578f05430
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|5664c8cc-a08f-43df-8fd8-dbb2283d3ea8
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|841667f7-53d2-4eab-ba40-dadc3f8e425f
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|48febbf6-de38-4288-9b73-eea0900a492f
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|2dcff12b-9d36-4cc4-87b0-d2e04202a3e5
+>>>>>>> origin/master

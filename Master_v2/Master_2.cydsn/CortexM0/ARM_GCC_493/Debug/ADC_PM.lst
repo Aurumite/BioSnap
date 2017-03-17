@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 1
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccSgF84p.s 			page 1
+>>>>>>> origin/master
 
 
    1              		.cpu cortex-m0
@@ -29,6 +33,7 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 1
   26              		.type	ADC_SaveConfig, %function
   27              	ADC_SaveConfig:
   28              	.LFB2:
+<<<<<<< HEAD
   29              		.file 1 "Generated_Source\\PSoC4\\ADC_PM.c"
    1:Generated_Source\PSoC4/ADC_PM.c **** /*******************************************************************************
    2:Generated_Source\PSoC4/ADC_PM.c **** * File Name: ADC_PM.c
@@ -78,6 +83,57 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 1
   43:Generated_Source\PSoC4/ADC_PM.c **** *******************************************************************************/
   44:Generated_Source\PSoC4/ADC_PM.c **** void ADC_SaveConfig(void)
   45:Generated_Source\PSoC4/ADC_PM.c **** {
+=======
+  29              		.file 1 ".\\Generated_Source\\PSoC4\\ADC_PM.c"
+   1:.\Generated_Source\PSoC4/ADC_PM.c **** /*******************************************************************************
+   2:.\Generated_Source\PSoC4/ADC_PM.c **** * File Name: ADC_PM.c
+   3:.\Generated_Source\PSoC4/ADC_PM.c **** * Version 2.40
+   4:.\Generated_Source\PSoC4/ADC_PM.c **** *
+   5:.\Generated_Source\PSoC4/ADC_PM.c **** * Description:
+   6:.\Generated_Source\PSoC4/ADC_PM.c **** *  This file provides Sleep/WakeUp APIs functionality.
+   7:.\Generated_Source\PSoC4/ADC_PM.c **** *
+   8:.\Generated_Source\PSoC4/ADC_PM.c **** * Note:
+   9:.\Generated_Source\PSoC4/ADC_PM.c **** *
+  10:.\Generated_Source\PSoC4/ADC_PM.c **** ********************************************************************************
+  11:.\Generated_Source\PSoC4/ADC_PM.c **** * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
+  12:.\Generated_Source\PSoC4/ADC_PM.c **** * You may use this file only in accordance with the license, terms, conditions,
+  13:.\Generated_Source\PSoC4/ADC_PM.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  14:.\Generated_Source\PSoC4/ADC_PM.c **** * the software package with which this file was provided.
+  15:.\Generated_Source\PSoC4/ADC_PM.c **** *******************************************************************************/
+  16:.\Generated_Source\PSoC4/ADC_PM.c **** 
+  17:.\Generated_Source\PSoC4/ADC_PM.c **** #include "ADC.h"
+  18:.\Generated_Source\PSoC4/ADC_PM.c **** 
+  19:.\Generated_Source\PSoC4/ADC_PM.c **** 
+  20:.\Generated_Source\PSoC4/ADC_PM.c **** /***************************************
+  21:.\Generated_Source\PSoC4/ADC_PM.c **** * Local data allocation
+  22:.\Generated_Source\PSoC4/ADC_PM.c **** ***************************************/
+  23:.\Generated_Source\PSoC4/ADC_PM.c **** 
+  24:.\Generated_Source\PSoC4/ADC_PM.c **** static ADC_BACKUP_STRUCT  ADC_backup =
+  25:.\Generated_Source\PSoC4/ADC_PM.c **** {
+  26:.\Generated_Source\PSoC4/ADC_PM.c ****     ADC_DISABLED
+  27:.\Generated_Source\PSoC4/ADC_PM.c **** };
+  28:.\Generated_Source\PSoC4/ADC_PM.c **** 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccSgF84p.s 			page 2
+
+
+  29:.\Generated_Source\PSoC4/ADC_PM.c **** 
+  30:.\Generated_Source\PSoC4/ADC_PM.c **** /*******************************************************************************
+  31:.\Generated_Source\PSoC4/ADC_PM.c **** * Function Name: ADC_SaveConfig
+  32:.\Generated_Source\PSoC4/ADC_PM.c **** ********************************************************************************
+  33:.\Generated_Source\PSoC4/ADC_PM.c **** *
+  34:.\Generated_Source\PSoC4/ADC_PM.c **** * Summary:
+  35:.\Generated_Source\PSoC4/ADC_PM.c **** *  Saves the current user configuration.
+  36:.\Generated_Source\PSoC4/ADC_PM.c **** *
+  37:.\Generated_Source\PSoC4/ADC_PM.c **** * Parameters:
+  38:.\Generated_Source\PSoC4/ADC_PM.c **** *  None.
+  39:.\Generated_Source\PSoC4/ADC_PM.c **** *
+  40:.\Generated_Source\PSoC4/ADC_PM.c **** * Return:
+  41:.\Generated_Source\PSoC4/ADC_PM.c **** *  None.
+  42:.\Generated_Source\PSoC4/ADC_PM.c **** *
+  43:.\Generated_Source\PSoC4/ADC_PM.c **** *******************************************************************************/
+  44:.\Generated_Source\PSoC4/ADC_PM.c **** void ADC_SaveConfig(void)
+  45:.\Generated_Source\PSoC4/ADC_PM.c **** {
+>>>>>>> origin/master
   30              		.loc 1 45 0
   31              		.cfi_startproc
   32 0000 80B5     		push	{r7, lr}
@@ -103,6 +159,7 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 1
   50              		.type	ADC_RestoreConfig, %function
   51              	ADC_RestoreConfig:
   52              	.LFB3:
+<<<<<<< HEAD
   48:Generated_Source\PSoC4/ADC_PM.c **** 
   49:Generated_Source\PSoC4/ADC_PM.c **** 
   50:Generated_Source\PSoC4/ADC_PM.c **** /*******************************************************************************
@@ -124,6 +181,29 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 1
   63:Generated_Source\PSoC4/ADC_PM.c **** *******************************************************************************/
   64:Generated_Source\PSoC4/ADC_PM.c **** void ADC_RestoreConfig(void)
   65:Generated_Source\PSoC4/ADC_PM.c **** {
+=======
+  48:.\Generated_Source\PSoC4/ADC_PM.c **** 
+  49:.\Generated_Source\PSoC4/ADC_PM.c **** 
+  50:.\Generated_Source\PSoC4/ADC_PM.c **** /*******************************************************************************
+  51:.\Generated_Source\PSoC4/ADC_PM.c **** * Function Name: ADC_RestoreConfig
+  52:.\Generated_Source\PSoC4/ADC_PM.c **** ********************************************************************************
+  53:.\Generated_Source\PSoC4/ADC_PM.c **** *
+  54:.\Generated_Source\PSoC4/ADC_PM.c **** * Summary:
+  55:.\Generated_Source\PSoC4/ADC_PM.c **** *  Restores the current user configuration.
+  56:.\Generated_Source\PSoC4/ADC_PM.c **** *
+  57:.\Generated_Source\PSoC4/ADC_PM.c **** * Parameters:
+  58:.\Generated_Source\PSoC4/ADC_PM.c **** *  None.
+  59:.\Generated_Source\PSoC4/ADC_PM.c **** *
+  60:.\Generated_Source\PSoC4/ADC_PM.c **** * Return:
+  61:.\Generated_Source\PSoC4/ADC_PM.c **** *  None.
+  62:.\Generated_Source\PSoC4/ADC_PM.c **** *
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccSgF84p.s 			page 3
+
+
+  63:.\Generated_Source\PSoC4/ADC_PM.c **** *******************************************************************************/
+  64:.\Generated_Source\PSoC4/ADC_PM.c **** void ADC_RestoreConfig(void)
+  65:.\Generated_Source\PSoC4/ADC_PM.c **** {
+>>>>>>> origin/master
   53              		.loc 1 65 0
   54              		.cfi_startproc
   55 0000 80B5     		push	{r7, lr}
@@ -178,7 +258,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 1
   80              		.cfi_offset 7, -8
   81              		.cfi_offset 14, -4
   82 0002 00AF     		add	r7, sp, #0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 4
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccSgF84p.s 			page 4
+>>>>>>> origin/master
 
 
   83              		.cfi_def_cfa_register 7
@@ -238,7 +322,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 1
  108:Generated_Source\PSoC4/ADC_PM.c ****         if((ADC_SAR_CTRL_REG & ADC_BOOSTPUMP_EN) != 0u)
  119              		.loc 1 108 0
  120 003c 0D4B     		ldr	r3, .L9+4
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 5
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccSgF84p.s 			page 5
+>>>>>>> origin/master
 
 
  121 003e 1A68     		ldr	r2, [r3]
@@ -298,7 +386,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 1
  165              		.global	ADC_Wakeup
  166              		.code	16
  167              		.thumb_func
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 6
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccSgF84p.s 			page 6
+>>>>>>> origin/master
 
 
  168              		.type	ADC_Wakeup, %function
@@ -358,7 +450,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 1
  195 001e 0423     		mov	r3, #4
  196 0020 1340     		and	r3, r2
  197 0022 06D0     		beq	.L13
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 7
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccSgF84p.s 			page 7
+>>>>>>> origin/master
 
 
  146:Generated_Source\PSoC4/ADC_PM.c ****         {
@@ -418,7 +514,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 1
  242 000b 01       		.uleb128 0x1
  243 000c E7000000 		.4byte	.LASF21
  244 0010 01       		.byte	0x1
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 8
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccSgF84p.s 			page 8
+>>>>>>> origin/master
 
 
  245 0011 9B010000 		.4byte	.LASF22
@@ -478,7 +578,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 1
  299 007f 48000000 		.4byte	0x48
  300 0083 02       		.uleb128 0x2
  301 0084 04       		.byte	0x4
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 9
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccSgF84p.s 			page 9
+>>>>>>> origin/master
 
 
  302 0085 04       		.byte	0x4
@@ -538,7 +642,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 1
  356 00f2 0A       		.uleb128 0xa
  357 00f3 88010000 		.4byte	.LASF19
  358 00f7 01       		.byte	0x1
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 10
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccSgF84p.s 			page 10
+>>>>>>> origin/master
 
 
  359 00f8 58       		.byte	0x58
@@ -598,7 +706,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 1
  413 001e 03       		.uleb128 0x3
  414 001f 24       		.uleb128 0x24
  415 0020 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 11
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccSgF84p.s 			page 11
+>>>>>>> origin/master
 
 
  416 0021 0B       		.uleb128 0xb
@@ -658,7 +770,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 1
  470 0057 00       		.byte	0
  471 0058 00       		.byte	0
  472 0059 08       		.uleb128 0x8
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 12
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccSgF84p.s 			page 12
+>>>>>>> origin/master
 
 
  473 005a 16       		.uleb128 0x16
@@ -718,7 +834,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 1
  527 0091 9642     		.uleb128 0x2116
  528 0093 19       		.uleb128 0x19
  529 0094 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 13
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccSgF84p.s 			page 13
+>>>>>>> origin/master
 
 
  530 0095 00       		.byte	0
@@ -778,7 +898,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 1
  580              	.LASF6:
  581 0000 6C6F6E67 		.ascii	"long long int\000"
  581      206C6F6E 
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 14
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccSgF84p.s 			page 14
+>>>>>>> origin/master
 
 
  581      6720696E 
@@ -808,6 +932,7 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 1
  593      69676E65 
  593      6420696E 
  593      7400
+<<<<<<< HEAD
  594              	.LASF23:
  595 0051 433A5C55 		.ascii	"C:\\Users\\Davit\\Documents\\GitHub\\BioSnap\\Maste"
  595      73657273 
@@ -906,6 +1031,104 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccMZ3Ibb.s 			page 1
  628 01db 7369676E 		.ascii	"signed char\000"
  628      65642063 
  628      68617200 
+=======
+ 594              	.LASF7:
+ 595 0067 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 595      206C6F6E 
+ 595      6720756E 
+ 595      7369676E 
+ 595      65642069 
+ 596              	.LASF18:
+ 597 007e 4144435F 		.ascii	"ADC_RestoreConfig\000"
+ 597      52657374 
+ 597      6F726543 
+ 597      6F6E6669 
+ 597      6700
+ 598              	.LASF16:
+ 599 0090 4144435F 		.ascii	"ADC_BACKUP_STRUCT\000"
+ 599      4241434B 
+ 599      55505F53 
+ 599      54525543 
+ 599      5400
+ 600              	.LASF20:
+ 601 00a2 4144435F 		.ascii	"ADC_Wakeup\000"
+ 601      57616B65 
+ 601      757000
+ 602              	.LASF17:
+ 603 00ad 4144435F 		.ascii	"ADC_SaveConfig\000"
+ 603      53617665 
+ 603      436F6E66 
+ 603      696700
+ 604              	.LASF21:
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccSgF84p.s 			page 15
+
+
+ 605 00bc 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 605      4320342E 
+ 605      392E3320 
+ 605      32303135 
+ 605      30333033 
+ 606 00ef 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 606      20726576 
+ 606      6973696F 
+ 606      6E203232 
+ 606      31323230 
+ 607 0122 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 607      66756E63 
+ 607      74696F6E 
+ 607      2D736563 
+ 607      74696F6E 
+ 608              	.LASF1:
+ 609 014a 756E7369 		.ascii	"unsigned char\000"
+ 609      676E6564 
+ 609      20636861 
+ 609      7200
+ 610              	.LASF13:
+ 611 0158 63686172 		.ascii	"char\000"
+ 611      00
+ 612              	.LASF19:
+ 613 015d 4144435F 		.ascii	"ADC_Sleep\000"
+ 613      536C6565 
+ 613      7000
+ 614              	.LASF4:
+ 615 0167 6C6F6E67 		.ascii	"long int\000"
+ 615      20696E74 
+ 615      00
+ 616              	.LASF24:
+ 617 0170 656E6162 		.ascii	"enableState\000"
+ 617      6C655374 
+ 617      61746500 
+ 618              	.LASF12:
+ 619 017c 646F7562 		.ascii	"double\000"
+ 619      6C6500
+ 620              	.LASF14:
+ 621 0183 72656733 		.ascii	"reg32\000"
+ 621      3200
+ 622              	.LASF3:
+ 623 0189 73686F72 		.ascii	"short unsigned int\000"
+ 623      7420756E 
+ 623      7369676E 
+ 623      65642069 
+ 623      6E7400
+ 624              	.LASF0:
+ 625 019c 7369676E 		.ascii	"signed char\000"
+ 625      65642063 
+ 625      68617200 
+ 626              	.LASF23:
+ 627 01a8 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\GitHub\\BioSnap\\Mas"
+ 627      73657273 
+ 627      5C4D6174 
+ 627      74686577 
+ 627      5C446F63 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccSgF84p.s 			page 16
+
+
+ 628 01d5 7465725F 		.ascii	"ter_v2\\Master_2.cydsn\000"
+ 628      76325C4D 
+ 628      61737465 
+ 628      725F322E 
+ 628      63796473 
+>>>>>>> origin/master
  629              	.LASF11:
  630 01e7 666C6F61 		.ascii	"float\000"
  630      7400

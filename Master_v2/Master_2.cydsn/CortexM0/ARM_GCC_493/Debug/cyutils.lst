@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccADW4oD.s 			page 1
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cczjJ8WT.s 			page 1
+>>>>>>> origin/master
 
 
    1              		.cpu cortex-m0
@@ -25,6 +29,7 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccADW4oD.s 			page 1
   22              		.type	CySetReg24, %function
   23              	CySetReg24:
   24              	.LFB0:
+<<<<<<< HEAD
   25              		.file 1 "Generated_Source\\PSoC4\\cyutils.c"
    1:Generated_Source\PSoC4/cyutils.c **** /***************************************************************************//**
    2:Generated_Source\PSoC4/cyutils.c **** * \file cyutils.c
@@ -59,6 +64,42 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccADW4oD.s 			page 1
   31:Generated_Source\PSoC4/cyutils.c ****     void CySetReg24(uint32 volatile * addr, uint32 value)
   32:Generated_Source\PSoC4/cyutils.c ****     {
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccADW4oD.s 			page 2
+=======
+  25              		.file 1 ".\\Generated_Source\\PSoC4\\cyutils.c"
+   1:.\Generated_Source\PSoC4/cyutils.c **** /***************************************************************************//**
+   2:.\Generated_Source\PSoC4/cyutils.c **** * \file cyutils.c
+   3:.\Generated_Source\PSoC4/cyutils.c **** * \version 5.40
+   4:.\Generated_Source\PSoC4/cyutils.c **** *
+   5:.\Generated_Source\PSoC4/cyutils.c **** * \brief Provides a function to handle 24-bit value writes.
+   6:.\Generated_Source\PSoC4/cyutils.c **** *
+   7:.\Generated_Source\PSoC4/cyutils.c **** ********************************************************************************
+   8:.\Generated_Source\PSoC4/cyutils.c **** * \copyright
+   9:.\Generated_Source\PSoC4/cyutils.c **** * Copyright 2008-2016, Cypress Semiconductor Corporation.  All rights reserved.
+  10:.\Generated_Source\PSoC4/cyutils.c **** * You may use this file only in accordance with the license, terms, conditions,
+  11:.\Generated_Source\PSoC4/cyutils.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  12:.\Generated_Source\PSoC4/cyutils.c **** * the software package with which this file was provided.
+  13:.\Generated_Source\PSoC4/cyutils.c **** *******************************************************************************/
+  14:.\Generated_Source\PSoC4/cyutils.c **** 
+  15:.\Generated_Source\PSoC4/cyutils.c **** #include "cytypes.h"
+  16:.\Generated_Source\PSoC4/cyutils.c **** 
+  17:.\Generated_Source\PSoC4/cyutils.c **** #if (!CY_PSOC3)
+  18:.\Generated_Source\PSoC4/cyutils.c **** 
+  19:.\Generated_Source\PSoC4/cyutils.c ****     /***************************************************************************
+  20:.\Generated_Source\PSoC4/cyutils.c ****     * Function Name: CySetReg24
+  21:.\Generated_Source\PSoC4/cyutils.c ****     ************************************************************************//**
+  22:.\Generated_Source\PSoC4/cyutils.c ****     *
+  23:.\Generated_Source\PSoC4/cyutils.c ****     * Writes a 24-bit value to the specified register.
+  24:.\Generated_Source\PSoC4/cyutils.c ****     *
+  25:.\Generated_Source\PSoC4/cyutils.c ****     * \param addr The address where data must be written.
+  26:.\Generated_Source\PSoC4/cyutils.c ****     * \param value The data that must be written.
+  27:.\Generated_Source\PSoC4/cyutils.c ****     *
+  28:.\Generated_Source\PSoC4/cyutils.c ****     * \reentrant No
+  29:.\Generated_Source\PSoC4/cyutils.c ****     *
+  30:.\Generated_Source\PSoC4/cyutils.c ****     ***************************************************************************/
+  31:.\Generated_Source\PSoC4/cyutils.c ****     void CySetReg24(uint32 volatile * addr, uint32 value)
+  32:.\Generated_Source\PSoC4/cyutils.c ****     {
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cczjJ8WT.s 			page 2
+>>>>>>> origin/master
 
 
   26              		.loc 1 32 0
@@ -118,7 +159,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccADW4oD.s 			page 1
   72              		.thumb_func
   73              		.type	CyGetReg24, %function
   74              	CyGetReg24:
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccADW4oD.s 			page 3
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cczjJ8WT.s 			page 3
+>>>>>>> origin/master
 
 
   75              	.LFB1:
@@ -178,7 +223,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccADW4oD.s 			page 1
  104              		.loc 1 65 0
  105 0024 FB68     		ldr	r3, [r7, #12]
  106 0026 0233     		add	r3, r3, #2
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccADW4oD.s 			page 4
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cczjJ8WT.s 			page 4
+>>>>>>> origin/master
 
 
  107 0028 1B78     		ldrb	r3, [r3]
@@ -237,8 +286,13 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccADW4oD.s 			page 1
  157 0041 02       		.uleb128 0x2
  158 0042 04       		.byte	0x4
  159 0043 05       		.byte	0x5
+<<<<<<< HEAD
  160 0044 A7010000 		.4byte	.LASF4
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccADW4oD.s 			page 5
+=======
+ 160 0044 AB010000 		.4byte	.LASF4
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cczjJ8WT.s 			page 5
+>>>>>>> origin/master
 
 
  161 0048 02       		.uleb128 0x2
@@ -297,8 +351,13 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccADW4oD.s 			page 1
  214 00b2 9C       		.byte	0x9c
  215 00b3 E2000000 		.4byte	0xe2
  216 00b7 07       		.uleb128 0x7
+<<<<<<< HEAD
  217 00b8 1C000000 		.4byte	.LASF14
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccADW4oD.s 			page 6
+=======
+ 217 00b8 5F000000 		.4byte	.LASF14
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cczjJ8WT.s 			page 6
+>>>>>>> origin/master
 
 
  218 00bc 01       		.byte	0x1
@@ -358,7 +417,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccADW4oD.s 			page 1
  272 0122 74       		.sleb128 -12
  273 0123 08       		.uleb128 0x8
  274 0124 00000000 		.4byte	.LASF15
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccADW4oD.s 			page 7
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cczjJ8WT.s 			page 7
+>>>>>>> origin/master
 
 
  275 0128 01       		.byte	0x1
@@ -418,7 +481,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccADW4oD.s 			page 1
  329 0022 0B       		.uleb128 0xb
  330 0023 3E       		.uleb128 0x3e
  331 0024 0B       		.uleb128 0xb
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccADW4oD.s 			page 8
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cczjJ8WT.s 			page 8
+>>>>>>> origin/master
 
 
  332 0025 03       		.uleb128 0x3
@@ -478,7 +545,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccADW4oD.s 			page 1
  386 005c 3A       		.uleb128 0x3a
  387 005d 0B       		.uleb128 0xb
  388 005e 3B       		.uleb128 0x3b
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccADW4oD.s 			page 9
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cczjJ8WT.s 			page 9
+>>>>>>> origin/master
 
 
  389 005f 0B       		.uleb128 0xb
@@ -538,7 +609,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccADW4oD.s 			page 1
  443 0096 01       		.uleb128 0x1
  444 0097 13       		.uleb128 0x13
  445 0098 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccADW4oD.s 			page 10
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cczjJ8WT.s 			page 10
+>>>>>>> origin/master
 
 
  446 0099 00       		.byte	0
@@ -590,6 +665,7 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccADW4oD.s 			page 1
  485 0011 43795365 		.ascii	"CySetReg24\000"
  485      74526567 
  485      323400
+<<<<<<< HEAD
  486              	.LASF14:
  487 001c 61646472 		.ascii	"addr\000"
  487      00
@@ -659,6 +735,77 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccADW4oD.s 			page 1
  511      75726365 
  511      5C50536F 
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccADW4oD.s 			page 12
+=======
+ 486              	.LASF19:
+ 487 001c 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\GitHub\\BioSnap\\Mas"
+ 487      73657273 
+ 487      5C4D6174 
+ 487      74686577 
+ 487      5C446F63 
+ 488 0049 7465725F 		.ascii	"ter_v2\\Master_2.cydsn\000"
+ 488      76325C4D 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cczjJ8WT.s 			page 11
+
+
+ 488      61737465 
+ 488      725F322E 
+ 488      63796473 
+ 489              	.LASF14:
+ 490 005f 61646472 		.ascii	"addr\000"
+ 490      00
+ 491              	.LASF11:
+ 492 0064 666C6F61 		.ascii	"float\000"
+ 492      7400
+ 493              	.LASF1:
+ 494 006a 756E7369 		.ascii	"unsigned char\000"
+ 494      676E6564 
+ 494      20636861 
+ 494      7200
+ 495              	.LASF16:
+ 496 0078 746D7041 		.ascii	"tmpAddr\000"
+ 496      64647200 
+ 497              	.LASF5:
+ 498 0080 6C6F6E67 		.ascii	"long unsigned int\000"
+ 498      20756E73 
+ 498      69676E65 
+ 498      6420696E 
+ 498      7400
+ 499              	.LASF3:
+ 500 0092 73686F72 		.ascii	"short unsigned int\000"
+ 500      7420756E 
+ 500      7369676E 
+ 500      65642069 
+ 500      6E7400
+ 501              	.LASF18:
+ 502 00a5 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\cyutils.c\000"
+ 502      6E657261 
+ 502      7465645F 
+ 502      536F7572 
+ 502      63655C50 
+ 503              	.LASF12:
+ 504 00c8 646F7562 		.ascii	"double\000"
+ 504      6C6500
+ 505              	.LASF17:
+ 506 00cf 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 506      4320342E 
+ 506      392E3320 
+ 506      32303135 
+ 506      30333033 
+ 507 0102 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 507      20726576 
+ 507      6973696F 
+ 507      6E203232 
+ 507      31323230 
+ 508 0135 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 508      66756E63 
+ 508      74696F6E 
+ 508      2D736563 
+ 508      74696F6E 
+ 509              	.LASF10:
+ 510 015d 75696E74 		.ascii	"uint32\000"
+ 510      333200
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cczjJ8WT.s 			page 12
+>>>>>>> origin/master
 
 
  512              	.LASF6:

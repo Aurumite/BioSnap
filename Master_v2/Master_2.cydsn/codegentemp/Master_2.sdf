@@ -1,6 +1,10 @@
 (DELAYFILE
  (SDFVERSION "IEEE 1497 4.0")
+<<<<<<< HEAD
  (DATE "2017-03-02T01:33:58Z")
+=======
+ (DATE "2017-03-10T06:58:58Z")
+>>>>>>> origin/master
  (DESIGN "Master_2")
  (VENDOR "Cypress Semiconductor")
  (PROGRAM "PSoC Creator")

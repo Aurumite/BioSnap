@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 1
+>>>>>>> origin/master
 
 
    1              		.cpu cortex-m0
@@ -34,6 +38,7 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
   31              		.type	I2C_1_I2CMasterWriteBuf, %function
   32              	I2C_1_I2CMasterWriteBuf:
   33              	.LFB2:
+<<<<<<< HEAD
   34              		.file 1 "Generated_Source\\PSoC4\\I2C_1_I2C_MASTER.c"
    1:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** /***************************************************************************//**
    2:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \file I2C_1_I2C_MASTER.c
@@ -140,6 +145,114 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
   97:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *******************************************************************************/
   98:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** uint32 I2C_1_I2CMasterWriteBuf(uint32 slaveAddress, uint8 * wrData, uint32 cnt, uint32 mode)
   99:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** {
+=======
+  34              		.file 1 ".\\Generated_Source\\PSoC4\\I2C_1_I2C_MASTER.c"
+   1:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** /***************************************************************************//**
+   2:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \file I2C_1_I2C_MASTER.c
+   3:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \version 3.20
+   4:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+   5:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \brief
+   6:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  This file provides the source code to the API for the SCB Component in
+   7:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C Master mode.
+   8:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+   9:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * Note:
+  10:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+  11:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *******************************************************************************
+  12:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \copyright
+  13:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * Copyright 2013-2016, Cypress Semiconductor Corporation.  All rights reserved.
+  14:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * You may use this file only in accordance with the license, terms, conditions,
+  15:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  16:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * the software package with which this file was provided.
+  17:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *******************************************************************************/
+  18:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+  19:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** #include "I2C_1_PVT.h"
+  20:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** #include "I2C_1_I2C_PVT.h"
+  21:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+  22:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** #if(I2C_1_I2C_MASTER_CONST)
+  23:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 2
+
+
+  24:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** /***************************************
+  25:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *      I2C Master Private Vars
+  26:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** ***************************************/
+  27:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+  28:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** /* Master variables */
+  29:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** volatile uint16 I2C_1_mstrStatus;      /* Master Status byte  */
+  30:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** volatile uint8  I2C_1_mstrControl;     /* Master Control byte */
+  31:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+  32:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** /* Receive buffer variables */
+  33:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** volatile uint8 * I2C_1_mstrRdBufPtr;   /* Pointer to Master Read buffer */
+  34:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** volatile uint32  I2C_1_mstrRdBufSize;  /* Master Read buffer size       */
+  35:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** volatile uint32  I2C_1_mstrRdBufIndex; /* Master Read buffer Index      */
+  36:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+  37:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** /* Transmit buffer variables */
+  38:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** volatile uint8 * I2C_1_mstrWrBufPtr;   /* Pointer to Master Write buffer */
+  39:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** volatile uint32  I2C_1_mstrWrBufSize;  /* Master Write buffer size       */
+  40:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** volatile uint32  I2C_1_mstrWrBufIndex; /* Master Write buffer Index      */
+  41:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** volatile uint32  I2C_1_mstrWrBufIndexTmp; /* Master Write buffer Index Tmp */
+  42:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+  43:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** #if (!I2C_1_CY_SCBIP_V0 && \
+  44:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     I2C_1_I2C_MULTI_MASTER_SLAVE_CONST && I2C_1_I2C_WAKE_ENABLE_CONST)
+  45:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     static void I2C_1_I2CMasterDisableEcAm(void);
+  46:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** #endif /* (!I2C_1_CY_SCBIP_V0) */
+  47:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+  48:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+  49:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** /*******************************************************************************
+  50:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * Function Name: I2C_1_I2CMasterWriteBuf
+  51:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** ****************************************************************************//**
+  52:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+  53:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  Automatically writes an entire buffer of data to a slave device.
+  54:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  Once the data transfer is initiated by this function, further data transfer
+  55:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  is handled by the included ISR.
+  56:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  Enables the I2C interrupt and clears I2C_1_I2C_MSTAT_WR_CMPLT 
+  57:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  status.
+  58:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+  59:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  \param slaveAddr: 7-bit slave address.
+  60:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  \param xferData: Pointer to buffer of data to be sent.
+  61:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  \param cnt: Size of buffer to send.
+  62:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  \param mode: Transfer mode defines:
+  63:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  (1) Whether a start or restart condition is generated at the beginning 
+  64:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  of the transfer, and
+  65:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  (2) Whether the transfer is completed or halted before the stop 
+  66:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  condition is generated on the bus.Transfer mode, mode constants 
+  67:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  may be ORed together.
+  68:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  - I2C_1_I2C_MODE_COMPLETE_XFER - Perform complete transfer 
+  69:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    from Start to Stop.
+  70:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  - I2C_1_I2C_MODE_REPEAT_START - Send Repeat Start instead 
+  71:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    of Start. A Stop is generated after transfer is completed unless 
+  72:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    NO_STOP is specified.
+  73:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  - I2C_1_I2C_MODE_NO_STOP Execute transfer without a Stop.
+  74:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    The following transfer expected to perform ReStart.
+  75:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+  76:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \return
+  77:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  Error status.
+  78:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  - I2C_1_I2C_MSTR_NO_ERROR - Function complete without error. 
+  79:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    The master started the transfer.
+  80:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  - I2C_1_I2C_MSTR_BUS_BUSY - Bus is busy. Nothing was sent on
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 3
+
+
+  81:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    the bus. The attempt has to be retried.
+  82:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  - I2C_1_I2C_MSTR_NOT_READY - Master is not ready for to start
+  83:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    transfer. A master still has not completed previous transaction or a 
+  84:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    slave operation is in progress (in multi-master-slave configuration).
+  85:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    Nothing was sent on the bus. The attempt has to be retried.
+  86:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+  87:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \globalvars
+  88:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C_1_mstrStatus  - used to store current status of I2C Master.
+  89:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C_1_state       - used to store current state of software FSM.
+  90:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C_1_mstrControl - used to control master end of transaction with
+  91:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  or without the Stop generation.
+  92:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C_1_mstrWrBufPtr - used to store pointer to master write buffer.
+  93:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C_1_mstrWrBufIndex - used to current index within master write
+  94:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  buffer.
+  95:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C_1_mstrWrBufSize - used to store master write buffer size.
+  96:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+  97:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *******************************************************************************/
+  98:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** uint32 I2C_1_I2CMasterWriteBuf(uint32 slaveAddress, uint8 * wrData, uint32 cnt, uint32 mode)
+  99:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** {
+>>>>>>> origin/master
   35              		.loc 1 99 0
   36              		.cfi_startproc
   37 0000 80B5     		push	{r7, lr}
@@ -178,7 +291,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  108:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         {
  109:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****             I2C_1_DisableInt();  /* Lock from interruption */
   62              		.loc 1 109 0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 4
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 4
+>>>>>>> origin/master
 
 
   63 0022 0A20     		mov	r0, #10
@@ -238,7 +355,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  126:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     /* Check if master is ready to start  */
  127:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     if(I2C_1_I2C_MSTR_NO_ERROR == errStatus) /* No error proceed */
  101              		.loc 1 127 0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 5
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 5
+>>>>>>> origin/master
 
 
  102 005a 7B69     		ldr	r3, [r7, #20]
@@ -298,7 +419,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  139 0094 9BB2     		uxth	r3, r3
  140 0096 0222     		mov	r2, #2
  141 0098 9343     		bic	r3, r2
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 6
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 6
+>>>>>>> origin/master
 
 
  142 009a 9AB2     		uxth	r2, r3
@@ -357,8 +482,13 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  176 00ce 0222     		mov	r2, #2
  177 00d0 1A60     		str	r2, [r3]
  178              	.L6:
+<<<<<<< HEAD
  164:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         }
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 7
+=======
+ 164:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         }
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 7
+>>>>>>> origin/master
 
 
  165:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     }
@@ -406,6 +536,7 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  215              		.type	I2C_1_I2CMasterReadBuf, %function
  216              	I2C_1_I2CMasterReadBuf:
  217              	.LFB3:
+<<<<<<< HEAD
  171:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  172:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  173:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** /*******************************************************************************
@@ -449,6 +580,51 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  208:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *******************************************************************************/
  209:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** uint32 I2C_1_I2CMasterReadBuf(uint32 slaveAddress, uint8 * rdData, uint32 cnt, uint32 mode)
  210:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** {
+=======
+ 171:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+ 172:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+ 173:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** /*******************************************************************************
+ 174:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * Function Name: I2C_1_I2CMasterReadBuf
+ 175:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** ****************************************************************************//**
+ 176:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 177:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  Automatically reads an entire buffer of data from a slave device.
+ 178:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  Once the data transfer is initiated by this function, further data transfer
+ 179:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  is handled by the included ISR.
+ 180:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  Enables the I2C interrupt and clears I2C_1_I2C_MSTAT_RD_CMPLT 
+ 181:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  status.
+ 182:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 8
+
+
+ 183:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  \param slaveAddr: 7-bit slave address.
+ 184:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  \param xferData: Pointer to buffer of data to be sent.
+ 185:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  \param cnt: Size of buffer to send.
+ 186:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  \param mode: Transfer mode defines:
+ 187:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  (1) Whether a start or restart condition is generated at the beginning 
+ 188:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  of the transfer, and
+ 189:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  (2) Whether the transfer is completed or halted before the stop 
+ 190:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  condition is generated on the bus.Transfer mode, mode constants may 
+ 191:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  be ORed together. See I2C_1_I2CMasterWriteBuf() 
+ 192:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  function for constants.
+ 193:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 194:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \return
+ 195:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  Error status.See I2C_1_I2CMasterWriteBuf() 
+ 196:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  function for constants.
+ 197:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 198:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \globalvars
+ 199:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C_1_mstrStatus  - used to store current status of I2C Master.
+ 200:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C_1_state       - used to store current state of software FSM.
+ 201:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C_1_mstrControl - used to control master end of transaction with
+ 202:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  or without the Stop generation.
+ 203:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C_1_mstrRdBufPtr - used to store pointer to master read buffer.
+ 204:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C_1_mstrRdBufIndex - used to current index within master read
+ 205:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  buffer.
+ 206:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C_1_mstrRdBufSize - used to store master read buffer size.
+ 207:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 208:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *******************************************************************************/
+ 209:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** uint32 I2C_1_I2CMasterReadBuf(uint32 slaveAddress, uint8 * rdData, uint32 cnt, uint32 mode)
+ 210:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** {
+>>>>>>> origin/master
  218              		.loc 1 210 0
  219              		.cfi_startproc
  220 0000 80B5     		push	{r7, lr}
@@ -475,10 +651,17 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  236 0012 BB68     		ldr	r3, [r7, #8]
  237 0014 002B     		cmp	r3, #0
  238 0016 20D0     		beq	.L12
+<<<<<<< HEAD
  216:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     {
  217:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         /* Check FSM state and bus before generating Start/ReStart condition */
  218:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         if(I2C_1_CHECK_I2C_FSM_IDLE)
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 9
+=======
+ 216:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     {
+ 217:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         /* Check FSM state and bus before generating Start/ReStart condition */
+ 218:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         if(I2C_1_CHECK_I2C_FSM_IDLE)
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 9
+>>>>>>> origin/master
 
 
  239              		.loc 1 218 0
@@ -537,6 +720,7 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  281 0056 0023     		mov	r3, #0
  282 0058 7B61     		str	r3, [r7, #20]
  283              	.L12:
+<<<<<<< HEAD
  230:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         }
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 10
 
@@ -549,6 +733,20 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  236:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  237:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     /* Check master ready to proceed */
  238:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     if(I2C_1_I2C_MSTR_NO_ERROR == errStatus) /* No error proceed */
+=======
+ 230:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         }
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 10
+
+
+ 231:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         else
+ 232:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         {
+ 233:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****             /* Unexpected FSM state: exit */
+ 234:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         }
+ 235:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     }
+ 236:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+ 237:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     /* Check master ready to proceed */
+ 238:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     if(I2C_1_I2C_MSTR_NO_ERROR == errStatus) /* No error proceed */
+>>>>>>> origin/master
  284              		.loc 1 238 0
  285 005a 7B69     		ldr	r3, [r7, #20]
  286 005c 002B     		cmp	r3, #0
@@ -596,9 +794,15 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  314 0088 0122     		mov	r2, #1
  315 008a 1343     		orr	r3, r2
  316 008c FB60     		str	r3, [r7, #12]
+<<<<<<< HEAD
  253:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  254:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         I2C_1_mstrStatus &= (uint16) ~I2C_1_I2C_MSTAT_RD_CMPLT;
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 11
+=======
+ 253:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+ 254:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         I2C_1_mstrStatus &= (uint16) ~I2C_1_I2C_MSTAT_RD_CMPLT;
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 11
+>>>>>>> origin/master
 
 
  317              		.loc 1 254 0
@@ -654,11 +858,19 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  351 00c4 0822     		mov	r2, #8
  352 00c6 1A60     		str	r2, [r3]
  353              	.L18:
+<<<<<<< HEAD
  271:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         }
  272:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  273:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         /* Generate Start or ReStart */
  274:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         if(I2C_1_CHECK_I2C_MODE_RESTART(mode))
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 12
+=======
+ 271:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         }
+ 272:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+ 273:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         /* Generate Start or ReStart */
+ 274:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         if(I2C_1_CHECK_I2C_MODE_RESTART(mode))
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 12
+>>>>>>> origin/master
 
 
  354              		.loc 1 274 0
@@ -718,7 +930,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  393 0104 00000000 		.word	I2C_1_mstrRdBufIndex
  394 0108 00000000 		.word	I2C_1_mstrRdBufSize
  395 010c 00000000 		.word	I2C_1_mstrRdBufPtr
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 13
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 13
+>>>>>>> origin/master
 
 
  396 0110 00000000 		.word	I2C_1_mstrControl
@@ -739,6 +955,7 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  411              		.type	I2C_1_I2CMasterSendStart, %function
  412              	I2C_1_I2CMasterSendStart:
  413              	.LFB4:
+<<<<<<< HEAD
  290:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  291:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  292:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** /*******************************************************************************
@@ -788,6 +1005,57 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  333:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *******************************************************************************/
  334:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** uint32 I2C_1_I2CMasterSendStart(uint32 slaveAddress, uint32 bitRnW)
  335:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** {
+=======
+ 290:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+ 291:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+ 292:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** /*******************************************************************************
+ 293:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * Function Name: I2C_1_I2CMasterSendStart
+ 294:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** ****************************************************************************//**
+ 295:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 296:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  Generates Start condition and sends slave address with read/write bit.
+ 297:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  Disables the I2C interrupt.
+ 298:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  This function is blocking and does not return until start condition and
+ 299:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  address byte are sent and ACK/NACK response is received or errors occurred.
+ 300:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 301:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \param slaveAddress: Right justified 7-bit Slave address (valid range 
+ 302:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  8 to 120).
+ 303:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \param bitRnW: Direction of the following transfer. 
+ 304:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  It is defined by read/write bit within address byte.
+ 305:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  - I2C_1_I2C_WRITE_XFER_MODE - Set write direction for the 
+ 306:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    following transfer.
+ 307:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  - I2C_1_I2C_READ_XFER_MODE - Set read direction for the 
+ 308:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    following transfer.
+ 309:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 310:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \return
+ 311:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  Error status.
+ 312:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *   - I2C_1_I2C_MSTR_NO_ERROR - Function complete without error.
+ 313:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *   - I2C_1_I2C_MSTR_BUS_BUSY - Bus is busy. 
+ 314:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *     Nothing was sent on the bus. The attempt has to be retried.
+ 315:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *   - I2C_1_I2C_MSTR_NOT_READY - Master is not ready for to 
+ 316:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *     start transfer.
+ 317:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *     A master still has not completed previous transaction or a slave 
+ 318:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *     operation is in progress (in multi-master-slave configuration).
+ 319:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *     Nothing was sent on the bus. The attempt has to be retried.
+ 320:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *   - I2C_1_I2C_MSTR_ERR_LB_NAK - Error condition: Last byte was 
+ 321:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *     NAKed.
+ 322:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *   - I2C_1_I2C_MSTR_ERR_ARB_LOST - Error condition: Master lost 
+ 323:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *     arbitration.
+ 324:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *   - I2C_1_I2C_MSTR_ERR_BUS_ERR - Error condition: Master 
+ 325:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *     encountered a bus error. Bus error is misplaced start or stop detection.
+ 326:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *   - I2C_1_I2C_MSTR_ERR_ABORT_START - Error condition: The start 
+ 327:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *     condition generation was aborted due to beginning of Slave operation. 
+ 328:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *     This error condition is only applicable for Multi-Master-Slave mode.
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 14
+
+
+ 329:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 330:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \globalvars
+ 331:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C_1_state - used to store current state of software FSM.
+ 332:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 333:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *******************************************************************************/
+ 334:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** uint32 I2C_1_I2CMasterSendStart(uint32 slaveAddress, uint32 bitRnW)
+ 335:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** {
+>>>>>>> origin/master
  414              		.loc 1 335 0
  415              		.cfi_startproc
  416 0000 80B5     		push	{r7, lr}
@@ -836,9 +1104,15 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  446 0028 BB60     		str	r3, [r7, #8]
  447 002a 5EE0     		b	.L24
  448              	.L25:
+<<<<<<< HEAD
  349:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         }
  350:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         else
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 15
+=======
+ 349:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         }
+ 350:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         else
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 15
+>>>>>>> origin/master
 
 
  351:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         {
@@ -897,8 +1171,13 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  479 0058 284B     		ldr	r3, .L34+8
  480 005a 7A68     		ldr	r2, [r7, #4]
  481 005c 1A60     		str	r2, [r3]
+<<<<<<< HEAD
  374:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****             I2C_1_ClearMasterInterruptSource(I2C_1_INTR_MASTER_ALL);
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 16
+=======
+ 374:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****             I2C_1_ClearMasterInterruptSource(I2C_1_INTR_MASTER_ALL);
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 16
+>>>>>>> origin/master
 
 
  482              		.loc 1 374 0
@@ -957,8 +1236,13 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  514 008c 0222     		mov	r2, #2
  515 008e 1340     		and	r3, r2
  516 0090 02D0     		beq	.L31
+<<<<<<< HEAD
  396:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****             {
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 17
+=======
+ 396:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****             {
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 17
+>>>>>>> origin/master
 
 
  397:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****                 errStatus = I2C_1_I2C_MSTR_ERR_LB_NAK;
@@ -1017,8 +1301,13 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  554 00c4 0822     		mov	r2, #8
  555 00c6 FF32     		add	r2, r2, #255
  556 00c8 1A60     		str	r2, [r3]
+<<<<<<< HEAD
  413:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****                                                         I2C_1_INTR_MASTER_I2C_NACK     |
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 18
+=======
+ 413:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****                                                         I2C_1_INTR_MASTER_I2C_NACK     |
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 18
+>>>>>>> origin/master
 
 
  414:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****                                                         I2C_1_INTR_MASTER_I2C_ARB_LOST |
@@ -1078,7 +1367,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  598              		.align	2
  599              		.global	I2C_1_I2CMasterSendRestart
  600              		.code	16
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 19
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 19
+>>>>>>> origin/master
 
 
  601              		.thumb_func
@@ -1137,8 +1430,13 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  617              		.loc 1 463 0
  618 000a 0023     		mov	r3, #0
  619 000c FB60     		str	r3, [r7, #12]
+<<<<<<< HEAD
  464:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     errStatus = I2C_1_I2C_MSTR_NOT_READY;
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 20
+=======
+ 464:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     errStatus = I2C_1_I2C_MSTR_NOT_READY;
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 20
+>>>>>>> origin/master
 
 
  620              		.loc 1 464 0
@@ -1193,12 +1491,21 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  655 0044 1343     		orr	r3, r2
  656 0046 7B60     		str	r3, [r7, #4]
  657              	.L39:
+<<<<<<< HEAD
  479:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         }
  480:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  481:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         /* TX and RX FIFO have to be EMPTY */
  482:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  483:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         /* Clean-up interrupt status */
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 21
+=======
+ 479:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         }
+ 480:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+ 481:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         /* TX and RX FIFO have to be EMPTY */
+ 482:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+ 483:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         /* Clean-up interrupt status */
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 21
+>>>>>>> origin/master
 
 
  484:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         I2C_1_ClearMasterInterruptSource(I2C_1_INTR_MASTER_ALL);
@@ -1258,7 +1565,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  509:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         /* Check results of address phase */
  510:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         if(I2C_1_CHECK_INTR_MASTER(I2C_1_INTR_MASTER_I2C_ACK))
  687              		.loc 1 510 0 is_stmt 1
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 22
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 22
+>>>>>>> origin/master
 
 
  688 0072 204B     		ldr	r3, .L47+4
@@ -1318,7 +1629,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  526:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****             I2C_1_state = I2C_1_I2C_FSM_IDLE;
  727              		.loc 1 526 0
  728 00ac 104B     		ldr	r3, .L47
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 23
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 23
+>>>>>>> origin/master
 
 
  729 00ae 1022     		mov	r2, #16
@@ -1378,7 +1693,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  765              		.loc 1 544 0
  766 00e6 181C     		mov	r0, r3
  767 00e8 BD46     		mov	sp, r7
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 24
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 24
+>>>>>>> origin/master
 
 
  768 00ea 04B0     		add	sp, sp, #16
@@ -1438,7 +1757,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  792              		.cfi_startproc
  793 0000 80B5     		push	{r7, lr}
  794              		.cfi_def_cfa_offset 8
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 25
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 25
+>>>>>>> origin/master
 
 
  795              		.cfi_offset 7, -8
@@ -1498,7 +1821,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  833 0032 C046     		mov	r8, r8
  834              	.L53:
  835              		.loc 1 590 0 is_stmt 0 discriminator 1
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 26
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 26
+>>>>>>> origin/master
 
 
  836 0034 1F4B     		ldr	r3, .L58+12
@@ -1558,7 +1885,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  610:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****             resetIp   = I2C_1_I2C_RESET_ERROR;
  871              		.loc 1 610 0
  872 006a 0123     		mov	r3, #1
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 27
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 27
+>>>>>>> origin/master
 
 
  873 006c 7B60     		str	r3, [r7, #4]
@@ -1618,7 +1949,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  910 00a4 80BD     		pop	{r7, pc}
  911              	.L59:
  912 00a6 C046     		.align	2
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 28
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 28
+>>>>>>> origin/master
 
 
  913              	.L58:
@@ -1676,9 +2011,15 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  938 0004 00AF     		add	r7, sp, #0
  939              		.cfi_def_cfa_register 7
  940 0006 7860     		str	r0, [r7, #4]
+<<<<<<< HEAD
  655:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     uint32 resetIp;
  656:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     uint32 errStatus;
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 29
+=======
+ 655:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     uint32 resetIp;
+ 656:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     uint32 errStatus;
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 29
+>>>>>>> origin/master
 
 
  657:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
@@ -1738,7 +2079,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  676:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         {
  677:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****             I2C_1_state = I2C_1_I2C_FSM_MSTR_HALT;
  976              		.loc 1 677 0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 30
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 30
+>>>>>>> origin/master
 
 
  977 003e 1F4B     		ldr	r3, .L68
@@ -1794,11 +2139,19 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  1015 0076 FB60     		str	r3, [r7, #12]
  1016 0078 07E0     		b	.L64
  1017              	.L66:
+<<<<<<< HEAD
  690:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         }
  691:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         else /* I2C_1_INTR_MASTER_I2C_BUS_ERROR set is */
  692:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         {
  693:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****             I2C_1_state = I2C_1_I2C_FSM_IDLE;
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 31
+=======
+ 690:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         }
+ 691:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         else /* I2C_1_INTR_MASTER_I2C_BUS_ERROR set is */
+ 692:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         {
+ 693:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****             I2C_1_state = I2C_1_I2C_FSM_IDLE;
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 31
+>>>>>>> origin/master
 
 
  1018              		.loc 1 693 0
@@ -1858,7 +2211,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  1055 00b2 BB68     		ldr	r3, [r7, #8]
  711:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** }
  1056              		.loc 1 711 0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 32
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 32
+>>>>>>> origin/master
 
 
  1057 00b4 181C     		mov	r0, r3
@@ -1884,6 +2241,7 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  1077              		.type	I2C_1_I2CMasterReadByte, %function
  1078              	I2C_1_I2CMasterReadByte:
  1079              	.LFB8:
+<<<<<<< HEAD
  712:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  713:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  714:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** /*******************************************************************************
@@ -1919,6 +2277,43 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  744:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** uint32 I2C_1_I2CMasterReadByte(uint32 ackNack)
  745:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** {
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 33
+=======
+ 712:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+ 713:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+ 714:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** /*******************************************************************************
+ 715:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * Function Name: I2C_1_I2CMasterReadByte
+ 716:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** ****************************************************************************//**
+ 717:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 718:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  Reads one byte from a slave and generates ACK or prepares to generate NAK. 
+ 719:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  The NAK will be generated before Stop or ReStart condition by 
+ 720:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C_1_I2CMasterSendStop() or 
+ 721:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C_1_I2CMasterSendRestart() function appropriately.
+ 722:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  This function is blocking. It does not return until a byte is received or 
+ 723:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  an error occurs.
+ 724:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 725:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \param ackNack: Response to received byte.
+ 726:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  - I2C_1_I2C_ACK_DATA - Generates ACK. 
+ 727:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *     The master notifies slave that transfer continues.
+ 728:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  - I2C_1_I2C_NAK_DATA - Prepares to generate NAK.
+ 729:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *     The master will notify slave that transfer is completed.
+ 730:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 731:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \return
+ 732:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  Byte read from the slave. In case of error the MSB of returned data 
+ 733:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  is set to 1.
+ 734:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 735:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \sideeffect
+ 736:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  A valid Start or ReStart condition must be generated before calling
+ 737:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  this function. This function does nothing if Start or ReStart condition
+ 738:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  failed before this function was called.
+ 739:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 740:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \globalvars
+ 741:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C_1_state - used to store current state of software FSM.
+ 742:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 743:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *******************************************************************************/
+ 744:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** uint32 I2C_1_I2CMasterReadByte(uint32 ackNack)
+ 745:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** {
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 33
+>>>>>>> origin/master
 
 
  1080              		.loc 1 745 0
@@ -1974,11 +2369,19 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  1119              		.loc 1 754 0 discriminator 1
  1120 0034 F4D0     		beq	.L73
  1121              	.L72:
+<<<<<<< HEAD
  756:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****                                                   I2C_1_INTR_MASTER_I2C_BUS_ERROR)))
  757:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         {
  758:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****             /* Wait until byte has been received */
  759:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         }
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 34
+=======
+ 756:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****                                                   I2C_1_INTR_MASTER_I2C_BUS_ERROR)))
+ 757:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         {
+ 758:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****             /* Wait until byte has been received */
+ 759:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         }
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 34
+>>>>>>> origin/master
 
 
  760:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
@@ -2036,9 +2439,15 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  1153 0062 0C4B     		ldr	r3, .L78+8
  1154 0064 0E4A     		ldr	r2, .L78+20
  1155 0066 1A60     		str	r2, [r3]
+<<<<<<< HEAD
  781:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  782:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****             /* Reset block in case of: LOST_ARB or BUS_ERR */
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 35
+=======
+ 781:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+ 782:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****             /* Reset block in case of: LOST_ARB or BUS_ERR */
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 35
+>>>>>>> origin/master
 
 
  783:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****             I2C_1_SCB_SW_RESET;
@@ -2091,6 +2500,7 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  1197              		.type	I2C_1_I2CMasterGetReadBufSize, %function
  1198              	I2C_1_I2CMasterGetReadBufSize:
  1199              	.LFB9:
+<<<<<<< HEAD
  789:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  790:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  791:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** /*******************************************************************************
@@ -2119,6 +2529,36 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  811:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *******************************************************************************/
  812:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** uint32 I2C_1_I2CMasterGetReadBufSize(void)
  813:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** {
+=======
+ 789:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+ 790:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+ 791:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** /*******************************************************************************
+ 792:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * Function Name: I2C_1_I2CMasterGetReadBufSize
+ 793:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** ****************************************************************************//**
+ 794:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 795:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  Returns the number of bytes that has been transferred with an
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 36
+
+
+ 796:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C_1_I2CMasterReadBuf() function.
+ 797:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 798:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \return
+ 799:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  Byte count of transfer. If the transfer is not yet complete, it returns
+ 800:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  the byte count transferred so far.
+ 801:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 802:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \sideeffect
+ 803:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  This function returns not valid value if 
+ 804:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C_1_I2C_MSTAT_ERR_ARB_LOST or
+ 805:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C_1_I2C_MSTAT_ERR_BUS_ERROR occurred while read transfer.
+ 806:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 807:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \globalvars
+ 808:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C_1_mstrRdBufIndex - used to current index within master read
+ 809:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  buffer.
+ 810:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 811:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *******************************************************************************/
+ 812:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** uint32 I2C_1_I2CMasterGetReadBufSize(void)
+ 813:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** {
+>>>>>>> origin/master
  1200              		.loc 1 813 0
  1201              		.cfi_startproc
  1202 0000 80B5     		push	{r7, lr}
@@ -2152,6 +2592,7 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  1228              		.type	I2C_1_I2CMasterGetWriteBufSize, %function
  1229              	I2C_1_I2CMasterGetWriteBufSize:
  1230              	.LFB10:
+<<<<<<< HEAD
  816:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  817:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  818:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** /*******************************************************************************
@@ -2180,6 +2621,36 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  838:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *******************************************************************************/
  839:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** uint32 I2C_1_I2CMasterGetWriteBufSize(void)
  840:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** {
+=======
+ 816:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+ 817:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+ 818:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** /*******************************************************************************
+ 819:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * Function Name: I2C_1_I2CMasterGetWriteBufSize
+ 820:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** ****************************************************************************//**
+ 821:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 37
+
+
+ 822:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  Returns the number of bytes that have been transferred with an
+ 823:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  SCB_I2CMasterWriteBuf() function.
+ 824:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 825:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \return
+ 826:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *   Byte count of transfer. If the transfer is not yet complete, it returns
+ 827:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *   zero unit transfer completion.
+ 828:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 829:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \sideeffect
+ 830:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *   This function returns not valid value if 
+ 831:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *   I2C_1_I2C_MSTAT_ERR_ARB_LOST or 
+ 832:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *   I2C_1_I2C_MSTAT_ERR_BUS_ERROR occurred while read transfer.
+ 833:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 834:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \globalvars
+ 835:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C_1_mstrWrBufIndex - used to current index within master write
+ 836:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  buffer.
+ 837:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 838:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *******************************************************************************/
+ 839:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** uint32 I2C_1_I2CMasterGetWriteBufSize(void)
+ 840:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** {
+>>>>>>> origin/master
  1231              		.loc 1 840 0
  1232              		.cfi_startproc
  1233 0000 80B5     		push	{r7, lr}
@@ -2213,6 +2684,7 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  1259              		.type	I2C_1_I2CMasterClearReadBuf, %function
  1260              	I2C_1_I2CMasterClearReadBuf:
  1261              	.LFB11:
+<<<<<<< HEAD
  843:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  844:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  845:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** /*******************************************************************************
@@ -2232,6 +2704,27 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  856:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *******************************************************************************/
  857:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** void I2C_1_I2CMasterClearReadBuf(void)
  858:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** {
+=======
+ 843:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+ 844:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+ 845:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** /*******************************************************************************
+ 846:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * Function Name: I2C_1_I2CMasterClearReadBuf
+ 847:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** ****************************************************************************//**
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 38
+
+
+ 848:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 849:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  Resets the read buffer pointer back to the first byte in the buffer.
+ 850:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 851:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \globalvars
+ 852:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C_1_mstrRdBufIndex - used to current index within master read
+ 853:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *   buffer.
+ 854:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C_1_mstrStatus - used to store current status of I2C Master.
+ 855:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 856:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *******************************************************************************/
+ 857:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** void I2C_1_I2CMasterClearReadBuf(void)
+ 858:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** {
+>>>>>>> origin/master
  1262              		.loc 1 858 0
  1263              		.cfi_startproc
  1264 0000 80B5     		push	{r7, lr}
@@ -2278,7 +2771,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  1298              		.cfi_endproc
  1299              	.LFE11:
  1300              		.size	I2C_1_I2CMasterClearReadBuf, .-I2C_1_I2CMasterClearReadBuf
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 39
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 39
+>>>>>>> origin/master
 
 
  1301              		.section	.text.I2C_1_I2CMasterClearWriteBuf,"ax",%progbits
@@ -2338,7 +2835,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  1333              		.loc 1 887 0
  1334 0020 0A20     		mov	r0, #10
  1335 0022 FFF7FEFF 		bl	CyIntEnable
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 40
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 40
+>>>>>>> origin/master
 
 
  888:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** }
@@ -2362,6 +2863,7 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  1353              		.type	I2C_1_I2CMasterStatus, %function
  1354              	I2C_1_I2CMasterStatus:
  1355              	.LFB13:
+<<<<<<< HEAD
  889:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  890:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  891:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** /*******************************************************************************
@@ -2410,6 +2912,56 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  931:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *******************************************************************************/
  932:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** uint32 I2C_1_I2CMasterStatus(void)
  933:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** {
+=======
+ 889:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+ 890:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+ 891:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** /*******************************************************************************
+ 892:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * Function Name: I2C_1_I2CMasterStatus
+ 893:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** ****************************************************************************//**
+ 894:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 895:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  Returns the master's communication status.
+ 896:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 897:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \return
+ 898:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  Current status of I2C master. This status incorporates status constants. 
+ 899:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  Each constant is a bit field value. The value returned may have multiple 
+ 900:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  bits set to indicate the status of the read or write transfer.
+ 901:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  - I2C_1_I2C_MSTAT_RD_CMPLT - Read transfer complete.
+ 902:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    The error condition status bits must be checked to ensure that 
+ 903:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    read transfer was completed successfully.
+ 904:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  - I2C_1_I2C_MSTAT_WR_CMPLT - Write transfer complete.
+ 905:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    The error condition status bits must be checked to ensure that write 
+ 906:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    transfer was completed successfully.
+ 907:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  - I2C_1_I2C_MSTAT_XFER_INP - Transfer in progress.
+ 908:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  - I2C_1_I2C_MSTAT_XFER_HALT - Transfer has been halted. 
+ 909:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    The I2C bus is waiting for ReStart or Stop condition generation.
+ 910:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  - I2C_1_I2C_MSTAT_ERR_SHORT_XFER - Error condition: Write 
+ 911:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    transfer completed before all bytes were transferred. The slave NAKed 
+ 912:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    the byte which was expected to be ACKed.
+ 913:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  - I2C_1_I2C_MSTAT_ERR_ADDR_NAK - Error condition: Slave did 
+ 914:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    not acknowledge address.
+ 915:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  - I2C_1_I2C_MSTAT_ERR_ARB_LOST - Error condition: Master lost 
+ 916:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    arbitration during communications with slave.
+ 917:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  - I2C_1_I2C_MSTAT_ERR_BUS_ERROR - Error condition: bus error 
+ 918:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    occurred during master transfer due to misplaced Start or Stop 
+ 919:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    condition on the bus.
+ 920:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  - I2C_1_I2C_MSTAT_ERR_ABORT_XFER - Error condition: Slave was 
+ 921:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    addressed by another master while master performed the start condition 
+ 922:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    generation. As a result, master has automatically switched to slave 
+ 923:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    mode and is responding. The master transaction has not taken place
+ 924:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    This error condition only applicable for Multi-Master-Slave mode.
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 41
+
+
+ 925:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  - I2C_1_I2C_MSTAT_ERR_XFER - Error condition: This is the 
+ 926:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    ORed value of all error conditions provided above.
+ 927:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 928:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \globalvars
+ 929:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C_1_mstrStatus - used to store current status of I2C Master.
+ 930:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 931:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *******************************************************************************/
+ 932:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** uint32 I2C_1_I2CMasterStatus(void)
+ 933:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** {
+>>>>>>> origin/master
  1356              		.loc 1 933 0
  1357              		.cfi_startproc
  1358 0000 80B5     		push	{r7, lr}
@@ -2458,7 +3010,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  946:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     I2C_1_EnableInt();   /* Release lock */
  1389              		.loc 1 946 0
  1390 002c 0A20     		mov	r0, #10
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 42
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 42
+>>>>>>> origin/master
 
 
  1391 002e FFF7FEFF 		bl	CyIntEnable
@@ -2517,8 +3073,13 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  1423              		.cfi_def_cfa_offset 16
  1424 0004 00AF     		add	r7, sp, #0
  1425              		.cfi_def_cfa_register 7
+<<<<<<< HEAD
  968:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     uint32 status;
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 43
+=======
+ 968:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     uint32 status;
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 43
+>>>>>>> origin/master
 
 
  969:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
@@ -2570,6 +3131,7 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  1461              		.type	I2C_1_I2CReStartGeneration, %function
  1462              	I2C_1_I2CReStartGeneration:
  1463              	.LFB15:
+<<<<<<< HEAD
  980:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  981:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  982:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** /*******************************************************************************
@@ -2605,6 +3167,43 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
 1009:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *******************************************************************************/
 1010:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** void I2C_1_I2CReStartGeneration(void)
 1011:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** {
+=======
+ 980:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+ 981:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+ 982:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** /*******************************************************************************
+ 983:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * Function Name: I2C_1_I2CReStartGeneration
+ 984:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** ****************************************************************************//**
+ 985:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 986:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  Generates a ReStart condition:
+ 987:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  - SCB IP V1 and later: Generates ReStart using the scb IP functionality
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 44
+
+
+ 988:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    Sets the I2C_MASTER_CMD_M_START and I2C_MASTER_CMD_M_NACK (if the previous
+ 989:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    transaction was read) bits in the SCB.I2C_MASTER_CMD register.
+ 990:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    This combination forces the master to generate ReStart.
+ 991:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+ 992:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  - SCB IP V0: Generates Restart using the GPIO and scb IP functionality.
+ 993:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    After the master completes write or read, the SCL is stretched.
+ 994:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    The master waits until SDA line is released by the slave. Then the GPIO
+ 995:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    function is enabled and the scb IP disabled as it already does not drive
+ 996:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    the bus. In case of the previous transfer was read, the NACK is generated
+ 997:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    by the GPIO. The delay of tLOW is added to manage the hold time.
+ 998:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    Set I2C_M_CMD.START and enable the scb IP. The ReStart generation
+ 999:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    is started after the I2C function is enabled for the SCL.
+1000:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    Note1: the scb IP due re-enable generates Start but on the I2C bus it
+1001:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *           appears as ReStart.
+1002:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    Note2: the I2C_M_CMD.START is queued if scb IP is disabled.
+1003:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    Note3: the I2C_STATUS_M_READ is cleared is address was NACKed before.
+1004:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+1005:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \sideeffect
+1006:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  SCB IP V0: The NACK generation by the GPIO may cause a greater SCL period
+1007:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *             than expected for the selected master data rate.
+1008:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
+1009:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *******************************************************************************/
+1010:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** void I2C_1_I2CReStartGeneration(void)
+1011:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** {
+>>>>>>> origin/master
  1464              		.loc 1 1011 0
  1465              		.cfi_startproc
  1466 0000 80B5     		push	{r7, lr}
@@ -2615,6 +3214,7 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  1471              		.cfi_def_cfa_offset 16
  1472 0004 00AF     		add	r7, sp, #0
  1473              		.cfi_def_cfa_register 7
+<<<<<<< HEAD
 1012:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** #if(I2C_1_CY_SCBIP_V0)
 1013:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     /* Generates Restart use GPIO and scb IP functionality. Ticket ID#143715,
 1014:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     * ID#145238 and ID#173656.
@@ -2672,6 +3272,65 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
 1063:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
 1064:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     /* Generates ReStart use scb IP functionality */
 1065:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     cmd  = I2C_1_I2C_MASTER_CMD_M_START;
+=======
+1012:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** #if(I2C_1_CY_SCBIP_V0)
+1013:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     /* Generates Restart use GPIO and scb IP functionality. Ticket ID#143715,
+1014:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     * ID#145238 and ID#173656.
+1015:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     */
+1016:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     uint32 status = I2C_1_I2C_STATUS_REG;
+1017:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+1018:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     while(I2C_1_WAIT_SDA_SET_HIGH)
+1019:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     {
+1020:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         /* Wait when slave release SDA line: SCL tHIGH is complete */
+1021:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     }
+1022:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+1023:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     /* Prepare DR register to drive SCL line */
+1024:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     I2C_1_SET_I2C_SCL_DR(I2C_1_I2C_SCL_LOW);
+1025:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+1026:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     /* Switch HSIOM to GPIO: SCL goes low */
+1027:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     I2C_1_SET_I2C_SCL_HSIOM_SEL(I2C_1_HSIOM_GPIO_SEL);
+1028:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+1029:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     /* Disable SCB block */
+1030:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     I2C_1_CTRL_REG &= (uint32) ~I2C_1_CTRL_ENABLED;
+1031:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+1032:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     if(0u != (status & I2C_1_I2C_STATUS_M_READ))
+1033:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     {
+1034:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         /* Generate NACK use GPIO functionality */
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 45
+
+
+1035:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         I2C_1_SET_I2C_SCL_DR(I2C_1_I2C_SCL_LOW);
+1036:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         CyDelayUs(I2C_1_I2C_TLOW_TIME); /* Count tLOW */
+1037:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+1038:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         I2C_1_SET_I2C_SCL_DR(I2C_1_I2C_SCL_HIGH);
+1039:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         while(I2C_1_WAIT_SCL_SET_HIGH)
+1040:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         {
+1041:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****             /* Wait until slave releases SCL in case if it stretches */
+1042:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         }
+1043:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         CyDelayUs(I2C_1_I2C_THIGH_TIME); /* Count tHIGH */
+1044:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     }
+1045:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+1046:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     /* Count tLOW as hold time for write and read */
+1047:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     I2C_1_SET_I2C_SCL_DR(I2C_1_I2C_SCL_LOW);
+1048:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     CyDelayUs(I2C_1_I2C_TLOW_TIME); /* Count tLOW */
+1049:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+1050:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     /* Set command for Start generation: it will appear */
+1051:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     I2C_1_I2C_MASTER_CMD_REG = I2C_1_I2C_MASTER_CMD_M_START;
+1052:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+1053:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     /* Enable SCB block */
+1054:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     I2C_1_CTRL_REG |= (uint32) I2C_1_CTRL_ENABLED;
+1055:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+1056:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     /* Switch HSIOM to I2C: */
+1057:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     I2C_1_SET_I2C_SCL_HSIOM_SEL(I2C_1_HSIOM_I2C_SEL);
+1058:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+1059:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     /* Revert SCL DR register */
+1060:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     I2C_1_SET_I2C_SCL_DR(I2C_1_I2C_SCL_HIGH);
+1061:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** #else
+1062:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     uint32 cmd;
+1063:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+1064:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     /* Generates ReStart use scb IP functionality */
+1065:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     cmd  = I2C_1_I2C_MASTER_CMD_M_START;
+>>>>>>> origin/master
  1474              		.loc 1 1065 0
  1475 0006 0123     		mov	r3, #1
  1476 0008 7B60     		str	r3, [r7, #4]
@@ -2696,9 +3355,15 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  1492 001a 7A68     		ldr	r2, [r7, #4]
  1493 001c 1343     		orr	r3, r2
  1494 001e 7B60     		str	r3, [r7, #4]
+<<<<<<< HEAD
 1068:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
 1069:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     I2C_1_I2C_MASTER_CMD_REG = cmd;
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 46
+=======
+1068:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
+1069:.\Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     I2C_1_I2C_MASTER_CMD_REG = cmd;
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 46
+>>>>>>> origin/master
 
 
  1495              		.loc 1 1069 0 discriminator 4
@@ -2757,8 +3422,13 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  1546 0041 02       		.uleb128 0x2
  1547 0042 04       		.byte	0x4
  1548 0043 05       		.byte	0x5
+<<<<<<< HEAD
  1549 0044 CE030000 		.4byte	.LASF4
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 47
+=======
+ 1549 0044 D7030000 		.4byte	.LASF4
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 47
+>>>>>>> origin/master
 
 
  1550 0048 02       		.uleb128 0x2
@@ -2818,7 +3488,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  1604 00b4 4402     		.2byte	0x244
  1605 00b6 BA000000 		.4byte	0xba
  1606 00ba 05       		.uleb128 0x5
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 48
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 48
+>>>>>>> origin/master
 
 
  1607 00bb 83000000 		.4byte	0x83
@@ -2878,7 +3552,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  1661 0124 74       		.sleb128 -12
  1662 0125 00       		.byte	0
  1663 0126 0A       		.uleb128 0xa
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 49
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 49
+>>>>>>> origin/master
 
 
  1664 0127 04       		.byte	0x4
@@ -2938,7 +3616,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  1718 018d 82020000 		.4byte	.LASF24
  1719 0191 01       		.byte	0x1
  1720 0192 4E01     		.2byte	0x14e
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 50
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 50
+>>>>>>> origin/master
 
 
  1721 0194 83000000 		.4byte	0x83
@@ -2998,7 +3680,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  1775 0209 02       		.uleb128 0x2
  1776 020a 91       		.byte	0x91
  1777 020b 6C       		.sleb128 -20
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 51
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 51
+>>>>>>> origin/master
 
 
  1778 020c 0C       		.uleb128 0xc
@@ -3058,7 +3744,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  1832 0278 01       		.byte	0x1
  1833 0279 8D02     		.2byte	0x28d
  1834 027b 83000000 		.4byte	0x83
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 52
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 52
+>>>>>>> origin/master
 
 
  1835 027f 00000000 		.4byte	.LFB7
@@ -3118,7 +3808,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  1889 02f1 91       		.byte	0x91
  1890 02f2 74       		.sleb128 -12
  1891 02f3 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 53
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 53
+>>>>>>> origin/master
 
 
  1892 02f4 0F       		.uleb128 0xf
@@ -3178,7 +3872,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  1946 036f 01010000 		.4byte	.LASF39
  1947 0373 01       		.byte	0x1
  1948 0374 C603     		.2byte	0x3c6
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 54
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 54
+>>>>>>> origin/master
 
 
  1949 0376 83000000 		.4byte	0x83
@@ -3238,7 +3936,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  2003 03eb 14       		.uleb128 0x14
  2004 03ec 5F030000 		.4byte	.LASF43
  2005 03f0 01       		.byte	0x1
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 55
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 55
+>>>>>>> origin/master
 
 
  2006 03f1 21       		.byte	0x21
@@ -3298,7 +4000,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  2060 0463 03       		.byte	0x3
  2061 0464 00000000 		.4byte	I2C_1_mstrWrBufIndexTmp
  2062 0468 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 56
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 56
+>>>>>>> origin/master
 
 
  2063              		.section	.debug_abbrev,"",%progbits
@@ -3358,7 +4064,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  2117 0034 00       		.byte	0
  2118 0035 00       		.byte	0
  2119 0036 05       		.uleb128 0x5
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 57
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 57
+>>>>>>> origin/master
 
 
  2120 0037 35       		.uleb128 0x35
@@ -3418,7 +4128,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  2174 006e 0B       		.uleb128 0xb
  2175 006f 3B       		.uleb128 0x3b
  2176 0070 0B       		.uleb128 0xb
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 58
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 58
+>>>>>>> origin/master
 
 
  2177 0071 49       		.uleb128 0x49
@@ -3478,7 +4192,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  2231 00a8 13       		.uleb128 0x13
  2232 00a9 00       		.byte	0
  2233 00aa 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 59
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 59
+>>>>>>> origin/master
 
 
  2234 00ab 0C       		.uleb128 0xc
@@ -3538,7 +4256,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  2288 00e2 13       		.uleb128 0x13
  2289 00e3 00       		.byte	0
  2290 00e4 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 60
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 60
+>>>>>>> origin/master
 
 
  2291 00e5 0F       		.uleb128 0xf
@@ -3598,7 +4320,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  2345 011d 0E       		.uleb128 0xe
  2346 011e 3A       		.uleb128 0x3a
  2347 011f 0B       		.uleb128 0xb
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 61
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 61
+>>>>>>> origin/master
 
 
  2348 0120 3B       		.uleb128 0x3b
@@ -3658,7 +4384,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  2402 0157 0B       		.uleb128 0xb
  2403 0158 3B       		.uleb128 0x3b
  2404 0159 0B       		.uleb128 0xb
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 62
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 62
+>>>>>>> origin/master
 
 
  2405 015a 49       		.uleb128 0x49
@@ -3718,7 +4448,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  2459 0014 10010000 		.4byte	.LFE4
  2460 0018 00000000 		.4byte	.LFB5
  2461 001c 08010000 		.4byte	.LFE5
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 63
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 63
+>>>>>>> origin/master
 
 
  2462 0020 00000000 		.4byte	.LFB6
@@ -3778,7 +4512,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  2498 0053 4932435F 		.ascii	"I2C_1_mstrWrBufPtr\000"
  2498      315F6D73 
  2498      74725772 
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 64
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 64
+>>>>>>> origin/master
 
 
  2498      42756650 
@@ -3818,6 +4556,7 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  2512      676E6564 
  2512      20636861 
  2512      7200
+<<<<<<< HEAD
  2513              	.LASF29:
  2514 00d6 4932435F 		.ascii	"I2C_1_I2CMasterWriteByte\000"
  2514      315F4932 
@@ -3938,6 +4677,129 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  2560 02a0 736C6176 		.ascii	"slaveAddress\000"
  2560      65416464 
  2560      72657373 
+=======
+ 2513              	.LASF51:
+ 2514 00d6 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\I2C_1_I2C_MASTER.c\000"
+ 2514      6E657261 
+ 2514      7465645F 
+ 2514      536F7572 
+ 2514      63655C50 
+ 2515              	.LASF29:
+ 2516 0102 4932435F 		.ascii	"I2C_1_I2CMasterWriteByte\000"
+ 2516      315F4932 
+ 2516      434D6173 
+ 2516      74657257 
+ 2516      72697465 
+ 2517              	.LASF5:
+ 2518 011b 6C6F6E67 		.ascii	"long unsigned int\000"
+ 2518      20756E73 
+ 2518      69676E65 
+ 2518      6420696E 
+ 2518      7400
+ 2519              	.LASF39:
+ 2520 012d 4932435F 		.ascii	"I2C_1_I2CMasterClearStatus\000"
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 65
+
+
+ 2520      315F4932 
+ 2520      434D6173 
+ 2520      74657243 
+ 2520      6C656172 
+ 2521              	.LASF9:
+ 2522 0148 75696E74 		.ascii	"uint8\000"
+ 2522      3800
+ 2523              	.LASF32:
+ 2524 014e 61636B4E 		.ascii	"ackNack\000"
+ 2524      61636B00 
+ 2525              	.LASF23:
+ 2526 0156 65727253 		.ascii	"errStatus\000"
+ 2526      74617475 
+ 2526      7300
+ 2527              	.LASF13:
+ 2528 0160 646F7562 		.ascii	"double\000"
+ 2528      6C6500
+ 2529              	.LASF36:
+ 2530 0167 4932435F 		.ascii	"I2C_1_I2CMasterClearWriteBuf\000"
+ 2530      315F4932 
+ 2530      434D6173 
+ 2530      74657243 
+ 2530      6C656172 
+ 2531              	.LASF25:
+ 2532 0184 62697452 		.ascii	"bitRnW\000"
+ 2532      6E5700
+ 2533              	.LASF53:
+ 2534 018b 4932435F 		.ascii	"I2C_1_I2CReStartGeneration\000"
+ 2534      315F4932 
+ 2534      43526553 
+ 2534      74617274 
+ 2534      47656E65 
+ 2535              	.LASF49:
+ 2536 01a6 4932435F 		.ascii	"I2C_1_mstrWrBufIndexTmp\000"
+ 2536      315F6D73 
+ 2536      74725772 
+ 2536      42756649 
+ 2536      6E646578 
+ 2537              	.LASF50:
+ 2538 01be 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 2538      4320342E 
+ 2538      392E3320 
+ 2538      32303135 
+ 2538      30333033 
+ 2539 01f1 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 2539      20726576 
+ 2539      6973696F 
+ 2539      6E203232 
+ 2539      31323230 
+ 2540 0224 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 2540      66756E63 
+ 2540      74696F6E 
+ 2540      2D736563 
+ 2540      74696F6E 
+ 2541              	.LASF10:
+ 2542 024c 75696E74 		.ascii	"uint16\000"
+ 2542      313600
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 66
+
+
+ 2543              	.LASF37:
+ 2544 0253 4932435F 		.ascii	"I2C_1_I2CMasterStatus\000"
+ 2544      315F4932 
+ 2544      434D6173 
+ 2544      74657253 
+ 2544      74617475 
+ 2545              	.LASF22:
+ 2546 0269 72644461 		.ascii	"rdData\000"
+ 2546      746100
+ 2547              	.LASF11:
+ 2548 0270 75696E74 		.ascii	"uint32\000"
+ 2548      333200
+ 2549              	.LASF40:
+ 2550 0277 4932435F 		.ascii	"I2C_1_state\000"
+ 2550      315F7374 
+ 2550      61746500 
+ 2551              	.LASF8:
+ 2552 0283 756E7369 		.ascii	"unsigned int\000"
+ 2552      676E6564 
+ 2552      20696E74 
+ 2552      00
+ 2553              	.LASF18:
+ 2554 0290 77724461 		.ascii	"wrData\000"
+ 2554      746100
+ 2555              	.LASF7:
+ 2556 0297 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 2556      206C6F6E 
+ 2556      6720756E 
+ 2556      7369676E 
+ 2556      65642069 
+ 2557              	.LASF24:
+ 2558 02ae 4932435F 		.ascii	"I2C_1_I2CMasterSendStart\000"
+ 2558      315F4932 
+ 2558      434D6173 
+ 2558      74657253 
+ 2558      656E6453 
+ 2559              	.LASF19:
+ 2560 02c7 6D6F6465 		.ascii	"mode\000"
+>>>>>>> origin/master
  2560      00
  2561              	.LASF51:
  2562 02ad 47656E65 		.ascii	"Generated_Source\\PSoC4\\I2C_1_I2C_MASTER.c\000"
@@ -3955,6 +4817,7 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  2566 02ef 73697A65 		.ascii	"sizetype\000"
  2566      74797065 
  2566      00
+<<<<<<< HEAD
  2567              	.LASF6:
  2568 02f8 6C6F6E67 		.ascii	"long long int\000"
  2568      206C6F6E 
@@ -3974,6 +4837,27 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  2571      7465725F 
  2571      322E6379 
  2571      64736E00 
+=======
+ 2567              	.LASF52:
+ 2568 02fa 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\GitHub\\BioSnap\\Mas"
+ 2568      73657273 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 67
+
+
+ 2568      5C4D6174 
+ 2568      74686577 
+ 2568      5C446F63 
+ 2569 0327 7465725F 		.ascii	"ter_v2\\Master_2.cydsn\000"
+ 2569      76325C4D 
+ 2569      61737465 
+ 2569      725F322E 
+ 2569      63796473 
+ 2570              	.LASF6:
+ 2571 033d 6C6F6E67 		.ascii	"long long int\000"
+ 2571      206C6F6E 
+ 2571      6720696E 
+ 2571      7400
+>>>>>>> origin/master
  2572              	.LASF28:
  2573 0347 4932435F 		.ascii	"I2C_1_I2CMasterSendStop\000"
  2573      315F4932 
@@ -4018,7 +4902,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 1
  2588              	.LASF14:
  2589 03d7 63686172 		.ascii	"char\000"
  2589      00
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccKfGyPy.s 			page 68
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccIdFmzQ.s 			page 68
+>>>>>>> origin/master
 
 
  2590              	.LASF0:

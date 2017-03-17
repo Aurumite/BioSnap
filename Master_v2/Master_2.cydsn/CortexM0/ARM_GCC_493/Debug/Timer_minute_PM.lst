@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 1
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 1
+>>>>>>> origin/master
 
 
    1              		.cpu cortex-m0
@@ -29,6 +33,7 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 1
   26              		.type	Timer_minute_SaveConfig, %function
   27              	Timer_minute_SaveConfig:
   28              	.LFB2:
+<<<<<<< HEAD
   29              		.file 1 "Generated_Source\\PSoC4\\Timer_minute_PM.c"
    1:Generated_Source\PSoC4/Timer_minute_PM.c **** /*******************************************************************************
    2:Generated_Source\PSoC4/Timer_minute_PM.c **** * File Name: Timer_minute_PM.c
@@ -59,6 +64,38 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 1
   27:Generated_Source\PSoC4/Timer_minute_PM.c **** *
   28:Generated_Source\PSoC4/Timer_minute_PM.c **** * Summary:
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 2
+=======
+  29              		.file 1 ".\\Generated_Source\\PSoC4\\Timer_minute_PM.c"
+   1:.\Generated_Source\PSoC4/Timer_minute_PM.c **** /*******************************************************************************
+   2:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * File Name: Timer_minute_PM.c
+   3:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Version 2.10
+   4:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
+   5:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Description:
+   6:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *  This file contains the setup, control, and status commands to support
+   7:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *  the component operations in the low power mode.
+   8:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
+   9:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Note:
+  10:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *  None
+  11:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
+  12:.\Generated_Source\PSoC4/Timer_minute_PM.c **** ********************************************************************************
+  13:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Copyright 2013-2015, Cypress Semiconductor Corporation.  All rights reserved.
+  14:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * You may use this file only in accordance with the license, terms, conditions,
+  15:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  16:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * the software package with which this file was provided.
+  17:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *******************************************************************************/
+  18:.\Generated_Source\PSoC4/Timer_minute_PM.c **** 
+  19:.\Generated_Source\PSoC4/Timer_minute_PM.c **** #include "Timer_minute.h"
+  20:.\Generated_Source\PSoC4/Timer_minute_PM.c **** 
+  21:.\Generated_Source\PSoC4/Timer_minute_PM.c **** static Timer_minute_BACKUP_STRUCT Timer_minute_backup;
+  22:.\Generated_Source\PSoC4/Timer_minute_PM.c **** 
+  23:.\Generated_Source\PSoC4/Timer_minute_PM.c **** 
+  24:.\Generated_Source\PSoC4/Timer_minute_PM.c **** /*******************************************************************************
+  25:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Function Name: Timer_minute_SaveConfig
+  26:.\Generated_Source\PSoC4/Timer_minute_PM.c **** ********************************************************************************
+  27:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
+  28:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Summary:
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 2
+>>>>>>> origin/master
 
 
   29:Generated_Source\PSoC4/Timer_minute_PM.c **** *  All configuration registers are retention. Nothing to save here.
@@ -118,7 +155,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 1
   53              		.loc 1 59 0
   54              		.cfi_startproc
   55 0000 80B5     		push	{r7, lr}
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 3
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 3
+>>>>>>> origin/master
 
 
   56              		.cfi_def_cfa_offset 8
@@ -178,7 +219,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 1
   98              		.thumb_func
   99              		.type	Timer_minute_RestoreConfig, %function
  100              	Timer_minute_RestoreConfig:
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 4
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 4
+>>>>>>> origin/master
 
 
  101              	.LFB4:
@@ -225,6 +270,7 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 1
  122              		.type	Timer_minute_Wakeup, %function
  123              	Timer_minute_Wakeup:
  124              	.LFB5:
+<<<<<<< HEAD
   92:Generated_Source\PSoC4/Timer_minute_PM.c **** 
   93:Generated_Source\PSoC4/Timer_minute_PM.c **** 
   94:Generated_Source\PSoC4/Timer_minute_PM.c **** /*******************************************************************************
@@ -239,6 +285,22 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 1
  103:Generated_Source\PSoC4/Timer_minute_PM.c **** *
  104:Generated_Source\PSoC4/Timer_minute_PM.c **** * Return:
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 5
+=======
+  92:.\Generated_Source\PSoC4/Timer_minute_PM.c **** 
+  93:.\Generated_Source\PSoC4/Timer_minute_PM.c **** 
+  94:.\Generated_Source\PSoC4/Timer_minute_PM.c **** /*******************************************************************************
+  95:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Function Name: Timer_minute_Wakeup
+  96:.\Generated_Source\PSoC4/Timer_minute_PM.c **** ********************************************************************************
+  97:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
+  98:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Summary:
+  99:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *  Restores the user configuration and restores the enable state.
+ 100:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
+ 101:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Parameters:
+ 102:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *  None
+ 103:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
+ 104:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Return:
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 5
+>>>>>>> origin/master
 
 
  105:Generated_Source\PSoC4/Timer_minute_PM.c **** *  None
@@ -298,7 +360,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 1
  167 0011 41000000 		.4byte	.LASF22
  168 0015 82000000 		.4byte	.LASF23
  169 0019 00000000 		.4byte	.Ldebug_ranges0+0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 6
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 6
+>>>>>>> origin/master
 
 
  170 001d 00000000 		.4byte	0
@@ -358,7 +424,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 1
  224 0085 04       		.byte	0x4
  225 0086 87010000 		.4byte	.LASF11
  226 008a 02       		.uleb128 0x2
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 7
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 7
+>>>>>>> origin/master
 
 
  227 008b 08       		.byte	0x8
@@ -418,7 +488,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 1
  281 00f8 58       		.byte	0x58
  282 00f9 00000000 		.4byte	.LFB4
  283 00fd 08000000 		.4byte	.LFE4-.LFB4
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 8
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 8
+>>>>>>> origin/master
 
 
  284 0101 01       		.uleb128 0x1
@@ -478,7 +552,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 1
  338 0021 0B       		.uleb128 0xb
  339 0022 0B       		.uleb128 0xb
  340 0023 3E       		.uleb128 0x3e
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 9
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 9
+>>>>>>> origin/master
 
 
  341 0024 0B       		.uleb128 0xb
@@ -538,7 +616,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 1
  395 005a 16       		.uleb128 0x16
  396 005b 00       		.byte	0
  397 005c 03       		.uleb128 0x3
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 10
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 10
+>>>>>>> origin/master
 
 
  398 005d 0E       		.uleb128 0xe
@@ -598,7 +680,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 1
  452 0095 00       		.byte	0
  453 0096 0B       		.uleb128 0xb
  454 0097 34       		.uleb128 0x34
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 11
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 11
+>>>>>>> origin/master
 
 
  455 0098 00       		.byte	0
@@ -658,7 +744,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 1
  503      6720696E 
  503      7400
  504              	.LASF10:
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 12
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 12
+>>>>>>> origin/master
 
 
  505 000e 75696E74 		.ascii	"uint32\000"
@@ -678,6 +768,7 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 1
  511      6E757465 
  511      5F536C65 
  511      657000
+<<<<<<< HEAD
  512              	.LASF22:
  513 0041 47656E65 		.ascii	"Generated_Source\\PSoC4\\Timer_minute_PM.c\000"
  513      72617465 
@@ -719,6 +810,49 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 1
  525              	.LASF25:
  526 00f2 54696D65 		.ascii	"Timer_minute_backup\000"
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 13
+=======
+ 512              	.LASF9:
+ 513 0041 75696E74 		.ascii	"uint8\000"
+ 513      3800
+ 514              	.LASF5:
+ 515 0047 6C6F6E67 		.ascii	"long unsigned int\000"
+ 515      20756E73 
+ 515      69676E65 
+ 515      6420696E 
+ 515      7400
+ 516              	.LASF7:
+ 517 0059 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 517      206C6F6E 
+ 517      6720756E 
+ 517      7369676E 
+ 517      65642069 
+ 518              	.LASF17:
+ 519 0070 54696D65 		.ascii	"Timer_minute_SaveConfig\000"
+ 519      725F6D69 
+ 519      6E757465 
+ 519      5F536176 
+ 519      65436F6E 
+ 520              	.LASF25:
+ 521 0088 54696D65 		.ascii	"Timer_minute_backup\000"
+ 521      725F6D69 
+ 521      6E757465 
+ 521      5F626163 
+ 521      6B757000 
+ 522              	.LASF1:
+ 523 009c 756E7369 		.ascii	"unsigned char\000"
+ 523      676E6564 
+ 523      20636861 
+ 523      7200
+ 524              	.LASF13:
+ 525 00aa 63686172 		.ascii	"char\000"
+ 525      00
+ 526              	.LASF4:
+ 527 00af 6C6F6E67 		.ascii	"long int\000"
+ 527      20696E74 
+ 527      00
+ 528              	.LASF2:
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 13
+>>>>>>> origin/master
 
 
  526      725F6D69 
@@ -778,7 +912,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 1
  550      6E757465 
  550      5F424143 
  550      4B55505F 
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccaFBqz9.s 			page 14
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 14
+>>>>>>> origin/master
 
 
  551              	.LASF21:

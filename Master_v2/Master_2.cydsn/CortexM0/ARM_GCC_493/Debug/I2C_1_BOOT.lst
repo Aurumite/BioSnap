@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccCbGR7R.s 			page 1
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cco5ck7g.s 			page 1
+>>>>>>> origin/master
 
 
    1              		.cpu cortex-m0
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccCbGR7R.s 			page 1
   55 0048 08       		.byte	0x8
   56 0049 05       		.byte	0x5
   57 004a 00000000 		.4byte	.LASF6
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccCbGR7R.s 			page 2
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cco5ck7g.s 			page 2
+>>>>>>> origin/master
 
 
   58 004e 02       		.uleb128 0x2
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccCbGR7R.s 			page 1
  112 0017 0E       		.uleb128 0xe
  113 0018 00       		.byte	0
  114 0019 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccCbGR7R.s 			page 3
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cco5ck7g.s 			page 3
+>>>>>>> origin/master
 
 
  115 001a 03       		.uleb128 0x3
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccCbGR7R.s 			page 1
  147      00
  148              	.LASF5:
  149 00a9 6C6F6E67 		.ascii	"long unsigned int\000"
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccCbGR7R.s 			page 4
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cco5ck7g.s 			page 4
+>>>>>>> origin/master
 
 
  149      20756E73 
@@ -237,8 +253,13 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccCbGR7R.s 			page 1
  170 0179 666C6F61 		.ascii	"float\000"
  170      7400
  171              	.LASF2:
+<<<<<<< HEAD
  172 017f 73686F72 		.ascii	"short int\000"
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccCbGR7R.s 			page 5
+=======
+ 172 0183 73686F72 		.ascii	"short int\000"
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cco5ck7g.s 			page 5
+>>>>>>> origin/master
 
 
  172      7420696E 

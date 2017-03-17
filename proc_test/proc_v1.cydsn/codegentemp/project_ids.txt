@@ -1,0 +1,5 @@
+C:\Users\Matthew\Documents\UC Davis\EEC 136AB\PSoC\proc_test\proc_v1.cydsn\proc_v1.cyprj|02e3e55c-02ab-46cf-8dd6-be7993705102
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|b32e823f-75f7-4ef9-a6ed-29c3d144bd1d
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|33588f28-55b5-46b1-a4fc-ffcf0922e248
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|6bee1f05-e0b4-4033-8557-a5177c1a0bbd
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|e8f96e1e-3b41-4b15-9157-a4fab2955582

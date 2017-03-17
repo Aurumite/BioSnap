@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 1
+>>>>>>> origin/master
 
 
    1              		.cpu cortex-m0
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
   51 000e B868     		ldr	r0, [r7, #8]
   52 0010 F968     		ldr	r1, [r7, #12]
   53 0012 3A68     		ldr	r2, [r7]
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 2
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 2
+>>>>>>> origin/master
 
 
   54 0014 7B68     		ldr	r3, [r7, #4]
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
   10:MAX30100_All.c ****     pulseOximeter.beatDetector->beatPeriod = 0;
  103              		.loc 1 10 0
  104 0014 064B     		ldr	r3, .L9
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 3
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 3
+>>>>>>> origin/master
 
 
  105 0016 1B6A     		ldr	r3, [r3, #32]
@@ -177,8 +189,13 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  151 000a 181C     		add	r0, r3, #0
  152 000c FFF7FEFF 		bl	BeatDetector_checkForBeat
  153 0010 031C     		mov	r3, r0
+<<<<<<< HEAD
   18:MAX30100_All.c **** }
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 4
+=======
+  18:.\MAX30100_All.c **** }
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 4
+>>>>>>> origin/master
 
 
  154              		.loc 1 18 0
@@ -238,7 +255,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  204 0032 181C     		add	r0, r3, #0
  205 0034 0649     		ldr	r1, .L19+8
  206 0036 FFF7FEFF 		bl	__aeabi_fmul
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 5
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 5
+>>>>>>> origin/master
 
 
  207 003a 031C     		add	r3, r0, #0
@@ -298,7 +319,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  253              		.align	2
  254              	.L23:
  255 0010 00000000 		.word	pulseOximeter
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 6
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 6
+>>>>>>> origin/master
 
 
  256              		.cfi_endproc
@@ -358,7 +383,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  305 0022 1B68     		ldr	r3, [r3]
  306 0024 9F46     		mov	pc, r3
  307              		.section	.rodata
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 7
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 7
+>>>>>>> origin/master
 
 
  308              		.align	2
@@ -418,7 +447,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  353 0068 101C     		mov	r0, r2
  354 006a 191C     		mov	r1, r3
  355 006c FFF7FEFF 		bl	__aeabi_d2f
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 8
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 8
+>>>>>>> origin/master
 
 
  356 0070 031C     		add	r3, r0, #0
@@ -478,7 +511,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  396 00b0 181C     		add	r0, r3, #0
  397 00b2 7968     		ldr	r1, [r7, #4]
  398 00b4 FFF7FEFF 		bl	__aeabi_fcmpgt
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 9
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 9
+>>>>>>> origin/master
 
 
  399 00b8 031E     		sub	r3, r0, #0
@@ -538,7 +575,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  442              		.loc 1 68 0
  443 0108 0F23     		mov	r3, #15
  444 010a FB18     		add	r3, r7, r3
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 10
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 10
+>>>>>>> origin/master
 
 
  445 010c 0122     		mov	r2, #1
@@ -598,7 +639,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  493 016c 9B68     		ldr	r3, [r3, #8]
  494 016e 181C     		add	r0, r3, #0
  495 0170 FFF7FEFF 		bl	__aeabi_f2d
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 11
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 11
+>>>>>>> origin/master
 
 
  496 0174 021C     		mov	r2, r0
@@ -658,7 +703,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  539 01c2 1B6A     		ldr	r3, [r3, #32]
  540 01c4 1B69     		ldr	r3, [r3, #16]
  541 01c6 D31A     		sub	r3, r2, r3
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 12
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 12
+>>>>>>> origin/master
 
 
  542 01c8 C82B     		cmp	r3, #200
@@ -716,9 +765,15 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  586              		.type	BeatDetector_decreaseThreshold, %function
  587              	BeatDetector_decreaseThreshold:
  588              	.LFB43:
+<<<<<<< HEAD
   93:MAX30100_All.c **** 
   94:MAX30100_All.c **** void BeatDetector_decreaseThreshold(){
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 13
+=======
+  93:.\MAX30100_All.c **** 
+  94:.\MAX30100_All.c **** void BeatDetector_decreaseThreshold(){
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 13
+>>>>>>> origin/master
 
 
  589              		.loc 1 94 0
@@ -778,7 +833,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  640 0054 294B     		ldr	r3, .L65+8
  641 0056 FFF7FEFF 		bl	__aeabi_dmul
  642 005a 021C     		mov	r2, r0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 14
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 14
+>>>>>>> origin/master
 
 
  643 005c 0B1C     		mov	r3, r1
@@ -838,7 +897,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  692 00c4 0B1C     		mov	r3, r1
  693 00c6 101C     		mov	r0, r2
  694 00c8 191C     		mov	r1, r3
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 15
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 15
+>>>>>>> origin/master
 
 
  695 00ca FFF7FEFF 		bl	__aeabi_d2f
@@ -898,7 +961,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  741              		.cfi_startproc
  742 0000 80B5     		push	{r7, lr}
  743              		.cfi_def_cfa_offset 8
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 16
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 16
+>>>>>>> origin/master
 
 
  744              		.cfi_offset 7, -8
@@ -958,7 +1025,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  784 0000 80B5     		push	{r7, lr}
  785              		.cfi_def_cfa_offset 8
  786              		.cfi_offset 7, -8
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 17
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 17
+>>>>>>> origin/master
 
 
  787              		.cfi_offset 14, -4
@@ -1017,8 +1088,13 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  835 0012 FFF7FEFF 		bl	MAX30100_readRegister
  836 0016 031C     		mov	r3, r0
  837 0018 2370     		strb	r3, [r4]
+<<<<<<< HEAD
  129:MAX30100_All.c ****     MAX30100_writeRegister(MAX30100_REG_SPO2_CONFIGURATION, (previous & 0xfc) | ledPulseWidth);
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 18
+=======
+ 129:.\MAX30100_All.c ****     MAX30100_writeRegister(MAX30100_REG_SPO2_CONFIGURATION, (previous & 0xfc) | ledPulseWidth);
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 18
+>>>>>>> origin/master
 
 
  838              		.loc 1 129 0
@@ -1078,7 +1154,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  888 0010 0720     		mov	r0, #7
  889 0012 FFF7FEFF 		bl	MAX30100_readRegister
  890 0016 031C     		mov	r3, r0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 19
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 19
+>>>>>>> origin/master
 
 
  891 0018 2370     		strb	r3, [r4]
@@ -1137,8 +1217,13 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  940 000c BB1D     		add	r3, r7, #6
  941 000e 0A1C     		add	r2, r1, #0
  942 0010 1A70     		strb	r2, [r3]
+<<<<<<< HEAD
  138:MAX30100_All.c ****     MAX30100_writeRegister(MAX30100_REG_LED_CONFIGURATION, redLedCurrent << 4 | irLedCurrent);
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 20
+=======
+ 138:.\MAX30100_All.c ****     MAX30100_writeRegister(MAX30100_REG_LED_CONFIGURATION, redLedCurrent << 4 | irLedCurrent);
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 20
+>>>>>>> origin/master
 
 
  943              		.loc 1 138 0
@@ -1198,7 +1283,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  143:MAX30100_All.c ****     if (enabled) {
  993              		.loc 1 143 0
  994 001a FB1D     		add	r3, r7, #7
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 21
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 21
+>>>>>>> origin/master
 
 
  995 001c 1B78     		ldrb	r3, [r3]
@@ -1258,7 +1347,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  1042              		.cfi_offset 14, -4
  1043 0002 00AF     		add	r7, sp, #0
  1044              		.cfi_def_cfa_register 7
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 22
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 22
+>>>>>>> origin/master
 
 
  151:MAX30100_All.c ****     MAX30100_readFifoData();
@@ -1318,7 +1411,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  164:MAX30100_All.c ****     
  165:MAX30100_All.c ****     uint8 Read_Buf[1]={0};  //Buffer that will store the value read from the register
  1086              		.loc 1 165 0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 23
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 23
+>>>>>>> origin/master
 
 
  1087 001e 0823     		mov	r3, #8
@@ -1378,7 +1475,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  1130 0068 181C     		mov	r0, r3
  1131 006a BD46     		mov	sp, r7
  1132 006c 04B0     		add	sp, sp, #16
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 24
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 24
+>>>>>>> origin/master
 
 
  1133              		@ sp needed
@@ -1437,8 +1538,13 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  1176 0028 BA1D     		add	r2, r7, #6
  1177 002a 1278     		ldrb	r2, [r2]
  1178 002c 5A70     		strb	r2, [r3, #1]
+<<<<<<< HEAD
  187:MAX30100_All.c ****     
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 25
+=======
+ 187:.\MAX30100_All.c ****     
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 25
+>>>>>>> origin/master
 
 
  188:MAX30100_All.c ****     
@@ -1498,7 +1604,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  1225 0008 111C     		mov	r1, r2
  1226 000a FB1D     		add	r3, r7, #7
  1227 000c 021C     		add	r2, r0, #0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 26
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 26
+>>>>>>> origin/master
 
 
  1228 000e 1A70     		strb	r2, [r3]
@@ -1556,9 +1666,15 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  1257 0040 0223     		mov	r3, #2
  1258 0042 1340     		and	r3, r2
  1259 0044 F9D0     		beq	.L84
+<<<<<<< HEAD
  219:MAX30100_All.c ****     
  220:MAX30100_All.c ****     //Step 2
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 27
+=======
+ 219:.\MAX30100_All.c ****     
+ 220:.\MAX30100_All.c ****     //Step 2
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 27
+>>>>>>> origin/master
 
 
  221:MAX30100_All.c ****     I2C_1_I2CMasterReadBuf(MAX30100_I2C_ADDRESS, buffer, length, I2C_1_I2C_MODE_REPEAT_START);
@@ -1618,7 +1734,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  1306 0008 0520     		mov	r0, #5
  1307 000a 191C     		mov	r1, r3
  1308 000c 0422     		mov	r2, #4
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 28
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 28
+>>>>>>> origin/master
 
 
  1309 000e FFF7FEFF 		bl	MAX30100_burstRead
@@ -1675,10 +1795,17 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  1355              		.type	SpO2Calculator_Init, %function
  1356              	SpO2Calculator_Init:
  1357              	.LFB55:
+<<<<<<< HEAD
  234:MAX30100_All.c **** 
  235:MAX30100_All.c **** // SaO2 Look-up Table
  236:MAX30100_All.c **** // http://www.ti.com/lit/an/slaa274b/slaa274b.pdf
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 29
+=======
+ 234:.\MAX30100_All.c **** 
+ 235:.\MAX30100_All.c **** // SaO2 Look-up Table
+ 236:.\MAX30100_All.c **** // http://www.ti.com/lit/an/slaa274b/slaa274b.pdf
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 29
+>>>>>>> origin/master
 
 
  237:MAX30100_All.c **** 
@@ -1738,7 +1865,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  1399 0030 1A70     		strb	r2, [r3]
  246:MAX30100_All.c ****     for(; i < 10; i++)
  1400              		.loc 1 246 0 discriminator 2
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 30
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 30
+>>>>>>> origin/master
 
 
  1401 0032 7B68     		ldr	r3, [r7, #4]
@@ -1798,7 +1929,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  1446 0070 F3DD     		ble	.L97
  252:MAX30100_All.c ****     for(; i < 27; i++)
  1447              		.loc 1 252 0 is_stmt 1
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 31
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 31
+>>>>>>> origin/master
 
 
  1448 0072 08E0     		b	.L98
@@ -1857,8 +1992,13 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  1492 00ae D318     		add	r3, r2, r3
  1493 00b0 5E22     		mov	r2, #94
  1494 00b2 1A70     		strb	r2, [r3]
+<<<<<<< HEAD
  256:MAX30100_All.c ****     for(; i < 38; i++)
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 32
+=======
+ 256:.\MAX30100_All.c ****     for(; i < 38; i++)
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 32
+>>>>>>> origin/master
 
 
  1495              		.loc 1 256 0 discriminator 2
@@ -1918,7 +2058,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  1539              		.loc 1 264 0
  1540 00f4 054B     		ldr	r3, .L106
  1541 00f6 1B6B     		ldr	r3, [r3, #48]
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 33
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 33
+>>>>>>> origin/master
 
 
  1542 00f8 0022     		mov	r2, #0
@@ -1978,7 +2122,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  1591 0012 5C4B     		ldr	r3, .L117
  1592 0014 1B6B     		ldr	r3, [r3, #48]
  1593 0016 DD6A     		ldr	r5, [r3, #44]
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 34
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 34
+>>>>>>> origin/master
 
 
  1594 0018 F868     		ldr	r0, [r7, #12]
@@ -2038,7 +2186,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  1642 0074 1B6B     		ldr	r3, [r3, #48]
  1643 0076 3422     		mov	r2, #52
  1644 0078 9B5C     		ldrb	r3, [r3, r2]
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 35
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 35
+>>>>>>> origin/master
 
 
  1645 007a 032B     		cmp	r3, #3
@@ -2098,7 +2250,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  1694 00de 191C     		add	r1, r3, #0
  1695 00e0 FFF7FEFF 		bl	__aeabi_fdiv
  1696 00e4 031C     		add	r3, r0, #0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 36
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 36
+>>>>>>> origin/master
 
 
  1697 00e6 181C     		add	r0, r3, #0
@@ -2158,7 +2314,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  1743 0140 3869     		ldr	r0, [r7, #16]
  1744 0142 1349     		ldr	r1, .L117+12
  1745 0144 FFF7FEFF 		bl	__aeabi_fcmpgt
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 37
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 37
+>>>>>>> origin/master
 
 
  1746 0148 031E     		sub	r3, r0, #0
@@ -2218,7 +2378,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  1792              		.align	2
  1793              		.global	SpO2Calculator_reset
  1794              		.code	16
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 38
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 38
+>>>>>>> origin/master
 
 
  1795              		.thumb_func
@@ -2278,7 +2442,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  1841 0034 00000000 		.word	pulseOximeter
  1842              		.cfi_endproc
  1843              	.LFE57:
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 39
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 39
+>>>>>>> origin/master
 
 
  1844              		.size	SpO2Calculator_reset, .-SpO2Calculator_reset
@@ -2338,7 +2506,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  1892 0002 82B0     		sub	sp, sp, #8
  1893              		.cfi_def_cfa_offset 16
  1894 0004 00AF     		add	r7, sp, #0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 40
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 40
+>>>>>>> origin/master
 
 
  1895              		.cfi_def_cfa_register 7
@@ -2398,7 +2570,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  1940              	.L129:
  1941 0048 00000000 		.word	pulseOximeter
  1942              		.cfi_endproc
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 41
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 41
+>>>>>>> origin/master
 
 
  1943              	.LFE59:
@@ -2458,7 +2634,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  1993 0038 181C     		add	r0, r3, #0
  1994 003a 3968     		ldr	r1, [r7]
  1995 003c FFF7FEFF 		bl	__aeabi_fadd
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 42
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 42
+>>>>>>> origin/master
 
 
  1996 0040 031C     		add	r3, r0, #0
@@ -2518,7 +2698,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  2044 0096 FFF7FEFF 		bl	__aeabi_fsub
  2045 009a 031C     		add	r3, r0, #0
  2046 009c 00E0     		b	.L133
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 43
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 43
+>>>>>>> origin/master
 
 
  2047              	.L134:
@@ -2578,7 +2762,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  2093 0016 5B6A     		ldr	r3, [r3, #36]
  2094 0018 5B68     		ldr	r3, [r3, #4]
  2095 001a 08E0     		b	.L139
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 44
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 44
+>>>>>>> origin/master
 
 
  2096              	.L138:
@@ -2638,7 +2826,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  2142 0006 DB6A     		ldr	r3, [r3, #44]
  2143 0008 0022     		mov	r2, #0
  2144 000a 1A60     		str	r2, [r3]
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 45
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 45
+>>>>>>> origin/master
 
 
  343:MAX30100_All.c **** }
@@ -2698,7 +2890,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  2194 0026 1A4A     		ldr	r2, .L148+4
  2195 0028 1A4B     		ldr	r3, .L148+8
  2196 002a FFF7FEFF 		bl	__aeabi_dmul
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 46
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 46
+>>>>>>> origin/master
 
 
  2197 002e 021C     		mov	r2, r0
@@ -2758,7 +2954,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  2248 0098 5CDDC150 		.word	1354882396
  2249 009c 084EE03F 		.word	1071664648
  2250              		.cfi_endproc
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 47
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 47
+>>>>>>> origin/master
 
 
  2251              	.LFE63:
@@ -2818,7 +3018,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  2296 0028 134B     		ldr	r3, .L151
  2297 002a 0022     		mov	r2, #0
  2298 002c 9A61     		str	r2, [r3, #24]
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 48
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 48
+>>>>>>> origin/master
 
 
  360:MAX30100_All.c ****     pulseOximeter.redLedPower = (uint8_t)RED_LED_CURRENT_START,
@@ -2878,7 +3082,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  2338 006c D463     		str	r4, [r2, #60]
  375:MAX30100_All.c ****     numBeats = 0;
  2339              		.loc 1 375 0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 49
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 49
+>>>>>>> origin/master
 
 
  2340 006e 094B     		ldr	r3, .L151+28
@@ -2938,7 +3146,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  2390 001a 044A     		ldr	r2, .L155+4
  2391 001c 9446     		mov	ip, r2
  2392 001e 6344     		add	r3, r3, ip
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 50
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 50
+>>>>>>> origin/master
 
 
  380:MAX30100_All.c **** }
@@ -2998,7 +3210,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  2438 001e 0F20     		mov	r0, #15
  2439 0020 0821     		mov	r1, #8
  2440 0022 FFF7FEFF 		bl	MAX30100_setLedsCurrent
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 51
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 51
+>>>>>>> origin/master
 
 
  389:MAX30100_All.c ****     
@@ -3058,7 +3274,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  2486              		.cfi_def_cfa 7, 16
  398:MAX30100_All.c ****     PulseOximeter_checkSample(pulseOximeter);
  2487              		.loc 1 398 0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 52
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 52
+>>>>>>> origin/master
 
 
  2488 0006 114C     		ldr	r4, .L161
@@ -3118,7 +3338,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  2537              		.loc 1 403 0
  2538              		.cfi_startproc
  2539 0000 80B5     		push	{r7, lr}
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 53
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 53
+>>>>>>> origin/master
 
 
  2540              		.cfi_def_cfa_offset 8
@@ -3178,7 +3402,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  2587              		.thumb_func
  2588              		.type	PulseOximeter_getRedLedCurrentBias, %function
  2589              	PulseOximeter_getRedLedCurrentBias:
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 54
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 54
+>>>>>>> origin/master
 
 
  2590              	.LFB70:
@@ -3238,7 +3466,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  2634 0008 BD46     		mov	sp, r7
  2635 000a 02B0     		add	sp, sp, #8
  2636              		@ sp needed
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 55
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 55
+>>>>>>> origin/master
 
 
  2637 000c 80BD     		pop	{r7, pc}
@@ -3298,7 +3530,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  425:MAX30100_All.c ****         MAX30100_update();
  2687              		.loc 1 425 0
  2688 003a FFF7FEFF 		bl	MAX30100_update
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 56
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 56
+>>>>>>> origin/master
 
 
  426:MAX30100_All.c ****         float irACValue = DCRemover_step('i', pulseOximeter.hrm->rawIRValue);
@@ -3357,8 +3593,13 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  2734 009c FFF7FEFF 		bl	__aeabi_fcmpgt
  2735 00a0 031E     		sub	r3, r0, #0
  2736 00a2 0CD0     		beq	.L180
+<<<<<<< HEAD
  434:MAX30100_All.c ****             pulseOximeter.state = PULSEOXIMETER_STATE_DETECTING;
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 57
+=======
+ 434:.\MAX30100_All.c ****             pulseOximeter.state = PULSEOXIMETER_STATE_DETECTING;
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 57
+>>>>>>> origin/master
 
 
  2737              		.loc 1 434 0
@@ -3418,7 +3659,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  2779 00e4 05B0     		add	sp, sp, #20
  2780              		@ sp needed
  2781 00e6 90BD     		pop	{r4, r7, pc}
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 58
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 58
+>>>>>>> origin/master
 
 
  2782              	.L182:
@@ -3478,7 +3723,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  2828 0024 FFF7FEFF 		bl	DCRemover_getDCW
  2829 0028 041C     		add	r4, r0, #0
  2830 002a 7220     		mov	r0, #114
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 59
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 59
+>>>>>>> origin/master
 
 
  2831 002c FFF7FEFF 		bl	DCRemover_getDCW
@@ -3538,7 +3787,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  2881              		.loc 1 458 0 is_stmt 1
  2882 0092 114B     		ldr	r3, .L192
  2883 0094 1B7F     		ldrb	r3, [r3, #28]
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 60
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 60
+>>>>>>> origin/master
 
 
  2884 0096 013B     		sub	r3, r3, #1
@@ -3598,7 +3851,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  2927 00d8 00000000 		.word	pulseOximeter
  2928 00dc 00B88847 		.word	1200142336
  2929              		.cfi_endproc
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 61
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 61
+>>>>>>> origin/master
 
 
  2930              	.LFE73:
@@ -3658,7 +3915,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  2984 005e 03       		.uleb128 0x3
  2985 005f 2E0A0000 		.4byte	.LASF7
  2986 0063 02       		.byte	0x2
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 62
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 62
+>>>>>>> origin/master
 
 
  2987 0064 41       		.byte	0x41
@@ -3717,8 +3978,13 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  3040 00cc 35       		.byte	0x35
  3041 00cd AD000000 		.4byte	0xad
  3042 00d1 05       		.uleb128 0x5
+<<<<<<< HEAD
  3043 00d2 FD110000 		.4byte	.LASF18
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 63
+=======
+ 3043 00d2 01120000 		.4byte	.LASF18
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 63
+>>>>>>> origin/master
 
 
  3044 00d6 01       		.byte	0x1
@@ -3778,7 +4044,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  3098 013f F80F0000 		.4byte	.LASF27
  3099 0143 04       		.byte	0x4
  3100 0144 4C       		.byte	0x4c
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 64
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 64
+>>>>>>> origin/master
 
 
  3101 0145 19010000 		.4byte	0x119
@@ -3838,7 +4108,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  3155 01b4 0F       		.sleb128 15
  3156 01b5 00       		.byte	0
  3157 01b6 03       		.uleb128 0x3
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 65
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 65
+>>>>>>> origin/master
 
 
  3158 01b7 24000000 		.4byte	.LASF32
@@ -3898,7 +4172,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  3212 0224 CE030000 		.4byte	.LASF60
  3213 0228 03       		.sleb128 3
  3214 0229 06       		.uleb128 0x6
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 66
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 66
+>>>>>>> origin/master
 
 
  3215 022a A0130000 		.4byte	.LASF61
@@ -3958,7 +4236,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  3269 0296 31020000 		.4byte	.LASF79
  3270 029a 2F       		.sleb128 47
  3271 029b 06       		.uleb128 0x6
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 67
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 67
+>>>>>>> origin/master
 
 
  3272 029c 940D0000 		.4byte	.LASF80
@@ -4018,7 +4300,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  3326 0316 B7020000 		.4byte	.LASF98
  3327 031a CE00     		.sleb128 78
  3328 031c 06       		.uleb128 0x6
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 68
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 68
+>>>>>>> origin/master
 
 
  3329 031d 6D0B0000 		.4byte	.LASF99
@@ -4078,7 +4364,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  3383 039b 6F010000 		.4byte	.LASF117
  3384 039f F800     		.sleb128 120
  3385 03a1 06       		.uleb128 0x6
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 69
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 69
+>>>>>>> origin/master
 
 
  3386 03a2 8A040000 		.4byte	.LASF118
@@ -4138,7 +4428,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  3440 0413 0A       		.uleb128 0xa
  3441 0414 330B0000 		.4byte	.LASF130
  3442 0418 06       		.byte	0x6
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 70
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 70
+>>>>>>> origin/master
 
 
  3443 0419 20       		.byte	0x20
@@ -4198,7 +4492,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  3497 0485 06       		.byte	0x6
  3498 0486 51       		.byte	0x51
  3499 0487 D4040000 		.4byte	0x4d4
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 71
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 71
+>>>>>>> origin/master
 
 
  3500 048b 0A       		.uleb128 0xa
@@ -4257,8 +4555,13 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  3553 04f6 63       		.byte	0x63
  3554 04f7 14050000 		.4byte	0x514
  3555 04fb 0A       		.uleb128 0xa
+<<<<<<< HEAD
  3556 04fc 92020000 		.4byte	.LASF146
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 72
+=======
+ 3556 04fc 6E020000 		.4byte	.LASF146
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 72
+>>>>>>> origin/master
 
 
  3557 0500 06       		.byte	0x6
@@ -4318,7 +4621,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  3611 056a 13020000 		.4byte	.LASF151
  3612 056e 02       		.sleb128 2
  3613 056f 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 73
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 73
+>>>>>>> origin/master
 
 
  3614 0570 03       		.uleb128 0x3
@@ -4378,7 +4685,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  3668 05dc 8D110000 		.4byte	.LASF160
  3669 05e0 06       		.byte	0x6
  3670 05e1 8F       		.byte	0x8f
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 74
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 74
+>>>>>>> origin/master
 
 
  3671 05e2 A2000000 		.4byte	0xa2
@@ -4438,7 +4749,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  3725 064e 84060000 		.4byte	0x684
  3726 0652 2C       		.byte	0x2c
  3727 0653 0A       		.uleb128 0xa
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 75
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 75
+>>>>>>> origin/master
 
 
  3728 0654 A5060000 		.4byte	.LASF169
@@ -4498,7 +4813,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  3782 06c4 91       		.byte	0x91
  3783 06c5 68       		.sleb128 -24
  3784 06c6 10       		.uleb128 0x10
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 76
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 76
+>>>>>>> origin/master
 
 
  3785 06c7 6200     		.ascii	"b\000"
@@ -4558,7 +4877,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  3839 0737 E00A0000 		.4byte	.LASF175
  3840 073b 01       		.byte	0x1
  3841 073c 20       		.byte	0x20
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 77
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 77
+>>>>>>> origin/master
 
 
  3842 073d C8010000 		.4byte	0x1c8
@@ -4618,7 +4941,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  3896 07ac 7B       		.byte	0x7b
  3897 07ad 00000000 		.4byte	.LFB45
  3898 07b1 1E000000 		.4byte	.LFE45-.LFB45
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 78
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 78
+>>>>>>> origin/master
 
 
  3899 07b5 01       		.uleb128 0x1
@@ -4677,8 +5004,13 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  3952 081d 91       		.byte	0x91
  3953 081e 67       		.sleb128 -25
  3954 081f 16       		.uleb128 0x16
+<<<<<<< HEAD
  3955 0820 9A0C0000 		.4byte	.LASF185
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 79
+=======
+ 3955 0820 5B0C0000 		.4byte	.LASF185
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 79
+>>>>>>> origin/master
 
 
  3956 0824 01       		.byte	0x1
@@ -4738,7 +5070,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  4010 088a 8C000000 		.4byte	0x8c
  4011 088e 02       		.uleb128 0x2
  4012 088f 91       		.byte	0x91
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 80
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 80
+>>>>>>> origin/master
 
 
  4013 0890 6F       		.sleb128 -17
@@ -4798,7 +5134,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  4067 08fc 01       		.byte	0x1
  4068 08fd B2       		.byte	0xb2
  4069 08fe 00000000 		.4byte	.LFB52
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 81
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 81
+>>>>>>> origin/master
 
 
  4070 0902 54000000 		.4byte	.LFE52-.LFB52
@@ -4858,7 +5198,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  4124 096b 9F070000 		.4byte	.LASF202
  4125 096f 01       		.byte	0x1
  4126 0970 C3       		.byte	0xc3
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 82
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 82
+>>>>>>> origin/master
 
 
  4127 0971 95090000 		.4byte	0x995
@@ -4918,7 +5262,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  4181 09da 10010000 		.4byte	.LFE55-.LFB55
  4182 09de 01       		.uleb128 0x1
  4183 09df 9C       		.byte	0x9c
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 83
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 83
+>>>>>>> origin/master
 
 
  4184 09e0 F1090000 		.4byte	0x9f1
@@ -4978,7 +5326,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  4238 0a4c 1F       		.uleb128 0x1f
  4239 0a4d 26110000 		.4byte	.LASF210
  4240 0a51 01       		.byte	0x1
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 84
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 84
+>>>>>>> origin/master
 
 
  4241 0a52 1901     		.2byte	0x119
@@ -5038,7 +5390,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  4295 0ac2 D6010000 		.4byte	0x1d6
  4296 0ac6 00000000 		.4byte	.LFB60
  4297 0aca AC000000 		.4byte	.LFE60-.LFB60
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 85
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 85
+>>>>>>> origin/master
 
 
  4298 0ace 01       		.uleb128 0x1
@@ -5097,8 +5453,13 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  4351 0b3c 9C       		.byte	0x9c
  4352 0b3d 510B0000 		.4byte	0xb51
  4353 0b41 1E       		.uleb128 0x1e
+<<<<<<< HEAD
  4354 0b42 92010000 		.4byte	.LASF214
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 86
+=======
+ 4354 0b42 6E010000 		.4byte	.LASF214
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 86
+>>>>>>> origin/master
 
 
  4355 0b46 01       		.byte	0x1
@@ -5158,7 +5519,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  4409 0bb9 7E01     		.2byte	0x17e
  4410 0bbb 00000000 		.4byte	.LFB66
  4411 0bbf 50000000 		.4byte	.LFE66-.LFB66
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 87
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 87
+>>>>>>> origin/master
 
 
  4412 0bc3 01       		.uleb128 0x1
@@ -5218,7 +5583,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  4466 0c3e 9C       		.byte	0x9c
  4467 0c3f 520C0000 		.4byte	0xc52
  4468 0c43 24       		.uleb128 0x24
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 88
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 88
+>>>>>>> origin/master
 
 
  4469 0c44 636200   		.ascii	"cb\000"
@@ -5278,7 +5647,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  4523 0cb1 AF01     		.2byte	0x1af
  4524 0cb3 C8010000 		.4byte	0x1c8
  4525 0cb7 02       		.uleb128 0x2
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 89
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 89
+>>>>>>> origin/master
 
 
  4526 0cb8 91       		.byte	0x91
@@ -5338,7 +5711,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  4580 0d26 14050000 		.4byte	0x514
  4581 0d2a 05       		.uleb128 0x5
  4582 0d2b 03       		.byte	0x3
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 90
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 90
+>>>>>>> origin/master
 
 
  4583 0d2c 00000000 		.4byte	globalRedDCRemover
@@ -5398,7 +5775,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  4637 0012 00       		.byte	0
  4638 0013 02       		.uleb128 0x2
  4639 0014 24       		.uleb128 0x24
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 91
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 91
+>>>>>>> origin/master
 
 
  4640 0015 00       		.byte	0
@@ -5458,7 +5839,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  4694 004b 0D       		.uleb128 0xd
  4695 004c 00       		.byte	0
  4696 004d 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 92
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 92
+>>>>>>> origin/master
 
 
  4697 004e 07       		.uleb128 0x7
@@ -5518,7 +5903,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  4751 0084 00       		.byte	0
  4752 0085 00       		.byte	0
  4753 0086 0B       		.uleb128 0xb
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 93
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 93
+>>>>>>> origin/master
 
 
  4754 0087 01       		.uleb128 0x1
@@ -5578,7 +5967,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  4808 00bd 49       		.uleb128 0x49
  4809 00be 13       		.uleb128 0x13
  4810 00bf 11       		.uleb128 0x11
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 94
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 94
+>>>>>>> origin/master
 
 
  4811 00c0 01       		.uleb128 0x1
@@ -5638,7 +6031,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  4865 00f8 3A       		.uleb128 0x3a
  4866 00f9 0B       		.uleb128 0xb
  4867 00fa 3B       		.uleb128 0x3b
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 95
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 95
+>>>>>>> origin/master
 
 
  4868 00fb 0B       		.uleb128 0xb
@@ -5698,7 +6095,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  4922 0133 00       		.byte	0
  4923 0134 15       		.uleb128 0x15
  4924 0135 2E       		.uleb128 0x2e
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 96
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 96
+>>>>>>> origin/master
 
 
  4925 0136 00       		.byte	0
@@ -5758,7 +6159,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  4979 016d 3B       		.uleb128 0x3b
  4980 016e 0B       		.uleb128 0xb
  4981 016f 11       		.uleb128 0x11
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 97
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 97
+>>>>>>> origin/master
 
 
  4982 0170 01       		.uleb128 0x1
@@ -5818,7 +6223,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  5036 01a9 13       		.uleb128 0x13
  5037 01aa 00       		.byte	0
  5038 01ab 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 98
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 98
+>>>>>>> origin/master
 
 
  5039 01ac 1B       		.uleb128 0x1b
@@ -5878,7 +6287,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  5093 01e3 06       		.uleb128 0x6
  5094 01e4 40       		.uleb128 0x40
  5095 01e5 18       		.uleb128 0x18
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 99
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 99
+>>>>>>> origin/master
 
 
  5096 01e6 9642     		.uleb128 0x2116
@@ -5938,7 +6351,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  5150 021e 19       		.uleb128 0x19
  5151 021f 00       		.byte	0
  5152 0220 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 100
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 100
+>>>>>>> origin/master
 
 
  5153 0221 21       		.uleb128 0x21
@@ -5998,7 +6415,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  5207 0259 0E       		.uleb128 0xe
  5208 025a 3A       		.uleb128 0x3a
  5209 025b 0B       		.uleb128 0xb
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 101
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 101
+>>>>>>> origin/master
 
 
  5210 025c 3B       		.uleb128 0x3b
@@ -6058,7 +6479,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  5264 0293 05       		.uleb128 0x5
  5265 0294 27       		.uleb128 0x27
  5266 0295 19       		.uleb128 0x19
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 102
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 102
+>>>>>>> origin/master
 
 
  5267 0296 49       		.uleb128 0x49
@@ -6118,7 +6543,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  5321 02ce 9642     		.uleb128 0x2116
  5322 02d0 19       		.uleb128 0x19
  5323 02d1 00       		.byte	0
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 103
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 103
+>>>>>>> origin/master
 
 
  5324 02d2 00       		.byte	0
@@ -6178,7 +6607,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  5378              		.section	.debug_aranges,"",%progbits
  5379 0000 3C010000 		.4byte	0x13c
  5380 0004 0200     		.2byte	0x2
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 104
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 104
+>>>>>>> origin/master
 
 
  5381 0006 00000000 		.4byte	.Ldebug_info0
@@ -6238,7 +6671,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  5435 00d4 3C000000 		.4byte	.LFE61-.LFB61
  5436 00d8 00000000 		.4byte	.LFB62
  5437 00dc 14000000 		.4byte	.LFE62-.LFB62
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 105
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 105
+>>>>>>> origin/master
 
 
  5438 00e0 00000000 		.4byte	.LFB63
@@ -6298,7 +6735,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  5492 0070 00000000 		.4byte	.LFB51
  5493 0074 70000000 		.4byte	.LFE51
  5494 0078 00000000 		.4byte	.LFB52
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 106
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 106
+>>>>>>> origin/master
 
 
  5495 007c 54000000 		.4byte	.LFE52
@@ -6358,7 +6799,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  5544      654F7869 
  5544      6D657465 
  5544      72446562 
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 107
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 107
+>>>>>>> origin/master
 
 
  5544      75676769 
@@ -6418,7 +6863,11 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  5565              	.LASF166:
  5566 010a 62656174 		.ascii	"beatDetector\000"
  5566      44657465 
+<<<<<<< HEAD
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 108
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 108
+>>>>>>> origin/master
 
 
  5566      63746F72 
@@ -6473,6 +6922,7 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  5586 01db 4359424C 		.ascii	"CYBLE_EVT_GATTC_HANDLE_VALUE_NTF\000"
  5586      455F4556 
  5586      545F4741 
+<<<<<<< HEAD
  5586      5454435F 
  5586      48414E44 
  5587              	.LASF65:
@@ -6676,6 +7126,211 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  5658      50756C73 
  5659              	.LASF115:
  5660 04d8 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DISCONN_CNF\000"
+=======
+ 5586      505F4155 
+ 5586      54485F52 
+ 5587              	.LASF151:
+ 5588 01ef 50554C53 		.ascii	"PULSEOXIMETER_STATE_DETECTING\000"
+ 5588      454F5849 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 109
+
+
+ 5588      4D455445 
+ 5588      525F5354 
+ 5588      4154455F 
+ 5589              	.LASF79:
+ 5590 020d 4359424C 		.ascii	"CYBLE_EVT_GAP_OOB_GENERATED_NOTIFICATION\000"
+ 5590      455F4556 
+ 5590      545F4741 
+ 5590      505F4F4F 
+ 5590      425F4745 
+ 5591              	.LASF164:
+ 5592 0236 74734C61 		.ascii	"tsLastTemperaturePoll\000"
+ 5592      73745465 
+ 5592      6D706572 
+ 5592      61747572 
+ 5592      65506F6C 
+ 5593              	.LASF3:
+ 5594 024c 5F5F7569 		.ascii	"__uint8_t\000"
+ 5594      6E74385F 
+ 5594      7400
+ 5595              	.LASF23:
+ 5596 0256 4D415833 		.ascii	"MAX30100_SAMPRATE_400HZ\000"
+ 5596      30313030 
+ 5596      5F53414D 
+ 5596      50524154 
+ 5596      455F3430 
+ 5597              	.LASF146:
+ 5598 026e 616C7068 		.ascii	"alpha\000"
+ 5598      6100
+ 5599              	.LASF148:
+ 5600 0274 50756C73 		.ascii	"PulseOximeterState\000"
+ 5600      654F7869 
+ 5600      6D657465 
+ 5600      72537461 
+ 5600      746500
+ 5601              	.LASF165:
+ 5602 0287 7265644C 		.ascii	"redLedPower\000"
+ 5602      6564506F 
+ 5602      77657200 
+ 5603              	.LASF98:
+ 5604 0293 4359424C 		.ascii	"CYBLE_EVT_GATTS_WRITE_CMD_REQ\000"
+ 5604      455F4556 
+ 5604      545F4741 
+ 5604      5454535F 
+ 5604      57524954 
+ 5605              	.LASF224:
+ 5606 02b1 50756C73 		.ascii	"PulseOximeter_update\000"
+ 5606      654F7869 
+ 5606      6D657465 
+ 5606      725F7570 
+ 5606      64617465 
+ 5607              	.LASF56:
+ 5608 02c6 75696E74 		.ascii	"uint64\000"
+ 5608      363400
+ 5609              	.LASF6:
+ 5610 02cd 6C6F6E67 		.ascii	"long int\000"
+ 5610      20696E74 
+ 5610      00
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 110
+
+
+ 5611              	.LASF180:
+ 5612 02d6 4D415833 		.ascii	"MAX30100_begin\000"
+ 5612      30313030 
+ 5612      5F626567 
+ 5612      696E00
+ 5613              	.LASF236:
+ 5614 02e5 676C6F62 		.ascii	"globalRedDCRemover\000"
+ 5614      616C5265 
+ 5614      64444352 
+ 5614      656D6F76 
+ 5614      657200
+ 5615              	.LASF197:
+ 5616 02f8 52656164 		.ascii	"Read_Buf\000"
+ 5616      5F427566 
+ 5616      00
+ 5617              	.LASF58:
+ 5618 0301 4359424C 		.ascii	"CYBLE_EVT_STACK_ON\000"
+ 5618      455F4556 
+ 5618      545F5354 
+ 5618      41434B5F 
+ 5618      4F4E00
+ 5619              	.LASF19:
+ 5620 0314 4D415833 		.ascii	"MAX30100_SAMPRATE_50HZ\000"
+ 5620      30313030 
+ 5620      5F53414D 
+ 5620      50524154 
+ 5620      455F3530 
+ 5621              	.LASF229:
+ 5622 032b 50756C73 		.ascii	"PulseOximeter_checkSample\000"
+ 5622      654F7869 
+ 5622      6D657465 
+ 5622      725F6368 
+ 5622      65636B53 
+ 5623              	.LASF211:
+ 5624 0345 53704F32 		.ascii	"SpO2Calculator_reset\000"
+ 5624      43616C63 
+ 5624      756C6174 
+ 5624      6F725F72 
+ 5624      65736574 
+ 5625              	.LASF145:
+ 5626 035a 44435265 		.ascii	"DCRemover\000"
+ 5626      6D6F7665 
+ 5626      7200
+ 5627              	.LASF111:
+ 5628 0364 4359424C 		.ascii	"CYBLE_EVT_L2CAP_COMMAND_REJ\000"
+ 5628      455F4556 
+ 5628      545F4C32 
+ 5628      4341505F 
+ 5628      434F4D4D 
+ 5629              	.LASF184:
+ 5630 0380 6C656450 		.ascii	"ledPulseWidth\000"
+ 5630      756C7365 
+ 5630      57696474 
+ 5630      6800
+ 5631              	.LASF0:
+ 5632 038e 7369676E 		.ascii	"signed char\000"
+ 5632      65642063 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 111
+
+
+ 5632      68617200 
+ 5633              	.LASF12:
+ 5634 039a 75696E74 		.ascii	"uint8_t\000"
+ 5634      385F7400 
+ 5635              	.LASF139:
+ 5636 03a2 73704F32 		.ascii	"spO2LUT\000"
+ 5636      4C555400 
+ 5637              	.LASF60:
+ 5638 03aa 4359424C 		.ascii	"CYBLE_EVT_HARDWARE_ERROR\000"
+ 5638      455F4556 
+ 5638      545F4841 
+ 5638      52445741 
+ 5638      52455F45 
+ 5639              	.LASF143:
+ 5640 03c3 73616D70 		.ascii	"samplesRecorded\000"
+ 5640      6C657352 
+ 5640      65636F72 
+ 5640      64656400 
+ 5641              	.LASF89:
+ 5642 03d3 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BY_GROUP_TYPE_RSP\000"
+ 5642      455F4556 
+ 5642      545F4741 
+ 5642      5454435F 
+ 5642      52454144 
+ 5643              	.LASF1:
+ 5644 03fa 756E7369 		.ascii	"unsigned char\000"
+ 5644      676E6564 
+ 5644      20636861 
+ 5644      7200
+ 5645              	.LASF88:
+ 5646 0408 4359424C 		.ascii	"CYBLE_EVT_GATTC_XCHNG_MTU_RSP\000"
+ 5646      455F4556 
+ 5646      545F4741 
+ 5646      5454435F 
+ 5646      5843484E 
+ 5647              	.LASF45:
+ 5648 0426 4D415833 		.ascii	"MAX30100_LED_CURR_40_2MA\000"
+ 5648      30313030 
+ 5648      5F4C4544 
+ 5648      5F435552 
+ 5648      525F3430 
+ 5649              	.LASF83:
+ 5650 043f 4359424C 		.ascii	"CYBLE_EVT_GAP_SMP_NEGOTIATED_AUTH_INFO\000"
+ 5650      455F4556 
+ 5650      545F4741 
+ 5650      505F534D 
+ 5650      505F4E45 
+ 5651              	.LASF118:
+ 5652 0466 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_TX_CREDIT_IND\000"
+ 5652      455F4556 
+ 5652      545F4C32 
+ 5652      4341505F 
+ 5652      43424643 
+ 5653              	.LASF162:
+ 5654 0489 74734C61 		.ascii	"tsLastBiasCheck\000"
+ 5654      73744269 
+ 5654      61734368 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 112
+
+
+ 5654      65636B00 
+ 5655              	.LASF183:
+ 5656 0499 4D415833 		.ascii	"MAX30100_setLedsPulseWidth\000"
+ 5656      30313030 
+ 5656      5F736574 
+ 5656      4C656473 
+ 5656      50756C73 
+ 5657              	.LASF115:
+ 5658 04b4 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DISCONN_CNF\000"
+ 5658      455F4556 
+ 5658      545F4C32 
+ 5658      4341505F 
+ 5658      43424643 
+ 5659              	.LASF92:
+ 5660 04d5 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_BY_TYPE_VALUE_RSP\000"
+>>>>>>> origin/master
  5660      455F4556 
  5660      545F4C32 
  5660      4341505F 
@@ -6684,6 +7339,7 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  5662 04f9 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_BY_TYPE_VALUE_RSP\000"
  5662      455F4556 
  5662      545F4741 
+<<<<<<< HEAD
  5662      5454435F 
  5662      46494E44 
  5663              	.LASF71:
@@ -7538,6 +8194,863 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  5967      5F4D4F44 
  5967      455F4852 
  5967      4F4E4C59 
+=======
+ 5662      505F4445 
+ 5662      56494345 
+ 5663              	.LASF50:
+ 5664 051b 63686172 		.ascii	"char\000"
+ 5664      00
+ 5665              	.LASF193:
+ 5666 0520 4D415833 		.ascii	"MAX30100_update\000"
+ 5666      30313030 
+ 5666      5F757064 
+ 5666      61746500 
+ 5667              	.LASF95:
+ 5668 0530 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_MULTI_RSP\000"
+ 5668      455F4556 
+ 5668      545F4741 
+ 5668      5454435F 
+ 5668      52454144 
+ 5669              	.LASF240:
+ 5670 054f 6E756D42 		.ascii	"numBeats\000"
+ 5670      65617473 
+ 5670      00
+ 5671              	.LASF57:
+ 5672 0558 4359424C 		.ascii	"CYBLE_EVT_HOST_INVALID\000"
+ 5672      455F4556 
+ 5672      545F484F 
+ 5672      53545F49 
+ 5672      4E56414C 
+ 5673              	.LASF82:
+ 5674 056f 4359424C 		.ascii	"CYBLE_EVT_GAPC_DIRECT_ADV_REPORT\000"
+ 5674      455F4556 
+ 5674      545F4741 
+ 5674      50435F44 
+ 5674      49524543 
+ 5675              	.LASF26:
+ 5676 0590 4D415833 		.ascii	"MAX30100_SAMPRATE_1000HZ\000"
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 113
+
+
+ 5676      30313030 
+ 5676      5F53414D 
+ 5676      50524154 
+ 5676      455F3130 
+ 5677              	.LASF4:
+ 5678 05a9 5F5F7569 		.ascii	"__uint16_t\000"
+ 5678      6E743136 
+ 5678      5F7400
+ 5679              	.LASF94:
+ 5680 05b4 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BLOB_RSP\000"
+ 5680      455F4556 
+ 5680      545F4741 
+ 5680      5454435F 
+ 5680      52454144 
+ 5681              	.LASF219:
+ 5682 05d2 46696C74 		.ascii	"FilterBuLp1_step\000"
+ 5682      65724275 
+ 5682      4C70315F 
+ 5682      73746570 
+ 5682      00
+ 5683              	.LASF138:
+ 5684 05e3 53704F32 		.ascii	"SpO2Calculator\000"
+ 5684      43616C63 
+ 5684      756C6174 
+ 5684      6F7200
+ 5685              	.LASF101:
+ 5686 05f2 4359424C 		.ascii	"CYBLE_EVT_GATTC_EXEC_WRITE_RSP\000"
+ 5686      455F4556 
+ 5686      545F4741 
+ 5686      5454435F 
+ 5686      45584543 
+ 5687              	.LASF176:
+ 5688 0611 62656174 		.ascii	"beatDetected\000"
+ 5688      44657465 
+ 5688      63746564 
+ 5688      00
+ 5689              	.LASF106:
+ 5690 061e 4359424C 		.ascii	"CYBLE_EVT_GATTC_STOP_CMD_COMPLETE\000"
+ 5690      455F4556 
+ 5690      545F4741 
+ 5690      5454435F 
+ 5690      53544F50 
+ 5691              	.LASF169:
+ 5692 0640 73704F32 		.ascii	"spO2calculator\000"
+ 5692      63616C63 
+ 5692      756C6174 
+ 5692      6F7200
+ 5693              	.LASF172:
+ 5694 064f 73616D70 		.ascii	"sample\000"
+ 5694      6C6500
+ 5695              	.LASF227:
+ 5696 0656 50756C73 		.ascii	"PulseOximeter_getRedLedCurrentBias\000"
+ 5696      654F7869 
+ 5696      6D657465 
+ 5696      725F6765 
+ 5696      74526564 
+ 5697              	.LASF225:
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 114
+
+
+ 5698 0679 50756C73 		.ascii	"PulseOximeter_getHeartRate\000"
+ 5698      654F7869 
+ 5698      6D657465 
+ 5698      725F6765 
+ 5698      74486561 
+ 5699              	.LASF179:
+ 5700 0694 42656174 		.ascii	"BeatDetector_decreaseThreshold\000"
+ 5700      44657465 
+ 5700      63746F72 
+ 5700      5F646563 
+ 5700      72656173 
+ 5701              	.LASF126:
+ 5702 06b3 42454154 		.ascii	"BEATDETECTOR_STATE_FOLLOWING_SLOPE\000"
+ 5702      44455445 
+ 5702      43544F52 
+ 5702      5F535441 
+ 5702      54455F46 
+ 5703              	.LASF221:
+ 5704 06d6 6D696C6C 		.ascii	"millis\000"
+ 5704      697300
+ 5705              	.LASF234:
+ 5706 06dd 676C6F62 		.ascii	"globalBeatDetector\000"
+ 5706      616C4265 
+ 5706      61744465 
+ 5706      74656374 
+ 5706      6F7200
+ 5707              	.LASF212:
+ 5708 06f0 53704F32 		.ascii	"SpO2Calculator_getSpO2\000"
+ 5708      43616C63 
+ 5708      756C6174 
+ 5708      6F725F67 
+ 5708      65745370 
+ 5709              	.LASF171:
+ 5710 0707 42656174 		.ascii	"BeatDetector_addSample\000"
+ 5710      44657465 
+ 5710      63746F72 
+ 5710      5F616464 
+ 5710      53616D70 
+ 5711              	.LASF142:
+ 5712 071e 62656174 		.ascii	"beatsDetectedNum\000"
+ 5712      73446574 
+ 5712      65637465 
+ 5712      644E756D 
+ 5712      00
+ 5713              	.LASF136:
+ 5714 072f 72617749 		.ascii	"rawIRValue\000"
+ 5714      5256616C 
+ 5714      756500
+ 5715              	.LASF202:
+ 5716 073a 62756666 		.ascii	"buffer\000"
+ 5716      657200
+ 5717              	.LASF242:
+ 5718 0741 2E5C4D41 		.ascii	".\\MAX30100_All.c\000"
+ 5718      58333031 
+ 5718      30305F41 
+ 5718      6C6C2E63 
+ 5718      00
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 115
+
+
+ 5719              	.LASF110:
+ 5720 0752 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CONN_PARAM_UPDATE_RSP\000"
+ 5720      455F4556 
+ 5720      545F4C32 
+ 5720      4341505F 
+ 5720      434F4E4E 
+ 5721              	.LASF38:
+ 5722 0778 4D415833 		.ascii	"MAX30100_LED_CURR_17_4MA\000"
+ 5722      30313030 
+ 5722      5F4C4544 
+ 5722      5F435552 
+ 5722      525F3137 
+ 5723              	.LASF41:
+ 5724 0791 4D415833 		.ascii	"MAX30100_LED_CURR_27_1MA\000"
+ 5724      30313030 
+ 5724      5F4C4544 
+ 5724      5F435552 
+ 5724      525F3237 
+ 5725              	.LASF68:
+ 5726 07aa 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_COMPLETE\000"
+ 5726      455F4556 
+ 5726      545F4741 
+ 5726      505F4155 
+ 5726      54485F43 
+ 5727              	.LASF69:
+ 5728 07c6 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_FAILED\000"
+ 5728      455F4556 
+ 5728      545F4741 
+ 5728      505F4155 
+ 5728      54485F46 
+ 5729              	.LASF192:
+ 5730 07e0 656E6162 		.ascii	"enabled\000"
+ 5730      6C656400 
+ 5731              	.LASF191:
+ 5732 07e8 4D415833 		.ascii	"MAX30100_setHighresModeEnabled\000"
+ 5732      30313030 
+ 5732      5F736574 
+ 5732      48696768 
+ 5732      7265734D 
+ 5733              	.LASF123:
+ 5734 0807 42656174 		.ascii	"BeatDetectorState\000"
+ 5734      44657465 
+ 5734      63746F72 
+ 5734      53746174 
+ 5734      6500
+ 5735              	.LASF8:
+ 5736 0819 6C6F6E67 		.ascii	"long unsigned int\000"
+ 5736      20756E73 
+ 5736      69676E65 
+ 5736      6420696E 
+ 5736      7400
+ 5737              	.LASF222:
+ 5738 082b 50756C73 		.ascii	"PulseOximeter_begin\000"
+ 5738      654F7869 
+ 5738      6D657465 
+ 5738      725F6265 
+ 5738      67696E00 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 116
+
+
+ 5739              	.LASF149:
+ 5740 083f 50554C53 		.ascii	"PULSEOXIMETER_STATE_INIT\000"
+ 5740      454F5849 
+ 5740      4D455445 
+ 5740      525F5354 
+ 5740      4154455F 
+ 5741              	.LASF195:
+ 5742 0858 61646472 		.ascii	"address\000"
+ 5742      65737300 
+ 5743              	.LASF200:
+ 5744 0860 4D415833 		.ascii	"MAX30100_burstRead\000"
+ 5744      30313030 
+ 5744      5F627572 
+ 5744      73745265 
+ 5744      616400
+ 5745              	.LASF182:
+ 5746 0873 4D415833 		.ascii	"MAX30100_setMode\000"
+ 5746      30313030 
+ 5746      5F736574 
+ 5746      4D6F6465 
+ 5746      00
+ 5747              	.LASF187:
+ 5748 0884 73616D70 		.ascii	"samplingRate\000"
+ 5748      6C696E67 
+ 5748      52617465 
+ 5748      00
+ 5749              	.LASF22:
+ 5750 0891 4D415833 		.ascii	"MAX30100_SAMPRATE_200HZ\000"
+ 5750      30313030 
+ 5750      5F53414D 
+ 5750      50524154 
+ 5750      455F3230 
+ 5751              	.LASF158:
+ 5752 08a9 64656275 		.ascii	"debuggingMode\000"
+ 5752      6767696E 
+ 5752      674D6F64 
+ 5752      6500
+ 5753              	.LASF37:
+ 5754 08b7 4D415833 		.ascii	"MAX30100_LED_CURR_14_2MA\000"
+ 5754      30313030 
+ 5754      5F4C4544 
+ 5754      5F435552 
+ 5754      525F3134 
+ 5755              	.LASF62:
+ 5756 08d0 4359424C 		.ascii	"CYBLE_EVT_STACK_BUSY_STATUS\000"
+ 5756      455F4556 
+ 5756      545F5354 
+ 5756      41434B5F 
+ 5756      42555359 
+ 5757              	.LASF74:
+ 5758 08ec 4359424C 		.ascii	"CYBLE_EVT_GAP_CONNECTION_UPDATE_COMPLETE\000"
+ 5758      455F4556 
+ 5758      545F4741 
+ 5758      505F434F 
+ 5758      4E4E4543 
+ 5759              	.LASF213:
+ 5760 0915 44435265 		.ascii	"DCRemover_Init\000"
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 117
+
+
+ 5760      6D6F7665 
+ 5760      725F496E 
+ 5760      697400
+ 5761              	.LASF141:
+ 5762 0924 72656441 		.ascii	"redACValueSqSum\000"
+ 5762      4356616C 
+ 5762      75655371 
+ 5762      53756D00 
+ 5763              	.LASF114:
+ 5764 0934 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DISCONN_IND\000"
+ 5764      455F4556 
+ 5764      545F4C32 
+ 5764      4341505F 
+ 5764      43424643 
+ 5765              	.LASF29:
+ 5766 0955 4D415833 		.ascii	"MAX30100_SPC_PW_400US_14BITS\000"
+ 5766      30313030 
+ 5766      5F535043 
+ 5766      5F50575F 
+ 5766      34303055 
+ 5767              	.LASF66:
+ 5768 0972 4359424C 		.ascii	"CYBLE_EVT_GAP_PASSKEY_ENTRY_REQUEST\000"
+ 5768      455F4556 
+ 5768      545F4741 
+ 5768      505F5041 
+ 5768      53534B45 
+ 5769              	.LASF153:
+ 5770 0996 50554C53 		.ascii	"PULSEOXIMETER_DEBUGGINGMODE_NONE\000"
+ 5770      454F5849 
+ 5770      4D455445 
+ 5770      525F4445 
+ 5770      42554747 
+ 5771              	.LASF204:
+ 5772 09b7 4D415833 		.ascii	"MAX30100_readFifoData\000"
+ 5772      30313030 
+ 5772      5F726561 
+ 5772      64466966 
+ 5772      6F446174 
+ 5773              	.LASF161:
+ 5774 09cd 74734C61 		.ascii	"tsLastSample\000"
+ 5774      73745361 
+ 5774      6D706C65 
+ 5774      00
+ 5775              	.LASF7:
+ 5776 09da 5F5F7569 		.ascii	"__uint32_t\000"
+ 5776      6E743332 
+ 5776      5F7400
+ 5777              	.LASF150:
+ 5778 09e5 50554C53 		.ascii	"PULSEOXIMETER_STATE_IDLE\000"
+ 5778      454F5849 
+ 5778      4D455445 
+ 5778      525F5354 
+ 5778      4154455F 
+ 5779              	.LASF9:
+ 5780 09fe 6C6F6E67 		.ascii	"long long int\000"
+ 5780      206C6F6E 
+ 5780      6720696E 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 118
+
+
+ 5780      7400
+ 5781              	.LASF25:
+ 5782 0a0c 4D415833 		.ascii	"MAX30100_SAMPRATE_800HZ\000"
+ 5782      30313030 
+ 5782      5F53414D 
+ 5782      50524154 
+ 5782      455F3830 
+ 5783              	.LASF47:
+ 5784 0a24 4D415833 		.ascii	"MAX30100_LED_CURR_46_8MA\000"
+ 5784      30313030 
+ 5784      5F4C4544 
+ 5784      5F435552 
+ 5784      525F3436 
+ 5785              	.LASF140:
+ 5786 0a3d 69724143 		.ascii	"irACValueSqSum\000"
+ 5786      56616C75 
+ 5786      65537153 
+ 5786      756D00
+ 5787              	.LASF51:
+ 5788 0a4c 646F7562 		.ascii	"double\000"
+ 5788      6C6500
+ 5789              	.LASF167:
+ 5790 0a53 69724443 		.ascii	"irDCRemover\000"
+ 5790      52656D6F 
+ 5790      76657200 
+ 5791              	.LASF120:
+ 5792 0a5f 4359424C 		.ascii	"CYBLE_EVT_PENDING_FLASH_WRITE\000"
+ 5792      455F4556 
+ 5792      545F5045 
+ 5792      4E44494E 
+ 5792      475F464C 
+ 5793              	.LASF81:
+ 5794 0a7d 4359424C 		.ascii	"CYBLE_EVT_GAP_ENHANCE_CONN_COMPLETE\000"
+ 5794      455F4556 
+ 5794      545F4741 
+ 5794      505F454E 
+ 5794      48414E43 
+ 5795              	.LASF175:
+ 5796 0aa1 42656174 		.ascii	"BeatDetector_checkForBeat\000"
+ 5796      44657465 
+ 5796      63746F72 
+ 5796      5F636865 
+ 5796      636B466F 
+ 5797              	.LASF52:
+ 5798 0abb 666C6F61 		.ascii	"float\000"
+ 5798      7400
+ 5799              	.LASF207:
+ 5800 0ac1 69724143 		.ascii	"irACValue\000"
+ 5800      56616C75 
+ 5800      6500
+ 5801              	.LASF107:
+ 5802 0acb 4359424C 		.ascii	"CYBLE_EVT_GATTS_READ_CHAR_VAL_ACCESS_REQ\000"
+ 5802      455F4556 
+ 5802      545F4741 
+ 5802      5454535F 
+ 5802      52454144 
+ 5803              	.LASF130:
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 119
+
+
+ 5804 0af4 74687265 		.ascii	"threshold\000"
+ 5804      73686F6C 
+ 5804      6400
+ 5805              	.LASF168:
+ 5806 0afe 72656444 		.ascii	"redDCRemover\000"
+ 5806      4352656D 
+ 5806      6F766572 
+ 5806      00
+ 5807              	.LASF226:
+ 5808 0b0b 50756C73 		.ascii	"PulseOximeter_getSpO2\000"
+ 5808      654F7869 
+ 5808      6D657465 
+ 5808      725F6765 
+ 5808      7453704F 
+ 5809              	.LASF11:
+ 5810 0b21 756E7369 		.ascii	"unsigned int\000"
+ 5810      676E6564 
+ 5810      20696E74 
+ 5810      00
+ 5811              	.LASF99:
+ 5812 0b2e 4359424C 		.ascii	"CYBLE_EVT_GATTS_PREP_WRITE_REQ\000"
+ 5812      455F4556 
+ 5812      545F4741 
+ 5812      5454535F 
+ 5812      50524550 
+ 5813              	.LASF46:
+ 5814 0b4d 4D415833 		.ascii	"MAX30100_LED_CURR_43_6MA\000"
+ 5814      30313030 
+ 5814      5F4C4544 
+ 5814      5F435552 
+ 5814      525F3433 
+ 5815              	.LASF216:
+ 5816 0b66 6F6C6464 		.ascii	"olddcw\000"
+ 5816      637700
+ 5817              	.LASF48:
+ 5818 0b6d 4D415833 		.ascii	"MAX30100_LED_CURR_50MA\000"
+ 5818      30313030 
+ 5818      5F4C4544 
+ 5818      5F435552 
+ 5818      525F3530 
+ 5819              	.LASF20:
+ 5820 0b84 4D415833 		.ascii	"MAX30100_SAMPRATE_100HZ\000"
+ 5820      30313030 
+ 5820      5F53414D 
+ 5820      50524154 
+ 5820      455F3130 
+ 5821              	.LASF189:
+ 5822 0b9c 69724C65 		.ascii	"irLedCurrent\000"
+ 5822      64437572 
+ 5822      72656E74 
+ 5822      00
+ 5823              	.LASF190:
+ 5824 0ba9 7265644C 		.ascii	"redLedCurrent\000"
+ 5824      65644375 
+ 5824      7272656E 
+ 5824      7400
+ 5825              	.LASF122:
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 120
+
+
+ 5826 0bb7 4359424C 		.ascii	"CYBLE_EVT_MAX\000"
+ 5826      455F4556 
+ 5826      545F4D41 
+ 5826      5800
+ 5827              	.LASF75:
+ 5828 0bc5 4359424C 		.ascii	"CYBLE_EVT_GAPC_SCAN_START_STOP\000"
+ 5828      455F4556 
+ 5828      545F4741 
+ 5828      50435F53 
+ 5828      43414E5F 
+ 5829              	.LASF96:
+ 5830 0be4 4359424C 		.ascii	"CYBLE_EVT_GATTS_WRITE_REQ\000"
+ 5830      455F4556 
+ 5830      545F4741 
+ 5830      5454535F 
+ 5830      57524954 
+ 5831              	.LASF67:
+ 5832 0bfe 4359424C 		.ascii	"CYBLE_EVT_GAP_PASSKEY_DISPLAY_REQUEST\000"
+ 5832      455F4556 
+ 5832      545F4741 
+ 5832      505F5041 
+ 5832      53534B45 
+ 5833              	.LASF93:
+ 5834 0c24 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_RSP\000"
+ 5834      455F4556 
+ 5834      545F4741 
+ 5834      5454435F 
+ 5834      52454144 
+ 5835              	.LASF113:
+ 5836 0c3d 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_CNF\000"
+ 5836      455F4556 
+ 5836      545F4C32 
+ 5836      4341505F 
+ 5836      43424643 
+ 5837              	.LASF185:
+ 5838 0c5b 70726576 		.ascii	"previous\000"
+ 5838      696F7573 
+ 5838      00
+ 5839              	.LASF53:
+ 5840 0c64 6C6F6E67 		.ascii	"long double\000"
+ 5840      20646F75 
+ 5840      626C6500 
+ 5841              	.LASF63:
+ 5842 0c70 4359424C 		.ascii	"CYBLE_EVT_MEMORY_REQUEST\000"
+ 5842      455F4556 
+ 5842      545F4D45 
+ 5842      4D4F5259 
+ 5842      5F524551 
+ 5843              	.LASF228:
+ 5844 0c89 50756C73 		.ascii	"PulseOximeter_setOnBeatDetectedCallback\000"
+ 5844      654F7869 
+ 5844      6D657465 
+ 5844      725F7365 
+ 5844      744F6E42 
+ 5845              	.LASF17:
+ 5846 0cb1 4D6F6465 		.ascii	"Mode\000"
+ 5846      00
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 121
+
+
+ 5847              	.LASF73:
+ 5848 0cb6 4359424C 		.ascii	"CYBLE_EVT_GAP_ENCRYPT_CHANGE\000"
+ 5848      455F4556 
+ 5848      545F4741 
+ 5848      505F454E 
+ 5848      43525950 
+ 5849              	.LASF144:
+ 5850 0cd3 73704F32 		.ascii	"spO2\000"
+ 5850      00
+ 5851              	.LASF87:
+ 5852 0cd8 4359424C 		.ascii	"CYBLE_EVT_GATTS_XCNHG_MTU_REQ\000"
+ 5852      455F4556 
+ 5852      545F4741 
+ 5852      5454535F 
+ 5852      58434E48 
+ 5853              	.LASF231:
+ 5854 0cf6 50756C73 		.ascii	"PulseOximeter_checkCurrentBias\000"
+ 5854      654F7869 
+ 5854      6D657465 
+ 5854      725F6368 
+ 5854      65636B43 
+ 5855              	.LASF198:
+ 5856 0d15 4D415833 		.ascii	"MAX30100_writeRegister\000"
+ 5856      30313030 
+ 5856      5F777269 
+ 5856      74655265 
+ 5856      67697374 
+ 5857              	.LASF10:
+ 5858 0d2c 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 5858      206C6F6E 
+ 5858      6720756E 
+ 5858      7369676E 
+ 5858      65642069 
+ 5859              	.LASF59:
+ 5860 0d43 4359424C 		.ascii	"CYBLE_EVT_TIMEOUT\000"
+ 5860      455F4556 
+ 5860      545F5449 
+ 5860      4D454F55 
+ 5860      5400
+ 5861              	.LASF80:
+ 5862 0d55 4359424C 		.ascii	"CYBLE_EVT_GAP_DATA_LENGTH_CHANGE\000"
+ 5862      455F4556 
+ 5862      545F4741 
+ 5862      505F4441 
+ 5862      54415F4C 
+ 5863              	.LASF203:
+ 5864 0d76 6C656E67 		.ascii	"length\000"
+ 5864      746800
+ 5865              	.LASF13:
+ 5866 0d7d 75696E74 		.ascii	"uint16_t\000"
+ 5866      31365F74 
+ 5866      00
+ 5867              	.LASF133:
+ 5868 0d86 74734C61 		.ascii	"tsLastBeat\000"
+ 5868      73744265 
+ 5868      617400
+ 5869              	.LASF132:
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 122
+
+
+ 5870 0d91 6C617374 		.ascii	"lastMaxValue\000"
+ 5870      4D617856 
+ 5870      616C7565 
+ 5870      00
+ 5871              	.LASF116:
+ 5872 0d9e 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DATA_READ\000"
+ 5872      455F4556 
+ 5872      545F4C32 
+ 5872      4341505F 
+ 5872      43424643 
+ 5873              	.LASF147:
+ 5874 0dbd 46696C74 		.ascii	"FilterBuLp1\000"
+ 5874      65724275 
+ 5874      4C703100 
+ 5875              	.LASF177:
+ 5876 0dc9 64656C74 		.ascii	"delta\000"
+ 5876      6100
+ 5877              	.LASF206:
+ 5878 0dcf 53704F32 		.ascii	"SpO2Calculator_update\000"
+ 5878      43616C63 
+ 5878      756C6174 
+ 5878      6F725F75 
+ 5878      70646174 
+ 5879              	.LASF230:
+ 5880 0de5 66696C74 		.ascii	"filteredPulseValue\000"
+ 5880      65726564 
+ 5880      50756C73 
+ 5880      6556616C 
+ 5880      756500
+ 5881              	.LASF30:
+ 5882 0df8 4D415833 		.ascii	"MAX30100_SPC_PW_800US_15BITS\000"
+ 5882      30313030 
+ 5882      5F535043 
+ 5882      5F50575F 
+ 5882      38303055 
+ 5883              	.LASF233:
+ 5884 0e15 70756C73 		.ascii	"pulseOximeter\000"
+ 5884      654F7869 
+ 5884      6D657465 
+ 5884      7200
+ 5885              	.LASF241:
+ 5886 0e23 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 5886      4320342E 
+ 5886      392E3320 
+ 5886      32303135 
+ 5886      30333033 
+ 5887 0e56 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 5887      20726576 
+ 5887      6973696F 
+ 5887      6E203232 
+ 5887      31323230 
+ 5888 0e89 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 5888      66756E63 
+ 5888      74696F6E 
+ 5888      2D736563 
+ 5888      74696F6E 
+ 5889              	.LASF125:
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 123
+
+
+ 5890 0eb1 42454154 		.ascii	"BEATDETECTOR_STATE_WAITING\000"
+ 5890      44455445 
+ 5890      43544F52 
+ 5890      5F535441 
+ 5890      54455F57 
+ 5891              	.LASF134:
+ 5892 0ecc 42656174 		.ascii	"BeatDetector\000"
+ 5892      44657465 
+ 5892      63746F72 
+ 5892      00
+ 5893              	.LASF196:
+ 5894 0ed9 57726974 		.ascii	"Write_Buf\000"
+ 5894      655F4275 
+ 5894      6600
+ 5895              	.LASF215:
+ 5896 0ee3 44435265 		.ascii	"DCRemover_step\000"
+ 5896      6D6F7665 
+ 5896      725F7374 
+ 5896      657000
+ 5897              	.LASF159:
+ 5898 0ef2 74734669 		.ascii	"tsFirstBeatDetected\000"
+ 5898      72737442 
+ 5898      65617444 
+ 5898      65746563 
+ 5898      74656400 
+ 5899              	.LASF28:
+ 5900 0f06 4D415833 		.ascii	"MAX30100_SPC_PW_200US_13BITS\000"
+ 5900      30313030 
+ 5900      5F535043 
+ 5900      5F50575F 
+ 5900      32303055 
+ 5901              	.LASF91:
+ 5902 0f23 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_INFO_RSP\000"
+ 5902      455F4556 
+ 5902      545F4741 
+ 5902      5454435F 
+ 5902      46494E44 
+ 5903              	.LASF90:
+ 5904 0f41 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BY_TYPE_RSP\000"
+ 5904      455F4556 
+ 5904      545F4741 
+ 5904      5454435F 
+ 5904      52454144 
+ 5905              	.LASF36:
+ 5906 0f62 4D415833 		.ascii	"MAX30100_LED_CURR_11MA\000"
+ 5906      30313030 
+ 5906      5F4C4544 
+ 5906      5F435552 
+ 5906      525F3131 
+ 5907              	.LASF97:
+ 5908 0f79 4359424C 		.ascii	"CYBLE_EVT_GATTC_WRITE_RSP\000"
+ 5908      455F4556 
+ 5908      545F4741 
+ 5908      5454435F 
+ 5908      57524954 
+ 5909              	.LASF157:
+ 5910 0f93 50756C73 		.ascii	"PulseOximeter\000"
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 124
+
+
+ 5910      654F7869 
+ 5910      6D657465 
+ 5910      7200
+ 5911              	.LASF237:
+ 5912 0fa1 676C6F62 		.ascii	"globalLpf\000"
+ 5912      616C4C70 
+ 5912      6600
+ 5913              	.LASF170:
+ 5914 0fab 63757272 		.ascii	"currentMinute\000"
+ 5914      656E744D 
+ 5914      696E7574 
+ 5914      6500
+ 5915              	.LASF27:
+ 5916 0fb9 4C454450 		.ascii	"LEDPulseWidth\000"
+ 5916      756C7365 
+ 5916      57696474 
+ 5916      6800
+ 5917              	.LASF70:
+ 5918 0fc7 4359424C 		.ascii	"CYBLE_EVT_GAPP_ADVERTISEMENT_START_STOP\000"
+ 5918      455F4556 
+ 5918      545F4741 
+ 5918      50505F41 
+ 5918      44564552 
+ 5919              	.LASF223:
+ 5920 0fef 64656275 		.ascii	"debuggingMode_\000"
+ 5920      6767696E 
+ 5920      674D6F64 
+ 5920      655F00
+ 5921              	.LASF54:
+ 5922 0ffe 75696E74 		.ascii	"uint8\000"
+ 5922      3800
+ 5923              	.LASF163:
+ 5924 1004 74734C61 		.ascii	"tsLastCurrentAdjustment\000"
+ 5924      73744375 
+ 5924      7272656E 
+ 5924      7441646A 
+ 5924      7573746D 
+ 5925              	.LASF78:
+ 5926 101c 4359424C 		.ascii	"CYBLE_EVT_GAP_KEYPRESS_NOTIFICATION\000"
+ 5926      455F4556 
+ 5926      545F4741 
+ 5926      505F4B45 
+ 5926      59505245 
+ 5927              	.LASF220:
+ 5928 1040 50756C73 		.ascii	"PulseOximeter_Init\000"
+ 5928      654F7869 
+ 5928      6D657465 
+ 5928      725F496E 
+ 5928      697400
+ 5929              	.LASF2:
+ 5930 1053 73686F72 		.ascii	"short int\000"
+ 5930      7420696E 
+ 5930      7400
+ 5931              	.LASF137:
+ 5932 105d 72617752 		.ascii	"rawRedValue\000"
+ 5932      65645661 
+ 5932      6C756500 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 125
+
+
+ 5933              	.LASF155:
+ 5934 1069 50554C53 		.ascii	"PULSEOXIMETER_DEBUGGINGMODE_AC_VALUES\000"
+ 5934      454F5849 
+ 5934      4D455445 
+ 5934      525F4445 
+ 5934      42554747 
+ 5935              	.LASF131:
+ 5936 108f 62656174 		.ascii	"beatPeriod\000"
+ 5936      50657269 
+ 5936      6F6400
+ 5937              	.LASF181:
+ 5938 109a 6D6F6465 		.ascii	"mode\000"
+ 5938      00
+ 5939              	.LASF209:
+ 5940 109f 61635371 		.ascii	"acSqRatio\000"
+ 5940      52617469 
+ 5940      6F00
+ 5941              	.LASF128:
+ 5942 10a9 42454154 		.ascii	"BEATDETECTOR_STATE_MASKING\000"
+ 5942      44455445 
+ 5942      43544F52 
+ 5942      5F535441 
+ 5942      54455F4D 
+ 5943              	.LASF84:
+ 5944 10c4 4359424C 		.ascii	"CYBLE_EVT_GATTC_ERROR_RSP\000"
+ 5944      455F4556 
+ 5944      545F4741 
+ 5944      5454435F 
+ 5944      4552524F 
+ 5945              	.LASF135:
+ 5946 10de 4D415833 		.ascii	"MAX30100\000"
+ 5946      30313030 
+ 5946      00
+ 5947              	.LASF210:
+ 5948 10e7 696E6465 		.ascii	"index\000"
+ 5948      7800
+ 5949              	.LASF112:
+ 5950 10ed 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_IND\000"
+ 5950      455F4556 
+ 5950      545F4C32 
+ 5950      4341505F 
+ 5950      43424643 
+ 5951              	.LASF100:
+ 5952 110b 4359424C 		.ascii	"CYBLE_EVT_GATTS_EXEC_WRITE_REQ\000"
+ 5952      455F4556 
+ 5952      545F4741 
+ 5952      5454535F 
+ 5952      45584543 
+ 5953              	.LASF64:
+ 5954 112a 4359424C 		.ascii	"CYBLE_EVT_GAPC_SCAN_PROGRESS_RESULT\000"
+ 5954      455F4556 
+ 5954      545F4741 
+ 5954      50435F53 
+ 5954      43414E5F 
+ 5955              	.LASF160:
+ 5956 114e 74734C61 		.ascii	"tsLastBeatDetected\000"
+ 5956      73744265 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 126
+
+
+ 5956      61744465 
+ 5956      74656374 
+ 5956      656400
+ 5957              	.LASF173:
+ 5958 1161 42656174 		.ascii	"BeatDetector_getRate\000"
+ 5958      44657465 
+ 5958      63746F72 
+ 5958      5F676574 
+ 5958      52617465 
+ 5959              	.LASF235:
+ 5960 1176 676C6F62 		.ascii	"globalIrDCRemover\000"
+ 5960      616C4972 
+ 5960      44435265 
+ 5960      6D6F7665 
+ 5960      7200
+ 5961              	.LASF174:
+ 5962 1188 42656174 		.ascii	"BeatDetector_getCurrentThreshold\000"
+ 5962      44657465 
+ 5962      63746F72 
+ 5962      5F676574 
+ 5962      43757272 
+ 5963              	.LASF15:
+ 5964 11a9 4D415833 		.ascii	"MAX30100_MODE_HRONLY\000"
+ 5964      30313030 
+ 5964      5F4D4F44 
+ 5964      455F4852 
+ 5964      4F4E4C59 
+ 5965              	.LASF243:
+ 5966 11be 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\GitHub\\BioSnap\\Mas"
+ 5966      73657273 
+ 5966      5C4D6174 
+ 5966      74686577 
+ 5966      5C446F63 
+ 5967 11eb 7465725F 		.ascii	"ter_v2\\Master_2.cydsn\000"
+ 5967      76325C4D 
+ 5967      61737465 
+ 5967      725F322E 
+ 5967      63796473 
+>>>>>>> origin/master
  5968              	.LASF18:
  5969 11fd 53616D70 		.ascii	"SamplingRate\000"
  5969      6C696E67 
@@ -7556,9 +9069,14 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  5973      5F435552 
  5973      525F3234 
  5974              	.LASF201:
+<<<<<<< HEAD
  5975 1237 62617365 		.ascii	"baseAddress\000"
  5975      41646472 
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 127
+=======
+ 5975 123b 62617365 		.ascii	"baseAddress\000"
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 127
+>>>>>>> origin/master
 
 
  5975      65737300 
@@ -7617,8 +9135,12 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  5994              	.LASF208:
  5995 1330 72656441 		.ascii	"redACValue\000"
  5995      4356616C 
+<<<<<<< HEAD
  5995      756500
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 128
+=======
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 128
+>>>>>>> origin/master
 
 
  5996              	.LASF5:
@@ -7676,9 +9198,14 @@ ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 1
  6013      5454435F 
  6013      4C4F4E47 
  6014              	.LASF199:
+<<<<<<< HEAD
  6015 1432 64617461 		.ascii	"data\000"
  6015      00
 ARM GAS  C:\Users\Davit\AppData\Local\Temp\cc8GAUdB.s 			page 129
+=======
+ 6015 1436 64617461 		.ascii	"data\000"
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccBLLyZd.s 			page 129
+>>>>>>> origin/master
 
 
  6016              	.LASF24:
