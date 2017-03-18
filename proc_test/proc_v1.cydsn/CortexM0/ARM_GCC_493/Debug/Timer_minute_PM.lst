@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 1
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccxmSWbN.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 1
   26:.\Generated_Source\PSoC4/Timer_minute_PM.c **** ********************************************************************************
   27:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
   28:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Summary:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 2
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccxmSWbN.s 			page 2
 
 
   29:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *  All configuration registers are retention. Nothing to save here.
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 1
   53              		.loc 1 59 0
   54              		.cfi_startproc
   55 0000 80B5     		push	{r7, lr}
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 3
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccxmSWbN.s 			page 3
 
 
   56              		.cfi_def_cfa_offset 8
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 1
   98              		.thumb_func
   99              		.type	Timer_minute_RestoreConfig, %function
  100              	Timer_minute_RestoreConfig:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 4
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccxmSWbN.s 			page 4
 
 
  101              	.LFB4:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 1
  102:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *  None
  103:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
  104:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Return:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 5
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccxmSWbN.s 			page 5
 
 
  105:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *  None
@@ -293,12 +293,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 1
  162 0006 00000000 		.4byte	.Ldebug_abbrev0
  163 000a 04       		.byte	0x4
  164 000b 01       		.uleb128 0x1
- 165 000c B4010000 		.4byte	.LASF21
+ 165 000c AB010000 		.4byte	.LASF21
  166 0010 01       		.byte	0x1
- 167 0011 1A010000 		.4byte	.LASF22
- 168 0015 C9000000 		.4byte	.LASF23
+ 167 0011 CF000000 		.4byte	.LASF22
+ 168 0015 4E010000 		.4byte	.LASF23
  169 0019 00000000 		.4byte	.Ldebug_ranges0+0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 6
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccxmSWbN.s 			page 6
 
 
  170 001d 00000000 		.4byte	0
@@ -306,7 +306,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 1
  172 0025 02       		.uleb128 0x2
  173 0026 01       		.byte	0x1
  174 0027 06       		.byte	0x6
- 175 0028 58010000 		.4byte	.LASF0
+ 175 0028 0D010000 		.4byte	.LASF0
  176 002c 02       		.uleb128 0x2
  177 002d 01       		.byte	0x1
  178 002e 08       		.byte	0x8
@@ -318,7 +318,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 1
  184 003a 02       		.uleb128 0x2
  185 003b 02       		.byte	0x2
  186 003c 07       		.byte	0x7
- 187 003d 45010000 		.4byte	.LASF3
+ 187 003d FA000000 		.4byte	.LASF3
  188 0041 02       		.uleb128 0x2
  189 0042 04       		.byte	0x4
  190 0043 05       		.byte	0x5
@@ -356,9 +356,9 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 1
  222 0083 02       		.uleb128 0x2
  223 0084 04       		.byte	0x4
  224 0085 04       		.byte	0x4
- 225 0086 93010000 		.4byte	.LASF11
+ 225 0086 48010000 		.4byte	.LASF11
  226 008a 02       		.uleb128 0x2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 7
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccxmSWbN.s 			page 7
 
 
  227 008b 08       		.byte	0x8
@@ -369,7 +369,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 1
  232 0093 08       		.byte	0x8
  233 0094 AA000000 		.4byte	.LASF13
  234 0098 04       		.uleb128 0x4
- 235 0099 14010000 		.4byte	.LASF14
+ 235 0099 C9000000 		.4byte	.LASF14
  236 009d 02       		.byte	0x2
  237 009e 4402     		.2byte	0x244
  238 00a0 A4000000 		.4byte	0xa4
@@ -378,7 +378,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 1
  241 00a9 02       		.uleb128 0x2
  242 00aa 04       		.byte	0x4
  243 00ab 07       		.byte	0x7
- 244 00ac 42020000 		.4byte	.LASF15
+ 244 00ac 39020000 		.4byte	.LASF15
  245 00b0 06       		.uleb128 0x6
  246 00b1 01       		.byte	0x1
  247 00b2 03       		.byte	0x3
@@ -392,7 +392,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 1
  255 00c3 00       		.byte	0
  256 00c4 00       		.byte	0
  257 00c5 08       		.uleb128 0x8
- 258 00c6 99010000 		.4byte	.LASF16
+ 258 00c6 90010000 		.4byte	.LASF16
  259 00ca 03       		.byte	0x3
  260 00cb 24       		.byte	0x24
  261 00cc B0000000 		.4byte	0xb0
@@ -413,18 +413,18 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 1
  276 00f0 01       		.uleb128 0x1
  277 00f1 9C       		.byte	0x9c
  278 00f2 09       		.uleb128 0x9
- 279 00f3 64010000 		.4byte	.LASF19
+ 279 00f3 19010000 		.4byte	.LASF19
  280 00f7 01       		.byte	0x1
  281 00f8 58       		.byte	0x58
  282 00f9 00000000 		.4byte	.LFB4
  283 00fd 08000000 		.4byte	.LFE4-.LFB4
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 8
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccxmSWbN.s 			page 8
 
 
  284 0101 01       		.uleb128 0x1
  285 0102 9C       		.byte	0x9c
  286 0103 0A       		.uleb128 0xa
- 287 0104 7F010000 		.4byte	.LASF20
+ 287 0104 34010000 		.4byte	.LASF20
  288 0108 01       		.byte	0x1
  289 0109 6C       		.byte	0x6c
  290 010a 00000000 		.4byte	.LFB5
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 1
  338 0021 0B       		.uleb128 0xb
  339 0022 0B       		.uleb128 0xb
  340 0023 3E       		.uleb128 0x3e
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 9
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccxmSWbN.s 			page 9
 
 
  341 0024 0B       		.uleb128 0xb
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 1
  395 005a 16       		.uleb128 0x16
  396 005b 00       		.byte	0
  397 005c 03       		.uleb128 0x3
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 10
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccxmSWbN.s 			page 10
 
 
  398 005d 0E       		.uleb128 0xe
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 1
  452 0095 00       		.byte	0
  453 0096 0B       		.uleb128 0xb
  454 0097 34       		.uleb128 0x34
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 11
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccxmSWbN.s 			page 11
 
 
  455 0098 00       		.byte	0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 1
  503      6720696E 
  503      7400
  504              	.LASF10:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 12
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccxmSWbN.s 			page 12
 
 
  505 000e 75696E74 		.ascii	"uint32\000"
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 1
  527      20696E74 
  527      00
  528              	.LASF2:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 13
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccxmSWbN.s 			page 13
 
 
  529 00b8 73686F72 		.ascii	"short int\000"
@@ -727,78 +727,78 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 1
  530              	.LASF12:
  531 00c2 646F7562 		.ascii	"double\000"
  531      6C6500
- 532              	.LASF23:
- 533 00c9 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\UC Davis\\EEC 136AB\\"
- 533      73657273 
- 533      5C4D6174 
- 533      74686577 
- 533      5C446F63 
- 534 00f7 50536F43 		.ascii	"PSoC\\proc_test\\proc_v1.cydsn\000"
- 534      5C70726F 
- 534      635F7465 
- 534      73745C70 
- 534      726F635F 
- 535              	.LASF14:
- 536 0114 72656733 		.ascii	"reg32\000"
- 536      3200
- 537              	.LASF22:
- 538 011a 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\Timer_minute_PM.c\000"
- 538      6E657261 
- 538      7465645F 
- 538      536F7572 
- 538      63655C50 
- 539              	.LASF3:
- 540 0145 73686F72 		.ascii	"short unsigned int\000"
- 540      7420756E 
- 540      7369676E 
- 540      65642069 
- 540      6E7400
- 541              	.LASF0:
- 542 0158 7369676E 		.ascii	"signed char\000"
- 542      65642063 
- 542      68617200 
- 543              	.LASF19:
- 544 0164 54696D65 		.ascii	"Timer_minute_RestoreConfig\000"
- 544      725F6D69 
- 544      6E757465 
- 544      5F526573 
- 544      746F7265 
- 545              	.LASF20:
- 546 017f 54696D65 		.ascii	"Timer_minute_Wakeup\000"
- 546      725F6D69 
- 546      6E757465 
- 546      5F57616B 
- 546      65757000 
- 547              	.LASF11:
- 548 0193 666C6F61 		.ascii	"float\000"
- 548      7400
+ 532              	.LASF14:
+ 533 00c9 72656733 		.ascii	"reg32\000"
+ 533      3200
+ 534              	.LASF22:
+ 535 00cf 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\Timer_minute_PM.c\000"
+ 535      6E657261 
+ 535      7465645F 
+ 535      536F7572 
+ 535      63655C50 
+ 536              	.LASF3:
+ 537 00fa 73686F72 		.ascii	"short unsigned int\000"
+ 537      7420756E 
+ 537      7369676E 
+ 537      65642069 
+ 537      6E7400
+ 538              	.LASF0:
+ 539 010d 7369676E 		.ascii	"signed char\000"
+ 539      65642063 
+ 539      68617200 
+ 540              	.LASF19:
+ 541 0119 54696D65 		.ascii	"Timer_minute_RestoreConfig\000"
+ 541      725F6D69 
+ 541      6E757465 
+ 541      5F526573 
+ 541      746F7265 
+ 542              	.LASF20:
+ 543 0134 54696D65 		.ascii	"Timer_minute_Wakeup\000"
+ 543      725F6D69 
+ 543      6E757465 
+ 543      5F57616B 
+ 543      65757000 
+ 544              	.LASF11:
+ 545 0148 666C6F61 		.ascii	"float\000"
+ 545      7400
+ 546              	.LASF23:
+ 547 014e 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\GitHub\\BioSnap\\pro"
+ 547      73657273 
+ 547      5C4D6174 
+ 547      74686577 
+ 547      5C446F63 
+ 548 017b 635F7465 		.ascii	"c_test\\proc_v1.cydsn\000"
+ 548      73745C70 
+ 548      726F635F 
+ 548      76312E63 
+ 548      7964736E 
  549              	.LASF16:
- 550 0199 54696D65 		.ascii	"Timer_minute_BACKUP_STRUCT\000"
+ 550 0190 54696D65 		.ascii	"Timer_minute_BACKUP_STRUCT\000"
  550      725F6D69 
  550      6E757465 
  550      5F424143 
  550      4B55505F 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccGLauHe.s 			page 14
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccxmSWbN.s 			page 14
 
 
  551              	.LASF21:
- 552 01b4 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 552 01ab 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
  552      4320342E 
  552      392E3320 
  552      32303135 
  552      30333033 
- 553 01e7 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 553 01de 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
  553      20726576 
  553      6973696F 
  553      6E203232 
  553      31323230 
- 554 021a 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 554 0211 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
  554      66756E63 
  554      74696F6E 
  554      2D736563 
  554      74696F6E 
  555              	.LASF15:
- 556 0242 73697A65 		.ascii	"sizetype\000"
+ 556 0239 73697A65 		.ascii	"sizetype\000"
  556      74797065 
  556      00
  557              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

@@ -17,8 +17,8 @@
                     1::Clock Frequency Summary
 ===================================================================== 
 Number of clocks: 15
-Clock: ADC_intClock         | N/A  | Target: 6.00 MHz    | 
-Clock: ADC_intClock(FFB)    | N/A  | Target: 6.00 MHz    | 
+Clock: ADC_intClock         | N/A  | Target: 8.00 MHz    | 
+Clock: ADC_intClock(FFB)    | N/A  | Target: 8.00 MHz    | 
 Clock: ClockBlock/ff_div_2  | N/A  | Target: 100.00 MHz  | 
 Clock: Clock_1              | N/A  | Target: 0.00 MHz    | 
 Clock: Clock_1(FFB)         | N/A  | Target: 0.00 MHz    | 

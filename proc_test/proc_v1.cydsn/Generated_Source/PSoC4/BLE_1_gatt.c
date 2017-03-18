@@ -84,13 +84,6 @@ CYBLE_STATE_T cyBle_state;
             0x00u, 0x00u, 
             0x00u, 0x00u, 
             0x00u, 0x00u, 
-        },
-        {
-            0x00u, 0x00u, 
-            0x00u, 0x00u, 
-            0x00u, 0x00u, 
-            0x00u, 0x00u, 
-            0x00u, 0x00u, 
             0x00u, 0x00u, 
         },
         {
@@ -100,6 +93,16 @@ CYBLE_STATE_T cyBle_state;
             0x00u, 0x00u, 
             0x00u, 0x00u, 
             0x00u, 0x00u, 
+            0x00u, 0x00u, 
+        },
+        {
+            0x00u, 0x00u, 
+            0x00u, 0x00u, 
+            0x00u, 0x00u, 
+            0x00u, 0x00u, 
+            0x00u, 0x00u, 
+            0x00u, 0x00u, 
+            0x00u, 0x00u, 
         },
         {
             0x00u, 0x00u, 
@@ -108,8 +111,10 @@ CYBLE_STATE_T cyBle_state;
             0x00u, 0x00u, 
             0x00u, 0x00u, 
             0x00u, 0x00u, 
+            0x00u, 0x00u, 
         },
         {
+            0x00u, 0x00u, 
             0x00u, 0x00u, 
             0x00u, 0x00u, 
             0x00u, 0x00u, 
@@ -117,7 +122,7 @@ CYBLE_STATE_T cyBle_state;
             0x00u, 0x00u, 
             0x00u, 0x00u, 
         }}, 
-        0x0Cu, /* CYBLE_GATT_DB_CCCD_COUNT */ 
+        0x0Eu, /* CYBLE_GATT_DB_CCCD_COUNT */ 
         0x05u, /* CYBLE_GAP_MAX_BONDED_DEVICE */ 
     };
 #endif /* (CYBLE_MODE_PROFILE) */
@@ -133,7 +138,7 @@ CYBLE_STATE_T cyBle_state;
     0x000Du,    /* Handle of the Client Characteristic Configuration descriptor */
 };
     
-    static uint8 cyBle_attValues[0x2Au] = {
+    static uint8 cyBle_attValues[0x2Eu] = {
     /* Device Name */
     (uint8)'B', (uint8)'i', (uint8)'o', (uint8)'S', (uint8)'n', (uint8)'a', (uint8)'p', 
 
@@ -153,6 +158,9 @@ CYBLE_STATE_T cyBle_state;
     0x00u, 0x00u, 0x00u, 0x00u, 
 
     /* Battery */
+    0x00u, 0x00u, 0x00u, 0x00u, 
+
+    /* Button */
     0x00u, 0x00u, 0x00u, 0x00u, 
 
     /* Heart */
@@ -180,44 +188,49 @@ CYBLE_GATTS_ATT_GEN_VAL_LEN_T cyBle_attValuesLen[CYBLE_GATT_DB_ATT_VAL_COUNT] = 
     { 0x0002u, (void *)&cyBle_attValuesCCCD[2] }, /* AccelCCC */
     { 0x0004u, (void *)&cyBle_attValues[26] }, /* Battery */
     { 0x0002u, (void *)&cyBle_attValuesCCCD[4] }, /* BatCCC */
-    { 0x0004u, (void *)&cyBle_attValues[30] }, /* Heart */
-    { 0x0002u, (void *)&cyBle_attValuesCCCD[6] }, /* HeartCCC */
-    { 0x0004u, (void *)&cyBle_attValues[34] }, /* Oxygen */
-    { 0x0002u, (void *)&cyBle_attValuesCCCD[8] }, /* OxygenCCC */
-    { 0x0004u, (void *)&cyBle_attValues[38] }, /* Temperature */
-    { 0x0002u, (void *)&cyBle_attValuesCCCD[10] }, /* TempCCC */
+    { 0x0004u, (void *)&cyBle_attValues[30] }, /* Button */
+    { 0x0002u, (void *)&cyBle_attValuesCCCD[6] }, /* ButtonCCC */
+    { 0x0004u, (void *)&cyBle_attValues[34] }, /* Heart */
+    { 0x0002u, (void *)&cyBle_attValuesCCCD[8] }, /* HeartCCC */
+    { 0x0004u, (void *)&cyBle_attValues[38] }, /* Oxygen */
+    { 0x0002u, (void *)&cyBle_attValuesCCCD[10] }, /* OxygenCCC */
+    { 0x0004u, (void *)&cyBle_attValues[42] }, /* Temperature */
+    { 0x0002u, (void *)&cyBle_attValuesCCCD[12] }, /* TempCCC */
 };
 
-const CYBLE_GATTS_DB_T cyBle_gattDB[0x1Du] = {
-    { 0x0001u, 0x2800u /* Primary service                     */, 0x00000001u /*        */, 0x0009u, {{0x1800u, NULL}}                           },
-    { 0x0002u, 0x2803u /* Characteristic                      */, 0x00000201u /* rd     */, 0x0003u, {{0x2A00u, NULL}}                           },
-    { 0x0003u, 0x2A00u /* Device Name                         */, 0x00000201u /* rd     */, 0x0003u, {{0x0007u, (void *)&cyBle_attValuesLen[0]}} },
-    { 0x0004u, 0x2803u /* Characteristic                      */, 0x00000201u /* rd     */, 0x0005u, {{0x2A01u, NULL}}                           },
-    { 0x0005u, 0x2A01u /* Appearance                          */, 0x00000201u /* rd     */, 0x0005u, {{0x0002u, (void *)&cyBle_attValuesLen[1]}} },
-    { 0x0006u, 0x2803u /* Characteristic                      */, 0x00000201u /* rd     */, 0x0007u, {{0x2A04u, NULL}}                           },
-    { 0x0007u, 0x2A04u /* Peripheral Preferred Connection Par */, 0x00000201u /* rd     */, 0x0007u, {{0x0008u, (void *)&cyBle_attValuesLen[2]}} },
-    { 0x0008u, 0x2803u /* Characteristic                      */, 0x00000201u /* rd     */, 0x0009u, {{0x2AA6u, NULL}}                           },
-    { 0x0009u, 0x2AA6u /* Central Address Resolution          */, 0x00000201u /* rd     */, 0x0009u, {{0x0001u, (void *)&cyBle_attValuesLen[3]}} },
-    { 0x000Au, 0x2800u /* Primary service                     */, 0x00000001u /*        */, 0x000Du, {{0x1801u, NULL}}                           },
-    { 0x000Bu, 0x2803u /* Characteristic                      */, 0x00002001u /* ind    */, 0x000Du, {{0x2A05u, NULL}}                           },
-    { 0x000Cu, 0x2A05u /* Service Changed                     */, 0x00002000u /* ind    */, 0x000Du, {{0x0004u, (void *)&cyBle_attValuesLen[4]}} },
-    { 0x000Du, 0x2902u /* Client Characteristic Configuration */, 0x00000A04u /* rd,wr  */, 0x000Du, {{0x0002u, (void *)&cyBle_attValuesLen[5]}} },
-    { 0x000Eu, 0x2800u /* Primary service                     */, 0x00000001u /*        */, 0x001Du, {{0xAAA0u, NULL}}                           },
-    { 0x000Fu, 0x2803u /* Characteristic                      */, 0x00001201u /* rd,ntf */, 0x0011u, {{0xAAA1u, NULL}}                           },
-    { 0x0010u, 0xAAA1u /* Accelerometer                       */, 0x00011201u /* rd,ntf */, 0x0011u, {{0x0004u, (void *)&cyBle_attValuesLen[6]}} },
-    { 0x0011u, 0x2902u /* AccelCCC                            */, 0x00010A04u /* rd,wr  */, 0x0011u, {{0x0002u, (void *)&cyBle_attValuesLen[7]}} },
-    { 0x0012u, 0x2803u /* Characteristic                      */, 0x00001201u /* rd,ntf */, 0x0014u, {{0xAAA2u, NULL}}                           },
-    { 0x0013u, 0xAAA2u /* Battery                             */, 0x00011201u /* rd,ntf */, 0x0014u, {{0x0004u, (void *)&cyBle_attValuesLen[8]}} },
-    { 0x0014u, 0x2902u /* BatCCC                              */, 0x00010A04u /* rd,wr  */, 0x0014u, {{0x0002u, (void *)&cyBle_attValuesLen[9]}} },
-    { 0x0015u, 0x2803u /* Characteristic                      */, 0x00001201u /* rd,ntf */, 0x0017u, {{0xAAA3u, NULL}}                           },
-    { 0x0016u, 0xAAA3u /* Heart                               */, 0x00011201u /* rd,ntf */, 0x0017u, {{0x0004u, (void *)&cyBle_attValuesLen[10]}} },
-    { 0x0017u, 0x2902u /* HeartCCC                            */, 0x00010A04u /* rd,wr  */, 0x0017u, {{0x0002u, (void *)&cyBle_attValuesLen[11]}} },
-    { 0x0018u, 0x2803u /* Characteristic                      */, 0x00001201u /* rd,ntf */, 0x001Au, {{0xAAA4u, NULL}}                           },
-    { 0x0019u, 0xAAA4u /* Oxygen                              */, 0x00011201u /* rd,ntf */, 0x001Au, {{0x0004u, (void *)&cyBle_attValuesLen[12]}} },
-    { 0x001Au, 0x2902u /* OxygenCCC                           */, 0x00010A04u /* rd,wr  */, 0x001Au, {{0x0002u, (void *)&cyBle_attValuesLen[13]}} },
-    { 0x001Bu, 0x2803u /* Characteristic                      */, 0x00001201u /* rd,ntf */, 0x001Du, {{0xAAA5u, NULL}}                           },
-    { 0x001Cu, 0xAAA5u /* Temperature                         */, 0x00011201u /* rd,ntf */, 0x001Du, {{0x0004u, (void *)&cyBle_attValuesLen[14]}} },
-    { 0x001Du, 0x2902u /* TempCCC                             */, 0x00010A04u /* rd,wr  */, 0x001Du, {{0x0002u, (void *)&cyBle_attValuesLen[15]}} },
+const CYBLE_GATTS_DB_T cyBle_gattDB[0x20u] = {
+    { 0x0001u, 0x2800u /* Primary service                     */, 0x00000001u /*           */, 0x0009u, {{0x1800u, NULL}}                           },
+    { 0x0002u, 0x2803u /* Characteristic                      */, 0x00000201u /* rd        */, 0x0003u, {{0x2A00u, NULL}}                           },
+    { 0x0003u, 0x2A00u /* Device Name                         */, 0x00000201u /* rd        */, 0x0003u, {{0x0007u, (void *)&cyBle_attValuesLen[0]}} },
+    { 0x0004u, 0x2803u /* Characteristic                      */, 0x00000201u /* rd        */, 0x0005u, {{0x2A01u, NULL}}                           },
+    { 0x0005u, 0x2A01u /* Appearance                          */, 0x00000201u /* rd        */, 0x0005u, {{0x0002u, (void *)&cyBle_attValuesLen[1]}} },
+    { 0x0006u, 0x2803u /* Characteristic                      */, 0x00000201u /* rd        */, 0x0007u, {{0x2A04u, NULL}}                           },
+    { 0x0007u, 0x2A04u /* Peripheral Preferred Connection Par */, 0x00000201u /* rd        */, 0x0007u, {{0x0008u, (void *)&cyBle_attValuesLen[2]}} },
+    { 0x0008u, 0x2803u /* Characteristic                      */, 0x00000201u /* rd        */, 0x0009u, {{0x2AA6u, NULL}}                           },
+    { 0x0009u, 0x2AA6u /* Central Address Resolution          */, 0x00000201u /* rd        */, 0x0009u, {{0x0001u, (void *)&cyBle_attValuesLen[3]}} },
+    { 0x000Au, 0x2800u /* Primary service                     */, 0x00000001u /*           */, 0x000Du, {{0x1801u, NULL}}                           },
+    { 0x000Bu, 0x2803u /* Characteristic                      */, 0x00002001u /* ind       */, 0x000Du, {{0x2A05u, NULL}}                           },
+    { 0x000Cu, 0x2A05u /* Service Changed                     */, 0x00002000u /* ind       */, 0x000Du, {{0x0004u, (void *)&cyBle_attValuesLen[4]}} },
+    { 0x000Du, 0x2902u /* Client Characteristic Configuration */, 0x00000A04u /* rd,wr     */, 0x000Du, {{0x0002u, (void *)&cyBle_attValuesLen[5]}} },
+    { 0x000Eu, 0x2800u /* Primary service                     */, 0x00000001u /*           */, 0x0020u, {{0xAAA0u, NULL}}                           },
+    { 0x000Fu, 0x2803u /* Characteristic                      */, 0x00001201u /* rd,ntf    */, 0x0011u, {{0xAAA1u, NULL}}                           },
+    { 0x0010u, 0xAAA1u /* Accelerometer                       */, 0x00011201u /* rd,ntf    */, 0x0011u, {{0x0004u, (void *)&cyBle_attValuesLen[6]}} },
+    { 0x0011u, 0x2902u /* AccelCCC                            */, 0x00010A04u /* rd,wr     */, 0x0011u, {{0x0002u, (void *)&cyBle_attValuesLen[7]}} },
+    { 0x0012u, 0x2803u /* Characteristic                      */, 0x00001201u /* rd,ntf    */, 0x0014u, {{0xAAA2u, NULL}}                           },
+    { 0x0013u, 0xAAA2u /* Battery                             */, 0x00011201u /* rd,ntf    */, 0x0014u, {{0x0004u, (void *)&cyBle_attValuesLen[8]}} },
+    { 0x0014u, 0x2902u /* BatCCC                              */, 0x00010A04u /* rd,wr     */, 0x0014u, {{0x0002u, (void *)&cyBle_attValuesLen[9]}} },
+    { 0x0015u, 0x2803u /* Characteristic                      */, 0x00001A01u /* rd,wr,ntf */, 0x0017u, {{0xAAA3u, NULL}}                           },
+    { 0x0016u, 0xAAA3u /* Button                              */, 0x00011A04u /* rd,wr,ntf */, 0x0017u, {{0x0004u, (void *)&cyBle_attValuesLen[10]}} },
+    { 0x0017u, 0x2902u /* ButtonCCC                           */, 0x00010A04u /* rd,wr     */, 0x0017u, {{0x0002u, (void *)&cyBle_attValuesLen[11]}} },
+    { 0x0018u, 0x2803u /* Characteristic                      */, 0x00001201u /* rd,ntf    */, 0x001Au, {{0xAAA4u, NULL}}                           },
+    { 0x0019u, 0xAAA4u /* Heart                               */, 0x00011201u /* rd,ntf    */, 0x001Au, {{0x0004u, (void *)&cyBle_attValuesLen[12]}} },
+    { 0x001Au, 0x2902u /* HeartCCC                            */, 0x00010A04u /* rd,wr     */, 0x001Au, {{0x0002u, (void *)&cyBle_attValuesLen[13]}} },
+    { 0x001Bu, 0x2803u /* Characteristic                      */, 0x00001201u /* rd,ntf    */, 0x001Du, {{0xAAA5u, NULL}}                           },
+    { 0x001Cu, 0xAAA5u /* Oxygen                              */, 0x00011201u /* rd,ntf    */, 0x001Du, {{0x0004u, (void *)&cyBle_attValuesLen[14]}} },
+    { 0x001Du, 0x2902u /* OxygenCCC                           */, 0x00010A04u /* rd,wr     */, 0x001Du, {{0x0002u, (void *)&cyBle_attValuesLen[15]}} },
+    { 0x001Eu, 0x2803u /* Characteristic                      */, 0x00001201u /* rd,ntf    */, 0x0020u, {{0xAAA6u, NULL}}                           },
+    { 0x001Fu, 0xAAA6u /* Temperature                         */, 0x00011201u /* rd,ntf    */, 0x0020u, {{0x0004u, (void *)&cyBle_attValuesLen[16]}} },
+    { 0x0020u, 0x2902u /* TempCCC                             */, 0x00010A04u /* rd,wr     */, 0x0020u, {{0x0002u, (void *)&cyBle_attValuesLen[17]}} },
 };
 
 

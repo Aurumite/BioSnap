@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
   18:.\Generated_Source\PSoC4/I2C_1.c **** #include "I2C_1_PVT.h"
   19:.\Generated_Source\PSoC4/I2C_1.c **** 
   20:.\Generated_Source\PSoC4/I2C_1.c **** #if (I2C_1_SCB_MODE_I2C_INC)
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 2
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 2
 
 
   21:.\Generated_Source\PSoC4/I2C_1.c ****     #include "I2C_1_I2C_PVT.h"
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
   75:.\Generated_Source\PSoC4/I2C_1.c **** *  call to the I2C_1_Start() routine.
   76:.\Generated_Source\PSoC4/I2C_1.c **** *
   77:.\Generated_Source\PSoC4/I2C_1.c **** *  If re-initialization of the component is required, then the 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 3
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 3
 
 
   78:.\Generated_Source\PSoC4/I2C_1.c **** *  I2C_1_Init() function can be called before the 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
   45              		.cfi_def_cfa_register 7
  125:.\Generated_Source\PSoC4/I2C_1.c **** #if (I2C_1_SCB_MODE_UNCONFIG_CONST_CFG)
  126:.\Generated_Source\PSoC4/I2C_1.c ****     if (I2C_1_SCB_MODE_UNCONFIG_RUNTM_CFG)
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 4
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 4
 
 
  127:.\Generated_Source\PSoC4/I2C_1.c ****     {
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  164:.\Generated_Source\PSoC4/I2C_1.c **** *  component.
  165:.\Generated_Source\PSoC4/I2C_1.c **** *  When configuration is set to “Unconfigured I2C_1”, the component 
  166:.\Generated_Source\PSoC4/I2C_1.c **** *  must first be initialized to operate in one of the following configurations: 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 5
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 5
 
 
  167:.\Generated_Source\PSoC4/I2C_1.c **** *  I2C, SPI, UART or EZ I2C, using the mode-specific initialization API. 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
   91              		.cfi_endproc
   92              	.LFE3:
   93              		.size	I2C_1_Enable, .-I2C_1_Enable
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 6
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 6
 
 
   94              		.section	.text.I2C_1_Start,"ax",%progbits
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  122              		.loc 1 218 0
  123 0016 FFF7FEFF 		bl	I2C_1_Enable
  219:.\Generated_Source\PSoC4/I2C_1.c **** }
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 7
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 7
 
 
  124              		.loc 1 219 0
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  244:.\Generated_Source\PSoC4/I2C_1.c **** 
  245:.\Generated_Source\PSoC4/I2C_1.c ****     /* Call Stop function specific to current operation mode */
  246:.\Generated_Source\PSoC4/I2C_1.c ****     I2C_1_ScbModeStop();
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 8
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 8
 
 
  154              		.loc 1 246 0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  265:.\Generated_Source\PSoC4/I2C_1.c **** 
  266:.\Generated_Source\PSoC4/I2C_1.c **** 
  267:.\Generated_Source\PSoC4/I2C_1.c **** /*******************************************************************************
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 9
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 9
 
 
  268:.\Generated_Source\PSoC4/I2C_1.c **** * Function Name: I2C_1_SetRxFifoLevel
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  222 0028 BD46     		mov	sp, r7
  223 002a 04B0     		add	sp, sp, #16
  224              		@ sp needed
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 10
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 10
 
 
  225 002c 80BD     		pop	{r7, pc}
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  258 0010 0F22     		mov	r2, #15
  259 0012 9343     		bic	r3, r2
  260 0014 FB60     		str	r3, [r7, #12]
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 11
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 11
 
 
  311:.\Generated_Source\PSoC4/I2C_1.c ****     txFifoCtrl |= ((uint32) (I2C_1_TX_FIFO_CTRL_TRIGGER_LEVEL_MASK & level));
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  334:.\Generated_Source\PSoC4/I2C_1.c ****     *******************************************************************************/
  335:.\Generated_Source\PSoC4/I2C_1.c ****     void I2C_1_SetCustomInterruptHandler(void (*func)(void))
  336:.\Generated_Source\PSoC4/I2C_1.c ****     {
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 12
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 12
 
 
  292              		.loc 1 336 0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  357:.\Generated_Source\PSoC4/I2C_1.c **** {
  326              		.loc 1 357 0
  327              		.cfi_startproc
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 13
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 13
 
 
  328 0000 80B5     		push	{r7, lr}
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  357 0002 00AF     		add	r7, sp, #0
  358              		.cfi_def_cfa_register 7
  383:.\Generated_Source\PSoC4/I2C_1.c **** #if (I2C_1_SCB_MODE_UNCONFIG_CONST_CFG)
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 14
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 14
 
 
  384:.\Generated_Source\PSoC4/I2C_1.c **** #if (!I2C_1_CY_SCBIP_V1)
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  377              		.cfi_offset 7, -8
  378              		.cfi_offset 14, -4
  379 0002 00AF     		add	r7, sp, #0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 15
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 15
 
 
  380              		.cfi_def_cfa_register 7
@@ -898,30 +898,30 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  395 0000 E0010000 		.4byte	0x1e0
  396 0004 0400     		.2byte	0x4
  397 0006 00000000 		.4byte	.Ldebug_abbrev0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 16
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 16
 
 
  398 000a 04       		.byte	0x4
  399 000b 01       		.uleb128 0x1
- 400 000c E0000000 		.4byte	.LASF32
+ 400 000c 22010000 		.4byte	.LASF32
  401 0010 01       		.byte	0x1
  402 0011 11000000 		.4byte	.LASF33
- 403 0015 E4010000 		.4byte	.LASF34
+ 403 0015 7D000000 		.4byte	.LASF34
  404 0019 00000000 		.4byte	.Ldebug_ranges0+0
  405 001d 00000000 		.4byte	0
  406 0021 00000000 		.4byte	.Ldebug_line0
  407 0025 02       		.uleb128 0x2
  408 0026 01       		.byte	0x1
  409 0027 06       		.byte	0x6
- 410 0028 86020000 		.4byte	.LASF0
+ 410 0028 7D020000 		.4byte	.LASF0
  411 002c 02       		.uleb128 0x2
  412 002d 01       		.byte	0x1
  413 002e 08       		.byte	0x8
- 414 002f 83000000 		.4byte	.LASF1
+ 414 002f C5000000 		.4byte	.LASF1
  415 0033 02       		.uleb128 0x2
  416 0034 02       		.byte	0x2
  417 0035 05       		.byte	0x5
- 418 0036 50020000 		.4byte	.LASF2
+ 418 0036 47020000 		.4byte	.LASF2
  419 003a 02       		.uleb128 0x2
  420 003b 02       		.byte	0x2
  421 003c 07       		.byte	0x7
@@ -929,19 +929,19 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  423 0041 02       		.uleb128 0x2
  424 0042 04       		.byte	0x4
  425 0043 05       		.byte	0x5
- 426 0044 7D020000 		.4byte	.LASF4
+ 426 0044 74020000 		.4byte	.LASF4
  427 0048 02       		.uleb128 0x2
  428 0049 04       		.byte	0x4
  429 004a 07       		.byte	0x7
- 430 004b 91000000 		.4byte	.LASF5
+ 430 004b D3000000 		.4byte	.LASF5
  431 004f 02       		.uleb128 0x2
  432 0050 08       		.byte	0x8
  433 0051 05       		.byte	0x5
- 434 0052 C4010000 		.4byte	.LASF6
+ 434 0052 06020000 		.4byte	.LASF6
  435 0056 02       		.uleb128 0x2
  436 0057 08       		.byte	0x8
  437 0058 07       		.byte	0x7
- 438 0059 A4010000 		.4byte	.LASF7
+ 438 0059 E6010000 		.4byte	.LASF7
  439 005d 03       		.uleb128 0x3
  440 005e 04       		.byte	0x4
  441 005f 05       		.byte	0x5
@@ -949,16 +949,16 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  443 0064 02       		.uleb128 0x2
  444 0065 04       		.byte	0x4
  445 0066 07       		.byte	0x7
- 446 0067 83010000 		.4byte	.LASF8
+ 446 0067 C5010000 		.4byte	.LASF8
  447 006b 04       		.uleb128 0x4
- 448 006c A3000000 		.4byte	.LASF9
+ 448 006c E5000000 		.4byte	.LASF9
  449 0070 02       		.byte	0x2
  450 0071 9801     		.2byte	0x198
  451 0073 2C000000 		.4byte	0x2c
  452 0077 04       		.uleb128 0x4
- 453 0078 7C010000 		.4byte	.LASF10
+ 453 0078 BE010000 		.4byte	.LASF10
  454 007c 02       		.byte	0x2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 17
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 17
 
 
  455 007d 9A01     		.2byte	0x19a
@@ -966,15 +966,15 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  457 0083 02       		.uleb128 0x2
  458 0084 04       		.byte	0x4
  459 0085 04       		.byte	0x4
- 460 0086 7D000000 		.4byte	.LASF11
+ 460 0086 BF000000 		.4byte	.LASF11
  461 008a 02       		.uleb128 0x2
  462 008b 08       		.byte	0x8
  463 008c 04       		.byte	0x4
- 464 008d C9000000 		.4byte	.LASF12
+ 464 008d 0B010000 		.4byte	.LASF12
  465 0091 02       		.uleb128 0x2
  466 0092 01       		.byte	0x1
  467 0093 08       		.byte	0x8
- 468 0094 D2010000 		.4byte	.LASF13
+ 468 0094 14020000 		.4byte	.LASF13
  469 0098 04       		.uleb128 0x4
  470 0099 00000000 		.4byte	.LASF14
  471 009d 02       		.byte	0x2
@@ -989,7 +989,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  480 00b0 02       		.uleb128 0x2
  481 00b1 04       		.byte	0x4
  482 00b2 07       		.byte	0x7
- 483 00b3 BB010000 		.4byte	.LASF15
+ 483 00b3 FD010000 		.4byte	.LASF15
  484 00b7 08       		.uleb128 0x8
  485 00b8 72000000 		.4byte	.LASF16
  486 00bc 01       		.byte	0x1
@@ -999,7 +999,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  490 00c6 01       		.uleb128 0x1
  491 00c7 9C       		.byte	0x9c
  492 00c8 08       		.uleb128 0x8
- 493 00c9 D7010000 		.4byte	.LASF17
+ 493 00c9 19020000 		.4byte	.LASF17
  494 00cd 01       		.byte	0x1
  495 00ce AB       		.byte	0xab
  496 00cf 00000000 		.4byte	.LFB3
@@ -1007,7 +1007,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  498 00d7 01       		.uleb128 0x1
  499 00d8 9C       		.byte	0x9c
  500 00d9 08       		.uleb128 0x8
- 501 00da 44020000 		.4byte	.LASF18
+ 501 00da 3B020000 		.4byte	.LASF18
  502 00de 01       		.byte	0x1
  503 00df D2       		.byte	0xd2
  504 00e0 00000000 		.4byte	.LFB4
@@ -1015,10 +1015,10 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  506 00e8 01       		.uleb128 0x1
  507 00e9 9C       		.byte	0x9c
  508 00ea 08       		.uleb128 0x8
- 509 00eb D5000000 		.4byte	.LASF19
+ 509 00eb 17010000 		.4byte	.LASF19
  510 00ef 01       		.byte	0x1
  511 00f0 EF       		.byte	0xef
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 18
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 18
 
 
  512 00f1 00000000 		.4byte	.LFB5
@@ -1026,7 +1026,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  514 00f9 01       		.uleb128 0x1
  515 00fa 9C       		.byte	0x9c
  516 00fb 09       		.uleb128 0x9
- 517 00fc 2F020000 		.4byte	.LASF20
+ 517 00fc 26020000 		.4byte	.LASF20
  518 0100 01       		.byte	0x1
  519 0101 1701     		.2byte	0x117
  520 0103 00000000 		.4byte	.LFB6
@@ -1043,7 +1043,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  531 011e 91       		.byte	0x91
  532 011f 6C       		.sleb128 -20
  533 0120 0B       		.uleb128 0xb
- 534 0121 72020000 		.4byte	.LASF23
+ 534 0121 69020000 		.4byte	.LASF23
  535 0125 01       		.byte	0x1
  536 0126 1901     		.2byte	0x119
  537 0128 77000000 		.4byte	0x77
@@ -1078,10 +1078,10 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  566 0163 74       		.sleb128 -12
  567 0164 00       		.byte	0
  568 0165 09       		.uleb128 0x9
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 19
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 19
 
 
- 569 0166 A9000000 		.4byte	.LASF25
+ 569 0166 EB000000 		.4byte	.LASF25
  570 016a 01       		.byte	0x1
  571 016b 4F01     		.2byte	0x14f
  572 016d 00000000 		.4byte	.LFB8
@@ -1090,7 +1090,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  575 0176 9C       		.byte	0x9c
  576 0177 8B010000 		.4byte	0x18b
  577 017b 0A       		.uleb128 0xa
- 578 017c D0000000 		.4byte	.LASF26
+ 578 017c 12010000 		.4byte	.LASF26
  579 0180 01       		.byte	0x1
  580 0181 4F01     		.2byte	0x14f
  581 0183 A9000000 		.4byte	0xa9
@@ -1099,7 +1099,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  584 0189 74       		.sleb128 -12
  585 018a 00       		.byte	0
  586 018b 0C       		.uleb128 0xc
- 587 018c 90010000 		.4byte	.LASF27
+ 587 018c D2010000 		.4byte	.LASF27
  588 0190 01       		.byte	0x1
  589 0191 6401     		.2byte	0x164
  590 0193 00000000 		.4byte	.LFB9
@@ -1107,7 +1107,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  592 019b 01       		.uleb128 0x1
  593 019c 9C       		.byte	0x9c
  594 019d 0D       		.uleb128 0xd
- 595 019e 92020000 		.4byte	.LASF28
+ 595 019e 89020000 		.4byte	.LASF28
  596 01a2 01       		.byte	0x1
  597 01a3 7D01     		.2byte	0x17d
  598 01a5 00000000 		.4byte	.LFB10
@@ -1123,7 +1123,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  608 01bf 01       		.uleb128 0x1
  609 01c0 9C       		.byte	0x9c
  610 01c1 0E       		.uleb128 0xe
- 611 01c2 6E010000 		.4byte	.LASF30
+ 611 01c2 B0010000 		.4byte	.LASF30
  612 01c6 01       		.byte	0x1
  613 01c7 51       		.byte	0x51
  614 01c8 6B000000 		.4byte	0x6b
@@ -1131,14 +1131,14 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  616 01cd 03       		.byte	0x3
  617 01ce 00000000 		.4byte	I2C_1_initVar
  618 01d2 0E       		.uleb128 0xe
- 619 01d3 5A020000 		.4byte	.LASF31
+ 619 01d3 51020000 		.4byte	.LASF31
  620 01d7 01       		.byte	0x1
  621 01d8 61       		.byte	0x61
  622 01d9 A9000000 		.4byte	0xa9
  623 01dd 05       		.uleb128 0x5
  624 01de 03       		.byte	0x3
  625 01df 00000000 		.4byte	I2C_1_customIntrHandler
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 20
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 20
 
 
  626 01e3 00       		.byte	0
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  680 0033 13       		.uleb128 0x13
  681 0034 00       		.byte	0
  682 0035 00       		.byte	0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 21
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 21
 
 
  683 0036 05       		.uleb128 0x5
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  737 006d 0B       		.uleb128 0xb
  738 006e 3B       		.uleb128 0x3b
  739 006f 05       		.uleb128 0x5
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 22
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 22
 
 
  740 0070 27       		.uleb128 0x27
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  794 00a7 19       		.uleb128 0x19
  795 00a8 11       		.uleb128 0x11
  796 00a9 01       		.uleb128 0x1
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 23
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 23
 
 
  797 00aa 12       		.uleb128 0x12
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  851 000e 0000     		.2byte	0
  852 0010 00000000 		.4byte	.LFB2
  853 0014 0C000000 		.4byte	.LFE2-.LFB2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 24
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 24
 
 
  854 0018 00000000 		.4byte	.LFB3
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  903              	.LASF24:
  904 0006 74784669 		.ascii	"txFifoCtrl\000"
  904      666F4374 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 25
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 25
 
 
  904      726C00
@@ -1473,152 +1473,152 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 1
  916 0072 4932435F 		.ascii	"I2C_1_Init\000"
  916      315F496E 
  916      697400
- 917              	.LASF11:
- 918 007d 666C6F61 		.ascii	"float\000"
- 918      7400
- 919              	.LASF1:
- 920 0083 756E7369 		.ascii	"unsigned char\000"
- 920      676E6564 
- 920      20636861 
- 920      7200
- 921              	.LASF5:
- 922 0091 6C6F6E67 		.ascii	"long unsigned int\000"
- 922      20756E73 
- 922      69676E65 
- 922      6420696E 
- 922      7400
- 923              	.LASF9:
- 924 00a3 75696E74 		.ascii	"uint8\000"
- 924      3800
- 925              	.LASF25:
- 926 00a9 4932435F 		.ascii	"I2C_1_SetCustomInterruptHandler\000"
- 926      315F5365 
- 926      74437573 
- 926      746F6D49 
- 926      6E746572 
- 927              	.LASF12:
- 928 00c9 646F7562 		.ascii	"double\000"
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 26
+ 917              	.LASF34:
+ 918 007d 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\GitHub\\BioSnap\\pro"
+ 918      73657273 
+ 918      5C4D6174 
+ 918      74686577 
+ 918      5C446F63 
+ 919 00aa 635F7465 		.ascii	"c_test\\proc_v1.cydsn\000"
+ 919      73745C70 
+ 919      726F635F 
+ 919      76312E63 
+ 919      7964736E 
+ 920              	.LASF11:
+ 921 00bf 666C6F61 		.ascii	"float\000"
+ 921      7400
+ 922              	.LASF1:
+ 923 00c5 756E7369 		.ascii	"unsigned char\000"
+ 923      676E6564 
+ 923      20636861 
+ 923      7200
+ 924              	.LASF5:
+ 925 00d3 6C6F6E67 		.ascii	"long unsigned int\000"
+ 925      20756E73 
+ 925      69676E65 
+ 925      6420696E 
+ 925      7400
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 26
 
 
- 928      6C6500
- 929              	.LASF26:
- 930 00d0 66756E63 		.ascii	"func\000"
- 930      00
- 931              	.LASF19:
- 932 00d5 4932435F 		.ascii	"I2C_1_Stop\000"
- 932      315F5374 
- 932      6F7000
- 933              	.LASF32:
- 934 00e0 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 934      4320342E 
- 934      392E3320 
- 934      32303135 
- 934      30333033 
- 935 0113 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
- 935      20726576 
- 935      6973696F 
- 935      6E203232 
- 935      31323230 
- 936 0146 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 936      66756E63 
- 936      74696F6E 
- 936      2D736563 
- 936      74696F6E 
- 937              	.LASF30:
- 938 016e 4932435F 		.ascii	"I2C_1_initVar\000"
- 938      315F696E 
- 938      69745661 
- 938      7200
- 939              	.LASF10:
- 940 017c 75696E74 		.ascii	"uint32\000"
- 940      333200
- 941              	.LASF8:
- 942 0183 756E7369 		.ascii	"unsigned int\000"
- 942      676E6564 
- 942      20696E74 
- 942      00
- 943              	.LASF27:
- 944 0190 4932435F 		.ascii	"I2C_1_ScbEnableIntr\000"
- 944      315F5363 
- 944      62456E61 
- 944      626C6549 
- 944      6E747200 
- 945              	.LASF7:
- 946 01a4 6C6F6E67 		.ascii	"long long unsigned int\000"
- 946      206C6F6E 
- 946      6720756E 
- 946      7369676E 
- 946      65642069 
- 947              	.LASF15:
- 948 01bb 73697A65 		.ascii	"sizetype\000"
- 948      74797065 
- 948      00
- 949              	.LASF6:
- 950 01c4 6C6F6E67 		.ascii	"long long int\000"
- 950      206C6F6E 
- 950      6720696E 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 27
+ 926              	.LASF9:
+ 927 00e5 75696E74 		.ascii	"uint8\000"
+ 927      3800
+ 928              	.LASF25:
+ 929 00eb 4932435F 		.ascii	"I2C_1_SetCustomInterruptHandler\000"
+ 929      315F5365 
+ 929      74437573 
+ 929      746F6D49 
+ 929      6E746572 
+ 930              	.LASF12:
+ 931 010b 646F7562 		.ascii	"double\000"
+ 931      6C6500
+ 932              	.LASF26:
+ 933 0112 66756E63 		.ascii	"func\000"
+ 933      00
+ 934              	.LASF19:
+ 935 0117 4932435F 		.ascii	"I2C_1_Stop\000"
+ 935      315F5374 
+ 935      6F7000
+ 936              	.LASF32:
+ 937 0122 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 937      4320342E 
+ 937      392E3320 
+ 937      32303135 
+ 937      30333033 
+ 938 0155 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 938      20726576 
+ 938      6973696F 
+ 938      6E203232 
+ 938      31323230 
+ 939 0188 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 939      66756E63 
+ 939      74696F6E 
+ 939      2D736563 
+ 939      74696F6E 
+ 940              	.LASF30:
+ 941 01b0 4932435F 		.ascii	"I2C_1_initVar\000"
+ 941      315F696E 
+ 941      69745661 
+ 941      7200
+ 942              	.LASF10:
+ 943 01be 75696E74 		.ascii	"uint32\000"
+ 943      333200
+ 944              	.LASF8:
+ 945 01c5 756E7369 		.ascii	"unsigned int\000"
+ 945      676E6564 
+ 945      20696E74 
+ 945      00
+ 946              	.LASF27:
+ 947 01d2 4932435F 		.ascii	"I2C_1_ScbEnableIntr\000"
+ 947      315F5363 
+ 947      62456E61 
+ 947      626C6549 
+ 947      6E747200 
+ 948              	.LASF7:
+ 949 01e6 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 949      206C6F6E 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 27
 
 
- 950      7400
- 951              	.LASF13:
- 952 01d2 63686172 		.ascii	"char\000"
- 952      00
- 953              	.LASF17:
- 954 01d7 4932435F 		.ascii	"I2C_1_Enable\000"
- 954      315F456E 
- 954      61626C65 
- 954      00
- 955              	.LASF34:
- 956 01e4 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\UC Davis\\EEC 136AB\\"
- 956      73657273 
- 956      5C4D6174 
- 956      74686577 
- 956      5C446F63 
- 957 0212 50536F43 		.ascii	"PSoC\\proc_test\\proc_v1.cydsn\000"
- 957      5C70726F 
- 957      635F7465 
- 957      73745C70 
- 957      726F635F 
+ 949      6720756E 
+ 949      7369676E 
+ 949      65642069 
+ 950              	.LASF15:
+ 951 01fd 73697A65 		.ascii	"sizetype\000"
+ 951      74797065 
+ 951      00
+ 952              	.LASF6:
+ 953 0206 6C6F6E67 		.ascii	"long long int\000"
+ 953      206C6F6E 
+ 953      6720696E 
+ 953      7400
+ 954              	.LASF13:
+ 955 0214 63686172 		.ascii	"char\000"
+ 955      00
+ 956              	.LASF17:
+ 957 0219 4932435F 		.ascii	"I2C_1_Enable\000"
+ 957      315F456E 
+ 957      61626C65 
+ 957      00
  958              	.LASF20:
- 959 022f 4932435F 		.ascii	"I2C_1_SetRxFifoLevel\000"
+ 959 0226 4932435F 		.ascii	"I2C_1_SetRxFifoLevel\000"
  959      315F5365 
  959      74527846 
  959      69666F4C 
  959      6576656C 
  960              	.LASF18:
- 961 0244 4932435F 		.ascii	"I2C_1_Start\000"
+ 961 023b 4932435F 		.ascii	"I2C_1_Start\000"
  961      315F5374 
  961      61727400 
  962              	.LASF2:
- 963 0250 73686F72 		.ascii	"short int\000"
+ 963 0247 73686F72 		.ascii	"short int\000"
  963      7420696E 
  963      7400
  964              	.LASF31:
- 965 025a 4932435F 		.ascii	"I2C_1_customIntrHandler\000"
+ 965 0251 4932435F 		.ascii	"I2C_1_customIntrHandler\000"
  965      315F6375 
  965      73746F6D 
  965      496E7472 
  965      48616E64 
  966              	.LASF23:
- 967 0272 72784669 		.ascii	"rxFifoCtrl\000"
+ 967 0269 72784669 		.ascii	"rxFifoCtrl\000"
  967      666F4374 
  967      726C00
  968              	.LASF4:
- 969 027d 6C6F6E67 		.ascii	"long int\000"
+ 969 0274 6C6F6E67 		.ascii	"long int\000"
  969      20696E74 
  969      00
  970              	.LASF0:
- 971 0286 7369676E 		.ascii	"signed char\000"
+ 971 027d 7369676E 		.ascii	"signed char\000"
  971      65642063 
  971      68617200 
  972              	.LASF28:
- 973 0292 4932435F 		.ascii	"I2C_1_ScbModePostEnable\000"
+ 973 0289 4932435F 		.ascii	"I2C_1_ScbModePostEnable\000"
  973      315F5363 
  973      624D6F64 
  973      65506F73 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccrJarDI.s 			page 28
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc82qldf.s 			page 28
 
 
  973      74456E61 

@@ -46,6 +46,8 @@
 #include "BLE_1_Stack.h"
 #include "BLE_1_eventHandler.h"
 #include "BLE_1_custom.h"
+#include "button_in.h"
+#include "button_in_aliases.h"
 #include "ADC_IRQ.h"
 #include "ADC_intClock.h"
 #include "I2C_1_SCBCLK.h"

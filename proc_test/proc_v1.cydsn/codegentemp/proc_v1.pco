@@ -1,5 +1,5 @@
 # proc_v1
-# 2017-03-11 00:51:18Z
+# 2017-03-18 01:15:23Z
 
 # IO_6@[IOP=(0)][IoId=(6)] is reserved: SWDDebugEnabled
 dont_use_io iocell 0 6
@@ -17,6 +17,7 @@ set_io "bat_in(0)" iocell 3 2
 set_io "temp_in(0)" iocell 3 6
 set_io "\I2C_1:sda(0)\" iocell 3 4
 set_io "\I2C_1:scl(0)\" iocell 3 5
+set_io "button_in(0)" iocell 3 7
 set_location "\ADC:IRQ\" interrupt -1 -1 15
 set_location "\ADC:cy_psoc4_sar\" p4sarcell -1 -1 0
 set_location "\Timer_minute:cy_m0s8_tcpwm_1\" m0s8tcpwmcell -1 -1 0

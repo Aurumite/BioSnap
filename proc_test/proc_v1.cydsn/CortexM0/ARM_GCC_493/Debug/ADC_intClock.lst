@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 1
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc1qpqsQ.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 1
   30:.\Generated_Source\PSoC4/ADC_intClock.c **** *
   31:.\Generated_Source\PSoC4/ADC_intClock.c **** * Parameters:
   32:.\Generated_Source\PSoC4/ADC_intClock.c **** *  alignClkDiv:  The divider to which phase alignment is performed when the
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 2
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc1qpqsQ.s 			page 2
 
 
   33:.\Generated_Source\PSoC4/ADC_intClock.c **** *    clock is started.
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 1
   60              		.align	2
   61              	.L3:
   62 0024 00000140 		.word	1073807360
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 3
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc1qpqsQ.s 			page 3
 
 
   63 0028 40000080 		.word	-2147483584
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 1
   94:.\Generated_Source\PSoC4/ADC_intClock.c **** *******************************************************************************/
   95:.\Generated_Source\PSoC4/ADC_intClock.c **** void ADC_intClock_Stop(void)
   96:.\Generated_Source\PSoC4/ADC_intClock.c **** {
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 4
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc1qpqsQ.s 			page 4
 
 
   75              		.loc 1 96 0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 1
  110              		.code	16
  111              		.thumb_func
  112              		.type	ADC_intClock_SetFractionalDividerRegister, %function
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 5
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc1qpqsQ.s 			page 5
 
 
  113              	ADC_intClock_SetFractionalDividerRegister:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 1
  146:.\Generated_Source\PSoC4/ADC_intClock.c ****         ((uint32)((uint32)clkDivider <<  ADC_intClock_DIV_INT_SHIFT) & ADC_intClock_DIV_INT_MASK) |
  137              		.loc 1 146 0
  138 001c BB1D     		add	r3, r7, #6
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 6
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc1qpqsQ.s 			page 6
 
 
  139 001e 1B88     		ldrh	r3, [r3]
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 1
  161:.\Generated_Source\PSoC4/ADC_intClock.c **** /*******************************************************************************
  162:.\Generated_Source\PSoC4/ADC_intClock.c **** * Function Name: ADC_intClock_GetDividerRegister
  163:.\Generated_Source\PSoC4/ADC_intClock.c **** ********************************************************************************
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 7
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc1qpqsQ.s 			page 7
 
 
  164:.\Generated_Source\PSoC4/ADC_intClock.c **** *
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 1
  182:.\Generated_Source\PSoC4/ADC_intClock.c **** 
  183:.\Generated_Source\PSoC4/ADC_intClock.c **** /*******************************************************************************
  184:.\Generated_Source\PSoC4/ADC_intClock.c **** * Function Name: ADC_intClock_GetFractionalDividerRegister
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 8
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc1qpqsQ.s 			page 8
 
 
  185:.\Generated_Source\PSoC4/ADC_intClock.c **** ********************************************************************************
@@ -472,48 +472,48 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 1
  237 0006 00000000 		.4byte	.Ldebug_abbrev0
  238 000a 04       		.byte	0x4
  239 000b 01       		.uleb128 0x1
- 240 000c FE000000 		.4byte	.LASF25
+ 240 000c 40010000 		.4byte	.LASF25
  241 0010 01       		.byte	0x1
  242 0011 06000000 		.4byte	.LASF26
- 243 0015 FB010000 		.4byte	.LASF27
+ 243 0015 72000000 		.4byte	.LASF27
  244 0019 00000000 		.4byte	.Ldebug_ranges0+0
  245 001d 00000000 		.4byte	0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 9
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc1qpqsQ.s 			page 9
 
 
  246 0021 00000000 		.4byte	.Ldebug_line0
  247 0025 02       		.uleb128 0x2
  248 0026 01       		.byte	0x1
  249 0027 06       		.byte	0x6
- 250 0028 74020000 		.4byte	.LASF0
+ 250 0028 6B020000 		.4byte	.LASF0
  251 002c 02       		.uleb128 0x2
  252 002d 01       		.byte	0x1
  253 002e 08       		.byte	0x8
- 254 002f 98000000 		.4byte	.LASF1
+ 254 002f DA000000 		.4byte	.LASF1
  255 0033 02       		.uleb128 0x2
  256 0034 02       		.byte	0x2
  257 0035 05       		.byte	0x5
- 258 0036 46020000 		.4byte	.LASF2
+ 258 0036 3D020000 		.4byte	.LASF2
  259 003a 02       		.uleb128 0x2
  260 003b 02       		.byte	0x2
  261 003c 07       		.byte	0x7
- 262 003d B8000000 		.4byte	.LASF3
+ 262 003d FA000000 		.4byte	.LASF3
  263 0041 02       		.uleb128 0x2
  264 0042 04       		.byte	0x4
  265 0043 05       		.byte	0x5
- 266 0044 56020000 		.4byte	.LASF4
+ 266 0044 4D020000 		.4byte	.LASF4
  267 0048 02       		.uleb128 0x2
  268 0049 04       		.byte	0x4
  269 004a 07       		.byte	0x7
- 270 004b A6000000 		.4byte	.LASF5
+ 270 004b E8000000 		.4byte	.LASF5
  271 004f 02       		.uleb128 0x2
  272 0050 08       		.byte	0x8
  273 0051 05       		.byte	0x5
- 274 0052 BE010000 		.4byte	.LASF6
+ 274 0052 00020000 		.4byte	.LASF6
  275 0056 02       		.uleb128 0x2
  276 0057 08       		.byte	0x8
  277 0058 07       		.byte	0x7
- 278 0059 A7010000 		.4byte	.LASF7
+ 278 0059 E9010000 		.4byte	.LASF7
  279 005d 03       		.uleb128 0x3
  280 005e 04       		.byte	0x4
  281 005f 05       		.byte	0x5
@@ -521,37 +521,37 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 1
  283 0064 02       		.uleb128 0x2
  284 0065 04       		.byte	0x4
  285 0066 07       		.byte	0x7
- 286 0067 9A010000 		.4byte	.LASF8
+ 286 0067 DC010000 		.4byte	.LASF8
  287 006b 04       		.uleb128 0x4
- 288 006c 50020000 		.4byte	.LASF9
+ 288 006c 47020000 		.4byte	.LASF9
  289 0070 02       		.byte	0x2
  290 0071 9801     		.2byte	0x198
  291 0073 2C000000 		.4byte	0x2c
  292 0077 04       		.uleb128 0x4
- 293 0078 8C010000 		.4byte	.LASF10
+ 293 0078 CE010000 		.4byte	.LASF10
  294 007c 02       		.byte	0x2
  295 007d 9901     		.2byte	0x199
  296 007f 3A000000 		.4byte	0x3a
  297 0083 04       		.uleb128 0x4
- 298 0084 93010000 		.4byte	.LASF11
+ 298 0084 D5010000 		.4byte	.LASF11
  299 0088 02       		.byte	0x2
  300 0089 9A01     		.2byte	0x19a
  301 008b 48000000 		.4byte	0x48
  302 008f 02       		.uleb128 0x2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 10
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc1qpqsQ.s 			page 10
 
 
  303 0090 04       		.byte	0x4
  304 0091 04       		.byte	0x4
- 305 0092 92000000 		.4byte	.LASF12
+ 305 0092 D4000000 		.4byte	.LASF12
  306 0096 02       		.uleb128 0x2
  307 0097 08       		.byte	0x8
  308 0098 04       		.byte	0x4
- 309 0099 D6000000 		.4byte	.LASF13
+ 309 0099 18010000 		.4byte	.LASF13
  310 009d 02       		.uleb128 0x2
  311 009e 01       		.byte	0x1
  312 009f 08       		.byte	0x8
- 313 00a0 CC010000 		.4byte	.LASF14
+ 313 00a0 0E020000 		.4byte	.LASF14
  314 00a4 04       		.uleb128 0x4
  315 00a5 00000000 		.4byte	.LASF15
  316 00a9 02       		.byte	0x2
@@ -560,7 +560,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 1
  319 00b0 05       		.uleb128 0x5
  320 00b1 83000000 		.4byte	0x83
  321 00b5 06       		.uleb128 0x6
- 322 00b6 5F020000 		.4byte	.LASF16
+ 322 00b6 56020000 		.4byte	.LASF16
  323 00ba 01       		.byte	0x1
  324 00bb 27       		.byte	0x27
  325 00bc 00000000 		.4byte	.LFB0
@@ -569,7 +569,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 1
  328 00c5 9C       		.byte	0x9c
  329 00c6 D9000000 		.4byte	0xd9
  330 00ca 07       		.uleb128 0x7
- 331 00cb E4000000 		.4byte	.LASF18
+ 331 00cb 26010000 		.4byte	.LASF18
  332 00cf 01       		.byte	0x1
  333 00d0 27       		.byte	0x27
  334 00d1 83000000 		.4byte	0x83
@@ -595,10 +595,10 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 1
  354 00fa 9C       		.byte	0x9c
  355 00fb 38010000 		.4byte	0x138
  356 00ff 07       		.uleb128 0x7
- 357 0100 CB000000 		.4byte	.LASF19
+ 357 0100 0D010000 		.4byte	.LASF19
  358 0104 01       		.byte	0x1
  359 0105 86       		.byte	0x86
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 11
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc1qpqsQ.s 			page 11
 
 
  360 0106 77000000 		.4byte	0x77
@@ -606,7 +606,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 1
  362 010b 91       		.byte	0x91
  363 010c 6E       		.sleb128 -18
  364 010d 07       		.uleb128 0x7
- 365 010e F0000000 		.4byte	.LASF20
+ 365 010e 32010000 		.4byte	.LASF20
  366 0112 01       		.byte	0x1
  367 0113 86       		.byte	0x86
  368 0114 6B000000 		.4byte	0x6b
@@ -622,7 +622,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 1
  378 0127 91       		.byte	0x91
  379 0128 74       		.sleb128 -12
  380 0129 09       		.uleb128 0x9
- 381 012a DD000000 		.4byte	.LASF22
+ 381 012a 1F010000 		.4byte	.LASF22
  382 012e 01       		.byte	0x1
  383 012f 89       		.byte	0x89
  384 0130 83000000 		.4byte	0x83
@@ -631,7 +631,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 1
  387 0136 70       		.sleb128 -16
  388 0137 00       		.byte	0
  389 0138 0A       		.uleb128 0xa
- 390 0139 72000000 		.4byte	.LASF23
+ 390 0139 B4000000 		.4byte	.LASF23
  391 013d 01       		.byte	0x1
  392 013e B0       		.byte	0xb0
  393 013f 77000000 		.4byte	0x77
@@ -640,7 +640,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 1
  396 014b 01       		.uleb128 0x1
  397 014c 9C       		.byte	0x9c
  398 014d 0A       		.uleb128 0xa
- 399 014e D1010000 		.4byte	.LASF24
+ 399 014e 13020000 		.4byte	.LASF24
  400 0152 01       		.byte	0x1
  401 0153 C6       		.byte	0xc6
  402 0154 6B000000 		.4byte	0x6b
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 1
  414 0004 0E       		.uleb128 0xe
  415 0005 13       		.uleb128 0x13
  416 0006 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 12
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc1qpqsQ.s 			page 12
 
 
  417 0007 03       		.uleb128 0x3
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 1
  471 003d 06       		.uleb128 0x6
  472 003e 2E       		.uleb128 0x2e
  473 003f 01       		.byte	0x1
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 13
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc1qpqsQ.s 			page 13
 
 
  474 0040 3F       		.uleb128 0x3f
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 1
  528 0077 40       		.uleb128 0x40
  529 0078 18       		.uleb128 0x18
  530 0079 9742     		.uleb128 0x2117
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 14
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc1qpqsQ.s 			page 14
 
 
  531 007b 19       		.uleb128 0x19
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 1
  585 0018 00000000 		.4byte	.LFB1
  586 001c 20000000 		.4byte	.LFE1-.LFB1
  587 0020 00000000 		.4byte	.LFB2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 15
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc1qpqsQ.s 			page 15
 
 
  588 0024 44000000 		.4byte	.LFE2-.LFB2
@@ -893,137 +893,137 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 1
  621      6C6F636B 
  621      5F53746F 
  621      7000
- 622              	.LASF23:
- 623 0072 4144435F 		.ascii	"ADC_intClock_GetDividerRegister\000"
- 623      696E7443 
- 623      6C6F636B 
- 623      5F476574 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 16
+ 622              	.LASF27:
+ 623 0072 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\GitHub\\BioSnap\\pro"
+ 623      73657273 
+ 623      5C4D6174 
+ 623      74686577 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc1qpqsQ.s 			page 16
 
 
- 623      44697669 
- 624              	.LASF12:
- 625 0092 666C6F61 		.ascii	"float\000"
- 625      7400
- 626              	.LASF1:
- 627 0098 756E7369 		.ascii	"unsigned char\000"
- 627      676E6564 
- 627      20636861 
- 627      7200
- 628              	.LASF5:
- 629 00a6 6C6F6E67 		.ascii	"long unsigned int\000"
- 629      20756E73 
- 629      69676E65 
- 629      6420696E 
- 629      7400
- 630              	.LASF3:
- 631 00b8 73686F72 		.ascii	"short unsigned int\000"
- 631      7420756E 
- 631      7369676E 
- 631      65642069 
- 631      6E7400
- 632              	.LASF19:
- 633 00cb 636C6B44 		.ascii	"clkDivider\000"
- 633      69766964 
- 633      657200
- 634              	.LASF13:
- 635 00d6 646F7562 		.ascii	"double\000"
- 635      6C6500
- 636              	.LASF22:
- 637 00dd 72656756 		.ascii	"regVal\000"
- 637      616C00
- 638              	.LASF18:
- 639 00e4 616C6967 		.ascii	"alignClkDiv\000"
- 639      6E436C6B 
- 639      44697600 
- 640              	.LASF20:
- 641 00f0 636C6B46 		.ascii	"clkFractional\000"
- 641      72616374 
- 641      696F6E61 
- 641      6C00
- 642              	.LASF25:
- 643 00fe 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 643      4320342E 
- 643      392E3320 
- 643      32303135 
- 643      30333033 
- 644 0131 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
- 644      20726576 
- 644      6973696F 
- 644      6E203232 
- 644      31323230 
- 645 0164 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 645      66756E63 
- 645      74696F6E 
- 645      2D736563 
- 645      74696F6E 
- 646              	.LASF10:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 17
+ 623      5C446F63 
+ 624 009f 635F7465 		.ascii	"c_test\\proc_v1.cydsn\000"
+ 624      73745C70 
+ 624      726F635F 
+ 624      76312E63 
+ 624      7964736E 
+ 625              	.LASF23:
+ 626 00b4 4144435F 		.ascii	"ADC_intClock_GetDividerRegister\000"
+ 626      696E7443 
+ 626      6C6F636B 
+ 626      5F476574 
+ 626      44697669 
+ 627              	.LASF12:
+ 628 00d4 666C6F61 		.ascii	"float\000"
+ 628      7400
+ 629              	.LASF1:
+ 630 00da 756E7369 		.ascii	"unsigned char\000"
+ 630      676E6564 
+ 630      20636861 
+ 630      7200
+ 631              	.LASF5:
+ 632 00e8 6C6F6E67 		.ascii	"long unsigned int\000"
+ 632      20756E73 
+ 632      69676E65 
+ 632      6420696E 
+ 632      7400
+ 633              	.LASF3:
+ 634 00fa 73686F72 		.ascii	"short unsigned int\000"
+ 634      7420756E 
+ 634      7369676E 
+ 634      65642069 
+ 634      6E7400
+ 635              	.LASF19:
+ 636 010d 636C6B44 		.ascii	"clkDivider\000"
+ 636      69766964 
+ 636      657200
+ 637              	.LASF13:
+ 638 0118 646F7562 		.ascii	"double\000"
+ 638      6C6500
+ 639              	.LASF22:
+ 640 011f 72656756 		.ascii	"regVal\000"
+ 640      616C00
+ 641              	.LASF18:
+ 642 0126 616C6967 		.ascii	"alignClkDiv\000"
+ 642      6E436C6B 
+ 642      44697600 
+ 643              	.LASF20:
+ 644 0132 636C6B46 		.ascii	"clkFractional\000"
+ 644      72616374 
+ 644      696F6E61 
+ 644      6C00
+ 645              	.LASF25:
+ 646 0140 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 646      4320342E 
+ 646      392E3320 
+ 646      32303135 
+ 646      30333033 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc1qpqsQ.s 			page 17
 
 
- 647 018c 75696E74 		.ascii	"uint16\000"
- 647      313600
- 648              	.LASF11:
- 649 0193 75696E74 		.ascii	"uint32\000"
- 649      333200
- 650              	.LASF8:
- 651 019a 756E7369 		.ascii	"unsigned int\000"
- 651      676E6564 
- 651      20696E74 
- 651      00
- 652              	.LASF7:
- 653 01a7 6C6F6E67 		.ascii	"long long unsigned int\000"
- 653      206C6F6E 
- 653      6720756E 
- 653      7369676E 
- 653      65642069 
- 654              	.LASF6:
- 655 01be 6C6F6E67 		.ascii	"long long int\000"
- 655      206C6F6E 
- 655      6720696E 
- 655      7400
- 656              	.LASF14:
- 657 01cc 63686172 		.ascii	"char\000"
- 657      00
- 658              	.LASF24:
- 659 01d1 4144435F 		.ascii	"ADC_intClock_GetFractionalDividerRegister\000"
- 659      696E7443 
- 659      6C6F636B 
- 659      5F476574 
- 659      46726163 
- 660              	.LASF27:
- 661 01fb 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\UC Davis\\EEC 136AB\\"
- 661      73657273 
- 661      5C4D6174 
- 661      74686577 
- 661      5C446F63 
- 662 0229 50536F43 		.ascii	"PSoC\\proc_test\\proc_v1.cydsn\000"
- 662      5C70726F 
- 662      635F7465 
- 662      73745C70 
- 662      726F635F 
+ 647 0173 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 647      20726576 
+ 647      6973696F 
+ 647      6E203232 
+ 647      31323230 
+ 648 01a6 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 648      66756E63 
+ 648      74696F6E 
+ 648      2D736563 
+ 648      74696F6E 
+ 649              	.LASF10:
+ 650 01ce 75696E74 		.ascii	"uint16\000"
+ 650      313600
+ 651              	.LASF11:
+ 652 01d5 75696E74 		.ascii	"uint32\000"
+ 652      333200
+ 653              	.LASF8:
+ 654 01dc 756E7369 		.ascii	"unsigned int\000"
+ 654      676E6564 
+ 654      20696E74 
+ 654      00
+ 655              	.LASF7:
+ 656 01e9 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 656      206C6F6E 
+ 656      6720756E 
+ 656      7369676E 
+ 656      65642069 
+ 657              	.LASF6:
+ 658 0200 6C6F6E67 		.ascii	"long long int\000"
+ 658      206C6F6E 
+ 658      6720696E 
+ 658      7400
+ 659              	.LASF14:
+ 660 020e 63686172 		.ascii	"char\000"
+ 660      00
+ 661              	.LASF24:
+ 662 0213 4144435F 		.ascii	"ADC_intClock_GetFractionalDividerRegister\000"
+ 662      696E7443 
+ 662      6C6F636B 
+ 662      5F476574 
+ 662      46726163 
  663              	.LASF2:
- 664 0246 73686F72 		.ascii	"short int\000"
+ 664 023d 73686F72 		.ascii	"short int\000"
  664      7420696E 
  664      7400
  665              	.LASF9:
- 666 0250 75696E74 		.ascii	"uint8\000"
+ 666 0247 75696E74 		.ascii	"uint8\000"
  666      3800
  667              	.LASF4:
- 668 0256 6C6F6E67 		.ascii	"long int\000"
+ 668 024d 6C6F6E67 		.ascii	"long int\000"
  668      20696E74 
  668      00
  669              	.LASF16:
- 670 025f 4144435F 		.ascii	"ADC_intClock_StartEx\000"
+ 670 0256 4144435F 		.ascii	"ADC_intClock_StartEx\000"
  670      696E7443 
  670      6C6F636B 
  670      5F537461 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc6DwIw0.s 			page 18
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc1qpqsQ.s 			page 18
 
 
  670      72744578 
  671              	.LASF0:
- 672 0274 7369676E 		.ascii	"signed char\000"
+ 672 026b 7369676E 		.ascii	"signed char\000"
  672      65642063 
  672      68617200 
  673              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

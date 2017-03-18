@@ -26,7 +26,7 @@
 /* Maximum supported Custom Services */
 #define CYBLE_CUSTOMS_SERVICE_COUNT                  (0x01u)
 #define CYBLE_CUSTOMC_SERVICE_COUNT                  (0x00u)
-#define CYBLE_CUSTOM_SERVICE_CHAR_COUNT              (0x05u)
+#define CYBLE_CUSTOM_SERVICE_CHAR_COUNT              (0x06u)
 #define CYBLE_CUSTOM_SERVICE_CHAR_DESCRIPTORS_COUNT  (0x01u)
 
 /* Below are the indexes and handles of the defined Custom Services and their characteristics */
@@ -35,11 +35,13 @@
 #define CYBLE_BIOSNAP_ACCELEROMETER_ACCELCCC_DESC_INDEX   (0x00u) /* Index of AccelCCC descriptor */
 #define CYBLE_BIOSNAP_BATTERY_CHAR_INDEX   (0x01u) /* Index of Battery characteristic */
 #define CYBLE_BIOSNAP_BATTERY_BATCCC_DESC_INDEX   (0x00u) /* Index of BatCCC descriptor */
-#define CYBLE_BIOSNAP_HEART_CHAR_INDEX   (0x02u) /* Index of Heart characteristic */
+#define CYBLE_BIOSNAP_BUTTON_CHAR_INDEX   (0x02u) /* Index of Button characteristic */
+#define CYBLE_BIOSNAP_BUTTON_BUTTONCCC_DESC_INDEX   (0x00u) /* Index of ButtonCCC descriptor */
+#define CYBLE_BIOSNAP_HEART_CHAR_INDEX   (0x03u) /* Index of Heart characteristic */
 #define CYBLE_BIOSNAP_HEART_HEARTCCC_DESC_INDEX   (0x00u) /* Index of HeartCCC descriptor */
-#define CYBLE_BIOSNAP_OXYGEN_CHAR_INDEX   (0x03u) /* Index of Oxygen characteristic */
+#define CYBLE_BIOSNAP_OXYGEN_CHAR_INDEX   (0x04u) /* Index of Oxygen characteristic */
 #define CYBLE_BIOSNAP_OXYGEN_OXYGENCCC_DESC_INDEX   (0x00u) /* Index of OxygenCCC descriptor */
-#define CYBLE_BIOSNAP_TEMPERATURE_CHAR_INDEX   (0x04u) /* Index of Temperature characteristic */
+#define CYBLE_BIOSNAP_TEMPERATURE_CHAR_INDEX   (0x05u) /* Index of Temperature characteristic */
 #define CYBLE_BIOSNAP_TEMPERATURE_TEMPCCC_DESC_INDEX   (0x00u) /* Index of TempCCC descriptor */
 
 
@@ -50,15 +52,18 @@
 #define CYBLE_BIOSNAP_BATTERY_DECL_HANDLE   (0x0012u) /* Handle of Battery characteristic declaration */
 #define CYBLE_BIOSNAP_BATTERY_CHAR_HANDLE   (0x0013u) /* Handle of Battery characteristic */
 #define CYBLE_BIOSNAP_BATTERY_BATCCC_DESC_HANDLE   (0x0014u) /* Handle of BatCCC descriptor */
-#define CYBLE_BIOSNAP_HEART_DECL_HANDLE   (0x0015u) /* Handle of Heart characteristic declaration */
-#define CYBLE_BIOSNAP_HEART_CHAR_HANDLE   (0x0016u) /* Handle of Heart characteristic */
-#define CYBLE_BIOSNAP_HEART_HEARTCCC_DESC_HANDLE   (0x0017u) /* Handle of HeartCCC descriptor */
-#define CYBLE_BIOSNAP_OXYGEN_DECL_HANDLE   (0x0018u) /* Handle of Oxygen characteristic declaration */
-#define CYBLE_BIOSNAP_OXYGEN_CHAR_HANDLE   (0x0019u) /* Handle of Oxygen characteristic */
-#define CYBLE_BIOSNAP_OXYGEN_OXYGENCCC_DESC_HANDLE   (0x001Au) /* Handle of OxygenCCC descriptor */
-#define CYBLE_BIOSNAP_TEMPERATURE_DECL_HANDLE   (0x001Bu) /* Handle of Temperature characteristic declaration */
-#define CYBLE_BIOSNAP_TEMPERATURE_CHAR_HANDLE   (0x001Cu) /* Handle of Temperature characteristic */
-#define CYBLE_BIOSNAP_TEMPERATURE_TEMPCCC_DESC_HANDLE   (0x001Du) /* Handle of TempCCC descriptor */
+#define CYBLE_BIOSNAP_BUTTON_DECL_HANDLE   (0x0015u) /* Handle of Button characteristic declaration */
+#define CYBLE_BIOSNAP_BUTTON_CHAR_HANDLE   (0x0016u) /* Handle of Button characteristic */
+#define CYBLE_BIOSNAP_BUTTON_BUTTONCCC_DESC_HANDLE   (0x0017u) /* Handle of ButtonCCC descriptor */
+#define CYBLE_BIOSNAP_HEART_DECL_HANDLE   (0x0018u) /* Handle of Heart characteristic declaration */
+#define CYBLE_BIOSNAP_HEART_CHAR_HANDLE   (0x0019u) /* Handle of Heart characteristic */
+#define CYBLE_BIOSNAP_HEART_HEARTCCC_DESC_HANDLE   (0x001Au) /* Handle of HeartCCC descriptor */
+#define CYBLE_BIOSNAP_OXYGEN_DECL_HANDLE   (0x001Bu) /* Handle of Oxygen characteristic declaration */
+#define CYBLE_BIOSNAP_OXYGEN_CHAR_HANDLE   (0x001Cu) /* Handle of Oxygen characteristic */
+#define CYBLE_BIOSNAP_OXYGEN_OXYGENCCC_DESC_HANDLE   (0x001Du) /* Handle of OxygenCCC descriptor */
+#define CYBLE_BIOSNAP_TEMPERATURE_DECL_HANDLE   (0x001Eu) /* Handle of Temperature characteristic declaration */
+#define CYBLE_BIOSNAP_TEMPERATURE_CHAR_HANDLE   (0x001Fu) /* Handle of Temperature characteristic */
+#define CYBLE_BIOSNAP_TEMPERATURE_TEMPCCC_DESC_HANDLE   (0x0020u) /* Handle of TempCCC descriptor */
 
 
 

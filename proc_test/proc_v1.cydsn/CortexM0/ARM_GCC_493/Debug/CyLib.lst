@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
   51              		.global	cyImoFreqMhz2Reg
   52              		.section	.rodata
   53              		.align	2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 2
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 2
 
 
   54              		.type	cyImoFreqMhz2Reg, %object
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  108              		.type	CySysClkImoStart, %function
  109              	CySysClkImoStart:
  110              	.LFB2:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 3
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 3
 
 
  111              		.file 1 ".\\Generated_Source\\PSoC4\\CyLib.c"
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
   54:.\Generated_Source\PSoC4/CyLib.c **** 
   55:.\Generated_Source\PSoC4/CyLib.c **** 
   56:.\Generated_Source\PSoC4/CyLib.c **** #if(CY_IP_SRSSV2)
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 4
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 4
 
 
   57:.\Generated_Source\PSoC4/CyLib.c ****         /* Conversion between CySysClkWriteImoFreq() parameter and register's value */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  117              		.cfi_offset 14, -4
  118 0002 00AF     		add	r7, sp, #0
  119              		.cfi_def_cfa_register 7
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 5
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 5
 
 
  106:.\Generated_Source\PSoC4/CyLib.c ****     CY_SYS_CLK_IMO_CONFIG_REG |= CY_SYS_CLK_IMO_CONFIG_ENABLE;
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  133:.\Generated_Source\PSoC4/CyLib.c **** * For PSoC PSoC 4200L devices, this function will also disable USB lock.
  134:.\Generated_Source\PSoC4/CyLib.c **** *
  135:.\Generated_Source\PSoC4/CyLib.c **** *******************************************************************************/
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 6
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 6
 
 
  136:.\Generated_Source\PSoC4/CyLib.c **** void CySysClkImoStop(void)
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  156:.\Generated_Source\PSoC4/CyLib.c ****     * already enabled. If the WCO is not enabled then this function returns
  157:.\Generated_Source\PSoC4/CyLib.c ****     * without enabling the lock feature.
  158:.\Generated_Source\PSoC4/CyLib.c ****     *
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 7
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 7
 
 
  159:.\Generated_Source\PSoC4/CyLib.c ****     * It takes up to 20 ms for the IMO to stabilize. The delay is implemented with
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  213:.\Generated_Source\PSoC4/CyLib.c ****                 #else
  214:.\Generated_Source\PSoC4/CyLib.c ****                     freq = ((uint32) ((CY_SYS_CLK_IMO_SELECT_REG & ((uint32) CY_SYS_CLK_IMO_SELECT_
  215:.\Generated_Source\PSoC4/CyLib.c ****                                        CY_SYS_CLK_IMO_SELECT_FREQ_SHIFT) + CY_SYS_CLK_IMO_MIN_FREQ_
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 8
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 8
 
 
  216:.\Generated_Source\PSoC4/CyLib.c ****                 #endif  /* (CY_IP_SRSSLT) */
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  270:.\Generated_Source\PSoC4/CyLib.c ****     * Function Name: CySysClkImoDisableWcoLock
  271:.\Generated_Source\PSoC4/CyLib.c ****     ****************************************************************************//**
  272:.\Generated_Source\PSoC4/CyLib.c ****     *
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 9
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 9
 
 
  273:.\Generated_Source\PSoC4/CyLib.c ****     * Disables the IMO to WCO lock feature.
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  327:.\Generated_Source\PSoC4/CyLib.c ****     *******************************************************************************/
  328:.\Generated_Source\PSoC4/CyLib.c ****     void CySysClkImoEnableUsbLock(void)
  329:.\Generated_Source\PSoC4/CyLib.c ****     {
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 10
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 10
 
 
  330:.\Generated_Source\PSoC4/CyLib.c ****         /* Set oscillator interface control port to USB */
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  384:.\Generated_Source\PSoC4/CyLib.c ****     *******************************************************************************/
  385:.\Generated_Source\PSoC4/CyLib.c ****     uint32 CySysClkImoGetUsbLock(void)
  386:.\Generated_Source\PSoC4/CyLib.c ****     {
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 11
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 11
 
 
  387:.\Generated_Source\PSoC4/CyLib.c ****         return ((0u != (CY_SYS_CLK_USBDEVv2_CR1_REG & CY_SYS_CLK_USBDEVv2_CR1_ENABLE_LOCK)) ?
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  429:.\Generated_Source\PSoC4/CyLib.c ****     uint32 tmpReg;
  430:.\Generated_Source\PSoC4/CyLib.c **** 
  431:.\Generated_Source\PSoC4/CyLib.c ****     interruptState = CyEnterCriticalSection();
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 12
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 12
 
 
  193              		.loc 1 431 0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  227              	.L9:
  228 0042 C046     		.align	2
  229              	.L8:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 13
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 13
 
 
  230 0044 00010B40 		.word	1074462976
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  478:.\Generated_Source\PSoC4/CyLib.c ****         sysclkSource = (CY_SYS_CLK_SELECT_REG & CY_SYS_CLK_SELECT_DIRECT_SEL_MASK);
  258              		.loc 1 478 0
  259 0010 074B     		ldr	r3, .L12
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 14
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 14
 
 
  260 0012 1B68     		ldr	r3, [r3]
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  501:.\Generated_Source\PSoC4/CyLib.c **** * \ref CySysFlashSetWaitCycles() with the appropriate parameter to adjust the
  502:.\Generated_Source\PSoC4/CyLib.c **** * number of clock cycles the cache will wait before sampling data comes back
  503:.\Generated_Source\PSoC4/CyLib.c **** * from Flash. If the SYSCLK clock frequency decreases, you can call
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 15
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 15
 
 
  504:.\Generated_Source\PSoC4/CyLib.c **** * \ref CySysFlashSetWaitCycles() to improve the CPU performance. See
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  322 0026 0A43     		orr	r2, r1
  524:.\Generated_Source\PSoC4/CyLib.c ****                                     CY_SYS_CLK_SELECT_SYSCLK_DIV_SHIFT)) |
  323              		.loc 1 524 0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 16
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 16
 
 
  324 0028 1A60     		str	r2, [r3]
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  553:.\Generated_Source\PSoC4/CyLib.c **** * lock is disabled during IMO frequency change.
  554:.\Generated_Source\PSoC4/CyLib.c **** *
  555:.\Generated_Source\PSoC4/CyLib.c **** * The CPU is halted if new frequency is invalid and project is compiled
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 17
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 17
 
 
  556:.\Generated_Source\PSoC4/CyLib.c **** * in debug mode.
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  598:.\Generated_Source\PSoC4/CyLib.c **** 
  599:.\Generated_Source\PSoC4/CyLib.c **** 
  600:.\Generated_Source\PSoC4/CyLib.c ****         interruptState = CyEnterCriticalSection();
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 18
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 18
 
 
  364              		.loc 1 600 0
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  649:.\Generated_Source\PSoC4/CyLib.c **** 
  650:.\Generated_Source\PSoC4/CyLib.c ****         if ((freq >= CY_SYS_CLK_IMO_MIN_FREQ_MHZ) && (freq <= CY_SYS_CLK_IMO_MAX_FREQ_MHZ))
  370              		.loc 1 650 0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 19
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 19
 
 
  371 0014 7B68     		ldr	r3, [r7, #4]
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  416 005c 1278     		ldrb	r2, [r2]
  417 005e 1A70     		strb	r2, [r3]
  660:.\Generated_Source\PSoC4/CyLib.c ****                 bgTrim5 = CY_SFLASH_IMO_TMPCO1_REG;
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 20
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 20
 
 
  418              		.loc 1 660 0
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  462              		.loc 1 670 0
  463 00a8 484A     		ldr	r2, .L29+44
  464 00aa 0E23     		mov	r3, #14
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 21
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 21
 
 
  465 00ac FB18     		add	r3, r7, r3
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  498 00e0 7B68     		ldr	r3, [r7, #4]
  499 00e2 2A2B     		cmp	r3, #42
  500 00e4 0AD9     		bls	.L24
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 22
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 22
 
 
  692:.\Generated_Source\PSoC4/CyLib.c ****             {
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  531 0116 1B78     		ldrb	r3, [r3]
  532 0118 9A42     		cmp	r2, r3
  533 011a 08D2     		bcs	.L26
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 23
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 23
 
 
  716:.\Generated_Source\PSoC4/CyLib.c ****             {
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  560 0146 274B     		ldr	r3, .L29+68
  561 0148 0F22     		mov	r2, #15
  562 014a BA18     		add	r2, r7, r2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 24
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 24
 
 
  563 014c 1278     		ldrb	r2, [r2]
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  758:.\Generated_Source\PSoC4/CyLib.c ****         }
  759:.\Generated_Source\PSoC4/CyLib.c **** 
  760:.\Generated_Source\PSoC4/CyLib.c ****         #endif /* (CY_IP_FMLT) */
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 25
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 25
 
 
  761:.\Generated_Source\PSoC4/CyLib.c **** 
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  639              		.align	2
  640              		.global	CySysClkEcoStart
  641              		.code	16
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 26
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 26
 
 
  642              		.thumb_func
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  828:.\Generated_Source\PSoC4/CyLib.c **** 
  829:.\Generated_Source\PSoC4/CyLib.c ****             #endif  /* (CYDEV_IMO_TRIMMED_BY_USB == 0u) */
  830:.\Generated_Source\PSoC4/CyLib.c **** 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 27
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 27
 
 
  831:.\Generated_Source\PSoC4/CyLib.c **** 
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  885:.\Generated_Source\PSoC4/CyLib.c ****         
  886:.\Generated_Source\PSoC4/CyLib.c ****             #if (CY_IP_IMO_TRIMMABLE_BY_USB)
  887:.\Generated_Source\PSoC4/CyLib.c ****                 if (1u == usbLock)
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 28
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 28
 
 
  888:.\Generated_Source\PSoC4/CyLib.c ****                 {
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  942:.\Generated_Source\PSoC4/CyLib.c ****         CyExitCriticalSection(interruptState);
  943:.\Generated_Source\PSoC4/CyLib.c ****     }
  944:.\Generated_Source\PSoC4/CyLib.c **** #endif /* (CY_IP_SRSSLT) */
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 29
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 29
 
 
  945:.\Generated_Source\PSoC4/CyLib.c **** 
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  660              		.loc 1 984 0
  661 000c 154B     		ldr	r3, .L37
  662 000e 154A     		ldr	r2, .L37
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 30
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 30
 
 
  663 0010 1268     		ldr	r2, [r2]
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 1006:.\Generated_Source\PSoC4/CyLib.c ****                 {
 1007:.\Generated_Source\PSoC4/CyLib.c ****                     returnStatus = CYRET_SUCCESS;
  696              		.loc 1 1007 0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 31
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 31
 
 
  697 0046 0023     		mov	r3, #0
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 1019:.\Generated_Source\PSoC4/CyLib.c ****     * Function Name: CySysClkEcoStop
 1020:.\Generated_Source\PSoC4/CyLib.c ****     ****************************************************************************//**
 1021:.\Generated_Source\PSoC4/CyLib.c ****     *
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 32
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 32
 
 
 1022:.\Generated_Source\PSoC4/CyLib.c ****     * Stops the megahertz crystal.
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  773              		.section	.text.CySysClkEcoReadStatus,"ax",%progbits
  774              		.align	2
  775              		.global	CySysClkEcoReadStatus
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 33
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 33
 
 
  776              		.code	16
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 1072:.\Generated_Source\PSoC4/CyLib.c ****     }
  799              		.loc 1 1072 0
  800 0012 181C     		mov	r0, r3
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 34
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 34
 
 
  801 0014 BD46     		mov	sp, r7
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  825              		.cfi_offset 7, -8
  826              		.cfi_offset 14, -4
  827 0002 85B0     		sub	sp, sp, #20
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 35
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 35
 
 
  828              		.cfi_def_cfa_offset 32
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  866              		.loc 1 1117 0 discriminator 1
  867 0042 0020     		mov	r0, #0
  868 0044 FFF7FEFF 		bl	CyHalt
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 36
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 36
 
 
  869              	.L46:
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 1150:.\Generated_Source\PSoC4/CyLib.c ****         * beyond its rated limit can permanently damage the crystal.
 1151:.\Generated_Source\PSoC4/CyLib.c ****         *
 1152:.\Generated_Source\PSoC4/CyLib.c ****         * \param wDTrim: Watchdog trim
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 37
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 37
 
 
 1153:.\Generated_Source\PSoC4/CyLib.c ****         * - \ref CY_SYS_CLK_ECO_WDTRIM0      Error threshold is 0.05 V
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 1207:.\Generated_Source\PSoC4/CyLib.c ****             regTmp |= ((uint32) (gTrim << CY_SYS_CLK_ECO_TRIM1_GTRIM_SHIFT) & CY_SYS_CLK_ECO_TRIM1_
 1208:.\Generated_Source\PSoC4/CyLib.c **** 
 1209:.\Generated_Source\PSoC4/CyLib.c ****             CY_SYS_CLK_ECO_TRIM1_REG = regTmp;
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 38
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 38
 
 
 1210:.\Generated_Source\PSoC4/CyLib.c **** 
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 1264:.\Generated_Source\PSoC4/CyLib.c ****                 if (maxAmplitude < CY_SYS_CLK_ECO_AMPL_FOR_ATRIM0)
 1265:.\Generated_Source\PSoC4/CyLib.c ****                 {
 1266:.\Generated_Source\PSoC4/CyLib.c ****                     aTrim = CY_SYS_CLK_ECO_ATRIM0;
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 39
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 39
 
 
 1267:.\Generated_Source\PSoC4/CyLib.c ****                 }
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 1321:.\Generated_Source\PSoC4/CyLib.c ****                 else if (freq > CY_SYS_CLK_ECO_FREQ_FOR_FTRIM1)
 1322:.\Generated_Source\PSoC4/CyLib.c ****                 {
 1323:.\Generated_Source\PSoC4/CyLib.c ****                     rTrim = CY_SYS_CLK_ECO_FTRIM1;
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 40
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 40
 
 
 1324:.\Generated_Source\PSoC4/CyLib.c ****                 }
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 1378:.\Generated_Source\PSoC4/CyLib.c ****     *
 1379:.\Generated_Source\PSoC4/CyLib.c ****     * \param wait:
 1380:.\Generated_Source\PSoC4/CyLib.c ****     * 0 - Return immediately after configuration.
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 41
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 41
 
 
 1381:.\Generated_Source\PSoC4/CyLib.c ****     * 1 - Wait for PLL lock or timeout. This API shall use the CyDelayUs() to
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 1435:.\Generated_Source\PSoC4/CyLib.c ****         else
 1436:.\Generated_Source\PSoC4/CyLib.c ****         {
 1437:.\Generated_Source\PSoC4/CyLib.c ****             returnStatus = CYRET_BAD_PARAM;
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 42
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 42
 
 
 1438:.\Generated_Source\PSoC4/CyLib.c ****         }
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 1492:.\Generated_Source\PSoC4/CyLib.c ****     *  0   PLL#0
 1493:.\Generated_Source\PSoC4/CyLib.c ****     *  1   PLL#1
 1494:.\Generated_Source\PSoC4/CyLib.c ****     *
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 43
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 43
 
 
 1495:.\Generated_Source\PSoC4/CyLib.c ****     *******************************************************************************/
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 1549:.\Generated_Source\PSoC4/CyLib.c **** 
 1550:.\Generated_Source\PSoC4/CyLib.c ****         tmp = CySysClkPllConfigChangeAllowed(pll);
 1551:.\Generated_Source\PSoC4/CyLib.c **** 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 44
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 44
 
 
 1552:.\Generated_Source\PSoC4/CyLib.c ****         if ((pll < CY_IP_PLL_NR) &&
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 1606:.\Generated_Source\PSoC4/CyLib.c ****     * CY_SYS_PLL_BYPASS_PLL_OUT - Selects the PLL output.  Ignores the lock indicator.
 1607:.\Generated_Source\PSoC4/CyLib.c ****     *
 1608:.\Generated_Source\PSoC4/CyLib.c ****     *******************************************************************************/
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 45
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 45
 
 
 1609:.\Generated_Source\PSoC4/CyLib.c ****     void CySysClkPllSetBypassMode(uint32 pll, uint32 bypass)
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 1663:.\Generated_Source\PSoC4/CyLib.c ****     *
 1664:.\Generated_Source\PSoC4/CyLib.c ****     *  The function returns non-zero value if the specified PLL sources the System
 1665:.\Generated_Source\PSoC4/CyLib.c ****     *  clock and the PLL is not in the bypass mode.
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 46
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 46
 
 
 1666:.\Generated_Source\PSoC4/CyLib.c ****     *
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 1720:.\Generated_Source\PSoC4/CyLib.c ****         interruptState = CyEnterCriticalSection();
 1721:.\Generated_Source\PSoC4/CyLib.c **** 
 1722:.\Generated_Source\PSoC4/CyLib.c ****         returnStatus = CY_SYS_CLK_PLL_BASE.pll[pll].test & CY_SYS_CLK_PLL_TEST_UNLOCK_OCCURRED_MASK
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 47
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 47
 
 
 1723:.\Generated_Source\PSoC4/CyLib.c ****         CY_SYS_CLK_PLL_BASE.pll[pll].test |= CY_SYS_CLK_PLL_TEST_UNLOCK_OCCURRED_MASK;
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 1777:.\Generated_Source\PSoC4/CyLib.c **** 
 1778:.\Generated_Source\PSoC4/CyLib.c ****         uint32 fvco;
 1779:.\Generated_Source\PSoC4/CyLib.c ****         int32 ferr;
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 48
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 48
 
 
 1780:.\Generated_Source\PSoC4/CyLib.c **** 
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 1834:.\Generated_Source\PSoC4/CyLib.c ****             }
 1835:.\Generated_Source\PSoC4/CyLib.c **** 
 1836:.\Generated_Source\PSoC4/CyLib.c ****         }
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 49
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 49
 
 
 1837:.\Generated_Source\PSoC4/CyLib.c **** 
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 1891:.\Generated_Source\PSoC4/CyLib.c ****     *
 1892:.\Generated_Source\PSoC4/CyLib.c ****     *  This API is available only for PSoC 4200L devices.
 1893:.\Generated_Source\PSoC4/CyLib.c ****     *
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 50
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 50
 
 
 1894:.\Generated_Source\PSoC4/CyLib.c ****     *  \param PLL:
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 1948:.\Generated_Source\PSoC4/CyLib.c ****     *  \param threshold: Threshold selection for Low Voltage Detect circuit.
 1949:.\Generated_Source\PSoC4/CyLib.c ****     *  Threshold variation is +/- 2.5% from these typical voltage choices.
 1950:.\Generated_Source\PSoC4/CyLib.c ****     *         Define                     Voltage threshold
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 51
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 51
 
 
 1951:.\Generated_Source\PSoC4/CyLib.c ****     *    CY_LVD_THRESHOLD_1_75_V       1.7500 V
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  919 0024 1E20     		mov	r0, #30
  920 0026 0240     		and	r2, r0
 1975:.\Generated_Source\PSoC4/CyLib.c ****                 ((threshold << CY_LVD_PWR_VMON_CONFIG_LVD_SEL_SHIFT) & CY_LVD_PWR_VMON_CONFIG_LVD_S
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 52
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 52
 
 
  921              		.loc 1 1975 0
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  962              		.thumb_func
  963              		.type	CySysLvdDisable, %function
  964              	CySysLvdDisable:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 53
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 53
 
 
  965              	.LFB13:
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  1005              		.type	CySysLvdGetInterruptSource, %function
  1006              	CySysLvdGetInterruptSource:
  1007              	.LFB14:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 54
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 54
 
 
 2004:.\Generated_Source\PSoC4/CyLib.c **** 
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 2025:.\Generated_Source\PSoC4/CyLib.c ****     ****************************************************************************//**
 2026:.\Generated_Source\PSoC4/CyLib.c ****     *
 2027:.\Generated_Source\PSoC4/CyLib.c ****     *  Clears the low voltage detection interrupt status.
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 55
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 55
 
 
 2028:.\Generated_Source\PSoC4/CyLib.c ****     *
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 2051:.\Generated_Source\PSoC4/CyLib.c **** *   CY_SYS_RESET_WDT       - WDT caused a reset
 2052:.\Generated_Source\PSoC4/CyLib.c **** *   CY_SYS_RESET_PROTFAULT - Occured protection violation that requires reset
 2053:.\Generated_Source\PSoC4/CyLib.c **** *   CY_SYS_RESET_SW        - Cortex-M0 requested a system reset.
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 56
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 56
 
 
 2054:.\Generated_Source\PSoC4/CyLib.c **** *
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  1110              		.cfi_endproc
  1111              	.LFE16:
  1112              		.size	CySysGetResetReason, .-CySysGetResetReason
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 57
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 57
 
 
  1113              		.section	.text.CyDisableInts,"ax",%progbits
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  1143 0016 181C     		mov	r0, r3
  1144 0018 BD46     		mov	sp, r7
  1145 001a 02B0     		add	sp, sp, #8
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 58
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 58
 
 
  1146              		@ sp needed
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  1185              	.L73:
  1186 0014 00E100E0 		.word	-536813312
  1187              		.cfi_endproc
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 59
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 59
 
 
  1188              	.LFE18:
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 2135:.\Generated_Source\PSoC4/CyLib.c ****     CYASSERT(number < CY_INT_IRQ_BASE);
  1216              		.loc 1 2135 0
  1217 0014 FB1D     		add	r3, r7, #7
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 60
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 60
 
 
  1218 0016 1B78     		ldrb	r3, [r3]
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 2148:.\Generated_Source\PSoC4/CyLib.c **** * Function Name: CyIntGetSysVector
 2149:.\Generated_Source\PSoC4/CyLib.c **** ****************************************************************************//**
 2150:.\Generated_Source\PSoC4/CyLib.c **** *
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 61
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 61
 
 
 2151:.\Generated_Source\PSoC4/CyLib.c **** *   Gets the interrupt vector of the specified system interrupt number. These
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  1293              		.loc 1 2171 0
  1294 002c 181C     		mov	r0, r3
  1295 002e BD46     		mov	sp, r7
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 62
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 62
 
 
  1296 0030 04B0     		add	sp, sp, #16
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  1330 0016 1B78     		ldrb	r3, [r3]
  1331 0018 1F2B     		cmp	r3, #31
  1332 001a 02D9     		bls	.L82
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 63
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 63
 
 
  1333              		.loc 1 2191 0 is_stmt 0 discriminator 1
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 2205:.\Generated_Source\PSoC4/CyLib.c **** ****************************************************************************//**
 2206:.\Generated_Source\PSoC4/CyLib.c **** *
 2207:.\Generated_Source\PSoC4/CyLib.c **** *  Gets the interrupt vector of the specified interrupt number.
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 64
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 64
 
 
 2208:.\Generated_Source\PSoC4/CyLib.c **** *
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  1414              		.cfi_endproc
  1415              	.LFE22:
  1416              		.size	CyIntGetVector, .-CyIntGetVector
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 65
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 65
 
 
  1417              		.section	.text.CyIntSetPriority,"ax",%progbits
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  1452 0020 FB1D     		add	r3, r7, #7
  1453 0022 1B78     		ldrb	r3, [r3]
  1454 0024 1F2B     		cmp	r3, #31
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 66
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 66
 
 
  1455 0026 02D9     		bls	.L89
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  1501 0078 1343     		orr	r3, r2
  1502 007a FB60     		str	r3, [r7, #12]
 2249:.\Generated_Source\PSoC4/CyLib.c ****     CY_INT_PRIORITY_REG(number) = value;
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 67
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 67
 
 
  1503              		.loc 1 2249 0
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 2267:.\Generated_Source\PSoC4/CyLib.c **** uint8 CyIntGetPriority(uint8 number)
 2268:.\Generated_Source\PSoC4/CyLib.c **** {
  1540              		.loc 1 2268 0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 68
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 68
 
 
  1541              		.cfi_startproc
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  1588 004a 1340     		and	r3, r2
  1589 004c DBB2     		uxtb	r3, r3
 2276:.\Generated_Source\PSoC4/CyLib.c **** }
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 69
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 69
 
 
  1590              		.loc 1 2276 0
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  1630 0016 0121     		mov	r1, #1
  1631 0018 9140     		lsl	r1, r1, r2
  1632 001a 0A1C     		mov	r2, r1
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 70
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 70
 
 
  1633 001c 1A60     		str	r2, [r3]
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  1668 000c 074B     		ldr	r3, .L102
  1669 000e 1A68     		ldr	r2, [r3]
  1670 0010 FB1D     		add	r3, r7, #7
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 71
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 71
 
 
  1671 0012 1B78     		ldrb	r3, [r3]
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  1711 0006 021C     		mov	r2, r0
  1712 0008 FB1D     		add	r3, r7, #7
  1713 000a 1A70     		strb	r2, [r3]
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 72
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 72
 
 
 2324:.\Generated_Source\PSoC4/CyLib.c ****     CY_INT_CLEAR_REG = ((uint32) 0x01u << (CY_INT_ENABLE_RANGE_MASK & number));
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  1754 0006 021C     		mov	r2, r0
  1755 0008 FB1D     		add	r3, r7, #7
  1756 000a 1A70     		strb	r2, [r3]
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 73
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 73
 
 
 2338:.\Generated_Source\PSoC4/CyLib.c ****     CY_INT_SET_PEND_REG = ((uint32) 0x01u << (CY_INT_ENABLE_RANGE_MASK & number));
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  1796              		.cfi_def_cfa_register 7
  1797 0006 021C     		mov	r2, r0
  1798 0008 FB1D     		add	r3, r7, #7
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 74
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 74
 
 
  1799 000a 1A70     		strb	r2, [r3]
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  1838 0004 00AF     		add	r7, sp, #0
  1839              		.cfi_def_cfa_register 7
  1840 0006 021C     		mov	r2, r0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 75
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 75
 
 
  1841 0008 FB1D     		add	r3, r7, #7
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  1871              		.cfi_def_cfa_register 7
 2392:.\Generated_Source\PSoC4/CyLib.c ****     /***************************************************************************
 2393:.\Generated_Source\PSoC4/CyLib.c ****     * Setting the system reset request bit. The vector key value must be written
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 76
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 76
 
 
 2394:.\Generated_Source\PSoC4/CyLib.c ****     * to the register, otherwise the register write is unpredictable.
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  1907              		.cfi_offset 7, -8
  1908              		.cfi_offset 14, -4
  1909 0002 82B0     		sub	sp, sp, #8
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 77
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 77
 
 
  1910              		.cfi_def_cfa_offset 16
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  1952 0044 00000000 		.word	cydelayFreqKhz
  1953              		.cfi_endproc
  1954              	.LFE32:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 78
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 78
 
 
  1955              		.size	CyDelay, .-CyDelay
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  1995              	.LFE33:
  1996              		.size	CyDelayUs, .-CyDelayUs
  1997              		.global	__aeabi_uidiv
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 79
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 79
 
 
  1998              		.section	.text.CyDelayFreq,"ax",%progbits
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 2457:.\Generated_Source\PSoC4/CyLib.c **** 
 2458:.\Generated_Source\PSoC4/CyLib.c ****     cydelayFreqMhz = (uint8)((cydelayFreqHz + CY_DELAY_1M_MINUS_1_THRESHOLD) / CY_DELAY_1M_THRESHOL
  2032              		.loc 1 2458 0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 80
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 80
 
 
  2033 001c 114B     		ldr	r3, .L128
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  2084              		.section	.text.CySysTickStart,"ax",%progbits
  2085              		.align	2
  2086              		.global	CySysTickStart
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 81
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 81
 
 
  2087              		.code	16
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  2114              		.loc 1 2488 0
  2115 001a BD46     		mov	sp, r7
  2116              		@ sp needed
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 82
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 82
 
 
  2117 001c 80BD     		pop	{r7, pc}
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  2147              	.L136:
 2513:.\Generated_Source\PSoC4/CyLib.c ****     {
 2514:.\Generated_Source\PSoC4/CyLib.c ****         CySysTickCallbacks[i] = (void *) 0;
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 83
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 83
 
 
  2148              		.loc 1 2514 0 discriminator 3
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  2188 0054 02B0     		add	sp, sp, #8
  2189              		@ sp needed
  2190 0056 80BD     		pop	{r7, pc}
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 84
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 84
 
 
  2191              	.L138:
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  2228 0016 80BD     		pop	{r7, pc}
  2229              	.L141:
  2230              		.align	2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 85
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 85
 
 
  2231              	.L140:
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  2269              		.size	CySysTickStop, .-CySysTickStop
  2270              		.section	.text.CySysTickEnableInterrupt,"ax",%progbits
  2271              		.align	2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 86
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 86
 
 
  2272              		.global	CySysTickEnableInterrupt
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  2310              	CySysTickDisableInterrupt:
  2311              	.LFB40:
 2576:.\Generated_Source\PSoC4/CyLib.c **** 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 87
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 87
 
 
 2577:.\Generated_Source\PSoC4/CyLib.c **** 
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 2597:.\Generated_Source\PSoC4/CyLib.c **** *
 2598:.\Generated_Source\PSoC4/CyLib.c **** *  Sets value the counter is set to on startup and after it reaches zero. This
 2599:.\Generated_Source\PSoC4/CyLib.c **** *  function do not change or reset current sysTick counter value, so it should
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 88
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 88
 
 
 2600:.\Generated_Source\PSoC4/CyLib.c **** *  be cleared using CySysTickClear() API.
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 2617:.\Generated_Source\PSoC4/CyLib.c **** * \return
 2618:.\Generated_Source\PSoC4/CyLib.c **** *  Counter reset value.
 2619:.\Generated_Source\PSoC4/CyLib.c **** *
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 89
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 89
 
 
 2620:.\Generated_Source\PSoC4/CyLib.c **** *******************************************************************************/
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  2418 0000 80B5     		push	{r7, lr}
  2419              		.cfi_def_cfa_offset 8
  2420              		.cfi_offset 7, -8
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 90
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 90
 
 
  2421              		.cfi_offset 14, -4
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 2665:.\Generated_Source\PSoC4/CyLib.c ****     *   CY_SYS_SYST_CSR_CLK_SRC_LFCLK      SysTick is clocked by the low frequency
 2666:.\Generated_Source\PSoC4/CyLib.c ****     *                                      clock. (ILO 100 KHz for PSoC 5LP, and
 2667:.\Generated_Source\PSoC4/CyLib.c ****     *                                      LFCLK for PSoC 4).
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 91
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 91
 
 
 2668:.\Generated_Source\PSoC4/CyLib.c ****     *******************************************************************************/
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  2491              	.LFE44:
  2492              		.size	CySysTickSetClockSource, .-CySysTickSetClockSource
  2493              		.section	.text.CySysTickGetCountFlag,"ax",%progbits
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 92
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 92
 
 
  2494              		.align	2
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  2526              		.size	CySysTickGetCountFlag, .-CySysTickGetCountFlag
  2527              		.section	.text.CySysTickClear,"ax",%progbits
  2528              		.align	2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 93
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 93
 
 
  2529              		.global	CySysTickClear
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 2719:.\Generated_Source\PSoC4/CyLib.c **** ****************************************************************************//**
 2720:.\Generated_Source\PSoC4/CyLib.c **** *
 2721:.\Generated_Source\PSoC4/CyLib.c **** *  This function allows up to five user-defined interrupt service routine
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 94
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 94
 
 
 2722:.\Generated_Source\PSoC4/CyLib.c **** *  functions to be associated with the SysTick interrupt. These are specified
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
 2752:.\Generated_Source\PSoC4/CyLib.c ****     return (retVal);
  2590              		.loc 1 2752 0
  2591 001e FB68     		ldr	r3, [r7, #12]
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 95
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 95
 
 
 2753:.\Generated_Source\PSoC4/CyLib.c **** }
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  2626 000a 7A68     		ldr	r2, [r7, #4]
  2627 000c 9200     		lsl	r2, r2, #2
  2628 000e D358     		ldr	r3, [r2, r3]
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 96
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 96
 
 
 2773:.\Generated_Source\PSoC4/CyLib.c **** }
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  2665 0010 0023     		mov	r3, #0
  2666 0012 7B60     		str	r3, [r7, #4]
  2667 0014 0DE0     		b	.L184
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 97
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 97
 
 
  2668              	.L186:
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  2712              	.LFB50:
 2799:.\Generated_Source\PSoC4/CyLib.c **** 
 2800:.\Generated_Source\PSoC4/CyLib.c **** 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 98
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 98
 
 
 2801:.\Generated_Source\PSoC4/CyLib.c **** /*******************************************************************************
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  2747 0030 1B68     		ldr	r3, [r3]
  2748 0032 1A43     		orr	r2, r3
  2749 0034 7B68     		ldr	r3, [r7, #4]
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 99
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 99
 
 
  2750 0036 1A60     		str	r2, [r3]
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  2798 008c 0433     		add	r3, r3, #4
  2799 008e 7A68     		ldr	r2, [r7, #4]
  2800 0090 0432     		add	r2, r2, #4
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 100
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 100
 
 
  2801 0092 1268     		ldr	r2, [r2]
@@ -5986,48 +5986,48 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  2831 0006 00000000 		.4byte	.Ldebug_abbrev0
  2832 000a 04       		.byte	0x4
  2833 000b 01       		.uleb128 0x1
- 2834 000c EA050000 		.4byte	.LASF107
+ 2834 000c CC050000 		.4byte	.LASF107
  2835 0010 01       		.byte	0x1
- 2836 0011 3D030000 		.4byte	.LASF108
- 2837 0015 40000000 		.4byte	.LASF109
+ 2836 0011 F2020000 		.4byte	.LASF108
+ 2837 0015 4D050000 		.4byte	.LASF109
  2838 0019 00000000 		.4byte	.Ldebug_ranges0+0
  2839 001d 00000000 		.4byte	0
  2840 0021 00000000 		.4byte	.Ldebug_line0
  2841 0025 02       		.uleb128 0x2
  2842 0026 01       		.byte	0x1
  2843 0027 06       		.byte	0x6
- 2844 0028 36010000 		.4byte	.LASF0
+ 2844 0028 EB000000 		.4byte	.LASF0
  2845 002c 02       		.uleb128 0x2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 101
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 101
 
 
  2846 002d 01       		.byte	0x1
  2847 002e 08       		.byte	0x8
- 2848 002f 8C040000 		.4byte	.LASF1
+ 2848 002f 41040000 		.4byte	.LASF1
  2849 0033 02       		.uleb128 0x2
  2850 0034 02       		.byte	0x2
  2851 0035 05       		.byte	0x5
- 2852 0036 9A040000 		.4byte	.LASF2
+ 2852 0036 4F040000 		.4byte	.LASF2
  2853 003a 02       		.uleb128 0x2
  2854 003b 02       		.byte	0x2
  2855 003c 07       		.byte	0x7
- 2856 003d 03030000 		.4byte	.LASF3
+ 2856 003d B8020000 		.4byte	.LASF3
  2857 0041 02       		.uleb128 0x2
  2858 0042 04       		.byte	0x4
  2859 0043 05       		.byte	0x5
- 2860 0044 75010000 		.4byte	.LASF4
+ 2860 0044 2A010000 		.4byte	.LASF4
  2861 0048 02       		.uleb128 0x2
  2862 0049 04       		.byte	0x4
  2863 004a 07       		.byte	0x7
- 2864 004b A2020000 		.4byte	.LASF5
+ 2864 004b 57020000 		.4byte	.LASF5
  2865 004f 02       		.uleb128 0x2
  2866 0050 08       		.byte	0x8
  2867 0051 05       		.byte	0x5
- 2868 0052 28010000 		.4byte	.LASF6
+ 2868 0052 DD000000 		.4byte	.LASF6
  2869 0056 02       		.uleb128 0x2
  2870 0057 08       		.byte	0x8
  2871 0058 07       		.byte	0x7
- 2872 0059 BC000000 		.4byte	.LASF7
+ 2872 0059 71000000 		.4byte	.LASF7
  2873 005d 03       		.uleb128 0x3
  2874 005e 04       		.byte	0x4
  2875 005f 05       		.byte	0x5
@@ -6035,9 +6035,9 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  2877 0064 02       		.uleb128 0x2
  2878 0065 04       		.byte	0x4
  2879 0066 07       		.byte	0x7
- 2880 0067 86020000 		.4byte	.LASF8
+ 2880 0067 3B020000 		.4byte	.LASF8
  2881 006b 04       		.uleb128 0x4
- 2882 006c A0010000 		.4byte	.LASF9
+ 2882 006c 55010000 		.4byte	.LASF9
  2883 0070 02       		.byte	0x2
  2884 0071 9801     		.2byte	0x198
  2885 0073 2C000000 		.4byte	0x2c
@@ -6047,46 +6047,46 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  2889 007d 9901     		.2byte	0x199
  2890 007f 3A000000 		.4byte	0x3a
  2891 0083 04       		.uleb128 0x4
- 2892 0084 E3010000 		.4byte	.LASF11
+ 2892 0084 98010000 		.4byte	.LASF11
  2893 0088 02       		.byte	0x2
  2894 0089 9A01     		.2byte	0x19a
  2895 008b 48000000 		.4byte	0x48
  2896 008f 02       		.uleb128 0x2
  2897 0090 04       		.byte	0x4
  2898 0091 04       		.byte	0x4
- 2899 0092 33040000 		.4byte	.LASF12
+ 2899 0092 E8030000 		.4byte	.LASF12
  2900 0096 02       		.uleb128 0x2
  2901 0097 08       		.byte	0x8
  2902 0098 04       		.byte	0x4
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 102
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 102
 
 
- 2903 0099 BF010000 		.4byte	.LASF13
+ 2903 0099 74010000 		.4byte	.LASF13
  2904 009d 02       		.uleb128 0x2
  2905 009e 01       		.byte	0x1
  2906 009f 08       		.byte	0x8
- 2907 00a0 E4040000 		.4byte	.LASF14
+ 2907 00a0 99040000 		.4byte	.LASF14
  2908 00a4 04       		.uleb128 0x4
- 2909 00a5 E1050000 		.4byte	.LASF15
+ 2909 00a5 C3050000 		.4byte	.LASF15
  2910 00a9 02       		.byte	0x2
  2911 00aa 3A02     		.2byte	0x23a
  2912 00ac 48000000 		.4byte	0x48
  2913 00b0 04       		.uleb128 0x4
- 2914 00b1 76040000 		.4byte	.LASF16
+ 2914 00b1 2B040000 		.4byte	.LASF16
  2915 00b5 02       		.byte	0x2
  2916 00b6 4202     		.2byte	0x242
  2917 00b8 BC000000 		.4byte	0xbc
  2918 00bc 05       		.uleb128 0x5
  2919 00bd 6B000000 		.4byte	0x6b
  2920 00c1 04       		.uleb128 0x4
- 2921 00c2 8E030000 		.4byte	.LASF17
+ 2921 00c2 43030000 		.4byte	.LASF17
  2922 00c6 02       		.byte	0x2
  2923 00c7 4402     		.2byte	0x244
  2924 00c9 CD000000 		.4byte	0xcd
  2925 00cd 05       		.uleb128 0x5
  2926 00ce 83000000 		.4byte	0x83
  2927 00d2 04       		.uleb128 0x4
- 2928 00d3 E9040000 		.4byte	.LASF18
+ 2928 00d3 9E040000 		.4byte	.LASF18
  2929 00d7 02       		.byte	0x2
  2930 00d8 5402     		.2byte	0x254
  2931 00da DE000000 		.4byte	0xde
@@ -6097,14 +6097,14 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  2936 00e5 02       		.uleb128 0x2
  2937 00e6 04       		.byte	0x4
  2938 00e7 07       		.byte	0x7
- 2939 00e8 B0030000 		.4byte	.LASF19
+ 2939 00e8 65030000 		.4byte	.LASF19
  2940 00ec 08       		.uleb128 0x8
- 2941 00ed 48040000 		.4byte	.LASF20
+ 2941 00ed FD030000 		.4byte	.LASF20
  2942 00f1 03       		.byte	0x3
  2943 00f2 F3       		.byte	0xf3
  2944 00f3 DE000000 		.4byte	0xde
  2945 00f7 09       		.uleb128 0x9
- 2946 00f8 78060000 		.4byte	.LASF21
+ 2946 00f8 6F060000 		.4byte	.LASF21
  2947 00fc 01       		.byte	0x1
  2948 00fd 68       		.byte	0x68
  2949 00fe 00000000 		.4byte	.LFB2
@@ -6112,13 +6112,13 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  2951 0106 01       		.uleb128 0x1
  2952 0107 9C       		.byte	0x9c
  2953 0108 09       		.uleb128 0x9
- 2954 0109 CF020000 		.4byte	.LASF22
+ 2954 0109 84020000 		.4byte	.LASF22
  2955 010d 01       		.byte	0x1
  2956 010e 88       		.byte	0x88
  2957 010f 00000000 		.4byte	.LFB3
  2958 0113 18000000 		.4byte	.LFE3-.LFB3
  2959 0117 01       		.uleb128 0x1
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 103
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 103
 
 
  2960 0118 9C       		.byte	0x9c
@@ -6132,7 +6132,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  2968 012a 9C       		.byte	0x9c
  2969 012b 5D010000 		.4byte	0x15d
  2970 012f 0B       		.uleb128 0xb
- 2971 0130 C2040000 		.4byte	.LASF28
+ 2971 0130 77040000 		.4byte	.LASF28
  2972 0134 01       		.byte	0x1
  2973 0135 AA01     		.2byte	0x1aa
  2974 0137 83000000 		.4byte	0x83
@@ -6140,7 +6140,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  2976 013c 91       		.byte	0x91
  2977 013d 64       		.sleb128 -28
  2978 013e 0C       		.uleb128 0xc
- 2979 013f 53010000 		.4byte	.LASF23
+ 2979 013f 08010000 		.4byte	.LASF23
  2980 0143 01       		.byte	0x1
  2981 0144 AC01     		.2byte	0x1ac
  2982 0146 6B000000 		.4byte	0x6b
@@ -6148,7 +6148,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  2984 014b 91       		.byte	0x91
  2985 014c 6F       		.sleb128 -17
  2986 014d 0C       		.uleb128 0xc
- 2987 014e A7060000 		.4byte	.LASF24
+ 2987 014e 9E060000 		.4byte	.LASF24
  2988 0152 01       		.byte	0x1
  2989 0153 AD01     		.2byte	0x1ad
  2990 0155 83000000 		.4byte	0x83
@@ -6157,7 +6157,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  2993 015b 68       		.sleb128 -24
  2994 015c 00       		.byte	0
  2995 015d 0D       		.uleb128 0xd
- 2996 015e 0C020000 		.4byte	.LASF37
+ 2996 015e C1010000 		.4byte	.LASF37
  2997 0162 01       		.byte	0x1
  2998 0163 CF01     		.2byte	0x1cf
  2999 0165 83000000 		.4byte	0x83
@@ -6167,7 +6167,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3003 0172 9C       		.byte	0x9c
  3004 0173 96010000 		.4byte	0x196
  3005 0177 0C       		.uleb128 0xc
- 3006 0178 53010000 		.4byte	.LASF23
+ 3006 0178 08010000 		.4byte	.LASF23
  3007 017c 01       		.byte	0x1
  3008 017d D101     		.2byte	0x1d1
  3009 017f 6B000000 		.4byte	0x6b
@@ -6175,10 +6175,10 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3011 0184 91       		.byte	0x91
  3012 0185 6F       		.sleb128 -17
  3013 0186 0C       		.uleb128 0xc
- 3014 0187 DB030000 		.4byte	.LASF25
+ 3014 0187 90030000 		.4byte	.LASF25
  3015 018b 01       		.byte	0x1
  3016 018c D201     		.2byte	0x1d2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 104
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 104
 
 
  3017 018e 83000000 		.4byte	0x83
@@ -6187,7 +6187,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3020 0194 68       		.sleb128 -24
  3021 0195 00       		.byte	0
  3022 0196 0A       		.uleb128 0xa
- 3023 0197 06050000 		.4byte	.LASF27
+ 3023 0197 BB040000 		.4byte	.LASF27
  3024 019b 01       		.byte	0x1
  3025 019c 0602     		.2byte	0x206
  3026 019e 00000000 		.4byte	.LFB6
@@ -6196,7 +6196,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3029 01a7 9C       		.byte	0x9c
  3030 01a8 CB010000 		.4byte	0x1cb
  3031 01ac 0B       		.uleb128 0xb
- 3032 01ad C5050000 		.4byte	.LASF29
+ 3032 01ad A7050000 		.4byte	.LASF29
  3033 01b1 01       		.byte	0x1
  3034 01b2 0602     		.2byte	0x206
  3035 01b4 83000000 		.4byte	0x83
@@ -6204,7 +6204,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3037 01b9 91       		.byte	0x91
  3038 01ba 64       		.sleb128 -28
  3039 01bb 0C       		.uleb128 0xc
- 3040 01bc 53010000 		.4byte	.LASF23
+ 3040 01bc 08010000 		.4byte	.LASF23
  3041 01c0 01       		.byte	0x1
  3042 01c1 0802     		.2byte	0x208
  3043 01c3 6B000000 		.4byte	0x6b
@@ -6213,7 +6213,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3046 01c9 6F       		.sleb128 -17
  3047 01ca 00       		.byte	0
  3048 01cb 0A       		.uleb128 0xa
- 3049 01cc 67030000 		.4byte	.LASF30
+ 3049 01cc 1C030000 		.4byte	.LASF30
  3050 01d0 01       		.byte	0x1
  3051 01d1 4002     		.2byte	0x240
  3052 01d3 00000000 		.4byte	.LFB7
@@ -6222,7 +6222,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3055 01dc 9C       		.byte	0x9c
  3056 01dd 4B020000 		.4byte	0x24b
  3057 01e1 0B       		.uleb128 0xb
- 3058 01e2 42010000 		.4byte	.LASF31
+ 3058 01e2 F7000000 		.4byte	.LASF31
  3059 01e6 01       		.byte	0x1
  3060 01e7 4002     		.2byte	0x240
  3061 01e9 83000000 		.4byte	0x83
@@ -6238,10 +6238,10 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3071 01fd 91       		.byte	0x91
  3072 01fe 6F       		.sleb128 -17
  3073 01ff 0C       		.uleb128 0xc
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 105
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 105
 
 
- 3074 0200 D3030000 		.4byte	.LASF33
+ 3074 0200 88030000 		.4byte	.LASF33
  3075 0204 01       		.byte	0x1
  3076 0205 4702     		.2byte	0x247
  3077 0207 6B000000 		.4byte	0x6b
@@ -6249,7 +6249,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3079 020c 91       		.byte	0x91
  3080 020d 6E       		.sleb128 -18
  3081 020e 0C       		.uleb128 0xc
- 3082 020f 89060000 		.4byte	.LASF34
+ 3082 020f 80060000 		.4byte	.LASF34
  3083 0213 01       		.byte	0x1
  3084 0214 4802     		.2byte	0x248
  3085 0216 6B000000 		.4byte	0x6b
@@ -6257,7 +6257,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3087 021b 91       		.byte	0x91
  3088 021c 6B       		.sleb128 -21
  3089 021d 0C       		.uleb128 0xc
- 3090 021e A7000000 		.4byte	.LASF35
+ 3090 021e 5C000000 		.4byte	.LASF35
  3091 0222 01       		.byte	0x1
  3092 0223 4902     		.2byte	0x249
  3093 0225 6B000000 		.4byte	0x6b
@@ -6265,7 +6265,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3095 022a 91       		.byte	0x91
  3096 022b 6D       		.sleb128 -19
  3097 022c 0C       		.uleb128 0xc
- 3098 022d 45050000 		.4byte	.LASF36
+ 3098 022d F5040000 		.4byte	.LASF36
  3099 0231 01       		.byte	0x1
  3100 0232 4A02     		.2byte	0x24a
  3101 0234 6B000000 		.4byte	0x6b
@@ -6273,7 +6273,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3103 0239 91       		.byte	0x91
  3104 023a 6A       		.sleb128 -22
  3105 023b 0C       		.uleb128 0xc
- 3106 023c 53010000 		.4byte	.LASF23
+ 3106 023c 08010000 		.4byte	.LASF23
  3107 0240 01       		.byte	0x1
  3108 0241 5502     		.2byte	0x255
  3109 0243 6B000000 		.4byte	0x6b
@@ -6282,7 +6282,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3112 0249 6C       		.sleb128 -20
  3113 024a 00       		.byte	0
  3114 024b 0D       		.uleb128 0xd
- 3115 024c CC040000 		.4byte	.LASF38
+ 3115 024c 81040000 		.4byte	.LASF38
  3116 0250 01       		.byte	0x1
  3117 0251 D203     		.2byte	0x3d2
  3118 0253 A4000000 		.4byte	0xa4
@@ -6292,18 +6292,18 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3122 0260 9C       		.byte	0x9c
  3123 0261 84020000 		.4byte	0x284
  3124 0265 0B       		.uleb128 0xb
- 3125 0266 BB050000 		.4byte	.LASF39
+ 3125 0266 9D050000 		.4byte	.LASF39
  3126 026a 01       		.byte	0x1
  3127 026b D203     		.2byte	0x3d2
  3128 026d 83000000 		.4byte	0x83
  3129 0271 02       		.uleb128 0x2
  3130 0272 91       		.byte	0x91
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 106
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 106
 
 
  3131 0273 6C       		.sleb128 -20
  3132 0274 0C       		.uleb128 0xc
- 3133 0275 A3030000 		.4byte	.LASF40
+ 3133 0275 58030000 		.4byte	.LASF40
  3134 0279 01       		.byte	0x1
  3135 027a D403     		.2byte	0x3d4
  3136 027c A4000000 		.4byte	0xa4
@@ -6312,7 +6312,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3139 0282 74       		.sleb128 -12
  3140 0283 00       		.byte	0
  3141 0284 0E       		.uleb128 0xe
- 3142 0285 9D050000 		.4byte	.LASF41
+ 3142 0285 D2040000 		.4byte	.LASF41
  3143 0289 01       		.byte	0x1
  3144 028a 0504     		.2byte	0x405
  3145 028c 00000000 		.4byte	.LFB9
@@ -6320,7 +6320,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3147 0294 01       		.uleb128 0x1
  3148 0295 9C       		.byte	0x9c
  3149 0296 0F       		.uleb128 0xf
- 3150 0297 EA010000 		.4byte	.LASF42
+ 3150 0297 9F010000 		.4byte	.LASF42
  3151 029b 01       		.byte	0x1
  3152 029c 2504     		.2byte	0x425
  3153 029e 83000000 		.4byte	0x83
@@ -6330,7 +6330,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3157 02ab 9C       		.byte	0x9c
  3158 02ac C0020000 		.4byte	0x2c0
  3159 02b0 0C       		.uleb128 0xc
- 3160 02b1 DB060000 		.4byte	.LASF43
+ 3160 02b1 D2060000 		.4byte	.LASF43
  3161 02b5 01       		.byte	0x1
  3162 02b6 2704     		.2byte	0x427
  3163 02b8 83000000 		.4byte	0x83
@@ -6339,7 +6339,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3166 02be 74       		.sleb128 -12
  3167 02bf 00       		.byte	0
  3168 02c0 0A       		.uleb128 0xa
- 3169 02c1 CD050000 		.4byte	.LASF44
+ 3169 02c1 AF050000 		.4byte	.LASF44
  3170 02c5 01       		.byte	0x1
  3171 02c6 4D04     		.2byte	0x44d
  3172 02c8 00000000 		.4byte	.LFB11
@@ -6348,7 +6348,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3175 02d1 9C       		.byte	0x9c
  3176 02d2 F5020000 		.4byte	0x2f5
  3177 02d6 0B       		.uleb128 0xb
- 3178 02d7 C5050000 		.4byte	.LASF29
+ 3178 02d7 A7050000 		.4byte	.LASF29
  3179 02db 01       		.byte	0x1
  3180 02dc 4D04     		.2byte	0x44d
  3181 02de 83000000 		.4byte	0x83
@@ -6356,9 +6356,9 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3183 02e3 91       		.byte	0x91
  3184 02e4 64       		.sleb128 -28
  3185 02e5 0C       		.uleb128 0xc
- 3186 02e6 53010000 		.4byte	.LASF23
+ 3186 02e6 08010000 		.4byte	.LASF23
  3187 02ea 01       		.byte	0x1
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 107
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 107
 
 
  3188 02eb 4F04     		.2byte	0x44f
@@ -6368,7 +6368,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3192 02f3 6F       		.sleb128 -17
  3193 02f4 00       		.byte	0
  3194 02f5 0A       		.uleb128 0xa
- 3195 02f6 39040000 		.4byte	.LASF45
+ 3195 02f6 EE030000 		.4byte	.LASF45
  3196 02fa 01       		.byte	0x1
  3197 02fb B107     		.2byte	0x7b1
  3198 02fd 00000000 		.4byte	.LFB12
@@ -6377,7 +6377,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3201 0306 9C       		.byte	0x9c
  3202 0307 1B030000 		.4byte	0x31b
  3203 030b 0B       		.uleb128 0xb
- 3204 030c 7B040000 		.4byte	.LASF46
+ 3204 030c 30040000 		.4byte	.LASF46
  3205 0310 01       		.byte	0x1
  3206 0311 B107     		.2byte	0x7b1
  3207 0313 83000000 		.4byte	0x83
@@ -6386,7 +6386,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3210 0319 74       		.sleb128 -12
  3211 031a 00       		.byte	0
  3212 031b 0E       		.uleb128 0xe
- 3213 031c 7E050000 		.4byte	.LASF47
+ 3213 031c 2E050000 		.4byte	.LASF47
  3214 0320 01       		.byte	0x1
  3215 0321 CF07     		.2byte	0x7cf
  3216 0323 00000000 		.4byte	.LFB13
@@ -6394,7 +6394,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3218 032b 01       		.uleb128 0x1
  3219 032c 9C       		.byte	0x9c
  3220 032d 10       		.uleb128 0x10
- 3221 032e B4020000 		.4byte	.LASF87
+ 3221 032e 69020000 		.4byte	.LASF87
  3222 0332 01       		.byte	0x1
  3223 0333 E107     		.2byte	0x7e1
  3224 0335 83000000 		.4byte	0x83
@@ -6403,7 +6403,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3227 0341 01       		.uleb128 0x1
  3228 0342 9C       		.byte	0x9c
  3229 0343 0E       		.uleb128 0xe
- 3230 0344 CC010000 		.4byte	.LASF48
+ 3230 0344 81010000 		.4byte	.LASF48
  3231 0348 01       		.byte	0x1
  3232 0349 F107     		.2byte	0x7f1
  3233 034b 00000000 		.4byte	.LFB15
@@ -6411,20 +6411,20 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3235 0353 01       		.uleb128 0x1
  3236 0354 9C       		.byte	0x9c
  3237 0355 0F       		.uleb128 0xf
- 3238 0356 EF020000 		.4byte	.LASF49
+ 3238 0356 A4020000 		.4byte	.LASF49
  3239 035a 01       		.byte	0x1
  3240 035b 0B08     		.2byte	0x80b
  3241 035d 83000000 		.4byte	0x83
  3242 0361 00000000 		.4byte	.LFB16
  3243 0365 30000000 		.4byte	.LFE16-.LFB16
  3244 0369 01       		.uleb128 0x1
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 108
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 108
 
 
  3245 036a 9C       		.byte	0x9c
  3246 036b 8E030000 		.4byte	0x38e
  3247 036f 0B       		.uleb128 0xb
- 3248 0370 DD040000 		.4byte	.LASF50
+ 3248 0370 92040000 		.4byte	.LASF50
  3249 0374 01       		.byte	0x1
  3250 0375 0B08     		.2byte	0x80b
  3251 0377 83000000 		.4byte	0x83
@@ -6432,7 +6432,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3253 037c 91       		.byte	0x91
  3254 037d 6C       		.sleb128 -20
  3255 037e 0C       		.uleb128 0xc
- 3256 037f A3030000 		.4byte	.LASF40
+ 3256 037f 58030000 		.4byte	.LASF40
  3257 0383 01       		.byte	0x1
  3258 0384 0D08     		.2byte	0x80d
  3259 0386 83000000 		.4byte	0x83
@@ -6441,7 +6441,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3262 038c 74       		.sleb128 -12
  3263 038d 00       		.byte	0
  3264 038e 0F       		.uleb128 0xf
- 3265 038f 99000000 		.4byte	.LASF51
+ 3265 038f 4E000000 		.4byte	.LASF51
  3266 0393 01       		.byte	0x1
  3267 0394 2208     		.2byte	0x822
  3268 0396 83000000 		.4byte	0x83
@@ -6460,7 +6460,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3281 03b6 74       		.sleb128 -12
  3282 03b7 00       		.byte	0
  3283 03b8 11       		.uleb128 0x11
- 3284 03b9 E4000000 		.4byte	.LASF53
+ 3284 03b9 99000000 		.4byte	.LASF53
  3285 03bd 01       		.byte	0x1
  3286 03be 3908     		.2byte	0x839
  3287 03c0 00000000 		.4byte	.LFB18
@@ -6469,7 +6469,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3290 03c9 9C       		.byte	0x9c
  3291 03ca DE030000 		.4byte	0x3de
  3292 03ce 0B       		.uleb128 0xb
- 3293 03cf 07020000 		.4byte	.LASF54
+ 3293 03cf BC010000 		.4byte	.LASF54
  3294 03d3 01       		.byte	0x1
  3295 03d4 3908     		.2byte	0x839
  3296 03d6 83000000 		.4byte	0x83
@@ -6478,10 +6478,10 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3299 03dc 74       		.sleb128 -12
  3300 03dd 00       		.byte	0
  3301 03de 0D       		.uleb128 0xd
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 109
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 109
 
 
- 3302 03df 7C030000 		.4byte	.LASF55
+ 3302 03df 31030000 		.4byte	.LASF55
  3303 03e3 01       		.byte	0x1
  3304 03e4 5208     		.2byte	0x852
  3305 03e6 D2000000 		.4byte	0xd2
@@ -6491,7 +6491,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3309 03f3 9C       		.byte	0x9c
  3310 03f4 35040000 		.4byte	0x435
  3311 03f8 0B       		.uleb128 0xb
- 3312 03f9 00020000 		.4byte	.LASF56
+ 3312 03f9 B5010000 		.4byte	.LASF56
  3313 03fd 01       		.byte	0x1
  3314 03fe 5208     		.2byte	0x852
  3315 0400 6B000000 		.4byte	0x6b
@@ -6499,7 +6499,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3317 0405 91       		.byte	0x91
  3318 0406 6F       		.sleb128 -17
  3319 0407 0B       		.uleb128 0xb
- 3320 0408 CB030000 		.4byte	.LASF57
+ 3320 0408 80030000 		.4byte	.LASF57
  3321 040c 01       		.byte	0x1
  3322 040d 5208     		.2byte	0x852
  3323 040f D2000000 		.4byte	0xd2
@@ -6507,7 +6507,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3325 0414 91       		.byte	0x91
  3326 0415 68       		.sleb128 -24
  3327 0416 0C       		.uleb128 0xc
- 3328 0417 8B000000 		.4byte	.LASF58
+ 3328 0417 40000000 		.4byte	.LASF58
  3329 041b 01       		.byte	0x1
  3330 041c 5408     		.2byte	0x854
  3331 041e D2000000 		.4byte	0xd2
@@ -6527,7 +6527,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3345 0436 04       		.byte	0x4
  3346 0437 D2000000 		.4byte	0xd2
  3347 043b 0D       		.uleb128 0xd
- 3348 043c B0040000 		.4byte	.LASF60
+ 3348 043c 65040000 		.4byte	.LASF60
  3349 0440 01       		.byte	0x1
  3350 0441 7408     		.2byte	0x874
  3351 0443 D2000000 		.4byte	0xd2
@@ -6537,8 +6537,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3355 0450 9C       		.byte	0x9c
  3356 0451 74040000 		.4byte	0x474
  3357 0455 0B       		.uleb128 0xb
- 3358 0456 00020000 		.4byte	.LASF56
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 110
+ 3358 0456 B5010000 		.4byte	.LASF56
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 110
 
 
  3359 045a 01       		.byte	0x1
@@ -6557,7 +6557,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3372 0472 74       		.sleb128 -12
  3373 0473 00       		.byte	0
  3374 0474 0D       		.uleb128 0xd
- 3375 0475 2E030000 		.4byte	.LASF61
+ 3375 0475 E3020000 		.4byte	.LASF61
  3376 0479 01       		.byte	0x1
  3377 047a 8A08     		.2byte	0x88a
  3378 047c D2000000 		.4byte	0xd2
@@ -6567,7 +6567,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3382 0489 9C       		.byte	0x9c
  3383 048a CB040000 		.4byte	0x4cb
  3384 048e 0B       		.uleb128 0xb
- 3385 048f 00020000 		.4byte	.LASF56
+ 3385 048f B5010000 		.4byte	.LASF56
  3386 0493 01       		.byte	0x1
  3387 0494 8A08     		.2byte	0x88a
  3388 0496 6B000000 		.4byte	0x6b
@@ -6575,7 +6575,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3390 049b 91       		.byte	0x91
  3391 049c 6F       		.sleb128 -17
  3392 049d 0B       		.uleb128 0xb
- 3393 049e CB030000 		.4byte	.LASF57
+ 3393 049e 80030000 		.4byte	.LASF57
  3394 04a2 01       		.byte	0x1
  3395 04a3 8A08     		.2byte	0x88a
  3396 04a5 D2000000 		.4byte	0xd2
@@ -6583,7 +6583,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3398 04aa 91       		.byte	0x91
  3399 04ab 68       		.sleb128 -24
  3400 04ac 0C       		.uleb128 0xc
- 3401 04ad 8B000000 		.4byte	.LASF58
+ 3401 04ad 40000000 		.4byte	.LASF58
  3402 04b1 01       		.byte	0x1
  3403 04b2 8C08     		.2byte	0x88c
  3404 04b4 D2000000 		.4byte	0xd2
@@ -6598,12 +6598,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3413 04c7 02       		.uleb128 0x2
  3414 04c8 91       		.byte	0x91
  3415 04c9 74       		.sleb128 -12
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 111
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 111
 
 
  3416 04ca 00       		.byte	0
  3417 04cb 0D       		.uleb128 0xd
- 3418 04cc 5A040000 		.4byte	.LASF62
+ 3418 04cc 0F040000 		.4byte	.LASF62
  3419 04d0 01       		.byte	0x1
  3420 04d1 A608     		.2byte	0x8a6
  3421 04d3 D2000000 		.4byte	0xd2
@@ -6613,7 +6613,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3425 04e0 9C       		.byte	0x9c
  3426 04e1 04050000 		.4byte	0x504
  3427 04e5 0B       		.uleb128 0xb
- 3428 04e6 00020000 		.4byte	.LASF56
+ 3428 04e6 B5010000 		.4byte	.LASF56
  3429 04ea 01       		.byte	0x1
  3430 04eb A608     		.2byte	0x8a6
  3431 04ed 6B000000 		.4byte	0x6b
@@ -6630,7 +6630,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3442 0502 74       		.sleb128 -12
  3443 0503 00       		.byte	0
  3444 0504 0A       		.uleb128 0xa
- 3445 0505 22040000 		.4byte	.LASF63
+ 3445 0505 D7030000 		.4byte	.LASF63
  3446 0509 01       		.byte	0x1
  3447 050a B908     		.2byte	0x8b9
  3448 050c 00000000 		.4byte	.LFB23
@@ -6639,7 +6639,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3451 0515 9C       		.byte	0x9c
  3452 0516 66050000 		.4byte	0x566
  3453 051a 0B       		.uleb128 0xb
- 3454 051b 00020000 		.4byte	.LASF56
+ 3454 051b B5010000 		.4byte	.LASF56
  3455 051f 01       		.byte	0x1
  3456 0520 B908     		.2byte	0x8b9
  3457 0522 6B000000 		.4byte	0x6b
@@ -6647,7 +6647,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3459 0527 91       		.byte	0x91
  3460 0528 5F       		.sleb128 -33
  3461 0529 0B       		.uleb128 0xb
- 3462 052a 5E030000 		.4byte	.LASF64
+ 3462 052a 13030000 		.4byte	.LASF64
  3463 052e 01       		.byte	0x1
  3464 052f B908     		.2byte	0x8b9
  3465 0531 6B000000 		.4byte	0x6b
@@ -6655,10 +6655,10 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3467 0536 91       		.byte	0x91
  3468 0537 5E       		.sleb128 -34
  3469 0538 0C       		.uleb128 0xc
- 3470 0539 53010000 		.4byte	.LASF23
+ 3470 0539 08010000 		.4byte	.LASF23
  3471 053d 01       		.byte	0x1
  3472 053e BB08     		.2byte	0x8bb
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 112
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 112
 
 
  3473 0540 6B000000 		.4byte	0x6b
@@ -6666,7 +6666,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3475 0545 91       		.byte	0x91
  3476 0546 6B       		.sleb128 -21
  3477 0547 0C       		.uleb128 0xc
- 3478 0548 C6010000 		.4byte	.LASF65
+ 3478 0548 7B010000 		.4byte	.LASF65
  3479 054c 01       		.byte	0x1
  3480 054d BC08     		.2byte	0x8bc
  3481 054f 83000000 		.4byte	0x83
@@ -6674,7 +6674,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3483 0554 91       		.byte	0x91
  3484 0555 6C       		.sleb128 -20
  3485 0556 0C       		.uleb128 0xc
- 3486 0557 50020000 		.4byte	.LASF66
+ 3486 0557 05020000 		.4byte	.LASF66
  3487 055b 01       		.byte	0x1
  3488 055c BD08     		.2byte	0x8bd
  3489 055e 83000000 		.4byte	0x83
@@ -6683,7 +6683,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3492 0564 64       		.sleb128 -28
  3493 0565 00       		.byte	0
  3494 0566 0D       		.uleb128 0xd
- 3495 0567 24020000 		.4byte	.LASF67
+ 3495 0567 D9010000 		.4byte	.LASF67
  3496 056b 01       		.byte	0x1
  3497 056c DB08     		.2byte	0x8db
  3498 056e 6B000000 		.4byte	0x6b
@@ -6693,7 +6693,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3502 057b 9C       		.byte	0x9c
  3503 057c 9F050000 		.4byte	0x59f
  3504 0580 0B       		.uleb128 0xb
- 3505 0581 00020000 		.4byte	.LASF56
+ 3505 0581 B5010000 		.4byte	.LASF56
  3506 0585 01       		.byte	0x1
  3507 0586 DB08     		.2byte	0x8db
  3508 0588 6B000000 		.4byte	0x6b
@@ -6701,7 +6701,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3510 058d 91       		.byte	0x91
  3511 058e 6F       		.sleb128 -17
  3512 058f 0C       		.uleb128 0xc
- 3513 0590 5E030000 		.4byte	.LASF64
+ 3513 0590 13030000 		.4byte	.LASF64
  3514 0594 01       		.byte	0x1
  3515 0595 DD08     		.2byte	0x8dd
  3516 0597 6B000000 		.4byte	0x6b
@@ -6710,7 +6710,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3519 059d 77       		.sleb128 -9
  3520 059e 00       		.byte	0
  3521 059f 11       		.uleb128 0x11
- 3522 05a0 A4040000 		.4byte	.LASF68
+ 3522 05a0 59040000 		.4byte	.LASF68
  3523 05a4 01       		.byte	0x1
  3524 05a5 F008     		.2byte	0x8f0
  3525 05a7 00000000 		.4byte	.LFB25
@@ -6718,11 +6718,11 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3527 05af 01       		.uleb128 0x1
  3528 05b0 9C       		.byte	0x9c
  3529 05b1 C5050000 		.4byte	0x5c5
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 113
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 113
 
 
  3530 05b5 0B       		.uleb128 0xb
- 3531 05b6 00020000 		.4byte	.LASF56
+ 3531 05b6 B5010000 		.4byte	.LASF56
  3532 05ba 01       		.byte	0x1
  3533 05bb F008     		.2byte	0x8f0
  3534 05bd 6B000000 		.4byte	0x6b
@@ -6731,7 +6731,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3537 05c3 77       		.sleb128 -9
  3538 05c4 00       		.byte	0
  3539 05c5 0F       		.uleb128 0xf
- 3540 05c6 1A010000 		.4byte	.LASF69
+ 3540 05c6 CF000000 		.4byte	.LASF69
  3541 05ca 01       		.byte	0x1
  3542 05cb 0209     		.2byte	0x902
  3543 05cd 6B000000 		.4byte	0x6b
@@ -6741,7 +6741,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3547 05da 9C       		.byte	0x9c
  3548 05db EF050000 		.4byte	0x5ef
  3549 05df 0B       		.uleb128 0xb
- 3550 05e0 00020000 		.4byte	.LASF56
+ 3550 05e0 B5010000 		.4byte	.LASF56
  3551 05e4 01       		.byte	0x1
  3552 05e5 0209     		.2byte	0x902
  3553 05e7 6B000000 		.4byte	0x6b
@@ -6750,7 +6750,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3556 05ed 77       		.sleb128 -9
  3557 05ee 00       		.byte	0
  3558 05ef 11       		.uleb128 0x11
- 3559 05f0 7E010000 		.4byte	.LASF70
+ 3559 05f0 33010000 		.4byte	.LASF70
  3560 05f4 01       		.byte	0x1
  3561 05f5 1209     		.2byte	0x912
  3562 05f7 00000000 		.4byte	.LFB27
@@ -6759,7 +6759,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3565 0600 9C       		.byte	0x9c
  3566 0601 15060000 		.4byte	0x615
  3567 0605 0B       		.uleb128 0xb
- 3568 0606 00020000 		.4byte	.LASF56
+ 3568 0606 B5010000 		.4byte	.LASF56
  3569 060a 01       		.byte	0x1
  3570 060b 1209     		.2byte	0x912
  3571 060d 6B000000 		.4byte	0x6b
@@ -6768,7 +6768,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3574 0613 77       		.sleb128 -9
  3575 0614 00       		.byte	0
  3576 0615 11       		.uleb128 0x11
- 3577 0616 DF020000 		.4byte	.LASF71
+ 3577 0616 94020000 		.4byte	.LASF71
  3578 061a 01       		.byte	0x1
  3579 061b 2009     		.2byte	0x920
  3580 061d 00000000 		.4byte	.LFB28
@@ -6777,8 +6777,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3583 0626 9C       		.byte	0x9c
  3584 0627 3B060000 		.4byte	0x63b
  3585 062b 0B       		.uleb128 0xb
- 3586 062c 00020000 		.4byte	.LASF56
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 114
+ 3586 062c B5010000 		.4byte	.LASF56
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 114
 
 
  3587 0630 01       		.byte	0x1
@@ -6789,7 +6789,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3592 0639 77       		.sleb128 -9
  3593 063a 00       		.byte	0
  3594 063b 11       		.uleb128 0x11
- 3595 063c B9030000 		.4byte	.LASF72
+ 3595 063c 6E030000 		.4byte	.LASF72
  3596 0640 01       		.byte	0x1
  3597 0641 2F09     		.2byte	0x92f
  3598 0643 00000000 		.4byte	.LFB29
@@ -6798,7 +6798,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3601 064c 9C       		.byte	0x9c
  3602 064d 61060000 		.4byte	0x661
  3603 0651 0B       		.uleb128 0xb
- 3604 0652 00020000 		.4byte	.LASF56
+ 3604 0652 B5010000 		.4byte	.LASF56
  3605 0656 01       		.byte	0x1
  3606 0657 2F09     		.2byte	0x92f
  3607 0659 6B000000 		.4byte	0x6b
@@ -6807,7 +6807,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3610 065f 77       		.sleb128 -9
  3611 0660 00       		.byte	0
  3612 0661 11       		.uleb128 0x11
- 3613 0662 85040000 		.4byte	.LASF73
+ 3613 0662 3A040000 		.4byte	.LASF73
  3614 0666 01       		.byte	0x1
  3615 0667 3E09     		.2byte	0x93e
  3616 0669 00000000 		.4byte	.LFB30
@@ -6816,7 +6816,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3619 0672 9C       		.byte	0x9c
  3620 0673 87060000 		.4byte	0x687
  3621 0677 0B       		.uleb128 0xb
- 3622 0678 DD040000 		.4byte	.LASF50
+ 3622 0678 92040000 		.4byte	.LASF50
  3623 067c 01       		.byte	0x1
  3624 067d 3E09     		.2byte	0x93e
  3625 067f 6B000000 		.4byte	0x6b
@@ -6825,7 +6825,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3628 0685 77       		.sleb128 -9
  3629 0686 00       		.byte	0
  3630 0687 0E       		.uleb128 0xe
- 3631 0688 F1000000 		.4byte	.LASF74
+ 3631 0688 A6000000 		.4byte	.LASF74
  3632 068c 01       		.byte	0x1
  3633 068d 5609     		.2byte	0x956
  3634 068f 00000000 		.4byte	.LFB31
@@ -6833,19 +6833,19 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3636 0697 01       		.uleb128 0x1
  3637 0698 9C       		.byte	0x9c
  3638 0699 0A       		.uleb128 0xa
- 3639 069a 5C050000 		.4byte	.LASF75
+ 3639 069a 0C050000 		.4byte	.LASF75
  3640 069e 01       		.byte	0x1
  3641 069f 6A09     		.2byte	0x96a
  3642 06a1 00000000 		.4byte	.LFB32
  3643 06a5 48000000 		.4byte	.LFE32-.LFB32
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 115
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 115
 
 
  3644 06a9 01       		.uleb128 0x1
  3645 06aa 9C       		.byte	0x9c
  3646 06ab BF060000 		.4byte	0x6bf
  3647 06af 0B       		.uleb128 0xb
- 3648 06b0 69040000 		.4byte	.LASF76
+ 3648 06b0 1E040000 		.4byte	.LASF76
  3649 06b4 01       		.byte	0x1
  3650 06b5 6A09     		.2byte	0x96a
  3651 06b7 83000000 		.4byte	0x83
@@ -6854,7 +6854,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3654 06bd 74       		.sleb128 -12
  3655 06be 00       		.byte	0
  3656 06bf 0A       		.uleb128 0xa
- 3657 06c0 B5010000 		.4byte	.LASF77
+ 3657 06c0 6A010000 		.4byte	.LASF77
  3658 06c4 01       		.byte	0x1
  3659 06c5 8109     		.2byte	0x981
  3660 06c7 00000000 		.4byte	.LFB33
@@ -6863,7 +6863,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3663 06d0 9C       		.byte	0x9c
  3664 06d1 E5060000 		.4byte	0x6e5
  3665 06d5 0B       		.uleb128 0xb
- 3666 06d6 9A060000 		.4byte	.LASF78
+ 3666 06d6 91060000 		.4byte	.LASF78
  3667 06da 01       		.byte	0x1
  3668 06db 8109     		.2byte	0x981
  3669 06dd 77000000 		.4byte	0x77
@@ -6872,7 +6872,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3672 06e3 76       		.sleb128 -10
  3673 06e4 00       		.byte	0
  3674 06e5 0A       		.uleb128 0xa
- 3675 06e6 47010000 		.4byte	.LASF79
+ 3675 06e6 FC000000 		.4byte	.LASF79
  3676 06ea 01       		.byte	0x1
  3677 06eb 8F09     		.2byte	0x98f
  3678 06ed 00000000 		.4byte	.LFB34
@@ -6881,7 +6881,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3681 06f6 9C       		.byte	0x9c
  3682 06f7 0B070000 		.4byte	0x70b
  3683 06fb 0B       		.uleb128 0xb
- 3684 06fc 42010000 		.4byte	.LASF31
+ 3684 06fc F7000000 		.4byte	.LASF31
  3685 0700 01       		.byte	0x1
  3686 0701 8F09     		.2byte	0x98f
  3687 0703 83000000 		.4byte	0x83
@@ -6890,7 +6890,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3690 0709 74       		.sleb128 -12
  3691 070a 00       		.byte	0
  3692 070b 12       		.uleb128 0x12
- 3693 070c 94030000 		.4byte	.LASF80
+ 3693 070c 49030000 		.4byte	.LASF80
  3694 0710 01       		.byte	0x1
  3695 0711 AF09     		.2byte	0x9af
  3696 0713 00000000 		.4byte	.LFB35
@@ -6898,10 +6898,10 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3698 071b 01       		.uleb128 0x1
  3699 071c 9C       		.byte	0x9c
  3700 071d 0A       		.uleb128 0xa
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 116
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 116
 
 
- 3701 071e 42020000 		.4byte	.LASF81
+ 3701 071e F7010000 		.4byte	.LASF81
  3702 0722 01       		.byte	0x1
  3703 0723 CC09     		.2byte	0x9cc
  3704 0725 00000000 		.4byte	.LFB36
@@ -6919,7 +6919,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3716 073f 74       		.sleb128 -12
  3717 0740 00       		.byte	0
  3718 0741 12       		.uleb128 0x12
- 3719 0742 F6040000 		.4byte	.LASF82
+ 3719 0742 AB040000 		.4byte	.LASF82
  3720 0746 01       		.byte	0x1
  3721 0747 EB09     		.2byte	0x9eb
  3722 0749 00000000 		.4byte	.LFB37
@@ -6927,7 +6927,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3724 0751 01       		.uleb128 0x1
  3725 0752 9C       		.byte	0x9c
  3726 0753 0E       		.uleb128 0xe
- 3727 0754 AD050000 		.4byte	.LASF83
+ 3727 0754 8F050000 		.4byte	.LASF83
  3728 0758 01       		.byte	0x1
  3729 0759 FC09     		.2byte	0x9fc
  3730 075b 00000000 		.4byte	.LFB38
@@ -6935,7 +6935,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3732 0763 01       		.uleb128 0x1
  3733 0764 9C       		.byte	0x9c
  3734 0765 0E       		.uleb128 0xe
- 3735 0766 01010000 		.4byte	.LASF84
+ 3735 0766 B6000000 		.4byte	.LASF84
  3736 076a 01       		.byte	0x1
  3737 076b 0C0A     		.2byte	0xa0c
  3738 076d 00000000 		.4byte	.LFB39
@@ -6943,7 +6943,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3740 0775 01       		.uleb128 0x1
  3741 0776 9C       		.byte	0x9c
  3742 0777 0E       		.uleb128 0xe
- 3743 0778 64050000 		.4byte	.LASF85
+ 3743 0778 14050000 		.4byte	.LASF85
  3744 077c 01       		.byte	0x1
  3745 077d 1C0A     		.2byte	0xa1c
  3746 077f 00000000 		.4byte	.LFB40
@@ -6951,19 +6951,19 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3748 0787 01       		.uleb128 0x1
  3749 0788 9C       		.byte	0x9c
  3750 0789 11       		.uleb128 0x11
- 3751 078a AE060000 		.4byte	.LASF86
+ 3751 078a A5060000 		.4byte	.LASF86
  3752 078e 01       		.byte	0x1
  3753 078f 2D0A     		.2byte	0xa2d
  3754 0791 00000000 		.4byte	.LFB41
  3755 0795 1C000000 		.4byte	.LFE41-.LFB41
  3756 0799 01       		.uleb128 0x1
  3757 079a 9C       		.byte	0x9c
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 117
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 117
 
 
  3758 079b AF070000 		.4byte	0x7af
  3759 079f 0B       		.uleb128 0xb
- 3760 07a0 50020000 		.4byte	.LASF66
+ 3760 07a0 05020000 		.4byte	.LASF66
  3761 07a4 01       		.byte	0x1
  3762 07a5 2D0A     		.2byte	0xa2d
  3763 07a7 83000000 		.4byte	0x83
@@ -6972,7 +6972,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3766 07ad 74       		.sleb128 -12
  3767 07ae 00       		.byte	0
  3768 07af 10       		.uleb128 0x10
- 3769 07b0 62010000 		.4byte	.LASF88
+ 3769 07b0 17010000 		.4byte	.LASF88
  3770 07b4 01       		.byte	0x1
  3771 07b5 3D0A     		.2byte	0xa3d
  3772 07b7 83000000 		.4byte	0x83
@@ -6981,7 +6981,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3775 07c3 01       		.uleb128 0x1
  3776 07c4 9C       		.byte	0x9c
  3777 07c5 10       		.uleb128 0x10
- 3778 07c6 02040000 		.4byte	.LASF89
+ 3778 07c6 B7030000 		.4byte	.LASF89
  3779 07ca 01       		.byte	0x1
  3780 07cb 4D0A     		.2byte	0xa4d
  3781 07cd 83000000 		.4byte	0x83
@@ -6990,7 +6990,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3784 07d9 01       		.uleb128 0x1
  3785 07da 9C       		.byte	0x9c
  3786 07db 11       		.uleb128 0x11
- 3787 07dc 16030000 		.4byte	.LASF90
+ 3787 07dc CB020000 		.4byte	.LASF90
  3788 07e0 01       		.byte	0x1
  3789 07e1 6D0A     		.2byte	0xa6d
  3790 07e3 00000000 		.4byte	.LFB44
@@ -6999,7 +6999,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3793 07ec 9C       		.byte	0x9c
  3794 07ed 01080000 		.4byte	0x801
  3795 07f1 0B       		.uleb128 0xb
- 3796 07f2 56020000 		.4byte	.LASF91
+ 3796 07f2 0B020000 		.4byte	.LASF91
  3797 07f6 01       		.byte	0x1
  3798 07f7 6D0A     		.2byte	0xa6d
  3799 07f9 83000000 		.4byte	0x83
@@ -7008,7 +7008,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3802 07ff 74       		.sleb128 -12
  3803 0800 00       		.byte	0
  3804 0801 10       		.uleb128 0x10
- 3805 0802 70020000 		.4byte	.LASF92
+ 3805 0802 25020000 		.4byte	.LASF92
  3806 0806 01       		.byte	0x1
  3807 0807 8A0A     		.2byte	0xa8a
  3808 0809 83000000 		.4byte	0x83
@@ -7017,8 +7017,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3811 0815 01       		.uleb128 0x1
  3812 0816 9C       		.byte	0x9c
  3813 0817 0E       		.uleb128 0xe
- 3814 0818 93020000 		.4byte	.LASF93
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 118
+ 3814 0818 48020000 		.4byte	.LASF93
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 118
 
 
  3815 081c 01       		.byte	0x1
@@ -7028,7 +7028,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3819 0827 01       		.uleb128 0x1
  3820 0828 9C       		.byte	0x9c
  3821 0829 0F       		.uleb128 0xf
- 3822 082a 1D050000 		.4byte	.LASF94
+ 3822 082a 5A060000 		.4byte	.LASF94
  3823 082e 01       		.byte	0x1
  3824 082f BA0A     		.2byte	0xaba
  3825 0831 EC000000 		.4byte	0xec
@@ -7038,7 +7038,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3829 083e 9C       		.byte	0x9c
  3830 083f 71080000 		.4byte	0x871
  3831 0843 0B       		.uleb128 0xb
- 3832 0844 00020000 		.4byte	.LASF56
+ 3832 0844 B5010000 		.4byte	.LASF56
  3833 0848 01       		.byte	0x1
  3834 0849 BA0A     		.2byte	0xaba
  3835 084b 83000000 		.4byte	0x83
@@ -7046,7 +7046,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3837 0850 91       		.byte	0x91
  3838 0851 6C       		.sleb128 -20
  3839 0852 0B       		.uleb128 0xb
- 3840 0853 E8030000 		.4byte	.LASF95
+ 3840 0853 9D030000 		.4byte	.LASF95
  3841 0857 01       		.byte	0x1
  3842 0858 BA0A     		.2byte	0xaba
  3843 085a EC000000 		.4byte	0xec
@@ -7054,7 +7054,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3845 085f 91       		.byte	0x91
  3846 0860 68       		.sleb128 -24
  3847 0861 0C       		.uleb128 0xc
- 3848 0862 92000000 		.4byte	.LASF96
+ 3848 0862 47000000 		.4byte	.LASF96
  3849 0866 01       		.byte	0x1
  3850 0867 BC0A     		.2byte	0xabc
  3851 0869 EC000000 		.4byte	0xec
@@ -7063,7 +7063,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3854 086f 74       		.sleb128 -12
  3855 0870 00       		.byte	0
  3856 0871 0F       		.uleb128 0xf
- 3857 0872 8B010000 		.4byte	.LASF97
+ 3857 0872 40010000 		.4byte	.LASF97
  3858 0876 01       		.byte	0x1
  3859 0877 D20A     		.2byte	0xad2
  3860 0879 EC000000 		.4byte	0xec
@@ -7073,19 +7073,19 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3864 0886 9C       		.byte	0x9c
  3865 0887 9B080000 		.4byte	0x89b
  3866 088b 0B       		.uleb128 0xb
- 3867 088c 00020000 		.4byte	.LASF56
+ 3867 088c B5010000 		.4byte	.LASF56
  3868 0890 01       		.byte	0x1
  3869 0891 D20A     		.2byte	0xad2
  3870 0893 83000000 		.4byte	0x83
  3871 0897 02       		.uleb128 0x2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 119
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 119
 
 
  3872 0898 91       		.byte	0x91
  3873 0899 74       		.sleb128 -12
  3874 089a 00       		.byte	0
  3875 089b 14       		.uleb128 0x14
- 3876 089c C1060000 		.4byte	.LASF110
+ 3876 089c B8060000 		.4byte	.LASF110
  3877 08a0 01       		.byte	0x1
  3878 08a1 DF0A     		.2byte	0xadf
  3879 08a3 00000000 		.4byte	.LFB49
@@ -7103,7 +7103,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3891 08bd 74       		.sleb128 -12
  3892 08be 00       		.byte	0
  3893 08bf 11       		.uleb128 0x11
- 3894 08c0 62020000 		.4byte	.LASF98
+ 3894 08c0 17020000 		.4byte	.LASF98
  3895 08c4 01       		.byte	0x1
  3896 08c5 FF0A     		.2byte	0xaff
  3897 08c7 00000000 		.4byte	.LFB50
@@ -7112,7 +7112,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3900 08d0 9C       		.byte	0x9c
  3901 08d1 E5080000 		.4byte	0x8e5
  3902 08d5 0B       		.uleb128 0xb
- 3903 08d6 53050000 		.4byte	.LASF99
+ 3903 08d6 03050000 		.4byte	.LASF99
  3904 08da 01       		.byte	0x1
  3905 08db FF0A     		.2byte	0xaff
  3906 08dd E5080000 		.4byte	0x8e5
@@ -7131,18 +7131,18 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3919 08f9 04       		.byte	0x4
  3920 08fa 00       		.byte	0
  3921 08fb 17       		.uleb128 0x17
- 3922 08fc 32050000 		.4byte	.LASF100
+ 3922 08fc E2040000 		.4byte	.LASF100
  3923 0900 01       		.byte	0x1
  3924 0901 22       		.byte	0x22
  3925 0902 EB080000 		.4byte	0x8eb
  3926 0906 05       		.uleb128 0x5
  3927 0907 03       		.byte	0x3
  3928 0908 00000000 		.4byte	CySysTickCallbacks
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 120
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 120
 
 
  3929 090c 18       		.uleb128 0x18
- 3930 090d 14040000 		.4byte	.LASF101
+ 3930 090d C9030000 		.4byte	.LASF101
  3931 0911 01       		.byte	0x1
  3932 0912 1B       		.byte	0x1b
  3933 0913 83000000 		.4byte	0x83
@@ -7150,7 +7150,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3935 0918 03       		.byte	0x3
  3936 0919 00000000 		.4byte	cydelayFreqHz
  3937 091d 18       		.uleb128 0x18
- 3938 091e A6010000 		.4byte	.LASF102
+ 3938 091e 5B010000 		.4byte	.LASF102
  3939 0922 01       		.byte	0x1
  3940 0923 1C       		.byte	0x1c
  3941 0924 83000000 		.4byte	0x83
@@ -7158,7 +7158,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3943 0929 03       		.byte	0x3
  3944 092a 00000000 		.4byte	cydelayFreqKhz
  3945 092e 18       		.uleb128 0x18
- 3946 092f 8E050000 		.4byte	.LASF103
+ 3946 092f 3E050000 		.4byte	.LASF103
  3947 0933 01       		.byte	0x1
  3948 0934 1D       		.byte	0x1d
  3949 0935 6B000000 		.4byte	0x6b
@@ -7166,7 +7166,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3951 093a 03       		.byte	0x3
  3952 093b 00000000 		.4byte	cydelayFreqMhz
  3953 093f 18       		.uleb128 0x18
- 3954 0940 35020000 		.4byte	.LASF104
+ 3954 0940 EA010000 		.4byte	.LASF104
  3955 0944 01       		.byte	0x1
  3956 0945 1E       		.byte	0x1e
  3957 0946 83000000 		.4byte	0x83
@@ -7174,7 +7174,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3959 094b 03       		.byte	0x3
  3960 094c 00000000 		.4byte	cydelay32kMs
  3961 0950 18       		.uleb128 0x18
- 3962 0951 D3000000 		.4byte	.LASF105
+ 3962 0951 88000000 		.4byte	.LASF105
  3963 0955 01       		.byte	0x1
  3964 0956 35       		.byte	0x35
  3965 0957 83000000 		.4byte	0x83
@@ -7189,7 +7189,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3974 096f 2D       		.byte	0x2d
  3975 0970 00       		.byte	0
  3976 0971 18       		.uleb128 0x18
- 3977 0972 F1030000 		.4byte	.LASF106
+ 3977 0972 A6030000 		.4byte	.LASF106
  3978 0976 01       		.byte	0x1
  3979 0977 3A       		.byte	0x3a
  3980 0978 82090000 		.4byte	0x982
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  3983 097e 00000000 		.4byte	cyImoFreqMhz2Reg
  3984 0982 19       		.uleb128 0x19
  3985 0983 61090000 		.4byte	0x961
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 121
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 121
 
 
  3986 0987 00       		.byte	0
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  4040 0033 13       		.uleb128 0x13
  4041 0034 00       		.byte	0
  4042 0035 00       		.byte	0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 122
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 122
 
 
  4043 0036 05       		.uleb128 0x5
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  4097 006c 18       		.uleb128 0x18
  4098 006d 9742     		.uleb128 0x2117
  4099 006f 19       		.uleb128 0x19
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 123
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 123
 
 
  4100 0070 00       		.byte	0
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  4154 00a7 18       		.uleb128 0x18
  4155 00a8 00       		.byte	0
  4156 00a9 00       		.byte	0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 124
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 124
 
 
  4157 00aa 0D       		.uleb128 0xd
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  4211 00e2 19       		.uleb128 0x19
  4212 00e3 03       		.uleb128 0x3
  4213 00e4 0E       		.uleb128 0xe
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 125
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 125
 
 
  4214 00e5 3A       		.uleb128 0x3a
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  4268 011d 3B       		.uleb128 0x3b
  4269 011e 05       		.uleb128 0x5
  4270 011f 27       		.uleb128 0x27
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 126
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 126
 
 
  4271 0120 19       		.uleb128 0x19
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  4325 0158 03       		.uleb128 0x3
  4326 0159 0E       		.uleb128 0xe
  4327 015a 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 127
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 127
 
 
  4328 015b 0B       		.uleb128 0xb
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  4382 0192 0E       		.uleb128 0xe
  4383 0193 3A       		.uleb128 0x3a
  4384 0194 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 128
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 128
 
 
  4385 0195 3B       		.uleb128 0x3b
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  4439 0080 00000000 		.4byte	.LFB16
  4440 0084 30000000 		.4byte	.LFE16-.LFB16
  4441 0088 00000000 		.4byte	.LFB17
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 129
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 129
 
 
  4442 008c 24000000 		.4byte	.LFE17-.LFB17
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  4496 0164 34000000 		.4byte	.LFE44-.LFB44
  4497 0168 00000000 		.4byte	.LFB45
  4498 016c 18000000 		.4byte	.LFE45-.LFB45
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 130
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 130
 
 
  4499 0170 00000000 		.4byte	.LFB46
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  4553 00a0 00000000 		.4byte	.LFB22
  4554 00a4 36000000 		.4byte	.LFE22
  4555 00a8 00000000 		.4byte	.LFB23
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 131
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 131
 
 
  4556 00ac A8000000 		.4byte	.LFE23
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  4610 0184 C0000000 		.4byte	.LFE50
  4611 0188 00000000 		.4byte	0
  4612 018c 00000000 		.4byte	0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 132
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 132
 
 
  4613              		.section	.debug_line,"",%progbits
@@ -7889,555 +7889,555 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 1
  4625      57726974 
  4625      65486663 
  4625      6C6B4469 
- 4626              	.LASF109:
- 4627 0040 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\UC Davis\\EEC 136AB\\"
- 4627      73657273 
- 4627      5C4D6174 
- 4627      74686577 
- 4627      5C446F63 
- 4628 006e 50536F43 		.ascii	"PSoC\\proc_test\\proc_v1.cydsn\000"
- 4628      5C70726F 
- 4628      635F7465 
- 4628      73745C70 
- 4628      726F635F 
- 4629              	.LASF58:
- 4630 008b 6F6C6449 		.ascii	"oldIsr\000"
- 4630      737200
- 4631              	.LASF96:
- 4632 0092 72657456 		.ascii	"retVal\000"
- 4632      616C00
- 4633              	.LASF51:
- 4634 0099 43794469 		.ascii	"CyDisableInts\000"
- 4634      7361626C 
- 4634      65496E74 
- 4634      7300
- 4635              	.LASF35:
- 4636 00a7 63757272 		.ascii	"currentImoTrim2Value\000"
- 4636      656E7449 
- 4636      6D6F5472 
- 4636      696D3256 
- 4636      616C7565 
- 4637              	.LASF7:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 133
+ 4626              	.LASF58:
+ 4627 0040 6F6C6449 		.ascii	"oldIsr\000"
+ 4627      737200
+ 4628              	.LASF96:
+ 4629 0047 72657456 		.ascii	"retVal\000"
+ 4629      616C00
+ 4630              	.LASF51:
+ 4631 004e 43794469 		.ascii	"CyDisableInts\000"
+ 4631      7361626C 
+ 4631      65496E74 
+ 4631      7300
+ 4632              	.LASF35:
+ 4633 005c 63757272 		.ascii	"currentImoTrim2Value\000"
+ 4633      656E7449 
+ 4633      6D6F5472 
+ 4633      696D3256 
+ 4633      616C7565 
+ 4634              	.LASF7:
+ 4635 0071 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 4635      206C6F6E 
+ 4635      6720756E 
+ 4635      7369676E 
+ 4635      65642069 
+ 4636              	.LASF105:
+ 4637 0088 43795379 		.ascii	"CySysTickInitVar\000"
+ 4637      73546963 
+ 4637      6B496E69 
+ 4637      74566172 
+ 4637      00
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 133
 
 
- 4638 00bc 6C6F6E67 		.ascii	"long long unsigned int\000"
- 4638      206C6F6E 
- 4638      6720756E 
- 4638      7369676E 
- 4638      65642069 
- 4639              	.LASF105:
- 4640 00d3 43795379 		.ascii	"CySysTickInitVar\000"
- 4640      73546963 
- 4640      6B496E69 
- 4640      74566172 
- 4640      00
- 4641              	.LASF53:
- 4642 00e4 4379456E 		.ascii	"CyEnableInts\000"
- 4642      61626C65 
- 4642      496E7473 
- 4642      00
- 4643              	.LASF74:
- 4644 00f1 4379536F 		.ascii	"CySoftwareReset\000"
- 4644      66747761 
- 4644      72655265 
- 4644      73657400 
- 4645              	.LASF84:
- 4646 0101 43795379 		.ascii	"CySysTickEnableInterrupt\000"
- 4646      73546963 
- 4646      6B456E61 
- 4646      626C6549 
- 4646      6E746572 
- 4647              	.LASF69:
- 4648 011a 4379496E 		.ascii	"CyIntGetState\000"
- 4648      74476574 
- 4648      53746174 
- 4648      6500
- 4649              	.LASF6:
- 4650 0128 6C6F6E67 		.ascii	"long long int\000"
- 4650      206C6F6E 
- 4650      6720696E 
- 4650      7400
- 4651              	.LASF0:
- 4652 0136 7369676E 		.ascii	"signed char\000"
- 4652      65642063 
- 4652      68617200 
- 4653              	.LASF31:
- 4654 0142 66726571 		.ascii	"freq\000"
- 4654      00
- 4655              	.LASF79:
- 4656 0147 43794465 		.ascii	"CyDelayFreq\000"
- 4656      6C617946 
- 4656      72657100 
- 4657              	.LASF23:
- 4658 0153 696E7465 		.ascii	"interruptState\000"
- 4658      72727570 
- 4658      74537461 
- 4658      746500
- 4659              	.LASF88:
- 4660 0162 43795379 		.ascii	"CySysTickGetReload\000"
- 4660      73546963 
- 4660      6B476574 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 134
+ 4638              	.LASF53:
+ 4639 0099 4379456E 		.ascii	"CyEnableInts\000"
+ 4639      61626C65 
+ 4639      496E7473 
+ 4639      00
+ 4640              	.LASF74:
+ 4641 00a6 4379536F 		.ascii	"CySoftwareReset\000"
+ 4641      66747761 
+ 4641      72655265 
+ 4641      73657400 
+ 4642              	.LASF84:
+ 4643 00b6 43795379 		.ascii	"CySysTickEnableInterrupt\000"
+ 4643      73546963 
+ 4643      6B456E61 
+ 4643      626C6549 
+ 4643      6E746572 
+ 4644              	.LASF69:
+ 4645 00cf 4379496E 		.ascii	"CyIntGetState\000"
+ 4645      74476574 
+ 4645      53746174 
+ 4645      6500
+ 4646              	.LASF6:
+ 4647 00dd 6C6F6E67 		.ascii	"long long int\000"
+ 4647      206C6F6E 
+ 4647      6720696E 
+ 4647      7400
+ 4648              	.LASF0:
+ 4649 00eb 7369676E 		.ascii	"signed char\000"
+ 4649      65642063 
+ 4649      68617200 
+ 4650              	.LASF31:
+ 4651 00f7 66726571 		.ascii	"freq\000"
+ 4651      00
+ 4652              	.LASF79:
+ 4653 00fc 43794465 		.ascii	"CyDelayFreq\000"
+ 4653      6C617946 
+ 4653      72657100 
+ 4654              	.LASF23:
+ 4655 0108 696E7465 		.ascii	"interruptState\000"
+ 4655      72727570 
+ 4655      74537461 
+ 4655      746500
+ 4656              	.LASF88:
+ 4657 0117 43795379 		.ascii	"CySysTickGetReload\000"
+ 4657      73546963 
+ 4657      6B476574 
+ 4657      52656C6F 
+ 4657      616400
+ 4658              	.LASF4:
+ 4659 012a 6C6F6E67 		.ascii	"long int\000"
+ 4659      20696E74 
+ 4659      00
+ 4660              	.LASF70:
+ 4661 0133 4379496E 		.ascii	"CyIntDisable\000"
+ 4661      74446973 
+ 4661      61626C65 
+ 4661      00
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 134
 
 
- 4660      52656C6F 
- 4660      616400
- 4661              	.LASF4:
- 4662 0175 6C6F6E67 		.ascii	"long int\000"
- 4662      20696E74 
- 4662      00
- 4663              	.LASF70:
- 4664 017e 4379496E 		.ascii	"CyIntDisable\000"
- 4664      74446973 
- 4664      61626C65 
- 4664      00
- 4665              	.LASF97:
- 4666 018b 43795379 		.ascii	"CySysTickGetCallback\000"
- 4666      73546963 
- 4666      6B476574 
- 4666      43616C6C 
- 4666      6261636B 
- 4667              	.LASF9:
- 4668 01a0 75696E74 		.ascii	"uint8\000"
- 4668      3800
- 4669              	.LASF102:
- 4670 01a6 63796465 		.ascii	"cydelayFreqKhz\000"
- 4670      6C617946 
- 4670      7265714B 
- 4670      687A00
- 4671              	.LASF77:
- 4672 01b5 43794465 		.ascii	"CyDelayUs\000"
- 4672      6C617955 
- 4672      7300
- 4673              	.LASF13:
- 4674 01bf 646F7562 		.ascii	"double\000"
- 4674      6C6500
- 4675              	.LASF65:
- 4676 01c6 73686966 		.ascii	"shift\000"
- 4676      7400
- 4677              	.LASF48:
- 4678 01cc 43795379 		.ascii	"CySysLvdClearInterrupt\000"
- 4678      734C7664 
- 4678      436C6561 
- 4678      72496E74 
- 4678      65727275 
- 4679              	.LASF11:
- 4680 01e3 75696E74 		.ascii	"uint32\000"
- 4680      333200
- 4681              	.LASF42:
- 4682 01ea 43795379 		.ascii	"CySysClkEcoReadStatus\000"
- 4682      73436C6B 
- 4682      45636F52 
- 4682      65616453 
- 4682      74617475 
- 4683              	.LASF56:
- 4684 0200 6E756D62 		.ascii	"number\000"
- 4684      657200
- 4685              	.LASF54:
- 4686 0207 6D61736B 		.ascii	"mask\000"
- 4686      00
- 4687              	.LASF37:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 135
+ 4662              	.LASF97:
+ 4663 0140 43795379 		.ascii	"CySysTickGetCallback\000"
+ 4663      73546963 
+ 4663      6B476574 
+ 4663      43616C6C 
+ 4663      6261636B 
+ 4664              	.LASF9:
+ 4665 0155 75696E74 		.ascii	"uint8\000"
+ 4665      3800
+ 4666              	.LASF102:
+ 4667 015b 63796465 		.ascii	"cydelayFreqKhz\000"
+ 4667      6C617946 
+ 4667      7265714B 
+ 4667      687A00
+ 4668              	.LASF77:
+ 4669 016a 43794465 		.ascii	"CyDelayUs\000"
+ 4669      6C617955 
+ 4669      7300
+ 4670              	.LASF13:
+ 4671 0174 646F7562 		.ascii	"double\000"
+ 4671      6C6500
+ 4672              	.LASF65:
+ 4673 017b 73686966 		.ascii	"shift\000"
+ 4673      7400
+ 4674              	.LASF48:
+ 4675 0181 43795379 		.ascii	"CySysLvdClearInterrupt\000"
+ 4675      734C7664 
+ 4675      436C6561 
+ 4675      72496E74 
+ 4675      65727275 
+ 4676              	.LASF11:
+ 4677 0198 75696E74 		.ascii	"uint32\000"
+ 4677      333200
+ 4678              	.LASF42:
+ 4679 019f 43795379 		.ascii	"CySysClkEcoReadStatus\000"
+ 4679      73436C6B 
+ 4679      45636F52 
+ 4679      65616453 
+ 4679      74617475 
+ 4680              	.LASF56:
+ 4681 01b5 6E756D62 		.ascii	"number\000"
+ 4681      657200
+ 4682              	.LASF54:
+ 4683 01bc 6D61736B 		.ascii	"mask\000"
+ 4683      00
+ 4684              	.LASF37:
+ 4685 01c1 43795379 		.ascii	"CySysClkGetSysclkSource\000"
+ 4685      73436C6B 
+ 4685      47657453 
+ 4685      7973636C 
+ 4685      6B536F75 
+ 4686              	.LASF67:
+ 4687 01d9 4379496E 		.ascii	"CyIntGetPriority\000"
+ 4687      74476574 
+ 4687      5072696F 
+ 4687      72697479 
+ 4687      00
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 135
 
 
- 4688 020c 43795379 		.ascii	"CySysClkGetSysclkSource\000"
- 4688      73436C6B 
- 4688      47657453 
- 4688      7973636C 
- 4688      6B536F75 
- 4689              	.LASF67:
- 4690 0224 4379496E 		.ascii	"CyIntGetPriority\000"
- 4690      74476574 
- 4690      5072696F 
- 4690      72697479 
- 4690      00
- 4691              	.LASF104:
- 4692 0235 63796465 		.ascii	"cydelay32kMs\000"
- 4692      6C617933 
- 4692      326B4D73 
- 4692      00
- 4693              	.LASF81:
- 4694 0242 43795379 		.ascii	"CySysTickInit\000"
- 4694      73546963 
- 4694      6B496E69 
- 4694      7400
- 4695              	.LASF66:
- 4696 0250 76616C75 		.ascii	"value\000"
- 4696      6500
- 4697              	.LASF91:
- 4698 0256 636C6F63 		.ascii	"clockSource\000"
- 4698      6B536F75 
- 4698      72636500 
- 4699              	.LASF98:
- 4700 0262 43794765 		.ascii	"CyGetUniqueId\000"
- 4700      74556E69 
- 4700      71756549 
- 4700      6400
- 4701              	.LASF92:
- 4702 0270 43795379 		.ascii	"CySysTickGetCountFlag\000"
- 4702      73546963 
- 4702      6B476574 
- 4702      436F756E 
- 4702      74466C61 
- 4703              	.LASF8:
- 4704 0286 756E7369 		.ascii	"unsigned int\000"
- 4704      676E6564 
- 4704      20696E74 
- 4704      00
- 4705              	.LASF93:
- 4706 0293 43795379 		.ascii	"CySysTickClear\000"
- 4706      73546963 
- 4706      6B436C65 
- 4706      617200
- 4707              	.LASF5:
- 4708 02a2 6C6F6E67 		.ascii	"long unsigned int\000"
- 4708      20756E73 
- 4708      69676E65 
- 4708      6420696E 
- 4708      7400
- 4709              	.LASF87:
- 4710 02b4 43795379 		.ascii	"CySysLvdGetInterruptSource\000"
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 136
+ 4688              	.LASF104:
+ 4689 01ea 63796465 		.ascii	"cydelay32kMs\000"
+ 4689      6C617933 
+ 4689      326B4D73 
+ 4689      00
+ 4690              	.LASF81:
+ 4691 01f7 43795379 		.ascii	"CySysTickInit\000"
+ 4691      73546963 
+ 4691      6B496E69 
+ 4691      7400
+ 4692              	.LASF66:
+ 4693 0205 76616C75 		.ascii	"value\000"
+ 4693      6500
+ 4694              	.LASF91:
+ 4695 020b 636C6F63 		.ascii	"clockSource\000"
+ 4695      6B536F75 
+ 4695      72636500 
+ 4696              	.LASF98:
+ 4697 0217 43794765 		.ascii	"CyGetUniqueId\000"
+ 4697      74556E69 
+ 4697      71756549 
+ 4697      6400
+ 4698              	.LASF92:
+ 4699 0225 43795379 		.ascii	"CySysTickGetCountFlag\000"
+ 4699      73546963 
+ 4699      6B476574 
+ 4699      436F756E 
+ 4699      74466C61 
+ 4700              	.LASF8:
+ 4701 023b 756E7369 		.ascii	"unsigned int\000"
+ 4701      676E6564 
+ 4701      20696E74 
+ 4701      00
+ 4702              	.LASF93:
+ 4703 0248 43795379 		.ascii	"CySysTickClear\000"
+ 4703      73546963 
+ 4703      6B436C65 
+ 4703      617200
+ 4704              	.LASF5:
+ 4705 0257 6C6F6E67 		.ascii	"long unsigned int\000"
+ 4705      20756E73 
+ 4705      69676E65 
+ 4705      6420696E 
+ 4705      7400
+ 4706              	.LASF87:
+ 4707 0269 43795379 		.ascii	"CySysLvdGetInterruptSource\000"
+ 4707      734C7664 
+ 4707      47657449 
+ 4707      6E746572 
+ 4707      72757074 
+ 4708              	.LASF22:
+ 4709 0284 43795379 		.ascii	"CySysClkImoStop\000"
+ 4709      73436C6B 
+ 4709      496D6F53 
+ 4709      746F7000 
+ 4710              	.LASF71:
+ 4711 0294 4379496E 		.ascii	"CyIntSetPending\000"
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 136
 
 
- 4710      734C7664 
- 4710      47657449 
- 4710      6E746572 
- 4710      72757074 
- 4711              	.LASF22:
- 4712 02cf 43795379 		.ascii	"CySysClkImoStop\000"
- 4712      73436C6B 
- 4712      496D6F53 
- 4712      746F7000 
- 4713              	.LASF71:
- 4714 02df 4379496E 		.ascii	"CyIntSetPending\000"
- 4714      74536574 
- 4714      50656E64 
- 4714      696E6700 
- 4715              	.LASF49:
- 4716 02ef 43795379 		.ascii	"CySysGetResetReason\000"
- 4716      73476574 
- 4716      52657365 
- 4716      74526561 
- 4716      736F6E00 
- 4717              	.LASF3:
- 4718 0303 73686F72 		.ascii	"short unsigned int\000"
- 4718      7420756E 
- 4718      7369676E 
- 4718      65642069 
- 4718      6E7400
- 4719              	.LASF90:
- 4720 0316 43795379 		.ascii	"CySysTickSetClockSource\000"
- 4720      73546963 
- 4720      6B536574 
- 4720      436C6F63 
- 4720      6B536F75 
- 4721              	.LASF61:
- 4722 032e 4379496E 		.ascii	"CyIntSetVector\000"
- 4722      74536574 
- 4722      56656374 
- 4722      6F7200
- 4723              	.LASF108:
- 4724 033d 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\CyLib.c\000"
- 4724      6E657261 
- 4724      7465645F 
- 4724      536F7572 
- 4724      63655C50 
- 4725              	.LASF64:
- 4726 035e 7072696F 		.ascii	"priority\000"
- 4726      72697479 
- 4726      00
- 4727              	.LASF30:
- 4728 0367 43795379 		.ascii	"CySysClkWriteImoFreq\000"
- 4728      73436C6B 
- 4728      57726974 
- 4728      65496D6F 
- 4728      46726571 
- 4729              	.LASF55:
- 4730 037c 4379496E 		.ascii	"CyIntSetSysVector\000"
- 4730      74536574 
- 4730      53797356 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 137
+ 4711      74536574 
+ 4711      50656E64 
+ 4711      696E6700 
+ 4712              	.LASF49:
+ 4713 02a4 43795379 		.ascii	"CySysGetResetReason\000"
+ 4713      73476574 
+ 4713      52657365 
+ 4713      74526561 
+ 4713      736F6E00 
+ 4714              	.LASF3:
+ 4715 02b8 73686F72 		.ascii	"short unsigned int\000"
+ 4715      7420756E 
+ 4715      7369676E 
+ 4715      65642069 
+ 4715      6E7400
+ 4716              	.LASF90:
+ 4717 02cb 43795379 		.ascii	"CySysTickSetClockSource\000"
+ 4717      73546963 
+ 4717      6B536574 
+ 4717      436C6F63 
+ 4717      6B536F75 
+ 4718              	.LASF61:
+ 4719 02e3 4379496E 		.ascii	"CyIntSetVector\000"
+ 4719      74536574 
+ 4719      56656374 
+ 4719      6F7200
+ 4720              	.LASF108:
+ 4721 02f2 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\CyLib.c\000"
+ 4721      6E657261 
+ 4721      7465645F 
+ 4721      536F7572 
+ 4721      63655C50 
+ 4722              	.LASF64:
+ 4723 0313 7072696F 		.ascii	"priority\000"
+ 4723      72697479 
+ 4723      00
+ 4724              	.LASF30:
+ 4725 031c 43795379 		.ascii	"CySysClkWriteImoFreq\000"
+ 4725      73436C6B 
+ 4725      57726974 
+ 4725      65496D6F 
+ 4725      46726571 
+ 4726              	.LASF55:
+ 4727 0331 4379496E 		.ascii	"CyIntSetSysVector\000"
+ 4727      74536574 
+ 4727      53797356 
+ 4727      6563746F 
+ 4727      7200
+ 4728              	.LASF17:
+ 4729 0343 72656733 		.ascii	"reg32\000"
+ 4729      3200
+ 4730              	.LASF80:
+ 4731 0349 43795379 		.ascii	"CySysTickStart\000"
+ 4731      73546963 
+ 4731      6B537461 
+ 4731      727400
+ 4732              	.LASF40:
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 137
 
 
- 4730      6563746F 
- 4730      7200
- 4731              	.LASF17:
- 4732 038e 72656733 		.ascii	"reg32\000"
- 4732      3200
- 4733              	.LASF80:
- 4734 0394 43795379 		.ascii	"CySysTickStart\000"
- 4734      73546963 
- 4734      6B537461 
- 4734      727400
- 4735              	.LASF40:
- 4736 03a3 72657475 		.ascii	"returnStatus\000"
- 4736      726E5374 
- 4736      61747573 
- 4736      00
- 4737              	.LASF19:
- 4738 03b0 73697A65 		.ascii	"sizetype\000"
- 4738      74797065 
- 4738      00
- 4739              	.LASF72:
- 4740 03b9 4379496E 		.ascii	"CyIntClearPending\000"
- 4740      74436C65 
- 4740      61725065 
- 4740      6E64696E 
- 4740      6700
- 4741              	.LASF57:
- 4742 03cb 61646472 		.ascii	"address\000"
- 4742      65737300 
- 4743              	.LASF33:
- 4744 03d3 62675472 		.ascii	"bgTrim5\000"
- 4744      696D3500 
- 4745              	.LASF25:
- 4746 03db 73797363 		.ascii	"sysclkSource\000"
- 4746      6C6B536F 
- 4746      75726365 
- 4746      00
- 4747              	.LASF95:
- 4748 03e8 66756E63 		.ascii	"function\000"
- 4748      74696F6E 
- 4748      00
- 4749              	.LASF106:
- 4750 03f1 6379496D 		.ascii	"cyImoFreqMhz2Reg\000"
- 4750      6F467265 
- 4750      714D687A 
- 4750      32526567 
- 4750      00
- 4751              	.LASF89:
- 4752 0402 43795379 		.ascii	"CySysTickGetValue\000"
- 4752      73546963 
- 4752      6B476574 
- 4752      56616C75 
- 4752      6500
- 4753              	.LASF101:
- 4754 0414 63796465 		.ascii	"cydelayFreqHz\000"
- 4754      6C617946 
- 4754      72657148 
- 4754      7A00
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 138
+ 4733 0358 72657475 		.ascii	"returnStatus\000"
+ 4733      726E5374 
+ 4733      61747573 
+ 4733      00
+ 4734              	.LASF19:
+ 4735 0365 73697A65 		.ascii	"sizetype\000"
+ 4735      74797065 
+ 4735      00
+ 4736              	.LASF72:
+ 4737 036e 4379496E 		.ascii	"CyIntClearPending\000"
+ 4737      74436C65 
+ 4737      61725065 
+ 4737      6E64696E 
+ 4737      6700
+ 4738              	.LASF57:
+ 4739 0380 61646472 		.ascii	"address\000"
+ 4739      65737300 
+ 4740              	.LASF33:
+ 4741 0388 62675472 		.ascii	"bgTrim5\000"
+ 4741      696D3500 
+ 4742              	.LASF25:
+ 4743 0390 73797363 		.ascii	"sysclkSource\000"
+ 4743      6C6B536F 
+ 4743      75726365 
+ 4743      00
+ 4744              	.LASF95:
+ 4745 039d 66756E63 		.ascii	"function\000"
+ 4745      74696F6E 
+ 4745      00
+ 4746              	.LASF106:
+ 4747 03a6 6379496D 		.ascii	"cyImoFreqMhz2Reg\000"
+ 4747      6F467265 
+ 4747      714D687A 
+ 4747      32526567 
+ 4747      00
+ 4748              	.LASF89:
+ 4749 03b7 43795379 		.ascii	"CySysTickGetValue\000"
+ 4749      73546963 
+ 4749      6B476574 
+ 4749      56616C75 
+ 4749      6500
+ 4750              	.LASF101:
+ 4751 03c9 63796465 		.ascii	"cydelayFreqHz\000"
+ 4751      6C617946 
+ 4751      72657148 
+ 4751      7A00
+ 4752              	.LASF63:
+ 4753 03d7 4379496E 		.ascii	"CyIntSetPriority\000"
+ 4753      74536574 
+ 4753      5072696F 
+ 4753      72697479 
+ 4753      00
+ 4754              	.LASF12:
+ 4755 03e8 666C6F61 		.ascii	"float\000"
+ 4755      7400
+ 4756              	.LASF45:
+ 4757 03ee 43795379 		.ascii	"CySysLvdEnable\000"
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 138
 
 
- 4755              	.LASF63:
- 4756 0422 4379496E 		.ascii	"CyIntSetPriority\000"
- 4756      74536574 
- 4756      5072696F 
- 4756      72697479 
- 4756      00
- 4757              	.LASF12:
- 4758 0433 666C6F61 		.ascii	"float\000"
- 4758      7400
- 4759              	.LASF45:
- 4760 0439 43795379 		.ascii	"CySysLvdEnable\000"
- 4760      734C7664 
- 4760      456E6162 
- 4760      6C6500
- 4761              	.LASF20:
- 4762 0448 63795379 		.ascii	"cySysTickCallback\000"
- 4762      73546963 
- 4762      6B43616C 
- 4762      6C626163 
- 4762      6B00
- 4763              	.LASF62:
- 4764 045a 4379496E 		.ascii	"CyIntGetVector\000"
- 4764      74476574 
- 4764      56656374 
- 4764      6F7200
- 4765              	.LASF76:
- 4766 0469 6D696C6C 		.ascii	"milliseconds\000"
- 4766      69736563 
- 4766      6F6E6473 
- 4766      00
- 4767              	.LASF16:
- 4768 0476 72656738 		.ascii	"reg8\000"
- 4768      00
- 4769              	.LASF46:
- 4770 047b 74687265 		.ascii	"threshold\000"
- 4770      73686F6C 
- 4770      6400
- 4771              	.LASF73:
- 4772 0485 43794861 		.ascii	"CyHalt\000"
- 4772      6C7400
- 4773              	.LASF1:
- 4774 048c 756E7369 		.ascii	"unsigned char\000"
- 4774      676E6564 
- 4774      20636861 
- 4774      7200
- 4775              	.LASF2:
- 4776 049a 73686F72 		.ascii	"short int\000"
- 4776      7420696E 
- 4776      7400
- 4777              	.LASF68:
- 4778 04a4 4379496E 		.ascii	"CyIntEnable\000"
- 4778      74456E61 
- 4778      626C6500 
- 4779              	.LASF60:
- 4780 04b0 4379496E 		.ascii	"CyIntGetSysVector\000"
- 4780      74476574 
- 4780      53797356 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 139
+ 4757      734C7664 
+ 4757      456E6162 
+ 4757      6C6500
+ 4758              	.LASF20:
+ 4759 03fd 63795379 		.ascii	"cySysTickCallback\000"
+ 4759      73546963 
+ 4759      6B43616C 
+ 4759      6C626163 
+ 4759      6B00
+ 4760              	.LASF62:
+ 4761 040f 4379496E 		.ascii	"CyIntGetVector\000"
+ 4761      74476574 
+ 4761      56656374 
+ 4761      6F7200
+ 4762              	.LASF76:
+ 4763 041e 6D696C6C 		.ascii	"milliseconds\000"
+ 4763      69736563 
+ 4763      6F6E6473 
+ 4763      00
+ 4764              	.LASF16:
+ 4765 042b 72656738 		.ascii	"reg8\000"
+ 4765      00
+ 4766              	.LASF46:
+ 4767 0430 74687265 		.ascii	"threshold\000"
+ 4767      73686F6C 
+ 4767      6400
+ 4768              	.LASF73:
+ 4769 043a 43794861 		.ascii	"CyHalt\000"
+ 4769      6C7400
+ 4770              	.LASF1:
+ 4771 0441 756E7369 		.ascii	"unsigned char\000"
+ 4771      676E6564 
+ 4771      20636861 
+ 4771      7200
+ 4772              	.LASF2:
+ 4773 044f 73686F72 		.ascii	"short int\000"
+ 4773      7420696E 
+ 4773      7400
+ 4774              	.LASF68:
+ 4775 0459 4379496E 		.ascii	"CyIntEnable\000"
+ 4775      74456E61 
+ 4775      626C6500 
+ 4776              	.LASF60:
+ 4777 0465 4379496E 		.ascii	"CyIntGetSysVector\000"
+ 4777      74476574 
+ 4777      53797356 
+ 4777      6563746F 
+ 4777      7200
+ 4778              	.LASF28:
+ 4779 0477 636C6B53 		.ascii	"clkSelect\000"
+ 4779      656C6563 
+ 4779      7400
+ 4780              	.LASF38:
+ 4781 0481 43795379 		.ascii	"CySysClkEcoStart\000"
+ 4781      73436C6B 
+ 4781      45636F53 
+ 4781      74617274 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 139
 
 
- 4780      6563746F 
- 4780      7200
- 4781              	.LASF28:
- 4782 04c2 636C6B53 		.ascii	"clkSelect\000"
- 4782      656C6563 
- 4782      7400
- 4783              	.LASF38:
- 4784 04cc 43795379 		.ascii	"CySysClkEcoStart\000"
- 4784      73436C6B 
- 4784      45636F53 
- 4784      74617274 
- 4784      00
- 4785              	.LASF50:
- 4786 04dd 72656173 		.ascii	"reason\000"
- 4786      6F6E00
- 4787              	.LASF14:
- 4788 04e4 63686172 		.ascii	"char\000"
- 4788      00
- 4789              	.LASF18:
- 4790 04e9 63796973 		.ascii	"cyisraddress\000"
- 4790      72616464 
- 4790      72657373 
- 4790      00
- 4791              	.LASF82:
- 4792 04f6 43795379 		.ascii	"CySysTickEnable\000"
- 4792      73546963 
- 4792      6B456E61 
- 4792      626C6500 
- 4793              	.LASF27:
- 4794 0506 43795379 		.ascii	"CySysClkWriteSysclkDiv\000"
- 4794      73436C6B 
- 4794      57726974 
- 4794      65537973 
- 4794      636C6B44 
- 4795              	.LASF94:
- 4796 051d 43795379 		.ascii	"CySysTickSetCallback\000"
- 4796      73546963 
- 4796      6B536574 
- 4796      43616C6C 
- 4796      6261636B 
- 4797              	.LASF100:
- 4798 0532 43795379 		.ascii	"CySysTickCallbacks\000"
- 4798      73546963 
- 4798      6B43616C 
- 4798      6C626163 
- 4798      6B7300
- 4799              	.LASF36:
- 4800 0545 696D6F54 		.ascii	"imoTrim1Value\000"
- 4800      72696D31 
- 4800      56616C75 
- 4800      6500
- 4801              	.LASF99:
- 4802 0553 756E6971 		.ascii	"uniqueId\000"
- 4802      75654964 
- 4802      00
- 4803              	.LASF75:
- 4804 055c 43794465 		.ascii	"CyDelay\000"
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 140
+ 4781      00
+ 4782              	.LASF50:
+ 4783 0492 72656173 		.ascii	"reason\000"
+ 4783      6F6E00
+ 4784              	.LASF14:
+ 4785 0499 63686172 		.ascii	"char\000"
+ 4785      00
+ 4786              	.LASF18:
+ 4787 049e 63796973 		.ascii	"cyisraddress\000"
+ 4787      72616464 
+ 4787      72657373 
+ 4787      00
+ 4788              	.LASF82:
+ 4789 04ab 43795379 		.ascii	"CySysTickEnable\000"
+ 4789      73546963 
+ 4789      6B456E61 
+ 4789      626C6500 
+ 4790              	.LASF27:
+ 4791 04bb 43795379 		.ascii	"CySysClkWriteSysclkDiv\000"
+ 4791      73436C6B 
+ 4791      57726974 
+ 4791      65537973 
+ 4791      636C6B44 
+ 4792              	.LASF41:
+ 4793 04d2 43795379 		.ascii	"CySysClkEcoStop\000"
+ 4793      73436C6B 
+ 4793      45636F53 
+ 4793      746F7000 
+ 4794              	.LASF100:
+ 4795 04e2 43795379 		.ascii	"CySysTickCallbacks\000"
+ 4795      73546963 
+ 4795      6B43616C 
+ 4795      6C626163 
+ 4795      6B7300
+ 4796              	.LASF36:
+ 4797 04f5 696D6F54 		.ascii	"imoTrim1Value\000"
+ 4797      72696D31 
+ 4797      56616C75 
+ 4797      6500
+ 4798              	.LASF99:
+ 4799 0503 756E6971 		.ascii	"uniqueId\000"
+ 4799      75654964 
+ 4799      00
+ 4800              	.LASF75:
+ 4801 050c 43794465 		.ascii	"CyDelay\000"
+ 4801      6C617900 
+ 4802              	.LASF85:
+ 4803 0514 43795379 		.ascii	"CySysTickDisableInterrupt\000"
+ 4803      73546963 
+ 4803      6B446973 
+ 4803      61626C65 
+ 4803      496E7465 
+ 4804              	.LASF47:
+ 4805 052e 43795379 		.ascii	"CySysLvdDisable\000"
+ 4805      734C7664 
+ 4805      44697361 
+ 4805      626C6500 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 140
 
 
- 4804      6C617900 
- 4805              	.LASF85:
- 4806 0564 43795379 		.ascii	"CySysTickDisableInterrupt\000"
- 4806      73546963 
- 4806      6B446973 
- 4806      61626C65 
- 4806      496E7465 
- 4807              	.LASF47:
- 4808 057e 43795379 		.ascii	"CySysLvdDisable\000"
- 4808      734C7664 
- 4808      44697361 
- 4808      626C6500 
- 4809              	.LASF103:
- 4810 058e 63796465 		.ascii	"cydelayFreqMhz\000"
- 4810      6C617946 
- 4810      7265714D 
- 4810      687A00
- 4811              	.LASF41:
- 4812 059d 43795379 		.ascii	"CySysClkEcoStop\000"
- 4812      73436C6B 
- 4812      45636F53 
- 4812      746F7000 
- 4813              	.LASF83:
- 4814 05ad 43795379 		.ascii	"CySysTickStop\000"
- 4814      73546963 
- 4814      6B53746F 
- 4814      7000
- 4815              	.LASF39:
- 4816 05bb 74696D65 		.ascii	"timeoutUs\000"
- 4816      6F757455 
- 4816      7300
- 4817              	.LASF29:
- 4818 05c5 64697669 		.ascii	"divider\000"
- 4818      64657200 
- 4819              	.LASF44:
- 4820 05cd 43795379 		.ascii	"CySysClkWriteEcoDiv\000"
- 4820      73436C6B 
- 4820      57726974 
- 4820      6545636F 
- 4820      44697600 
- 4821              	.LASF15:
- 4822 05e1 63797374 		.ascii	"cystatus\000"
- 4822      61747573 
- 4822      00
- 4823              	.LASF107:
- 4824 05ea 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 4824      4320342E 
- 4824      392E3320 
- 4824      32303135 
- 4824      30333033 
- 4825 061d 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
- 4825      20726576 
- 4825      6973696F 
- 4825      6E203232 
- 4825      31323230 
- 4826 0650 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 4826      66756E63 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccdBqOWo.s 			page 141
+ 4806              	.LASF103:
+ 4807 053e 63796465 		.ascii	"cydelayFreqMhz\000"
+ 4807      6C617946 
+ 4807      7265714D 
+ 4807      687A00
+ 4808              	.LASF109:
+ 4809 054d 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\GitHub\\BioSnap\\pro"
+ 4809      73657273 
+ 4809      5C4D6174 
+ 4809      74686577 
+ 4809      5C446F63 
+ 4810 057a 635F7465 		.ascii	"c_test\\proc_v1.cydsn\000"
+ 4810      73745C70 
+ 4810      726F635F 
+ 4810      76312E63 
+ 4810      7964736E 
+ 4811              	.LASF83:
+ 4812 058f 43795379 		.ascii	"CySysTickStop\000"
+ 4812      73546963 
+ 4812      6B53746F 
+ 4812      7000
+ 4813              	.LASF39:
+ 4814 059d 74696D65 		.ascii	"timeoutUs\000"
+ 4814      6F757455 
+ 4814      7300
+ 4815              	.LASF29:
+ 4816 05a7 64697669 		.ascii	"divider\000"
+ 4816      64657200 
+ 4817              	.LASF44:
+ 4818 05af 43795379 		.ascii	"CySysClkWriteEcoDiv\000"
+ 4818      73436C6B 
+ 4818      57726974 
+ 4818      6545636F 
+ 4818      44697600 
+ 4819              	.LASF15:
+ 4820 05c3 63797374 		.ascii	"cystatus\000"
+ 4820      61747573 
+ 4820      00
+ 4821              	.LASF107:
+ 4822 05cc 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 4822      4320342E 
+ 4822      392E3320 
+ 4822      32303135 
+ 4822      30333033 
+ 4823 05ff 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 4823      20726576 
+ 4823      6973696F 
+ 4823      6E203232 
+ 4823      31323230 
+ 4824 0632 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 4824      66756E63 
+ 4824      74696F6E 
+ 4824      2D736563 
+ 4824      74696F6E 
+ 4825              	.LASF94:
+ 4826 065a 43795379 		.ascii	"CySysTickSetCallback\000"
+ 4826      73546963 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc5wOPDV.s 			page 141
 
 
- 4826      74696F6E 
- 4826      2D736563 
- 4826      74696F6E 
+ 4826      6B536574 
+ 4826      43616C6C 
+ 4826      6261636B 
  4827              	.LASF21:
- 4828 0678 43795379 		.ascii	"CySysClkImoStart\000"
+ 4828 066f 43795379 		.ascii	"CySysClkImoStart\000"
  4828      73436C6B 
  4828      496D6F53 
  4828      74617274 
  4828      00
  4829              	.LASF34:
- 4830 0689 6E657749 		.ascii	"newImoTrim2Value\000"
+ 4830 0680 6E657749 		.ascii	"newImoTrim2Value\000"
  4830      6D6F5472 
  4830      696D3256 
  4830      616C7565 
  4830      00
  4831              	.LASF78:
- 4832 069a 6D696372 		.ascii	"microseconds\000"
+ 4832 0691 6D696372 		.ascii	"microseconds\000"
  4832      6F736563 
  4832      6F6E6473 
  4832      00
  4833              	.LASF24:
- 4834 06a7 746D7052 		.ascii	"tmpReg\000"
+ 4834 069e 746D7052 		.ascii	"tmpReg\000"
  4834      656700
  4835              	.LASF86:
- 4836 06ae 43795379 		.ascii	"CySysTickSetReload\000"
+ 4836 06a5 43795379 		.ascii	"CySysTickSetReload\000"
  4836      73546963 
  4836      6B536574 
  4836      52656C6F 
  4836      616400
  4837              	.LASF110:
- 4838 06c1 43795379 		.ascii	"CySysTickServiceCallbacks\000"
+ 4838 06b8 43795379 		.ascii	"CySysTickServiceCallbacks\000"
  4838      73546963 
  4838      6B536572 
  4838      76696365 
  4838      43616C6C 
  4839              	.LASF43:
- 4840 06db 72657475 		.ascii	"returnValue\000"
+ 4840 06d2 72657475 		.ascii	"returnValue\000"
  4840      726E5661 
  4840      6C756500 
  4841              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
