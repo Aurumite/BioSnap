@@ -48,8 +48,8 @@ void initAll(){
     initAccelControl();
     initTemperatureAndBattery(); 
     
-    PulseOximeter_Init();     
-    PulseOximeter_begin(PULSEOXIMETER_DEBUGGINGMODE_NONE);
+    //PulseOximeter_Init();     
+    //PulseOximeter_begin(PULSEOXIMETER_DEBUGGINGMODE_NONE);
 
 
     Timer_minute_Start();
@@ -192,7 +192,7 @@ int main()
         CyBle_ProcessEvents();
         
         if(deviceConnected && busyStatus == CYBLE_STACK_STATE_FREE){
-            PulseOximeter_update();
+            /*PulseOximeter_update();
             elapsed = millis() - tsLastReport;
             if (elapsed > REPORTING_PERIOD_MS) {
                 oxygen = (uint32)(PulseOximeter_getSpO2());
@@ -201,7 +201,7 @@ int main()
                 updateCharacteristic(OXYGEN, CYBLE_BIOSNAP_OXYGEN_CHAR_HANDLE, oxygen);
                 
                 tsLastReport = millis();
-            }
+            }*/
             temp = getTemperature();
             updateCharacteristic(TEMPERATURE, CYBLE_BIOSNAP_TEMPERATURE_CHAR_HANDLE, temp);
         

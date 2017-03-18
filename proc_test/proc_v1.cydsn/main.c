@@ -197,16 +197,16 @@ int main()
             if (elapsed > REPORTING_PERIOD_MS) {
                 oxygen = (uint32)(PulseOximeter_getSpO2());
                 heart = (uint32)(PulseOximeter_getHeartRate());
-                updateCharacteristic(HEART, CYBLE_BIOSNAP_HEART_CHAR_HANDLE, reverseUint32(heart));
-                updateCharacteristic(OXYGEN, CYBLE_BIOSNAP_OXYGEN_CHAR_HANDLE, reverseUint32(oxygen));
+                updateCharacteristic(HEART, CYBLE_BIOSNAP_HEART_CHAR_HANDLE, heart);
+                updateCharacteristic(OXYGEN, CYBLE_BIOSNAP_OXYGEN_CHAR_HANDLE, oxygen);
                 
                 tsLastReport = millis();
             }
             temp = getTemperature();
-            updateCharacteristic(TEMPERATURE, CYBLE_BIOSNAP_TEMPERATURE_CHAR_HANDLE, reverseUint32(temp));
+            updateCharacteristic(TEMPERATURE, CYBLE_BIOSNAP_TEMPERATURE_CHAR_HANDLE, temp);
         
             accel = getAccelXYZ();
-            updateCharacteristic(ACCELEROMETER, CYBLE_BIOSNAP_ACCELEROMETER_CHAR_HANDLE, reverseUint32(accel));
+            updateCharacteristic(ACCELEROMETER, CYBLE_BIOSNAP_ACCELEROMETER_CHAR_HANDLE, accel);
             
             bat = getBattery();
             updateCharacteristic(BATTERY, CYBLE_BIOSNAP_BATTERY_CHAR_HANDLE, bat);

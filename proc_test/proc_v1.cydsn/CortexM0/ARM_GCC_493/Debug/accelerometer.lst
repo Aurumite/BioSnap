@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNE8OC9.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
   19:.\accelerometer.c ****     writeAccel(CTRL_REG1, 0x00);     
   37              		.loc 1 19 0
   38 000a 2A20     		mov	r0, #42
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 2
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNE8OC9.s 			page 2
 
 
   39 000c 0021     		mov	r1, #0
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
   60:.\accelerometer.c ****     */
   61:.\accelerometer.c ****     writeAccel(CTRL_REG5, 0b00000001);
   53              		.loc 1 61 0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 3
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNE8OC9.s 			page 3
 
 
   54 002a 2E20     		mov	r0, #46
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
   82:.\accelerometer.c ****     /* FF/MT Threshold
   83:.\accelerometer.c ****     Debounce Mode:                  Increment/Decrement
   84:.\accelerometer.c ****     Threshold:                      0 (for now)
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 4
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNE8OC9.s 			page 4
 
 
   85:.\accelerometer.c ****     */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  104:.\accelerometer.c ****     /* Transient Threshold
  105:.\accelerometer.c ****     Debounce Mode:                  Increment/Decrement
  106:.\accelerometer.c ****     Threshold:                      0 (for now)
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 5
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNE8OC9.s 			page 5
 
 
  107:.\accelerometer.c ****     */
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  156 0006 7F21     		mov	r1, #127
  157 0008 FFF7FEFF 		bl	writeAccel
  128:.\accelerometer.c ****     
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 6
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNE8OC9.s 			page 6
 
 
  129:.\accelerometer.c ****     /* Pulse Thresholds
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  190              		.align	2
  191              		.global	initAccelSleep
  192              		.code	16
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 7
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNE8OC9.s 			page 7
 
 
  193              		.thumb_func
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  236              		.loc 1 161 0
  237 000c 181C     		mov	r0, r3
  238 000e BD46     		mov	sp, r7
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 8
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNE8OC9.s 			page 8
 
 
  239              		@ sp needed
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  287              		.cfi_def_cfa_register 7
  168:.\accelerometer.c ****     return readAccel(Z_MSB);
  288              		.loc 1 168 0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 9
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNE8OC9.s 			page 9
 
 
  289 0004 0520     		mov	r0, #5
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  335 0026 D218     		add	r2, r2, r3
  336 0028 7B68     		ldr	r3, [r7, #4]
  337 002a D318     		add	r3, r2, r3
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 10
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNE8OC9.s 			page 10
 
 
  177:.\accelerometer.c **** }
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  386 002a 1278     		ldrb	r2, [r2]
  387 002c 5A70     		strb	r2, [r3, #1]
  183:.\accelerometer.c ****     
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 11
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNE8OC9.s 			page 11
 
 
  184:.\accelerometer.c ****     
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  434 0008 FB1D     		add	r3, r7, #7
  435 000a 1A70     		strb	r2, [r3]
  192:.\accelerometer.c ****     uint8 Write_Buf[1] = {0}; //Buffer that will contain the register that will be read from
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 12
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNE8OC9.s 			page 12
 
 
  436              		.loc 1 192 0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  479              	.L19:
  480              		.loc 1 203 0 is_stmt 0 discriminator 1
  481 0056 FFF7FEFF 		bl	I2C_1_I2CMasterStatus
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 13
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNE8OC9.s 			page 13
 
 
  482 005a 021C     		mov	r2, r0
@@ -751,25 +751,25 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  506 0006 00000000 		.4byte	.Ldebug_abbrev0
  507 000a 04       		.byte	0x4
  508 000b 01       		.uleb128 0x1
- 509 000c BE000000 		.4byte	.LASF28
+ 509 000c 00010000 		.4byte	.LASF28
  510 0010 01       		.byte	0x1
- 511 0011 86000000 		.4byte	.LASF29
- 512 0015 BE010000 		.4byte	.LASF30
+ 511 0011 C8000000 		.4byte	.LASF29
+ 512 0015 38000000 		.4byte	.LASF30
  513 0019 00000000 		.4byte	.Ldebug_ranges0+0
  514 001d 00000000 		.4byte	0
  515 0021 00000000 		.4byte	.Ldebug_line0
  516 0025 02       		.uleb128 0x2
  517 0026 01       		.byte	0x1
  518 0027 06       		.byte	0x6
- 519 0028 26020000 		.4byte	.LASF0
+ 519 0028 1D020000 		.4byte	.LASF0
  520 002c 02       		.uleb128 0x2
  521 002d 01       		.byte	0x1
  522 002e 08       		.byte	0x8
- 523 002f 6E000000 		.4byte	.LASF1
+ 523 002f B0000000 		.4byte	.LASF1
  524 0033 02       		.uleb128 0x2
  525 0034 02       		.byte	0x2
  526 0035 05       		.byte	0x5
- 527 0036 13020000 		.4byte	.LASF2
+ 527 0036 0A020000 		.4byte	.LASF2
  528 003a 02       		.uleb128 0x2
  529 003b 02       		.byte	0x2
  530 003c 07       		.byte	0x7
@@ -777,22 +777,22 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  532 0041 02       		.uleb128 0x2
  533 0042 04       		.byte	0x4
  534 0043 05       		.byte	0x5
- 535 0044 1D020000 		.4byte	.LASF4
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 14
+ 535 0044 14020000 		.4byte	.LASF4
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNE8OC9.s 			page 14
 
 
  536 0048 02       		.uleb128 0x2
  537 0049 04       		.byte	0x4
  538 004a 07       		.byte	0x7
- 539 004b 98000000 		.4byte	.LASF5
+ 539 004b DA000000 		.4byte	.LASF5
  540 004f 02       		.uleb128 0x2
  541 0050 08       		.byte	0x8
  542 0051 05       		.byte	0x5
- 543 0052 94010000 		.4byte	.LASF6
+ 543 0052 D6010000 		.4byte	.LASF6
  544 0056 02       		.uleb128 0x2
  545 0057 08       		.byte	0x8
  546 0058 07       		.byte	0x7
- 547 0059 57000000 		.4byte	.LASF7
+ 547 0059 99000000 		.4byte	.LASF7
  548 005d 03       		.uleb128 0x3
  549 005e 04       		.byte	0x4
  550 005f 05       		.byte	0x5
@@ -802,33 +802,33 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  554 0066 07       		.byte	0x7
  555 0067 2B000000 		.4byte	.LASF8
  556 006b 04       		.uleb128 0x4
- 557 006c AA000000 		.4byte	.LASF9
+ 557 006c EC000000 		.4byte	.LASF9
  558 0070 02       		.byte	0x2
  559 0071 9801     		.2byte	0x198
  560 0073 2C000000 		.4byte	0x2c
  561 0077 04       		.uleb128 0x4
- 562 0078 B7000000 		.4byte	.LASF10
+ 562 0078 F9000000 		.4byte	.LASF10
  563 007c 02       		.byte	0x2
  564 007d 9901     		.2byte	0x199
  565 007f 3A000000 		.4byte	0x3a
  566 0083 02       		.uleb128 0x2
  567 0084 04       		.byte	0x4
  568 0085 04       		.byte	0x4
- 569 0086 4C000000 		.4byte	.LASF11
+ 569 0086 8E000000 		.4byte	.LASF11
  570 008a 02       		.uleb128 0x2
  571 008b 08       		.byte	0x8
  572 008c 04       		.byte	0x4
- 573 008d B0000000 		.4byte	.LASF12
+ 573 008d F2000000 		.4byte	.LASF12
  574 0091 02       		.uleb128 0x2
  575 0092 01       		.byte	0x1
  576 0093 08       		.byte	0x8
- 577 0094 77010000 		.4byte	.LASF13
+ 577 0094 B9010000 		.4byte	.LASF13
  578 0098 02       		.uleb128 0x2
  579 0099 04       		.byte	0x4
  580 009a 07       		.byte	0x7
- 581 009b 8B010000 		.4byte	.LASF14
+ 581 009b CD010000 		.4byte	.LASF14
  582 009f 05       		.uleb128 0x5
- 583 00a0 A2010000 		.4byte	.LASF15
+ 583 00a0 E4010000 		.4byte	.LASF15
  584 00a4 01       		.byte	0x1
  585 00a5 10       		.byte	0x10
  586 00a6 00000000 		.4byte	.LFB37
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  590 00b0 05       		.uleb128 0x5
  591 00b1 00000000 		.4byte	.LASF16
  592 00b5 01       		.byte	0x1
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 15
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNE8OC9.s 			page 15
 
 
  593 00b6 48       		.byte	0x48
@@ -847,7 +847,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  596 00bf 01       		.uleb128 0x1
  597 00c0 9C       		.byte	0x9c
  598 00c1 05       		.uleb128 0x5
- 599 00c2 4C010000 		.4byte	.LASF17
+ 599 00c2 8E010000 		.4byte	.LASF17
  600 00c6 01       		.byte	0x1
  601 00c7 5E       		.byte	0x5e
  602 00c8 00000000 		.4byte	.LFB39
@@ -855,7 +855,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  604 00d0 01       		.uleb128 0x1
  605 00d1 9C       		.byte	0x9c
  606 00d2 05       		.uleb128 0x5
- 607 00d3 5F010000 		.4byte	.LASF18
+ 607 00d3 A1010000 		.4byte	.LASF18
  608 00d7 01       		.byte	0x1
  609 00d8 74       		.byte	0x74
  610 00d9 00000000 		.4byte	.LFB40
@@ -863,7 +863,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  612 00e1 01       		.uleb128 0x1
  613 00e2 9C       		.byte	0x9c
  614 00e3 05       		.uleb128 0x5
- 615 00e4 7C010000 		.4byte	.LASF19
+ 615 00e4 BE010000 		.4byte	.LASF19
  616 00e8 01       		.byte	0x1
  617 00e9 98       		.byte	0x98
  618 00ea 00000000 		.4byte	.LFB41
@@ -871,7 +871,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  620 00f2 01       		.uleb128 0x1
  621 00f3 9C       		.byte	0x9c
  622 00f4 06       		.uleb128 0x6
- 623 00f5 38000000 		.4byte	.LASF20
+ 623 00f5 7A000000 		.4byte	.LASF20
  624 00f9 01       		.byte	0x1
  625 00fa 9F       		.byte	0x9f
  626 00fb 6B000000 		.4byte	0x6b
@@ -880,7 +880,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  629 0107 01       		.uleb128 0x1
  630 0108 9C       		.byte	0x9c
  631 0109 06       		.uleb128 0x6
- 632 010a 42000000 		.4byte	.LASF21
+ 632 010a 84000000 		.4byte	.LASF21
  633 010e 01       		.byte	0x1
  634 010f A3       		.byte	0xa3
  635 0110 6B000000 		.4byte	0x6b
@@ -889,7 +889,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  638 011c 01       		.uleb128 0x1
  639 011d 9C       		.byte	0x9c
  640 011e 06       		.uleb128 0x6
- 641 011f 09020000 		.4byte	.LASF22
+ 641 011f 00020000 		.4byte	.LASF22
  642 0123 01       		.byte	0x1
  643 0124 A7       		.byte	0xa7
  644 0125 6B000000 		.4byte	0x6b
@@ -898,10 +898,10 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  647 0131 01       		.uleb128 0x1
  648 0132 9C       		.byte	0x9c
  649 0133 07       		.uleb128 0x7
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 16
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNE8OC9.s 			page 16
 
 
- 650 0134 32020000 		.4byte	.LASF23
+ 650 0134 29020000 		.4byte	.LASF23
  651 0138 01       		.byte	0x1
  652 0139 AB       		.byte	0xab
  653 013a 5D000000 		.4byte	0x5d
@@ -936,7 +936,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  682 016f 6C       		.sleb128 -20
  683 0170 00       		.byte	0
  684 0171 09       		.uleb128 0x9
- 685 0172 B3010000 		.4byte	.LASF24
+ 685 0172 F5010000 		.4byte	.LASF24
  686 0176 01       		.byte	0x1
  687 0177 B3       		.byte	0xb3
  688 0178 00000000 		.4byte	.LFB46
@@ -953,12 +953,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  699 0192 91       		.byte	0x91
  700 0193 6F       		.sleb128 -17
  701 0194 0B       		.uleb128 0xb
- 702 0195 52000000 		.4byte	.LASF25
+ 702 0195 94000000 		.4byte	.LASF25
  703 0199 01       		.byte	0x1
  704 019a B3       		.byte	0xb3
  705 019b 6B000000 		.4byte	0x6b
  706 019f 02       		.uleb128 0x2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 17
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNE8OC9.s 			page 17
 
 
  707 01a0 91       		.byte	0x91
@@ -980,7 +980,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  723 01bf 01       		.byte	0x1
  724 01c0 00       		.byte	0
  725 01c1 0F       		.uleb128 0xf
- 726 01c2 7C000000 		.4byte	.LASF31
+ 726 01c2 BE000000 		.4byte	.LASF31
  727 01c6 01       		.byte	0x1
  728 01c7 BF       		.byte	0xbf
  729 01c8 6B000000 		.4byte	0x6b
@@ -1006,7 +1006,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  749 01f4 91       		.byte	0x91
  750 01f5 74       		.sleb128 -12
  751 01f6 0C       		.uleb128 0xc
- 752 01f7 6E010000 		.4byte	.LASF27
+ 752 01f7 B0010000 		.4byte	.LASF27
  753 01fb 01       		.byte	0x1
  754 01fc C3       		.byte	0xc3
  755 01fd 05020000 		.4byte	0x205
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  761 0206 6B000000 		.4byte	0x6b
  762 020a 0E       		.uleb128 0xe
  763 020b 98000000 		.4byte	0x98
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 18
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNE8OC9.s 			page 18
 
 
  764 020f 00       		.byte	0
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  818 0031 05       		.uleb128 0x5
  819 0032 49       		.uleb128 0x49
  820 0033 13       		.uleb128 0x13
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 19
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNE8OC9.s 			page 19
 
 
  821 0034 00       		.byte	0
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  875 006c 0B       		.uleb128 0xb
  876 006d 3B       		.uleb128 0x3b
  877 006e 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 20
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNE8OC9.s 			page 20
 
 
  878 006f 49       		.uleb128 0x49
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  932 00a7 0A       		.uleb128 0xa
  933 00a8 05       		.uleb128 0x5
  934 00a9 00       		.byte	0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 21
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNE8OC9.s 			page 21
 
 
  935 00aa 03       		.uleb128 0x3
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  989 00e0 49       		.uleb128 0x49
  990 00e1 13       		.uleb128 0x13
  991 00e2 2F       		.uleb128 0x2f
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 22
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNE8OC9.s 			page 22
 
 
  992 00e3 0B       		.uleb128 0xb
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  1046 0030 00000000 		.4byte	.LFB41
  1047 0034 10000000 		.4byte	.LFE41-.LFB41
  1048 0038 00000000 		.4byte	.LFB42
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 23
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNE8OC9.s 			page 23
 
 
  1049 003c 12000000 		.4byte	.LFE42-.LFB42
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  1094      6600
  1095              	.LASF3:
  1096 0018 73686F72 		.ascii	"short unsigned int\000"
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 24
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNE8OC9.s 			page 24
 
 
  1096      7420756E 
@@ -1390,149 +1390,149 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 1
  1098      676E6564 
  1098      20696E74 
  1098      00
- 1099              	.LASF20:
- 1100 0038 67657441 		.ascii	"getAccelX\000"
- 1100      6363656C 
- 1100      5800
- 1101              	.LASF21:
- 1102 0042 67657441 		.ascii	"getAccelY\000"
- 1102      6363656C 
- 1102      5900
- 1103              	.LASF11:
- 1104 004c 666C6F61 		.ascii	"float\000"
- 1104      7400
- 1105              	.LASF25:
- 1106 0052 64617461 		.ascii	"data\000"
- 1106      00
- 1107              	.LASF7:
- 1108 0057 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1108      206C6F6E 
- 1108      6720756E 
- 1108      7369676E 
- 1108      65642069 
- 1109              	.LASF1:
- 1110 006e 756E7369 		.ascii	"unsigned char\000"
- 1110      676E6564 
- 1110      20636861 
- 1110      7200
- 1111              	.LASF31:
- 1112 007c 72656164 		.ascii	"readAccel\000"
- 1112      41636365 
- 1112      6C00
- 1113              	.LASF29:
- 1114 0086 2E5C6163 		.ascii	".\\accelerometer.c\000"
- 1114      63656C65 
- 1114      726F6D65 
- 1114      7465722E 
- 1114      6300
- 1115              	.LASF5:
- 1116 0098 6C6F6E67 		.ascii	"long unsigned int\000"
- 1116      20756E73 
- 1116      69676E65 
- 1116      6420696E 
- 1116      7400
- 1117              	.LASF9:
- 1118 00aa 75696E74 		.ascii	"uint8\000"
- 1118      3800
- 1119              	.LASF12:
- 1120 00b0 646F7562 		.ascii	"double\000"
- 1120      6C6500
- 1121              	.LASF10:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 25
+ 1099              	.LASF30:
+ 1100 0038 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\GitHub\\BioSnap\\pro"
+ 1100      73657273 
+ 1100      5C4D6174 
+ 1100      74686577 
+ 1100      5C446F63 
+ 1101 0065 635F7465 		.ascii	"c_test\\proc_v1.cydsn\000"
+ 1101      73745C70 
+ 1101      726F635F 
+ 1101      76312E63 
+ 1101      7964736E 
+ 1102              	.LASF20:
+ 1103 007a 67657441 		.ascii	"getAccelX\000"
+ 1103      6363656C 
+ 1103      5800
+ 1104              	.LASF21:
+ 1105 0084 67657441 		.ascii	"getAccelY\000"
+ 1105      6363656C 
+ 1105      5900
+ 1106              	.LASF11:
+ 1107 008e 666C6F61 		.ascii	"float\000"
+ 1107      7400
+ 1108              	.LASF25:
+ 1109 0094 64617461 		.ascii	"data\000"
+ 1109      00
+ 1110              	.LASF7:
+ 1111 0099 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1111      206C6F6E 
+ 1111      6720756E 
+ 1111      7369676E 
+ 1111      65642069 
+ 1112              	.LASF1:
+ 1113 00b0 756E7369 		.ascii	"unsigned char\000"
+ 1113      676E6564 
+ 1113      20636861 
+ 1113      7200
+ 1114              	.LASF31:
+ 1115 00be 72656164 		.ascii	"readAccel\000"
+ 1115      41636365 
+ 1115      6C00
+ 1116              	.LASF29:
+ 1117 00c8 2E5C6163 		.ascii	".\\accelerometer.c\000"
+ 1117      63656C65 
+ 1117      726F6D65 
+ 1117      7465722E 
+ 1117      6300
+ 1118              	.LASF5:
+ 1119 00da 6C6F6E67 		.ascii	"long unsigned int\000"
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNE8OC9.s 			page 25
 
 
- 1122 00b7 75696E74 		.ascii	"uint16\000"
- 1122      313600
- 1123              	.LASF28:
- 1124 00be 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 1124      4320342E 
- 1124      392E3320 
- 1124      32303135 
- 1124      30333033 
- 1125 00f1 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
- 1125      20726576 
- 1125      6973696F 
- 1125      6E203232 
- 1125      31323230 
- 1126 0124 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 1126      66756E63 
- 1126      74696F6E 
- 1126      2D736563 
- 1126      74696F6E 
- 1127              	.LASF17:
- 1128 014c 696E6974 		.ascii	"initAccelTransient\000"
- 1128      41636365 
- 1128      6C547261 
- 1128      6E736965 
- 1128      6E7400
- 1129              	.LASF18:
- 1130 015f 696E6974 		.ascii	"initAccelPulse\000"
- 1130      41636365 
- 1130      6C50756C 
- 1130      736500
- 1131              	.LASF27:
- 1132 016e 52656164 		.ascii	"Read_Buf\000"
- 1132      5F427566 
- 1132      00
- 1133              	.LASF13:
- 1134 0177 63686172 		.ascii	"char\000"
- 1134      00
- 1135              	.LASF19:
- 1136 017c 696E6974 		.ascii	"initAccelSleep\000"
- 1136      41636365 
- 1136      6C536C65 
- 1136      657000
- 1137              	.LASF14:
- 1138 018b 73697A65 		.ascii	"sizetype\000"
- 1138      74797065 
- 1138      00
- 1139              	.LASF6:
- 1140 0194 6C6F6E67 		.ascii	"long long int\000"
- 1140      206C6F6E 
- 1140      6720696E 
- 1140      7400
- 1141              	.LASF15:
- 1142 01a2 696E6974 		.ascii	"initAccelControl\000"
- 1142      41636365 
- 1142      6C436F6E 
- 1142      74726F6C 
- 1142      00
- 1143              	.LASF24:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cceTTHJm.s 			page 26
+ 1119      20756E73 
+ 1119      69676E65 
+ 1119      6420696E 
+ 1119      7400
+ 1120              	.LASF9:
+ 1121 00ec 75696E74 		.ascii	"uint8\000"
+ 1121      3800
+ 1122              	.LASF12:
+ 1123 00f2 646F7562 		.ascii	"double\000"
+ 1123      6C6500
+ 1124              	.LASF10:
+ 1125 00f9 75696E74 		.ascii	"uint16\000"
+ 1125      313600
+ 1126              	.LASF28:
+ 1127 0100 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1127      4320342E 
+ 1127      392E3320 
+ 1127      32303135 
+ 1127      30333033 
+ 1128 0133 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 1128      20726576 
+ 1128      6973696F 
+ 1128      6E203232 
+ 1128      31323230 
+ 1129 0166 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 1129      66756E63 
+ 1129      74696F6E 
+ 1129      2D736563 
+ 1129      74696F6E 
+ 1130              	.LASF17:
+ 1131 018e 696E6974 		.ascii	"initAccelTransient\000"
+ 1131      41636365 
+ 1131      6C547261 
+ 1131      6E736965 
+ 1131      6E7400
+ 1132              	.LASF18:
+ 1133 01a1 696E6974 		.ascii	"initAccelPulse\000"
+ 1133      41636365 
+ 1133      6C50756C 
+ 1133      736500
+ 1134              	.LASF27:
+ 1135 01b0 52656164 		.ascii	"Read_Buf\000"
+ 1135      5F427566 
+ 1135      00
+ 1136              	.LASF13:
+ 1137 01b9 63686172 		.ascii	"char\000"
+ 1137      00
+ 1138              	.LASF19:
+ 1139 01be 696E6974 		.ascii	"initAccelSleep\000"
+ 1139      41636365 
+ 1139      6C536C65 
+ 1139      657000
+ 1140              	.LASF14:
+ 1141 01cd 73697A65 		.ascii	"sizetype\000"
+ 1141      74797065 
+ 1141      00
+ 1142              	.LASF6:
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNE8OC9.s 			page 26
 
 
- 1144 01b3 77726974 		.ascii	"writeAccel\000"
- 1144      65416363 
- 1144      656C00
- 1145              	.LASF30:
- 1146 01be 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\UC Davis\\EEC 136AB\\"
- 1146      73657273 
- 1146      5C4D6174 
- 1146      74686577 
- 1146      5C446F63 
- 1147 01ec 50536F43 		.ascii	"PSoC\\proc_test\\proc_v1.cydsn\000"
- 1147      5C70726F 
- 1147      635F7465 
- 1147      73745C70 
- 1147      726F635F 
+ 1143 01d6 6C6F6E67 		.ascii	"long long int\000"
+ 1143      206C6F6E 
+ 1143      6720696E 
+ 1143      7400
+ 1144              	.LASF15:
+ 1145 01e4 696E6974 		.ascii	"initAccelControl\000"
+ 1145      41636365 
+ 1145      6C436F6E 
+ 1145      74726F6C 
+ 1145      00
+ 1146              	.LASF24:
+ 1147 01f5 77726974 		.ascii	"writeAccel\000"
+ 1147      65416363 
+ 1147      656C00
  1148              	.LASF22:
- 1149 0209 67657441 		.ascii	"getAccelZ\000"
+ 1149 0200 67657441 		.ascii	"getAccelZ\000"
  1149      6363656C 
  1149      5A00
  1150              	.LASF2:
- 1151 0213 73686F72 		.ascii	"short int\000"
+ 1151 020a 73686F72 		.ascii	"short int\000"
  1151      7420696E 
  1151      7400
  1152              	.LASF4:
- 1153 021d 6C6F6E67 		.ascii	"long int\000"
+ 1153 0214 6C6F6E67 		.ascii	"long int\000"
  1153      20696E74 
  1153      00
  1154              	.LASF0:
- 1155 0226 7369676E 		.ascii	"signed char\000"
+ 1155 021d 7369676E 		.ascii	"signed char\000"
  1155      65642063 
  1155      68617200 
  1156              	.LASF23:
- 1157 0232 67657441 		.ascii	"getAccelXYZ\000"
+ 1157 0229 67657441 		.ascii	"getAccelXYZ\000"
  1157      6363656C 
  1157      58595A00 
  1158              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

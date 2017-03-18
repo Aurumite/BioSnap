@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
   30:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c **** *  None
   31:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c **** *
   32:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c **** *******************************************************************************/
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 2
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 2
 
 
   33:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c **** void CyBLE_Uart_Start (void)
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
   87:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c **** *
   88:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c **** *  This API writes the data to the NVRAM store. It will check the appropriate
   89:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c **** *  alignment of a start address and also perform an address range check based
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 3
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 3
 
 
   90:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c **** *  on the length before performing the write operation.
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
   51              		.loc 1 118 0
   52 0022 0023     		mov	r3, #0
   53 0024 9022     		mov	r2, #144
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 4
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 4
 
 
   54 0026 5200     		lsl	r2, r2, #1
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
   97 0072 8E22     		mov	r2, #142
   98 0074 5200     		lsl	r2, r2, #1
   99 0076 BA18     		add	r2, r7, r2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 5
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 5
 
 
  100 0078 1360     		str	r3, [r2]
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  144 00c0 FA68     		ldr	r2, [r7, #12]
  145 00c2 9223     		mov	r3, #146
  146 00c4 5B00     		lsl	r3, r3, #1
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 6
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 6
 
 
  147 00c6 FB18     		add	r3, r7, r3
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  195 011e 1360     		str	r3, [r2]
  196 0120 11E0     		b	.L7
  197              	.L5:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 7
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 7
 
 
  146:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c ****                 }
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  244 0172 FF2B     		cmp	r3, #255
  245 0174 8DD9     		bls	.L8
  152:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c ****             }
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 8
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 8
 
 
  153:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c **** 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  290 01c4 FB18     		add	r3, r7, r3
  291 01c6 1B68     		ldr	r3, [r3]
  292 01c8 9A42     		cmp	r2, r3
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 9
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 9
 
 
  293 01ca 0CD9     		bls	.L10
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  174:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c ****     
  175:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c ****     return (rc);
  334              		.loc 1 175 0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 10
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 10
 
 
  335 020a 9023     		mov	r3, #144
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  369              		.cfi_def_cfa_offset 288
  370 0004 00AF     		add	r7, sp, #0
  371              		.cfi_def_cfa_register 7
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 11
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 11
 
 
  372 0006 7860     		str	r0, [r7, #4]
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  418 005c 1288     		ldrh	r2, [r2]
  419 005e 1A80     		strh	r2, [r3]
  204:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c **** 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 12
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 12
 
 
  205:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c ****     while(lengthRemaining > 0u)
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  463 00a6 FFF7FEFF 		bl	CyBLE_Nvram_Write
  464 00aa 031C     		mov	r3, r0
  465 00ac 8622     		mov	r2, #134
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 13
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 13
 
 
  466 00ae 5200     		lsl	r2, r2, #1
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  222:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c ****     }
  223:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c **** 
  224:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c ****     return rc;
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 14
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 14
 
 
  513              		.loc 1 224 0
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  549              		.cfi_def_cfa_register 7
  550 0006 7860     		str	r0, [r7, #4]
  551 0008 3960     		str	r1, [r7]
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 15
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 15
 
 
  243:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c ****     *regValue = (uint16)CY_GET_REG32(blessAddr);
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  587 000c 1A80     		strh	r2, [r3]
  262:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c ****     CY_SET_REG32(blessAddr, regValue);
  588              		.loc 1 262 0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 16
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 16
 
 
  589 000e BB1C     		add	r3, r7, #2
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  624 000e 9AB2     		uxth	r2, r3
  625 0010 3B68     		ldr	r3, [r7]
  626 0012 1A80     		strh	r2, [r3]
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 17
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 17
 
 
  282:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c **** }
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  301:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c **** }
  662              		.loc 1 301 0
  663 0016 BD46     		mov	sp, r7
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 18
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 18
 
 
  664 0018 02B0     		add	sp, sp, #8
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  322:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c ****     ldo = ((uint32)CYBLE_SFLASH_BLESS_LDO_HIGH_REG << 8u) | CYBLE_SFLASH_BLESS_LDO_LOW_REG;
  698              		.loc 1 322 0
  699 0018 464B     		ldr	r3, .L38+8
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 19
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 19
 
 
  700 001a 1B78     		ldrb	r3, [r3]
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  739              		.loc 1 337 0
  740 0056 3B4B     		ldr	r3, .L38+24
  741 0058 BA68     		ldr	r2, [r7, #8]
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 20
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 20
 
 
  742 005a 1A60     		str	r2, [r3]
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  783 009a D2B2     		uxtb	r2, r2
  784 009c 1343     		orr	r3, r2
  785 009e FB60     		str	r3, [r7, #12]
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 21
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 21
 
 
  351:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c **** 
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  826 00da DBB2     		uxtb	r3, r3
  363:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c ****         (CYBLE_SFLASH_BLESS_SY_BUMP1_HIGH_REG == 0x0Eu))
  827              		.loc 1 363 0 discriminator 2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 22
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 22
 
 
  828 00dc 0E2B     		cmp	r3, #14
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  872              	.L30:
  373:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c **** 	}
  374:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c **** }
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 23
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 23
 
 
  873              		.loc 1 374 0
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  923              		.cfi_offset 14, -4
  924 0002 82B0     		sub	sp, sp, #8
  925              		.cfi_def_cfa_offset 16
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 24
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 24
 
 
  926 0004 00AF     		add	r7, sp, #0
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  972              		.cfi_endproc
  973              	.LFE10:
  974              		.size	CyBleHal_DelayMs, .-CyBleHal_DelayMs
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 25
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 25
 
 
  975 0016 C046     		.section	.text.CyBleHal_EnableGlobalInterrupts,"ax",%progbits
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  398:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c **** }
  1018              		.loc 1 398 0
  1019 0008 BD46     		mov	sp, r7
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 26
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 26
 
 
  1020              		@ sp needed
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  1052              		@ sp needed
  1053 0018 80BD     		pop	{r7, pc}
  1054              	.L46:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 27
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 27
 
 
  1055 001a C046     		.align	2
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  1093              		.align	2
  1094              		.global	CyBLE_GetIpBlockVersion
  1095              		.code	16
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 28
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 28
 
 
  1096              		.thumb_func
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  1129              	.LFB16:
  458:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c **** 
  459:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c **** /* Mapping functions for stack size optimization */
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 29
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 29
 
 
  460:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c **** #if(CYBLE_MODE_PROFILE)
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  514:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c ****     }
  515:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c **** 
  516:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c ****     CYBLE_API_RESULT_T CyBle_Hal_pairing_sc_tbx_generate_local_P256_public_key(uint8 param)
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 30
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 30
 
 
  517:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c ****     {
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  1154              		.global	CyBle_Hal_pairing_remote_key_handler
  1155              		.code	16
  1156              		.thumb_func
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 31
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 31
 
 
  1157              		.type	CyBle_Hal_pairing_remote_key_handler, %function
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  1202 0008 2B23     		mov	r3, #43
  556:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c ****     }
  1203              		.loc 1 556 0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 32
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 32
 
 
  1204 000a 181C     		mov	r0, r3
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  1250              		.loc 1 564 0
  1251              		.cfi_startproc
  1252 0000 80B5     		push	{r7, lr}
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 33
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 33
 
 
  1253              		.cfi_def_cfa_offset 8
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  1300              	.LFE21:
  1301              		.size	CyBle_Hal_pairing_rand_handler, .-CyBle_Hal_pairing_rand_handler
  1302 0012 C046     		.section	.text.CyBle_Hal_pairing_confirm_handler,"ax",%progbits
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 34
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 34
 
 
  1303              		.align	2
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  1349              		.cfi_def_cfa_register 7
  1350 0006 7860     		str	r0, [r7, #4]
  580:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c ****         return (CYBLE_ERROR_UNSUPPORTED_FEATURE_OR_PARAMETER_VALUE);
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 35
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 35
 
 
  1351              		.loc 1 580 0
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  1399              	.LFB25:
  587:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c **** 
  588:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c ****     CYBLE_API_RESULT_T CyBle_Hal_pairing_sc_tbx_local_pubkey_generate_complete(void)
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 36
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 36
 
 
  589:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c ****     {
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  1446 0014 80BD     		pop	{r7, pc}
  1447              		.cfi_endproc
  1448              	.LFE26:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 37
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 37
 
 
  1449              		.size	CyBle_Hal_pairing_sc_tbx_generate_local_P256_public_key, .-CyBle_Hal_pairing_sc_tbx_generate
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  1494              		.cfi_offset 14, -4
  1495 0002 00AF     		add	r7, sp, #0
  1496              		.cfi_def_cfa_register 7
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 38
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 38
 
 
  606:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c ****     }
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  614:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c ****     void CyBle_Hal_EccPointMult(void)
  615:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c ****     {
  1543              		.loc 1 615 0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 39
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 39
 
 
  1544              		.cfi_startproc
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  1576 0006 7860     		str	r0, [r7, #4]
  638:.\Generated_Source\PSoC4/BLE_1_HAL_PVT.c ****         return (CYBLE_UNKNOWN_HCI_COMMAND_ERROR);
  1577              		.loc 1 638 0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 40
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 40
 
 
  1578 0008 0123     		mov	r3, #1
@@ -2398,13 +2398,13 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  1626 0006 00000000 		.4byte	.Ldebug_abbrev0
  1627 000a 04       		.byte	0x4
  1628 000b 01       		.uleb128 0x1
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 41
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 41
 
 
  1629 000c 10060000 		.4byte	.LASF107
  1630 0010 01       		.byte	0x1
  1631 0011 97030000 		.4byte	.LASF108
- 1632 0015 71080000 		.4byte	.LASF109
+ 1632 0015 A5070000 		.4byte	.LASF109
  1633 0019 00000000 		.4byte	.Ldebug_ranges0+0
  1634 001d 00000000 		.4byte	0
  1635 0021 00000000 		.4byte	.Ldebug_line0
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  1683 007c 02       		.byte	0x2
  1684 007d 9901     		.2byte	0x199
  1685 007f 3A000000 		.4byte	0x3a
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 42
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 42
 
 
  1686 0083 04       		.uleb128 0x4
@@ -2473,7 +2473,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  1695 0096 02       		.uleb128 0x2
  1696 0097 08       		.byte	0x8
  1697 0098 04       		.byte	0x4
- 1698 0099 D5090000 		.4byte	.LASF13
+ 1698 0099 CC090000 		.4byte	.LASF13
  1699 009d 02       		.uleb128 0x2
  1700 009e 01       		.byte	0x1
  1701 009f 08       		.byte	0x8
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  1740 00f1 28020000 		.4byte	.LASF21
  1741 00f5 02       		.sleb128 2
  1742 00f6 08       		.uleb128 0x8
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 43
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 43
 
 
  1743 00f7 0A070000 		.4byte	.LASF22
@@ -2560,25 +2560,25 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  1779 013f 09000000 		.4byte	.LASF34
  1780 0143 0F       		.sleb128 15
  1781 0144 08       		.uleb128 0x8
- 1782 0145 5D0A0000 		.4byte	.LASF35
+ 1782 0145 540A0000 		.4byte	.LASF35
  1783 0149 10       		.sleb128 16
  1784 014a 08       		.uleb128 0x8
  1785 014b BA000000 		.4byte	.LASF36
  1786 014f 11       		.sleb128 17
  1787 0150 08       		.uleb128 0x8
- 1788 0151 0F080000 		.4byte	.LASF37
+ 1788 0151 51080000 		.4byte	.LASF37
  1789 0155 12       		.sleb128 18
  1790 0156 08       		.uleb128 0x8
- 1791 0157 CB070000 		.4byte	.LASF38
+ 1791 0157 0D080000 		.4byte	.LASF38
  1792 015b 13       		.sleb128 19
  1793 015c 08       		.uleb128 0x8
- 1794 015d 72090000 		.4byte	.LASF39
+ 1794 015d 69090000 		.4byte	.LASF39
  1795 0161 27       		.sleb128 39
  1796 0162 08       		.uleb128 0x8
  1797 0163 41010000 		.4byte	.LASF40
  1798 0167 28       		.sleb128 40
  1799 0168 08       		.uleb128 0x8
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 44
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 44
 
 
  1800 0169 A2010000 		.4byte	.LASF41
@@ -2596,13 +2596,13 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  1812 0181 9E060000 		.4byte	.LASF45
  1813 0185 FE01     		.sleb128 254
  1814 0187 08       		.uleb128 0x8
- 1815 0188 B7090000 		.4byte	.LASF46
+ 1815 0188 AE090000 		.4byte	.LASF46
  1816 018c FF01     		.sleb128 255
  1817 018e 08       		.uleb128 0x8
- 1818 018f 39090000 		.4byte	.LASF47
+ 1818 018f 30090000 		.4byte	.LASF47
  1819 0193 8002     		.sleb128 256
  1820 0195 08       		.uleb128 0x8
- 1821 0196 8B0A0000 		.4byte	.LASF48
+ 1821 0196 820A0000 		.4byte	.LASF48
  1822 019a 8102     		.sleb128 257
  1823 019c 08       		.uleb128 0x8
  1824 019d 9C050000 		.4byte	.LASF49
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  1854 01e2 91       		.byte	0x91
  1855 01e3 D47D     		.sleb128 -300
  1856 01e5 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 45
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 45
 
 
  1857 01e6 00000000 		.4byte	.LASF53
@@ -2697,8 +2697,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  1910 0247 91       		.byte	0x91
  1911 0248 68       		.sleb128 -24
  1912 0249 0C       		.uleb128 0xc
- 1913 024a A40A0000 		.4byte	.LASF59
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 46
+ 1913 024a 9B0A0000 		.4byte	.LASF59
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 46
 
 
  1914 024e 01       		.byte	0x1
@@ -2708,7 +2708,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  1918 0255 91       		.byte	0x91
  1919 0256 5C       		.sleb128 -36
  1920 0257 0C       		.uleb128 0xc
- 1921 0258 AC090000 		.4byte	.LASF60
+ 1921 0258 A3090000 		.4byte	.LASF60
  1922 025c 01       		.byte	0x1
  1923 025d 78       		.byte	0x78
  1924 025e 83000000 		.4byte	0x83
@@ -2737,7 +2737,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  1947 028d FF       		.byte	0xff
  1948 028e 00       		.byte	0
  1949 028f 0A       		.uleb128 0xa
- 1950 0290 FD070000 		.4byte	.LASF63
+ 1950 0290 3F080000 		.4byte	.LASF63
  1951 0294 01       		.byte	0x1
  1952 0295 C2       		.byte	0xc2
  1953 0296 A4000000 		.4byte	0xa4
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  1968 02b8 40040000 		.4byte	.LASF54
  1969 02bc 01       		.byte	0x1
  1970 02bd C2       		.byte	0xc2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 47
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 47
 
 
  1971 02be 77000000 		.4byte	0x77
@@ -2766,7 +2766,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  1973 02c3 91       		.byte	0x91
  1974 02c4 E27D     		.sleb128 -286
  1975 02c6 0C       		.uleb128 0xc
- 1976 02c7 F3070000 		.4byte	.LASF64
+ 1976 02c7 35080000 		.4byte	.LASF64
  1977 02cb 01       		.byte	0x1
  1978 02cc C4       		.byte	0xc4
  1979 02cd 74020000 		.4byte	0x274
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2025 0322 0B       		.uleb128 0xb
  2026 0323 80000000 		.4byte	.LASF68
  2027 0327 01       		.byte	0x1
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 48
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 48
 
 
  2028 0328 F1       		.byte	0xf1
@@ -2841,7 +2841,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2045 0345 0E       		.uleb128 0xe
  2046 0346 C1000000 		.4byte	0xc1
  2047 034a 12       		.uleb128 0x12
- 2048 034b 1E0A0000 		.4byte	.LASF71
+ 2048 034b 150A0000 		.4byte	.LASF71
  2049 034f 01       		.byte	0x1
  2050 0350 0401     		.2byte	0x104
  2051 0352 00000000 		.4byte	.LFB5
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2082 0392 00000000 		.4byte	.LFB6
  2083 0396 1A000000 		.4byte	.LFE6-.LFB6
  2084 039a 01       		.uleb128 0x1
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 49
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 49
 
 
  2085 039b 9C       		.byte	0x9c
@@ -2927,7 +2927,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2128 03f2 72       		.sleb128 -14
  2129 03f3 00       		.byte	0
  2130 03f4 12       		.uleb128 0x12
- 2131 03f5 94090000 		.4byte	.LASF74
+ 2131 03f5 8B090000 		.4byte	.LASF74
  2132 03f9 01       		.byte	0x1
  2133 03fa 3901     		.2byte	0x139
  2134 03fc 00000000 		.4byte	.LFB8
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2139 040a 14       		.uleb128 0x14
  2140 040b ED050000 		.4byte	.LASF75
  2141 040f 01       		.byte	0x1
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 50
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 50
 
 
  2142 0410 3B01     		.2byte	0x13b
@@ -2989,7 +2989,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2187 0467 9C       		.byte	0x9c
  2188 0468 7C040000 		.4byte	0x47c
  2189 046c 13       		.uleb128 0x13
- 2190 046d 18090000 		.4byte	.LASF80
+ 2190 046d 0F090000 		.4byte	.LASF80
  2191 0471 01       		.byte	0x1
  2192 0472 7901     		.2byte	0x179
  2193 0474 77000000 		.4byte	0x77
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2196 047a 76       		.sleb128 -10
  2197 047b 00       		.byte	0
  2198 047c 16       		.uleb128 0x16
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 51
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 51
 
 
  2199 047d E3030000 		.4byte	.LASF81
@@ -3010,7 +3010,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2205 048d 9C       		.byte	0x9c
  2206 048e A2040000 		.4byte	0x4a2
  2207 0492 13       		.uleb128 0x13
- 2208 0493 18090000 		.4byte	.LASF80
+ 2208 0493 0F090000 		.4byte	.LASF80
  2209 0497 01       		.byte	0x1
  2210 0498 7F01     		.2byte	0x17f
  2211 049a 83000000 		.4byte	0x83
@@ -3019,7 +3019,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2214 04a0 74       		.sleb128 -12
  2215 04a1 00       		.byte	0
  2216 04a2 17       		.uleb128 0x17
- 2217 04a3 52090000 		.4byte	.LASF82
+ 2217 04a3 49090000 		.4byte	.LASF82
  2218 04a7 01       		.byte	0x1
  2219 04a8 8501     		.2byte	0x185
  2220 04aa 00000000 		.4byte	.LFB11
@@ -3035,7 +3035,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2230 04c4 01       		.uleb128 0x1
  2231 04c5 9C       		.byte	0x9c
  2232 04c6 17       		.uleb128 0x17
- 2233 04c7 C7090000 		.4byte	.LASF84
+ 2233 04c7 BE090000 		.4byte	.LASF84
  2234 04cb 01       		.byte	0x1
  2235 04cc 9A01     		.2byte	0x19a
  2236 04ce 00000000 		.4byte	.LFB13
@@ -3051,19 +3051,19 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2246 04e8 01       		.uleb128 0x1
  2247 04e9 9C       		.byte	0x9c
  2248 04ea 18       		.uleb128 0x18
- 2249 04eb 21090000 		.4byte	.LASF96
+ 2249 04eb 18090000 		.4byte	.LASF96
  2250 04ef 01       		.byte	0x1
  2251 04f0 C501     		.2byte	0x1c5
  2252 04f2 83000000 		.4byte	0x83
  2253 04f6 00000000 		.4byte	.LFB15
  2254 04fa 10000000 		.4byte	.LFE15-.LFB15
  2255 04fe 01       		.uleb128 0x1
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 52
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 52
 
 
  2256 04ff 9C       		.byte	0x9c
  2257 0500 19       		.uleb128 0x19
- 2258 0501 BC080000 		.4byte	.LASF86
+ 2258 0501 B3080000 		.4byte	.LASF86
  2259 0505 01       		.byte	0x1
  2260 0506 1F02     		.2byte	0x21f
  2261 0508 AB010000 		.4byte	0x1ab
@@ -3101,7 +3101,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2293 0552 74       		.sleb128 -12
  2294 0553 00       		.byte	0
  2295 0554 19       		.uleb128 0x19
- 2296 0555 51080000 		.4byte	.LASF89
+ 2296 0555 93080000 		.4byte	.LASF89
  2297 0559 01       		.byte	0x1
  2298 055a 2902     		.2byte	0x229
  2299 055c AB010000 		.4byte	0x1ab
@@ -3118,12 +3118,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2310 057a 02       		.uleb128 0x2
  2311 057b 91       		.byte	0x91
  2312 057c 74       		.sleb128 -12
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 53
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 53
 
 
  2313 057d 00       		.byte	0
  2314 057e 19       		.uleb128 0x19
- 2315 057f A5070000 		.4byte	.LASF90
+ 2315 057f E7070000 		.4byte	.LASF90
  2316 0583 01       		.byte	0x1
  2317 0584 2E02     		.2byte	0x22e
  2318 0586 AB010000 		.4byte	0x1ab
@@ -3161,7 +3161,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2350 05d0 74       		.sleb128 -12
  2351 05d1 00       		.byte	0
  2352 05d2 19       		.uleb128 0x19
- 2353 05d3 32080000 		.4byte	.LASF92
+ 2353 05d3 74080000 		.4byte	.LASF92
  2354 05d7 01       		.byte	0x1
  2355 05d8 3802     		.2byte	0x238
  2356 05da AB010000 		.4byte	0x1ab
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2367 05f8 02       		.uleb128 0x2
  2368 05f9 91       		.byte	0x91
  2369 05fa 74       		.sleb128 -12
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 54
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 54
 
 
  2370 05fb 00       		.byte	0
@@ -3221,7 +3221,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2407 064e 74       		.sleb128 -12
  2408 064f 00       		.byte	0
  2409 0650 19       		.uleb128 0x19
- 2410 0651 E7080000 		.4byte	.LASF95
+ 2410 0651 DE080000 		.4byte	.LASF95
  2411 0655 01       		.byte	0x1
  2412 0656 4702     		.2byte	0x247
  2413 0658 AB010000 		.4byte	0x1ab
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2424 0676 02       		.uleb128 0x2
  2425 0677 91       		.byte	0x91
  2426 0678 74       		.sleb128 -12
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 55
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 55
 
 
  2427 0679 00       		.byte	0
@@ -3271,7 +3271,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2454 06b8 77       		.sleb128 -9
  2455 06b9 00       		.byte	0
  2456 06ba 19       		.uleb128 0x19
- 2457 06bb 350A0000 		.4byte	.LASF99
+ 2457 06bb 2C0A0000 		.4byte	.LASF99
  2458 06bf 01       		.byte	0x1
  2459 06c0 5602     		.2byte	0x256
  2460 06c2 AB010000 		.4byte	0x1ab
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2481 06f1 70       		.sleb128 -16
  2482 06f2 00       		.byte	0
  2483 06f3 1A       		.uleb128 0x1a
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 56
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 56
 
 
  2484 06f4 83010000 		.4byte	.LASF102
@@ -3344,7 +3344,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2524 074e 01       		.uleb128 0x1
  2525 074f 9C       		.byte	0x9c
  2526 0750 19       		.uleb128 0x19
- 2527 0751 DC090000 		.4byte	.LASF105
+ 2527 0751 D3090000 		.4byte	.LASF105
  2528 0755 01       		.byte	0x1
  2529 0756 7C02     		.2byte	0x27c
  2530 0758 77000000 		.4byte	0x77
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2538 076f 01       		.byte	0x1
  2539 0770 7C02     		.2byte	0x27c
  2540 0772 D9000000 		.4byte	0xd9
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 57
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 57
 
 
  2541 0776 02       		.uleb128 0x2
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2595 001d 00       		.byte	0
  2596 001e 03       		.uleb128 0x3
  2597 001f 24       		.uleb128 0x24
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 58
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 58
 
 
  2598 0020 00       		.byte	0
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2652 0056 1C       		.uleb128 0x1c
  2653 0057 0D       		.uleb128 0xd
  2654 0058 00       		.byte	0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 59
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 59
 
 
  2655 0059 00       		.byte	0
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2709 0090 00       		.byte	0
  2710 0091 03       		.uleb128 0x3
  2711 0092 0E       		.uleb128 0xe
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 60
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 60
 
 
  2712 0093 3A       		.uleb128 0x3a
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2766 00c9 19       		.uleb128 0x19
  2767 00ca 03       		.uleb128 0x3
  2768 00cb 0E       		.uleb128 0xe
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 61
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 61
 
 
  2769 00cc 3A       		.uleb128 0x3a
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2823 0104 02       		.uleb128 0x2
  2824 0105 18       		.uleb128 0x18
  2825 0106 00       		.byte	0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 62
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 62
 
 
  2826 0107 00       		.byte	0
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2880 013e 00       		.byte	0
  2881 013f 00       		.byte	0
  2882 0140 17       		.uleb128 0x17
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 63
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 63
 
 
  2883 0141 2E       		.uleb128 0x2e
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2937 0179 3A       		.uleb128 0x3a
  2938 017a 0B       		.uleb128 0xb
  2939 017b 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 64
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 64
 
 
  2940 017c 05       		.uleb128 0x5
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  2994 01b4 13       		.uleb128 0x13
  2995 01b5 11       		.uleb128 0x11
  2996 01b6 01       		.uleb128 0x1
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 65
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 65
 
 
  2997 01b7 12       		.uleb128 0x12
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  3051 00a4 12000000 		.4byte	.LFE20-.LFB20
  3052 00a8 00000000 		.4byte	.LFB21
  3053 00ac 12000000 		.4byte	.LFE21-.LFB21
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 66
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 66
 
 
  3054 00b0 00000000 		.4byte	.LFB22
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  3108 0070 00000000 		.4byte	.LFB16
  3109 0074 12000000 		.4byte	.LFE16
  3110 0078 00000000 		.4byte	.LFB17
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 67
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 67
 
 
  3111 007c 12000000 		.4byte	.LFE17
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  3152      4C324341 
  3152      505F5053 
  3153              	.LASF103:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 68
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 68
 
 
  3154 0057 4379426C 		.ascii	"CyBle_Hal_se_smp_sc_user_passkey_handler\000"
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  3175      455F4552 
  3175      524F525F 
  3175      464C4153 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 69
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 69
 
 
  3175      485F5752 
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  3195 0257 6C656E67 		.ascii	"lengthFlash\000"
  3195      7468466C 
  3195      61736800 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 70
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 70
 
 
  3196              	.LASF51:
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  3217      524F525F 
  3217      42545F4F 
  3217      4E5F4E4F 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 71
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 71
 
 
  3218              	.LASF58:
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  3240              	.LASF26:
  3241 0447 4359424C 		.ascii	"CYBLE_ERROR_NO_DEVICE_ENTITY\000"
  3241      455F4552 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 72
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 72
 
 
  3241      524F525F 
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  3261      676E6564 
  3261      20696E74 
  3261      00
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 73
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 73
 
 
  3262              	.LASF32:
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  3285      00
  3286              	.LASF15:
  3287 05fa 63797374 		.ascii	"cystatus\000"
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 74
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 74
 
 
  3287      61747573 
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  3306              	.LASF43:
  3307 072f 4359424C 		.ascii	"CYBLE_ERROR_UNSUPPORTED_FEATURE_OR_PARAMETER_VALUE\000"
  3307      455F4552 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 75
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 75
 
 
  3307      524F525F 
@@ -4468,97 +4468,97 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  3319      69676E65 
  3319      6420696E 
  3319      7400
- 3320              	.LASF90:
- 3321 07a5 4379426C 		.ascii	"CyBle_Hal_pairing_dhkey_check_handler\000"
- 3321      655F4861 
- 3321      6C5F7061 
- 3321      6972696E 
- 3321      675F6468 
- 3322              	.LASF38:
- 3323 07cb 4359424C 		.ascii	"CYBLE_ERROR_GATT_DB_INVALID_ATTR_HANDLE\000"
- 3323      455F4552 
- 3323      524F525F 
- 3323      47415454 
- 3323      5F44425F 
- 3324              	.LASF64:
- 3325 07f3 74656D70 		.ascii	"tempFlash\000"
- 3325      466C6173 
- 3325      6800
- 3326              	.LASF63:
- 3327 07fd 4379424C 		.ascii	"CyBLE_Nvram_Erase\000"
- 3327      455F4E76 
- 3327      72616D5F 
- 3327      45726173 
- 3327      6500
- 3328              	.LASF37:
- 3329 080f 4359424C 		.ascii	"CYBLE_ERROR_L2CAP_PSM_NOT_IN_RANGE\000"
- 3329      455F4552 
- 3329      524F525F 
- 3329      4C324341 
- 3329      505F5053 
- 3330              	.LASF92:
- 3331 0832 4379426C 		.ascii	"CyBle_Hal_pairing_rand_handler\000"
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 76
+ 3320              	.LASF109:
+ 3321 07a5 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\GitHub\\BioSnap\\pro"
+ 3321      73657273 
+ 3321      5C4D6174 
+ 3321      74686577 
+ 3321      5C446F63 
+ 3322 07d2 635F7465 		.ascii	"c_test\\proc_v1.cydsn\000"
+ 3322      73745C70 
+ 3322      726F635F 
+ 3322      76312E63 
+ 3322      7964736E 
+ 3323              	.LASF90:
+ 3324 07e7 4379426C 		.ascii	"CyBle_Hal_pairing_dhkey_check_handler\000"
+ 3324      655F4861 
+ 3324      6C5F7061 
+ 3324      6972696E 
+ 3324      675F6468 
+ 3325              	.LASF38:
+ 3326 080d 4359424C 		.ascii	"CYBLE_ERROR_GATT_DB_INVALID_ATTR_HANDLE\000"
+ 3326      455F4552 
+ 3326      524F525F 
+ 3326      47415454 
+ 3326      5F44425F 
+ 3327              	.LASF64:
+ 3328 0835 74656D70 		.ascii	"tempFlash\000"
+ 3328      466C6173 
+ 3328      6800
+ 3329              	.LASF63:
+ 3330 083f 4379424C 		.ascii	"CyBLE_Nvram_Erase\000"
+ 3330      455F4E76 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 76
 
 
- 3331      655F4861 
- 3331      6C5F7061 
- 3331      6972696E 
- 3331      675F7261 
- 3332              	.LASF89:
- 3333 0851 4379426C 		.ascii	"CyBle_Hal_pairing_dhkey_handler\000"
- 3333      655F4861 
- 3333      6C5F7061 
- 3333      6972696E 
- 3333      675F6468 
- 3334              	.LASF109:
- 3335 0871 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\UC Davis\\EEC 136AB\\"
- 3335      73657273 
- 3335      5C4D6174 
- 3335      74686577 
- 3335      5C446F63 
- 3336 089f 50536F43 		.ascii	"PSoC\\proc_test\\proc_v1.cydsn\000"
- 3336      5C70726F 
- 3336      635F7465 
- 3336      73745C70 
- 3336      726F635F 
+ 3330      72616D5F 
+ 3330      45726173 
+ 3330      6500
+ 3331              	.LASF37:
+ 3332 0851 4359424C 		.ascii	"CYBLE_ERROR_L2CAP_PSM_NOT_IN_RANGE\000"
+ 3332      455F4552 
+ 3332      524F525F 
+ 3332      4C324341 
+ 3332      505F5053 
+ 3333              	.LASF92:
+ 3334 0874 4379426C 		.ascii	"CyBle_Hal_pairing_rand_handler\000"
+ 3334      655F4861 
+ 3334      6C5F7061 
+ 3334      6972696E 
+ 3334      675F7261 
+ 3335              	.LASF89:
+ 3336 0893 4379426C 		.ascii	"CyBle_Hal_pairing_dhkey_handler\000"
+ 3336      655F4861 
+ 3336      6C5F7061 
+ 3336      6972696E 
+ 3336      675F6468 
  3337              	.LASF86:
- 3338 08bc 4379426C 		.ascii	"CyBle_Hal_pairing_local_public_key_handler\000"
+ 3338 08b3 4379426C 		.ascii	"CyBle_Hal_pairing_local_public_key_handler\000"
  3338      655F4861 
  3338      6C5F7061 
  3338      6972696E 
  3338      675F6C6F 
  3339              	.LASF95:
- 3340 08e7 4379426C 		.ascii	"CyBle_Hal_pairing_sc_tbx_dhkey_generate_complete\000"
+ 3340 08de 4379426C 		.ascii	"CyBle_Hal_pairing_sc_tbx_dhkey_generate_complete\000"
  3340      655F4861 
  3340      6C5F7061 
  3340      6972696E 
  3340      675F7363 
  3341              	.LASF80:
- 3342 0918 64656C61 		.ascii	"delayVal\000"
+ 3342 090f 64656C61 		.ascii	"delayVal\000"
  3342      7956616C 
  3342      00
  3343              	.LASF96:
- 3344 0921 4379424C 		.ascii	"CyBLE_GetIpBlockVersion\000"
+ 3344 0918 4379424C 		.ascii	"CyBLE_GetIpBlockVersion\000"
  3344      455F4765 
  3344      74497042 
  3344      6C6F636B 
  3344      56657273 
  3345              	.LASF47:
- 3346 0939 4359424C 		.ascii	"CYBLE_ERROR_NTF_DISABLED\000"
+ 3346 0930 4359424C 		.ascii	"CYBLE_ERROR_NTF_DISABLED\000"
  3346      455F4552 
  3346      524F525F 
  3346      4E54465F 
  3346      44495341 
  3347              	.LASF82:
- 3348 0952 4379426C 		.ascii	"CyBleHal_EnableGlobalInterrupts\000"
+ 3348 0949 4379426C 		.ascii	"CyBleHal_EnableGlobalInterrupts\000"
  3348      6548616C 
  3348      5F456E61 
  3348      626C6547 
  3348      6C6F6261 
  3349              	.LASF39:
- 3350 0972 4359424C 		.ascii	"CYBLE_ERROR_DEVICE_ALREADY_EXISTS\000"
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 77
+ 3350 0969 4359424C 		.ascii	"CYBLE_ERROR_DEVICE_ALREADY_EXISTS\000"
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 77
 
 
  3350      455F4552 
@@ -4566,59 +4566,59 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  3350      44455649 
  3350      43455F41 
  3351              	.LASF74:
- 3352 0994 4379424C 		.ascii	"CyBLE_BlessDeviceConfig\000"
+ 3352 098b 4379424C 		.ascii	"CyBLE_BlessDeviceConfig\000"
  3352      455F426C 
  3352      65737344 
  3352      65766963 
  3352      65436F6E 
  3353              	.LASF60:
- 3354 09ac 62797465 		.ascii	"byteOffset\000"
+ 3354 09a3 62797465 		.ascii	"byteOffset\000"
  3354      4F666673 
  3354      657400
  3355              	.LASF46:
- 3356 09b7 4359424C 		.ascii	"CYBLE_ERROR_MAX\000"
+ 3356 09ae 4359424C 		.ascii	"CYBLE_ERROR_MAX\000"
  3356      455F4552 
  3356      524F525F 
  3356      4D415800 
  3357              	.LASF84:
- 3358 09c7 4379426C 		.ascii	"CyBle_HalInit\000"
+ 3358 09be 4379426C 		.ascii	"CyBle_HalInit\000"
  3358      655F4861 
  3358      6C496E69 
  3358      7400
  3359              	.LASF13:
- 3360 09d5 646F7562 		.ascii	"double\000"
+ 3360 09cc 646F7562 		.ascii	"double\000"
  3360      6C6500
  3361              	.LASF105:
- 3362 09dc 424C455F 		.ascii	"BLE_CMP_FTR_API_lec_hci_handle_read_local_P256_publ"
+ 3362 09d3 424C455F 		.ascii	"BLE_CMP_FTR_API_lec_hci_handle_read_local_P256_publ"
  3362      434D505F 
  3362      4654525F 
  3362      4150495F 
  3362      6C65635F 
- 3363 0a0f 69635F6B 		.ascii	"ic_key_command\000"
+ 3363 0a06 69635F6B 		.ascii	"ic_key_command\000"
  3363      65795F63 
  3363      6F6D6D61 
  3363      6E6400
  3364              	.LASF71:
- 3365 0a1e 4379424C 		.ascii	"CyBLE_Bless_LlRegWrite\000"
+ 3365 0a15 4379424C 		.ascii	"CyBLE_Bless_LlRegWrite\000"
  3365      455F426C 
  3365      6573735F 
  3365      4C6C5265 
  3365      67577269 
  3366              	.LASF99:
- 3367 0a35 4379426C 		.ascii	"CyBle_Hal_pairing_sc_tbx_generate_DHkey\000"
+ 3367 0a2c 4379426C 		.ascii	"CyBle_Hal_pairing_sc_tbx_generate_DHkey\000"
  3367      655F4861 
  3367      6C5F7061 
  3367      6972696E 
  3367      675F7363 
  3368              	.LASF35:
- 3369 0a5d 4359424C 		.ascii	"CYBLE_ERROR_L2CAP_CONNECTION_ENTITY_NOT_FOUND\000"
+ 3369 0a54 4359424C 		.ascii	"CYBLE_ERROR_L2CAP_CONNECTION_ENTITY_NOT_FOUND\000"
  3369      455F4552 
  3369      524F525F 
  3369      4C324341 
  3369      505F434F 
  3370              	.LASF48:
- 3371 0a8b 4359424C 		.ascii	"CYBLE_ERROR_IND_DISABLED\000"
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 78
+ 3371 0a82 4359424C 		.ascii	"CYBLE_ERROR_IND_DISABLED\000"
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccUU03pj.s 			page 78
 
 
  3371      455F4552 
@@ -4626,7 +4626,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccYld2ix.s 			page 1
  3371      494E445F 
  3371      44495341 
  3372              	.LASF59:
- 3373 0aa4 65654F66 		.ascii	"eeOffset\000"
+ 3373 0a9b 65654F66 		.ascii	"eeOffset\000"
  3373      66736574 
  3373      00
  3374              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

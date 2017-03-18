@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 0s.252ms
+Loading plugins phase: Elapsed time ==> 0s.248ms
 Initializing data phase: Elapsed time ==> 0s.000ms
 <CYPRESSTAG name="CyDsfit arguments...">
-cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p C:\Users\Matthew\Documents\UC Davis\EEC 136AB\PSoC\proc_test\proc_v1.cydsn\proc_v1.cyprj -d CYBLE-212019-00 -s C:\Users\Matthew\Documents\UC Davis\EEC 136AB\PSoC\proc_test\proc_v1.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE</CYPRESSTAG>
+cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p C:\Users\Matthew\Documents\GitHub\BioSnap\proc_test\proc_v1.cydsn\proc_v1.cyprj -d CYBLE-212019-00 -s C:\Users\Matthew\Documents\GitHub\BioSnap\proc_test\proc_v1.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE</CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 3s.195ms
+Elaboration phase: Elapsed time ==> 2s.900ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.076ms
+HDL generation phase: Elapsed time ==> 0s.078ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -25,23 +25,23 @@ HDL generation phase: Elapsed time ==> 0s.076ms
 ======================================================================
 Compiling:  proc_v1.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\bin/warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Matthew\Documents\UC Davis\EEC 136AB\PSoC\proc_test\proc_v1.cydsn\proc_v1.cyprj -dcpsoc3 proc_v1.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Matthew\Documents\GitHub\BioSnap\proc_test\proc_v1.cydsn\proc_v1.cyprj -dcpsoc3 proc_v1.v -verilog
 ======================================================================
 
 ======================================================================
 Compiling:  proc_v1.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\bin/warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Matthew\Documents\UC Davis\EEC 136AB\PSoC\proc_test\proc_v1.cydsn\proc_v1.cyprj -dcpsoc3 proc_v1.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Matthew\Documents\GitHub\BioSnap\proc_test\proc_v1.cydsn\proc_v1.cyprj -dcpsoc3 proc_v1.v -verilog
 ======================================================================
 
 ======================================================================
 Compiling:  proc_v1.v
 Program  :   vlogfe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Matthew\Documents\UC Davis\EEC 136AB\PSoC\proc_test\proc_v1.cydsn\proc_v1.cyprj -dcpsoc3 -verilog proc_v1.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Matthew\Documents\GitHub\BioSnap\proc_test\proc_v1.cydsn\proc_v1.cyprj -dcpsoc3 -verilog proc_v1.v
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Fri Mar 10 16:51:17 2017
+Wed Mar 15 16:41:02 2017
 
 
 ======================================================================
@@ -51,7 +51,7 @@ Options  :    -yv2 -q10 proc_v1.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Fri Mar 10 16:51:17 2017
+Wed Mar 15 16:41:02 2017
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'
@@ -84,11 +84,11 @@ vlogfe:  No errors.
 ======================================================================
 Compiling:  proc_v1.v
 Program  :   tovif
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Matthew\Documents\UC Davis\EEC 136AB\PSoC\proc_test\proc_v1.cydsn\proc_v1.cyprj -dcpsoc3 -verilog proc_v1.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Matthew\Documents\GitHub\BioSnap\proc_test\proc_v1.cydsn\proc_v1.cyprj -dcpsoc3 -verilog proc_v1.v
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Fri Mar 10 16:51:17 2017
+Wed Mar 15 16:41:02 2017
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -99,9 +99,9 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking 'C:\Users\Matthew\Documents\UC Davis\EEC 136AB\PSoC\proc_test\proc_v1.cydsn\codegentemp\proc_v1.ctl'.
+Linking 'C:\Users\Matthew\Documents\GitHub\BioSnap\proc_test\proc_v1.cydsn\codegentemp\proc_v1.ctl'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
-Linking 'C:\Users\Matthew\Documents\UC Davis\EEC 136AB\PSoC\proc_test\proc_v1.cydsn\codegentemp\proc_v1.v'.
+Linking 'C:\Users\Matthew\Documents\GitHub\BioSnap\proc_test\proc_v1.cydsn\codegentemp\proc_v1.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Bus_Connect_v2_40\Bus_Connect_v2_40.v'.
@@ -116,11 +116,11 @@ tovif:  No errors.
 ======================================================================
 Compiling:  proc_v1.v
 Program  :   topld
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Matthew\Documents\UC Davis\EEC 136AB\PSoC\proc_test\proc_v1.cydsn\proc_v1.cyprj -dcpsoc3 -verilog proc_v1.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Matthew\Documents\GitHub\BioSnap\proc_test\proc_v1.cydsn\proc_v1.cyprj -dcpsoc3 -verilog proc_v1.v
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Fri Mar 10 16:51:17 2017
+Wed Mar 15 16:41:02 2017
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -131,9 +131,9 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking 'C:\Users\Matthew\Documents\UC Davis\EEC 136AB\PSoC\proc_test\proc_v1.cydsn\codegentemp\proc_v1.ctl'.
+Linking 'C:\Users\Matthew\Documents\GitHub\BioSnap\proc_test\proc_v1.cydsn\codegentemp\proc_v1.ctl'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
-Linking 'C:\Users\Matthew\Documents\UC Davis\EEC 136AB\PSoC\proc_test\proc_v1.cydsn\codegentemp\proc_v1.v'.
+Linking 'C:\Users\Matthew\Documents\GitHub\BioSnap\proc_test\proc_v1.cydsn\codegentemp\proc_v1.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Bus_Connect_v2_40\Bus_Connect_v2_40.v'.
@@ -245,13 +245,13 @@ topld:  No errors.
 
 CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\bin/warp.exe
-Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya "-.fftprj=C:\Users\Matthew\Documents\UC Davis\EEC 136AB\PSoC\proc_test\proc_v1.cydsn\proc_v1.cyprj" -dcpsoc3 proc_v1.v -verilog
+Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Matthew\Documents\GitHub\BioSnap\proc_test\proc_v1.cydsn\proc_v1.cyprj -dcpsoc3 proc_v1.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 0s.562ms
+Warp synthesis phase: Elapsed time ==> 0s.565ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V3.3.0.9604, Family: PSoC3, Started at: Friday, 10 March 2017 16:51:17
-Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Matthew\Documents\UC Davis\EEC 136AB\PSoC\proc_test\proc_v1.cydsn\proc_v1.cyprj -d CYBLE-212019-00 proc_v1.v -verilog
+cyp3fit: V3.3.0.9604, Family: PSoC3, Started at: Wednesday, 15 March 2017 16:41:02
+Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Matthew\Documents\GitHub\BioSnap\proc_test\proc_v1.cydsn\proc_v1.cyprj -d CYBLE-212019-00 proc_v1.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
 Design parsing phase: Elapsed time ==> 0s.012ms
@@ -526,20 +526,20 @@ DAC                           :      :      :      :
   7-bit IDAC                  :    0 :    1 :    1 :  0.00 %
   8-bit IDAC                  :    0 :    1 :    1 :  0.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.010ms
-Tech mapping phase: Elapsed time ==> 0s.044ms
+Technology Mapping: Elapsed time ==> 0s.009ms
+Tech mapping phase: Elapsed time ==> 0s.041ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 <CYPRESSTAG name="Analog Placement">
-Elapsed time ==> 0.0881985s
+Elapsed time ==> 0.0937680s
 </CYPRESSTAG>
-Analog Placement phase: Elapsed time ==> 0s.264ms
+Analog Placement phase: Elapsed time ==> 0s.256ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=1 Elapsed=0.0082512 secs
+Route success=True, Iterations=1 Elapsed=0.0127584 secs
 </CYPRESSTAG>
-Analog Routing phase: Elapsed time ==> 0s.008ms
+Analog Routing phase: Elapsed time ==> 0s.013ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Code Generation">
 ============ Analog Final Answer Routes ============
@@ -634,12 +634,12 @@ Mux Info {
     }
   }
 }
-Analog Code Generation phase: Elapsed time ==> 0s.020ms
+Analog Code Generation phase: Elapsed time ==> 0s.029ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
 I2659: No Constrained paths were found. The placer will run in non-timing driven mode.
-I2076: Total run-time: 0.2 sec.
+I2076: Total run-time: 0.3 sec.
 
 </CYPRESSTAG>
 <CYPRESSTAG name="PLD Packing">
@@ -653,7 +653,7 @@ PLD Packing: Elapsed time ==> 0s.001ms
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.010ms
+Partitioning: Elapsed time ==> 0s.014ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Simulated Annealing">
 Annealing: Elapsed time ==> 0s.001ms
@@ -1048,31 +1048,31 @@ Port | Pin | Fixed |      Type |       Drive Mode |           Name | Connections
 </CYPRESSTAG>
 </CYPRESSTAG>
 Digital component placer commit/Report: Elapsed time ==> 0s.001ms
-Digital Placement phase: Elapsed time ==> 0s.464ms
+Digital Placement phase: Elapsed time ==> 0s.621ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 Routing successful.
-Digital Routing phase: Elapsed time ==> 0s.679ms
+Digital Routing phase: Elapsed time ==> 0s.674ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream and API generation">
-Bitstream and API generation phase: Elapsed time ==> 0s.288ms
+Bitstream and API generation phase: Elapsed time ==> 0s.286ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream verification">
-Bitstream verification phase: Elapsed time ==> 0s.022ms
+Bitstream verification phase: Elapsed time ==> 0s.024ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in proc_v1_timing.html.
-Static timing analysis phase: Elapsed time ==> 0s.206ms
+Static timing analysis phase: Elapsed time ==> 0s.288ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.165ms
+Design database save phase: Elapsed time ==> 0s.153ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 2s.193ms
+cydsfit: Elapsed time ==> 2s.416ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 2s.245ms
-API generation phase: Elapsed time ==> 1s.522ms
-Dependency generation phase: Elapsed time ==> 0s.027ms
-Cleanup phase: Elapsed time ==> 0s.000ms
+Fitter phase: Elapsed time ==> 2s.471ms
+API generation phase: Elapsed time ==> 1s.769ms
+Dependency generation phase: Elapsed time ==> 0s.028ms
+Cleanup phase: Elapsed time ==> 0s.002ms
