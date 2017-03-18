@@ -11,12 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d49a789d-d5e7-4437-9d1a-c01f0815b5cd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_25_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_25_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_25_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_25_1_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/eec136b/biosnap/biosnapapp/BleService.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/eec136b/biosnap/biosnapapp/BleService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/eec136b/biosnap/biosnapapp/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/eec136b/biosnap/biosnapapp/MainActivity.java" />
     </list>
     <ignored path="BioSnapApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -2408,7 +2403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1489778335240</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="changed LUT for temp sensor to have their decimal values">
+      <created>1489797842563</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1489797842563</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2464,7 +2466,8 @@
     <MESSAGE value="UI Change" />
     <MESSAGE value="Added Splash Screen, removed BLE buttons." />
     <MESSAGE value="Lots of UI changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lots of UI changes." />
+    <MESSAGE value="changed LUT for temp sensor to have their decimal values" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed LUT for temp sensor to have their decimal values" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
