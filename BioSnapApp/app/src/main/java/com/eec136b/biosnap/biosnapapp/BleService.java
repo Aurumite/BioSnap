@@ -242,7 +242,7 @@ public class BleService extends Service {
         // We want to directly connect to the device, so we are setting the autoConnect
         // parameter to false;
 
-        mBluetoothGatt = mLeDevice.connectGatt(this, false, mGattCallback);
+        mBluetoothGatt = mLeDevice.connectGatt(this, true, mGattCallback);
         Log.d(TAG, "trying to create a new connection.");
 
         return true;
@@ -260,7 +260,10 @@ public class BleService extends Service {
             Log.w(TAG, "BluetoothAdapter not initialized");
             return;
         }
+        //disable notifications on disconnect
+        notify(false);
         mBluetoothGatt.disconnect();
+        Log.d(TAG, "disconnect()");
     }
     public void close() {
         if (mBluetoothGatt == null) {
@@ -548,17 +551,17 @@ public class BleService extends Service {
     }
 
     public String getHeartRate(){
-        return "Heart Rate: " + Integer.toString(mHeartRate) + "bpm";
+        return Integer.toString(mHeartRate);
     }
     public double getHeartRateD() {return (double)mHeartRate;}
 
     public String getSP02(){
-        return "SP02: " + Integer.toString(mSP02);
+        return Integer.toString(mSP02);
 
     }
 
     public String getBatteryLevel(){
-        return "Battery Level: " + Integer.toString(mBatteryLevel) + "mV";
+        return Integer.toString(mBatteryLevel);
     }
 
     public String getXYZ(){

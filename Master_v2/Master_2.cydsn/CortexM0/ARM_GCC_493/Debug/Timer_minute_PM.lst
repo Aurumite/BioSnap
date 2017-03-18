@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 1
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccbwp6RB.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -29,49 +29,49 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 1
   26              		.type	Timer_minute_SaveConfig, %function
   27              	Timer_minute_SaveConfig:
   28              	.LFB2:
-  29              		.file 1 ".\\Generated_Source\\PSoC4\\Timer_minute_PM.c"
-   1:.\Generated_Source\PSoC4/Timer_minute_PM.c **** /*******************************************************************************
-   2:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * File Name: Timer_minute_PM.c
-   3:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Version 2.10
-   4:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
-   5:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Description:
-   6:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *  This file contains the setup, control, and status commands to support
-   7:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *  the component operations in the low power mode.
-   8:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
-   9:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Note:
-  10:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *  None
-  11:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
-  12:.\Generated_Source\PSoC4/Timer_minute_PM.c **** ********************************************************************************
-  13:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Copyright 2013-2015, Cypress Semiconductor Corporation.  All rights reserved.
-  14:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * You may use this file only in accordance with the license, terms, conditions,
-  15:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * disclaimers, and limitations in the end user license agreement accompanying
-  16:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * the software package with which this file was provided.
-  17:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *******************************************************************************/
-  18:.\Generated_Source\PSoC4/Timer_minute_PM.c **** 
-  19:.\Generated_Source\PSoC4/Timer_minute_PM.c **** #include "Timer_minute.h"
-  20:.\Generated_Source\PSoC4/Timer_minute_PM.c **** 
-  21:.\Generated_Source\PSoC4/Timer_minute_PM.c **** static Timer_minute_BACKUP_STRUCT Timer_minute_backup;
-  22:.\Generated_Source\PSoC4/Timer_minute_PM.c **** 
-  23:.\Generated_Source\PSoC4/Timer_minute_PM.c **** 
-  24:.\Generated_Source\PSoC4/Timer_minute_PM.c **** /*******************************************************************************
-  25:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Function Name: Timer_minute_SaveConfig
-  26:.\Generated_Source\PSoC4/Timer_minute_PM.c **** ********************************************************************************
-  27:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
-  28:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Summary:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 2
+  29              		.file 1 "Generated_Source\\PSoC4\\Timer_minute_PM.c"
+   1:Generated_Source\PSoC4/Timer_minute_PM.c **** /*******************************************************************************
+   2:Generated_Source\PSoC4/Timer_minute_PM.c **** * File Name: Timer_minute_PM.c
+   3:Generated_Source\PSoC4/Timer_minute_PM.c **** * Version 2.10
+   4:Generated_Source\PSoC4/Timer_minute_PM.c **** *
+   5:Generated_Source\PSoC4/Timer_minute_PM.c **** * Description:
+   6:Generated_Source\PSoC4/Timer_minute_PM.c **** *  This file contains the setup, control, and status commands to support
+   7:Generated_Source\PSoC4/Timer_minute_PM.c **** *  the component operations in the low power mode.
+   8:Generated_Source\PSoC4/Timer_minute_PM.c **** *
+   9:Generated_Source\PSoC4/Timer_minute_PM.c **** * Note:
+  10:Generated_Source\PSoC4/Timer_minute_PM.c **** *  None
+  11:Generated_Source\PSoC4/Timer_minute_PM.c **** *
+  12:Generated_Source\PSoC4/Timer_minute_PM.c **** ********************************************************************************
+  13:Generated_Source\PSoC4/Timer_minute_PM.c **** * Copyright 2013-2015, Cypress Semiconductor Corporation.  All rights reserved.
+  14:Generated_Source\PSoC4/Timer_minute_PM.c **** * You may use this file only in accordance with the license, terms, conditions,
+  15:Generated_Source\PSoC4/Timer_minute_PM.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  16:Generated_Source\PSoC4/Timer_minute_PM.c **** * the software package with which this file was provided.
+  17:Generated_Source\PSoC4/Timer_minute_PM.c **** *******************************************************************************/
+  18:Generated_Source\PSoC4/Timer_minute_PM.c **** 
+  19:Generated_Source\PSoC4/Timer_minute_PM.c **** #include "Timer_minute.h"
+  20:Generated_Source\PSoC4/Timer_minute_PM.c **** 
+  21:Generated_Source\PSoC4/Timer_minute_PM.c **** static Timer_minute_BACKUP_STRUCT Timer_minute_backup;
+  22:Generated_Source\PSoC4/Timer_minute_PM.c **** 
+  23:Generated_Source\PSoC4/Timer_minute_PM.c **** 
+  24:Generated_Source\PSoC4/Timer_minute_PM.c **** /*******************************************************************************
+  25:Generated_Source\PSoC4/Timer_minute_PM.c **** * Function Name: Timer_minute_SaveConfig
+  26:Generated_Source\PSoC4/Timer_minute_PM.c **** ********************************************************************************
+  27:Generated_Source\PSoC4/Timer_minute_PM.c **** *
+  28:Generated_Source\PSoC4/Timer_minute_PM.c **** * Summary:
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccbwp6RB.s 			page 2
 
 
-  29:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *  All configuration registers are retention. Nothing to save here.
-  30:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
-  31:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Parameters:
-  32:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *  None
-  33:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
-  34:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Return:
-  35:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *  None
-  36:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
-  37:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *******************************************************************************/
-  38:.\Generated_Source\PSoC4/Timer_minute_PM.c **** void Timer_minute_SaveConfig(void)
-  39:.\Generated_Source\PSoC4/Timer_minute_PM.c **** {
+  29:Generated_Source\PSoC4/Timer_minute_PM.c **** *  All configuration registers are retention. Nothing to save here.
+  30:Generated_Source\PSoC4/Timer_minute_PM.c **** *
+  31:Generated_Source\PSoC4/Timer_minute_PM.c **** * Parameters:
+  32:Generated_Source\PSoC4/Timer_minute_PM.c **** *  None
+  33:Generated_Source\PSoC4/Timer_minute_PM.c **** *
+  34:Generated_Source\PSoC4/Timer_minute_PM.c **** * Return:
+  35:Generated_Source\PSoC4/Timer_minute_PM.c **** *  None
+  36:Generated_Source\PSoC4/Timer_minute_PM.c **** *
+  37:Generated_Source\PSoC4/Timer_minute_PM.c **** *******************************************************************************/
+  38:Generated_Source\PSoC4/Timer_minute_PM.c **** void Timer_minute_SaveConfig(void)
+  39:Generated_Source\PSoC4/Timer_minute_PM.c **** {
   30              		.loc 1 39 0
   31              		.cfi_startproc
   32 0000 80B5     		push	{r7, lr}
@@ -80,8 +80,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 1
   35              		.cfi_offset 14, -4
   36 0002 00AF     		add	r7, sp, #0
   37              		.cfi_def_cfa_register 7
-  40:.\Generated_Source\PSoC4/Timer_minute_PM.c **** 
-  41:.\Generated_Source\PSoC4/Timer_minute_PM.c **** }
+  40:Generated_Source\PSoC4/Timer_minute_PM.c **** 
+  41:Generated_Source\PSoC4/Timer_minute_PM.c **** }
   38              		.loc 1 41 0
   39 0004 BD46     		mov	sp, r7
   40              		@ sp needed
@@ -97,28 +97,28 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 1
   50              		.type	Timer_minute_Sleep, %function
   51              	Timer_minute_Sleep:
   52              	.LFB3:
-  42:.\Generated_Source\PSoC4/Timer_minute_PM.c **** 
-  43:.\Generated_Source\PSoC4/Timer_minute_PM.c **** 
-  44:.\Generated_Source\PSoC4/Timer_minute_PM.c **** /*******************************************************************************
-  45:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Function Name: Timer_minute_Sleep
-  46:.\Generated_Source\PSoC4/Timer_minute_PM.c **** ********************************************************************************
-  47:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
-  48:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Summary:
-  49:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *  Stops the component operation and saves the user configuration.
-  50:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
-  51:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Parameters:
-  52:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *  None
-  53:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
-  54:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Return:
-  55:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *  None
-  56:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
-  57:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *******************************************************************************/
-  58:.\Generated_Source\PSoC4/Timer_minute_PM.c **** void Timer_minute_Sleep(void)
-  59:.\Generated_Source\PSoC4/Timer_minute_PM.c **** {
+  42:Generated_Source\PSoC4/Timer_minute_PM.c **** 
+  43:Generated_Source\PSoC4/Timer_minute_PM.c **** 
+  44:Generated_Source\PSoC4/Timer_minute_PM.c **** /*******************************************************************************
+  45:Generated_Source\PSoC4/Timer_minute_PM.c **** * Function Name: Timer_minute_Sleep
+  46:Generated_Source\PSoC4/Timer_minute_PM.c **** ********************************************************************************
+  47:Generated_Source\PSoC4/Timer_minute_PM.c **** *
+  48:Generated_Source\PSoC4/Timer_minute_PM.c **** * Summary:
+  49:Generated_Source\PSoC4/Timer_minute_PM.c **** *  Stops the component operation and saves the user configuration.
+  50:Generated_Source\PSoC4/Timer_minute_PM.c **** *
+  51:Generated_Source\PSoC4/Timer_minute_PM.c **** * Parameters:
+  52:Generated_Source\PSoC4/Timer_minute_PM.c **** *  None
+  53:Generated_Source\PSoC4/Timer_minute_PM.c **** *
+  54:Generated_Source\PSoC4/Timer_minute_PM.c **** * Return:
+  55:Generated_Source\PSoC4/Timer_minute_PM.c **** *  None
+  56:Generated_Source\PSoC4/Timer_minute_PM.c **** *
+  57:Generated_Source\PSoC4/Timer_minute_PM.c **** *******************************************************************************/
+  58:Generated_Source\PSoC4/Timer_minute_PM.c **** void Timer_minute_Sleep(void)
+  59:Generated_Source\PSoC4/Timer_minute_PM.c **** {
   53              		.loc 1 59 0
   54              		.cfi_startproc
   55 0000 80B5     		push	{r7, lr}
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 3
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccbwp6RB.s 			page 3
 
 
   56              		.cfi_def_cfa_offset 8
@@ -126,39 +126,39 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 1
   58              		.cfi_offset 14, -4
   59 0002 00AF     		add	r7, sp, #0
   60              		.cfi_def_cfa_register 7
-  60:.\Generated_Source\PSoC4/Timer_minute_PM.c ****     if(0u != (Timer_minute_BLOCK_CONTROL_REG & Timer_minute_MASK))
+  60:Generated_Source\PSoC4/Timer_minute_PM.c ****     if(0u != (Timer_minute_BLOCK_CONTROL_REG & Timer_minute_MASK))
   61              		.loc 1 60 0
   62 0004 084B     		ldr	r3, .L5
   63 0006 1B68     		ldr	r3, [r3]
   64 0008 0122     		mov	r2, #1
   65 000a 1340     		and	r3, r2
   66 000c 03D0     		beq	.L3
-  61:.\Generated_Source\PSoC4/Timer_minute_PM.c ****     {
-  62:.\Generated_Source\PSoC4/Timer_minute_PM.c ****         Timer_minute_backup.enableState = 1u;
+  61:Generated_Source\PSoC4/Timer_minute_PM.c ****     {
+  62:Generated_Source\PSoC4/Timer_minute_PM.c ****         Timer_minute_backup.enableState = 1u;
   67              		.loc 1 62 0
   68 000e 074B     		ldr	r3, .L5+4
   69 0010 0122     		mov	r2, #1
   70 0012 1A70     		strb	r2, [r3]
   71 0014 02E0     		b	.L4
   72              	.L3:
-  63:.\Generated_Source\PSoC4/Timer_minute_PM.c ****     }
-  64:.\Generated_Source\PSoC4/Timer_minute_PM.c ****     else
-  65:.\Generated_Source\PSoC4/Timer_minute_PM.c ****     {
-  66:.\Generated_Source\PSoC4/Timer_minute_PM.c ****         Timer_minute_backup.enableState = 0u;
+  63:Generated_Source\PSoC4/Timer_minute_PM.c ****     }
+  64:Generated_Source\PSoC4/Timer_minute_PM.c ****     else
+  65:Generated_Source\PSoC4/Timer_minute_PM.c ****     {
+  66:Generated_Source\PSoC4/Timer_minute_PM.c ****         Timer_minute_backup.enableState = 0u;
   73              		.loc 1 66 0
   74 0016 054B     		ldr	r3, .L5+4
   75 0018 0022     		mov	r2, #0
   76 001a 1A70     		strb	r2, [r3]
   77              	.L4:
-  67:.\Generated_Source\PSoC4/Timer_minute_PM.c ****     }
-  68:.\Generated_Source\PSoC4/Timer_minute_PM.c **** 
-  69:.\Generated_Source\PSoC4/Timer_minute_PM.c ****     Timer_minute_Stop();
+  67:Generated_Source\PSoC4/Timer_minute_PM.c ****     }
+  68:Generated_Source\PSoC4/Timer_minute_PM.c **** 
+  69:Generated_Source\PSoC4/Timer_minute_PM.c ****     Timer_minute_Stop();
   78              		.loc 1 69 0
   79 001c FFF7FEFF 		bl	Timer_minute_Stop
-  70:.\Generated_Source\PSoC4/Timer_minute_PM.c ****     Timer_minute_SaveConfig();
+  70:Generated_Source\PSoC4/Timer_minute_PM.c ****     Timer_minute_SaveConfig();
   80              		.loc 1 70 0
   81 0020 FFF7FEFF 		bl	Timer_minute_SaveConfig
-  71:.\Generated_Source\PSoC4/Timer_minute_PM.c **** }
+  71:Generated_Source\PSoC4/Timer_minute_PM.c **** }
   82              		.loc 1 71 0
   83 0024 BD46     		mov	sp, r7
   84              		@ sp needed
@@ -178,28 +178,28 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 1
   98              		.thumb_func
   99              		.type	Timer_minute_RestoreConfig, %function
  100              	Timer_minute_RestoreConfig:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 4
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccbwp6RB.s 			page 4
 
 
  101              	.LFB4:
-  72:.\Generated_Source\PSoC4/Timer_minute_PM.c **** 
-  73:.\Generated_Source\PSoC4/Timer_minute_PM.c **** 
-  74:.\Generated_Source\PSoC4/Timer_minute_PM.c **** /*******************************************************************************
-  75:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Function Name: Timer_minute_RestoreConfig
-  76:.\Generated_Source\PSoC4/Timer_minute_PM.c **** ********************************************************************************
-  77:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
-  78:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Summary:
-  79:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *  All configuration registers are retention. Nothing to restore here.
-  80:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
-  81:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Parameters:
-  82:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *  None
-  83:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
-  84:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Return:
-  85:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *  None
-  86:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
-  87:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *******************************************************************************/
-  88:.\Generated_Source\PSoC4/Timer_minute_PM.c **** void Timer_minute_RestoreConfig(void)
-  89:.\Generated_Source\PSoC4/Timer_minute_PM.c **** {
+  72:Generated_Source\PSoC4/Timer_minute_PM.c **** 
+  73:Generated_Source\PSoC4/Timer_minute_PM.c **** 
+  74:Generated_Source\PSoC4/Timer_minute_PM.c **** /*******************************************************************************
+  75:Generated_Source\PSoC4/Timer_minute_PM.c **** * Function Name: Timer_minute_RestoreConfig
+  76:Generated_Source\PSoC4/Timer_minute_PM.c **** ********************************************************************************
+  77:Generated_Source\PSoC4/Timer_minute_PM.c **** *
+  78:Generated_Source\PSoC4/Timer_minute_PM.c **** * Summary:
+  79:Generated_Source\PSoC4/Timer_minute_PM.c **** *  All configuration registers are retention. Nothing to restore here.
+  80:Generated_Source\PSoC4/Timer_minute_PM.c **** *
+  81:Generated_Source\PSoC4/Timer_minute_PM.c **** * Parameters:
+  82:Generated_Source\PSoC4/Timer_minute_PM.c **** *  None
+  83:Generated_Source\PSoC4/Timer_minute_PM.c **** *
+  84:Generated_Source\PSoC4/Timer_minute_PM.c **** * Return:
+  85:Generated_Source\PSoC4/Timer_minute_PM.c **** *  None
+  86:Generated_Source\PSoC4/Timer_minute_PM.c **** *
+  87:Generated_Source\PSoC4/Timer_minute_PM.c **** *******************************************************************************/
+  88:Generated_Source\PSoC4/Timer_minute_PM.c **** void Timer_minute_RestoreConfig(void)
+  89:Generated_Source\PSoC4/Timer_minute_PM.c **** {
  102              		.loc 1 89 0
  103              		.cfi_startproc
  104 0000 80B5     		push	{r7, lr}
@@ -208,8 +208,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 1
  107              		.cfi_offset 14, -4
  108 0002 00AF     		add	r7, sp, #0
  109              		.cfi_def_cfa_register 7
-  90:.\Generated_Source\PSoC4/Timer_minute_PM.c **** 
-  91:.\Generated_Source\PSoC4/Timer_minute_PM.c **** }
+  90:Generated_Source\PSoC4/Timer_minute_PM.c **** 
+  91:Generated_Source\PSoC4/Timer_minute_PM.c **** }
  110              		.loc 1 91 0
  111 0004 BD46     		mov	sp, r7
  112              		@ sp needed
@@ -225,27 +225,27 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 1
  122              		.type	Timer_minute_Wakeup, %function
  123              	Timer_minute_Wakeup:
  124              	.LFB5:
-  92:.\Generated_Source\PSoC4/Timer_minute_PM.c **** 
-  93:.\Generated_Source\PSoC4/Timer_minute_PM.c **** 
-  94:.\Generated_Source\PSoC4/Timer_minute_PM.c **** /*******************************************************************************
-  95:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Function Name: Timer_minute_Wakeup
-  96:.\Generated_Source\PSoC4/Timer_minute_PM.c **** ********************************************************************************
-  97:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
-  98:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Summary:
-  99:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *  Restores the user configuration and restores the enable state.
- 100:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
- 101:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Parameters:
- 102:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *  None
- 103:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
- 104:.\Generated_Source\PSoC4/Timer_minute_PM.c **** * Return:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 5
+  92:Generated_Source\PSoC4/Timer_minute_PM.c **** 
+  93:Generated_Source\PSoC4/Timer_minute_PM.c **** 
+  94:Generated_Source\PSoC4/Timer_minute_PM.c **** /*******************************************************************************
+  95:Generated_Source\PSoC4/Timer_minute_PM.c **** * Function Name: Timer_minute_Wakeup
+  96:Generated_Source\PSoC4/Timer_minute_PM.c **** ********************************************************************************
+  97:Generated_Source\PSoC4/Timer_minute_PM.c **** *
+  98:Generated_Source\PSoC4/Timer_minute_PM.c **** * Summary:
+  99:Generated_Source\PSoC4/Timer_minute_PM.c **** *  Restores the user configuration and restores the enable state.
+ 100:Generated_Source\PSoC4/Timer_minute_PM.c **** *
+ 101:Generated_Source\PSoC4/Timer_minute_PM.c **** * Parameters:
+ 102:Generated_Source\PSoC4/Timer_minute_PM.c **** *  None
+ 103:Generated_Source\PSoC4/Timer_minute_PM.c **** *
+ 104:Generated_Source\PSoC4/Timer_minute_PM.c **** * Return:
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccbwp6RB.s 			page 5
 
 
- 105:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *  None
- 106:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *
- 107:.\Generated_Source\PSoC4/Timer_minute_PM.c **** *******************************************************************************/
- 108:.\Generated_Source\PSoC4/Timer_minute_PM.c **** void Timer_minute_Wakeup(void)
- 109:.\Generated_Source\PSoC4/Timer_minute_PM.c **** {
+ 105:Generated_Source\PSoC4/Timer_minute_PM.c **** *  None
+ 106:Generated_Source\PSoC4/Timer_minute_PM.c **** *
+ 107:Generated_Source\PSoC4/Timer_minute_PM.c **** *******************************************************************************/
+ 108:Generated_Source\PSoC4/Timer_minute_PM.c **** void Timer_minute_Wakeup(void)
+ 109:Generated_Source\PSoC4/Timer_minute_PM.c **** {
  125              		.loc 1 109 0
  126              		.cfi_startproc
  127 0000 80B5     		push	{r7, lr}
@@ -254,23 +254,23 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 1
  130              		.cfi_offset 14, -4
  131 0002 00AF     		add	r7, sp, #0
  132              		.cfi_def_cfa_register 7
- 110:.\Generated_Source\PSoC4/Timer_minute_PM.c ****     Timer_minute_RestoreConfig();
+ 110:Generated_Source\PSoC4/Timer_minute_PM.c ****     Timer_minute_RestoreConfig();
  133              		.loc 1 110 0
  134 0004 FFF7FEFF 		bl	Timer_minute_RestoreConfig
- 111:.\Generated_Source\PSoC4/Timer_minute_PM.c **** 
- 112:.\Generated_Source\PSoC4/Timer_minute_PM.c ****     if(0u != Timer_minute_backup.enableState)
+ 111:Generated_Source\PSoC4/Timer_minute_PM.c **** 
+ 112:Generated_Source\PSoC4/Timer_minute_PM.c ****     if(0u != Timer_minute_backup.enableState)
  135              		.loc 1 112 0
  136 0008 034B     		ldr	r3, .L10
  137 000a 1B78     		ldrb	r3, [r3]
  138 000c 002B     		cmp	r3, #0
  139 000e 01D0     		beq	.L8
- 113:.\Generated_Source\PSoC4/Timer_minute_PM.c ****     {
- 114:.\Generated_Source\PSoC4/Timer_minute_PM.c ****         Timer_minute_Enable();
+ 113:Generated_Source\PSoC4/Timer_minute_PM.c ****     {
+ 114:Generated_Source\PSoC4/Timer_minute_PM.c ****         Timer_minute_Enable();
  140              		.loc 1 114 0
  141 0010 FFF7FEFF 		bl	Timer_minute_Enable
  142              	.L8:
- 115:.\Generated_Source\PSoC4/Timer_minute_PM.c ****     }
- 116:.\Generated_Source\PSoC4/Timer_minute_PM.c **** }
+ 115:Generated_Source\PSoC4/Timer_minute_PM.c ****     }
+ 116:Generated_Source\PSoC4/Timer_minute_PM.c **** }
  143              		.loc 1 116 0
  144 0014 BD46     		mov	sp, r7
  145              		@ sp needed
@@ -284,8 +284,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 1
  153              		.size	Timer_minute_Wakeup, .-Timer_minute_Wakeup
  154              		.text
  155              	.Letext0:
- 156              		.file 2 ".\\Generated_Source\\PSoC4\\cytypes.h"
- 157              		.file 3 ".\\Generated_Source\\PSoC4\\Timer_minute.h"
+ 156              		.file 2 "Generated_Source\\PSoC4\\cytypes.h"
+ 157              		.file 3 "Generated_Source\\PSoC4\\Timer_minute.h"
  158              		.section	.debug_info,"",%progbits
  159              	.Ldebug_info0:
  160 0000 22010000 		.4byte	0x122
@@ -293,12 +293,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 1
  162 0006 00000000 		.4byte	.Ldebug_abbrev0
  163 000a 04       		.byte	0x4
  164 000b 01       		.uleb128 0x1
- 165 000c AC010000 		.4byte	.LASF21
+ 165 000c A8010000 		.4byte	.LASF21
  166 0010 01       		.byte	0x1
- 167 0011 CF000000 		.4byte	.LASF22
- 168 0015 34010000 		.4byte	.LASF23
+ 167 0011 41000000 		.4byte	.LASF22
+ 168 0015 82000000 		.4byte	.LASF23
  169 0019 00000000 		.4byte	.Ldebug_ranges0+0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 6
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccbwp6RB.s 			page 6
 
 
  170 001d 00000000 		.4byte	0
@@ -306,27 +306,27 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 1
  172 0025 02       		.uleb128 0x2
  173 0026 01       		.byte	0x1
  174 0027 06       		.byte	0x6
- 175 0028 0D010000 		.4byte	.LASF0
+ 175 0028 4C010000 		.4byte	.LASF0
  176 002c 02       		.uleb128 0x2
  177 002d 01       		.byte	0x1
  178 002e 08       		.byte	0x8
- 179 002f 9C000000 		.4byte	.LASF1
+ 179 002f 06010000 		.4byte	.LASF1
  180 0033 02       		.uleb128 0x2
  181 0034 02       		.byte	0x2
  182 0035 05       		.byte	0x5
- 183 0036 B8000000 		.4byte	.LASF2
+ 183 0036 22010000 		.4byte	.LASF2
  184 003a 02       		.uleb128 0x2
  185 003b 02       		.byte	0x2
  186 003c 07       		.byte	0x7
- 187 003d FA000000 		.4byte	.LASF3
+ 187 003d 39010000 		.4byte	.LASF3
  188 0041 02       		.uleb128 0x2
  189 0042 04       		.byte	0x4
  190 0043 05       		.byte	0x5
- 191 0044 AF000000 		.4byte	.LASF4
+ 191 0044 19010000 		.4byte	.LASF4
  192 0048 02       		.uleb128 0x2
  193 0049 04       		.byte	0x4
  194 004a 07       		.byte	0x7
- 195 004b 47000000 		.4byte	.LASF5
+ 195 004b 70000000 		.4byte	.LASF5
  196 004f 02       		.uleb128 0x2
  197 0050 08       		.byte	0x8
  198 0051 05       		.byte	0x5
@@ -334,7 +334,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 1
  200 0056 02       		.uleb128 0x2
  201 0057 08       		.byte	0x8
  202 0058 07       		.byte	0x7
- 203 0059 59000000 		.4byte	.LASF7
+ 203 0059 C3000000 		.4byte	.LASF7
  204 005d 03       		.uleb128 0x3
  205 005e 04       		.byte	0x4
  206 005f 05       		.byte	0x5
@@ -344,7 +344,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 1
  210 0066 07       		.byte	0x7
  211 0067 21000000 		.4byte	.LASF8
  212 006b 04       		.uleb128 0x4
- 213 006c 41000000 		.4byte	.LASF9
+ 213 006c 6A000000 		.4byte	.LASF9
  214 0070 02       		.byte	0x2
  215 0071 9801     		.2byte	0x198
  216 0073 2C000000 		.4byte	0x2c
@@ -356,20 +356,20 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 1
  222 0083 02       		.uleb128 0x2
  223 0084 04       		.byte	0x4
  224 0085 04       		.byte	0x4
- 225 0086 8B010000 		.4byte	.LASF11
+ 225 0086 87010000 		.4byte	.LASF11
  226 008a 02       		.uleb128 0x2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 7
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccbwp6RB.s 			page 7
 
 
  227 008b 08       		.byte	0x8
  228 008c 04       		.byte	0x4
- 229 008d C2000000 		.4byte	.LASF12
+ 229 008d 2C010000 		.4byte	.LASF12
  230 0091 02       		.uleb128 0x2
  231 0092 01       		.byte	0x1
  232 0093 08       		.byte	0x8
- 233 0094 AA000000 		.4byte	.LASF13
+ 233 0094 14010000 		.4byte	.LASF13
  234 0098 04       		.uleb128 0x4
- 235 0099 C9000000 		.4byte	.LASF14
+ 235 0099 33010000 		.4byte	.LASF14
  236 009d 02       		.byte	0x2
  237 009e 4402     		.2byte	0x244
  238 00a0 A4000000 		.4byte	0xa4
@@ -378,7 +378,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 1
  241 00a9 02       		.uleb128 0x2
  242 00aa 04       		.byte	0x4
  243 00ab 07       		.byte	0x7
- 244 00ac 3A020000 		.4byte	.LASF15
+ 244 00ac 36020000 		.4byte	.LASF15
  245 00b0 06       		.uleb128 0x6
  246 00b1 01       		.byte	0x1
  247 00b2 03       		.byte	0x3
@@ -392,12 +392,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 1
  255 00c3 00       		.byte	0
  256 00c4 00       		.byte	0
  257 00c5 08       		.uleb128 0x8
- 258 00c6 91010000 		.4byte	.LASF16
+ 258 00c6 8D010000 		.4byte	.LASF16
  259 00ca 03       		.byte	0x3
  260 00cb 24       		.byte	0x24
  261 00cc B0000000 		.4byte	0xb0
  262 00d0 09       		.uleb128 0x9
- 263 00d1 70000000 		.4byte	.LASF17
+ 263 00d1 DA000000 		.4byte	.LASF17
  264 00d5 01       		.byte	0x1
  265 00d6 26       		.byte	0x26
  266 00d7 00000000 		.4byte	.LFB2
@@ -413,18 +413,18 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 1
  276 00f0 01       		.uleb128 0x1
  277 00f1 9C       		.byte	0x9c
  278 00f2 09       		.uleb128 0x9
- 279 00f3 19010000 		.4byte	.LASF19
+ 279 00f3 58010000 		.4byte	.LASF19
  280 00f7 01       		.byte	0x1
  281 00f8 58       		.byte	0x58
  282 00f9 00000000 		.4byte	.LFB4
  283 00fd 08000000 		.4byte	.LFE4-.LFB4
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 8
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccbwp6RB.s 			page 8
 
 
  284 0101 01       		.uleb128 0x1
  285 0102 9C       		.byte	0x9c
  286 0103 0A       		.uleb128 0xa
- 287 0104 77010000 		.4byte	.LASF20
+ 287 0104 73010000 		.4byte	.LASF20
  288 0108 01       		.byte	0x1
  289 0109 6C       		.byte	0x6c
  290 010a 00000000 		.4byte	.LFB5
@@ -432,7 +432,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 1
  292 0112 01       		.uleb128 0x1
  293 0113 9C       		.byte	0x9c
  294 0114 0B       		.uleb128 0xb
- 295 0115 88000000 		.4byte	.LASF25
+ 295 0115 F2000000 		.4byte	.LASF25
  296 0119 01       		.byte	0x1
  297 011a 15       		.byte	0x15
  298 011b C5000000 		.4byte	0xc5
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 1
  338 0021 0B       		.uleb128 0xb
  339 0022 0B       		.uleb128 0xb
  340 0023 3E       		.uleb128 0x3e
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 9
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccbwp6RB.s 			page 9
 
 
  341 0024 0B       		.uleb128 0xb
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 1
  395 005a 16       		.uleb128 0x16
  396 005b 00       		.byte	0
  397 005c 03       		.uleb128 0x3
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 10
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccbwp6RB.s 			page 10
 
 
  398 005d 0E       		.uleb128 0xe
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 1
  452 0095 00       		.byte	0
  453 0096 0B       		.uleb128 0xb
  454 0097 34       		.uleb128 0x34
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 11
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccbwp6RB.s 			page 11
 
 
  455 0098 00       		.byte	0
@@ -647,8 +647,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 1
  498 0024 00000000 		.4byte	0
  499              		.section	.debug_line,"",%progbits
  500              	.Ldebug_line0:
- 501 0000 B0000000 		.section	.debug_str,"MS",%progbits,1
- 501      02006000 
+ 501 0000 AE000000 		.section	.debug_str,"MS",%progbits,1
+ 501      02005E00 
  501      00000201 
  501      FB0E0D00 
  501      01010101 
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 1
  503      6720696E 
  503      7400
  504              	.LASF10:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 12
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccbwp6RB.s 			page 12
 
 
  505 000e 75696E74 		.ascii	"uint32\000"
@@ -678,127 +678,127 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 1
  511      6E757465 
  511      5F536C65 
  511      657000
- 512              	.LASF9:
- 513 0041 75696E74 		.ascii	"uint8\000"
- 513      3800
- 514              	.LASF5:
- 515 0047 6C6F6E67 		.ascii	"long unsigned int\000"
- 515      20756E73 
- 515      69676E65 
- 515      6420696E 
- 515      7400
- 516              	.LASF7:
- 517 0059 6C6F6E67 		.ascii	"long long unsigned int\000"
- 517      206C6F6E 
- 517      6720756E 
- 517      7369676E 
- 517      65642069 
- 518              	.LASF17:
- 519 0070 54696D65 		.ascii	"Timer_minute_SaveConfig\000"
- 519      725F6D69 
- 519      6E757465 
- 519      5F536176 
- 519      65436F6E 
- 520              	.LASF25:
- 521 0088 54696D65 		.ascii	"Timer_minute_backup\000"
- 521      725F6D69 
- 521      6E757465 
- 521      5F626163 
- 521      6B757000 
- 522              	.LASF1:
- 523 009c 756E7369 		.ascii	"unsigned char\000"
- 523      676E6564 
- 523      20636861 
- 523      7200
- 524              	.LASF13:
- 525 00aa 63686172 		.ascii	"char\000"
- 525      00
- 526              	.LASF4:
- 527 00af 6C6F6E67 		.ascii	"long int\000"
- 527      20696E74 
- 527      00
- 528              	.LASF2:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 13
+ 512              	.LASF22:
+ 513 0041 47656E65 		.ascii	"Generated_Source\\PSoC4\\Timer_minute_PM.c\000"
+ 513      72617465 
+ 513      645F536F 
+ 513      75726365 
+ 513      5C50536F 
+ 514              	.LASF9:
+ 515 006a 75696E74 		.ascii	"uint8\000"
+ 515      3800
+ 516              	.LASF5:
+ 517 0070 6C6F6E67 		.ascii	"long unsigned int\000"
+ 517      20756E73 
+ 517      69676E65 
+ 517      6420696E 
+ 517      7400
+ 518              	.LASF23:
+ 519 0082 433A5C55 		.ascii	"C:\\Users\\Davit\\Documents\\GitHub\\BioSnap\\Maste"
+ 519      73657273 
+ 519      5C446176 
+ 519      69745C44 
+ 519      6F63756D 
+ 520 00af 725F7632 		.ascii	"r_v2\\Master_2.cydsn\000"
+ 520      5C4D6173 
+ 520      7465725F 
+ 520      322E6379 
+ 520      64736E00 
+ 521              	.LASF7:
+ 522 00c3 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 522      206C6F6E 
+ 522      6720756E 
+ 522      7369676E 
+ 522      65642069 
+ 523              	.LASF17:
+ 524 00da 54696D65 		.ascii	"Timer_minute_SaveConfig\000"
+ 524      725F6D69 
+ 524      6E757465 
+ 524      5F536176 
+ 524      65436F6E 
+ 525              	.LASF25:
+ 526 00f2 54696D65 		.ascii	"Timer_minute_backup\000"
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccbwp6RB.s 			page 13
 
 
- 529 00b8 73686F72 		.ascii	"short int\000"
- 529      7420696E 
- 529      7400
- 530              	.LASF12:
- 531 00c2 646F7562 		.ascii	"double\000"
- 531      6C6500
- 532              	.LASF14:
- 533 00c9 72656733 		.ascii	"reg32\000"
- 533      3200
- 534              	.LASF22:
- 535 00cf 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\Timer_minute_PM.c\000"
- 535      6E657261 
- 535      7465645F 
- 535      536F7572 
- 535      63655C50 
- 536              	.LASF3:
- 537 00fa 73686F72 		.ascii	"short unsigned int\000"
- 537      7420756E 
- 537      7369676E 
- 537      65642069 
- 537      6E7400
- 538              	.LASF0:
- 539 010d 7369676E 		.ascii	"signed char\000"
- 539      65642063 
- 539      68617200 
- 540              	.LASF19:
- 541 0119 54696D65 		.ascii	"Timer_minute_RestoreConfig\000"
- 541      725F6D69 
- 541      6E757465 
- 541      5F526573 
- 541      746F7265 
- 542              	.LASF23:
- 543 0134 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\GitHub\\BioSnap\\Mas"
- 543      73657273 
- 543      5C4D6174 
- 543      74686577 
- 543      5C446F63 
- 544 0161 7465725F 		.ascii	"ter_v2\\Master_2.cydsn\000"
- 544      76325C4D 
- 544      61737465 
- 544      725F322E 
- 544      63796473 
+ 526      725F6D69 
+ 526      6E757465 
+ 526      5F626163 
+ 526      6B757000 
+ 527              	.LASF1:
+ 528 0106 756E7369 		.ascii	"unsigned char\000"
+ 528      676E6564 
+ 528      20636861 
+ 528      7200
+ 529              	.LASF13:
+ 530 0114 63686172 		.ascii	"char\000"
+ 530      00
+ 531              	.LASF4:
+ 532 0119 6C6F6E67 		.ascii	"long int\000"
+ 532      20696E74 
+ 532      00
+ 533              	.LASF2:
+ 534 0122 73686F72 		.ascii	"short int\000"
+ 534      7420696E 
+ 534      7400
+ 535              	.LASF12:
+ 536 012c 646F7562 		.ascii	"double\000"
+ 536      6C6500
+ 537              	.LASF14:
+ 538 0133 72656733 		.ascii	"reg32\000"
+ 538      3200
+ 539              	.LASF3:
+ 540 0139 73686F72 		.ascii	"short unsigned int\000"
+ 540      7420756E 
+ 540      7369676E 
+ 540      65642069 
+ 540      6E7400
+ 541              	.LASF0:
+ 542 014c 7369676E 		.ascii	"signed char\000"
+ 542      65642063 
+ 542      68617200 
+ 543              	.LASF19:
+ 544 0158 54696D65 		.ascii	"Timer_minute_RestoreConfig\000"
+ 544      725F6D69 
+ 544      6E757465 
+ 544      5F526573 
+ 544      746F7265 
  545              	.LASF20:
- 546 0177 54696D65 		.ascii	"Timer_minute_Wakeup\000"
+ 546 0173 54696D65 		.ascii	"Timer_minute_Wakeup\000"
  546      725F6D69 
  546      6E757465 
  546      5F57616B 
  546      65757000 
  547              	.LASF11:
- 548 018b 666C6F61 		.ascii	"float\000"
+ 548 0187 666C6F61 		.ascii	"float\000"
  548      7400
  549              	.LASF16:
- 550 0191 54696D65 		.ascii	"Timer_minute_BACKUP_STRUCT\000"
+ 550 018d 54696D65 		.ascii	"Timer_minute_BACKUP_STRUCT\000"
  550      725F6D69 
  550      6E757465 
  550      5F424143 
  550      4B55505F 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPcszOv.s 			page 14
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccbwp6RB.s 			page 14
 
 
  551              	.LASF21:
- 552 01ac 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 552 01a8 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
  552      4320342E 
  552      392E3320 
  552      32303135 
  552      30333033 
- 553 01df 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 553 01db 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
  553      20726576 
  553      6973696F 
  553      6E203232 
  553      31323230 
- 554 0212 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 554 020e 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
  554      66756E63 
  554      74696F6E 
  554      2D736563 
  554      74696F6E 
  555              	.LASF15:
- 556 023a 73697A65 		.ascii	"sizetype\000"
+ 556 0236 73697A65 		.ascii	"sizetype\000"
  556      74797065 
  556      00
  557              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

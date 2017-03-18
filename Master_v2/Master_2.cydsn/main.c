@@ -27,6 +27,7 @@ int charCode;
 CYBLE_CONN_HANDLE_T connectionHandle; 
 
 uint32 tsLastReport = 0;
+uint32 otherLastReport; 
 
 const int ACCELEROMETER = 0;
 const int BATTERY = 1;
@@ -48,8 +49,8 @@ void initAll(){
     initAccelControl();
     initTemperatureAndBattery(); 
     
-    //PulseOximeter_Init();     
-    //PulseOximeter_begin(PULSEOXIMETER_DEBUGGINGMODE_NONE);
+    PulseOximeter_Init();     
+    PulseOximeter_begin(PULSEOXIMETER_DEBUGGINGMODE_NONE);
 
 
     Timer_minute_Start();
@@ -77,6 +78,7 @@ void StackEventHandler( uint32 eventCode, void *eventParam )
         case CYBLE_EVT_GAP_DEVICE_DISCONNECTED:            
             CyBle_GappStartAdvertisement(CYBLE_ADVERTISING_FAST);
             deviceConnected = 0;
+            BAdvertLED_Write(0);
         break;
 
         /* GAP Peripheral events */
@@ -92,11 +94,14 @@ void StackEventHandler( uint32 eventCode, void *eventParam )
         case CYBLE_EVT_GATT_CONNECT_IND:
             connectionHandle = *(CYBLE_CONN_HANDLE_T*)eventParam;
             deviceConnected = 1; 
+            BAdvertLED_Write(1);
             break;
 
         case CYBLE_EVT_GATT_DISCONNECT_IND:
             deviceConnected = 0;
             uint32 i = 0;
+            BAdvertLED_Write(0);
+            CyBle_GappStartAdvertisement(CYBLE_ADVERTISING_FAST);
             for(; i < sizeof(NOTIFY)/sizeof(int); i++)
                 NOTIFY[i] = 0;
             break;
@@ -192,8 +197,21 @@ int main()
         CyBle_ProcessEvents();
         
         if(deviceConnected && busyStatus == CYBLE_STACK_STATE_FREE){
-            /*PulseOximeter_update();
+            PulseOximeter_update();
             elapsed = millis() - tsLastReport;
+            
+            if(millis() - otherLastReport > 100){
+                temp = getTemperature();
+                updateCharacteristic(TEMPERATURE, CYBLE_BIOSNAP_TEMPERATURE_CHAR_HANDLE, temp);
+            
+                accel = getAccelXYZ();
+                updateCharacteristic(ACCELEROMETER, CYBLE_BIOSNAP_ACCELEROMETER_CHAR_HANDLE, accel);
+                
+                bat = getBattery();
+                updateCharacteristic(BATTERY, CYBLE_BIOSNAP_BATTERY_CHAR_HANDLE, bat);
+                
+                otherLastReport = millis();
+            }
             if (elapsed > REPORTING_PERIOD_MS) {
                 oxygen = (uint32)(PulseOximeter_getSpO2());
                 heart = (uint32)(PulseOximeter_getHeartRate());
@@ -201,18 +219,11 @@ int main()
                 updateCharacteristic(OXYGEN, CYBLE_BIOSNAP_OXYGEN_CHAR_HANDLE, oxygen);
                 
                 tsLastReport = millis();
-            }*/
-            temp = getTemperature();
-            updateCharacteristic(TEMPERATURE, CYBLE_BIOSNAP_TEMPERATURE_CHAR_HANDLE, temp);
-        
-            accel = getAccelXYZ();
-            updateCharacteristic(ACCELEROMETER, CYBLE_BIOSNAP_ACCELEROMETER_CHAR_HANDLE, accel);
-            
-            bat = getBattery();
-            updateCharacteristic(BATTERY, CYBLE_BIOSNAP_BATTERY_CHAR_HANDLE, bat);
+            }
+
             
         }
-        CyDelay(10);
+//        CyDelay(10);
     }
 }
 

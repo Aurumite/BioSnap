@@ -1,5 +1,5 @@
 # Master_2
-# 2017-03-10 06:58:56Z
+# 2017-03-17 19:40:21Z
 
 # IO_6@[IOP=(0)][IoId=(6)] is reserved: SWDDebugEnabled
 dont_use_io iocell 0 6
@@ -15,6 +15,7 @@ set_io "\I2C_1:sda(0)\" iocell 3 4
 set_io "\I2C_1:scl(0)\" iocell 3 5
 set_io "temp_in(0)" iocell 3 3
 set_io "bat_in(0)" iocell 3 2
+set_io "BAdvertLED(0)" iocell 3 7
 set_location "\BLE_1:cy_m0s8_ble\" p4blecell -1 -1 0
 set_location "\BLE_1:bless_isr\" interrupt -1 -1 12
 set_location "\I2C_1:SCB_IRQ\" interrupt -1 -1 10

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccR8fYQe.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -25,83 +25,83 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
   22              		.type	bat_in_SetDriveMode, %function
   23              	bat_in_SetDriveMode:
   24              	.LFB0:
-  25              		.file 1 ".\\Generated_Source\\PSoC4\\bat_in.c"
-   1:.\Generated_Source\PSoC4/bat_in.c **** /*******************************************************************************
-   2:.\Generated_Source\PSoC4/bat_in.c **** * File Name: bat_in.c  
-   3:.\Generated_Source\PSoC4/bat_in.c **** * Version 2.20
-   4:.\Generated_Source\PSoC4/bat_in.c **** *
-   5:.\Generated_Source\PSoC4/bat_in.c **** * Description:
-   6:.\Generated_Source\PSoC4/bat_in.c **** *  This file contains API to enable firmware control of a Pins component.
-   7:.\Generated_Source\PSoC4/bat_in.c **** *
-   8:.\Generated_Source\PSoC4/bat_in.c **** ********************************************************************************
-   9:.\Generated_Source\PSoC4/bat_in.c **** * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
-  10:.\Generated_Source\PSoC4/bat_in.c **** * You may use this file only in accordance with the license, terms, conditions, 
-  11:.\Generated_Source\PSoC4/bat_in.c **** * disclaimers, and limitations in the end user license agreement accompanying 
-  12:.\Generated_Source\PSoC4/bat_in.c **** * the software package with which this file was provided.
-  13:.\Generated_Source\PSoC4/bat_in.c **** *******************************************************************************/
-  14:.\Generated_Source\PSoC4/bat_in.c **** 
-  15:.\Generated_Source\PSoC4/bat_in.c **** #include "cytypes.h"
-  16:.\Generated_Source\PSoC4/bat_in.c **** #include "bat_in.h"
-  17:.\Generated_Source\PSoC4/bat_in.c **** 
-  18:.\Generated_Source\PSoC4/bat_in.c **** 
-  19:.\Generated_Source\PSoC4/bat_in.c **** #if defined(bat_in__PC)
-  20:.\Generated_Source\PSoC4/bat_in.c ****     #define bat_in_SetP4PinDriveMode(shift, mode)  \
-  21:.\Generated_Source\PSoC4/bat_in.c ****     do { \
-  22:.\Generated_Source\PSoC4/bat_in.c ****         bat_in_PC =   (bat_in_PC & \
-  23:.\Generated_Source\PSoC4/bat_in.c ****                                 (uint32)(~(uint32)(bat_in_DRIVE_MODE_IND_MASK << \
-  24:.\Generated_Source\PSoC4/bat_in.c ****                                 (bat_in_DRIVE_MODE_BITS * (shift))))) | \
-  25:.\Generated_Source\PSoC4/bat_in.c ****                                 (uint32)((uint32)(mode) << \
-  26:.\Generated_Source\PSoC4/bat_in.c ****                                 (bat_in_DRIVE_MODE_BITS * (shift))); \
-  27:.\Generated_Source\PSoC4/bat_in.c ****     } while (0)
-  28:.\Generated_Source\PSoC4/bat_in.c **** #else
-  29:.\Generated_Source\PSoC4/bat_in.c ****     #if (CY_PSOC4_4200L)
-  30:.\Generated_Source\PSoC4/bat_in.c ****         #define bat_in_SetP4PinDriveMode(shift, mode)  \
-  31:.\Generated_Source\PSoC4/bat_in.c ****         do { \
-  32:.\Generated_Source\PSoC4/bat_in.c ****             bat_in_USBIO_CTRL_REG = (bat_in_USBIO_CTRL_REG & \
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 2
+  25              		.file 1 "Generated_Source\\PSoC4\\bat_in.c"
+   1:Generated_Source\PSoC4/bat_in.c **** /*******************************************************************************
+   2:Generated_Source\PSoC4/bat_in.c **** * File Name: bat_in.c  
+   3:Generated_Source\PSoC4/bat_in.c **** * Version 2.20
+   4:Generated_Source\PSoC4/bat_in.c **** *
+   5:Generated_Source\PSoC4/bat_in.c **** * Description:
+   6:Generated_Source\PSoC4/bat_in.c **** *  This file contains API to enable firmware control of a Pins component.
+   7:Generated_Source\PSoC4/bat_in.c **** *
+   8:Generated_Source\PSoC4/bat_in.c **** ********************************************************************************
+   9:Generated_Source\PSoC4/bat_in.c **** * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
+  10:Generated_Source\PSoC4/bat_in.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  11:Generated_Source\PSoC4/bat_in.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  12:Generated_Source\PSoC4/bat_in.c **** * the software package with which this file was provided.
+  13:Generated_Source\PSoC4/bat_in.c **** *******************************************************************************/
+  14:Generated_Source\PSoC4/bat_in.c **** 
+  15:Generated_Source\PSoC4/bat_in.c **** #include "cytypes.h"
+  16:Generated_Source\PSoC4/bat_in.c **** #include "bat_in.h"
+  17:Generated_Source\PSoC4/bat_in.c **** 
+  18:Generated_Source\PSoC4/bat_in.c **** 
+  19:Generated_Source\PSoC4/bat_in.c **** #if defined(bat_in__PC)
+  20:Generated_Source\PSoC4/bat_in.c ****     #define bat_in_SetP4PinDriveMode(shift, mode)  \
+  21:Generated_Source\PSoC4/bat_in.c ****     do { \
+  22:Generated_Source\PSoC4/bat_in.c ****         bat_in_PC =   (bat_in_PC & \
+  23:Generated_Source\PSoC4/bat_in.c ****                                 (uint32)(~(uint32)(bat_in_DRIVE_MODE_IND_MASK << \
+  24:Generated_Source\PSoC4/bat_in.c ****                                 (bat_in_DRIVE_MODE_BITS * (shift))))) | \
+  25:Generated_Source\PSoC4/bat_in.c ****                                 (uint32)((uint32)(mode) << \
+  26:Generated_Source\PSoC4/bat_in.c ****                                 (bat_in_DRIVE_MODE_BITS * (shift))); \
+  27:Generated_Source\PSoC4/bat_in.c ****     } while (0)
+  28:Generated_Source\PSoC4/bat_in.c **** #else
+  29:Generated_Source\PSoC4/bat_in.c ****     #if (CY_PSOC4_4200L)
+  30:Generated_Source\PSoC4/bat_in.c ****         #define bat_in_SetP4PinDriveMode(shift, mode)  \
+  31:Generated_Source\PSoC4/bat_in.c ****         do { \
+  32:Generated_Source\PSoC4/bat_in.c ****             bat_in_USBIO_CTRL_REG = (bat_in_USBIO_CTRL_REG & \
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccR8fYQe.s 			page 2
 
 
-  33:.\Generated_Source\PSoC4/bat_in.c ****                                     (uint32)(~(uint32)(bat_in_DRIVE_MODE_IND_MASK << \
-  34:.\Generated_Source\PSoC4/bat_in.c ****                                     (bat_in_DRIVE_MODE_BITS * (shift))))) | \
-  35:.\Generated_Source\PSoC4/bat_in.c ****                                     (uint32)((uint32)(mode) << \
-  36:.\Generated_Source\PSoC4/bat_in.c ****                                     (bat_in_DRIVE_MODE_BITS * (shift))); \
-  37:.\Generated_Source\PSoC4/bat_in.c ****         } while (0)
-  38:.\Generated_Source\PSoC4/bat_in.c ****     #endif
-  39:.\Generated_Source\PSoC4/bat_in.c **** #endif
-  40:.\Generated_Source\PSoC4/bat_in.c ****   
-  41:.\Generated_Source\PSoC4/bat_in.c **** 
-  42:.\Generated_Source\PSoC4/bat_in.c **** #if defined(bat_in__PC) || (CY_PSOC4_4200L) 
-  43:.\Generated_Source\PSoC4/bat_in.c ****     /*******************************************************************************
-  44:.\Generated_Source\PSoC4/bat_in.c ****     * Function Name: bat_in_SetDriveMode
-  45:.\Generated_Source\PSoC4/bat_in.c ****     ****************************************************************************//**
-  46:.\Generated_Source\PSoC4/bat_in.c ****     *
-  47:.\Generated_Source\PSoC4/bat_in.c ****     * \brief Sets the drive mode for each of the Pins component's pins.
-  48:.\Generated_Source\PSoC4/bat_in.c ****     * 
-  49:.\Generated_Source\PSoC4/bat_in.c ****     * <b>Note</b> This affects all pins in the Pins component instance. Use the
-  50:.\Generated_Source\PSoC4/bat_in.c ****     * Per-Pin APIs if you wish to control individual pin's drive modes.
-  51:.\Generated_Source\PSoC4/bat_in.c ****     *
-  52:.\Generated_Source\PSoC4/bat_in.c ****     * <b>Note</b> USBIOs have limited drive functionality. Refer to the Drive Mode
-  53:.\Generated_Source\PSoC4/bat_in.c ****     * parameter for more information.
-  54:.\Generated_Source\PSoC4/bat_in.c ****     *
-  55:.\Generated_Source\PSoC4/bat_in.c ****     * \param mode
-  56:.\Generated_Source\PSoC4/bat_in.c ****     *  Mode for the selected signals. Valid options are documented in 
-  57:.\Generated_Source\PSoC4/bat_in.c ****     *  \ref driveMode.
-  58:.\Generated_Source\PSoC4/bat_in.c ****     *
-  59:.\Generated_Source\PSoC4/bat_in.c ****     * \return
-  60:.\Generated_Source\PSoC4/bat_in.c ****     *  None
-  61:.\Generated_Source\PSoC4/bat_in.c ****     *
-  62:.\Generated_Source\PSoC4/bat_in.c ****     * \sideeffect
-  63:.\Generated_Source\PSoC4/bat_in.c ****     *  If you use read-modify-write operations that are not atomic, the ISR can
-  64:.\Generated_Source\PSoC4/bat_in.c ****     *  cause corruption of this function. An ISR that interrupts this function 
-  65:.\Generated_Source\PSoC4/bat_in.c ****     *  and performs writes to the Pins component Drive Mode registers can cause 
-  66:.\Generated_Source\PSoC4/bat_in.c ****     *  corrupted port data. To avoid this issue, you should either use the Per-Pin
-  67:.\Generated_Source\PSoC4/bat_in.c ****     *  APIs (primary method) or disable interrupts around this function.
-  68:.\Generated_Source\PSoC4/bat_in.c ****     *
-  69:.\Generated_Source\PSoC4/bat_in.c ****     * \funcusage
-  70:.\Generated_Source\PSoC4/bat_in.c ****     *  \snippet bat_in_SUT.c usage_bat_in_SetDriveMode
-  71:.\Generated_Source\PSoC4/bat_in.c ****     *******************************************************************************/
-  72:.\Generated_Source\PSoC4/bat_in.c ****     void bat_in_SetDriveMode(uint8 mode)
-  73:.\Generated_Source\PSoC4/bat_in.c ****     {
+  33:Generated_Source\PSoC4/bat_in.c ****                                     (uint32)(~(uint32)(bat_in_DRIVE_MODE_IND_MASK << \
+  34:Generated_Source\PSoC4/bat_in.c ****                                     (bat_in_DRIVE_MODE_BITS * (shift))))) | \
+  35:Generated_Source\PSoC4/bat_in.c ****                                     (uint32)((uint32)(mode) << \
+  36:Generated_Source\PSoC4/bat_in.c ****                                     (bat_in_DRIVE_MODE_BITS * (shift))); \
+  37:Generated_Source\PSoC4/bat_in.c ****         } while (0)
+  38:Generated_Source\PSoC4/bat_in.c ****     #endif
+  39:Generated_Source\PSoC4/bat_in.c **** #endif
+  40:Generated_Source\PSoC4/bat_in.c ****   
+  41:Generated_Source\PSoC4/bat_in.c **** 
+  42:Generated_Source\PSoC4/bat_in.c **** #if defined(bat_in__PC) || (CY_PSOC4_4200L) 
+  43:Generated_Source\PSoC4/bat_in.c ****     /*******************************************************************************
+  44:Generated_Source\PSoC4/bat_in.c ****     * Function Name: bat_in_SetDriveMode
+  45:Generated_Source\PSoC4/bat_in.c ****     ****************************************************************************//**
+  46:Generated_Source\PSoC4/bat_in.c ****     *
+  47:Generated_Source\PSoC4/bat_in.c ****     * \brief Sets the drive mode for each of the Pins component's pins.
+  48:Generated_Source\PSoC4/bat_in.c ****     * 
+  49:Generated_Source\PSoC4/bat_in.c ****     * <b>Note</b> This affects all pins in the Pins component instance. Use the
+  50:Generated_Source\PSoC4/bat_in.c ****     * Per-Pin APIs if you wish to control individual pin's drive modes.
+  51:Generated_Source\PSoC4/bat_in.c ****     *
+  52:Generated_Source\PSoC4/bat_in.c ****     * <b>Note</b> USBIOs have limited drive functionality. Refer to the Drive Mode
+  53:Generated_Source\PSoC4/bat_in.c ****     * parameter for more information.
+  54:Generated_Source\PSoC4/bat_in.c ****     *
+  55:Generated_Source\PSoC4/bat_in.c ****     * \param mode
+  56:Generated_Source\PSoC4/bat_in.c ****     *  Mode for the selected signals. Valid options are documented in 
+  57:Generated_Source\PSoC4/bat_in.c ****     *  \ref driveMode.
+  58:Generated_Source\PSoC4/bat_in.c ****     *
+  59:Generated_Source\PSoC4/bat_in.c ****     * \return
+  60:Generated_Source\PSoC4/bat_in.c ****     *  None
+  61:Generated_Source\PSoC4/bat_in.c ****     *
+  62:Generated_Source\PSoC4/bat_in.c ****     * \sideeffect
+  63:Generated_Source\PSoC4/bat_in.c ****     *  If you use read-modify-write operations that are not atomic, the ISR can
+  64:Generated_Source\PSoC4/bat_in.c ****     *  cause corruption of this function. An ISR that interrupts this function 
+  65:Generated_Source\PSoC4/bat_in.c ****     *  and performs writes to the Pins component Drive Mode registers can cause 
+  66:Generated_Source\PSoC4/bat_in.c ****     *  corrupted port data. To avoid this issue, you should either use the Per-Pin
+  67:Generated_Source\PSoC4/bat_in.c ****     *  APIs (primary method) or disable interrupts around this function.
+  68:Generated_Source\PSoC4/bat_in.c ****     *
+  69:Generated_Source\PSoC4/bat_in.c ****     * \funcusage
+  70:Generated_Source\PSoC4/bat_in.c ****     *  \snippet bat_in_SUT.c usage_bat_in_SetDriveMode
+  71:Generated_Source\PSoC4/bat_in.c ****     *******************************************************************************/
+  72:Generated_Source\PSoC4/bat_in.c ****     void bat_in_SetDriveMode(uint8 mode)
+  73:Generated_Source\PSoC4/bat_in.c ****     {
   26              		.loc 1 73 0
   27              		.cfi_startproc
   28 0000 80B5     		push	{r7, lr}
@@ -115,10 +115,10 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
   36 0006 021C     		mov	r2, r0
   37 0008 FB1D     		add	r3, r7, #7
   38 000a 1A70     		strb	r2, [r3]
-  74:.\Generated_Source\PSoC4/bat_in.c **** 		bat_in_SetP4PinDriveMode(bat_in__0__SHIFT, mode);
+  74:Generated_Source\PSoC4/bat_in.c **** 		bat_in_SetP4PinDriveMode(bat_in__0__SHIFT, mode);
   39              		.loc 1 74 0
   40 000c 064B     		ldr	r3, .L2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 3
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccR8fYQe.s 			page 3
 
 
   41 000e 064A     		ldr	r2, .L2
@@ -130,7 +130,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
   47 001a 9201     		lsl	r2, r2, #6
   48 001c 0A43     		orr	r2, r1
   49 001e 1A60     		str	r2, [r3]
-  75:.\Generated_Source\PSoC4/bat_in.c ****     }
+  75:Generated_Source\PSoC4/bat_in.c ****     }
   50              		.loc 1 75 0
   51 0020 BD46     		mov	sp, r7
   52 0022 02B0     		add	sp, sp, #8
@@ -152,46 +152,46 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
   68              		.type	bat_in_Write, %function
   69              	bat_in_Write:
   70              	.LFB1:
-  76:.\Generated_Source\PSoC4/bat_in.c **** #endif
-  77:.\Generated_Source\PSoC4/bat_in.c **** 
-  78:.\Generated_Source\PSoC4/bat_in.c **** 
-  79:.\Generated_Source\PSoC4/bat_in.c **** /*******************************************************************************
-  80:.\Generated_Source\PSoC4/bat_in.c **** * Function Name: bat_in_Write
-  81:.\Generated_Source\PSoC4/bat_in.c **** ****************************************************************************//**
-  82:.\Generated_Source\PSoC4/bat_in.c **** *
-  83:.\Generated_Source\PSoC4/bat_in.c **** * \brief Writes the value to the physical port (data output register), masking
-  84:.\Generated_Source\PSoC4/bat_in.c **** *  and shifting the bits appropriately. 
-  85:.\Generated_Source\PSoC4/bat_in.c **** *
-  86:.\Generated_Source\PSoC4/bat_in.c **** * The data output register controls the signal applied to the physical pin in 
-  87:.\Generated_Source\PSoC4/bat_in.c **** * conjunction with the drive mode parameter. This function avoids changing 
-  88:.\Generated_Source\PSoC4/bat_in.c **** * other bits in the port by using the appropriate method (read-modify-write or
-  89:.\Generated_Source\PSoC4/bat_in.c **** * bit banding).
-  90:.\Generated_Source\PSoC4/bat_in.c **** *
-  91:.\Generated_Source\PSoC4/bat_in.c **** * <b>Note</b> This function should not be used on a hardware digital output pin 
-  92:.\Generated_Source\PSoC4/bat_in.c **** * as it is driven by the hardware signal attached to it.
-  93:.\Generated_Source\PSoC4/bat_in.c **** *
-  94:.\Generated_Source\PSoC4/bat_in.c **** * \param value
-  95:.\Generated_Source\PSoC4/bat_in.c **** *  Value to write to the component instance.
-  96:.\Generated_Source\PSoC4/bat_in.c **** *
-  97:.\Generated_Source\PSoC4/bat_in.c **** * \return 
-  98:.\Generated_Source\PSoC4/bat_in.c **** *  None 
-  99:.\Generated_Source\PSoC4/bat_in.c **** *
- 100:.\Generated_Source\PSoC4/bat_in.c **** * \sideeffect
- 101:.\Generated_Source\PSoC4/bat_in.c **** *  If you use read-modify-write operations that are not atomic; the Interrupt 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 4
+  76:Generated_Source\PSoC4/bat_in.c **** #endif
+  77:Generated_Source\PSoC4/bat_in.c **** 
+  78:Generated_Source\PSoC4/bat_in.c **** 
+  79:Generated_Source\PSoC4/bat_in.c **** /*******************************************************************************
+  80:Generated_Source\PSoC4/bat_in.c **** * Function Name: bat_in_Write
+  81:Generated_Source\PSoC4/bat_in.c **** ****************************************************************************//**
+  82:Generated_Source\PSoC4/bat_in.c **** *
+  83:Generated_Source\PSoC4/bat_in.c **** * \brief Writes the value to the physical port (data output register), masking
+  84:Generated_Source\PSoC4/bat_in.c **** *  and shifting the bits appropriately. 
+  85:Generated_Source\PSoC4/bat_in.c **** *
+  86:Generated_Source\PSoC4/bat_in.c **** * The data output register controls the signal applied to the physical pin in 
+  87:Generated_Source\PSoC4/bat_in.c **** * conjunction with the drive mode parameter. This function avoids changing 
+  88:Generated_Source\PSoC4/bat_in.c **** * other bits in the port by using the appropriate method (read-modify-write or
+  89:Generated_Source\PSoC4/bat_in.c **** * bit banding).
+  90:Generated_Source\PSoC4/bat_in.c **** *
+  91:Generated_Source\PSoC4/bat_in.c **** * <b>Note</b> This function should not be used on a hardware digital output pin 
+  92:Generated_Source\PSoC4/bat_in.c **** * as it is driven by the hardware signal attached to it.
+  93:Generated_Source\PSoC4/bat_in.c **** *
+  94:Generated_Source\PSoC4/bat_in.c **** * \param value
+  95:Generated_Source\PSoC4/bat_in.c **** *  Value to write to the component instance.
+  96:Generated_Source\PSoC4/bat_in.c **** *
+  97:Generated_Source\PSoC4/bat_in.c **** * \return 
+  98:Generated_Source\PSoC4/bat_in.c **** *  None 
+  99:Generated_Source\PSoC4/bat_in.c **** *
+ 100:Generated_Source\PSoC4/bat_in.c **** * \sideeffect
+ 101:Generated_Source\PSoC4/bat_in.c **** *  If you use read-modify-write operations that are not atomic; the Interrupt 
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccR8fYQe.s 			page 4
 
 
- 102:.\Generated_Source\PSoC4/bat_in.c **** *  Service Routines (ISR) can cause corruption of this function. An ISR that 
- 103:.\Generated_Source\PSoC4/bat_in.c **** *  interrupts this function and performs writes to the Pins component data 
- 104:.\Generated_Source\PSoC4/bat_in.c **** *  register can cause corrupted port data. To avoid this issue, you should 
- 105:.\Generated_Source\PSoC4/bat_in.c **** *  either use the Per-Pin APIs (primary method) or disable interrupts around 
- 106:.\Generated_Source\PSoC4/bat_in.c **** *  this function.
- 107:.\Generated_Source\PSoC4/bat_in.c **** *
- 108:.\Generated_Source\PSoC4/bat_in.c **** * \funcusage
- 109:.\Generated_Source\PSoC4/bat_in.c **** *  \snippet bat_in_SUT.c usage_bat_in_Write
- 110:.\Generated_Source\PSoC4/bat_in.c **** *******************************************************************************/
- 111:.\Generated_Source\PSoC4/bat_in.c **** void bat_in_Write(uint8 value)
- 112:.\Generated_Source\PSoC4/bat_in.c **** {
+ 102:Generated_Source\PSoC4/bat_in.c **** *  Service Routines (ISR) can cause corruption of this function. An ISR that 
+ 103:Generated_Source\PSoC4/bat_in.c **** *  interrupts this function and performs writes to the Pins component data 
+ 104:Generated_Source\PSoC4/bat_in.c **** *  register can cause corrupted port data. To avoid this issue, you should 
+ 105:Generated_Source\PSoC4/bat_in.c **** *  either use the Per-Pin APIs (primary method) or disable interrupts around 
+ 106:Generated_Source\PSoC4/bat_in.c **** *  this function.
+ 107:Generated_Source\PSoC4/bat_in.c **** *
+ 108:Generated_Source\PSoC4/bat_in.c **** * \funcusage
+ 109:Generated_Source\PSoC4/bat_in.c **** *  \snippet bat_in_SUT.c usage_bat_in_Write
+ 110:Generated_Source\PSoC4/bat_in.c **** *******************************************************************************/
+ 111:Generated_Source\PSoC4/bat_in.c **** void bat_in_Write(uint8 value)
+ 112:Generated_Source\PSoC4/bat_in.c **** {
   71              		.loc 1 112 0
   72              		.cfi_startproc
   73 0000 80B5     		push	{r7, lr}
@@ -205,7 +205,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
   81 0006 021C     		mov	r2, r0
   82 0008 FB1D     		add	r3, r7, #7
   83 000a 1A70     		strb	r2, [r3]
- 113:.\Generated_Source\PSoC4/bat_in.c ****     uint8 drVal = (uint8)(bat_in_DR & (uint8)(~bat_in_MASK));
+ 113:Generated_Source\PSoC4/bat_in.c ****     uint8 drVal = (uint8)(bat_in_DR & (uint8)(~bat_in_MASK));
   84              		.loc 1 113 0
   85 000c 0E4B     		ldr	r3, .L5
   86 000e 1B68     		ldr	r3, [r3]
@@ -215,7 +215,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
   90 0016 0421     		mov	r1, #4
   91 0018 8A43     		bic	r2, r1
   92 001a 1A70     		strb	r2, [r3]
- 114:.\Generated_Source\PSoC4/bat_in.c ****     drVal = (drVal | ((uint8)(value << bat_in_SHIFT) & bat_in_MASK));
+ 114:Generated_Source\PSoC4/bat_in.c ****     drVal = (drVal | ((uint8)(value << bat_in_SHIFT) & bat_in_MASK));
   93              		.loc 1 114 0
   94 001c FB1D     		add	r3, r7, #7
   95 001e 1B78     		ldrb	r3, [r3]
@@ -231,17 +231,17 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  105 0032 1278     		ldrb	r2, [r2]
  106 0034 0A43     		orr	r2, r1
  107 0036 1A70     		strb	r2, [r3]
- 115:.\Generated_Source\PSoC4/bat_in.c ****     bat_in_DR = (uint32)drVal;
+ 115:Generated_Source\PSoC4/bat_in.c ****     bat_in_DR = (uint32)drVal;
  108              		.loc 1 115 0
  109 0038 034B     		ldr	r3, .L5
  110 003a 0F22     		mov	r2, #15
  111 003c BA18     		add	r2, r7, r2
  112 003e 1278     		ldrb	r2, [r2]
  113 0040 1A60     		str	r2, [r3]
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 5
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccR8fYQe.s 			page 5
 
 
- 116:.\Generated_Source\PSoC4/bat_in.c **** }
+ 116:Generated_Source\PSoC4/bat_in.c **** }
  114              		.loc 1 116 0
  115 0042 BD46     		mov	sp, r7
  116 0044 04B0     		add	sp, sp, #16
@@ -262,27 +262,27 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  131              		.type	bat_in_Read, %function
  132              	bat_in_Read:
  133              	.LFB2:
- 117:.\Generated_Source\PSoC4/bat_in.c **** 
- 118:.\Generated_Source\PSoC4/bat_in.c **** 
- 119:.\Generated_Source\PSoC4/bat_in.c **** /*******************************************************************************
- 120:.\Generated_Source\PSoC4/bat_in.c **** * Function Name: bat_in_Read
- 121:.\Generated_Source\PSoC4/bat_in.c **** ****************************************************************************//**
- 122:.\Generated_Source\PSoC4/bat_in.c **** *
- 123:.\Generated_Source\PSoC4/bat_in.c **** * \brief Reads the associated physical port (pin status register) and masks 
- 124:.\Generated_Source\PSoC4/bat_in.c **** *  the required bits according to the width and bit position of the component
- 125:.\Generated_Source\PSoC4/bat_in.c **** *  instance. 
- 126:.\Generated_Source\PSoC4/bat_in.c **** *
- 127:.\Generated_Source\PSoC4/bat_in.c **** * The pin's status register returns the current logic level present on the 
- 128:.\Generated_Source\PSoC4/bat_in.c **** * physical pin.
- 129:.\Generated_Source\PSoC4/bat_in.c **** *
- 130:.\Generated_Source\PSoC4/bat_in.c **** * \return 
- 131:.\Generated_Source\PSoC4/bat_in.c **** *  The current value for the pins in the component as a right justified number.
- 132:.\Generated_Source\PSoC4/bat_in.c **** *
- 133:.\Generated_Source\PSoC4/bat_in.c **** * \funcusage
- 134:.\Generated_Source\PSoC4/bat_in.c **** *  \snippet bat_in_SUT.c usage_bat_in_Read  
- 135:.\Generated_Source\PSoC4/bat_in.c **** *******************************************************************************/
- 136:.\Generated_Source\PSoC4/bat_in.c **** uint8 bat_in_Read(void)
- 137:.\Generated_Source\PSoC4/bat_in.c **** {
+ 117:Generated_Source\PSoC4/bat_in.c **** 
+ 118:Generated_Source\PSoC4/bat_in.c **** 
+ 119:Generated_Source\PSoC4/bat_in.c **** /*******************************************************************************
+ 120:Generated_Source\PSoC4/bat_in.c **** * Function Name: bat_in_Read
+ 121:Generated_Source\PSoC4/bat_in.c **** ****************************************************************************//**
+ 122:Generated_Source\PSoC4/bat_in.c **** *
+ 123:Generated_Source\PSoC4/bat_in.c **** * \brief Reads the associated physical port (pin status register) and masks 
+ 124:Generated_Source\PSoC4/bat_in.c **** *  the required bits according to the width and bit position of the component
+ 125:Generated_Source\PSoC4/bat_in.c **** *  instance. 
+ 126:Generated_Source\PSoC4/bat_in.c **** *
+ 127:Generated_Source\PSoC4/bat_in.c **** * The pin's status register returns the current logic level present on the 
+ 128:Generated_Source\PSoC4/bat_in.c **** * physical pin.
+ 129:Generated_Source\PSoC4/bat_in.c **** *
+ 130:Generated_Source\PSoC4/bat_in.c **** * \return 
+ 131:Generated_Source\PSoC4/bat_in.c **** *  The current value for the pins in the component as a right justified number.
+ 132:Generated_Source\PSoC4/bat_in.c **** *
+ 133:Generated_Source\PSoC4/bat_in.c **** * \funcusage
+ 134:Generated_Source\PSoC4/bat_in.c **** *  \snippet bat_in_SUT.c usage_bat_in_Read  
+ 135:Generated_Source\PSoC4/bat_in.c **** *******************************************************************************/
+ 136:Generated_Source\PSoC4/bat_in.c **** uint8 bat_in_Read(void)
+ 137:Generated_Source\PSoC4/bat_in.c **** {
  134              		.loc 1 137 0
  135              		.cfi_startproc
  136 0000 80B5     		push	{r7, lr}
@@ -291,18 +291,18 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  139              		.cfi_offset 14, -4
  140 0002 00AF     		add	r7, sp, #0
  141              		.cfi_def_cfa_register 7
- 138:.\Generated_Source\PSoC4/bat_in.c ****     return (uint8)((bat_in_PS & bat_in_MASK) >> bat_in_SHIFT);
+ 138:Generated_Source\PSoC4/bat_in.c ****     return (uint8)((bat_in_PS & bat_in_MASK) >> bat_in_SHIFT);
  142              		.loc 1 138 0
  143 0004 044B     		ldr	r3, .L9
  144 0006 1B68     		ldr	r3, [r3]
  145 0008 0422     		mov	r2, #4
  146 000a 1340     		and	r3, r2
  147 000c 9B08     		lsr	r3, r3, #2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 6
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccR8fYQe.s 			page 6
 
 
  148 000e DBB2     		uxtb	r3, r3
- 139:.\Generated_Source\PSoC4/bat_in.c **** }
+ 139:Generated_Source\PSoC4/bat_in.c **** }
  149              		.loc 1 139 0
  150 0010 181C     		mov	r0, r3
  151 0012 BD46     		mov	sp, r7
@@ -323,32 +323,32 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  166              		.type	bat_in_ReadDataReg, %function
  167              	bat_in_ReadDataReg:
  168              	.LFB3:
- 140:.\Generated_Source\PSoC4/bat_in.c **** 
- 141:.\Generated_Source\PSoC4/bat_in.c **** 
- 142:.\Generated_Source\PSoC4/bat_in.c **** /*******************************************************************************
- 143:.\Generated_Source\PSoC4/bat_in.c **** * Function Name: bat_in_ReadDataReg
- 144:.\Generated_Source\PSoC4/bat_in.c **** ****************************************************************************//**
- 145:.\Generated_Source\PSoC4/bat_in.c **** *
- 146:.\Generated_Source\PSoC4/bat_in.c **** * \brief Reads the associated physical port's data output register and masks 
- 147:.\Generated_Source\PSoC4/bat_in.c **** *  the correct bits according to the width and bit position of the component 
- 148:.\Generated_Source\PSoC4/bat_in.c **** *  instance. 
- 149:.\Generated_Source\PSoC4/bat_in.c **** *
- 150:.\Generated_Source\PSoC4/bat_in.c **** * The data output register controls the signal applied to the physical pin in 
- 151:.\Generated_Source\PSoC4/bat_in.c **** * conjunction with the drive mode parameter. This is not the same as the 
- 152:.\Generated_Source\PSoC4/bat_in.c **** * preferred bat_in_Read() API because the 
- 153:.\Generated_Source\PSoC4/bat_in.c **** * bat_in_ReadDataReg() reads the data register instead of the status 
- 154:.\Generated_Source\PSoC4/bat_in.c **** * register. For output pins this is a useful function to determine the value 
- 155:.\Generated_Source\PSoC4/bat_in.c **** * just written to the pin.
- 156:.\Generated_Source\PSoC4/bat_in.c **** *
- 157:.\Generated_Source\PSoC4/bat_in.c **** * \return 
- 158:.\Generated_Source\PSoC4/bat_in.c **** *  The current value of the data register masked and shifted into a right 
- 159:.\Generated_Source\PSoC4/bat_in.c **** *  justified number for the component instance.
- 160:.\Generated_Source\PSoC4/bat_in.c **** *
- 161:.\Generated_Source\PSoC4/bat_in.c **** * \funcusage
- 162:.\Generated_Source\PSoC4/bat_in.c **** *  \snippet bat_in_SUT.c usage_bat_in_ReadDataReg 
- 163:.\Generated_Source\PSoC4/bat_in.c **** *******************************************************************************/
- 164:.\Generated_Source\PSoC4/bat_in.c **** uint8 bat_in_ReadDataReg(void)
- 165:.\Generated_Source\PSoC4/bat_in.c **** {
+ 140:Generated_Source\PSoC4/bat_in.c **** 
+ 141:Generated_Source\PSoC4/bat_in.c **** 
+ 142:Generated_Source\PSoC4/bat_in.c **** /*******************************************************************************
+ 143:Generated_Source\PSoC4/bat_in.c **** * Function Name: bat_in_ReadDataReg
+ 144:Generated_Source\PSoC4/bat_in.c **** ****************************************************************************//**
+ 145:Generated_Source\PSoC4/bat_in.c **** *
+ 146:Generated_Source\PSoC4/bat_in.c **** * \brief Reads the associated physical port's data output register and masks 
+ 147:Generated_Source\PSoC4/bat_in.c **** *  the correct bits according to the width and bit position of the component 
+ 148:Generated_Source\PSoC4/bat_in.c **** *  instance. 
+ 149:Generated_Source\PSoC4/bat_in.c **** *
+ 150:Generated_Source\PSoC4/bat_in.c **** * The data output register controls the signal applied to the physical pin in 
+ 151:Generated_Source\PSoC4/bat_in.c **** * conjunction with the drive mode parameter. This is not the same as the 
+ 152:Generated_Source\PSoC4/bat_in.c **** * preferred bat_in_Read() API because the 
+ 153:Generated_Source\PSoC4/bat_in.c **** * bat_in_ReadDataReg() reads the data register instead of the status 
+ 154:Generated_Source\PSoC4/bat_in.c **** * register. For output pins this is a useful function to determine the value 
+ 155:Generated_Source\PSoC4/bat_in.c **** * just written to the pin.
+ 156:Generated_Source\PSoC4/bat_in.c **** *
+ 157:Generated_Source\PSoC4/bat_in.c **** * \return 
+ 158:Generated_Source\PSoC4/bat_in.c **** *  The current value of the data register masked and shifted into a right 
+ 159:Generated_Source\PSoC4/bat_in.c **** *  justified number for the component instance.
+ 160:Generated_Source\PSoC4/bat_in.c **** *
+ 161:Generated_Source\PSoC4/bat_in.c **** * \funcusage
+ 162:Generated_Source\PSoC4/bat_in.c **** *  \snippet bat_in_SUT.c usage_bat_in_ReadDataReg 
+ 163:Generated_Source\PSoC4/bat_in.c **** *******************************************************************************/
+ 164:Generated_Source\PSoC4/bat_in.c **** uint8 bat_in_ReadDataReg(void)
+ 165:Generated_Source\PSoC4/bat_in.c **** {
  169              		.loc 1 165 0
  170              		.cfi_startproc
  171 0000 80B5     		push	{r7, lr}
@@ -357,8 +357,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  174              		.cfi_offset 14, -4
  175 0002 00AF     		add	r7, sp, #0
  176              		.cfi_def_cfa_register 7
- 166:.\Generated_Source\PSoC4/bat_in.c ****     return (uint8)((bat_in_DR & bat_in_MASK) >> bat_in_SHIFT);
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 7
+ 166:Generated_Source\PSoC4/bat_in.c ****     return (uint8)((bat_in_DR & bat_in_MASK) >> bat_in_SHIFT);
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccR8fYQe.s 			page 7
 
 
  177              		.loc 1 166 0
@@ -368,7 +368,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  181 000a 1340     		and	r3, r2
  182 000c 9B08     		lsr	r3, r3, #2
  183 000e DBB2     		uxtb	r3, r3
- 167:.\Generated_Source\PSoC4/bat_in.c **** }
+ 167:Generated_Source\PSoC4/bat_in.c **** }
  184              		.loc 1 167 0
  185 0010 181C     		mov	r0, r3
  186 0012 BD46     		mov	sp, r7
@@ -389,50 +389,50 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  201              		.type	bat_in_SetInterruptMode, %function
  202              	bat_in_SetInterruptMode:
  203              	.LFB4:
- 168:.\Generated_Source\PSoC4/bat_in.c **** 
- 169:.\Generated_Source\PSoC4/bat_in.c **** 
- 170:.\Generated_Source\PSoC4/bat_in.c **** /*******************************************************************************
- 171:.\Generated_Source\PSoC4/bat_in.c **** * Function Name: bat_in_SetInterruptMode
- 172:.\Generated_Source\PSoC4/bat_in.c **** ****************************************************************************//**
- 173:.\Generated_Source\PSoC4/bat_in.c **** *
- 174:.\Generated_Source\PSoC4/bat_in.c **** * \brief Configures the interrupt mode for each of the Pins component's
- 175:.\Generated_Source\PSoC4/bat_in.c **** *  pins. Alternatively you may set the interrupt mode for all the pins
- 176:.\Generated_Source\PSoC4/bat_in.c **** *  specified in the Pins component.
- 177:.\Generated_Source\PSoC4/bat_in.c **** *
- 178:.\Generated_Source\PSoC4/bat_in.c **** *  <b>Note</b> The interrupt is port-wide and therefore any enabled pin
- 179:.\Generated_Source\PSoC4/bat_in.c **** *  interrupt may trigger it.
- 180:.\Generated_Source\PSoC4/bat_in.c **** *
- 181:.\Generated_Source\PSoC4/bat_in.c **** * \param position
- 182:.\Generated_Source\PSoC4/bat_in.c **** *  The pin position as listed in the Pins component. You may OR these to be 
- 183:.\Generated_Source\PSoC4/bat_in.c **** *  able to configure the interrupt mode of multiple pins within a Pins 
- 184:.\Generated_Source\PSoC4/bat_in.c **** *  component. Or you may use bat_in_INTR_ALL to configure the
- 185:.\Generated_Source\PSoC4/bat_in.c **** *  interrupt mode of all the pins in the Pins component.       
- 186:.\Generated_Source\PSoC4/bat_in.c **** *  - bat_in_0_INTR       (First pin in the list)
- 187:.\Generated_Source\PSoC4/bat_in.c **** *  - bat_in_1_INTR       (Second pin in the list)
- 188:.\Generated_Source\PSoC4/bat_in.c **** *  - ...
- 189:.\Generated_Source\PSoC4/bat_in.c **** *  - bat_in_INTR_ALL     (All pins in Pins component)
- 190:.\Generated_Source\PSoC4/bat_in.c **** *
- 191:.\Generated_Source\PSoC4/bat_in.c **** * \param mode
- 192:.\Generated_Source\PSoC4/bat_in.c **** *  Interrupt mode for the selected pins. Valid options are documented in
- 193:.\Generated_Source\PSoC4/bat_in.c **** *  \ref intrMode.
- 194:.\Generated_Source\PSoC4/bat_in.c **** *
- 195:.\Generated_Source\PSoC4/bat_in.c **** * \return 
- 196:.\Generated_Source\PSoC4/bat_in.c **** *  None
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 8
+ 168:Generated_Source\PSoC4/bat_in.c **** 
+ 169:Generated_Source\PSoC4/bat_in.c **** 
+ 170:Generated_Source\PSoC4/bat_in.c **** /*******************************************************************************
+ 171:Generated_Source\PSoC4/bat_in.c **** * Function Name: bat_in_SetInterruptMode
+ 172:Generated_Source\PSoC4/bat_in.c **** ****************************************************************************//**
+ 173:Generated_Source\PSoC4/bat_in.c **** *
+ 174:Generated_Source\PSoC4/bat_in.c **** * \brief Configures the interrupt mode for each of the Pins component's
+ 175:Generated_Source\PSoC4/bat_in.c **** *  pins. Alternatively you may set the interrupt mode for all the pins
+ 176:Generated_Source\PSoC4/bat_in.c **** *  specified in the Pins component.
+ 177:Generated_Source\PSoC4/bat_in.c **** *
+ 178:Generated_Source\PSoC4/bat_in.c **** *  <b>Note</b> The interrupt is port-wide and therefore any enabled pin
+ 179:Generated_Source\PSoC4/bat_in.c **** *  interrupt may trigger it.
+ 180:Generated_Source\PSoC4/bat_in.c **** *
+ 181:Generated_Source\PSoC4/bat_in.c **** * \param position
+ 182:Generated_Source\PSoC4/bat_in.c **** *  The pin position as listed in the Pins component. You may OR these to be 
+ 183:Generated_Source\PSoC4/bat_in.c **** *  able to configure the interrupt mode of multiple pins within a Pins 
+ 184:Generated_Source\PSoC4/bat_in.c **** *  component. Or you may use bat_in_INTR_ALL to configure the
+ 185:Generated_Source\PSoC4/bat_in.c **** *  interrupt mode of all the pins in the Pins component.       
+ 186:Generated_Source\PSoC4/bat_in.c **** *  - bat_in_0_INTR       (First pin in the list)
+ 187:Generated_Source\PSoC4/bat_in.c **** *  - bat_in_1_INTR       (Second pin in the list)
+ 188:Generated_Source\PSoC4/bat_in.c **** *  - ...
+ 189:Generated_Source\PSoC4/bat_in.c **** *  - bat_in_INTR_ALL     (All pins in Pins component)
+ 190:Generated_Source\PSoC4/bat_in.c **** *
+ 191:Generated_Source\PSoC4/bat_in.c **** * \param mode
+ 192:Generated_Source\PSoC4/bat_in.c **** *  Interrupt mode for the selected pins. Valid options are documented in
+ 193:Generated_Source\PSoC4/bat_in.c **** *  \ref intrMode.
+ 194:Generated_Source\PSoC4/bat_in.c **** *
+ 195:Generated_Source\PSoC4/bat_in.c **** * \return 
+ 196:Generated_Source\PSoC4/bat_in.c **** *  None
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccR8fYQe.s 			page 8
 
 
- 197:.\Generated_Source\PSoC4/bat_in.c **** *  
- 198:.\Generated_Source\PSoC4/bat_in.c **** * \sideeffect
- 199:.\Generated_Source\PSoC4/bat_in.c **** *  It is recommended that the interrupt be disabled before calling this 
- 200:.\Generated_Source\PSoC4/bat_in.c **** *  function to avoid unintended interrupt requests. Note that the interrupt
- 201:.\Generated_Source\PSoC4/bat_in.c **** *  type is port wide, and therefore will trigger for any enabled pin on the 
- 202:.\Generated_Source\PSoC4/bat_in.c **** *  port.
- 203:.\Generated_Source\PSoC4/bat_in.c **** *
- 204:.\Generated_Source\PSoC4/bat_in.c **** * \funcusage
- 205:.\Generated_Source\PSoC4/bat_in.c **** *  \snippet bat_in_SUT.c usage_bat_in_SetInterruptMode
- 206:.\Generated_Source\PSoC4/bat_in.c **** *******************************************************************************/
- 207:.\Generated_Source\PSoC4/bat_in.c **** void bat_in_SetInterruptMode(uint16 position, uint16 mode)
- 208:.\Generated_Source\PSoC4/bat_in.c **** {
+ 197:Generated_Source\PSoC4/bat_in.c **** *  
+ 198:Generated_Source\PSoC4/bat_in.c **** * \sideeffect
+ 199:Generated_Source\PSoC4/bat_in.c **** *  It is recommended that the interrupt be disabled before calling this 
+ 200:Generated_Source\PSoC4/bat_in.c **** *  function to avoid unintended interrupt requests. Note that the interrupt
+ 201:Generated_Source\PSoC4/bat_in.c **** *  type is port wide, and therefore will trigger for any enabled pin on the 
+ 202:Generated_Source\PSoC4/bat_in.c **** *  port.
+ 203:Generated_Source\PSoC4/bat_in.c **** *
+ 204:Generated_Source\PSoC4/bat_in.c **** * \funcusage
+ 205:Generated_Source\PSoC4/bat_in.c **** *  \snippet bat_in_SUT.c usage_bat_in_SetInterruptMode
+ 206:Generated_Source\PSoC4/bat_in.c **** *******************************************************************************/
+ 207:Generated_Source\PSoC4/bat_in.c **** void bat_in_SetInterruptMode(uint16 position, uint16 mode)
+ 208:Generated_Source\PSoC4/bat_in.c **** {
  204              		.loc 1 208 0
  205              		.cfi_startproc
  206 0000 80B5     		push	{r7, lr}
@@ -449,9 +449,9 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  217 000c 3B1D     		add	r3, r7, #4
  218 000e 0A1C     		add	r2, r1, #0
  219 0010 1A80     		strh	r2, [r3]
- 209:.\Generated_Source\PSoC4/bat_in.c ****     uint32 intrCfg;
- 210:.\Generated_Source\PSoC4/bat_in.c ****     
- 211:.\Generated_Source\PSoC4/bat_in.c ****     intrCfg =  bat_in_INTCFG & (uint32)(~(uint32)position);
+ 209:Generated_Source\PSoC4/bat_in.c ****     uint32 intrCfg;
+ 210:Generated_Source\PSoC4/bat_in.c ****     
+ 211:Generated_Source\PSoC4/bat_in.c ****     intrCfg =  bat_in_INTCFG & (uint32)(~(uint32)position);
  220              		.loc 1 211 0
  221 0012 0A4B     		ldr	r3, .L16
  222 0014 1B68     		ldr	r3, [r3]
@@ -460,7 +460,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  225 001a D243     		mvn	r2, r2
  226 001c 1340     		and	r3, r2
  227 001e FB60     		str	r3, [r7, #12]
- 212:.\Generated_Source\PSoC4/bat_in.c ****     bat_in_INTCFG = intrCfg | ((uint32)position & (uint32)mode);
+ 212:Generated_Source\PSoC4/bat_in.c ****     bat_in_INTCFG = intrCfg | ((uint32)position & (uint32)mode);
  228              		.loc 1 212 0
  229 0020 064B     		ldr	r3, .L16
  230 0022 BA1D     		add	r2, r7, #6
@@ -473,12 +473,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  237 0030 FA68     		ldr	r2, [r7, #12]
  238 0032 0A43     		orr	r2, r1
  239 0034 1A60     		str	r2, [r3]
- 213:.\Generated_Source\PSoC4/bat_in.c **** }
+ 213:Generated_Source\PSoC4/bat_in.c **** }
  240              		.loc 1 213 0
  241 0036 BD46     		mov	sp, r7
  242 0038 04B0     		add	sp, sp, #16
  243              		@ sp needed
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 9
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccR8fYQe.s 			page 9
 
 
  244 003a 80BD     		pop	{r7, pc}
@@ -497,30 +497,30 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  257              		.type	bat_in_ClearInterrupt, %function
  258              	bat_in_ClearInterrupt:
  259              	.LFB5:
- 214:.\Generated_Source\PSoC4/bat_in.c **** 
- 215:.\Generated_Source\PSoC4/bat_in.c **** 
- 216:.\Generated_Source\PSoC4/bat_in.c **** /*******************************************************************************
- 217:.\Generated_Source\PSoC4/bat_in.c **** * Function Name: bat_in_ClearInterrupt
- 218:.\Generated_Source\PSoC4/bat_in.c **** ****************************************************************************//**
- 219:.\Generated_Source\PSoC4/bat_in.c **** *
- 220:.\Generated_Source\PSoC4/bat_in.c **** * \brief Clears any active interrupts attached with the component and returns 
- 221:.\Generated_Source\PSoC4/bat_in.c **** *  the value of the interrupt status register allowing determination of which
- 222:.\Generated_Source\PSoC4/bat_in.c **** *  pins generated an interrupt event.
- 223:.\Generated_Source\PSoC4/bat_in.c **** *
- 224:.\Generated_Source\PSoC4/bat_in.c **** * \return 
- 225:.\Generated_Source\PSoC4/bat_in.c **** *  The right-shifted current value of the interrupt status register. Each pin 
- 226:.\Generated_Source\PSoC4/bat_in.c **** *  has one bit set if it generated an interrupt event. For example, bit 0 is 
- 227:.\Generated_Source\PSoC4/bat_in.c **** *  for pin 0 and bit 1 is for pin 1 of the Pins component.
- 228:.\Generated_Source\PSoC4/bat_in.c **** *  
- 229:.\Generated_Source\PSoC4/bat_in.c **** * \sideeffect
- 230:.\Generated_Source\PSoC4/bat_in.c **** *  Clears all bits of the physical port's interrupt status register, not just
- 231:.\Generated_Source\PSoC4/bat_in.c **** *  those associated with the Pins component.
- 232:.\Generated_Source\PSoC4/bat_in.c **** *
- 233:.\Generated_Source\PSoC4/bat_in.c **** * \funcusage
- 234:.\Generated_Source\PSoC4/bat_in.c **** *  \snippet bat_in_SUT.c usage_bat_in_ClearInterrupt
- 235:.\Generated_Source\PSoC4/bat_in.c **** *******************************************************************************/
- 236:.\Generated_Source\PSoC4/bat_in.c **** uint8 bat_in_ClearInterrupt(void)
- 237:.\Generated_Source\PSoC4/bat_in.c **** {
+ 214:Generated_Source\PSoC4/bat_in.c **** 
+ 215:Generated_Source\PSoC4/bat_in.c **** 
+ 216:Generated_Source\PSoC4/bat_in.c **** /*******************************************************************************
+ 217:Generated_Source\PSoC4/bat_in.c **** * Function Name: bat_in_ClearInterrupt
+ 218:Generated_Source\PSoC4/bat_in.c **** ****************************************************************************//**
+ 219:Generated_Source\PSoC4/bat_in.c **** *
+ 220:Generated_Source\PSoC4/bat_in.c **** * \brief Clears any active interrupts attached with the component and returns 
+ 221:Generated_Source\PSoC4/bat_in.c **** *  the value of the interrupt status register allowing determination of which
+ 222:Generated_Source\PSoC4/bat_in.c **** *  pins generated an interrupt event.
+ 223:Generated_Source\PSoC4/bat_in.c **** *
+ 224:Generated_Source\PSoC4/bat_in.c **** * \return 
+ 225:Generated_Source\PSoC4/bat_in.c **** *  The right-shifted current value of the interrupt status register. Each pin 
+ 226:Generated_Source\PSoC4/bat_in.c **** *  has one bit set if it generated an interrupt event. For example, bit 0 is 
+ 227:Generated_Source\PSoC4/bat_in.c **** *  for pin 0 and bit 1 is for pin 1 of the Pins component.
+ 228:Generated_Source\PSoC4/bat_in.c **** *  
+ 229:Generated_Source\PSoC4/bat_in.c **** * \sideeffect
+ 230:Generated_Source\PSoC4/bat_in.c **** *  Clears all bits of the physical port's interrupt status register, not just
+ 231:Generated_Source\PSoC4/bat_in.c **** *  those associated with the Pins component.
+ 232:Generated_Source\PSoC4/bat_in.c **** *
+ 233:Generated_Source\PSoC4/bat_in.c **** * \funcusage
+ 234:Generated_Source\PSoC4/bat_in.c **** *  \snippet bat_in_SUT.c usage_bat_in_ClearInterrupt
+ 235:Generated_Source\PSoC4/bat_in.c **** *******************************************************************************/
+ 236:Generated_Source\PSoC4/bat_in.c **** uint8 bat_in_ClearInterrupt(void)
+ 237:Generated_Source\PSoC4/bat_in.c **** {
  260              		.loc 1 237 0
  261              		.cfi_startproc
  262 0000 80B5     		push	{r7, lr}
@@ -531,31 +531,31 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  267              		.cfi_def_cfa_offset 16
  268 0004 00AF     		add	r7, sp, #0
  269              		.cfi_def_cfa_register 7
- 238:.\Generated_Source\PSoC4/bat_in.c **** 	uint8 maskedStatus = (uint8)(bat_in_INTSTAT & bat_in_MASK);
+ 238:Generated_Source\PSoC4/bat_in.c **** 	uint8 maskedStatus = (uint8)(bat_in_INTSTAT & bat_in_MASK);
  270              		.loc 1 238 0
  271 0006 094B     		ldr	r3, .L20
  272 0008 1B68     		ldr	r3, [r3]
  273 000a DAB2     		uxtb	r2, r3
  274 000c FB1D     		add	r3, r7, #7
  275 000e 0421     		mov	r1, #4
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 10
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccR8fYQe.s 			page 10
 
 
  276 0010 0A40     		and	r2, r1
  277 0012 1A70     		strb	r2, [r3]
- 239:.\Generated_Source\PSoC4/bat_in.c **** 	bat_in_INTSTAT = maskedStatus;
+ 239:Generated_Source\PSoC4/bat_in.c **** 	bat_in_INTSTAT = maskedStatus;
  278              		.loc 1 239 0
  279 0014 054B     		ldr	r3, .L20
  280 0016 FA1D     		add	r2, r7, #7
  281 0018 1278     		ldrb	r2, [r2]
  282 001a 1A60     		str	r2, [r3]
- 240:.\Generated_Source\PSoC4/bat_in.c ****     return maskedStatus >> bat_in_SHIFT;
+ 240:Generated_Source\PSoC4/bat_in.c ****     return maskedStatus >> bat_in_SHIFT;
  283              		.loc 1 240 0
  284 001c FB1D     		add	r3, r7, #7
  285 001e 1B78     		ldrb	r3, [r3]
  286 0020 9B08     		lsr	r3, r3, #2
  287 0022 DBB2     		uxtb	r3, r3
- 241:.\Generated_Source\PSoC4/bat_in.c **** }
+ 241:Generated_Source\PSoC4/bat_in.c **** }
  288              		.loc 1 241 0
  289 0024 181C     		mov	r0, r3
  290 0026 BD46     		mov	sp, r7
@@ -571,7 +571,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  300              		.size	bat_in_ClearInterrupt, .-bat_in_ClearInterrupt
  301              		.text
  302              	.Letext0:
- 303              		.file 2 ".\\Generated_Source\\PSoC4\\cytypes.h"
+ 303              		.file 2 "Generated_Source\\PSoC4\\cytypes.h"
  304              		.section	.debug_info,"",%progbits
  305              	.Ldebug_info0:
  306 0000 96010000 		.4byte	0x196
@@ -579,48 +579,48 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  308 0006 00000000 		.4byte	.Ldebug_abbrev0
  309 000a 04       		.byte	0x4
  310 000b 01       		.uleb128 0x1
- 311 000c E2000000 		.4byte	.LASF28
+ 311 000c B9000000 		.4byte	.LASF28
  312 0010 01       		.byte	0x1
- 313 0011 E5010000 		.4byte	.LASF29
- 314 0015 46000000 		.4byte	.LASF30
+ 313 0011 73010000 		.4byte	.LASF29
+ 314 0015 BD010000 		.4byte	.LASF30
  315 0019 00000000 		.4byte	.Ldebug_ranges0+0
  316 001d 00000000 		.4byte	0
  317 0021 00000000 		.4byte	.Ldebug_line0
  318 0025 02       		.uleb128 0x2
  319 0026 01       		.byte	0x1
  320 0027 06       		.byte	0x6
- 321 0028 20020000 		.4byte	.LASF0
+ 321 0028 1C020000 		.4byte	.LASF0
  322 002c 02       		.uleb128 0x2
  323 002d 01       		.byte	0x1
  324 002e 08       		.byte	0x8
- 325 002f A2000000 		.4byte	.LASF1
+ 325 002f 79000000 		.4byte	.LASF1
  326 0033 02       		.uleb128 0x2
  327 0034 02       		.byte	0x2
  328 0035 05       		.byte	0x5
- 329 0036 07020000 		.4byte	.LASF2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 11
+ 329 0036 03020000 		.4byte	.LASF2
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccR8fYQe.s 			page 11
 
 
  330 003a 02       		.uleb128 0x2
  331 003b 02       		.byte	0x2
  332 003c 07       		.byte	0x7
- 333 003d C8000000 		.4byte	.LASF3
+ 333 003d 9F000000 		.4byte	.LASF3
  334 0041 02       		.uleb128 0x2
  335 0042 04       		.byte	0x4
  336 0043 05       		.byte	0x5
- 337 0044 17020000 		.4byte	.LASF4
+ 337 0044 13020000 		.4byte	.LASF4
  338 0048 02       		.uleb128 0x2
  339 0049 04       		.byte	0x4
  340 004a 07       		.byte	0x7
- 341 004b B6000000 		.4byte	.LASF5
+ 341 004b 8D000000 		.4byte	.LASF5
  342 004f 02       		.uleb128 0x2
  343 0050 08       		.byte	0x8
  344 0051 05       		.byte	0x5
- 345 0052 B8010000 		.4byte	.LASF6
+ 345 0052 AF010000 		.4byte	.LASF6
  346 0056 02       		.uleb128 0x2
  347 0057 08       		.byte	0x8
  348 0058 07       		.byte	0x7
- 349 0059 9C010000 		.4byte	.LASF7
+ 349 0059 93010000 		.4byte	.LASF7
  350 005d 03       		.uleb128 0x3
  351 005e 04       		.byte	0x4
  352 005f 05       		.byte	0x5
@@ -628,37 +628,37 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  354 0064 02       		.uleb128 0x2
  355 0065 04       		.byte	0x4
  356 0066 07       		.byte	0x7
- 357 0067 8F010000 		.4byte	.LASF8
+ 357 0067 66010000 		.4byte	.LASF8
  358 006b 04       		.uleb128 0x4
- 359 006c 11020000 		.4byte	.LASF9
+ 359 006c 0D020000 		.4byte	.LASF9
  360 0070 02       		.byte	0x2
  361 0071 9801     		.2byte	0x198
  362 0073 2C000000 		.4byte	0x2c
  363 0077 04       		.uleb128 0x4
- 364 0078 70010000 		.4byte	.LASF10
+ 364 0078 47010000 		.4byte	.LASF10
  365 007c 02       		.byte	0x2
  366 007d 9901     		.2byte	0x199
  367 007f 3A000000 		.4byte	0x3a
  368 0083 04       		.uleb128 0x4
- 369 0084 80010000 		.4byte	.LASF11
+ 369 0084 57010000 		.4byte	.LASF11
  370 0088 02       		.byte	0x2
  371 0089 9A01     		.2byte	0x19a
  372 008b 48000000 		.4byte	0x48
  373 008f 02       		.uleb128 0x2
  374 0090 04       		.byte	0x4
  375 0091 04       		.byte	0x4
- 376 0092 9C000000 		.4byte	.LASF12
+ 376 0092 73000000 		.4byte	.LASF12
  377 0096 02       		.uleb128 0x2
  378 0097 08       		.byte	0x8
  379 0098 04       		.byte	0x4
- 380 0099 DB000000 		.4byte	.LASF13
+ 380 0099 B2000000 		.4byte	.LASF13
  381 009d 02       		.uleb128 0x2
  382 009e 01       		.byte	0x1
  383 009f 08       		.byte	0x8
- 384 00a0 D3010000 		.4byte	.LASF14
+ 384 00a0 FE010000 		.4byte	.LASF14
  385 00a4 04       		.uleb128 0x4
  386 00a5 16000000 		.4byte	.LASF15
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 12
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccR8fYQe.s 			page 12
 
 
  387 00a9 02       		.byte	0x2
@@ -667,7 +667,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  390 00b0 05       		.uleb128 0x5
  391 00b1 83000000 		.4byte	0x83
  392 00b5 06       		.uleb128 0x6
- 393 00b6 2C020000 		.4byte	.LASF16
+ 393 00b6 28020000 		.4byte	.LASF16
  394 00ba 01       		.byte	0x1
  395 00bb 48       		.byte	0x48
  396 00bc 00000000 		.4byte	.LFB0
@@ -676,7 +676,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  399 00c5 9C       		.byte	0x9c
  400 00c6 D9000000 		.4byte	0xd9
  401 00ca 07       		.uleb128 0x7
- 402 00cb B3010000 		.4byte	.LASF18
+ 402 00cb AA010000 		.4byte	.LASF18
  403 00cf 01       		.byte	0x1
  404 00d0 48       		.byte	0x48
  405 00d1 6B000000 		.4byte	0x6b
@@ -685,7 +685,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  408 00d7 77       		.sleb128 -9
  409 00d8 00       		.byte	0
  410 00d9 06       		.uleb128 0x6
- 411 00da D8010000 		.4byte	.LASF17
+ 411 00da 53000000 		.4byte	.LASF17
  412 00de 01       		.byte	0x1
  413 00df 6F       		.byte	0x6f
  414 00e0 00000000 		.4byte	.LFB1
@@ -694,7 +694,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  417 00e9 9C       		.byte	0x9c
  418 00ea 0B010000 		.4byte	0x10b
  419 00ee 07       		.uleb128 0x7
- 420 00ef 40000000 		.4byte	.LASF19
+ 420 00ef 4D000000 		.4byte	.LASF19
  421 00f3 01       		.byte	0x1
  422 00f4 6F       		.byte	0x6f
  423 00f5 6B000000 		.4byte	0x6b
@@ -702,7 +702,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  425 00fa 91       		.byte	0x91
  426 00fb 6F       		.sleb128 -17
  427 00fc 08       		.uleb128 0x8
- 428 00fd B0000000 		.4byte	.LASF24
+ 428 00fd 87000000 		.4byte	.LASF24
  429 0101 01       		.byte	0x1
  430 0102 71       		.byte	0x71
  431 0103 6B000000 		.4byte	0x6b
@@ -718,12 +718,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  441 0116 00000000 		.4byte	.LFB2
  442 011a 1C000000 		.4byte	.LFE2-.LFB2
  443 011e 01       		.uleb128 0x1
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 13
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccR8fYQe.s 			page 13
 
 
  444 011f 9C       		.byte	0x9c
  445 0120 09       		.uleb128 0x9
- 446 0121 89000000 		.4byte	.LASF21
+ 446 0121 60000000 		.4byte	.LASF21
  447 0125 01       		.byte	0x1
  448 0126 A4       		.byte	0xa4
  449 0127 6B000000 		.4byte	0x6b
@@ -741,7 +741,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  461 0145 9C       		.byte	0x9c
  462 0146 75010000 		.4byte	0x175
  463 014a 07       		.uleb128 0x7
- 464 014b 77010000 		.4byte	.LASF23
+ 464 014b 4E010000 		.4byte	.LASF23
  465 014f 01       		.byte	0x1
  466 0150 CF       		.byte	0xcf
  467 0151 77000000 		.4byte	0x77
@@ -749,7 +749,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  469 0156 91       		.byte	0x91
  470 0157 6E       		.sleb128 -18
  471 0158 07       		.uleb128 0x7
- 472 0159 B3010000 		.4byte	.LASF18
+ 472 0159 AA010000 		.4byte	.LASF18
  473 015d 01       		.byte	0x1
  474 015e CF       		.byte	0xcf
  475 015f 77000000 		.4byte	0x77
@@ -757,7 +757,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  477 0164 91       		.byte	0x91
  478 0165 6C       		.sleb128 -20
  479 0166 08       		.uleb128 0x8
- 480 0167 87010000 		.4byte	.LASF25
+ 480 0167 5E010000 		.4byte	.LASF25
  481 016b 01       		.byte	0x1
  482 016c D1       		.byte	0xd1
  483 016d 83000000 		.4byte	0x83
@@ -775,10 +775,10 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  495 0188 01       		.uleb128 0x1
  496 0189 9C       		.byte	0x9c
  497 018a 08       		.uleb128 0x8
- 498 018b C6010000 		.4byte	.LASF27
+ 498 018b 40000000 		.4byte	.LASF27
  499 018f 01       		.byte	0x1
  500 0190 EE       		.byte	0xee
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 14
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccR8fYQe.s 			page 14
 
 
  501 0191 6B000000 		.4byte	0x6b
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  555 002e 3A       		.uleb128 0x3a
  556 002f 0B       		.uleb128 0xb
  557 0030 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 15
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccR8fYQe.s 			page 15
 
 
  558 0031 05       		.uleb128 0x5
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  612 0068 00       		.byte	0
  613 0069 03       		.uleb128 0x3
  614 006a 0E       		.uleb128 0xe
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 16
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccR8fYQe.s 			page 16
 
 
  615 006b 3A       		.uleb128 0x3a
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  669 00a2 40       		.uleb128 0x40
  670 00a3 18       		.uleb128 0x18
  671 00a4 9742     		.uleb128 0x2117
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 17
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccR8fYQe.s 			page 17
 
 
  672 00a6 19       		.uleb128 0x19
@@ -1005,8 +1005,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  713 0034 00000000 		.4byte	0
  714              		.section	.debug_line,"",%progbits
  715              	.Ldebug_line0:
- 716 0000 BC000000 		.section	.debug_str,"MS",%progbits,1
- 716      02004500 
+ 716 0000 BA000000 		.section	.debug_str,"MS",%progbits,1
+ 716      02004300 
  716      00000201 
  716      FB0E0D00 
  716      01010101 
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  718      72727570 
  719              	.LASF15:
  720 0016 72656733 		.ascii	"reg32\000"
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 18
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccR8fYQe.s 			page 18
 
 
  720      3200
@@ -1032,142 +1032,142 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 1
  724 0034 6261745F 		.ascii	"bat_in_Read\000"
  724      696E5F52 
  724      65616400 
- 725              	.LASF19:
- 726 0040 76616C75 		.ascii	"value\000"
- 726      6500
- 727              	.LASF30:
- 728 0046 433A5C55 		.ascii	"C:\\Users\\Matthew\\Documents\\GitHub\\BioSnap\\Mas"
- 728      73657273 
- 728      5C4D6174 
- 728      74686577 
- 728      5C446F63 
- 729 0073 7465725F 		.ascii	"ter_v2\\Master_2.cydsn\000"
- 729      76325C4D 
- 729      61737465 
- 729      725F322E 
- 729      63796473 
- 730              	.LASF21:
- 731 0089 6261745F 		.ascii	"bat_in_ReadDataReg\000"
- 731      696E5F52 
- 731      65616444 
- 731      61746152 
- 731      656700
- 732              	.LASF12:
- 733 009c 666C6F61 		.ascii	"float\000"
- 733      7400
- 734              	.LASF1:
- 735 00a2 756E7369 		.ascii	"unsigned char\000"
- 735      676E6564 
- 735      20636861 
- 735      7200
- 736              	.LASF24:
- 737 00b0 64725661 		.ascii	"drVal\000"
- 737      6C00
- 738              	.LASF5:
- 739 00b6 6C6F6E67 		.ascii	"long unsigned int\000"
- 739      20756E73 
- 739      69676E65 
- 739      6420696E 
- 739      7400
- 740              	.LASF3:
- 741 00c8 73686F72 		.ascii	"short unsigned int\000"
- 741      7420756E 
- 741      7369676E 
- 741      65642069 
- 741      6E7400
- 742              	.LASF13:
- 743 00db 646F7562 		.ascii	"double\000"
- 743      6C6500
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 19
+ 725              	.LASF27:
+ 726 0040 6D61736B 		.ascii	"maskedStatus\000"
+ 726      65645374 
+ 726      61747573 
+ 726      00
+ 727              	.LASF19:
+ 728 004d 76616C75 		.ascii	"value\000"
+ 728      6500
+ 729              	.LASF17:
+ 730 0053 6261745F 		.ascii	"bat_in_Write\000"
+ 730      696E5F57 
+ 730      72697465 
+ 730      00
+ 731              	.LASF21:
+ 732 0060 6261745F 		.ascii	"bat_in_ReadDataReg\000"
+ 732      696E5F52 
+ 732      65616444 
+ 732      61746152 
+ 732      656700
+ 733              	.LASF12:
+ 734 0073 666C6F61 		.ascii	"float\000"
+ 734      7400
+ 735              	.LASF1:
+ 736 0079 756E7369 		.ascii	"unsigned char\000"
+ 736      676E6564 
+ 736      20636861 
+ 736      7200
+ 737              	.LASF24:
+ 738 0087 64725661 		.ascii	"drVal\000"
+ 738      6C00
+ 739              	.LASF5:
+ 740 008d 6C6F6E67 		.ascii	"long unsigned int\000"
+ 740      20756E73 
+ 740      69676E65 
+ 740      6420696E 
+ 740      7400
+ 741              	.LASF3:
+ 742 009f 73686F72 		.ascii	"short unsigned int\000"
+ 742      7420756E 
+ 742      7369676E 
+ 742      65642069 
+ 742      6E7400
+ 743              	.LASF13:
+ 744 00b2 646F7562 		.ascii	"double\000"
+ 744      6C6500
+ 745              	.LASF28:
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccR8fYQe.s 			page 19
 
 
- 744              	.LASF28:
- 745 00e2 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 745      4320342E 
- 745      392E3320 
- 745      32303135 
- 745      30333033 
- 746 0115 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
- 746      20726576 
- 746      6973696F 
- 746      6E203232 
- 746      31323230 
- 747 0148 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 747      66756E63 
- 747      74696F6E 
- 747      2D736563 
- 747      74696F6E 
- 748              	.LASF10:
- 749 0170 75696E74 		.ascii	"uint16\000"
- 749      313600
- 750              	.LASF23:
- 751 0177 706F7369 		.ascii	"position\000"
- 751      74696F6E 
- 751      00
- 752              	.LASF11:
- 753 0180 75696E74 		.ascii	"uint32\000"
- 753      333200
- 754              	.LASF25:
- 755 0187 696E7472 		.ascii	"intrCfg\000"
- 755      43666700 
- 756              	.LASF8:
- 757 018f 756E7369 		.ascii	"unsigned int\000"
- 757      676E6564 
- 757      20696E74 
- 757      00
- 758              	.LASF7:
- 759 019c 6C6F6E67 		.ascii	"long long unsigned int\000"
- 759      206C6F6E 
- 759      6720756E 
- 759      7369676E 
- 759      65642069 
- 760              	.LASF18:
- 761 01b3 6D6F6465 		.ascii	"mode\000"
- 761      00
- 762              	.LASF6:
- 763 01b8 6C6F6E67 		.ascii	"long long int\000"
- 763      206C6F6E 
- 763      6720696E 
- 763      7400
- 764              	.LASF27:
- 765 01c6 6D61736B 		.ascii	"maskedStatus\000"
- 765      65645374 
- 765      61747573 
- 765      00
- 766              	.LASF14:
- 767 01d3 63686172 		.ascii	"char\000"
- 767      00
- 768              	.LASF17:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccv8HAea.s 			page 20
+ 746 00b9 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 746      4320342E 
+ 746      392E3320 
+ 746      32303135 
+ 746      30333033 
+ 747 00ec 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 747      20726576 
+ 747      6973696F 
+ 747      6E203232 
+ 747      31323230 
+ 748 011f 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 748      66756E63 
+ 748      74696F6E 
+ 748      2D736563 
+ 748      74696F6E 
+ 749              	.LASF10:
+ 750 0147 75696E74 		.ascii	"uint16\000"
+ 750      313600
+ 751              	.LASF23:
+ 752 014e 706F7369 		.ascii	"position\000"
+ 752      74696F6E 
+ 752      00
+ 753              	.LASF11:
+ 754 0157 75696E74 		.ascii	"uint32\000"
+ 754      333200
+ 755              	.LASF25:
+ 756 015e 696E7472 		.ascii	"intrCfg\000"
+ 756      43666700 
+ 757              	.LASF8:
+ 758 0166 756E7369 		.ascii	"unsigned int\000"
+ 758      676E6564 
+ 758      20696E74 
+ 758      00
+ 759              	.LASF29:
+ 760 0173 47656E65 		.ascii	"Generated_Source\\PSoC4\\bat_in.c\000"
+ 760      72617465 
+ 760      645F536F 
+ 760      75726365 
+ 760      5C50536F 
+ 761              	.LASF7:
+ 762 0193 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 762      206C6F6E 
+ 762      6720756E 
+ 762      7369676E 
+ 762      65642069 
+ 763              	.LASF18:
+ 764 01aa 6D6F6465 		.ascii	"mode\000"
+ 764      00
+ 765              	.LASF6:
+ 766 01af 6C6F6E67 		.ascii	"long long int\000"
+ 766      206C6F6E 
+ 766      6720696E 
+ 766      7400
+ 767              	.LASF30:
+ 768 01bd 433A5C55 		.ascii	"C:\\Users\\Davit\\Documents\\GitHub\\BioSnap\\Maste"
+ 768      73657273 
+ 768      5C446176 
+ARM GAS  C:\Users\Davit\AppData\Local\Temp\ccR8fYQe.s 			page 20
 
 
- 769 01d8 6261745F 		.ascii	"bat_in_Write\000"
- 769      696E5F57 
- 769      72697465 
- 769      00
- 770              	.LASF29:
- 771 01e5 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\bat_in.c\000"
- 771      6E657261 
- 771      7465645F 
- 771      536F7572 
- 771      63655C50 
+ 768      69745C44 
+ 768      6F63756D 
+ 769 01ea 725F7632 		.ascii	"r_v2\\Master_2.cydsn\000"
+ 769      5C4D6173 
+ 769      7465725F 
+ 769      322E6379 
+ 769      64736E00 
+ 770              	.LASF14:
+ 771 01fe 63686172 		.ascii	"char\000"
+ 771      00
  772              	.LASF2:
- 773 0207 73686F72 		.ascii	"short int\000"
+ 773 0203 73686F72 		.ascii	"short int\000"
  773      7420696E 
  773      7400
  774              	.LASF9:
- 775 0211 75696E74 		.ascii	"uint8\000"
+ 775 020d 75696E74 		.ascii	"uint8\000"
  775      3800
  776              	.LASF4:
- 777 0217 6C6F6E67 		.ascii	"long int\000"
+ 777 0213 6C6F6E67 		.ascii	"long int\000"
  777      20696E74 
  777      00
  778              	.LASF0:
- 779 0220 7369676E 		.ascii	"signed char\000"
+ 779 021c 7369676E 		.ascii	"signed char\000"
  779      65642063 
  779      68617200 
  780              	.LASF16:
- 781 022c 6261745F 		.ascii	"bat_in_SetDriveMode\000"
+ 781 0228 6261745F 		.ascii	"bat_in_SetDriveMode\000"
  781      696E5F53 
  781      65744472 
  781      6976654D 

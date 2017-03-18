@@ -1,10 +1,10 @@
 (DELAYFILE
  (SDFVERSION "IEEE 1497 4.0")
- (DATE "2017-03-10T06:58:58Z")
+ (DATE "2017-03-17T19:40:22Z")
  (DESIGN "Master_2")
  (VENDOR "Cypress Semiconductor")
  (PROGRAM "PSoC Creator")
- (VERSION " 3.3 CP3")
+ (VERSION " 4.0 Update 1")
  (DIVIDER .)
  (TIMESCALE 1 ns)
  (CELL
@@ -27,6 +27,7 @@
     (INTERCONNECT \\I2C_1\:sda\(0\)\\.fb \\I2C_1\:SCB\\.sda (0.000:0.000:0.000))
     (INTERCONNECT \\I2C_1\:sda\(0\)_PAD\\ \\I2C_1\:sda\(0\)\\.pad_in (0.000:0.000:0.000))
     (INTERCONNECT \\I2C_1\:scl\(0\)_PAD\\ \\I2C_1\:scl\(0\)\\.pad_in (0.000:0.000:0.000))
+    (INTERCONNECT BAdvertLED\(0\)_PAD BAdvertLED\(0\).pad_in (0.000:0.000:0.000))
    )
   )
  )
