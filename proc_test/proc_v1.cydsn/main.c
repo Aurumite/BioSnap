@@ -11,7 +11,7 @@
 */
 #include <project.h>
 #include <accelerometer.h>
-#include <tempAndBat.h>
+#include <temp_bat_button.h>
 #include <MAX30100_All.h>
 
 #define REPORTING_PERIOD_MS     1000
@@ -31,9 +31,10 @@ uint32 otherLastReport = 0; //last report time for all other sensors besides MAX
 
 const int ACCELEROMETER = 0;
 const int BATTERY = 1;
-const int HEART = 2;
-const int OXYGEN = 3;
-const int TEMPERATURE = 4;
+const int BUTTON = 2;
+const int HEART = 3;
+const int OXYGEN = 4;
+const int TEMPERATURE = 5;
 
 void initBLE();
 void StackEventHandler( uint32 eventCode, void *eventParam );
@@ -141,6 +142,12 @@ void StackEventHandler( uint32 eventCode, void *eventParam )
                     NOTIFY[BATTERY] = wrReqParam->handleValPair.value.val[0] & 0x01; 
                     CyBle_GattsWriteRsp(cyBle_connHandle);
                 break;
+                    
+                case CYBLE_BIOSNAP_BUTTON_BUTTONCCC_DESC_HANDLE:
+                    CyBle_GattsWriteAttributeValue(&wrReqParam->handleValPair, 0, &cyBle_connHandle, CYBLE_GATT_DB_PEER_INITIATED);
+                    NOTIFY[BUTTON] = wrReqParam->handleValPair.value.val[0] & 0x01; 
+                    CyBle_GattsWriteRsp(cyBle_connHandle);
+                break;
             }
             break; 
         
@@ -185,6 +192,7 @@ int main()
     uint32 oxygen = 0;
     uint32 temp = 0;
     uint32 bat = 0;
+    uint32 button = 0;
     
     long elapsed = 0;
     
@@ -205,6 +213,9 @@ int main()
                 
                 bat = getBattery();
                 updateCharacteristic(BATTERY, CYBLE_BIOSNAP_BATTERY_CHAR_HANDLE, bat);
+                
+                button = getButton();
+                updateCharacteristic(BUTTON, CYBLE_BIOSNAP_BUTTON_CHAR_HANDLE, button);
                 
                 otherLastReport = millis();
             }

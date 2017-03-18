@@ -24,5 +24,6 @@ Vref: VDDA (~3.3V)
 void initTemperatureAndBattery();
 uint16 getTemperature();
 uint16 getBattery();
+uint16 getButton();
 
 #endif

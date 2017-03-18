@@ -50,33 +50,43 @@ const CYBLE_CUSTOMS_T cyBle_customs[0x01u] = {
                 }, 
             },
 
-            /* Heart characteristic */
+            /* Button characteristic */
             {
-                0x0016u, /* Handle of the Heart characteristic */ 
+                0x0016u, /* Handle of the Button characteristic */ 
                 
                 /* Array of Descriptors handles */
                 {
-                    0x0017u, /* Handle of the HeartCCC descriptor */ 
+                    0x0017u, /* Handle of the ButtonCCC descriptor */ 
+                }, 
+            },
+
+            /* Heart characteristic */
+            {
+                0x0019u, /* Handle of the Heart characteristic */ 
+                
+                /* Array of Descriptors handles */
+                {
+                    0x001Au, /* Handle of the HeartCCC descriptor */ 
                 }, 
             },
 
             /* Oxygen characteristic */
             {
-                0x0019u, /* Handle of the Oxygen characteristic */ 
+                0x001Cu, /* Handle of the Oxygen characteristic */ 
                 
                 /* Array of Descriptors handles */
                 {
-                    0x001Au, /* Handle of the OxygenCCC descriptor */ 
+                    0x001Du, /* Handle of the OxygenCCC descriptor */ 
                 }, 
             },
 
             /* Temperature characteristic */
             {
-                0x001Cu, /* Handle of the Temperature characteristic */ 
+                0x001Fu, /* Handle of the Temperature characteristic */ 
                 
                 /* Array of Descriptors handles */
                 {
-                    0x001Du, /* Handle of the TempCCC descriptor */ 
+                    0x0020u, /* Handle of the TempCCC descriptor */ 
                 }, 
             },
         }, 
