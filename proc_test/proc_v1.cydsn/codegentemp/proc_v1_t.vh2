@@ -1,5 +1,5 @@
--- Project:   C:\Users\Matthew\Documents\GitHub\BioSnap\proc_test\proc_v1.cydsn\proc_v1.cyprj
--- Generated: 03/15/2017 16:41:04
+-- Project:   C:\Users\Matthew\Documents\UC Davis\EEC 136AB\PSoC\proc_test\proc_v1.cydsn\proc_v1.cyprj
+-- Generated: 03/10/2017 16:51:19
 -- PSoC Creator  3.3 CP3
 
 ENTITY proc_v1 IS
