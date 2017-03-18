@@ -79,12 +79,14 @@ public class BleService extends Service {
     private static BluetoothGattCharacteristic mHeartRateCharacteristic;
     private static BluetoothGattCharacteristic mOximetryCharacteristic;
     private static BluetoothGattCharacteristic mBatteryCharacteristic;
+    private static BluetoothGattCharacteristic mEmergencyButtonCharacteristic;
 
     private static BluetoothGattDescriptor mTempDescriptor;
     private static BluetoothGattDescriptor mAccelDescriptor;
     private static BluetoothGattDescriptor mHeartRateDescriptor;
     private static BluetoothGattDescriptor mOximetryDescriptor;
     private static BluetoothGattDescriptor mBatteryDescriptor;
+    private static BluetoothGattDescriptor mEmergencyDescriptor;
     //End Bluetooth Characteristics
 
 
@@ -113,6 +115,7 @@ public class BleService extends Service {
     private final static String mHeartRateCharacteristicUUID = "0000AAA3-0000-1000-8000-00805F9B34FB";
     private final static String mOximetryCharacteristicUUID = "0000AAA4-0000-1000-8000-00805F9B34FB";
     private final static String mTemperatureCharacteristicUUID = "0000AAA5-0000-1000-8000-00805F9B34FB";
+    private final static String mEmergencyButtonCharacteristicUUID = "0000AAA6-0000-1000-8000-00805F9B34FB";
     //CCCDUUID for each characteristic's description
     private final static String CCCDUUID = "00002902-0000-1000-8000-00805F9B34FB";
 
@@ -127,6 +130,7 @@ public class BleService extends Service {
     private static byte xAccel=0,yAccel=0,zAccel=0;
     private static double xG = 0.0, yG = 0.0, zG = 0.0;
     private boolean enabled;
+    private boolean emergButtonState = false;
     //TODO
     //Change the package in here to the proper one for custom project
     //Actions used during broadcasts to the main activity
@@ -144,17 +148,17 @@ public class BleService extends Service {
 
     // Floats used because the calculation for m and b
     // were equating to zero.
-    float V1, V2, T1, T2;
+    double V1, V2, T1, T2;
 
     // Need to be floats to properly calculate temperature
-    float m = 0, b = 0;
+    double m = 0, b = 0;
 
     // Voltage index (mVolts)
-    int[] a = {1375, 1350, 1300, 1250, 1199, 1149, 1097,
-            1046, 995, 943, 891, 838, 786, 733, 680, 627,
-            574, 520, 466, 412, 358, 302};
+    double[] a = {1375.219, 1350.441, 1300.593, 1250.398, 1199.884, 1149.070, 1097.987,
+            1046.647, 995.050, 943.227, 891.178, 838.882, 786.360, 733.608, 680.654, 627.490, 574.117,
+            520.551, 466.760, 412.739, 358.164, 302.785};
     // Temperature index (C)
-    int[] c = {-55, -50, -40, -30, -20, -10, 0,
+    double[] c = {-55, -50, -40, -30, -20, -10, 0,
             10, 20, 30, 40, 50, 60, 70, 80, 90, 100,
             110, 120, 130, 140, 150};
 
@@ -346,6 +350,7 @@ public class BleService extends Service {
             mHeartRateCharacteristic = mService.getCharacteristic(UUID.fromString(mHeartRateCharacteristicUUID));
             mOximetryCharacteristic = mService.getCharacteristic(UUID.fromString(mOximetryCharacteristicUUID));
             mBatteryCharacteristic = mService.getCharacteristic(UUID.fromString(mBatteryCharacteristicUUID));
+            mEmergencyButtonCharacteristic = mService.getCharacteristic(UUID.fromString(mEmergencyButtonCharacteristicUUID));
 
 
             mTempDescriptor = mTemperatureCharacteristic.getDescriptor(UUID.fromString(CCCDUUID));
@@ -353,6 +358,7 @@ public class BleService extends Service {
             mHeartRateDescriptor = mHeartRateCharacteristic.getDescriptor(UUID.fromString(CCCDUUID));
             mOximetryDescriptor = mOximetryCharacteristic.getDescriptor(UUID.fromString(CCCDUUID));
             mBatteryDescriptor = mBatteryCharacteristic.getDescriptor(UUID.fromString(CCCDUUID));
+            mEmergencyDescriptor = mEmergencyButtonCharacteristic.getDescriptor(UUID.fromString(CCCDUUID));
 
             // Broadcast that service/characteristic/descriptor discovery is done
             broadcastUpdate(ACTION_SERVICES_DISCOVERED);
@@ -454,6 +460,8 @@ public class BleService extends Service {
             } else if(uuid.equalsIgnoreCase(mBatteryCharacteristicUUID)){
                 mBatteryLevel = characteristic.getIntValue(BluetoothGattCharacteristic.FORMAT_UINT32,0);
                 mBatteryLevel = mBatteryLevel * 2;
+            } else if(uuid.equalsIgnoreCase(mEmergencyButtonCharacteristicUUID)){
+                emergButtonState = mEmergencyButtonCharacteristic.getIntValue(BluetoothGattCharacteristic.FORMAT_UINT32,0).equals(1);
             }
             // Notify the main activity that new data is available
             broadcastUpdate(ACTION_DATA_RECEIVED);
@@ -520,7 +528,7 @@ public class BleService extends Service {
     }
 
     public String getTemperature(){
-        float  value = 0;
+        double  value = 0;
         for(i = 0; i < a.length;i++) {
             if (mTemp > a[i]) {
                 // Voltage index below current reading
@@ -537,8 +545,8 @@ public class BleService extends Service {
                 // of variables, we can use the equation
                 // below.
                 // m = (c[i-1] - c[i]) / (a[i-1] - a[i]);
-                m = ((T2 - T1) / (V2 - V1));
-//                m = ((T1 - T2) / (V1 - V2));
+//                m = ((T2 - T1) / (V2 - V1));
+                m = ((T1 - T2) / (V1 - V2));
 
                 // Intercept calculation
                 b = T1 - (m * V1);
@@ -568,5 +576,9 @@ public class BleService extends Service {
         return String.format(Locale.getDefault(),"X: %.2f Y: %.2f Z: %.2f", xG, yG, zG);
 //        return String.format(Locale.getDefault(),"X: %c Y: %c Z: %c", xAccel, yAccel, zAccel);
         //return xG + " " + yG + " " + zG;
+    }
+
+    public boolean isEmergButtonPressed(){
+        return emergButtonState;
     }
 }
