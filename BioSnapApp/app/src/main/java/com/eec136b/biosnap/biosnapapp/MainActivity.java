@@ -15,6 +15,7 @@ import android.content.ServiceConnection;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
 import android.os.Handler;
@@ -353,6 +354,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
+
     /**
      * Listener for BLE event broadcasts
      */
@@ -408,9 +411,7 @@ public class MainActivity extends AppCompatActivity {
                         String root = Environment.getExternalStorageDirectory().toString();
 
                         File myDir = new File(root, "BioSnapData");
-                        if(isExternalStorageEmulated(myDir)){
-                            
-                        }
+
                         if(!myDir.exists())
                             dirSuccess = myDir.mkdirs();
 
@@ -421,14 +422,19 @@ public class MainActivity extends AppCompatActivity {
                             String lastName = sharedPref.getString("lastName", "last_name");
                             String fileName = lastName + "_" + firstName + "dataLog.txt";
                             dataLog = new File(myDir, fileName);
-                            Log.d("MY DEBUG", "Does dataLog exist:\t" + dataLog.exists());
-                        }else{
-                            Toast.makeText(MainActivity.this, "Not successful in making Dir", Toast.LENGTH_SHORT).show();
+                            Log.d(TAG, "Does dataLog exist:\t" + dataLog.exists());
                         }
                     }
 
                     break;
                 case BleService.ACTION_DATA_RECEIVED:
+                    //
+                    if(mBleService.isEmergButtonPressed())
+                        dialEmergencyNumber("3239194191");
+
+
+
+
                     // This is called after a notify or a read completes
                     if(tempCount++ % 50 == 0) {
                         mCurTemp = Double.valueOf(mBleService.getTemperature());
@@ -552,21 +558,19 @@ public class MainActivity extends AppCompatActivity {
 
 
     /* Checks if external storage is available for read and write */
-    public boolean isExternalStorageWritable() {
+    private boolean isExternalStorageWritable() {
         String state = Environment.getExternalStorageState();
-        if (Environment.MEDIA_MOUNTED.equals(state)) {
-            return true;
-        }
-        return false;
+        return Environment.MEDIA_MOUNTED.equals(state);
     }
 
     /* Checks if external storage is available to at least read */
-    public boolean isExternalStorageReadable() {
+    private boolean isExternalStorageReadable() {
         String state = Environment.getExternalStorageState();
-        if (Environment.MEDIA_MOUNTED.equals(state) ||
-                Environment.MEDIA_MOUNTED_READ_ONLY.equals(state)) {
-            return true;
-        }
-        return false;
+        return (Environment.MEDIA_MOUNTED.equals(state) ||
+                Environment.MEDIA_MOUNTED_READ_ONLY.equals(state));
+    }
+
+    private void dialEmergencyNumber(String emergNumber){
+        startActivity(new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", emergNumber, null)));
     }
 }
