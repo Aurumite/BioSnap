@@ -21,7 +21,7 @@ Name: ADC
 Vref: VDDA (~3.3V)
 */
     
-void initTemperatureAndBattery();
+void initTempBatButton();
 uint16 getTemperature();
 uint16 getBattery();
 uint16 getButton();

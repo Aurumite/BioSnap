@@ -15,6 +15,7 @@
 
 void initAccelControl(){     
     
+    //reset accelerometer
     readAccel(CTRL_REG1);
     writeAccel(CTRL_REG1, 0x00);     
     
@@ -157,14 +158,17 @@ void initAccelSleep(){
 }
 
 uint8 getAccelX(){
+    // Read x value of acceleration
     return readAccel(X_MSB);
 }
 
 uint8 getAccelY(){
+    // Read y value of acceleration
     return readAccel(Y_MSB);
 }
 
 uint8 getAccelZ(){
+    // Read z value of acceleration
     return readAccel(Z_MSB);
 }
 
@@ -173,15 +177,17 @@ int getAccelXYZ(){
     int y = getAccelY();
     int z = getAccelZ();
     
+    //reads x, y, and z value of acceleration and combines it into an 32 bit int
     return (x << 16) + (y << 8) + z;
 }
 
 void writeAccel(uint8 reg, uint8 data){
     uint8 Write_Buf[2]={0};
-    Write_Buf[0] = reg;               //Assign the first element to be the register you want to write to (Parameter 1)
+    Write_Buf[0] = reg;              //Assign the first element to be the register you want to write to (Parameter 1)
     Write_Buf[1] = data;             //Assign the second elemnt to be the value you wish to write to the register (Parameter 2)
     
     
+    //write to writebuf and wait until success
     I2C_1_I2CMasterWriteBuf(ACCEL_ADDR, (uint8 *)Write_Buf, 2, I2C_1_I2C_MODE_COMPLETE_XFER);
     while((I2C_1_I2CMasterStatus()&I2C_1_I2C_MSTAT_WR_CMPLT)==0);
         
@@ -194,11 +200,11 @@ uint8 readAccel(uint8 reg){
     
     uint8 Read_Buf[1]={0};  //Buffer that will store the value read from the register
     
-    //Step 1
+    //tell acclereometer to load read buffer
     I2C_1_I2CMasterWriteBuf(ACCEL_ADDR, (uint8 *)Write_Buf, 1, I2C_1_I2C_MODE_NO_STOP);
     while((I2C_1_I2CMasterStatus() & I2C_1_I2C_MSTAT_WR_CMPLT)==0){}
     
-    //Step 2
+    //read from readbuf
     I2C_1_I2CMasterReadBuf(ACCEL_ADDR, (uint8 *)Read_Buf, 1, I2C_1_I2C_MODE_REPEAT_START);
     while((I2C_1_I2CMasterStatus() & I2C_1_I2C_MSTAT_RD_CMPLT)==0){}
     

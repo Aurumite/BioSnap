@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -29,9 +29,9 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
   26              		.bss
   27              		.align	2
   28              		.type	NOTIFY, %object
-  29              		.size	NOTIFY, 20
+  29              		.size	NOTIFY, 24
   30              	NOTIFY:
-  31 0000 00000000 		.space	20
+  31 0000 00000000 		.space	24
   31      00000000 
   31      00000000 
   31      00000000 
@@ -48,17 +48,17 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
   41              		.type	tsLastReport, %object
   42              		.size	tsLastReport, 4
   43              	tsLastReport:
-  44 0014 00000000 		.space	4
+  44 0018 00000000 		.space	4
   45              		.global	otherLastReport
   46              		.align	2
   47              		.type	otherLastReport, %object
   48              		.size	otherLastReport, 4
   49              	otherLastReport:
-  50 0018 00000000 		.space	4
+  50 001c 00000000 		.space	4
   51              		.global	ACCELEROMETER
   52              		.section	.rodata
   53              		.align	2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 2
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 2
 
 
   54              		.type	ACCELEROMETER, %object
@@ -118,14 +118,14 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
   12:.\main.c      **** #include <project.h>
   13:.\main.c      **** #include <accelerometer.h>
   14:.\main.c      **** #include <temp_bat_button.h>
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 3
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 3
 
 
   15:.\main.c      **** #include <MAX30100_All.h>
   16:.\main.c      **** 
   17:.\main.c      **** #define REPORTING_PERIOD_MS     1000
   18:.\main.c      **** 
-  19:.\main.c      **** int NOTIFY[] = {0, 0, 0, 0, 0};
+  19:.\main.c      **** int NOTIFY[] = {0, 0, 0, 0, 0, 0};
   20:.\main.c      **** 
   21:.\main.c      **** uint8 deviceConnected ; 
   22:.\main.c      **** uint8 restartAdvertisement; 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
   45:.\main.c      **** }
  121              		.loc 1 45 0
  122 001e BD46     		mov	sp, r7
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 4
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 4
 
 
  123              		@ sp needed
@@ -208,48 +208,47 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  145              		.cfi_offset 14, -4
  146 0002 00AF     		add	r7, sp, #0
  147              		.cfi_def_cfa_register 7
-  48:.\main.c      ****     initBLE();
+  48:.\main.c      ****     initBLE();                                                  //initialize bluetooth
  148              		.loc 1 48 0
  149 0004 FFF7FEFF 		bl	initBLE
-  49:.\main.c      ****     I2C_1_Start();
+  49:.\main.c      ****     I2C_1_Start();                                              //start I2C
  150              		.loc 1 49 0
  151 0008 FFF7FEFF 		bl	I2C_1_Start
-  50:.\main.c      ****     initAccelControl();
+  50:.\main.c      ****     initAccelControl();                                         //initialize and setup acclerometer
  152              		.loc 1 50 0
  153 000c FFF7FEFF 		bl	initAccelControl
-  51:.\main.c      ****     initTemperatureAndBattery(); 
+  51:.\main.c      ****     initTempBatButton();                                        //useless
  154              		.loc 1 51 0
- 155 0010 FFF7FEFF 		bl	initTemperatureAndBattery
+ 155 0010 FFF7FEFF 		bl	initTempBatButton
   52:.\main.c      ****     
-  53:.\main.c      ****     PulseOximeter_Init();     
+  53:.\main.c      ****     PulseOximeter_Init();                                       //setup pulse oximeter
  156              		.loc 1 53 0
  157 0014 FFF7FEFF 		bl	PulseOximeter_Init
-  54:.\main.c      ****     PulseOximeter_begin(PULSEOXIMETER_DEBUGGINGMODE_NONE);
+  54:.\main.c      ****     PulseOximeter_begin(PULSEOXIMETER_DEBUGGINGMODE_NONE);      //start pulse oximeter
  158              		.loc 1 54 0
  159 0018 0020     		mov	r0, #0
  160 001a FFF7FEFF 		bl	PulseOximeter_begin
   55:.\main.c      **** 
-  56:.\main.c      **** 
-  57:.\main.c      ****     Timer_minute_Start();
- 161              		.loc 1 57 0
+  56:.\main.c      ****     Timer_minute_Start();                                       //start minute timer
+ 161              		.loc 1 56 0
  162 001e FFF7FEFF 		bl	Timer_minute_Start
-  58:.\main.c      ****     isr_minute_StartEx(Minute_Handler);
- 163              		.loc 1 58 0
+  57:.\main.c      ****     isr_minute_StartEx(Minute_Handler);                         //setup isr
+ 163              		.loc 1 57 0
  164 0022 054B     		ldr	r3, .L5
  165 0024 181C     		mov	r0, r3
  166 0026 FFF7FEFF 		bl	isr_minute_StartEx
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 5
+  58:.\main.c      ****     
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 5
 
 
-  59:.\main.c      ****     
-  60:.\main.c      ****     ADC_Start();
- 167              		.loc 1 60 0
+  59:.\main.c      ****     ADC_Start();                                                //start the ADC
+ 167              		.loc 1 59 0
  168 002a FFF7FEFF 		bl	ADC_Start
-  61:.\main.c      ****     ADC_StartConvert();
- 169              		.loc 1 61 0
+  60:.\main.c      ****     ADC_StartConvert();                                         //start converting values
+ 169              		.loc 1 60 0
  170 002e FFF7FEFF 		bl	ADC_StartConvert
-  62:.\main.c      **** }
- 171              		.loc 1 62 0
+  61:.\main.c      **** }
+ 171              		.loc 1 61 0
  172 0032 BD46     		mov	sp, r7
  173              		@ sp needed
  174 0034 80BD     		pop	{r7, pc}
@@ -268,7 +267,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  187              		.type	initBLE, %function
  188              	initBLE:
  189              	.LFB39:
-  63:.\main.c      **** 
+  62:.\main.c      **** 
+  63:.\main.c      **** //initializes the BLE module
   64:.\main.c      **** void initBLE(){
  190              		.loc 1 64 0
  191              		.cfi_startproc
@@ -278,7 +278,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  195              		.cfi_offset 14, -4
  196 0002 00AF     		add	r7, sp, #0
  197              		.cfi_def_cfa_register 7
-  65:.\main.c      ****     CyBle_Start( StackEventHandler );
+  65:.\main.c      ****     CyBle_Start( StackEventHandler );   //starts the event handler
  198              		.loc 1 65 0
  199 0004 0A4B     		ldr	r3, .L8
  200 0006 181C     		mov	r0, r3
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  211 0018 084B     		ldr	r3, .L8+12
  212 001a 0022     		mov	r2, #0
  213 001c 1A70     		strb	r2, [r3]
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 6
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 6
 
 
   69:.\main.c      ****     whatToDo = 0;
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  259 000a 7B68     		ldr	r3, [r7, #4]
  260 000c 282B     		cmp	r3, #40
  261 000e 0DD0     		beq	.L12
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 7
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 7
 
 
  262 0010 05D8     		bhi	.L13
@@ -373,88 +373,79 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
   79:.\main.c      ****         case CYBLE_EVT_GAP_DEVICE_DISCONNECTED:            
   80:.\main.c      ****             CyBle_GappStartAdvertisement(CYBLE_ADVERTISING_FAST);
   81:.\main.c      ****             deviceConnected = 0;
-  82:.\main.c      ****         break;
+  82:.\main.c      ****             break;
   83:.\main.c      **** 
-  84:.\main.c      ****         /* GAP Peripheral events */
-  85:.\main.c      **** 
-  86:.\main.c      **** //        case CYBLE_EVT_GAPP_ADVERTISEMENT_START_STOP:
-  87:.\main.c      **** //            if(CyBle_GetState() == CYBLE_STATE_DISCONNECTED){
-  88:.\main.c      **** //                restartAdvertisement = 0;
-  89:.\main.c      **** //            }
-  90:.\main.c      **** //        break;
-  91:.\main.c      **** 
-  92:.\main.c      ****         /* GATT events */
-  93:.\main.c      **** 
-  94:.\main.c      ****         case CYBLE_EVT_GATT_CONNECT_IND:
-  95:.\main.c      ****             connectionHandle = *(CYBLE_CONN_HANDLE_T*)eventParam;
-  96:.\main.c      ****             deviceConnected = 1; 
-  97:.\main.c      ****             break;
-  98:.\main.c      **** 
-  99:.\main.c      ****         case CYBLE_EVT_GATT_DISCONNECT_IND:
- 100:.\main.c      ****             deviceConnected = 0;
- 101:.\main.c      ****             uint32 i = 0;
- 102:.\main.c      ****             for(; i < sizeof(NOTIFY)/sizeof(int); i++)
- 103:.\main.c      ****                 NOTIFY[i] = 0;
- 104:.\main.c      ****             break;
- 105:.\main.c      ****             
- 106:.\main.c      ****         case CYBLE_EVT_GATTS_WRITE_REQ:				
- 107:.\main.c      **** 			/*When this event is triggered, the peripheral has received 
- 108:.\main.c      **** 			* a write command on the custom characteristic */
- 109:.\main.c      **** 			
- 110:.\main.c      **** 			/* Extract the write value from the event parameter */
- 111:.\main.c      ****             wrReqParam = (CYBLE_GATTS_WRITE_REQ_PARAM_T *) eventParam;
- 112:.\main.c      ****             
- 113:.\main.c      ****             charCode = -1;
- 114:.\main.c      ****             
- 115:.\main.c      ****             switch(wrReqParam->handleValPair.attrHandle){
- 116:.\main.c      ****                 case CYBLE_BIOSNAP_TEMPERATURE_TEMPCCC_DESC_HANDLE:
- 117:.\main.c      ****                     CyBle_GattsWriteAttributeValue(&wrReqParam->handleValPair, 0, &cyBle_connHandle
- 118:.\main.c      ****                     NOTIFY[TEMPERATURE] = wrReqParam->handleValPair.value.val[0] & 0x01; 
- 119:.\main.c      ****                     CyBle_GattsWriteRsp(cyBle_connHandle);
- 120:.\main.c      ****                 break;
- 121:.\main.c      ****                     
- 122:.\main.c      ****                 case CYBLE_BIOSNAP_ACCELEROMETER_ACCELCCC_DESC_HANDLE:
- 123:.\main.c      ****                     CyBle_GattsWriteAttributeValue(&wrReqParam->handleValPair, 0, &cyBle_connHandle
- 124:.\main.c      ****                     NOTIFY[ACCELEROMETER] = wrReqParam->handleValPair.value.val[0] & 0x01; 
- 125:.\main.c      ****                     CyBle_GattsWriteRsp(cyBle_connHandle);
- 126:.\main.c      ****                 break;
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 8
+  84:.\main.c      ****         case CYBLE_EVT_GATT_CONNECT_IND:
+  85:.\main.c      ****             connectionHandle = *(CYBLE_CONN_HANDLE_T*)eventParam;
+  86:.\main.c      ****             deviceConnected = 1; 
+  87:.\main.c      ****             break;
+  88:.\main.c      **** 
+  89:.\main.c      ****         case CYBLE_EVT_GATT_DISCONNECT_IND:
+  90:.\main.c      ****             deviceConnected = 0;
+  91:.\main.c      ****             uint32 i = 0;
+  92:.\main.c      ****             for(; i < sizeof(NOTIFY)/sizeof(int); i++)
+  93:.\main.c      ****                 NOTIFY[i] = 0;
+  94:.\main.c      ****             break;
+  95:.\main.c      ****             
+  96:.\main.c      ****         case CYBLE_EVT_GATTS_WRITE_REQ:				
+  97:.\main.c      **** 			/*When this event is triggered, the peripheral has received 
+  98:.\main.c      **** 			* a write command on the custom characteristic */
+  99:.\main.c      **** 			
+ 100:.\main.c      **** 			/* Extract the write value from the event parameter */
+ 101:.\main.c      ****             wrReqParam = (CYBLE_GATTS_WRITE_REQ_PARAM_T *) eventParam;
+ 102:.\main.c      ****             
+ 103:.\main.c      ****             charCode = -1;
+ 104:.\main.c      ****             
+ 105:.\main.c      ****             //Depending on the value of event parameter do different tasks
+ 106:.\main.c      ****             switch(wrReqParam->handleValPair.attrHandle){
+ 107:.\main.c      ****                 case CYBLE_BIOSNAP_TEMPERATURE_TEMPCCC_DESC_HANDLE:
+ 108:.\main.c      ****                     CyBle_GattsWriteAttributeValue(&wrReqParam->handleValPair, 0, &cyBle_connHandle
+ 109:.\main.c      ****                     NOTIFY[TEMPERATURE] = wrReqParam->handleValPair.value.val[0] & 0x01; 
+ 110:.\main.c      ****                     CyBle_GattsWriteRsp(cyBle_connHandle);
+ 111:.\main.c      ****                 break;
+ 112:.\main.c      ****                     
+ 113:.\main.c      ****                 case CYBLE_BIOSNAP_ACCELEROMETER_ACCELCCC_DESC_HANDLE:
+ 114:.\main.c      ****                     CyBle_GattsWriteAttributeValue(&wrReqParam->handleValPair, 0, &cyBle_connHandle
+ 115:.\main.c      ****                     NOTIFY[ACCELEROMETER] = wrReqParam->handleValPair.value.val[0] & 0x01; 
+ 116:.\main.c      ****                     CyBle_GattsWriteRsp(cyBle_connHandle);
+ 117:.\main.c      ****                 break;
+ 118:.\main.c      ****                 
+ 119:.\main.c      ****                 case CYBLE_BIOSNAP_OXYGEN_OXYGENCCC_DESC_HANDLE:
+ 120:.\main.c      ****                     CyBle_GattsWriteAttributeValue(&wrReqParam->handleValPair, 0, &cyBle_connHandle
+ 121:.\main.c      ****                     NOTIFY[OXYGEN] = wrReqParam->handleValPair.value.val[0] & 0x01; 
+ 122:.\main.c      ****                     CyBle_GattsWriteRsp(cyBle_connHandle);
+ 123:.\main.c      ****                 break;
+ 124:.\main.c      ****                     
+ 125:.\main.c      ****                 case CYBLE_BIOSNAP_HEART_HEARTCCC_DESC_HANDLE:
+ 126:.\main.c      ****                     CyBle_GattsWriteAttributeValue(&wrReqParam->handleValPair, 0, &cyBle_connHandle
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 8
 
 
- 127:.\main.c      ****                 
- 128:.\main.c      ****                 case CYBLE_BIOSNAP_OXYGEN_OXYGENCCC_DESC_HANDLE:
- 129:.\main.c      ****                     CyBle_GattsWriteAttributeValue(&wrReqParam->handleValPair, 0, &cyBle_connHandle
- 130:.\main.c      ****                     NOTIFY[OXYGEN] = wrReqParam->handleValPair.value.val[0] & 0x01; 
- 131:.\main.c      ****                     CyBle_GattsWriteRsp(cyBle_connHandle);
- 132:.\main.c      ****                 break;
- 133:.\main.c      ****                     
- 134:.\main.c      ****                 case CYBLE_BIOSNAP_HEART_HEARTCCC_DESC_HANDLE:
- 135:.\main.c      ****                     CyBle_GattsWriteAttributeValue(&wrReqParam->handleValPair, 0, &cyBle_connHandle
- 136:.\main.c      ****                     NOTIFY[HEART] = wrReqParam->handleValPair.value.val[0] & 0x01; 
- 137:.\main.c      ****                     CyBle_GattsWriteRsp(cyBle_connHandle);
- 138:.\main.c      ****                 break;
- 139:.\main.c      ****                     
- 140:.\main.c      ****                 case CYBLE_BIOSNAP_BATTERY_BATCCC_DESC_HANDLE:
- 141:.\main.c      ****                     CyBle_GattsWriteAttributeValue(&wrReqParam->handleValPair, 0, &cyBle_connHandle
- 142:.\main.c      ****                     NOTIFY[BATTERY] = wrReqParam->handleValPair.value.val[0] & 0x01; 
- 143:.\main.c      ****                     CyBle_GattsWriteRsp(cyBle_connHandle);
- 144:.\main.c      ****                 break;
- 145:.\main.c      ****                     
- 146:.\main.c      ****                 case CYBLE_BIOSNAP_BUTTON_BUTTONCCC_DESC_HANDLE:
- 147:.\main.c      ****                     CyBle_GattsWriteAttributeValue(&wrReqParam->handleValPair, 0, &cyBle_connHandle
- 148:.\main.c      ****                     NOTIFY[BUTTON] = wrReqParam->handleValPair.value.val[0] & 0x01; 
- 149:.\main.c      ****                     CyBle_GattsWriteRsp(cyBle_connHandle);
- 150:.\main.c      ****                 break;
- 151:.\main.c      ****             }
- 152:.\main.c      ****             break; 
- 153:.\main.c      ****         
- 154:.\main.c      ****         /* default catch-all case */
- 155:.\main.c      ****         case CYBLE_EVT_STACK_BUSY_STATUS:
- 156:.\main.c      ****             busyStatus = *(uint8*) eventParam;
- 157:.\main.c      ****             
- 158:.\main.c      ****         default:
- 159:.\main.c      ****         break;
- 270              		.loc 1 159 0
+ 127:.\main.c      ****                     NOTIFY[HEART] = wrReqParam->handleValPair.value.val[0] & 0x01; 
+ 128:.\main.c      ****                     CyBle_GattsWriteRsp(cyBle_connHandle);
+ 129:.\main.c      ****                 break;
+ 130:.\main.c      ****                     
+ 131:.\main.c      ****                 case CYBLE_BIOSNAP_BATTERY_BATCCC_DESC_HANDLE:
+ 132:.\main.c      ****                     CyBle_GattsWriteAttributeValue(&wrReqParam->handleValPair, 0, &cyBle_connHandle
+ 133:.\main.c      ****                     NOTIFY[BATTERY] = wrReqParam->handleValPair.value.val[0] & 0x01; 
+ 134:.\main.c      ****                     CyBle_GattsWriteRsp(cyBle_connHandle);
+ 135:.\main.c      ****                 break;
+ 136:.\main.c      ****                     
+ 137:.\main.c      ****                 case CYBLE_BIOSNAP_BUTTON_BUTTONCCC_DESC_HANDLE:
+ 138:.\main.c      ****                     CyBle_GattsWriteAttributeValue(&wrReqParam->handleValPair, 0, &cyBle_connHandle
+ 139:.\main.c      ****                     NOTIFY[BUTTON] = wrReqParam->handleValPair.value.val[0] & 0x01; 
+ 140:.\main.c      ****                     CyBle_GattsWriteRsp(cyBle_connHandle);
+ 141:.\main.c      ****                 break;
+ 142:.\main.c      ****             }
+ 143:.\main.c      ****             break; 
+ 144:.\main.c      ****         
+ 145:.\main.c      ****         /* default catch-all case */
+ 146:.\main.c      ****         case CYBLE_EVT_STACK_BUSY_STATUS:
+ 147:.\main.c      ****             busyStatus = *(uint8*) eventParam;
+ 148:.\main.c      ****             
+ 149:.\main.c      ****         default:
+ 150:.\main.c      ****         break;
+ 270              		.loc 1 150 0
  271 001c 12E1     		b	.L10
  272              	.L13:
  273              	.LBE2:
@@ -467,29 +458,29 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  279 0026 412B     		cmp	r3, #65
  280 0028 07D0     		beq	.L17
  281              	.LBB3:
- 282              		.loc 1 159 0
+ 282              		.loc 1 150 0
  283 002a 0BE1     		b	.L10
  284              	.L12:
   80:.\main.c      ****             deviceConnected = 0;
  285              		.loc 1 80 0
  286 002c 0020     		mov	r0, #0
  287 002e FFF7FEFF 		bl	CyBle_GappStartAdvertisement
-  81:.\main.c      ****         break;
+  81:.\main.c      ****             break;
  288              		.loc 1 81 0
  289 0032 864B     		ldr	r3, .L30
  290 0034 0022     		mov	r2, #0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 9
-
-
  291 0036 1A70     		strb	r2, [r3]
   82:.\main.c      **** 
  292              		.loc 1 82 0
  293 0038 04E1     		b	.L10
  294              	.L17:
-  95:.\main.c      ****             deviceConnected = 1; 
- 295              		.loc 1 95 0
+  85:.\main.c      ****             deviceConnected = 1; 
+ 295              		.loc 1 85 0
  296 003a 854A     		ldr	r2, .L30+4
  297 003c 3B68     		ldr	r3, [r7]
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 9
+
+
  298 003e 111C     		mov	r1, r2
  299 0040 1A1C     		mov	r2, r3
  300 0042 0223     		mov	r3, #2
@@ -497,65 +488,65 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  302 0046 111C     		mov	r1, r2
  303 0048 1A1C     		mov	r2, r3
  304 004a FFF7FEFF 		bl	memcpy
-  96:.\main.c      ****             break;
- 305              		.loc 1 96 0
+  86:.\main.c      ****             break;
+ 305              		.loc 1 86 0
  306 004e 7F4B     		ldr	r3, .L30
  307 0050 0122     		mov	r2, #1
  308 0052 1A70     		strb	r2, [r3]
-  97:.\main.c      **** 
- 309              		.loc 1 97 0
+  87:.\main.c      **** 
+ 309              		.loc 1 87 0
  310 0054 F6E0     		b	.L10
  311              	.L15:
- 100:.\main.c      ****             uint32 i = 0;
- 312              		.loc 1 100 0
+  90:.\main.c      ****             uint32 i = 0;
+ 312              		.loc 1 90 0
  313 0056 7D4B     		ldr	r3, .L30
  314 0058 0022     		mov	r2, #0
  315 005a 1A70     		strb	r2, [r3]
- 101:.\main.c      ****             for(; i < sizeof(NOTIFY)/sizeof(int); i++)
- 316              		.loc 1 101 0
+  91:.\main.c      ****             for(; i < sizeof(NOTIFY)/sizeof(int); i++)
+ 316              		.loc 1 91 0
  317 005c 0023     		mov	r3, #0
  318 005e FB60     		str	r3, [r7, #12]
- 102:.\main.c      ****                 NOTIFY[i] = 0;
- 319              		.loc 1 102 0
+  92:.\main.c      ****                 NOTIFY[i] = 0;
+ 319              		.loc 1 92 0
  320 0060 07E0     		b	.L19
  321              	.L20:
- 103:.\main.c      ****             break;
- 322              		.loc 1 103 0 discriminator 2
+  93:.\main.c      ****             break;
+ 322              		.loc 1 93 0 discriminator 2
  323 0062 7C4B     		ldr	r3, .L30+8
  324 0064 FA68     		ldr	r2, [r7, #12]
  325 0066 9200     		lsl	r2, r2, #2
  326 0068 0021     		mov	r1, #0
  327 006a D150     		str	r1, [r2, r3]
- 102:.\main.c      ****                 NOTIFY[i] = 0;
- 328              		.loc 1 102 0 discriminator 2
+  92:.\main.c      ****                 NOTIFY[i] = 0;
+ 328              		.loc 1 92 0 discriminator 2
  329 006c FB68     		ldr	r3, [r7, #12]
  330 006e 0133     		add	r3, r3, #1
  331 0070 FB60     		str	r3, [r7, #12]
  332              	.L19:
- 102:.\main.c      ****                 NOTIFY[i] = 0;
- 333              		.loc 1 102 0 is_stmt 0 discriminator 1
+  92:.\main.c      ****                 NOTIFY[i] = 0;
+ 333              		.loc 1 92 0 is_stmt 0 discriminator 1
  334 0072 FB68     		ldr	r3, [r7, #12]
- 335 0074 042B     		cmp	r3, #4
+ 335 0074 052B     		cmp	r3, #5
  336 0076 F4D9     		bls	.L20
- 104:.\main.c      ****             
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 10
-
-
- 337              		.loc 1 104 0 is_stmt 1
+  94:.\main.c      ****             
+ 337              		.loc 1 94 0 is_stmt 1
  338 0078 E4E0     		b	.L10
  339              	.L16:
- 111:.\main.c      ****             
- 340              		.loc 1 111 0
+ 101:.\main.c      ****             
+ 340              		.loc 1 101 0
  341 007a 3B68     		ldr	r3, [r7]
  342 007c BB60     		str	r3, [r7, #8]
- 113:.\main.c      ****             
- 343              		.loc 1 113 0
+ 103:.\main.c      ****             
+ 343              		.loc 1 103 0
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 10
+
+
  344 007e 764B     		ldr	r3, .L30+12
  345 0080 0122     		mov	r2, #1
  346 0082 5242     		neg	r2, r2
  347 0084 1A60     		str	r2, [r3]
- 115:.\main.c      ****                 case CYBLE_BIOSNAP_TEMPERATURE_TEMPCCC_DESC_HANDLE:
- 348              		.loc 1 115 0
+ 106:.\main.c      ****                 case CYBLE_BIOSNAP_TEMPERATURE_TEMPCCC_DESC_HANDLE:
+ 348              		.loc 1 106 0
  349 0086 BB68     		ldr	r3, [r7, #8]
  350 0088 9B89     		ldrh	r3, [r3, #12]
  351 008a 113B     		sub	r3, r3, #17
@@ -589,8 +580,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  379 0054 9C000000 		.word	.L28
  380              		.section	.text.StackEventHandler
  381              	.L28:
- 117:.\main.c      ****                     NOTIFY[TEMPERATURE] = wrReqParam->handleValPair.value.val[0] & 0x01; 
- 382              		.loc 1 117 0
+ 108:.\main.c      ****                     NOTIFY[TEMPERATURE] = wrReqParam->handleValPair.value.val[0] & 0x01; 
+ 382              		.loc 1 108 0
  383 009c BB68     		ldr	r3, [r7, #8]
  384 009e 1A1D     		add	r2, r3, #4
  385 00a0 6F4B     		ldr	r3, .L30+20
@@ -598,24 +589,24 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  387 00a4 0021     		mov	r1, #0
  388 00a6 1A1C     		mov	r2, r3
  389 00a8 4023     		mov	r3, #64
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 11
-
-
  390 00aa FFF7FEFF 		bl	CyBle_GattsWriteAttributeValue
- 118:.\main.c      ****                     CyBle_GattsWriteRsp(cyBle_connHandle);
- 391              		.loc 1 118 0
+ 109:.\main.c      ****                     CyBle_GattsWriteRsp(cyBle_connHandle);
+ 391              		.loc 1 109 0
  392 00ae 0522     		mov	r2, #5
  393 00b0 BB68     		ldr	r3, [r7, #8]
  394 00b2 5B68     		ldr	r3, [r3, #4]
  395 00b4 1B78     		ldrb	r3, [r3]
  396 00b6 191C     		mov	r1, r3
  397 00b8 0123     		mov	r3, #1
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 11
+
+
  398 00ba 1940     		and	r1, r3
  399 00bc 654B     		ldr	r3, .L30+8
  400 00be 9200     		lsl	r2, r2, #2
  401 00c0 D150     		str	r1, [r2, r3]
- 119:.\main.c      ****                 break;
- 402              		.loc 1 119 0
+ 110:.\main.c      ****                 break;
+ 402              		.loc 1 110 0
  403 00c2 674B     		ldr	r3, .L30+20
  404 00c4 1A78     		ldrb	r2, [r3]
  405 00c6 5B78     		ldrb	r3, [r3, #1]
@@ -629,12 +620,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  413 00d6 1343     		orr	r3, r2
  414 00d8 181C     		mov	r0, r3
  415 00da FFF7FEFF 		bl	CyBle_GattsWriteRsp
- 120:.\main.c      ****                     
- 416              		.loc 1 120 0
+ 111:.\main.c      ****                     
+ 416              		.loc 1 111 0
  417 00de A9E0     		b	.L21
  418              	.L22:
- 123:.\main.c      ****                     NOTIFY[ACCELEROMETER] = wrReqParam->handleValPair.value.val[0] & 0x01; 
- 419              		.loc 1 123 0
+ 114:.\main.c      ****                     NOTIFY[ACCELEROMETER] = wrReqParam->handleValPair.value.val[0] & 0x01; 
+ 419              		.loc 1 114 0
  420 00e0 BB68     		ldr	r3, [r7, #8]
  421 00e2 1A1D     		add	r2, r3, #4
  422 00e4 5E4B     		ldr	r3, .L30+20
@@ -643,8 +634,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  425 00ea 1A1C     		mov	r2, r3
  426 00ec 4023     		mov	r3, #64
  427 00ee FFF7FEFF 		bl	CyBle_GattsWriteAttributeValue
- 124:.\main.c      ****                     CyBle_GattsWriteRsp(cyBle_connHandle);
- 428              		.loc 1 124 0
+ 115:.\main.c      ****                     CyBle_GattsWriteRsp(cyBle_connHandle);
+ 428              		.loc 1 115 0
  429 00f2 0022     		mov	r2, #0
  430 00f4 BB68     		ldr	r3, [r7, #8]
  431 00f6 5B68     		ldr	r3, [r3, #4]
@@ -655,12 +646,9 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  436 0100 544B     		ldr	r3, .L30+8
  437 0102 9200     		lsl	r2, r2, #2
  438 0104 D150     		str	r1, [r2, r3]
- 125:.\main.c      ****                 break;
- 439              		.loc 1 125 0
+ 116:.\main.c      ****                 break;
+ 439              		.loc 1 116 0
  440 0106 564B     		ldr	r3, .L30+20
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 12
-
-
  441 0108 1A78     		ldrb	r2, [r3]
  442 010a 5B78     		ldrb	r3, [r3, #1]
  443 010c 1B02     		lsl	r3, r3, #8
@@ -670,15 +658,18 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  447 0114 120C     		lsr	r2, r2, #16
  448 0116 1B0C     		lsr	r3, r3, #16
  449 0118 1B04     		lsl	r3, r3, #16
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 12
+
+
  450 011a 1343     		orr	r3, r2
  451 011c 181C     		mov	r0, r3
  452 011e FFF7FEFF 		bl	CyBle_GattsWriteRsp
- 126:.\main.c      ****                 
- 453              		.loc 1 126 0
+ 117:.\main.c      ****                 
+ 453              		.loc 1 117 0
  454 0122 87E0     		b	.L21
  455              	.L27:
- 129:.\main.c      ****                     NOTIFY[OXYGEN] = wrReqParam->handleValPair.value.val[0] & 0x01; 
- 456              		.loc 1 129 0
+ 120:.\main.c      ****                     NOTIFY[OXYGEN] = wrReqParam->handleValPair.value.val[0] & 0x01; 
+ 456              		.loc 1 120 0
  457 0124 BB68     		ldr	r3, [r7, #8]
  458 0126 1A1D     		add	r2, r3, #4
  459 0128 4D4B     		ldr	r3, .L30+20
@@ -687,8 +678,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  462 012e 1A1C     		mov	r2, r3
  463 0130 4023     		mov	r3, #64
  464 0132 FFF7FEFF 		bl	CyBle_GattsWriteAttributeValue
- 130:.\main.c      ****                     CyBle_GattsWriteRsp(cyBle_connHandle);
- 465              		.loc 1 130 0
+ 121:.\main.c      ****                     CyBle_GattsWriteRsp(cyBle_connHandle);
+ 465              		.loc 1 121 0
  466 0136 0422     		mov	r2, #4
  467 0138 BB68     		ldr	r3, [r7, #8]
  468 013a 5B68     		ldr	r3, [r3, #4]
@@ -699,8 +690,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  473 0144 434B     		ldr	r3, .L30+8
  474 0146 9200     		lsl	r2, r2, #2
  475 0148 D150     		str	r1, [r2, r3]
- 131:.\main.c      ****                 break;
- 476              		.loc 1 131 0
+ 122:.\main.c      ****                 break;
+ 476              		.loc 1 122 0
  477 014a 454B     		ldr	r3, .L30+20
  478 014c 1A78     		ldrb	r2, [r3]
  479 014e 5B78     		ldrb	r3, [r3, #1]
@@ -714,15 +705,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  487 015e 1343     		orr	r3, r2
  488 0160 181C     		mov	r0, r3
  489 0162 FFF7FEFF 		bl	CyBle_GattsWriteRsp
- 132:.\main.c      ****                     
- 490              		.loc 1 132 0
+ 123:.\main.c      ****                     
+ 490              		.loc 1 123 0
  491 0166 65E0     		b	.L21
  492              	.L26:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 13
-
-
- 135:.\main.c      ****                     NOTIFY[HEART] = wrReqParam->handleValPair.value.val[0] & 0x01; 
- 493              		.loc 1 135 0
+ 126:.\main.c      ****                     NOTIFY[HEART] = wrReqParam->handleValPair.value.val[0] & 0x01; 
+ 493              		.loc 1 126 0
  494 0168 BB68     		ldr	r3, [r7, #8]
  495 016a 1A1D     		add	r2, r3, #4
  496 016c 3C4B     		ldr	r3, .L30+20
@@ -730,9 +718,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  498 0170 0021     		mov	r1, #0
  499 0172 1A1C     		mov	r2, r3
  500 0174 4023     		mov	r3, #64
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 13
+
+
  501 0176 FFF7FEFF 		bl	CyBle_GattsWriteAttributeValue
- 136:.\main.c      ****                     CyBle_GattsWriteRsp(cyBle_connHandle);
- 502              		.loc 1 136 0
+ 127:.\main.c      ****                     CyBle_GattsWriteRsp(cyBle_connHandle);
+ 502              		.loc 1 127 0
  503 017a 0322     		mov	r2, #3
  504 017c BB68     		ldr	r3, [r7, #8]
  505 017e 5B68     		ldr	r3, [r3, #4]
@@ -743,8 +734,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  510 0188 324B     		ldr	r3, .L30+8
  511 018a 9200     		lsl	r2, r2, #2
  512 018c D150     		str	r1, [r2, r3]
- 137:.\main.c      ****                 break;
- 513              		.loc 1 137 0
+ 128:.\main.c      ****                 break;
+ 513              		.loc 1 128 0
  514 018e 344B     		ldr	r3, .L30+20
  515 0190 1A78     		ldrb	r2, [r3]
  516 0192 5B78     		ldrb	r3, [r3, #1]
@@ -758,12 +749,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  524 01a2 1343     		orr	r3, r2
  525 01a4 181C     		mov	r0, r3
  526 01a6 FFF7FEFF 		bl	CyBle_GattsWriteRsp
- 138:.\main.c      ****                     
- 527              		.loc 1 138 0
+ 129:.\main.c      ****                     
+ 527              		.loc 1 129 0
  528 01aa 43E0     		b	.L21
  529              	.L24:
- 141:.\main.c      ****                     NOTIFY[BATTERY] = wrReqParam->handleValPair.value.val[0] & 0x01; 
- 530              		.loc 1 141 0
+ 132:.\main.c      ****                     NOTIFY[BATTERY] = wrReqParam->handleValPair.value.val[0] & 0x01; 
+ 530              		.loc 1 132 0
  531 01ac BB68     		ldr	r3, [r7, #8]
  532 01ae 1A1D     		add	r2, r3, #4
  533 01b0 2B4B     		ldr	r3, .L30+20
@@ -772,24 +763,24 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  536 01b6 1A1C     		mov	r2, r3
  537 01b8 4023     		mov	r3, #64
  538 01ba FFF7FEFF 		bl	CyBle_GattsWriteAttributeValue
- 142:.\main.c      ****                     CyBle_GattsWriteRsp(cyBle_connHandle);
- 539              		.loc 1 142 0
+ 133:.\main.c      ****                     CyBle_GattsWriteRsp(cyBle_connHandle);
+ 539              		.loc 1 133 0
  540 01be 0122     		mov	r2, #1
  541 01c0 BB68     		ldr	r3, [r7, #8]
  542 01c2 5B68     		ldr	r3, [r3, #4]
  543 01c4 1B78     		ldrb	r3, [r3]
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 14
-
-
  544 01c6 191C     		mov	r1, r3
  545 01c8 0123     		mov	r3, #1
  546 01ca 1940     		and	r1, r3
  547 01cc 214B     		ldr	r3, .L30+8
  548 01ce 9200     		lsl	r2, r2, #2
  549 01d0 D150     		str	r1, [r2, r3]
- 143:.\main.c      ****                 break;
- 550              		.loc 1 143 0
+ 134:.\main.c      ****                 break;
+ 550              		.loc 1 134 0
  551 01d2 234B     		ldr	r3, .L30+20
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 14
+
+
  552 01d4 1A78     		ldrb	r2, [r3]
  553 01d6 5B78     		ldrb	r3, [r3, #1]
  554 01d8 1B02     		lsl	r3, r3, #8
@@ -802,12 +793,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  561 01e6 1343     		orr	r3, r2
  562 01e8 181C     		mov	r0, r3
  563 01ea FFF7FEFF 		bl	CyBle_GattsWriteRsp
- 144:.\main.c      ****                     
- 564              		.loc 1 144 0
+ 135:.\main.c      ****                     
+ 564              		.loc 1 135 0
  565 01ee 21E0     		b	.L21
  566              	.L25:
- 147:.\main.c      ****                     NOTIFY[BUTTON] = wrReqParam->handleValPair.value.val[0] & 0x01; 
- 567              		.loc 1 147 0
+ 138:.\main.c      ****                     NOTIFY[BUTTON] = wrReqParam->handleValPair.value.val[0] & 0x01; 
+ 567              		.loc 1 138 0
  568 01f0 BB68     		ldr	r3, [r7, #8]
  569 01f2 1A1D     		add	r2, r3, #4
  570 01f4 1A4B     		ldr	r3, .L30+20
@@ -816,8 +807,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  573 01fa 1A1C     		mov	r2, r3
  574 01fc 4023     		mov	r3, #64
  575 01fe FFF7FEFF 		bl	CyBle_GattsWriteAttributeValue
- 148:.\main.c      ****                     CyBle_GattsWriteRsp(cyBle_connHandle);
- 576              		.loc 1 148 0
+ 139:.\main.c      ****                     CyBle_GattsWriteRsp(cyBle_connHandle);
+ 576              		.loc 1 139 0
  577 0202 0222     		mov	r2, #2
  578 0204 BB68     		ldr	r3, [r7, #8]
  579 0206 5B68     		ldr	r3, [r3, #4]
@@ -828,8 +819,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  584 0210 104B     		ldr	r3, .L30+8
  585 0212 9200     		lsl	r2, r2, #2
  586 0214 D150     		str	r1, [r2, r3]
- 149:.\main.c      ****                 break;
- 587              		.loc 1 149 0
+ 140:.\main.c      ****                 break;
+ 587              		.loc 1 140 0
  588 0216 124B     		ldr	r3, .L30+20
  589 0218 1A78     		ldrb	r2, [r3]
  590 021a 5B78     		ldrb	r3, [r3, #1]
@@ -838,41 +829,41 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  593 0220 0023     		mov	r3, #0
  594 0222 1204     		lsl	r2, r2, #16
  595 0224 120C     		lsr	r2, r2, #16
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 15
-
-
  596 0226 1B0C     		lsr	r3, r3, #16
  597 0228 1B04     		lsl	r3, r3, #16
  598 022a 1343     		orr	r3, r2
  599 022c 181C     		mov	r0, r3
  600 022e FFF7FEFF 		bl	CyBle_GattsWriteRsp
- 150:.\main.c      ****             }
- 601              		.loc 1 150 0
+ 141:.\main.c      ****             }
+ 601              		.loc 1 141 0
  602 0232 C046     		mov	r8, r8
  603              	.L21:
- 152:.\main.c      ****         
- 604              		.loc 1 152 0
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 15
+
+
+ 143:.\main.c      ****         
+ 604              		.loc 1 143 0
  605 0234 05E0     		b	.L29
  606              	.L14:
- 156:.\main.c      ****             
- 607              		.loc 1 156 0
+ 147:.\main.c      ****             
+ 607              		.loc 1 147 0
  608 0236 3B68     		ldr	r3, [r7]
  609 0238 1A78     		ldrb	r2, [r3]
  610 023a 0A4B     		ldr	r3, .L30+24
  611 023c 1A70     		strb	r2, [r3]
- 612              		.loc 1 159 0
+ 612              		.loc 1 150 0
  613 023e C046     		mov	r8, r8
  614 0240 00E0     		b	.L10
  615              	.L29:
- 152:.\main.c      ****         
- 616              		.loc 1 152 0
+ 143:.\main.c      ****         
+ 616              		.loc 1 143 0
  617 0242 C046     		mov	r8, r8
  618              	.L10:
  619              	.LBE3:
- 160:.\main.c      ****         
- 161:.\main.c      ****     }
- 162:.\main.c      **** }
- 620              		.loc 1 162 0
+ 151:.\main.c      ****         
+ 152:.\main.c      ****     }
+ 153:.\main.c      **** }
+ 620              		.loc 1 153 0
  621 0244 BD46     		mov	sp, r7
  622 0246 04B0     		add	sp, sp, #16
  623              		@ sp needed
@@ -898,56 +889,58 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  643              		.type	updateCharacteristic, %function
  644              	updateCharacteristic:
  645              	.LFB41:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 16
-
-
- 163:.\main.c      **** 
- 164:.\main.c      **** void updateCharacteristic(int charCode, int charHandle, uint32 value){
- 646              		.loc 1 164 0
+ 154:.\main.c      **** 
+ 155:.\main.c      **** void updateCharacteristic(int charCode, int charHandle, uint32 value){
+ 646              		.loc 1 155 0
  647              		.cfi_startproc
  648 0000 80B5     		push	{r7, lr}
  649              		.cfi_def_cfa_offset 8
  650              		.cfi_offset 7, -8
  651              		.cfi_offset 14, -4
  652 0002 88B0     		sub	sp, sp, #32
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 16
+
+
  653              		.cfi_def_cfa_offset 40
  654 0004 00AF     		add	r7, sp, #0
  655              		.cfi_def_cfa_register 7
  656 0006 F860     		str	r0, [r7, #12]
  657 0008 B960     		str	r1, [r7, #8]
  658 000a 7A60     		str	r2, [r7, #4]
- 165:.\main.c      ****     if(CyBle_GetState() != CYBLE_STATE_CONNECTED)
- 659              		.loc 1 165 0
+ 156:.\main.c      ****     if(CyBle_GetState() != CYBLE_STATE_CONNECTED)
+ 659              		.loc 1 156 0
  660 000c 1D4B     		ldr	r3, .L36
  661 000e 1B78     		ldrb	r3, [r3]
  662 0010 022B     		cmp	r3, #2
  663 0012 33D1     		bne	.L32
- 166:.\main.c      ****         return;
- 167:.\main.c      ****    
- 168:.\main.c      ****     CYBLE_GATT_HANDLE_VALUE_PAIR_T CCCDHandle; 
- 169:.\main.c      **** 
- 170:.\main.c      ****     CCCDHandle.attrHandle = charHandle;
- 664              		.loc 1 170 0
+ 157:.\main.c      ****         return;
+ 158:.\main.c      ****    
+ 159:.\main.c      ****     CYBLE_GATT_HANDLE_VALUE_PAIR_T CCCDHandle; 
+ 160:.\main.c      **** 
+ 161:.\main.c      ****     //update characteristic handle with the correct information
+ 162:.\main.c      ****     CCCDHandle.attrHandle = charHandle;
+ 664              		.loc 1 162 0
  665 0014 BB68     		ldr	r3, [r7, #8]
  666 0016 9AB2     		uxth	r2, r3
  667 0018 1423     		mov	r3, #20
  668 001a FB18     		add	r3, r7, r3
  669 001c 1A81     		strh	r2, [r3, #8]
- 171:.\main.c      ****     CCCDHandle.value.val = (uint8 *)&value;
- 670              		.loc 1 171 0
+ 163:.\main.c      ****     CCCDHandle.value.val = (uint8 *)&value;
+ 670              		.loc 1 163 0
  671 001e 1423     		mov	r3, #20
  672 0020 FB18     		add	r3, r7, r3
  673 0022 3A1D     		add	r2, r7, #4
  674 0024 1A60     		str	r2, [r3]
- 172:.\main.c      ****     CCCDHandle.value.len = 4;
- 675              		.loc 1 172 0
+ 164:.\main.c      ****     CCCDHandle.value.len = 4;
+ 675              		.loc 1 164 0
  676 0026 1423     		mov	r3, #20
  677 0028 FB18     		add	r3, r7, r3
  678 002a 0422     		mov	r2, #4
  679 002c 9A80     		strh	r2, [r3, #4]
- 173:.\main.c      ****     
- 174:.\main.c      ****     CyBle_GattsWriteAttributeValue(&CCCDHandle, 0, &cyBle_connHandle, CYBLE_GATT_DB_LOCALLY_INITIAT
- 680              		.loc 1 174 0
+ 165:.\main.c      ****     
+ 166:.\main.c      ****     //send out new characteristic value
+ 167:.\main.c      ****     CyBle_GattsWriteAttributeValue(&CCCDHandle, 0, &cyBle_connHandle, CYBLE_GATT_DB_LOCALLY_INITIAT
+ 680              		.loc 1 167 0
  681 002e 1423     		mov	r3, #20
  682 0030 FA18     		add	r2, r7, r3
  683 0032 154B     		ldr	r3, .L36+4
@@ -956,11 +949,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  686 0038 1A1C     		mov	r2, r3
  687 003a 0023     		mov	r3, #0
  688 003c FFF7FEFF 		bl	CyBle_GattsWriteAttributeValue
- 175:.\main.c      ****     CyBle_GattsReadAttributeValue(&CCCDHandle, &cyBle_connHandle, CYBLE_GATT_DB_LOCALLY_INITIATED);
- 689              		.loc 1 175 0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 17
-
-
+ 168:.\main.c      ****     CyBle_GattsReadAttributeValue(&CCCDHandle, &cyBle_connHandle, CYBLE_GATT_DB_LOCALLY_INITIATED);
+ 689              		.loc 1 168 0
  690 0040 1423     		mov	r3, #20
  691 0042 FA18     		add	r2, r7, r3
  692 0044 104B     		ldr	r3, .L36+4
@@ -968,17 +958,20 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  694 0048 191C     		mov	r1, r3
  695 004a 0022     		mov	r2, #0
  696 004c FFF7FEFF 		bl	CyBle_GattsReadAttributeValue
- 176:.\main.c      ****    
- 177:.\main.c      ****     if(NOTIFY[charCode])
- 697              		.loc 1 177 0
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 17
+
+
+ 169:.\main.c      ****    
+ 170:.\main.c      ****     if(NOTIFY[charCode])
+ 697              		.loc 1 170 0
  698 0050 0E4B     		ldr	r3, .L36+8
  699 0052 FA68     		ldr	r2, [r7, #12]
  700 0054 9200     		lsl	r2, r2, #2
  701 0056 D358     		ldr	r3, [r2, r3]
  702 0058 002B     		cmp	r3, #0
  703 005a 0FD0     		beq	.L32
- 178:.\main.c      ****         CyBle_GattsNotification(cyBle_connHandle, &CCCDHandle);
- 704              		.loc 1 178 0
+ 171:.\main.c      ****         CyBle_GattsNotification(cyBle_connHandle, &CCCDHandle);
+ 704              		.loc 1 171 0
  705 005c 0A4B     		ldr	r3, .L36+4
  706 005e 1422     		mov	r2, #20
  707 0060 B918     		add	r1, r7, r2
@@ -995,8 +988,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  718 0076 181C     		mov	r0, r3
  719 0078 FFF7FEFF 		bl	CyBle_GattsNotification
  720              	.L32:
- 179:.\main.c      **** }
- 721              		.loc 1 179 0
+ 172:.\main.c      **** }
+ 721              		.loc 1 172 0
  722 007c BD46     		mov	sp, r7
  723 007e 08B0     		add	sp, sp, #32
  724              		@ sp needed
@@ -1018,15 +1011,16 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  740              		.type	reverseUint32, %function
  741              	reverseUint32:
  742              	.LFB42:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 18
-
-
- 180:.\main.c      **** 
- 181:.\main.c      **** uint32 reverseUint32(uint32 num){
- 743              		.loc 1 181 0
+ 173:.\main.c      **** 
+ 174:.\main.c      **** //puts data into little endian for CySmart app
+ 175:.\main.c      **** uint32 reverseUint32(uint32 num){
+ 743              		.loc 1 175 0
  744              		.cfi_startproc
  745 0000 80B5     		push	{r7, lr}
  746              		.cfi_def_cfa_offset 8
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 18
+
+
  747              		.cfi_offset 7, -8
  748              		.cfi_offset 14, -4
  749 0002 82B0     		sub	sp, sp, #8
@@ -1034,8 +1028,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  751 0004 00AF     		add	r7, sp, #0
  752              		.cfi_def_cfa_register 7
  753 0006 7860     		str	r0, [r7, #4]
- 182:.\main.c      ****     return ((0xFF000000 & num) >> 24) | ((0x00FF0000 & num) >> 8) | ((0x0000FF00 & num) << 8) | ((0
- 754              		.loc 1 182 0
+ 176:.\main.c      ****     return ((0xFF000000 & num) >> 24) | ((0x00FF0000 & num) >> 8) | ((0x0000FF00 & num) << 8) | ((0
+ 754              		.loc 1 176 0
  755 0008 7B68     		ldr	r3, [r7, #4]
  756 000a 1A0E     		lsr	r2, r3, #24
  757 000c 7968     		ldr	r1, [r7, #4]
@@ -1053,8 +1047,8 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  769 0024 7B68     		ldr	r3, [r7, #4]
  770 0026 1B06     		lsl	r3, r3, #24
  771 0028 1343     		orr	r3, r2
- 183:.\main.c      **** }
- 772              		.loc 1 183 0
+ 177:.\main.c      **** }
+ 772              		.loc 1 177 0
  773 002a 181C     		mov	r0, r3
  774 002c BD46     		mov	sp, r7
  775 002e 02B0     		add	sp, sp, #8
@@ -1072,88 +1066,89 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  787              		.type	main, %function
  788              	main:
  789              	.LFB43:
- 184:.\main.c      **** 
- 185:.\main.c      **** int main()
- 186:.\main.c      **** {
- 790              		.loc 1 186 0
+ 178:.\main.c      **** 
+ 179:.\main.c      **** int main()
+ 180:.\main.c      **** {
+ 790              		.loc 1 180 0
  791              		.cfi_startproc
  792 0000 80B5     		push	{r7, lr}
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 19
-
-
  793              		.cfi_def_cfa_offset 8
  794              		.cfi_offset 7, -8
  795              		.cfi_offset 14, -4
  796 0002 88B0     		sub	sp, sp, #32
  797              		.cfi_def_cfa_offset 40
  798 0004 00AF     		add	r7, sp, #0
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 19
+
+
  799              		.cfi_def_cfa_register 7
- 187:.\main.c      ****     CyGlobalIntEnable; /* Enable global interrupts. */
- 800              		.loc 1 187 0
- 801              	@ 187 ".\main.c" 1
+ 181:.\main.c      ****     CyGlobalIntEnable; /* Enable global interrupts. */
+ 800              		.loc 1 181 0
+ 801              	@ 181 ".\main.c" 1
  802 0006 62B6     		CPSIE   i
  803              	@ 0 "" 2
- 188:.\main.c      ****     initAll();
- 804              		.loc 1 188 0
+ 182:.\main.c      ****     initAll();
+ 804              		.loc 1 182 0
  805              		.code	16
  806 0008 FFF7FEFF 		bl	initAll
- 189:.\main.c      ****     
- 190:.\main.c      ****     uint32 accel = 0;
- 807              		.loc 1 190 0
+ 183:.\main.c      ****     
+ 184:.\main.c      ****     //initialize all sensor calues to 0
+ 185:.\main.c      ****     uint32 accel = 0;
+ 807              		.loc 1 185 0
  808 000c 0023     		mov	r3, #0
  809 000e FB61     		str	r3, [r7, #28]
- 191:.\main.c      ****     uint32 heart = 0;
- 810              		.loc 1 191 0
+ 186:.\main.c      ****     uint32 heart = 0;
+ 810              		.loc 1 186 0
  811 0010 0023     		mov	r3, #0
  812 0012 BB61     		str	r3, [r7, #24]
- 192:.\main.c      ****     uint32 oxygen = 0;
- 813              		.loc 1 192 0
+ 187:.\main.c      ****     uint32 oxygen = 0;
+ 813              		.loc 1 187 0
  814 0014 0023     		mov	r3, #0
  815 0016 7B61     		str	r3, [r7, #20]
- 193:.\main.c      ****     uint32 temp = 0;
- 816              		.loc 1 193 0
+ 188:.\main.c      ****     uint32 temp = 0;
+ 816              		.loc 1 188 0
  817 0018 0023     		mov	r3, #0
  818 001a 3B61     		str	r3, [r7, #16]
- 194:.\main.c      ****     uint32 bat = 0;
- 819              		.loc 1 194 0
+ 189:.\main.c      ****     uint32 bat = 0;
+ 819              		.loc 1 189 0
  820 001c 0023     		mov	r3, #0
  821 001e FB60     		str	r3, [r7, #12]
- 195:.\main.c      ****     uint32 button = 0;
- 822              		.loc 1 195 0
+ 190:.\main.c      ****     uint32 button = 0;
+ 822              		.loc 1 190 0
  823 0020 0023     		mov	r3, #0
  824 0022 BB60     		str	r3, [r7, #8]
- 196:.\main.c      ****     
- 197:.\main.c      ****     long elapsed = 0;
- 825              		.loc 1 197 0
+ 191:.\main.c      ****     
+ 192:.\main.c      ****     long elapsed = 0;
+ 825              		.loc 1 192 0
  826 0024 0023     		mov	r3, #0
  827 0026 7B60     		str	r3, [r7, #4]
  828              	.L43:
- 198:.\main.c      ****     
- 199:.\main.c      ****     for(;;){
- 200:.\main.c      ****         
- 201:.\main.c      ****         CyBle_ProcessEvents();
- 829              		.loc 1 201 0
+ 193:.\main.c      ****     
+ 194:.\main.c      ****     for(;;){
+ 195:.\main.c      ****         
+ 196:.\main.c      ****         CyBle_ProcessEvents();
+ 829              		.loc 1 196 0
  830 0028 FFF7FEFF 		bl	CyBle_ProcessEvents
- 202:.\main.c      ****         
- 203:.\main.c      ****         if(deviceConnected && busyStatus == CYBLE_STACK_STATE_FREE){
- 831              		.loc 1 203 0
+ 197:.\main.c      ****         
+ 198:.\main.c      ****         if(deviceConnected && busyStatus == CYBLE_STACK_STATE_FREE){ //check to make sure device is
+ 831              		.loc 1 198 0
  832 002c 394B     		ldr	r3, .L44
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 20
-
-
  833 002e 1B78     		ldrb	r3, [r3]
  834 0030 002B     		cmp	r3, #0
  835 0032 6DD0     		beq	.L41
- 836              		.loc 1 203 0 is_stmt 0 discriminator 1
+ 836              		.loc 1 198 0 is_stmt 0 discriminator 1
  837 0034 384B     		ldr	r3, .L44+4
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 20
+
+
  838 0036 1B78     		ldrb	r3, [r3]
  839 0038 002B     		cmp	r3, #0
  840 003a 69D1     		bne	.L41
- 204:.\main.c      ****             PulseOximeter_update();
- 841              		.loc 1 204 0 is_stmt 1
+ 199:.\main.c      ****             PulseOximeter_update();
+ 841              		.loc 1 199 0 is_stmt 1
  842 003c FFF7FEFF 		bl	PulseOximeter_update
- 205:.\main.c      ****             elapsed = millis() - tsLastReport;
- 843              		.loc 1 205 0
+ 200:.\main.c      ****             elapsed = millis() - tsLastReport;
+ 843              		.loc 1 200 0
  844 0040 FFF7FEFF 		bl	millis
  845 0044 031C     		mov	r3, r0
  846 0046 1A1C     		mov	r2, r3
@@ -1161,9 +1156,10 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  848 004a 1B68     		ldr	r3, [r3]
  849 004c D31A     		sub	r3, r2, r3
  850 004e 7B60     		str	r3, [r7, #4]
- 206:.\main.c      ****             
- 207:.\main.c      ****             if(millis() - otherLastReport > 100){
- 851              		.loc 1 207 0
+ 201:.\main.c      ****             
+ 202:.\main.c      ****             //every 100ms send out temperature, accelerometer, battery, and button data
+ 203:.\main.c      ****             if(millis() - otherLastReport > 100){
+ 851              		.loc 1 203 0
  852 0050 FFF7FEFF 		bl	millis
  853 0054 031C     		mov	r3, r0
  854 0056 1A1C     		mov	r2, r3
@@ -1172,129 +1168,130 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  857 005c D31A     		sub	r3, r2, r3
  858 005e 642B     		cmp	r3, #100
  859 0060 31D9     		bls	.L42
- 208:.\main.c      ****                 temp = getTemperature();
- 860              		.loc 1 208 0
+ 204:.\main.c      ****                 temp = getTemperature();
+ 860              		.loc 1 204 0
  861 0062 FFF7FEFF 		bl	getTemperature
  862 0066 031C     		mov	r3, r0
  863 0068 3B61     		str	r3, [r7, #16]
- 209:.\main.c      ****                 updateCharacteristic(TEMPERATURE, CYBLE_BIOSNAP_TEMPERATURE_CHAR_HANDLE, temp);
- 864              		.loc 1 209 0
+ 205:.\main.c      ****                 updateCharacteristic(TEMPERATURE, CYBLE_BIOSNAP_TEMPERATURE_CHAR_HANDLE, temp);
+ 864              		.loc 1 205 0
  865 006a 0522     		mov	r2, #5
  866 006c 3B69     		ldr	r3, [r7, #16]
  867 006e 101C     		mov	r0, r2
  868 0070 1F21     		mov	r1, #31
  869 0072 1A1C     		mov	r2, r3
  870 0074 FFF7FEFF 		bl	updateCharacteristic
- 210:.\main.c      ****             
- 211:.\main.c      ****                 accel = getAccelXYZ();
- 871              		.loc 1 211 0
+ 206:.\main.c      ****             
+ 207:.\main.c      ****                 accel = getAccelXYZ();
+ 871              		.loc 1 207 0
  872 0078 FFF7FEFF 		bl	getAccelXYZ
  873 007c 031C     		mov	r3, r0
  874 007e FB61     		str	r3, [r7, #28]
- 212:.\main.c      ****                 updateCharacteristic(ACCELEROMETER, CYBLE_BIOSNAP_ACCELEROMETER_CHAR_HANDLE, accel)
- 875              		.loc 1 212 0
+ 208:.\main.c      ****                 updateCharacteristic(ACCELEROMETER, CYBLE_BIOSNAP_ACCELEROMETER_CHAR_HANDLE, accel)
+ 875              		.loc 1 208 0
  876 0080 0022     		mov	r2, #0
  877 0082 FB69     		ldr	r3, [r7, #28]
  878 0084 101C     		mov	r0, r2
  879 0086 1021     		mov	r1, #16
  880 0088 1A1C     		mov	r2, r3
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 21
-
-
  881 008a FFF7FEFF 		bl	updateCharacteristic
- 213:.\main.c      ****                 
- 214:.\main.c      ****                 bat = getBattery();
- 882              		.loc 1 214 0
+ 209:.\main.c      ****                 
+ 210:.\main.c      ****                 bat = getBattery();
+ 882              		.loc 1 210 0
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 21
+
+
  883 008e FFF7FEFF 		bl	getBattery
  884 0092 031C     		mov	r3, r0
  885 0094 FB60     		str	r3, [r7, #12]
- 215:.\main.c      ****                 updateCharacteristic(BATTERY, CYBLE_BIOSNAP_BATTERY_CHAR_HANDLE, bat);
- 886              		.loc 1 215 0
+ 211:.\main.c      ****                 updateCharacteristic(BATTERY, CYBLE_BIOSNAP_BATTERY_CHAR_HANDLE, bat);
+ 886              		.loc 1 211 0
  887 0096 0122     		mov	r2, #1
  888 0098 FB68     		ldr	r3, [r7, #12]
  889 009a 101C     		mov	r0, r2
  890 009c 1321     		mov	r1, #19
  891 009e 1A1C     		mov	r2, r3
  892 00a0 FFF7FEFF 		bl	updateCharacteristic
- 216:.\main.c      ****                 
- 217:.\main.c      ****                 button = getButton();
- 893              		.loc 1 217 0
+ 212:.\main.c      ****                 
+ 213:.\main.c      ****                 button = getButton();
+ 893              		.loc 1 213 0
  894 00a4 FFF7FEFF 		bl	getButton
  895 00a8 031C     		mov	r3, r0
  896 00aa BB60     		str	r3, [r7, #8]
- 218:.\main.c      ****                 updateCharacteristic(BUTTON, CYBLE_BIOSNAP_BUTTON_CHAR_HANDLE, button);
- 897              		.loc 1 218 0
+ 214:.\main.c      ****                 updateCharacteristic(BUTTON, CYBLE_BIOSNAP_BUTTON_CHAR_HANDLE, button);
+ 897              		.loc 1 214 0
  898 00ac 0222     		mov	r2, #2
  899 00ae BB68     		ldr	r3, [r7, #8]
  900 00b0 101C     		mov	r0, r2
  901 00b2 1621     		mov	r1, #22
  902 00b4 1A1C     		mov	r2, r3
  903 00b6 FFF7FEFF 		bl	updateCharacteristic
- 219:.\main.c      ****                 
- 220:.\main.c      ****                 otherLastReport = millis();
- 904              		.loc 1 220 0
+ 215:.\main.c      ****                 
+ 216:.\main.c      ****                 otherLastReport = millis();
+ 904              		.loc 1 216 0
  905 00ba FFF7FEFF 		bl	millis
  906 00be 031C     		mov	r3, r0
  907 00c0 1A1C     		mov	r2, r3
  908 00c2 174B     		ldr	r3, .L44+12
  909 00c4 1A60     		str	r2, [r3]
  910              	.L42:
- 221:.\main.c      ****             }
- 222:.\main.c      ****             if (elapsed > REPORTING_PERIOD_MS) {
- 911              		.loc 1 222 0
+ 217:.\main.c      ****             }
+ 218:.\main.c      ****             //every 1000ms send out pulse oximeter data
+ 219:.\main.c      ****             if (elapsed > REPORTING_PERIOD_MS) {
+ 911              		.loc 1 219 0
  912 00c6 7A68     		ldr	r2, [r7, #4]
  913 00c8 FA23     		mov	r3, #250
  914 00ca 9B00     		lsl	r3, r3, #2
  915 00cc 9A42     		cmp	r2, r3
  916 00ce 1FDD     		ble	.L41
- 223:.\main.c      ****                 oxygen = (uint32)(PulseOximeter_getSpO2());
- 917              		.loc 1 223 0
+ 220:.\main.c      ****                 oxygen = (uint32)(PulseOximeter_getSpO2());
+ 917              		.loc 1 220 0
  918 00d0 FFF7FEFF 		bl	PulseOximeter_getSpO2
  919 00d4 031C     		mov	r3, r0
  920 00d6 7B61     		str	r3, [r7, #20]
- 224:.\main.c      ****                 heart = (uint32)(PulseOximeter_getHeartRate());
- 921              		.loc 1 224 0
+ 221:.\main.c      ****                 heart = (uint32)(PulseOximeter_getHeartRate());
+ 921              		.loc 1 221 0
  922 00d8 FFF7FEFF 		bl	PulseOximeter_getHeartRate
  923 00dc 031C     		add	r3, r0, #0
  924 00de 181C     		add	r0, r3, #0
  925 00e0 FFF7FEFF 		bl	__aeabi_f2uiz
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 22
-
-
  926 00e4 031C     		mov	r3, r0
  927 00e6 BB61     		str	r3, [r7, #24]
- 225:.\main.c      ****                 updateCharacteristic(HEART, CYBLE_BIOSNAP_HEART_CHAR_HANDLE, heart);
- 928              		.loc 1 225 0
+ 222:.\main.c      ****                 updateCharacteristic(HEART, CYBLE_BIOSNAP_HEART_CHAR_HANDLE, heart);
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 22
+
+
+ 928              		.loc 1 222 0
  929 00e8 0322     		mov	r2, #3
  930 00ea BB69     		ldr	r3, [r7, #24]
  931 00ec 101C     		mov	r0, r2
  932 00ee 1921     		mov	r1, #25
  933 00f0 1A1C     		mov	r2, r3
  934 00f2 FFF7FEFF 		bl	updateCharacteristic
- 226:.\main.c      ****                 updateCharacteristic(OXYGEN, CYBLE_BIOSNAP_OXYGEN_CHAR_HANDLE, oxygen);
- 935              		.loc 1 226 0
+ 223:.\main.c      ****                 updateCharacteristic(OXYGEN, CYBLE_BIOSNAP_OXYGEN_CHAR_HANDLE, oxygen);
+ 935              		.loc 1 223 0
  936 00f6 0422     		mov	r2, #4
  937 00f8 7B69     		ldr	r3, [r7, #20]
  938 00fa 101C     		mov	r0, r2
  939 00fc 1C21     		mov	r1, #28
  940 00fe 1A1C     		mov	r2, r3
  941 0100 FFF7FEFF 		bl	updateCharacteristic
- 227:.\main.c      ****                 
- 228:.\main.c      ****                 tsLastReport = millis();
- 942              		.loc 1 228 0
+ 224:.\main.c      ****                 
+ 225:.\main.c      ****                 tsLastReport = millis();
+ 942              		.loc 1 225 0
  943 0104 FFF7FEFF 		bl	millis
  944 0108 031C     		mov	r3, r0
  945 010a 1A1C     		mov	r2, r3
  946 010c 034B     		ldr	r3, .L44+8
  947 010e 1A60     		str	r2, [r3]
  948              	.L41:
- 229:.\main.c      ****             }
- 230:.\main.c      **** 
- 231:.\main.c      ****             
- 232:.\main.c      ****         }
- 233:.\main.c      **** //        CyDelay(10);
- 234:.\main.c      ****     }
- 949              		.loc 1 234 0
+ 226:.\main.c      ****             }
+ 227:.\main.c      **** 
+ 228:.\main.c      ****             
+ 229:.\main.c      ****         }
+ 230:.\main.c      **** //        CyDelay(10);
+ 231:.\main.c      ****     }
+ 949              		.loc 1 231 0
  950 0110 8AE7     		b	.L43
  951              	.L45:
  952 0112 C046     		.align	2
@@ -1318,12 +1315,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  970              		.file 9 "./MAX30100_All.h"
  971              		.section	.debug_info,"",%progbits
  972              	.Ldebug_info0:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 23
-
-
  973 0000 E9090000 		.4byte	0x9e9
  974 0004 0400     		.2byte	0x4
  975 0006 00000000 		.4byte	.Ldebug_abbrev0
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 23
+
+
  976 000a 04       		.byte	0x4
  977 000b 01       		.uleb128 0x1
  978 000c 100F0000 		.4byte	.LASF198
@@ -1378,12 +1375,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1027 0073 E3020000 		.4byte	.LASF9
  1028 0077 02       		.uleb128 0x2
  1029 0078 08       		.byte	0x8
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 24
-
-
  1030 0079 07       		.byte	0x7
  1031 007a 37030000 		.4byte	.LASF10
  1032 007e 04       		.uleb128 0x4
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 24
+
+
  1033 007f 04       		.byte	0x4
  1034 0080 05       		.byte	0x5
  1035 0081 696E7400 		.ascii	"int\000"
@@ -1438,12 +1435,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1084 00ec 01       		.byte	0x1
  1085 00ed 08       		.byte	0x8
  1086 00ee FC0C0000 		.4byte	.LASF21
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 25
-
-
  1087 00f2 02       		.uleb128 0x2
  1088 00f3 04       		.byte	0x4
  1089 00f4 07       		.byte	0x7
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 25
+
+
  1090 00f5 CC080000 		.4byte	.LASF22
  1091 00f9 06       		.uleb128 0x6
  1092 00fa 04       		.byte	0x4
@@ -1498,12 +1495,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1141 0159 6C070000 		.4byte	.LASF37
  1142 015d 27       		.sleb128 39
  1143 015e 08       		.uleb128 0x8
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 26
-
-
  1144 015f 010D0000 		.4byte	.LASF38
  1145 0163 28       		.sleb128 40
  1146 0164 08       		.uleb128 0x8
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 26
+
+
  1147 0165 70020000 		.4byte	.LASF39
  1148 0169 29       		.sleb128 41
  1149 016a 08       		.uleb128 0x8
@@ -1558,12 +1555,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1198 01d1 AB080000 		.4byte	.LASF56
  1199 01d5 C600     		.sleb128 70
  1200 01d7 08       		.uleb128 0x8
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 27
-
-
  1201 01d8 D7060000 		.4byte	.LASF57
  1202 01dc C700     		.sleb128 71
  1203 01de 08       		.uleb128 0x8
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 27
+
+
  1204 01df 9E0F0000 		.4byte	.LASF58
  1205 01e3 C800     		.sleb128 72
  1206 01e5 08       		.uleb128 0x8
@@ -1618,12 +1615,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1255 0256 4A020000 		.4byte	.LASF75
  1256 025a F000     		.sleb128 112
  1257 025c 08       		.uleb128 0x8
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 28
-
-
  1258 025d 0B100000 		.4byte	.LASF76
  1259 0261 F100     		.sleb128 113
  1260 0263 08       		.uleb128 0x8
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 28
+
+
  1261 0264 07080000 		.4byte	.LASF77
  1262 0268 F200     		.sleb128 114
  1263 026a 08       		.uleb128 0x8
@@ -1678,12 +1675,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1312 02d8 05       		.byte	0x5
  1313 02d9 A301     		.2byte	0x1a3
  1314 02db AD000000 		.4byte	0xad
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 29
-
-
  1315 02df 00       		.byte	0
  1316 02e0 0B       		.uleb128 0xb
  1317 02e1 01080000 		.4byte	.LASF91
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 29
+
+
  1318 02e5 05       		.byte	0x5
  1319 02e6 A901     		.2byte	0x1a9
  1320 02e8 AD000000 		.4byte	0xad
@@ -1738,12 +1735,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1369 034e A9050000 		.4byte	.LASF96
  1370 0352 05       		.byte	0x5
  1371 0353 DF01     		.2byte	0x1df
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 30
-
-
  1372 0355 BE020000 		.4byte	0x2be
  1373 0359 08       		.byte	0x8
  1374 035a 00       		.byte	0
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 30
+
+
  1375 035b 05       		.uleb128 0x5
  1376 035c 520A0000 		.4byte	.LASF97
  1377 0360 05       		.byte	0x5
@@ -1798,12 +1795,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1426 03c0 08       		.byte	0x8
  1427 03c1 CD07     		.2byte	0x7cd
  1428 03c3 93030000 		.4byte	0x393
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 31
-
-
  1429 03c7 02       		.uleb128 0x2
  1430 03c8 08       		.byte	0x8
  1431 03c9 04       		.byte	0x4
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 31
+
+
  1432 03ca F00C0000 		.4byte	.LASF107
  1433 03ce 0F       		.uleb128 0xf
  1434 03cf 9B070000 		.4byte	.LASF113
@@ -1858,12 +1855,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1483 0433 08       		.byte	0x8
  1484 0434 0E       		.uleb128 0xe
  1485 0435 1F060000 		.4byte	.LASF117
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 32
-
-
  1486 0439 09       		.byte	0x9
  1487 043a 22       		.byte	0x22
  1488 043b D1000000 		.4byte	0xd1
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 32
+
+
  1489 043f 0C       		.byte	0xc
  1490 0440 0E       		.uleb128 0xe
  1491 0441 39040000 		.4byte	.LASF118
@@ -1918,12 +1915,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1540 04a5 09       		.byte	0x9
  1541 04a6 54       		.byte	0x54
  1542 04a7 D1000000 		.4byte	0xd1
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 33
-
-
  1543 04ab 2C       		.byte	0x2c
  1544 04ac 0E       		.uleb128 0xe
  1545 04ad F20F0000 		.4byte	.LASF126
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 33
+
+
  1546 04b1 09       		.byte	0x9
  1547 04b2 55       		.byte	0x55
  1548 04b3 D1000000 		.4byte	0xd1
@@ -1978,12 +1975,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1597 0517 D1000000 		.4byte	0xd1
  1598 051b 04       		.byte	0x4
  1599 051c 00       		.byte	0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 34
-
-
  1600 051d 03       		.uleb128 0x3
  1601 051e 61060000 		.4byte	.LASF130
  1602 0522 09       		.byte	0x9
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 34
+
+
  1603 0523 66       		.byte	0x66
  1604 0524 F8040000 		.4byte	0x4f8
  1605 0528 10       		.uleb128 0x10
@@ -2038,12 +2035,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1654 058a 09       		.byte	0x9
  1655 058b 84       		.byte	0x84
  1656 058c A9050000 		.4byte	0x5a9
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 35
-
-
  1657 0590 08       		.uleb128 0x8
  1658 0591 16030000 		.4byte	.LASF138
  1659 0595 00       		.sleb128 0
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 35
+
+
  1660 0596 08       		.uleb128 0x8
  1661 0597 44040000 		.4byte	.LASF139
  1662 059b 01       		.sleb128 1
@@ -2098,12 +2095,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1711 05fc 0E       		.uleb128 0xe
  1712 05fd 8B070000 		.4byte	.LASF147
  1713 0601 09       		.byte	0x9
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 36
-
-
  1714 0602 91       		.byte	0x91
  1715 0603 A2000000 		.4byte	0xa2
  1716 0607 10       		.byte	0x10
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 36
+
+
  1717 0608 0E       		.uleb128 0xe
  1718 0609 FF050000 		.4byte	.LASF148
  1719 060d 09       		.byte	0x9
@@ -2158,12 +2155,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1768 066e 9B       		.byte	0x9b
  1769 066f 99060000 		.4byte	0x699
  1770 0673 34       		.byte	0x34
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 37
-
-
  1771 0674 0E       		.uleb128 0xe
  1772 0675 6B040000 		.4byte	.LASF155
  1773 0679 09       		.byte	0x9
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 37
+
+
  1774 067a 9F       		.byte	0x9f
  1775 067b DF000000 		.4byte	0xdf
  1776 067f 38       		.byte	0x38
@@ -2218,12 +2215,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1825 06e3 49       		.byte	0x49
  1826 06e4 00000000 		.4byte	.LFB40
  1827 06e8 68020000 		.4byte	.LFE40-.LFB40
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 38
-
-
  1828 06ec 01       		.uleb128 0x1
  1829 06ed 9C       		.byte	0x9c
  1830 06ee 2F070000 		.4byte	0x72f
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 38
+
+
  1831 06f2 17       		.uleb128 0x17
  1832 06f3 40020000 		.4byte	.LASF158
  1833 06f7 01       		.byte	0x1
@@ -2253,7 +2250,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1857 0721 1A       		.uleb128 0x1a
  1858 0722 6900     		.ascii	"i\000"
  1859 0724 01       		.byte	0x1
- 1860 0725 65       		.byte	0x65
+ 1860 0725 5B       		.byte	0x5b
  1861 0726 C5000000 		.4byte	0xc5
  1862 072a 02       		.uleb128 0x2
  1863 072b 91       		.byte	0x91
@@ -2266,7 +2263,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1870 0735 16       		.uleb128 0x16
  1871 0736 CE020000 		.4byte	.LASF162
  1872 073a 01       		.byte	0x1
- 1873 073b A4       		.byte	0xa4
+ 1873 073b 9B       		.byte	0x9b
  1874 073c 00000000 		.4byte	.LFB41
  1875 0740 90000000 		.4byte	.LFE41-.LFB41
  1876 0744 01       		.uleb128 0x1
@@ -2275,18 +2272,18 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1879 074a 17       		.uleb128 0x17
  1880 074b EC090000 		.4byte	.LASF163
  1881 074f 01       		.byte	0x1
- 1882 0750 A4       		.byte	0xa4
+ 1882 0750 9B       		.byte	0x9b
  1883 0751 7E000000 		.4byte	0x7e
  1884 0755 02       		.uleb128 0x2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 39
-
-
  1885 0756 91       		.byte	0x91
  1886 0757 64       		.sleb128 -28
  1887 0758 17       		.uleb128 0x17
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 39
+
+
  1888 0759 860B0000 		.4byte	.LASF164
  1889 075d 01       		.byte	0x1
- 1890 075e A4       		.byte	0xa4
+ 1890 075e 9B       		.byte	0x9b
  1891 075f 7E000000 		.4byte	0x7e
  1892 0763 02       		.uleb128 0x2
  1893 0764 91       		.byte	0x91
@@ -2294,7 +2291,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1895 0766 17       		.uleb128 0x17
  1896 0767 510C0000 		.4byte	.LASF95
  1897 076b 01       		.byte	0x1
- 1898 076c A4       		.byte	0xa4
+ 1898 076c 9B       		.byte	0x9b
  1899 076d C5000000 		.4byte	0xc5
  1900 0771 02       		.uleb128 0x2
  1901 0772 91       		.byte	0x91
@@ -2302,7 +2299,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1903 0774 18       		.uleb128 0x18
  1904 0775 E5030000 		.4byte	.LASF165
  1905 0779 01       		.byte	0x1
- 1906 077a A8       		.byte	0xa8
+ 1906 077a 9F       		.byte	0x9f
  1907 077b 5B030000 		.4byte	0x35b
  1908 077f 02       		.uleb128 0x2
  1909 0780 91       		.byte	0x91
@@ -2311,7 +2308,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1912 0783 1B       		.uleb128 0x1b
  1913 0784 43050000 		.4byte	.LASF202
  1914 0788 01       		.byte	0x1
- 1915 0789 B5       		.byte	0xb5
+ 1915 0789 AF       		.byte	0xaf
  1916 078a C5000000 		.4byte	0xc5
  1917 078e 00000000 		.4byte	.LFB42
  1918 0792 32000000 		.4byte	.LFE42-.LFB42
@@ -2321,7 +2318,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1922 079c 1C       		.uleb128 0x1c
  1923 079d 6E756D00 		.ascii	"num\000"
  1924 07a1 01       		.byte	0x1
- 1925 07a2 B5       		.byte	0xb5
+ 1925 07a2 AF       		.byte	0xaf
  1926 07a3 C5000000 		.4byte	0xc5
  1927 07a7 02       		.uleb128 0x2
  1928 07a8 91       		.byte	0x91
@@ -2330,7 +2327,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1931 07ab 1D       		.uleb128 0x1d
  1932 07ac 31100000 		.4byte	.LASF166
  1933 07b0 01       		.byte	0x1
- 1934 07b1 B9       		.byte	0xb9
+ 1934 07b1 B3       		.byte	0xb3
  1935 07b2 7E000000 		.4byte	0x7e
  1936 07b6 00000000 		.4byte	.LFB43
  1937 07ba 24010000 		.4byte	.LFE43-.LFB43
@@ -2338,12 +2335,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1939 07bf 9C       		.byte	0x9c
  1940 07c0 27080000 		.4byte	0x827
  1941 07c4 18       		.uleb128 0x18
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 40
-
-
  1942 07c5 3A020000 		.4byte	.LASF167
  1943 07c9 01       		.byte	0x1
- 1944 07ca BE       		.byte	0xbe
+ 1944 07ca B9       		.byte	0xb9
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 40
+
+
  1945 07cb C5000000 		.4byte	0xc5
  1946 07cf 02       		.uleb128 0x2
  1947 07d0 91       		.byte	0x91
@@ -2351,7 +2348,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1949 07d2 18       		.uleb128 0x18
  1950 07d3 B2060000 		.4byte	.LASF168
  1951 07d7 01       		.byte	0x1
- 1952 07d8 BF       		.byte	0xbf
+ 1952 07d8 BA       		.byte	0xba
  1953 07d9 C5000000 		.4byte	0xc5
  1954 07dd 02       		.uleb128 0x2
  1955 07de 91       		.byte	0x91
@@ -2359,7 +2356,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1957 07e0 18       		.uleb128 0x18
  1958 07e1 DE030000 		.4byte	.LASF169
  1959 07e5 01       		.byte	0x1
- 1960 07e6 C0       		.byte	0xc0
+ 1960 07e6 BB       		.byte	0xbb
  1961 07e7 C5000000 		.4byte	0xc5
  1962 07eb 02       		.uleb128 0x2
  1963 07ec 91       		.byte	0x91
@@ -2367,7 +2364,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1965 07ee 18       		.uleb128 0x18
  1966 07ef B4050000 		.4byte	.LASF170
  1967 07f3 01       		.byte	0x1
- 1968 07f4 C1       		.byte	0xc1
+ 1968 07f4 BC       		.byte	0xbc
  1969 07f5 C5000000 		.4byte	0xc5
  1970 07f9 02       		.uleb128 0x2
  1971 07fa 91       		.byte	0x91
@@ -2375,7 +2372,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1973 07fc 1A       		.uleb128 0x1a
  1974 07fd 62617400 		.ascii	"bat\000"
  1975 0801 01       		.byte	0x1
- 1976 0802 C2       		.byte	0xc2
+ 1976 0802 BD       		.byte	0xbd
  1977 0803 C5000000 		.4byte	0xc5
  1978 0807 02       		.uleb128 0x2
  1979 0808 91       		.byte	0x91
@@ -2383,7 +2380,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1981 080a 18       		.uleb128 0x18
  1982 080b 190E0000 		.4byte	.LASF171
  1983 080f 01       		.byte	0x1
- 1984 0810 C3       		.byte	0xc3
+ 1984 0810 BE       		.byte	0xbe
  1985 0811 C5000000 		.4byte	0xc5
  1986 0815 02       		.uleb128 0x2
  1987 0816 91       		.byte	0x91
@@ -2391,19 +2388,19 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  1989 0818 18       		.uleb128 0x18
  1990 0819 B8060000 		.4byte	.LASF172
  1991 081d 01       		.byte	0x1
- 1992 081e C5       		.byte	0xc5
+ 1992 081e C0       		.byte	0xc0
  1993 081f 57000000 		.4byte	0x57
  1994 0823 02       		.uleb128 0x2
  1995 0824 91       		.byte	0x91
  1996 0825 5C       		.sleb128 -36
  1997 0826 00       		.byte	0
  1998 0827 1E       		.uleb128 0x1e
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 41
-
-
  1999 0828 B4070000 		.4byte	.LASF173
  2000 082c 08       		.byte	0x8
  2001 082d DA09     		.2byte	0x9da
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 41
+
+
  2002 082f BB030000 		.4byte	0x3bb
  2003 0833 1E       		.uleb128 0x1e
  2004 0834 44090000 		.4byte	.LASF174
@@ -2458,12 +2455,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  2053 089f 05       		.uleb128 0x5
  2054 08a0 03       		.byte	0x3
  2055 08a1 00000000 		.4byte	globalSpO2calculator
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 42
-
-
  2056 08a5 1F       		.uleb128 0x1f
  2057 08a6 8F060000 		.4byte	.LASF181
  2058 08aa 09       		.byte	0x9
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 42
+
+
  2059 08ab A8       		.byte	0xa8
  2060 08ac 7D040000 		.4byte	0x47d
  2061 08b0 05       		.uleb128 0x5
@@ -2482,7 +2479,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  2074 08cc D7080000 		.4byte	0x8d7
  2075 08d0 12       		.uleb128 0x12
  2076 08d1 F2000000 		.4byte	0xf2
- 2077 08d5 04       		.byte	0x4
+ 2077 08d5 05       		.byte	0x5
  2078 08d6 00       		.byte	0
  2079 08d7 1F       		.uleb128 0x1f
  2080 08d8 AD070000 		.4byte	.LASF183
@@ -2518,12 +2515,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  2110 0917 00000000 		.4byte	busyStatus
  2111 091b 1F       		.uleb128 0x1f
  2112 091c BC0A0000 		.4byte	.LASF187
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 43
-
-
  2113 0920 01       		.byte	0x1
  2114 0921 18       		.byte	0x18
  2115 0922 AD000000 		.4byte	0xad
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 43
+
+
  2116 0926 05       		.uleb128 0x5
  2117 0927 03       		.byte	0x3
  2118 0928 00000000 		.4byte	whatToDo
@@ -2578,12 +2575,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  2167 0992 20       		.uleb128 0x20
  2168 0993 7E000000 		.4byte	0x7e
  2169 0997 1F       		.uleb128 0x1f
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 44
-
-
  2170 0998 17060000 		.4byte	.LASF193
  2171 099c 01       		.byte	0x1
  2172 099d 21       		.byte	0x21
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 44
+
+
  2173 099e 92090000 		.4byte	0x992
  2174 09a2 05       		.uleb128 0x5
  2175 09a3 03       		.byte	0x3
@@ -2638,12 +2635,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  2224 000c 17       		.uleb128 0x17
  2225 000d 11       		.uleb128 0x11
  2226 000e 01       		.uleb128 0x1
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 45
-
-
  2227 000f 10       		.uleb128 0x10
  2228 0010 17       		.uleb128 0x17
  2229 0011 00       		.byte	0
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 45
+
+
  2230 0012 00       		.byte	0
  2231 0013 02       		.uleb128 0x2
  2232 0014 24       		.uleb128 0x24
@@ -2698,12 +2695,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  2281 0045 00       		.byte	0
  2282 0046 0B       		.uleb128 0xb
  2283 0047 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 46
-
-
  2284 0048 00       		.byte	0
  2285 0049 00       		.byte	0
  2286 004a 07       		.uleb128 0x7
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 46
+
+
  2287 004b 04       		.uleb128 0x4
  2288 004c 01       		.byte	0x1
  2289 004d 0B       		.uleb128 0xb
@@ -2758,12 +2755,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  2338 007e 05       		.uleb128 0x5
  2339 007f 49       		.uleb128 0x49
  2340 0080 13       		.uleb128 0x13
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 47
-
-
  2341 0081 38       		.uleb128 0x38
  2342 0082 0B       		.uleb128 0xb
  2343 0083 00       		.byte	0
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 47
+
+
  2344 0084 00       		.byte	0
  2345 0085 0C       		.uleb128 0xc
  2346 0086 0D       		.uleb128 0xd
@@ -2818,12 +2815,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  2395 00b7 3A       		.uleb128 0x3a
  2396 00b8 0B       		.uleb128 0xb
  2397 00b9 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 48
-
-
  2398 00ba 0B       		.uleb128 0xb
  2399 00bb 01       		.uleb128 0x1
  2400 00bc 13       		.uleb128 0x13
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 48
+
+
  2401 00bd 00       		.byte	0
  2402 00be 00       		.byte	0
  2403 00bf 10       		.uleb128 0x10
@@ -2878,12 +2875,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  2452 00f0 2E       		.uleb128 0x2e
  2453 00f1 00       		.byte	0
  2454 00f2 3F       		.uleb128 0x3f
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 49
-
-
  2455 00f3 19       		.uleb128 0x19
  2456 00f4 03       		.uleb128 0x3
  2457 00f5 0E       		.uleb128 0xe
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 49
+
+
  2458 00f6 3A       		.uleb128 0x3a
  2459 00f7 0B       		.uleb128 0xb
  2460 00f8 3B       		.uleb128 0x3b
@@ -2938,12 +2935,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  2509 012b 01       		.uleb128 0x1
  2510 012c 12       		.uleb128 0x12
  2511 012d 06       		.uleb128 0x6
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 50
-
-
  2512 012e 40       		.uleb128 0x40
  2513 012f 18       		.uleb128 0x18
  2514 0130 9642     		.uleb128 0x2116
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 50
+
+
  2515 0132 19       		.uleb128 0x19
  2516 0133 01       		.uleb128 0x1
  2517 0134 13       		.uleb128 0x13
@@ -2998,12 +2995,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  2566 0165 49       		.uleb128 0x49
  2567 0166 13       		.uleb128 0x13
  2568 0167 02       		.uleb128 0x2
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 51
-
-
  2569 0168 18       		.uleb128 0x18
  2570 0169 00       		.byte	0
  2571 016a 00       		.byte	0
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 51
+
+
  2572 016b 1B       		.uleb128 0x1b
  2573 016c 2E       		.uleb128 0x2e
  2574 016d 01       		.byte	0x1
@@ -3058,12 +3055,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  2623 019f 3B       		.uleb128 0x3b
  2624 01a0 0B       		.uleb128 0xb
  2625 01a1 49       		.uleb128 0x49
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 52
-
-
  2626 01a2 13       		.uleb128 0x13
  2627 01a3 11       		.uleb128 0x11
  2628 01a4 01       		.uleb128 0x1
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 52
+
+
  2629 01a5 12       		.uleb128 0x12
  2630 01a6 06       		.uleb128 0x6
  2631 01a7 40       		.uleb128 0x40
@@ -3118,12 +3115,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  2680 01d9 00       		.byte	0
  2681              		.section	.debug_aranges,"",%progbits
  2682 0000 4C000000 		.4byte	0x4c
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 53
-
-
  2683 0004 0200     		.2byte	0x2
  2684 0006 00000000 		.4byte	.Ldebug_info0
  2685 000a 04       		.byte	0x4
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 53
+
+
  2686 000b 00       		.byte	0
  2687 000c 0000     		.2byte	0
  2688 000e 0000     		.2byte	0
@@ -3169,7 +3166,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  2728 0054 00000000 		.4byte	0
  2729              		.section	.debug_line,"",%progbits
  2730              	.Ldebug_line0:
- 2731 0000 B2020000 		.section	.debug_str,"MS",%progbits,1
+ 2731 0000 B0020000 		.section	.debug_str,"MS",%progbits,1
  2731      0200A801 
  2731      00000201 
  2731      FB0E0D00 
@@ -3178,12 +3175,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  2733 0000 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_RX_CREDIT_IND\000"
  2733      455F4556 
  2733      545F4C32 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 54
-
-
  2733      4341505F 
  2733      43424643 
  2734              	.LASF28:
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 54
+
+
  2735 0023 4359424C 		.ascii	"CYBLE_EVT_STACK_BUSY_STATUS\000"
  2735      455F4556 
  2735      545F5354 
@@ -3238,12 +3235,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  2755 00ce 73704F32 		.ascii	"spO2calculator\000"
  2755      63616C63 
  2755      756C6174 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 55
-
-
  2755      6F7200
  2756              	.LASF40:
  2757 00dd 4359424C 		.ascii	"CYBLE_EVT_GAP_CONNECTION_UPDATE_COMPLETE\000"
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 55
+
+
  2757      455F4556 
  2757      545F4741 
  2757      505F434F 
@@ -3298,12 +3295,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  2777      424C4500 
  2778              	.LASF94:
  2779 01b7 4359424C 		.ascii	"CYBLE_GATT_VALUE_T\000"
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 56
-
-
  2779      455F4741 
  2779      54545F56 
  2779      414C5545 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 56
+
+
  2779      5F5400
  2780              	.LASF27:
  2781 01ca 4359424C 		.ascii	"CYBLE_EVT_HCI_STATUS\000"
@@ -3358,12 +3355,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  2799      505F4E55 
  2799      4D455249 
  2800              	.LASF104:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 57
-
-
  2801 02b6 4359424C 		.ascii	"CYBLE_STATE_ADVERTISING\000"
  2801      455F5354 
  2801      4154455F 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 57
+
+
  2801      41445645 
  2801      52544953 
  2802              	.LASF162:
@@ -3418,12 +3415,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  2821      545F4741 
  2821      505F4155 
  2821      54485F52 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 58
-
-
  2822              	.LASF59:
  2823 038e 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_RSP\000"
  2823      455F4556 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 58
+
+
  2823      545F4741 
  2823      5454435F 
  2823      52454144 
@@ -3478,12 +3475,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  2845      696E7574 
  2845      6500
  2846              	.LASF67:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 59
-
-
  2847 0479 4359424C 		.ascii	"CYBLE_EVT_GATTC_EXEC_WRITE_RSP\000"
  2847      455F4556 
  2847      545F4741 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 59
+
+
  2847      5454435F 
  2847      45584543 
  2848              	.LASF112:
@@ -3538,12 +3535,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  2868              	.LASF7:
  2869 055f 5F5F7569 		.ascii	"__uint32_t\000"
  2869      6E743332 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 60
-
-
  2869      5F7400
  2870              	.LASF85:
  2871 056a 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DATA_WRITE_IND\000"
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 60
+
+
  2871      455F4556 
  2871      545F4C32 
  2871      4341505F 
@@ -3598,12 +3595,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  2894              	.LASF117:
  2895 061f 6C617374 		.ascii	"lastMaxValue\000"
  2895      4D617856 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 61
-
-
  2895      616C7565 
  2895      00
  2896              	.LASF8:
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 61
+
+
  2897 062c 6C6F6E67 		.ascii	"long unsigned int\000"
  2897      20756E73 
  2897      69676E65 
@@ -3658,12 +3655,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  2919 06d7 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_INFO_RSP\000"
  2919      455F4556 
  2919      545F4741 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 62
-
-
  2919      5454435F 
  2919      46494E44 
  2920              	.LASF29:
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 62
+
+
  2921 06f5 4359424C 		.ascii	"CYBLE_EVT_MEMORY_REQUEST\000"
  2921      455F4556 
  2921      545F4D45 
@@ -3718,12 +3715,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  2939      505F5041 
  2939      53534B45 
  2940              	.LASF51:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 63
-
-
  2941 07e6 4359424C 		.ascii	"CYBLE_EVT_GATT_CONNECT_IND\000"
  2941      455F4556 
  2941      545F4741 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 63
+
+
  2941      54545F43 
  2941      4F4E4E45 
  2942              	.LASF91:
@@ -3778,12 +3775,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  2961 08d5 4D696E75 		.ascii	"Minute_Handler\000"
  2961      74655F48 
  2961      616E646C 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 64
-
-
  2961      657200
  2962              	.LASF100:
  2963 08e4 4359424C 		.ascii	"CYBLE_GATTS_WRITE_REQ_PARAM_T\000"
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 64
+
+
  2963      455F4741 
  2963      5454535F 
  2963      57524954 
@@ -3838,12 +3835,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  2981 09c0 64657669 		.ascii	"deviceConnected\000"
  2981      6365436F 
  2981      6E6E6563 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 65
-
-
  2981      74656400 
  2982              	.LASF34:
  2983 09d0 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_COMPLETE\000"
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 65
+
+
  2983      455F4556 
  2983      545F4741 
  2983      505F4155 
@@ -3898,12 +3895,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  3003 0abc 77686174 		.ascii	"whatToDo\000"
  3003      546F446F 
  3003      00
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 66
-
-
  3004              	.LASF186:
  3005 0ac5 62757379 		.ascii	"busyStatus\000"
  3005      53746174 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 66
+
+
  3005      757300
  3006              	.LASF192:
  3007 0ad0 41434345 		.ascii	"ACCELEROMETER\000"
@@ -3958,12 +3955,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  3027      455F5354 
  3027      4154455F 
  3027      44495343 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 67
-
-
  3027      4F4E4E45 
  3028              	.LASF69:
  3029 0baa 4359424C 		.ascii	"CYBLE_EVT_GATTC_HANDLE_VALUE_IND\000"
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 67
+
+
  3029      455F4556 
  3029      545F4741 
  3029      5454435F 
@@ -4018,12 +4015,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  3049 0c78 4359424C 		.ascii	"CYBLE_EVT_GATTC_ERROR_RSP\000"
  3049      455F4556 
  3049      545F4741 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 68
-
-
  3049      5454435F 
  3049      4552524F 
  3050              	.LASF49:
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 68
+
+
  3051 0c92 4359424C 		.ascii	"CYBLE_EVT_GAP_SMP_NEGOTIATED_AUTH_INFO\000"
  3051      455F4556 
  3051      545F4741 
@@ -4078,12 +4075,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  3070              	.LASF60:
  3071 0d88 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BLOB_RSP\000"
  3071      455F4556 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 69
-
-
  3071      545F4741 
  3071      5454435F 
  3071      52454144 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 69
+
+
  3072              	.LASF146:
  3073 0da6 74734C61 		.ascii	"tsLastSample\000"
  3073      73745361 
@@ -4138,12 +4135,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  3093 0e3d 75696E74 		.ascii	"uint32_t\000"
  3093      33325F74 
  3093      00
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 70
-
-
  3094              	.LASF53:
  3095 0e46 4359424C 		.ascii	"CYBLE_EVT_GATTS_XCNHG_MTU_REQ\000"
  3095      455F4556 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 70
+
+
  3095      545F4741 
  3095      5454535F 
  3095      58434E48 
@@ -4198,12 +4195,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  3114      392E3320 
  3114      32303135 
  3114      30333033 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 71
-
-
  3115 0f43 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
  3115      20726576 
  3115      6973696F 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 71
+
+
  3115      6E203232 
  3115      31323230 
  3116 0f76 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
@@ -4258,12 +4255,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 1
  3134      425F4154 
  3134      54525F48 
  3135              	.LASF150:
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccNeFpOU.s 			page 72
-
-
  3136 1076 7265644C 		.ascii	"redLedPower\000"
  3136      6564506F 
  3136      77657200 
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccPosZUZ.s 			page 72
+
+
  3137              	.LASF52:
  3138 1082 4359424C 		.ascii	"CYBLE_EVT_GATT_DISCONNECT_IND\000"
  3138      455F4556 

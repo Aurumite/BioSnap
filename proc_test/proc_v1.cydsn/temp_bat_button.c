@@ -12,20 +12,21 @@
 
 #include <temp_bat_button.h>
 
-void initTemperatureAndBattery(){
-    
+void initTempBatButton(){
+    //Useless right now   
 }
 
 uint16 getTemperature(){
-    // Read from ADC abd convert to millivolts
+    // Read from ADC and convert to millivolts
     return ADC_CountsTo_mVolts(0, ADC_GetResult16(0));
 }
 
 uint16 getBattery(){
-    // Read from ADC abd convert to millivolts
-    return ADC_CountsTo_mVolts(1, ADC_GetResult16(1));
+    // Read from ADC and convert to millivolts
+    return ADC_CountsTo_mVolts(1, ADC_GetResult16(0));
 }
 
 uint16 getButton(){
-    return ADC_CountsTo_mVolts(2, ADC_GetResult16(1)) > (3300/2);
+    // Read from ADC and decide if value is greater than 3300/2
+    return ADC_CountsTo_mVolts(2, ADC_GetResult16(0)) > (3300/2);
 }

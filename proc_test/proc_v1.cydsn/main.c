@@ -16,7 +16,7 @@
 
 #define REPORTING_PERIOD_MS     1000
 
-int NOTIFY[] = {0, 0, 0, 0, 0};
+int NOTIFY[] = {0, 0, 0, 0, 0, 0};
 
 uint8 deviceConnected ; 
 uint8 restartAdvertisement; 
@@ -45,24 +45,24 @@ CY_ISR(Minute_Handler){
 }
 
 void initAll(){
-    initBLE();
-    I2C_1_Start();
-    initAccelControl();
-    initTemperatureAndBattery(); 
+    initBLE();                                                  //initialize bluetooth
+    I2C_1_Start();                                              //start I2C
+    initAccelControl();                                         //initialize and setup acclerometer
+    initTempBatButton();                                        //useless
     
-    PulseOximeter_Init();     
-    PulseOximeter_begin(PULSEOXIMETER_DEBUGGINGMODE_NONE);
+    PulseOximeter_Init();                                       //setup pulse oximeter
+    PulseOximeter_begin(PULSEOXIMETER_DEBUGGINGMODE_NONE);      //start pulse oximeter
 
-
-    Timer_minute_Start();
-    isr_minute_StartEx(Minute_Handler);
+    Timer_minute_Start();                                       //start minute timer
+    isr_minute_StartEx(Minute_Handler);                         //setup isr
     
-    ADC_Start();
-    ADC_StartConvert();
+    ADC_Start();                                                //start the ADC
+    ADC_StartConvert();                                         //start converting values
 }
 
+//initializes the BLE module
 void initBLE(){
-    CyBle_Start( StackEventHandler );
+    CyBle_Start( StackEventHandler );   //starts the event handler
     deviceConnected = 0; 
     restartAdvertisement = 0 ; 
     busyStatus = 0; 
@@ -79,17 +79,7 @@ void StackEventHandler( uint32 eventCode, void *eventParam )
         case CYBLE_EVT_GAP_DEVICE_DISCONNECTED:            
             CyBle_GappStartAdvertisement(CYBLE_ADVERTISING_FAST);
             deviceConnected = 0;
-        break;
-
-        /* GAP Peripheral events */
-
-//        case CYBLE_EVT_GAPP_ADVERTISEMENT_START_STOP:
-//            if(CyBle_GetState() == CYBLE_STATE_DISCONNECTED){
-//                restartAdvertisement = 0;
-//            }
-//        break;
-
-        /* GATT events */
+            break;
 
         case CYBLE_EVT_GATT_CONNECT_IND:
             connectionHandle = *(CYBLE_CONN_HANDLE_T*)eventParam;
@@ -112,6 +102,7 @@ void StackEventHandler( uint32 eventCode, void *eventParam )
             
             charCode = -1;
             
+            //Depending on the value of event parameter do different tasks
             switch(wrReqParam->handleValPair.attrHandle){
                 case CYBLE_BIOSNAP_TEMPERATURE_TEMPCCC_DESC_HANDLE:
                     CyBle_GattsWriteAttributeValue(&wrReqParam->handleValPair, 0, &cyBle_connHandle, CYBLE_GATT_DB_PEER_INITIATED);
@@ -167,10 +158,12 @@ void updateCharacteristic(int charCode, int charHandle, uint32 value){
    
     CYBLE_GATT_HANDLE_VALUE_PAIR_T CCCDHandle; 
 
+    //update characteristic handle with the correct information
     CCCDHandle.attrHandle = charHandle;
     CCCDHandle.value.val = (uint8 *)&value;
     CCCDHandle.value.len = 4;
     
+    //send out new characteristic value
     CyBle_GattsWriteAttributeValue(&CCCDHandle, 0, &cyBle_connHandle, CYBLE_GATT_DB_LOCALLY_INITIATED);
     CyBle_GattsReadAttributeValue(&CCCDHandle, &cyBle_connHandle, CYBLE_GATT_DB_LOCALLY_INITIATED);
    
@@ -178,6 +171,7 @@ void updateCharacteristic(int charCode, int charHandle, uint32 value){
         CyBle_GattsNotification(cyBle_connHandle, &CCCDHandle);
 }
 
+//puts data into little endian for CySmart app
 uint32 reverseUint32(uint32 num){
     return ((0xFF000000 & num) >> 24) | ((0x00FF0000 & num) >> 8) | ((0x0000FF00 & num) << 8) | ((0x000000FF & num) << 24);
 }
@@ -187,6 +181,7 @@ int main()
     CyGlobalIntEnable; /* Enable global interrupts. */
     initAll();
     
+    //initialize all sensor calues to 0
     uint32 accel = 0;
     uint32 heart = 0;
     uint32 oxygen = 0;
@@ -200,10 +195,11 @@ int main()
         
         CyBle_ProcessEvents();
         
-        if(deviceConnected && busyStatus == CYBLE_STACK_STATE_FREE){
+        if(deviceConnected && busyStatus == CYBLE_STACK_STATE_FREE){ //check to make sure device is connected
             PulseOximeter_update();
             elapsed = millis() - tsLastReport;
             
+            //every 100ms send out temperature, accelerometer, battery, and button data
             if(millis() - otherLastReport > 100){
                 temp = getTemperature();
                 updateCharacteristic(TEMPERATURE, CYBLE_BIOSNAP_TEMPERATURE_CHAR_HANDLE, temp);
@@ -219,6 +215,7 @@ int main()
                 
                 otherLastReport = millis();
             }
+            //every 1000ms send out pulse oximeter data
             if (elapsed > REPORTING_PERIOD_MS) {
                 oxygen = (uint32)(PulseOximeter_getSpO2());
                 heart = (uint32)(PulseOximeter_getHeartRate());
