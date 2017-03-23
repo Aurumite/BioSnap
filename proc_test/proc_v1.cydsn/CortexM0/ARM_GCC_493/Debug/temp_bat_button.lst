@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccZhhSKk.s 			page 1
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc4o2Ep9.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccZhhSKk.s 			page 1
   38              		.cfi_endproc
   39              	.LFE37:
   40              		.size	initTempBatButton, .-initTempBatButton
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccZhhSKk.s 			page 2
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc4o2Ep9.s 			page 2
 
 
   41              		.section	.text.getTemperature,"ax",%progbits
@@ -118,12 +118,12 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccZhhSKk.s 			page 1
   88 0002 00AF     		add	r7, sp, #0
   89              		.cfi_def_cfa_register 7
   25:.\temp_bat_button.c ****     // Read from ADC and convert to millivolts
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccZhhSKk.s 			page 3
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc4o2Ep9.s 			page 3
 
 
-  26:.\temp_bat_button.c ****     return ADC_CountsTo_mVolts(1, ADC_GetResult16(0));
+  26:.\temp_bat_button.c ****     return ADC_CountsTo_mVolts(1, ADC_GetResult16(1));
   90              		.loc 1 26 0
-  91 0004 0020     		mov	r0, #0
+  91 0004 0120     		mov	r0, #1
   92 0006 FFF7FEFF 		bl	ADC_GetResult16
   93 000a 031C     		mov	r3, r0
   94 000c 0120     		mov	r0, #1
@@ -159,9 +159,9 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccZhhSKk.s 			page 1
  121 0002 00AF     		add	r7, sp, #0
  122              		.cfi_def_cfa_register 7
   30:.\temp_bat_button.c ****     // Read from ADC and decide if value is greater than 3300/2
-  31:.\temp_bat_button.c ****     return ADC_CountsTo_mVolts(2, ADC_GetResult16(0)) > (3300/2);
+  31:.\temp_bat_button.c ****     return ADC_CountsTo_mVolts(2, ADC_GetResult16(2)) > (3300/2);
  123              		.loc 1 31 0
- 124 0004 0020     		mov	r0, #0
+ 124 0004 0220     		mov	r0, #2
  125 0006 FFF7FEFF 		bl	ADC_GetResult16
  126 000a 031C     		mov	r3, r0
  127 000c 0220     		mov	r0, #2
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccZhhSKk.s 			page 1
  138 0024 191C     		add	r1, r3, #0
  139              	.L7:
  140 0026 CBB2     		uxtb	r3, r1
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccZhhSKk.s 			page 4
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc4o2Ep9.s 			page 4
 
 
  141 0028 9BB2     		uxth	r3, r3
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccZhhSKk.s 			page 1
  194 004b C2000000 		.4byte	.LASF5
  195 004f 02       		.uleb128 0x2
  196 0050 08       		.byte	0x8
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccZhhSKk.s 			page 5
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc4o2Ep9.s 			page 5
 
 
  197 0051 05       		.byte	0x5
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccZhhSKk.s 			page 1
  251 00be 01       		.byte	0x1
  252 00bf 18       		.byte	0x18
  253 00c0 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccZhhSKk.s 			page 6
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc4o2Ep9.s 			page 6
 
 
  254 00c4 00000000 		.4byte	.LFB39
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccZhhSKk.s 			page 1
  308 0026 08       		.uleb128 0x8
  309 0027 00       		.byte	0
  310 0028 00       		.byte	0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccZhhSKk.s 			page 7
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc4o2Ep9.s 			page 7
 
 
  311 0029 04       		.uleb128 0x4
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccZhhSKk.s 			page 1
  365 0061 19       		.uleb128 0x19
  366 0062 00       		.byte	0
  367 0063 00       		.byte	0
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccZhhSKk.s 			page 8
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc4o2Ep9.s 			page 8
 
 
  368 0064 00       		.byte	0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccZhhSKk.s 			page 1
  407 0074 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
  407      66756E63 
  407      74696F6E 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccZhhSKk.s 			page 9
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc4o2Ep9.s 			page 9
 
 
  407      2D736563 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccZhhSKk.s 			page 1
  431 012d 696E6974 		.ascii	"initTempBatButton\000"
  431      54656D70 
  431      42617442 
-ARM GAS  C:\Users\Matthew\AppData\Local\Temp\ccZhhSKk.s 			page 10
+ARM GAS  C:\Users\Matthew\AppData\Local\Temp\cc4o2Ep9.s 			page 10
 
 
  431      7574746F 

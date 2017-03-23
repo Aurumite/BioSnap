@@ -23,10 +23,10 @@ uint16 getTemperature(){
 
 uint16 getBattery(){
     // Read from ADC and convert to millivolts
-    return ADC_CountsTo_mVolts(1, ADC_GetResult16(0));
+    return ADC_CountsTo_mVolts(1, ADC_GetResult16(1));
 }
 
 uint16 getButton(){
     // Read from ADC and decide if value is greater than 3300/2
-    return ADC_CountsTo_mVolts(2, ADC_GetResult16(0)) > (3300/2);
+    return ADC_CountsTo_mVolts(2, ADC_GetResult16(2)) > (3300/2);
 }
