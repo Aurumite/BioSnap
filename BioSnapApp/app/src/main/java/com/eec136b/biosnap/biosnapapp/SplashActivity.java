@@ -32,6 +32,8 @@ public class SplashActivity extends AppCompatActivity{
 
         Context context = getApplicationContext();
         sharedPref = context.getSharedPreferences("BioSnapPrefs", MODE_PRIVATE);
+
+        //Run first time check
         first_time_check();
 
         setContentView(R.layout.activity_splash);
@@ -79,6 +81,7 @@ public class SplashActivity extends AppCompatActivity{
         }
     }
 
+    //If this is the first time starting the app, start the login activity instead.
     private boolean first_time_check(){
         boolean first = sharedPref.getBoolean("loggedInBefore", false );
 

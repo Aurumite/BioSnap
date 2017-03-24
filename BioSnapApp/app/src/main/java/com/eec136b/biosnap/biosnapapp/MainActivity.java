@@ -21,6 +21,7 @@ import android.os.Environment;
 import android.os.Handler;
 import android.os.IBinder;
 import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -53,6 +54,10 @@ public class MainActivity extends AppCompatActivity {
 
     private final static String TAG = MainActivity.class.getSimpleName();
 
+
+    /**
+     * View and other object variables go here
+     */
     private final Handler mHandler = new Handler();
     private Runnable mTimer;
     private Button mDisconnectButton;
@@ -64,6 +69,8 @@ public class MainActivity extends AppCompatActivity {
     private LineGraphSeries<DataPoint> mHeartRateSeries;
     private File dataLog;
     private FileOutputStream out;
+
+    private TextView buttonState;
 
 
     private int tempCount = 0;
@@ -87,6 +94,13 @@ public class MainActivity extends AppCompatActivity {
     private static final int HEARTRATE = 2;
     private static final int OXIMETRY = 3;
     private static final int TEMPERATURE = 4;
+
+    /**
+     * End variables
+     *
+     *
+     *
+     */
 
     // Required for Android 6.0 (Marshmallow)
     private static final int PERMISSION_REQUEST_COARSE_LOCATION = 1;
@@ -135,6 +149,7 @@ public class MainActivity extends AppCompatActivity {
         mScanButton = (Button)(findViewById(R.id.scan_button));
         mDisconnectButton = (Button)(findViewById(R.id.disconnect_button));
         TextView pinTV = (TextView)findViewById(R.id.PIN_tv);
+        buttonState = (TextView)findViewById(R.id.button_value_tv);
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("BioSnapPrefs", MODE_PRIVATE);
         pinTV.setText(Integer.toString(sharedPref.getInt("userPIN", -1)));
 
@@ -206,6 +221,19 @@ public class MainActivity extends AppCompatActivity {
             });
             builder.show();
         }
+        if(this.checkSelfPermission(Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED){
+            final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle("This app to call phones in case of emergency ");
+            builder.setMessage("Please grant call access for emergencies.");
+            builder.setPositiveButton(android.R.string.ok, null);
+            builder.setOnDismissListener(new DialogInterface.OnDismissListener() {
+                public void onDismiss(DialogInterface dialog) {
+                    requestPermissions(new String[]{Manifest.permission.CALL_PHONE},1);
+                }
+            });
+            builder.show();
+        }
+
 
     }
 
@@ -290,6 +318,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onPause() {
+        //Called if the activity is in its Pause lifecycle
         mHandler.removeCallbacks(mTimer);
         unregisterReceiver(mBleUpdateReceiver);
         Log.d(TAG,"onPause() called!");
@@ -299,6 +328,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onDestroy() {
+        //Called when the activity is in its Destroy part of the lifecycle
+
         super.onDestroy();
         mHandler.removeCallbacks(mTimer);
 
@@ -315,6 +346,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startBluetooth(){
+
         mBleStarted = true;
         //Find the BLE service and adapter
         final BluetoothManager bluetoothManager =
@@ -339,6 +371,14 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "Bluetooth is Enabled");
         Toast.makeText(MainActivity.this,"Bluetooth is Enabled",Toast.LENGTH_SHORT).show();
     }
+
+
+    /**
+     * This function is called when the user presses the Scan for BLE button to start searching
+     *  for the appropriate device to connect to.
+     *
+     * @param view this is a button onClick method
+     */
     public void bleScan(View view){
         Log.d(TAG," " + mServiceConnected);
         if(mServiceConnected) {
@@ -349,6 +389,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Disconnect from the BLE device safely
+     * @param view
+     */
     public void bleDisconnect(View view){
         mBleService.disconnect();
     }
@@ -428,26 +472,25 @@ public class MainActivity extends AppCompatActivity {
 
                     break;
                 case BleService.ACTION_DATA_RECEIVED:
-                    //
+
+
+                    //Emergency button is pressed
                     if(mBleService.isEmergButtonPressed())
-                        dialEmergencyNumber("3239194191");
+                        dialEmergencyNumber("3103440289");
 
-
-
+                    buttonState.setText("Button State: " + mBleService.isEmergButtonPressed());
 
                     // This is called after a notify or a read completes
+
+                    //Slowing down data showing
                     if(tempCount++ % 50 == 0) {
                         mCurTemp = Double.valueOf(mBleService.getTemperature());
                         mCurHeartRate = mBleService.getHeartRateD();
                         mDataInfo.get(ACCELEROMETER).setMeasurement(mBleService.getXYZ());
                         mDataInfo.get(BATTERY).setMeasurement(mBleService.getBatteryLevel());
-                        mDataInfo.get(HEARTRATE).setMeasurement(mBleService.getHeartRate());
-                        mDataInfo.get(OXIMETRY).setMeasurement(mBleService.getSP02());
                         mDataInfo.get(TEMPERATURE).setMeasurement(mBleService.getTemperature());
+                        mDataAdapter.notifyItemRangeChanged(0, 5);
 
-//                    mDataInfo.get(TEMPERATURE).appendGraph();
-                        mDataAdapter.notifyItemRangeChanged(0, mDataAdapter.getItemCount());
-//                        mDataAdapter.notifyItemChanged(TEMPERATURE);
                         mTimer = new Runnable() {
                             @Override
                             public void run() {
@@ -469,6 +512,8 @@ public class MainActivity extends AppCompatActivity {
                                         e.printStackTrace();
                                     }
                                 }
+
+                                //restart the graphview from the starting point
                                 if(lastTempX >= 100){
                                     DataPoint[] valuesTemp = new DataPoint[1];
                                     DataPoint[] valuesHR = new DataPoint[1];
@@ -484,11 +529,20 @@ public class MainActivity extends AppCompatActivity {
                                 lastTempX += 1d;
                             }
                         };
-                        mHandler.postDelayed(mTimer, 1000);
 
+                        //delay the graph thread
+                        mHandler.postDelayed(mTimer, 1000);
                     }
 
-//                    mDataAdapter.notifyDataSetChanged();
+                    if(mBleService.HR_Readable){
+                        mDataInfo.get(OXIMETRY).setMeasurement(mBleService.getSP02());
+                        mDataInfo.get(HEARTRATE).setMeasurement(mBleService.getHeartRate());
+                        mDataAdapter.notifyItemRangeChanged(6, mDataAdapter.getItemCount());
+                    }
+
+
+
+
 
                 default:
                     break;
@@ -532,6 +586,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * This initializes the graph to a custom view for appropriate data viewing
+     */
     private void initGraph(){
         mGraphView = (GraphView)(findViewById(R.id.my_graph));
 
@@ -570,7 +627,19 @@ public class MainActivity extends AppCompatActivity {
                 Environment.MEDIA_MOUNTED_READ_ONLY.equals(state));
     }
 
+    /**
+     *
+     * @param emergNumber the number to call for emergency
+     */
     private void dialEmergencyNumber(String emergNumber){
-        startActivity(new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", emergNumber, null)));
+//        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+//            Log.d(TAG, "UH OH IN PERMISSION CHECK");
+//            return;
+//        }
+        try {
+            startActivity(new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + emergNumber)));
+        }catch(SecurityException e){
+            e.printStackTrace();
+        }
     }
 }

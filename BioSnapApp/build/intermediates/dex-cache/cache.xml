@@ -151,7 +151,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="719cc7e41faa63cfff7d32f5ba56b2a51d5f12fa">
+        sha1="b4e1f5c2a589d86570d558385b7f732c5f8f856a">
         <dex dex="C:\Users\Davit\Documents\GitHub\BioSnap\BioSnapApp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_98f4842f9f6284bb147fdb4782c295902e06ea7c\classes.dex" />
     </item>
 

@@ -37,6 +37,7 @@ public class NewUserActivity extends AppCompatActivity {
 
     }
 
+    //Login function and setting the SharedPreferences values
     public void loginNewUser(View view){
         String lastName = lastNameET.getText().toString();
         String firstName = firstNameET.getText().toString();
@@ -53,11 +54,7 @@ public class NewUserActivity extends AppCompatActivity {
         mEditor.putBoolean("loggedInBefore", true);
         mEditor.apply();
 
-
-
         Intent i = new Intent(NewUserActivity.this, MainActivity.class);
         startActivity(i);
-
     }
-
 }

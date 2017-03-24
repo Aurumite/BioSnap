@@ -55,9 +55,11 @@ public class BleService extends Service {
 
     private static final int ACCELROMETER = 0;
     private static final int BATTERY = 1;
-    private static final int HEARTRATE = 2;
-    private static final int OXIMETRY = 3;
-    private static final int TEMPERATURE = 4;
+    private static final int BUTTON = 2;
+    private static final int HEARTRATE = 3;
+    private static final int OXIMETRY = 4;
+    private static final int TEMPERATURE = 5;
+
 
     /**	Bluetooth characteristics that we need to read or write to
      *	Place characteristics here that are in the PSoC
@@ -112,10 +114,10 @@ public class BleService extends Service {
 
     private final static String mAccelCharacteristicUUID = "0000AAA1-0000-1000-8000-00805F9B34FB";
     private final static String mBatteryCharacteristicUUID = "0000AAA2-0000-1000-8000-00805F9B34FB";
-    private final static String mHeartRateCharacteristicUUID = "0000AAA3-0000-1000-8000-00805F9B34FB";
-    private final static String mOximetryCharacteristicUUID = "0000AAA4-0000-1000-8000-00805F9B34FB";
-    private final static String mTemperatureCharacteristicUUID = "0000AAA5-0000-1000-8000-00805F9B34FB";
-    private final static String mEmergencyButtonCharacteristicUUID = "0000AAA6-0000-1000-8000-00805F9B34FB";
+    private final static String mHeartRateCharacteristicUUID = "0000AAA4-0000-1000-8000-00805F9B34FB";
+    private final static String mOximetryCharacteristicUUID = "0000AAA5-0000-1000-8000-00805F9B34FB";
+    private final static String mTemperatureCharacteristicUUID = "0000AAA6-0000-1000-8000-00805F9B34FB";
+    private final static String mEmergencyButtonCharacteristicUUID = "0000AAA3-0000-1000-8000-00805F9B34FB";
     //CCCDUUID for each characteristic's description
     private final static String CCCDUUID = "00002902-0000-1000-8000-00805F9B34FB";
 
@@ -131,6 +133,8 @@ public class BleService extends Service {
     private static double xG = 0.0, yG = 0.0, zG = 0.0;
     private boolean enabled;
     private boolean emergButtonState = false;
+    public boolean doneDisablingNotifications =false;
+    public boolean HR_Readable = false;
     //TODO
     //Change the package in here to the proper one for custom project
     //Actions used during broadcasts to the main activity
@@ -360,6 +364,9 @@ public class BleService extends Service {
             mBatteryDescriptor = mBatteryCharacteristic.getDescriptor(UUID.fromString(CCCDUUID));
             mEmergencyDescriptor = mEmergencyButtonCharacteristic.getDescriptor(UUID.fromString(CCCDUUID));
 
+            //used for disconnecting properly
+            doneDisablingNotifications = false;
+
             // Broadcast that service/characteristic/descriptor discovery is done
             broadcastUpdate(ACTION_SERVICES_DISCOVERED);
         }
@@ -403,6 +410,10 @@ public class BleService extends Service {
                 if(uuid.equalsIgnoreCase(mBatteryCharacteristicUUID)){
                     mBatteryLevel = characteristic.getIntValue(BluetoothGattCharacteristic.FORMAT_UINT32,0);
                     mBatteryLevel = mBatteryLevel * 2;
+                }
+
+                if(uuid.equalsIgnoreCase(mEmergencyButtonCharacteristicUUID)){
+                    emergButtonState = mEmergencyButtonCharacteristic.getIntValue(BluetoothGattCharacteristic.FORMAT_UINT32,0) > 0;
                 }
                 // Notify the main activity that new data is available
                 broadcastUpdate(ACTION_DATA_RECEIVED);
@@ -454,14 +465,21 @@ public class BleService extends Service {
                     Log.d(TAG, "Same Heart Rate as Before");
                 }
                 mHeartRatePrev = mHeartRate;
-            } else if(uuid.equalsIgnoreCase(mOximetryCharacteristicUUID)) {
 
+                if(mHeartRate != 0)
+                    HR_Readable = true;
+                else{
+                    mHeartRate = mHeartRatePrev;
+                    HR_Readable = false;
+                }
+
+            } else if(uuid.equalsIgnoreCase(mOximetryCharacteristicUUID)) {
                 mSP02 = mOximetryCharacteristic.getIntValue(BluetoothGattCharacteristic.FORMAT_UINT32, 0);
             } else if(uuid.equalsIgnoreCase(mBatteryCharacteristicUUID)){
                 mBatteryLevel = characteristic.getIntValue(BluetoothGattCharacteristic.FORMAT_UINT32,0);
                 mBatteryLevel = mBatteryLevel * 2;
             } else if(uuid.equalsIgnoreCase(mEmergencyButtonCharacteristicUUID)){
-                emergButtonState = mEmergencyButtonCharacteristic.getIntValue(BluetoothGattCharacteristic.FORMAT_UINT32,0).equals(1);
+                emergButtonState = mEmergencyButtonCharacteristic.getIntValue(BluetoothGattCharacteristic.FORMAT_UINT32,0) > 0;
             }
             // Notify the main activity that new data is available
             broadcastUpdate(ACTION_DATA_RECEIVED);
@@ -471,7 +489,7 @@ public class BleService extends Service {
 
     //TODO
     public void enableNotification() {
-        /**
+        /*
          * Index here gets increased from the other callback function onDescriptorWrite
          * This is so that the BLE can process all the requests and can handle the requests
          * on its own time without being overloaded
@@ -489,6 +507,11 @@ public class BleService extends Service {
                 mBatteryDescriptor.setValue((enabled) ? BluetoothGattDescriptor.ENABLE_NOTIFICATION_VALUE
                         : BluetoothGattDescriptor.DISABLE_NOTIFICATION_VALUE);
                 mBluetoothGatt.writeDescriptor(mBatteryDescriptor);
+            case BUTTON:
+                mBluetoothGatt.setCharacteristicNotification(mEmergencyButtonCharacteristic,enabled);
+                mEmergencyDescriptor.setValue((enabled) ? BluetoothGattDescriptor.ENABLE_NOTIFICATION_VALUE
+                        : BluetoothGattDescriptor.DISABLE_NOTIFICATION_VALUE);
+                mBluetoothGatt.writeDescriptor(mEmergencyDescriptor);
             case HEARTRATE:
                 mBluetoothGatt.setCharacteristicNotification(mHeartRateCharacteristic,enabled);
                 mHeartRateDescriptor.setValue((enabled) ? BluetoothGattDescriptor.ENABLE_NOTIFICATION_VALUE
@@ -506,12 +529,20 @@ public class BleService extends Service {
                 mTempDescriptor.setValue((enabled) ? BluetoothGattDescriptor.ENABLE_NOTIFICATION_VALUE
                         : BluetoothGattDescriptor.DISABLE_NOTIFICATION_VALUE);
                 mBluetoothGatt.writeDescriptor(mTempDescriptor);
+
+                if(!enabled){
+                    doneDisablingNotifications = true;
+                }
                 break;
 
         }
 
     }
 
+    /**
+     * Enable all notifications
+     * @param enabled enable or disable notifications
+     */
     public void notify(boolean enabled){
         index = 0;
         this.enabled = enabled;
@@ -527,9 +558,13 @@ public class BleService extends Service {
         sendBroadcast(intent);
     }
 
+    /**
+     * Temperature calculations
+     * @return temperature in degrees celsius
+     */
     public String getTemperature(){
         double  value = 0;
-        for(i = 0; i < a.length;i++) {
+        for(i = 1; i < a.length;i++) {
             if (mTemp > a[i]) {
                 // Voltage index below current reading
                 V1 = a[i];
@@ -558,15 +593,18 @@ public class BleService extends Service {
         return String.format(Locale.getDefault(),"%.2f",value);
     }
 
+    /**
+     * Set and Get functions to be used in other activities.
+     *
+     */
+
+
     public String getHeartRate(){
         return Integer.toString(mHeartRate);
     }
     public double getHeartRateD() {return (double)mHeartRate;}
 
-    public String getSP02(){
-        return Integer.toString(mSP02);
-
-    }
+    public String getSP02(){return Integer.toString(mSP02);}
 
     public String getBatteryLevel(){
         return Integer.toString(mBatteryLevel);
